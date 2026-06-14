@@ -15,6 +15,21 @@ An automation fires from an event (signup, purchase, browse, inactivity) rather 
 
 Before you build any flow, write down four things: the entry trigger (the event that admits a contact), the exit condition (the event that pulls them out, almost always the conversion the flow exists to drive), the goal metric you will read it against, and the suppression rules that override it. Get these on paper first; the message copy is the easy part.
 
+# Trigger types
+
+The entry trigger is whatever event your ESP can listen for, and the menu varies by platform. No flow needs all of them, and a trigger you lack can usually be reconstructed from one you have, so treat the list as options rather than requirements:
+
+| Trigger | Fires when | Typical use |
+| --- | --- | --- |
+| List or segment entry | A contact is added to a list or segment, one at a time or as a batch | The workhorse, and an option in every capable ESP: welcome series, onboarding, any flow keyed to joining a group. |
+| Field or tag change | A field or tag on a contact is set or updated, including by an import touching many contacts at once | Reacting to a status the rest of your stack writes: a score crossing a threshold, a preference set, a tag applied. Widely supported. |
+| Date based | A contact reaches a set offset from a date field | Birthday and anniversary emails, renewal and expiry reminders, a re-engagement nudge a fixed number of days after a last-purchase date. Common. |
+| Import | A scheduled CSV drop to a secure FTP or similar location lands | Largely superseded by APIs and now mostly an enterprise-tier feature; once a standard way to drive flows such as an hourly abandoned-cart export. |
+| Event or API | An in-platform behaviour (email interaction, page view, conversion) fires, or an external system calls the API | The open-ended one: anything your product, site, or app can signal. Advanced cases lean on a developer or a third-party integration. Widely supported. |
+| RSS | A watched feed gains an item | New-post or new-content notifications, with the message templated from the feed item (title, content). Less widely supported. |
+
+Choose by what your ESP exposes and what writes the signal, not by the label on the menu. A field-change trigger fed by an import does the job an import trigger would; an API event can stand in for most of the rest. Where a trigger is missing, a little creativity against the ones you do have usually reaches the same outcome.
+
 # Welcome sequence
 
 The welcome window is the highest engagement moment a subscriber will have with you, and welcome emails earn markedly higher open and click rates than ordinary campaigns, so the first email must deliver on whatever the signup promised. A sensible default is a three to five message series, each with one job:
