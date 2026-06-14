@@ -24,6 +24,8 @@ where `Z_a = 1.6449` and `Z_b = 0.8416`, giving `(Z_a + Z_b)^2` of about 6.18. T
 Test duration = (Users per variant x 2) / Users entering per week
 ```
 
+You do not have to compute this by hand. Evan Miller's [sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html) does the proportion case interactively and is the quickest way to sanity check a plan before building a test; the page also explains why fixing the sample in advance, rather than stopping when the result looks good, is what keeps the false positive rate honest. See [frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md) for that distinction.
+
 # The hard truth this surfaces
 
 The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, so treat this formula as the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).

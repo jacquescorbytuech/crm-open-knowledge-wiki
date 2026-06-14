@@ -1,8 +1,8 @@
 ---
 type: Channel
 title: SMS and RCS
-description: A short, interruptive, expensive per message channel with the least editing between sender and recipient today, governed by strict explicit consent.
-tags: [channel, sms, rcs, consent, transactional, carrier]
+description: How to run SMS and RCS as a premium sparing channel, controlling encoding and segment cost, choosing a sending route, enforcing consent, and measuring against a holdout.
+tags: [channel, sms, rcs, consent, transactional, carrier, encoding, 10dlc]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -20,31 +20,62 @@ Less than email or push, but not zero. Carriers run their own spam filtering and
 
 # Message length and encoding
 
-SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode (which a single emoji or curly quote can trigger for the whole message). Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched emoji can quietly double the cost of a campaign. Write tight, keep links short, and watch the encoding.
+SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode. Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched character can quietly multiply the cost of a campaign.
 
-# Numbers and registration
+The encoding trap is mechanical. GSM-7 covers the basic Latin alphabet, digits, and a short set of punctuation. The moment one character falls outside it, the whole message flips to UCS-2 and the budget halves, from 160 to 70. The usual culprits are invisible: a single emoji, or a curly quote and em dash auto-inserted by a word processor, or an accented letter, or a non-breaking space pasted from a web page. One smart quote in a 158-character draft turns a one-segment send into a three-segment send.
 
-The sending number type determines throughput and how it is policed.
+To keep within one segment:
 
-* **A2P 10DLC.** Application-to-person traffic over standard 10-digit long codes in the US requires brand and campaign registration with carrier vetting (opt-in, opt-out, and use case declared). Throughput scales with a trust score; unregistered or high-volume long-code traffic is filtered.
-* **Short codes.** 5-7 digit numbers engineered for high throughput and high-volume programmes; fastest to deliver, slowest and most expensive to provision.
-* **Toll-free.** A middle option with its own verification, suitable for moderate volume.
+* Compose in a plain-text editor, not Word or a CMS that smartens punctuation. Paste straight quotes, hyphens, and standard spaces.
+* Strip emoji from bulk marketing copy. If brand voice needs one, count the message at the 70-character UCS-2 budget and design to it deliberately.
+* Preview the actual encoding and segment count in your ESP before send. Most show GSM-7 vs UCS-2 and the live segment tally as you type.
+* Treat the link as part of the budget. A long tracked URL alone can push a tight message over 160.
+
+# Choosing a sending route
+
+In the US, application-to-person (A2P) traffic runs over one of three route types, and the choice is driven by volume, throughput, and how fast you need to launch, not by message content.
+
+* **A2P 10DLC.** Standard 10-digit long codes for application traffic. Requires brand and campaign registration with the carriers (you declare the brand, the use case, and your opt-in, opt-out, and HELP flows) before any traffic flows. Registration is mandatory and takes time, days to weeks depending on vetting and special use cases, so it is not a same-day launch. Throughput scales with an assigned trust score; unregistered or high-volume long-code traffic is filtered. Lowest cost route and the default for most lifecycle programmes once registered.
+* **Short codes.** 5-7 digit numbers engineered for high throughput, built for high-volume and time-sensitive programmes. Highest cost and the slowest to provision (carrier approval and lease), but the fastest and most reliable to deliver at scale once live.
+* **Toll-free.** A middle option with its own verification process, lighter than short-code provisioning and offering more throughput than an unregistered long code. Suitable for moderate volume and a quicker start than a short code.
+
+Relative cost runs short code above toll-free and 10DLC, and segments multiply whatever the per-message rate is. Pick by the question that bites first: low volume and cost-sensitive, register 10DLC and wait out the registration; high sustained volume or burst sends where deliverability cannot wobble, lease a short code; somewhere between, or you need to start sooner than 10DLC vetting allows, take toll-free.
+
+# Compliance in practice
+
+The consent bar is the operational core of the channel, not a footnote.
+
+* **Capture explicit opt-in and log it.** Consent must be an affirmative act tied to the number: a ticked unticked box, a keyword reply, a double opt-in confirmation. Log what they agreed to, when, the exact disclosure text shown, and the source. The record is your defence in a TCPA or PECR challenge, and you cannot reconstruct it later.
+* **Handle STOP and HELP.** STOP (and its variants) must unsubscribe the number immediately and send one confirmation; HELP must return sender identity and contact. These are mandatory and carrier-enforced. Most platforms process them automatically, but confirm yours does and that suppression propagates across every campaign on the number, not just the one that triggered it.
+* **Enforce quiet hours by recipient local time.** US practice under the TCPA confines marketing sends to roughly 8am to 9pm in the recipient's local time zone. Schedule against the recipient's zone, not the server's or the brand's, which means you need a reliable zone for each number and a queue that holds sends outside the window rather than dropping them.
 
 # RCS
 
 RCS Business Messaging adds a verified-sender check mark, brand logo and colour, rich cards with media, suggested replies, and read receipts, delivered through Google Messages on Android. Apple added RCS to iPhone Messages from iOS 18 on carriers that support it, bringing read receipts, typing indicators, and high-resolution media to cross-platform threads. It is richer than SMS but still carrier-mediated, and its reach depends on device, carrier, and client support.
 
+Use the rich features for what plain SMS cannot do: the verified sender and brand identity to cut spoofing and lift trust, suggested replies and suggested actions to make the next step a single tap, and cards with media for confirmations or product moments that benefit from an image. Because reach is uneven across device, carrier, and client, design every RCS message with a graceful SMS fallback. Write the SMS version first as a self-contained message that works alone, then enrich it for RCS, so a recipient whose client does not support RCS still gets a complete, actionable text rather than a degraded fragment. Never put load-bearing content only in a card or a suggested reply.
+
 # Best-fit jobs
 
 Time critical and high value messages that must not be summarised or delayed: fraud and security alerts, delivery and appointment updates, two factor codes, order confirmations, and a small number of genuinely urgent promotional moments. The message that lands intact is its advantage; do not spend it on routine marketing.
 
+# Copy and links
+
+Length limits and weak layout control mean the proposition must be the message, not the wrapper. The craft is to land one idea and one action inside a single segment.
+
+* **Write to one segment.** Lead with the value or the instruction, name the sender so the message is not anonymous, and cut every word the recipient can infer. Watch the live segment count and the encoding as you draft (see above).
+* **Use branded, tracked short links, not generic shorteners.** A link on your own short domain looks legitimate, carries the tracking you need, and is far less likely to be flagged by carrier filters than a public shortener that spam traffic also uses. Make sure click attribution survives the redirect; a link the recipient does not trust does not get tapped, and a link your stack cannot measure breaks the only mid-funnel signal you have.
+* **For RCS, prefer a suggested action over a raw URL** where the client supports it, and keep the SMS fallback link intact for everyone else. A scannable QR is for cross-channel print and screen, not for a message read on the same phone.
+
+See [copywriting](/foundations/copywriting.md).
+
 # Constraints
 
-Among the more expensive digital channels per message, well above email and push (though far below direct mail), and the lowest tolerance for volume: a single unwanted text reads as more intrusive than an unwanted email and drives opt outs fast. Length limits and weak layout control mean the proposition must be the message, not the wrapper. See [copywriting](/foundations/copywriting.md).
+Among the more expensive digital channels per message, well above email and push (though far below direct mail), and the lowest tolerance for volume: a single unwanted text reads as more intrusive than an unwanted email and drives opt outs fast. Segments multiply the cost, so length discipline is a budget control, not just a craft preference.
 
 # Measurement
 
-Delivery receipts are more reliable than push, and clicks on a tracked link plus downstream conversion carry the signal. Opt out rate and per message cost are the discipline metrics: SMS is the channel where frequency mistakes are most directly expensive.
+Opens do not exist on this channel, so measurement reads delivery and downstream conversion, not engagement proxies. Delivery receipts are more reliable than push and confirm the message landed; clicks on a tracked link plus the conversion behind it carry the outcome signal. Because the cost and the intrusion are both high, read that conversion against a randomised holdout rather than crediting every conversion behind a send: hold back a control, compare treated against control, and bank only the incremental lift. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md). Opt out rate and per message cost are the discipline metrics, since SMS is the channel where frequency mistakes are most directly expensive.
 
 # Lifecycle role
 
@@ -56,6 +87,8 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
+* [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
+* [Copywriting](/foundations/copywriting.md)
 
 # Citations
 

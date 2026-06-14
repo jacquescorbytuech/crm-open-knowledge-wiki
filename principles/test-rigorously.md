@@ -22,4 +22,5 @@ A 2% campaign click rate baseline needs roughly 80,000 sends per cell to detect 
 # Related
 
 * [Sample size and power](/measurement/sample-size-and-power.md)
+* [Frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)

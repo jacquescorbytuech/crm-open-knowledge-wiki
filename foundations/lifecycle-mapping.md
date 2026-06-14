@@ -1,8 +1,8 @@
 ---
 type: Framework
 title: Lifecycle Mapping
-description: The customer lifecycle stages a programme is built around, and how mapping the journey turns a calendar of campaigns into a system that responds to where each customer actually is.
-tags: [lifecycle, journey-mapping, stages, retention, crm]
+description: The customer lifecycle stages a programme is built around, and how to map the journey into a copyable template, transition triggers, and a workshop that produces the spec your automations, orchestration, and measurement are built from.
+tags: [lifecycle, journey-mapping, stages, retention, crm, workshop, triggers]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -23,6 +23,42 @@ Most programmes resolve to five stages, whatever the local names.
 # Mapping the journey
 
 A journey map lays the stages against the moments that move a customer between them: the trigger events, the decisions, the points of friction, and the messages each stage should carry. The output is not a diagram for its own sake. It is the specification the [automations](/foundations/automation-and-sequences.md) implement and the [orchestration](/foundations/orchestration-and-frequency.md) layer sequences across channels.
+
+# The journey-map template
+
+Map one row per stage, then split a stage into multiple rows where the customer job differs (a new buyer and a repeat buyer in Engagement are two rows). Copy this table and fill it in. The illustrative entries below show the shape, not a recommendation for your programme.
+
+| Stage | Customer job | Entry trigger | Key messages | Channel | Goal / decision metric | Frequency |
+| --- | --- | --- | --- | --- | --- | --- |
+| Acquisition | Decide whether to opt in | Form submit, consent captured | Confirm, set expectations | Email | Confirmed opt-in rate | Once, plus reminder |
+| Onboarding | Get first value | Opt-in confirmed | Welcome, activate the core action | Email, push | Activation rate (first key action) | Short burst over the welcome window |
+| Engagement | Get ongoing value | Activated, or first repeat action | Education, cross-sell, content | Email, push, in-app | Repeat-action rate, revenue per active | Steady, capped by frequency rules |
+| Retention | Avoid lapsing | Engagement score drops below threshold | Value reminder, loyalty, save offer | Email, SMS | Lapse rate, reactivation within window | Triggered, low base rate |
+| Winback | Reconsider the relationship | Inactivity window exceeded | Reactivation, last value, sunset | Email, SMS | Reactivation rate, then suppression | Few attempts, then stop |
+
+# Stage-transition triggers
+
+Each move between stages needs a defined entry trigger and an exit, so a customer is only ever in one stage and the [automations](/foundations/automation-and-sequences.md) know when to start and stop. The windows below are illustrative defaults, not benchmarks; set them from your own purchase cycle and inactivity distribution.
+
+* **Acquisition to Onboarding.** Consent confirmed. The trigger is the confirmation event, not the form submit.
+* **Onboarding to Engagement.** First repeat key action (a second session, second purchase), OR a fixed window elapses, say 14 days, whichever comes first. Promote on the behaviour when you can, on the clock when you cannot.
+* **Engagement to Retention.** An inactivity or declining-engagement signal: no key action for an at-risk window, say 30 days, or an engagement score crossing a threshold. This is a risk indicator, not a lapse yet.
+* **Retention to Winback.** Inactivity exceeds the lapsed window, say 90 days, with no response to retention messaging.
+* **Winback to suppressed.** A capped number of reactivation attempts, say three, with no engagement. Stopping is the action; continuing to mail the unresponsive is a deliverability cost. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+
+Risk indicators worth watching inside Engagement and Retention, before a hard transition fires: falling open or click rate over a rolling window, lengthening gaps between key actions, a single high-value action followed by silence, and declining session frequency.
+
+# Running a lifecycle-mapping workshop
+
+A map is produced by the people who own the customer, not drafted alone in a tool. Run a single working session of roughly two hours to get a first draft on the wall.
+
+* **Who is in the room.** The CRM or lifecycle owner facilitates. Bring product or growth (they know the activation moment), data or analytics (they know what is measurable today), customer support (they know the friction), and someone who can approve channels and budget. Keep it small enough to decide.
+* **The prompts, in order.** Name the five stages in your language. For each stage ask: what is the customer trying to do here? What event tells us they have entered this stage? What event tells us they have left it, up or down? What is the one thing we want them to do, and how would we measure it? What is the risk that loses them here?
+* **The output.** A filled-in journey-map table, one row per stage and per distinct customer job, with every entry and exit trigger named and every goal tied to a metric the data owner has confirmed is trackable. Flag rows where the trigger is not yet instrumented; those are the build backlog before the automation can exist.
+
+# How the map drives builds
+
+The map is not documentation, it is the build spec. Each row becomes an [automation](/foundations/automation-and-sequences.md): the entry trigger is its start condition, the key messages are its steps, the exit trigger and frequency are its stop rules. The rows together feed [orchestration](/foundations/orchestration-and-frequency.md), which sequences across stages and channels and enforces frequency so two stages do not message the same person at once. Each row's goal metric is then read per stage through [core metrics](/measurement/core-metrics.md), so you measure activation against Onboarding and lapse against Retention rather than one programme-wide average that hides both.
 
 # Why it comes first
 

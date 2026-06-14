@@ -23,7 +23,7 @@ Start at [`index.md`](index.md), then follow the layer your question sits in:
 - **[`principles/`](principles/)** — the stances every recommendation should serve (list quality, metrics discipline, the welcome window, engagement as deliverability, …).
 - **[`foundations/`](foundations/)** — the cross-channel operations: customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration, ESP selection, and AI decisioning and personalisation.
 - **[`channels/`](channels/)** — the media you send through: email, SMS and RCS, push, in-app, and direct mail, each with its permission, reach, filtering, technical specifics, constraints, and measurement.
-- **[`measurement/`](measurement/)** — the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, and uplift and incrementality.
+- **[`measurement/`](measurement/)** — the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, frequentist versus Bayesian inference, and uplift and incrementality.
 - **[`references/`](references/)** — external platform behaviour, the email-intelligence and notification-decisioning research, legislation and compliance, and a glossary.
 
 ## Attribution

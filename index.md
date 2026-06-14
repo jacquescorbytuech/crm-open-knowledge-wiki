@@ -32,7 +32,7 @@ The bundle is organised around the work itself. The **principles** are the stanc
 
 # Measurement
 
-* [Measurement](measurement/) - the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, uplift and incrementality, and reading the effect of platform changes.
+* [Measurement](measurement/) - the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, frequentist versus Bayesian inference, uplift and incrementality, and reading the effect of platform changes.
 
 # References
 

@@ -16,6 +16,7 @@ The discipline running through both: every method here hands you a distribution,
 * [Impact sizing](impact-sizing.md) - estimate how many incremental actions an experiment will drive, to rank experiments before building.
 * [Sample size and power](sample-size-and-power.md) - the two proportion z-test, and how long a test must run to detect what the sizing model promises.
 * [Volume thresholds](volume-thresholds.md) - the sends per cell needed to detect a given relative shift, and the line below which probes are theatre.
+* [Frequentist and Bayesian testing](frequentist-vs-bayesian.md) - the two ways to read a test, the peeking trap that catches both, and which to reach for on a small list.
 
 # Measuring under intermediation
 
