@@ -111,6 +111,7 @@ See [respect the subscriber](/principles/respect-the-subscriber.md) and [engagem
 # Related
 
 * [Legislation and compliance](/references/legislation-and-compliance.md)
+* [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 * [List building](/foundations/list-building.md)
 * [Segmentation and data](/foundations/segmentation-and-data.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)

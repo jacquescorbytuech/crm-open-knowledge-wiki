@@ -36,4 +36,4 @@ The bundle is organised around the work itself. The **principles** are the stanc
 
 # References
 
-* [References](references/) - platform interventions, the email-intelligence and notification-decisioning research, legislation and compliance, and a glossary.
+* [References](references/) - platform interventions, the email-intelligence and notification-decisioning research, legislation and compliance, tracking and measurement consent, and a glossary.

@@ -15,4 +15,5 @@ External material mirrored into the bundle as first class concepts, plus the met
 # Compliance and terms
 
 * [Legislation and compliance](legislation-and-compliance.md) - CAN-SPAM, GDPR, UK GDPR and PECR, CASL, and CCPA, with a practical minimum.
+* [Tracking and measurement consent](tracking-and-measurement-consent.md) - why open and click tracking is a separate consent question from the right to send, and the 2026 French and Italian rulings on email tracking pixels.
 * [Glossary](glossary.md) - the working vocabulary of email, lifecycle, and CRM marketing.
