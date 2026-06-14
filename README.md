@@ -1,8 +1,8 @@
-# Email, Lifecycle and CRM Marketing — Knowledge Base
+# Email, Lifecycle and CRM Marketing Knowledge Base
 
 A practitioner knowledge base covering email, lifecycle and CRM marketing: the customer data a programme is built on, the channels it sends through, the operations that run it day to day, and the measurement that proves it worked.
 
-It is written as an **Open Knowledge Format (OKF)** bundle — a directory of plain Markdown files, each one a self-contained concept, linked to the others so the whole thing reads as a graph from any entry point. There is no app to run and no database: clone it, open any file, and follow the links.
+It is written as an **Open Knowledge Format (OKF)** bundle, a directory of plain Markdown files, each one a self-contained concept, linked to the others so the whole thing reads as a graph from any entry point. There is no app to run and no database: clone it, open any file, and follow the links.
 
 ## What is OKF?
 
@@ -20,19 +20,19 @@ See [`references/about-this-bundle.md`](references/about-this-bundle.md) for the
 
 Start at [`index.md`](index.md), then follow the layer your question sits in:
 
-- **[`principles/`](principles/)** — the stances every recommendation should serve (list quality, metrics discipline, the welcome window, engagement as deliverability, …).
-- **[`foundations/`](foundations/)** — the cross-channel operations: customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration, ESP selection, and AI decisioning and personalisation.
-- **[`channels/`](channels/)** — the media you send through: email, SMS and RCS, push, in-app, and direct mail, each with its permission, reach, filtering, technical specifics, constraints, and measurement.
-- **[`measurement/`](measurement/)** — the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, frequentist versus Bayesian inference, and uplift and incrementality.
-- **[`references/`](references/)** — external platform behaviour, the email-intelligence and notification-decisioning research, legislation and compliance, and a glossary.
+- **[`principles/`](principles/)**: the stances every recommendation should serve (list quality, metrics discipline, the welcome window, engagement as deliverability, …).
+- **[`foundations/`](foundations/)**: the cross-channel operations: customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration, ESP selection, and AI decisioning and personalisation.
+- **[`channels/`](channels/)**: the media you send through: email, SMS and RCS, push, in-app, and direct mail, each with its permission, reach, filtering, technical specifics, constraints, and measurement.
+- **[`measurement/`](measurement/)**: the metric tree, holdouts and control groups, attribution, retention and LTV, experiment sizing and volume thresholds, frequentist versus Bayesian inference, and uplift and incrementality.
+- **[`references/`](references/)**: external platform behaviour, the email-intelligence and notification-decisioning research, legislation and compliance, and a glossary.
 
 ## Attribution
 
-Each concept carries a **Citations** section grounded in primary and authoritative sources — standards and RFCs, platform documentation, regulators (FTC, ICO, FCC), and recognised industry and research references. Attribution lives in those Citations sections rather than in a single frontmatter field.
+Each concept carries a **Citations** section grounded in primary and authoritative sources: standards and RFCs, platform documentation, regulators (FTC, ICO, FCC), and recognised industry and research references. Attribution lives in those Citations sections rather than in a single frontmatter field.
 
 ## Community
 
-If you work in this field, the [Email Geeks](https://email.geeks.chat/) community is where a lot of the practitioners behind these sources hang out — a vendor-neutral Slack for email, deliverability, and lifecycle marketing. A good place to ask the questions this bundle doesn't yet answer.
+If you work in this field, the [Email Geeks](https://email.geeks.chat/) community is where a lot of the practitioners behind these sources hang out, a vendor-neutral Slack for email, deliverability, and lifecycle marketing. A good place to ask the questions this bundle doesn't yet answer.
 
 ## Contributing
 
