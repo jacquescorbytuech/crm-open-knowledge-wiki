@@ -9,6 +9,7 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [Customer data and identity](customer-data-and-identity.md) - first-party data, the single customer view, identity resolution, and the CDP/CRM/warehouse split.
 * [Segmentation and data](segmentation-and-data.md) - dynamic versus static segments, overlap, data hygiene, personalisation, and merge tags.
 * [Segmentation models](segmentation-models.md) - RFM, value and lifetime-value tiers, behavioural, demographic, lifecycle-stage, and propensity.
+* [Audience sync](audience-sync.md) - activating CRM segments as ad-platform audiences for targeting and, more valuably, suppression, and why it extends the owned channels rather than being one.
 
 # Plan the lifecycle
 

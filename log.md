@@ -1,5 +1,11 @@
 # Bundle Update Log
 
+## 2026-06-14 (channel coverage expansion)
+* **Directive**: Fill the missing channels, including emerging surfaces, grounded rather than speculative.
+* **Channels**: Added [conversational messaging](/channels/conversational-messaging.md) (WhatsApp and the messaging apps: opt-in, the 24-hour customer-service window, template categories and pricing, quality rating), [voice](/channels/voice.md) (outbound/inbound calls and AI voice agents, anchored on the FCC's February 2024 ruling that an AI voice is "artificial" under the TCPA, with STIR/SHAKEN labelling and holdout measurement), and [wallet passes](/channels/wallet-passes.md) (Apple/Google Wallet as a persistent, push-updatable, location-aware loyalty surface). Registered all three in the [channel index](/channels/index.md) and the [root index](/index.md).
+* **Foundations**: Added [audience sync](/foundations/audience-sync.md) as a foundation rather than a channel, CRM segments activated as Meta Custom Audiences and Google Customer Match for targeting and, more valuably, suppression, framed as renting reach rather than an owned grant. Registered in the [foundations index](/foundations/index.md).
+* **Sourcing**: Grounded in first-party platform and regulator docs (Meta WhatsApp and Messenger, FCC and FTC, Apple PassKit and Google Wallet, Google Ads and Meta Business Help), no fabricated figures, and each new file carries the standard permission, filtering, best-fit, constraints, and holdout-measurement treatment.
+
 ## 2026-06-14 (consent priming and browser push)
 * **Directive**: Cover consent priming, in both the scarce-permission (pre-permission prompt) and the owned-channel (pre-opt-in context) senses, and add browser push as a distinct channel that depends on the same priming.
 * **Channels**: Added [browser push](/channels/browser-push.md) as a Channel concept (Web Push protocol, service worker, VAPID/RFC 8292, per-browser push services, encryption and payload limits, the iOS Home-Screen caveat, and the browser-specific permission penalties), registered it in the [channel index](/channels/index.md) and the [root index](/index.md). Added a named pre-permission prompt section to [push](/channels/push.md) explaining the one-shot OS dialog and the soft-ask fix.

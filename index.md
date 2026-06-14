@@ -28,7 +28,7 @@ The bundle is organised around the work itself. The **principles** are the stanc
 
 # Channels
 
-* [Channels](channels/) - the CRM and lifecycle channels themselves: email, SMS and RCS, push, browser push, in-app, and direct mail, with their permission, reach, filtering, constraints, and measurement.
+* [Channels](channels/) - the CRM and lifecycle channels themselves: email, SMS and RCS, conversational messaging, push, browser push, in-app, wallet passes, voice, and direct mail, with their permission, reach, filtering, constraints, and measurement.
 
 # Measurement
 
