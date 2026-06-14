@@ -20,6 +20,9 @@ Three systems read the transactional-versus-marketing line, which is why so many
 
 # The contamination trap
 
+> [!warning] Promotion can flip a transactional message's legal class
+> Pad an order confirmation with enough marketing and CAN-SPAM judges it a commercial message: it now needs marketing consent and an unsubscribe path, and it drags the transactional stream's reputation toward the marketing one's.
+
 The categories are defined by primary purpose, and the moment a transactional message is padded with promotion the legal classification can flip. Under the US CAN-SPAM rule a message is judged on its primary purpose, and a "transactional or relationship" message that is dressed up with enough marketing content becomes a commercial message, subject to the unsubscribe and identification requirements that transactional mail is otherwise exempt from. The practical failure is the order confirmation stuffed with recommended products and a sale banner: it now needs marketing consent and an unsubscribe path, and it drags the transactional stream's reputation toward the marketing stream's.
 
 The reverse error is just as common: labelling a genuine marketing send as "transactional" (a "your account" email that is really a campaign) to dodge consent and unsubscribe rules. Regulators and inbox providers both judge on content and intent, not on the label you apply, so this does not work and risks a complaint-driven reputation hit.

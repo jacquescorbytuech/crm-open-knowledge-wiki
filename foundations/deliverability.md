@@ -34,7 +34,10 @@ Rules for the ramp:
 
 # How to recover from spam
 
-If you are landing in spam, work the causes in order. Pushing more volume never fixes it, it deepens it.
+If you are landing in spam, work the causes in order.
+
+> [!warning] Pushing more volume never fixes spam placement
+> It deepens it. The engaged core is what you rebuild on, not a bigger send.
 
 1. Fix authentication first. Confirm SPF, DKIM, and aligned DMARC all pass with an end-to-end test, this is the price of entry and a silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
 2. Auto-suppress hard bounces immediately, before the next send (see below). Bouncing into dead addresses is a strong negative signal.
@@ -52,6 +55,9 @@ Complaint rate (recipients marking your mail as spam) is a hard deliverability l
 * Watch it in Google Postmaster Tools (the Spam Rate dashboard) and Microsoft SNDS, per sending domain and IP.
 * Track it weekly in steady state, and per send while warming or recovering.
 * Act before 0.1%, not at it. A rising trend below the line is the warning, treat 0.1% as a ceiling you never reach, not a budget you spend.
+
+> [!danger] 0.3% is a hard breach, not a target
+> The bulk sender rules cap the reported spam rate at 0.3%. At or above it you are in breach, expect blocking, and must run the spam-recovery procedure. Manage to 0.1% as the safe ceiling, well below the line.
 
 Action thresholds:
 

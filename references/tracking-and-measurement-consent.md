@@ -6,15 +6,19 @@ tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, g
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# This is not legal advice
+> [!caution] This is not legal advice
+> This orients you to a fast-moving area; it is not legal advice. The rulings below are recent and obligations turn on where your recipients are. Take qualified advice for your specific situation.
 
-This orients you to a fast-moving area; it is not legal advice. The rulings below are recent and obligations turn on where your recipients are. Take qualified advice for your specific situation. See [legislation and compliance](/references/legislation-and-compliance.md) for the sending-consent regimes this sits alongside.
+See [legislation and compliance](/references/legislation-and-compliance.md) for the sending-consent regimes this sits alongside.
 
 # Two different consents: to send, and to track
 
 Most compliance discussion is about the right to *send*: may you put a marketing message in this person's inbox. That is governed by [PECR, the GDPR, CAN-SPAM and the rest](/references/legislation-and-compliance.md). There is a second, separate question that owned-channel programmes routinely overlook: may you *track* what the recipient does with the message, the open pixel that fires when images load and the redirect that records a click.
 
-In the EU these are not the same permission. The right to send rests on consent or a lawful basis under the GDPR; the right to drop a tracking pixel rests on **Article 5(3) of the ePrivacy Directive**, the same provision that governs cookies. A pixel reads from and writes to the recipient's device, so it falls under the cookie rule, and that rule generally requires prior consent of its own. You can therefore have a clean, fully consented right to email someone and still have no lawful basis to measure their opens.
+In the EU these are not the same permission. The right to send rests on consent or a lawful basis under the GDPR; the right to drop a tracking pixel rests on **Article 5(3) of the ePrivacy Directive**, the same provision that governs cookies. A pixel reads from and writes to the recipient's device, so it falls under the cookie rule, and that rule generally requires prior consent of its own.
+
+> [!important] The right to send is not the right to track
+> You can have a clean, fully consented right to email someone and still have no lawful basis to measure their opens.
 
 # The Article 5(3) baseline
 

@@ -20,6 +20,9 @@ The world splits into opt out and opt in, and the split runs by channel and regi
 
 Consent under the GDPR standard means freely given, specific, informed, and unambiguous, by a clear affirmative action. A pre ticked box is not consent.
 
+> [!danger] SMS consent is never inherited from email
+> The TCPA bar for marketing texts is prior express written consent, a separate and stronger grant than email consent. An email subscriber has not consented to SMS. Capture it on its own, or the send is a breach.
+
 # Capture that holds up
 
 Collect consent you can evidence: what they agreed to, when, and how. Keep channel grants separate, because email permission is not SMS permission and is not push permission. State who you are and what they will receive at the point of capture. Prefer an explicit, granular opt in wherever an opt in regime applies, and record the source so a weak channel can be traced and fixed. See [list building](/foundations/list-building.md).

@@ -8,7 +8,10 @@ timestamp: 2026-06-14T00:00:00Z
 
 # Triggers and goals
 
-An automation fires from an event (signup, purchase, browse, inactivity) rather than a calendar. Every automation needs a defined objective before it is built, or you cannot measure or improve it. See [set a goal before you build](/principles/goal-before-build.md). Always test the trigger, content, and timing before going live, because an error in an automation runs at scale, silently.
+An automation fires from an event (signup, purchase, browse, inactivity) rather than a calendar. Every automation needs a defined objective before it is built, or you cannot measure or improve it. See [set a goal before you build](/principles/goal-before-build.md).
+
+> [!warning] An error in an automation runs at scale, silently
+> A broadcast mistake reaches one audience once; a broken flow keeps misfiring to everyone who enters it. Test the trigger, content, and timing before going live.
 
 Before you build any flow, write down four things: the entry trigger (the event that admits a contact), the exit condition (the event that pulls them out, almost always the conversion the flow exists to drive), the goal metric you will read it against, and the suppression rules that override it. Get these on paper first; the message copy is the easy part.
 

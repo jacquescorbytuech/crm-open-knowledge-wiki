@@ -13,7 +13,10 @@ This is a knowledge bundle in Open Knowledge Format (OKF) v0.1, an open, vendor 
 
 # Conformance
 
-Every concept file carries a frontmatter block with a required `type` field, and usually `title`, `description`, `tags`, and `timestamp`. The reserved filenames `index.md` (a directory listing for progressive disclosure) and `log.md` (a chronological change history) appear at the bundle root and in some subdirectories. Cross links are bundle relative, beginning with a slash. Broken links are permitted by the spec and simply mark knowledge not yet written. Attribution lives in each concept's Citations section rather than in a single frontmatter resource.
+Every concept file carries a frontmatter block with a required `type` field, and usually `title`, `description`, `tags`, and `timestamp`. The reserved filenames `index.md` (a directory listing for progressive disclosure) and `log.md` (a chronological change history) appear at the bundle root and in some subdirectories. Cross links are bundle relative, beginning with a slash. Attribution lives in each concept's Citations section rather than in a single frontmatter resource.
+
+> [!note] Broken links are intentional
+> Broken links are permitted by the spec and simply mark knowledge not yet written.
 
 # Where the content comes from
 

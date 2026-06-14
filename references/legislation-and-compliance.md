@@ -6,9 +6,8 @@ tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# This is not legal advice
-
-The following orients you to the major regimes; it is not legal advice. Obligations turn on where your recipients are, not only where you are, so a UK sender mailing EU and US recipients is subject to several at once. Take qualified advice for your specific situation.
+> [!caution] This is not legal advice
+> The following orients you to the major regimes; it is not legal advice. Obligations turn on where your recipients are, not only where you are, so a UK sender mailing EU and US recipients is subject to several at once. Take qualified advice for your specific situation.
 
 # The main regimes
 
@@ -27,7 +26,10 @@ The FTC distils CAN-SPAM into a short list that applies to every commercial emai
 
 # PECR and the breadth of electronic mail
 
-PECR regulation 22 prohibits unsolicited electronic mail marketing to individuals unless they have consented or you meet the soft opt in: an existing customer, sold similar products, given a clear opt out both when their details were collected and in every message. The ICO defines electronic mail broadly, covering email, text messages, picture and video messages, voicemail, in-app messages, and direct messages on social media, so SMS and in-app messaging fall under these rules, not only email. Consent takes the UK GDPR standard. Marketing to corporate subscribers does not require consent, though honouring objections is good practice.
+> [!danger] You must not market to individuals without consent or the soft opt in
+> PECR regulation 22 prohibits unsolicited electronic mail marketing to individuals unless they have consented or you meet the soft opt in: an existing customer, sold similar products, given a clear opt out both when their details were collected and in every message.
+
+The ICO defines electronic mail broadly, covering email, text messages, picture and video messages, voicemail, in-app messages, and direct messages on social media, so SMS and in-app messaging fall under these rules, not only email. Consent takes the UK GDPR standard. Marketing to corporate subscribers does not require consent, though honouring objections is good practice.
 
 # TCPA, the higher bar for SMS
 

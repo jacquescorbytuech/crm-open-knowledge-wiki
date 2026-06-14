@@ -34,6 +34,9 @@ Steps:
 3. End with `-all` (hardfail, reject anything not listed) once you are confident the list is complete. Use `~all` (softfail) only as a temporary state while you confirm coverage.
 4. Publish exactly one SPF record per domain. Two SPF records is a permanent error and voids SPF entirely.
 
+> [!warning] One SPF record, within 10 lookups
+> Two SPF records voids SPF entirely, and chained includes that exceed the 10 DNS lookup limit return permerror, which most receivers treat as a failure. Both fail quietly. Audit the lookup count and keep a small, fixed set of senders.
+
 The pitfall: SPF allows at most 10 DNS lookups when a receiver evaluates the record, counting every `include`, `a`, `mx`, `ptr`, and `redirect`. Chained includes blow this limit quietly and the record then returns permerror, which most receivers treat as a failure. Audit the lookup count, flatten or remove unused includes, and prefer a small fixed set of senders.
 
 # How to set up DKIM
@@ -58,6 +61,9 @@ Rotate keys on a schedule. A sensible default is every six to twelve months, and
 # DMARC rollout
 
 DMARC is a TXT record at `_dmarc.<domain>`. Its policy decides what receivers do when a message fails both SPF and DKIM alignment, and `rua` collects the aggregate reports that tell you who is sending as you.
+
+> [!note] Alignment is the part people miss
+> A message can pass raw SPF or DKIM and still fail DMARC, because the domain it authenticated does not match the visible From domain. Reading the records in isolation will not surface this; only an end-to-end test will.
 
 Alignment is the part people miss. A message passes DMARC only if SPF or DKIM passes and the domain it authenticated is aligned with the visible From domain. SPF alignment compares the From domain to the SPF (envelope/return-path) domain, DKIM alignment compares the From domain to the `d=` in the signature. A message can pass raw SPF or DKIM and still fail DMARC because the authenticated domain does not match From. Relaxed alignment (the default) allows a subdomain to align with its organisational domain, strict alignment requires an exact match.
 

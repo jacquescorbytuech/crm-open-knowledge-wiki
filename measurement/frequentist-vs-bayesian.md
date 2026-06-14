@@ -16,7 +16,10 @@ The frequentist approach asks: if there were truly no difference, how surprising
 
 The discipline it demands is that you fix the sample size in advance and read the result once, at the end. Every method in [sample size and power](/measurement/sample-size-and-power.md) and [volume thresholds](/measurement/volume-thresholds.md) is frequentist. This is the default for good reason: it is well understood, needs no assumptions about prior belief, and the planning maths is simple.
 
-What it does not give you is the thing stakeholders actually want to say. A p-value of 0.03 does not mean a 97% chance the variant wins. It means the data would be this extreme only 3% of the time if the variant were identical, which is a more slippery statement and routinely misreported.
+What it does not give you is the thing stakeholders actually want to say.
+
+> [!warning] A p-value is not the probability of winning
+> A p-value of 0.03 does not mean a 97% chance the variant wins. It means the data would be this extreme only 3% of the time if the variant were identical, which is a more slippery statement and routinely misreported.
 
 # The Bayesian reading
 

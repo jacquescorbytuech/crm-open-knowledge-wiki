@@ -12,7 +12,12 @@ Attribution tells you which messages preceded a conversion. It cannot tell you w
 
 # The always-on global holdout
 
-Hold back a small, randomly selected share of the addressable audience from all lifecycle messaging, continuously. The gap between the holdout and the mailed population, measured on conversion, retention, and revenue, is the incremental contribution of the entire programme. It is the single most valuable measurement a CRM team can run, because it answers the question executives rarely ask out loud: what would happen to revenue if we sent nothing? Keep it small, keep it random, and keep it permanent.
+Hold back a small, randomly selected share of the addressable audience from all lifecycle messaging, continuously. The gap between the holdout and the mailed population, measured on conversion, retention, and revenue, is the incremental contribution of the entire programme.
+
+> [!important] The question a global holdout answers
+> It is the single most valuable measurement a CRM team can run, because it answers the question executives rarely ask out loud: what would happen to revenue if we sent nothing?
+
+Keep it small, keep it random, and keep it permanent.
 
 # Per-campaign control groups
 

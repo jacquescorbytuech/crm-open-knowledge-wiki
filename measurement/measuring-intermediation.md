@@ -12,7 +12,10 @@ When a platform changes how it filters, ranks, or summarises mail (the dated cha
 
 # Most senders should not try
 
-Reading these effects needs hundreds of thousands of sends per cell, often millions, which is far above what a typical sender has. Below the volume threshold the kit gives wide confidence intervals around zero. Take the diagnostic and leave the methodology. See [volume thresholds](/measurement/volume-thresholds.md).
+> [!warning] Below the volume floor this kit reads zero
+> Reading these effects needs hundreds of thousands of sends per cell, often millions, which is far above what a typical sender has. Below the volume threshold the kit gives wide confidence intervals around zero. Take the diagnostic and leave the methodology.
+
+See [volume thresholds](/measurement/volume-thresholds.md).
 
 # The shared probes
 

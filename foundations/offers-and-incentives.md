@@ -54,7 +54,8 @@ A price incentive is the right tool only when the barrier is genuinely price. Us
 * If the customer wants the product but the price is the blocker, a measured discount is the direct lever, and the break-even above tells you whether it pays.
 * If the barrier is anything else, reach for a non-price lever first, because it moves the decision without spending margin or training the discount habit. Hesitation about timing or stock favours early or exclusive access. Friction at checkout favours free shipping or returns. Uncertainty about fit favours an add-on, content, or a try-before-you-buy. Wanting to feel like an insider favours status in a loyalty programme. A weak basket favours a bundle that raises perceived value without cutting headline price.
 
-Default to non-price unless you can name the price barrier, then test the chosen lever against a holdout so the choice rests on measured effect rather than the assumption above.
+> [!tip] Default to non-price unless you can name the price barrier
+> A price incentive is the right tool only when the barrier is genuinely price. If you cannot name the price barrier, reach for a non-price lever first, then test the chosen lever against a holdout.
 
 # Offer windows and targeting
 

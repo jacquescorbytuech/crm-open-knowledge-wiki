@@ -61,6 +61,9 @@ Merge or keep separate is the live decision, and the asymmetry of the costs shou
 3. **Watch for shared identifiers that are not one person.** A household email, a shared family device, or a recycled phone number will pull distinct people together under a naive rule. Require a second corroborating signal before merging on an identifier known to be shareable.
 4. **Make merges reversible.** Because a false merge is the expensive error, keep the source records and lineage (as above) so a merge can be unwound when a later signal contradicts it.
 
+> [!caution] A false merge is the expensive error
+> Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
+
 # CRM, CDP, and warehouse
 
 Three systems are easy to confuse, and most stacks run more than one.

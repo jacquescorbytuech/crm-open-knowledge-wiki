@@ -24,7 +24,12 @@ The engagement a mailbox provider acts on, dwell time, scrolling, replies, delet
 * Click through and downstream conversion for outcome.
 * Reply rate, one click unsubscribe timing, and complaint rate for relationship health.
 
-Clicks are sturdier than opens, because providers do not pre-cache the page behind a link, but they are not clean either. Security scanners, notably at Microsoft properties, follow links at scale and can inflate click counts to absurd levels, so a naive click rate at those providers is unreliable. A workable rule is to treat clicks more than a few minutes after delivery as probably human. And do not confuse a recipient who never loads images, often a real person with strict privacy or security settings, with an abandoned address: purging the former to tidy a rate removes real readers.
+Clicks are sturdier than opens, because providers do not pre-cache the page behind a link, but they are not clean either.
+
+> [!warning] Scanner clicks inflate Microsoft click rates
+> Security scanners, notably at Microsoft properties, follow links at scale and can inflate click counts to absurd levels, so a naive click rate at those providers is unreliable. A workable rule is to treat clicks more than a few minutes after delivery as probably human.
+
+And do not confuse a recipient who never loads images, often a real person with strict privacy or security settings, with an abandoned address: purging the former to tidy a rate removes real readers.
 
 Optimising for opens through misdirection lifts delete without read at the same rate, which trains the provider that your recipients open and discard, which damages future placement. Short term wins on cheap metrics compound into deliverability damage.
 

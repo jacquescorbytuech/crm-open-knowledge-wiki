@@ -21,6 +21,33 @@ Every file is a concept and its path is its identity, so changes follow the bund
 - **House style.** Plain Markdown, prose over bullet-soup where a paragraph reads better, and no em-dashes in concept files (use commas or restructure).
 - **Update the reserved files.** If you add or rename a concept, register it in the relevant `index.md`, and add a short entry to [`log.md`](log.md) describing the change and its sourcing.
 
+## Callouts
+
+The bundle is plain Markdown and stays readable as plain Markdown. It is also published through [Quartz](https://quartz.jzhao.xyz/), which renders Obsidian-style callouts: the coloured, icon'd boxes used for warnings, notes, worked examples, and the like. They are pure Markdown, so they need no configuration, and they degrade to ordinary blockquotes anywhere callouts are not supported. GitHub renders a subset (`[!NOTE]`, `[!TIP]`, `[!WARNING]`, `[!IMPORTANT]`, `[!CAUTION]`) natively.
+
+A callout is a blockquote whose first line is `[!type]`, optionally followed by a custom title. Every line of the box, including blank separators, must begin with `>`:
+
+```markdown
+> [!warning] Pushing more volume never fixes spam placement
+> It deepens it. The engaged core is what you rebuild on, not a bigger send.
+```
+
+Omit the title text to use the type's default ("Warning", "Note", and so on). Add a trailing `-` (`[!type]-`) to collapse the box by default, or `+` to make it expandable but open. You can nest callouts with extra `>` and put any Markdown inside.
+
+Use them sparingly. This is a dense reference, and a callout earns its place by lifting one sharp, self-contained point out of the prose, not by boxing a whole paragraph or restating a heading. Most pages need none. Pick the type by meaning:
+
+- **`warning`** (orange) for a genuine gotcha or a "don't do this" the reader is likely to get wrong. This is the workhorse type here.
+- **`danger`** (red) for a hard limit with real consequences: a legal or compliance breach, getting blocked, an irreversible action. Reserve it, an orange warning is usually enough.
+- **`note`** or **`info`** (blue, cyan) for a caveat or piece of context worth pulling out of the flow.
+- **`tip`** (green) for an actionable best-practice nudge or a call to action. Green should mean "do this", so do not green-box ordinary statements.
+- **`example`** (purple) for a concrete worked example or calculation, wrapping numbers that are already in the page.
+- **`bug`** (red), **`question`** (yellow), **`abstract`** (light blue) and the rest are available; see the [Quartz callout list](https://quartz.jzhao.xyz/features/callouts).
+
+Keep titles short and in sentence case, and follow the bundle's house style inside the box: no em-dashes, no invented facts, and no boxing of tables, the **Related** list, or the **Citations** section. A callout should wrap text that already reads as prose elsewhere on the page, not introduce new claims.
+
+> [!tip] Before adding one
+> If you are unsure whether a callout helps, leave it as prose. The bundle should read cleanly without any of them.
+
 ## Contribution rules
 
 ### Vendor neutrality and disclosure

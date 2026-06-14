@@ -16,7 +16,10 @@ A subscriber who reads your emails is more likely to click a paid ad, search for
 
 # Caveat
 
-The marginal cost framing has an asterisk in 2026. Sending to dead weight is no longer free, because the engagement drag is real. The impression is free. The reputational cost of a bad impression is not. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+The marginal cost framing has an asterisk in 2026. Sending to dead weight is no longer free, because the engagement drag is real.
+
+> [!warning] The impression is free, the bad impression is not
+> The reputational cost of a bad impression is real even when the send costs nothing. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 # Related
 

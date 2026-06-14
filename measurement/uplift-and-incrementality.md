@@ -35,7 +35,8 @@ Incremental conversions     = incremental_rate (absolute) x audience_size
 
 Treat the result as a distribution, not a point. The absolute lift is significant only if the difference between the two proportions clears the noise, which is the same two proportion test used to plan the test in the first place. See [sample size and power](/measurement/sample-size-and-power.md) for the calculation and [volume thresholds](/measurement/volume-thresholds.md) for the sends per cell a given effect needs.
 
-A worked read: a winback flow goes to 100,000 eligible users, 5,000 held back. Treated convert at 4.0%, control at 3.4%. Absolute lift is 0.6pp, relative uplift 17.6%, and the flow drove roughly 600 incremental conversions across the treated 95,000, not the ~3,800 a last touch report would have claimed. The gap between those two numbers is the entire point of the exercise.
+> [!example] A worked read
+> A winback flow goes to 100,000 eligible users, 5,000 held back. Treated convert at 4.0%, control at 3.4%. Absolute lift is 0.6pp, relative uplift 17.6%, and the flow drove roughly 600 incremental conversions across the treated 95,000, not the ~3,800 a last touch report would have claimed. The gap between those two numbers is the entire point of the exercise.
 
 For brand or offline activity that cannot be split at the person level, randomise geographies instead and read the difference against control regions. See the geo experiment section in [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 

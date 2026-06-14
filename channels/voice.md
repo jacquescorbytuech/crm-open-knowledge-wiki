@@ -16,7 +16,12 @@ The most heavily regulated channel in the bundle. In the US the TCPA governs mar
 
 # AI voice agents and the consent line
 
-The channel's frontier is the AI voice agent: software that converses in a synthetic or cloned voice and can scale a persuasive call across a whole list. Treat it as fully in scope rather than a loophole. In February 2024 the FCC ruled that an AI-generated voice is an "artificial or prerecorded voice" under the TCPA, so an outbound marketing call placed with an AI voice is a robocall and needs prior express written consent. The new capability does not change the permission: an AI agent calling cold is an illegal robocall, exactly as a recorded message would be. The legitimate uses are inbound (the customer called you) and outbound to consumers who gave written consent, where the agent handles reminders, renewals, qualification, or support, and discloses that it is automated. The economics invert the old limit, voice was always capped by human agent time, which AI removes, which is precisely why the consent and disclosure discipline matters more here, not less. See [consent and preferences](/foundations/consent-and-preferences.md).
+The channel's frontier is the AI voice agent: software that converses in a synthetic or cloned voice and can scale a persuasive call across a whole list. Treat it as fully in scope rather than a loophole.
+
+> [!danger] An AI voice agent calling cold is an illegal robocall
+> In February 2024 the FCC ruled that an AI-generated voice is an "artificial or prerecorded voice" under the TCPA, so an outbound marketing call placed with an AI voice is a robocall and needs prior express written consent. The new capability does not change the permission: an AI agent calling cold is an illegal robocall, exactly as a recorded message would be.
+
+The legitimate uses are inbound (the customer called you) and outbound to consumers who gave written consent, where the agent handles reminders, renewals, qualification, or support, and discloses that it is automated. The economics invert the old limit, voice was always capped by human agent time, which AI removes, which is precisely why the consent and disclosure discipline matters more here, not less. See [consent and preferences](/foundations/consent-and-preferences.md).
 
 # Filtering and editing
 

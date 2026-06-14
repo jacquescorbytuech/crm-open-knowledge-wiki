@@ -12,7 +12,12 @@ Subscribers are at peak engagement immediately after sign up. Maximise this wind
 
 # In practice
 
-The first email must deliver on whatever the signup promised. Failing here erodes trust before the relationship has started, and it is the most common own goal in onboarding. Do not lead the welcome sequence with a discount: it trains customers to game the system and attracts the wrong subscriber. See [automation and sequences](/foundations/automation-and-sequences.md) and [list building](/foundations/list-building.md).
+The first email must deliver on whatever the signup promised. Failing here erodes trust before the relationship has started, and it is the most common own goal in onboarding.
+
+> [!warning] Do not lead with a discount
+> Opening the welcome sequence with a discount trains customers to game the system and attracts the wrong subscriber.
+
+See [automation and sequences](/foundations/automation-and-sequences.md) and [list building](/foundations/list-building.md).
 
 # Related
 

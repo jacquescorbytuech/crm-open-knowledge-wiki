@@ -20,6 +20,9 @@ You upload customer identifiers, email, phone, and sometimes name and address, h
 
 # Consent and the privacy line
 
+> [!caution] Suppression must follow the contact into paid
+> A contact who unsubscribed or withdrew consent should be removed from synced audiences, not just from email, or you are pursuing in paid someone who asked you to stop.
+
 Syncing identifiers to an ad platform is a data-sharing act, so treat it as processing that needs a lawful basis and that your privacy notice must disclose, not a free internal use of the list. Honour suppression and withdrawal here as you do on the sending channels: a contact who unsubscribed or withdrew consent should be removed from synced audiences, not just from email, or you are pursuing in paid someone who asked you to stop. Match on hashed identifiers, and govern the sync list with the same suppression source as the channels. See [consent and preferences](/foundations/consent-and-preferences.md).
 
 # Operating it

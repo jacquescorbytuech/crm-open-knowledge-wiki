@@ -12,6 +12,9 @@ Orchestration is the layer that decides, for a given customer at a given moment,
 
 # One contact strategy, not many
 
+> [!note] The unit of fatigue is the customer, not the channel
+> A customer who got an email, a push, and an SMS in an afternoon experienced one over-contacted relationship, not three well-run channels. Set one contact budget across all channels, not a per-channel quota each team fills.
+
 The unit of fatigue is the customer, not the channel. A customer who got an email, a push, and an SMS in an afternoon experienced one over contacted relationship, not three well run channels. A contact strategy sets the total acceptable contact across all channels, with priority rules for what wins when several messages are eligible at once. The channel teams optimise inside that budget; they do not each spend it in full. Paid media counts too: a customer chased by a retargeting ad the day after they bought is the contact strategy leaking into the channel it most often forgets, which is why [audience sync](/foundations/audience-sync.md) brings paid under the same governance and suppression rules.
 
 # Spending the single contact budget

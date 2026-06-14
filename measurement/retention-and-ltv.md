@@ -62,7 +62,8 @@ LTV:CAC      = LTV / CAC
 CAC payback  = number of periods until cumulative margin >= CAC
 ```
 
-Continuing the hypothetical above, suppose CAC is 30. Then LTV:CAC is 50.41 / 30 = 1.7, below the three to one marker, so this cohort is acquired too expensively or retained too poorly to be comfortable. For payback, accumulate margin period by period until it clears 30: month 0 reaches 20.00, month 1 reaches 31.88, so this cohort pays back in month 1. The ratio judges whether the customer is worth acquiring at all; payback judges how long your cash is tied up getting there.
+> [!example] Reading LTV:CAC and payback
+> Continuing the hypothetical above, suppose CAC is 30. Then LTV:CAC is 50.41 / 30 = 1.7, below the three to one marker, so this cohort is acquired too expensively or retained too poorly to be comfortable. For payback, accumulate margin period by period until it clears 30: month 0 reaches 20.00, month 1 reaches 31.88, so this cohort pays back in month 1. The ratio judges whether the customer is worth acquiring at all; payback judges how long your cash is tied up getting there.
 
 # How to segment LTV, and why
 

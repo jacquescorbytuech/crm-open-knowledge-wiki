@@ -40,6 +40,9 @@ If you work in this field, the [Email Geeks](https://email.geeks.chat/) communit
 
 Corrections, sharper explanations, and missing concepts are welcome. The bundle is **vendor-neutral**: cite tools to show how something works, never to sell them, and disclose any relationship you have with a product or vendor you add or cite. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the conventions and the rules on disclosure and self-promotion.
 
+> [!TIP]
+> Spotted something missing or wrong? Open an issue or a pull request. A correction with a primary source attached is the most useful kind.
+
 ## License
 
 See [`LICENSE`](LICENSE).

@@ -24,7 +24,10 @@ Only a controlled experiment, treatment against a randomised holdout or geo cont
 
 # What this means for a lifecycle programme
 
-Owned channel attribution looks easy because the click is yours to track, which is exactly the trap: a tracked click is not proof the send caused the outcome. Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome, and anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
+> [!warning] A tracked click is not proof of cause
+> Owned channel attribution looks easy because the click is yours to track, which is exactly the trap: a tracked click is not proof the send caused the outcome.
+
+Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome, and anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
 
 # Related
 
