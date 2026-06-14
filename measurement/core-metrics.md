@@ -6,7 +6,7 @@ tags: [metrics, metric-tree, north-star, guardrails, kpis, leading-indicators]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# The metric tree
+## The metric tree
 
 A lifecycle programme is measured in layers, each one closer to money than the last. Read them as a tree, not a list, because a win at one level only counts if it survives to the next.
 
@@ -15,7 +15,7 @@ A lifecycle programme is measured in layers, each one closer to money than the l
 * **Retention.** Whether the customer stays, repeats, and remains reachable over time. Where the economics of the programme are actually decided. See [retention and LTV](/measurement/retention-and-ltv.md).
 * **Revenue and value.** Incremental revenue, margin, and lifetime value. The level the business cares about, and the one the others should ladder up to.
 
-# Decision metrics versus vanity metrics
+## Decision metrics versus vanity metrics
 
 A decision metric changes what you do when it moves. A vanity metric only changes how you feel. Open rate rising while conversion is flat is a vanity result, and after Mail Privacy Protection inflated opens it is often not even real.
 
@@ -27,11 +27,11 @@ The test for any metric on a dashboard is one question: if this number moved ten
 
 Most dashboards carry more vanity than decision metrics. The work is demoting the decoration, not adding more of it.
 
-# A North Star and its guardrails
+## A North Star and its guardrails
 
 Pick one North Star metric that best proxies the value the programme creates, low enough in the tree to be honest and high enough to matter, often incremental revenue per recipient or a retention measure.
 
-# How to choose a North Star
+## How to choose a North Star
 
 A candidate metric earns the role only if it passes all three of these. Treat them as a decision rule, not a wish list.
 
@@ -49,7 +49,7 @@ A candidate metric earns the role only if it passes all three of these. Treat th
 
 Prefer the version of a good metric that is measured incrementally, against a holdout, rather than as a gross total a last-touch report would claim. See [uplift and incrementality](/measurement/uplift-and-incrementality.md) and [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
-# How to set guardrails
+## How to set guardrails
 
 Any single optimised number can be hit by gaming the things it ignores. Guardrails are counter-metrics you cap so the North Star cannot be won by harm. Pick a North Star, then ask how a lazy optimiser would cheat it, and put a ceiling on each cheat.
 
@@ -60,7 +60,7 @@ Any single optimised number can be hit by gaming the things it ignores. Guardrai
 
 The rule: a North Star move only counts if every guardrail stayed inside its cap. Optimising a North Star without guardrails is how a programme hits its target by burning the list to do it. Set the cap levels from your own baseline and tolerance, not from invented benchmarks; see [volume thresholds](/measurement/volume-thresholds.md) and [sample size and power](/measurement/sample-size-and-power.md).
 
-# Tie metrics to the lifecycle
+## Tie metrics to the lifecycle
 
 Different stages are judged on different levels of the tree. A single blended dashboard hides all of this, because a stage doing its job and a stage failing average out to a flat number. Give each stage one decision metric it lives or dies on.
 
@@ -73,13 +73,13 @@ Different stages are judged on different levels of the tree. A single blended da
 
 Read retention as a cohort, not a snapshot, so a flood of new users cannot mask churn in older ones. See [lifecycle mapping](/foundations/lifecycle-mapping.md) and [retention and LTV](/measurement/retention-and-ltv.md).
 
-# Leading and lagging indicators
+## Leading and lagging indicators
 
 A North Star like incremental revenue per recipient or cohort retention is a lagging indicator: it tells you the truth, but late, after the cohort has had time to stay or leave. You cannot steer a quarter on a number you only learn at the end of it.
 
 So watch leading indicators alongside it: earlier, movable signals that tend to precede the lagging one. Activation in week one leads retention at month three; click-to-conversion on a flow leads its incremental revenue. The discipline is using leading indicators to act fast and lagging indicators to confirm the action worked, never trusting a leading move until the lagging number follows. A leading indicator that stops predicting its lagging partner has decayed into a vanity metric, and the demotion test applies again.
 
-# Related
+## Related
 
 * [Metrics are directional](/principles/metrics-are-directional.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
@@ -90,6 +90,6 @@ So watch leading indicators alongside it: earlier, movable signals that tend to 
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 
-# Citations
+## Citations
 
 [1] [Apple, Mail Privacy Protection (Apple Support)](https://support.apple.com/guide/iphone/protect-mail-activity-iphd22a4a3a8/ios)

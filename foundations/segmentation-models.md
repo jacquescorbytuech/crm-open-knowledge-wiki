@@ -6,15 +6,15 @@ tags: [segmentation, rfm, clv, propensity, behavioural, lifecycle, framework, sc
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What this is
+## What this is
 
 Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene, and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
 
-# RFM
+## RFM
 
 RFM scores each customer on three axes: Recency (how recently they bought), Frequency (how often), and Monetary value (how much). It originated in mid-twentieth-century direct and catalogue marketing and remains the most durable behavioural model because it needs only transaction data and predicts future behaviour well. Customers who score high on all three are your core; high-monetary but low-recency are your at-risk best customers, the most valuable reactivation target you have.
 
-# How to compute RFM
+## How to compute RFM
 
 Fix a lookback window first, the period of transaction history you score against. A year is a common default for most retail; shorter for high-frequency categories, longer for considered purchases bought once or twice a year. Everything below is computed inside that window.
 
@@ -39,11 +39,11 @@ low R, low F, low M     1-1-1         dormant, low value          minimal spend 
 
 The recurring two patterns to separate by hand are high-RFM (nurture, do not discount what they would pay for) and high-value lapsing (win-back, where a real offer is justified because the customer is worth recovering).
 
-# Value and lifetime-value tiers
+## Value and lifetime-value tiers
 
 Value segmentation tiers the audience by what each customer is worth, usually by customer lifetime value (CLV): the total past and predicted spend of a customer over the relationship. Tiering by CLV lets the programme spend where the return is, more attention and better offers to the top tier, efficient automation to the long tail. It is the model that connects segmentation to the economics in [retention and LTV](/measurement/retention-and-ltv.md).
 
-# A simple CLV for tiering
+## A simple CLV for tiering
 
 You do not need a probabilistic model to start tiering. Two pragmatic approaches:
 
@@ -57,37 +57,37 @@ CLV (simple) = average order value x gross margin % x purchase frequency per yea
 
 Use margin, not revenue, so the tiers reflect what a customer is actually worth to the business. Expected years retained can be seeded from your observed retention rate before you have anything better. Treat this as a tiering input, not a precise forecast. For the proper retention-curve and probabilistic methods, and the pitfalls of each, see [retention and LTV](/measurement/retention-and-ltv.md).
 
-# Behavioural, demographic, and firmographic
+## Behavioural, demographic, and firmographic
 
 * **Behavioural** segmentation divides on what customers do: purchases, product usage, browse patterns, engagement. It is usually the most actionable for lifecycle marketing because behaviour predicts behaviour.
 * **Demographic** segmentation divides on who customers are: age, location, income, gender. Easy to capture, but a weaker predictor of action than behaviour.
 * **Firmographic** segmentation is the B2B equivalent of demographic, dividing organisations by industry, size, and revenue.
 
-# Lifecycle-stage
+## Lifecycle-stage
 
 Lifecycle-stage segmentation divides the audience by where each customer sits in the journey, the acquisition, onboarding, engagement, retention, and winback stages from [lifecycle mapping](/foundations/lifecycle-mapping.md). It is less a competing model than the organising frame the others operate inside: you might run an RFM model within the engaged stage and a recency model within the lapsing one.
 
-# Combining RFM with lifecycle stage
+## Combining RFM with lifecycle stage
 
 The clean way to combine the two is to nest, not cross. Use lifecycle stage as the outer frame and apply RFM only inside the stage where it earns its keep. Two RFM axes already encode lifecycle signal (recency separates engaged from lapsing), so crossing the full 555 code against every stage just re-splits the same customers and multiplies cells you cannot send to.
 
 A workable pattern: let stage decide the message (onboarding sequence, retention nurture, winback), and let RFM decide priority and offer depth within that stage. In the engaged stage, RFM tier sets who gets VIP treatment; in the lapsing stage, monetary score sets how hard you bid to win them back. That keeps the segment count to stage times a few RFM tiers, not stage times 125. The same overlap discipline and dynamic-versus-static handling lives in [segmentation and data](/foundations/segmentation-and-data.md).
 
-# Propensity
+## Propensity
 
 Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, and like all of it, they are only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
 A propensity score answers who is likely to act, which is not the same as who your sending changes. The first keeps messaging people who would have acted anyway; the second is the uplift question, and it needs a randomised holdout to answer honestly. Treat propensity as the accessible first step and reach for the rigorous version when you have the volume. See [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
-# Refresh cadence
+## Refresh cadence
 
 Segments go stale at different rates, so recompute them on different clocks. RFM is behavioural and moves quickly: a recent buyer becomes a lapsing one with no new event at all, just the passage of time, so recompute it on a short, regular cadence (for many programmes weekly or monthly is a sensible default) and let customers move between tiers as they do. CLV tiers move slowly and noisily, so recompute them less often, quarterly is a reasonable default, to avoid churning customers between value tiers on a single large order. Whatever cadence you pick, make it scheduled and consistent so a customer's tier means the same thing each time you read it.
 
-# Choosing a model
+## Choosing a model
 
 Match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
 
-# Related
+## Related
 
 * [Segmentation and data](/foundations/segmentation-and-data.md)
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
@@ -96,7 +96,7 @@ Match the model to the job, and prefer the simplest model that answers the quest
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 
-# Citations
+## Citations
 
 [1] [Qualtrics, market segmentation types (behavioural, demographic, firmographic)](https://www.qualtrics.com/articles/strategy-research/what-is-market-segmentation/)
 [2] [Omniconvert, the RFM model and its origin in 1960s direct marketing](https://www.omniconvert.com/blog/rfm-model/)

@@ -4,21 +4,21 @@ The operational layer: the cross-channel practices that run a lifecycle programm
 
 Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack, and reason about AI personalisation. Email's authentication and deliverability sit here too, as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
 
-# Data and audience
+## Data and audience
 
 * [Customer data and identity](customer-data-and-identity.md) - first-party data, the single customer view, identity resolution, and the CDP/CRM/warehouse split.
 * [Segmentation and data](segmentation-and-data.md) - dynamic versus static segments, overlap, data hygiene, personalisation, and merge tags.
 * [Segmentation models](segmentation-models.md) - RFM, value and lifetime-value tiers, behavioural, demographic, lifecycle-stage, and propensity.
 * [Audience sync](audience-sync.md) - activating CRM segments as ad-platform audiences for targeting and, more valuably, suppression, and why it extends the owned channels rather than being one.
 
-# Plan the lifecycle
+## Plan the lifecycle
 
 * [Lifecycle mapping](lifecycle-mapping.md) - the acquisition, onboarding, engagement, retention, and winback stages, and mapping the journey between them.
 * [Consent and preferences](consent-and-preferences.md) - permission that holds across channels, the preference centre as a retention tool, and suppression.
 * [List building](list-building.md) - forms, placement, lead magnets, single versus double opt in, and source tracking.
 * [Database health and sunsetting](database-health.md) - the list as a decaying asset, the contact lifecycle from active to sunset, and net growth as acquisition minus decay.
 
-# Create and orchestrate
+## Create and orchestrate
 
 * [Copywriting](copywriting.md) - subject lines, message anatomy, CTAs, spam triggers, and writing for the summariser.
 * [Message design and rendering](message-design-and-rendering.md) - mobile-first layout, dark mode, accessibility, alt text, and preheader text across clients.
@@ -29,12 +29,12 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [Campaign planning and calendar](campaign-planning-and-calendar.md) - triggered versus broadcast, the calendar, cadence, and governance.
 * [Orchestration and frequency](orchestration-and-frequency.md) - one contact strategy across channels, channel selection per job, and frequency capping.
 
-# Email delivery mechanics
+## Email delivery mechanics
 
 * [Authentication](authentication.md) - SPF, DKIM, DMARC, BIMI, one-click unsubscribe, and the bulk sender requirements.
 * [Deliverability](deliverability.md) - how placement works, spam recovery, IP warming, the metrics reference, and the Promotions tab.
 
-# Tooling and AI
+## Tooling and AI
 
 * [ESP selection](esp-selection.md) - the five-factor framework for evaluating the sending platform.
 * [Decisioning and personalisation](decisioning-and-personalisation.md) - decision support versus decisioning, the vendor landscape, and the data prerequisite.

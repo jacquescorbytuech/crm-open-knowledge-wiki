@@ -6,19 +6,19 @@ tags: [channel, in-app, owned, in-product, onboarding, formats, triggers, freque
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What it is
+## What it is
 
 In app messaging is everything you can show inside your own product: passive cards in a feed the user reaches deliberately, a persistent message centre or inbox, modal and slide up messages triggered on session events, and messaging primitives embedded in the product flows themselves. It is the highest fidelity owned surface most brands have.
 
-# Permission and reach
+## Permission and reach
 
 No per channel opt in, because the user is already inside a product they chose to open. The hard limit is the opposite of push: in app reaches only the active user. Someone who has not opened the app in a fortnight cannot be reached this way at all, which is precisely the gap push and email cover.
 
-# Filtering and editing
+## Filtering and editing
 
 None. Nothing passes through APNs, FCM, or a mailbox provider, so nothing summarises, ranks, bundles, or silences it, and you see every render, dismiss, and interaction. It is the most fully owned and observable surface in the channel mix. See [the channel mix](/channels/index.md).
 
-# Technical specifics
+## Technical specifics
 
 In-app spans a range of intrusiveness, from interruptive to ambient, and the format is the main control you have.
 
@@ -35,27 +35,27 @@ In-app spans a range of intrusiveness, from interruptive to ambient, and the for
 
 **Trigger conditions in practice.** Tie the message to a context window so it lands when it is useful and not before. Show a "finish setup" card when the user reaches the screen the unfinished step belongs to and the step is still incomplete, not on every launch. Surface a feature tip the first time a user opens the area it applies to, capped to once. Fire an upsell slide-up after a user repeats the action the paid tier would improve, not on session one. Each of these is an on-device condition (current screen, completion state, action count) checked against the synced rule set, so keep the conditions to attributes that update reliably on the device and remember the sync-freshness lag above when timing anything that must appear immediately after a server-side event.
 
-# Best-fit jobs
+## Best-fit jobs
 
 Everything that does not need to reach a dormant user: onboarding and activation, feature education and discovery, cross sell and upsell, contextual prompts at the moment of relevant action, and surveys. Because it interrupts a session the user chose, relevance and timing matter more than reach.
 
-# In-app versus push versus email
+## In-app versus push versus email
 
 The channels do different jobs, so split by where the user is. In-app does the in-session work: it acts on a session the user already started, with room, context, and no per-device permission to spend, so it carries onboarding, education, contextual prompts, and upsell while the user is present. It is the destination, not the way back. Push and email bring an absent user back so in-app can do that work; push when the message is worth breaking into the user's day, email when it is rich or can wait. The default heuristic: if the user is in session, let in-app carry it; if the user is gone and you need them to return, that is a [push](/channels/push.md) or an [email](/channels/email.md), not an in-app message. In-app cannot initiate contact, so anything that depends on reaching a user who is not there is the wrong job for it.
 
-# Constraints
+## Constraints
 
 It cannot initiate contact; it can only act on a session the user started. Over using modals and interstitials degrades the product experience, which is a steeper cost here than an ignored email, because it sits on the surface the relationship is actually built on. See [respect the subscriber](/principles/respect-the-subscriber.md).
 
-# Measurement
+## Measurement
 
 The cleanest measurement of any channel. The SDK records impression, dismiss, and interaction with no platform mediated gap, so render to conversion is fully attributable end to end. Read the obvious response metrics, CTR on the message and downstream conversion on the action it asked for, but do not stop there: an interruptive format can lift its own click rate while quietly costing the session. Watch the guardrails alongside the response, session abandonment, task completion, and dismiss rate, to catch a modal that converts the few who engage while pushing the rest out of the flow. The honest read of both is against a randomised holdout: hold back a slice of the eligible users, show to the rest, and measure the difference in the action you wanted and in the guardrail metrics, so you see the message's true incremental effect and its true cost. With no editor between you and the device, both arms are clean, which is why holdout based incrementality testing is easiest to run honestly here. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
-# Lifecycle role
+## Lifecycle role
 
 The destination the other channels drive toward. Push and email bring the user back; in app does the work once they arrive. Run them as one portfolio, not as rivals.
 
-# Related
+## Related
 
 * [Push](/channels/push.md)
 * [Email](/channels/email.md)
@@ -64,7 +64,7 @@ The destination the other channels drive toward. Push and email bring the user b
 * [Respect the subscriber](/principles/respect-the-subscriber.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 
-# Citations
+## Citations
 
 [1] [Braze, in-app messages reach only active users](https://www.braze.com/docs/user_guide/channels/in_app_messages/faq)
 [2] [Airship, in-app automation cached and displayed on trigger conditions](https://www.airship.com/docs/guides/features/messaging/in-app-automation/)

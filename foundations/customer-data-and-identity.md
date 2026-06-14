@@ -6,11 +6,11 @@ tags: [customer-data, cdp, identity-resolution, first-party-data, single-custome
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Why data is the foundation
+## Why data is the foundation
 
 Every other operation in a lifecycle programme, segmentation, automation, personalisation, measurement, is downstream of the customer data underneath it. A programme cannot target a stage it cannot see, personalise a field it has not captured, or measure a customer it cannot identify across sessions. Getting the data layer right is not a precondition for sophistication; it is the thing sophistication is made of.
 
-# The kinds of data, by who gives it and how
+## The kinds of data, by who gives it and how
 
 * **Zero-party data** is what a customer deliberately and proactively shares: stated preferences, survey and quiz answers, a preference-centre selection. It is the cleanest and most durable signal because it was given, not inferred.
 * **First-party data** is collected from a customer's direct interactions with your own properties: purchases, site and app behaviour, email engagement, support contacts.
@@ -18,7 +18,7 @@ Every other operation in a lifecycle programme, segmentation, automation, person
 
 Build the programme on zero- and first-party data, and treat the decline of third-party data as a reason to capture more of your own. See [consent and preferences](/foundations/consent-and-preferences.md) for capturing it lawfully.
 
-# What to capture, and from where
+## What to capture, and from where
 
 Most programmes under-capture, then try to personalise on fields they never collected. Work the list below before buying tooling, because the tooling can only activate what the profile already holds. Each row names the source, the events worth landing on the profile, and the identifier that ties them to a person.
 
@@ -30,11 +30,11 @@ Most programmes under-capture, then try to personalise on fields they never coll
 
 For each source, decide the identifier it arrives with (anonymous id, email, phone, account id), the refresh cadence (real-time stream, hourly, daily batch), and the destination field on the unified profile. Anything without a named destination field is data you are paying to store and cannot use.
 
-# The single customer view
+## The single customer view
 
 A single customer view is one unified profile per person, assembled from every source: the order history from commerce, the events from the site and app, the engagement from the [channels](/channels/), the tickets from support. Without it, each system holds a partial customer and the programme contradicts itself, mailing a discount to someone who just paid full price, or onboarding a customer who has been active for a year.
 
-# Consolidating to one record
+## Consolidating to one record
 
 Once identity resolution has decided which records belong to one person, you still have to fold several rows into a single profile and pick which value wins when they disagree. A workable approach:
 
@@ -43,11 +43,11 @@ Once identity resolution has decided which records belong to one person, you sti
 3. **Define the golden record fields explicitly.** List the fields that downstream systems read, name the source of record for each, and store provenance and a timestamp alongside the value. Example: email from the commerce account, name from the latest order, marketing consent from the preference centre, lifetime value computed from all orders. When two sources disagree on a golden field, the named source of record wins; everything else is reference data.
 4. **Keep the source rows.** Consolidate into a golden record but retain the underlying records and their lineage, so a wrong merge can be reversed and a disputed value traced to where it came from.
 
-# Identity resolution
+## Identity resolution
 
 Identity resolution is the work of deciding that the anonymous browser, the app login, the email address, and the loyalty number are all the same person, and stitching their activity into one profile. It is what turns scattered identifiers into the single customer view. Done well, anonymous behaviour before signup attaches to the customer once they identify themselves; done badly, the same person appears as several, and frequency caps, suppression, and measurement all leak.
 
-# Matching rules in practice
+## Matching rules in practice
 
 Resolution comes down to a matching rule: given two records, decide same person or not. Two families of rule, and most stacks use deterministic first and add probabilistic only where they must.
 
@@ -64,7 +64,7 @@ Merge or keep separate is the live decision, and the asymmetry of the costs shou
 > [!caution] A false merge is the expensive error
 > Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
 
-# CRM, CDP, and warehouse
+## CRM, CDP, and warehouse
 
 Three systems are easy to confuse, and most stacks run more than one.
 
@@ -74,7 +74,7 @@ Three systems are easy to confuse, and most stacks run more than one.
 
 The distinction that matters operationally: a warehouse is built for analysis, a CDP is built for activation. Which combination you need follows from the [ESP and tooling choices](/foundations/esp-selection.md), not the reverse.
 
-# Choosing a CDP
+## Choosing a CDP
 
 If you decide you need a CDP, judge candidates against the jobs above rather than the feature list a vendor leads with. Vendor-neutral criteria:
 
@@ -86,7 +86,7 @@ If you decide you need a CDP, judge candidates against the jobs above rather tha
 
 The data quality you feed it bounds the result more than the brand on the box, so before procuring, run the capture checklist and consolidation rules above against a real sample.
 
-# Hygiene and governance
+## Hygiene and governance
 
 Data decays. A unified profile that is wrong is worse than no profile, because it fires confident, specific, incorrect messages. Run hygiene as a standing routine, not a one-off cleanup:
 
@@ -98,11 +98,11 @@ Data decays. A unified profile that is wrong is worse than no profile, because i
 
 Throughout, hold a documented lawful basis for every contact and deduplicate on the rules above. See [segmentation and data](/foundations/segmentation-and-data.md) for the operational hygiene and [legislation and compliance](/references/legislation-and-compliance.md) for the obligations.
 
-# The decisioning link
+## The decisioning link
 
 Unified, training-ready customer data is also the prerequisite for the AI personalisation and decisioning that platforms and vendors now sell: the data quality underneath usually limits the outcome more than the tooling does. This is treated in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md); for the foundation, the point is simpler: capture and unify your first-party data well, and the advanced options stay open.
 
-# Related
+## Related
 
 * [Segmentation and data](/foundations/segmentation-and-data.md)
 * [Segmentation models](/foundations/segmentation-models.md)
@@ -110,7 +110,7 @@ Unified, training-ready customer data is also the prerequisite for the AI person
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 
-# Citations
+## Citations
 
 [1] [Customer data platform (David Raab, "persistent, unified customer view")](https://en.wikipedia.org/wiki/Customer_data_platform)
 [2] [Tealium, what is a CDP (a warehouse is built for analysis, a CDP for activation)](https://tealium.com/resource/fundamentals/what-is-a-cdp/)

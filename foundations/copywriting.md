@@ -6,7 +6,7 @@ tags: [copywriting, subject-lines, cta, email-anatomy, deliverability, summarisa
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Subject lines and the envelope
+## Subject lines and the envelope
 
 The recipient decides on your message from the envelope: sender name, subject line, and snippet, with no open required. Subject and sender do disproportionate work because they are the only signals available before the decision. A subject line that lifts opens through misdirection lifts delete without read at the same rate, which trains the provider against you. Optimise the envelope to set an honest expectation a real human would act on, not to win a click you immediately lose.
 
@@ -19,7 +19,7 @@ How to write one:
 
 Test subject lines honestly. An A/B subject test on a single send is usually too small to call: opens are noisy and the difference between two lines is often within that noise. Before declaring a winner, check the test has the volume to detect a real difference, see [sample size and power](/measurement/sample-size-and-power.md), and do not over-read a one-off result from a few thousand sends.
 
-# Email anatomy
+## Email anatomy
 
 A single-intent email has a predictable skeleton. Each block does one job, and the order keeps the most important message above the fold and machine-readable.
 
@@ -31,7 +31,7 @@ A single-intent email has a predictable skeleton. Each block does one job, and t
 * **Footer.** Physical address, clear unsubscribe, sender identity. Required and load-bearing for deliverability.
 * **Plain-text part.** A real plain-text alternative alongside the HTML. Some clients and summarisers read it, and it keeps the message legible when images are blocked.
 
-# CTAs
+## CTAs
 
 Keep one clear primary action per email; messages with a single call to action consistently out-click those that ask for several at once. Mixed intent campaigns, a service email with a CTA bolted on or a promo with disclaimers in the middle, risk being characterised by the dominant block rather than your intent. Single intent messages with explicit verbs in their key blocks survive both scanning and summarisation better. Use a monitored from address, never noreply@, because a reply is one of the strongest positive signals an inbox can read. For how the message then renders across clients, see [message design and rendering](/foundations/message-design-and-rendering.md).
 
@@ -42,11 +42,11 @@ How to write the button:
 3. Make it tappable. A real button block, not a bare inline link, sized so a thumb can hit it on a phone.
 4. Match the CTA to the subject's promise. The button should deliver the fact the envelope front-loaded, or the open was a bait and switch.
 
-# Spam trigger avoidance
+## Spam trigger avoidance
 
 Authentication and engagement matter far more than word lists, but avoid the obvious: all caps subjects, excessive punctuation, heavy image to text ratios, and link shorteners. Image only emails lose the structure the classifier reads, so the model parses your headline, promo code, body, and footer as one flat block. Keep real text in the message.
 
-# Writing for the summariser
+## Writing for the summariser
 
 On-device and inbox summarisers compress a message to its gist, keeping what is machine readable and dropping brand voice. Lead with the concrete fact, the amount, the name, the time, the action, so a summary has something to keep. A useful self check: if the subject still tells the user something useful when stripped to its first few words, it carries a fact a summariser can keep. The platform research behind this is in [email intelligence research](/references/email-intelligence-research.md).
 
@@ -58,11 +58,11 @@ Concrete rules, with phrasings:
 * **Use explicit verbs in key blocks.** "Confirm your address by Friday" not "Action may be required". The verb tells the summariser, and the reader, what to do.
 * **Put the fact before the framing.** "Order shipped, arrives Tuesday" before any thank-you copy, so the gist holds even if everything after the first clause is dropped.
 
-# Metric to watch
+## Metric to watch
 
 Use click to open rate (CTOR), clicks divided by opens, as the content engagement measure independent of open noise. See [metrics are directional](/principles/metrics-are-directional.md).
 
-# Pre-send copy checklist
+## Pre-send copy checklist
 
 * Subject front-loads a concrete fact and reads usefully when stripped to its first few words.
 * Subject is short enough that the fact survives mobile truncation (roughly 50 to 60 characters as a default).
@@ -74,14 +74,14 @@ Use click to open rate (CTOR), clicks divided by opens, as the content engagemen
 * A plain-text alternative is present.
 * Any A/B subject test has the volume to call a real difference before a winner is declared.
 
-# Related
+## Related
 
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Metrics are directional](/principles/metrics-are-directional.md)
 
-# Citations
+## Citations
 
 [1] [Litmus, the email envelope is the from name, subject line, and preview text](https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support)
 [2] [Campaign Monitor, a single CTA receives far more clicks than competing CTAs](https://www.campaignmonitor.com/resources/knowledge-base/do-ctas-help-to-improve-email-response-rates/)

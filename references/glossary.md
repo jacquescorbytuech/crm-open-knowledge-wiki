@@ -6,7 +6,7 @@ tags: [glossary, terminology, reference]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Authentication and delivery
+## Authentication and delivery
 
 | Term | Meaning |
 | --- | --- |
@@ -21,7 +21,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Bounce | A failed delivery. Hard bounces are permanent and must be suppressed immediately; soft bounces are transient. |
 | Sender reputation | The provider's running assessment of a sending domain and IP, driven heavily by engagement. |
 
-# List and data
+## List and data
 
 | Term | Meaning |
 | --- | --- |
@@ -39,7 +39,7 @@ timestamp: 2026-06-14T00:00:00Z
 | First party data | Data from direct interactions with your own platforms. |
 | Third party data | Data bought from outside aggregators. Fading as third-party cookies are phased out. |
 
-# Customer data and CRM
+## Customer data and CRM
 
 | Term | Meaning |
 | --- | --- |
@@ -49,7 +49,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Single customer view | One unified profile per person, assembled from every source. |
 | Identity resolution | Stitching identifiers across devices and channels into one customer profile. |
 
-# Segmentation and lifecycle
+## Segmentation and lifecycle
 
 | Term | Meaning |
 | --- | --- |
@@ -65,7 +65,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Loyalty program | A structured points, tier, or referral scheme that rewards repeat business. |
 | Referral | Acquisition through an existing customer recommending the brand. |
 
-# Channels and design
+## Channels and design
 
 | Term | Meaning |
 | --- | --- |
@@ -83,7 +83,7 @@ timestamp: 2026-06-14T00:00:00Z
 | RCS | Rich Communication Services. The richer successor to SMS, with branding, cards, and read receipts. |
 | APNs / FCM | Apple Push Notification service and Firebase Cloud Messaging, the two push delivery pipes. |
 
-# Metrics
+## Metrics
 
 | Term | Meaning |
 | --- | --- |
@@ -94,7 +94,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Complaint rate | Share marked as spam. A hard deliverability limit; keep under 0.1%. |
 | Reply rate | Share that replied. A strong positive inbox signal even at 1 to 2%. |
 
-# Decisioning and measurement
+## Decisioning and measurement
 
 | Term | Meaning |
 | --- | --- |
@@ -107,14 +107,14 @@ timestamp: 2026-06-14T00:00:00Z
 | CUPED | Controlled experiment using pre experiment data. A variance reduction technique. |
 | DiD | Difference in differences. Estimates an effect by comparing change across treated and untreated cohorts over a date. |
 
-# Related
+## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Segmentation models](/foundations/segmentation-models.md)
 * [ESP selection](/foundations/esp-selection.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 
-# Citations
+## Citations
 
 [1] [Tealium, what is a CDP](https://tealium.com/resource/fundamentals/what-is-a-cdp/)
 [2] [TechTarget, RFM analysis](https://www.techtarget.com/searchdatamanagement/definition/RFM-analysis)

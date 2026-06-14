@@ -6,18 +6,18 @@ tags: [orchestration, frequency, contact-strategy, channels, cross-channel, supp
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What it is
+## What it is
 
 Orchestration is the layer that decides, for a given customer at a given moment, which message goes out, on which channel, and whether it goes out at all. It is what stops a multi channel programme from becoming several single channel programmes that happen to share an audience and collide in the customer's day.
 
-# One contact strategy, not many
+## One contact strategy, not many
 
 > [!note] The unit of fatigue is the customer, not the channel
 > A customer who got an email, a push, and an SMS in an afternoon experienced one over-contacted relationship, not three well-run channels. Set one contact budget across all channels, not a per-channel quota each team fills.
 
 The unit of fatigue is the customer, not the channel. A customer who got an email, a push, and an SMS in an afternoon experienced one over contacted relationship, not three well run channels. A contact strategy sets the total acceptable contact across all channels, with priority rules for what wins when several messages are eligible at once. The channel teams optimise inside that budget; they do not each spend it in full. Paid media counts too: a customer chased by a retargeting ad the day after they bought is the contact strategy leaking into the channel it most often forgets, which is why [audience sync](/foundations/audience-sync.md) brings paid under the same governance and suppression rules.
 
-# Spending the single contact budget
+## Spending the single contact budget
 
 Make the shared budget operational by treating a user's attention as a fixed weekly allowance that all channels draw from the same pool, not a per channel quota each team fills.
 
@@ -28,7 +28,7 @@ Make the shared budget operational by treating a user's attention as a fixed wee
 
 The decision is which single channel carries this message, then whether the user can afford it this window. Two channels firing the same content in an afternoon is the budget being double spent.
 
-# Choosing the channel for the job
+## Choosing the channel for the job
 
 Match the channel to what the message needs, using the [channels](/channels/) profiles.
 
@@ -40,11 +40,11 @@ Match the channel to what the message needs, using the [channels](/channels/) pr
 
 Default to the cheapest channel that does the job, and reserve the interruptive, expensive ones for what only they can do.
 
-# Why capping matters
+## Why capping matters
 
 A frequency cap is a hard ceiling on messages per channel and in total over a rolling window, applied before send. Caps protect the two things over mailing destroys: deliverability, because complaint and disengagement signals drive placement, so a fatigued list quietly slides toward the spam folder, and the long run value of the list, because a fatigued subscriber unsubscribes once and is gone. Too many messages is consistently the single most common reason people unsubscribe, so frequency is not a minor dial. See [respect the subscriber](/principles/respect-the-subscriber.md) and [segmentation has costs](/principles/segmentation-has-costs.md).
 
-# Engagement-tiered starting caps
+## Engagement-tiered starting caps
 
 An **engagement tier** is a band a user falls into based on how recently and how often they engage — the [engagement score](/foundations/lifecycle-mapping.md) from the lifecycle map, cut into a few groups. Most programmes use three: recently active (opened, clicked, or purchased inside a short window), moderately engaged (active only in a longer window), and dormant (no engagement across the sunset window). Set the window boundaries from your own engagement distribution and keep them consistent with the sunset logic in [segmentation and data](/foundations/segmentation-and-data.md); the tier is derived from observed behaviour and recomputed as it moves, not assigned once.
 
@@ -58,7 +58,7 @@ Set caps by segment, since your most engaged and your least engaged tolerate ver
 
 Apply the lowest cap a user qualifies for, and treat SMS as scarcer than email at every tier because it is interruptive and costed per send.
 
-# How to tune caps
+## How to tune caps
 
 Caps are a setting you converge on, not a number you guess once.
 
@@ -70,7 +70,7 @@ Caps are a setting you converge on, not a number you guess once.
 
 A cap that lifts gross opens but loses incremental revenue or raises complaints is a worse cap, however good the top line looks.
 
-# Resolving collisions by priority
+## Resolving collisions by priority
 
 When several messages are eligible for the same user in the same window and the budget will not cover all of them, a fixed priority order decides what sends and what waits or drops. Higher priority wins; the rest queue or are suppressed for the window.
 
@@ -80,7 +80,7 @@ When several messages are eligible for the same user in the same window and the 
 
 Within a tier, break ties by business value and by recency of the triggering event. The rule keeps a promotional blast from crowding out a renewal nudge, and keeps anything from crowding out a receipt.
 
-# Suppression check before every send
+## Suppression check before every send
 
 Run this list as a final check before any send fires. A message that clears every job, channel, and cap decision above must still pass suppression, because suppression is where legal and deliverability constraints live.
 
@@ -94,7 +94,7 @@ Run this list as a final check before any send fires. A message that clears ever
 
 Quiet hours and consent based suppressions are legal constraints, not courtesies. See [consent and preferences](/foundations/consent-and-preferences.md).
 
-# Related
+## Related
 
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Automation and sequences](/foundations/automation-and-sequences.md)
@@ -105,7 +105,7 @@ Quiet hours and consent based suppressions are legal constraints, not courtesies
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 
-# Citations
+## Citations
 
 [1] [MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)](https://marketingsherpa.com/article/chart/why-consumers-unsubscribe)
 [2] [FCC, telemarketing and robocall rules (SMS quiet hours)](https://www.fcc.gov/general/telemarketing-and-robocall-rules)

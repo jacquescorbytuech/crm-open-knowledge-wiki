@@ -6,11 +6,11 @@ tags: [segmentation, data, personalisation, privacy, merge-tags, hygiene, dynami
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What this covers
+## What this covers
 
 This is the operational how of segmentation: defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md), and the data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). This file does not repeat that theory; it tells you how to build and run the segments once a model has chosen the cut.
 
-# Dynamic versus static segments
+## Dynamic versus static segments
 
 A dynamic segment updates automatically as subscriber data changes: membership is a rule the platform re-evaluates, so contacts join and leave without anyone touching the list. A static segment has fixed membership set at creation and changes only when someone edits it.
 
@@ -25,7 +25,7 @@ A dynamic segment is a rule expression over profile and event fields. Write the 
 
 Two practical rules when writing expressions. Be explicit about time windows (last 30 days, not recently), because a vague window becomes a different segment on every platform. And always carry the consent and suppression conditions into the rule itself, so a segment can never resolve to a contact you may not message.
 
-# Segment overlap and the cascade into frequency
+## Segment overlap and the cascade into frequency
 
 Confirm whether segments overlap before combining or sending them together. Free users and users who have not completed onboarding are not mutually exclusive; adding them double-counts the audience, and worse, a contact who sits in several concurrently scheduled segments receives several sends in the same window. Overlap is therefore not just a counting error, it is a frequency problem: it is one of the main ways a programme over-contacts a subset of its list without any single campaign looking heavy.
 
@@ -38,11 +38,11 @@ How to check for overlap before a send window:
 
 The fix is not to redraw every segment to be mutually exclusive, which is rarely possible. It is to let a single contact strategy arbitrate overlap at send time, so the cap is enforced across all segments at once rather than within each one.
 
-# The cost of segmentation
+## The cost of segmentation
 
 Segmentation trades statistical power for relevance. Below list sizes in the low thousands the trade is usually a loss, because each segment becomes too small to test or to send to reliably. Targeted segments do earn their keep when they are large enough to send to, consistently outperforming undifferentiated broadcasts on engagement and revenue per recipient. For the minimum cell a test actually needs, defer to [volume thresholds](/measurement/volume-thresholds.md) rather than any fixed number; size a test cell to a realistic win before you split, not after. See also [segmentation has real costs](/principles/segmentation-has-costs.md).
 
-# Data hygiene and SLAs
+## Data hygiene and SLAs
 
 Hygiene is the foundation the rest sits on: a clean list is what makes segments accurate and sends deliverable. Run it to a service level, not on remembering to, so the standard is a written threshold rather than a habit.
 
@@ -52,11 +52,11 @@ Hygiene is the foundation the rest sits on: a clean list is what makes segments 
 
 See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
-# Merge identities carefully
+## Merge identities carefully
 
 When two records resolve to one person and get merged, the merge itself is a data-quality risk: a bad merge tag mapping, or a merge that picks the wrong field as the survivor, silently corrupts the profile that every downstream segment and merge field reads. Treat merge and dedup as a controlled operation, not a background convenience: define which record wins per field, preserve the consent and suppression state of both records (a merge must never resurrect a suppressed contact), and spot-check merged profiles. The identity mechanics live in [customer data and identity](/foundations/customer-data-and-identity.md).
 
-# Personalisation and merge tags
+## Personalisation and merge tags
 
 A merge tag is a placeholder replaced with subscriber-specific data at send time. A dynamic content block displays differently based on subscriber data. Personalisation is a real lever, but it depends on clean data: a merge tag firing a blank, a default, or a wrong value is worse than no personalisation at all, which is why the [data layer](/foundations/customer-data-and-identity.md) comes first.
 
@@ -69,7 +69,7 @@ QA every merge field and dynamic block before a send goes live. The checklist:
 
 This is the same merge-field check the pre-launch testing list in [automation and sequences](/foundations/automation-and-sequences.md) calls for; run it for broadcasts too, not only flows.
 
-# Privacy and the consent audit cadence
+## Privacy and the consent audit cadence
 
 Privacy is integral to operations, not a separate compliance task bolted on after. Every segment and every send reads contact data, so the lawful basis and consent state must be correct in the same records the segments query. Hold a documented lawful basis for every contact, keep records of how and when consent was obtained, and honour opt-outs immediately. The capture mechanics, the suppression workflow, and the regime details live in [consent and preferences](/foundations/consent-and-preferences.md); declared preferences captured there are also zero-party data you can target on.
 
@@ -81,7 +81,7 @@ Audit the data and consent state on a cadence rather than waiting for a problem 
 
 Set the cadence to your volume and risk; the point is that it is scheduled, with a written threshold, not triggered by an incident.
 
-# Related
+## Related
 
 * [Segmentation models](/foundations/segmentation-models.md)
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
@@ -94,6 +94,6 @@ Set the cadence to your volume and risk; the point is that it is scheduled, with
 * [Volume thresholds](/measurement/volume-thresholds.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 
-# Citations
+## Citations
 
 [1] [Klaviyo, ecommerce benchmarks (targeted segments outperform broad sends on engagement and revenue per recipient)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)

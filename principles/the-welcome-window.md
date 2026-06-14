@@ -6,11 +6,11 @@ tags: [principle, welcome, automation, onboarding]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Stance
+## Stance
 
 Subscribers are at peak engagement immediately after sign up. Maximise this window.
 
-# In practice
+## In practice
 
 The first email must deliver on whatever the signup promised. Failing here erodes trust before the relationship has started, and it is the most common own goal in onboarding.
 
@@ -19,7 +19,7 @@ The first email must deliver on whatever the signup promised. Failing here erode
 
 See [automation and sequences](/foundations/automation-and-sequences.md) and [list building](/foundations/list-building.md).
 
-# Related
+## Related
 
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [List quality over size](/principles/list-quality-over-size.md)

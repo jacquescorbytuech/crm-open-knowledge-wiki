@@ -6,11 +6,11 @@ tags: [timeline, platform, mpp, bulk-sender, apple-intelligence, gmail]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Why this matters
+## Why this matters
 
 Each intervention is discrete and dated, which makes each one a natural experiment a sender can measure a before-and-after against (see [measuring intermediation](/measurement/measuring-intermediation.md)). Most of these changes add a layer of filtering, ranking, or summarisation between the sender and the recipient, and most are framed by the platform as a user-protection feature. The practical upshot for a programme is that the inbox and the lock screen are moving targets, and the levers that survive are authentication, list hygiene, and engagement.
 
-# Email and push interventions
+## Email and push interventions
 
 | Date | Intervention | Note |
 | --- | --- | --- |
@@ -25,22 +25,22 @@ Each intervention is discrete and dated, which makes each one a natural experime
 | early 2026 | Galaxy S26 One UI 8.5 Notification Highlights | On device summarisation on Samsung's stack. |
 | Feb 2026 | Microsoft pulls Copilot Priority View from Outlook mobile | Cost and feedback driven; Prioritize My Inbox itself continues across clients. |
 
-# Sender cooperative signals
+## Sender cooperative signals
 
 The signals senders get back are aggregate and deliverability-focused: Gmail Postmaster Tools (aggregate spam rate and reputation by IP and domain) and Microsoft SNDS. The one proposal toward more is draft-brotman-aggregate-performance-reporting, an IETF draft (March 2026) proposing daily aggregate JSON classification and engagement reports keyed by DKIM domain. It is aggregate rather than per-message, email-only, has no summarisation hook, is voluntary for the provider, and sits at an early IETF state.
 
-# The earlier intermediation layer
+## The earlier intermediation layer
 
 The summarisation panic is a thin layer on a much older story: Gmail tabs since 2013, Outlook Focused Inbox since 2016, machine learning spam filtering since the late 1990s, Android notification channels since 2017, and Focus modes since 2021. A user who silenced your channel in 2019 has been a non engager for years that nobody measured.
 
-# Related
+## Related
 
 * [Authentication](/foundations/authentication.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
 
-# Citations
+## Citations
 
 [1] [Apple, protect email privacy in Mail (Mail Privacy Protection hides IP and preloads images)](https://support.apple.com/guide/mail/protect-email-privacy-mlhlp1205/mac)
 [2] [Google, email sender guidelines (bulk sender requirements)](https://support.google.com/a/answer/81126)

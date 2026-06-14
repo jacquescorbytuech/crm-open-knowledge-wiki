@@ -6,7 +6,7 @@ tags: [statistics, power, volume, testing, measurement]
 timestamp: 2026-06-11T00:00:00Z
 ---
 
-# The floor table
+## The floor table
 
 Anchored on a 2% campaign click rate (a defensible round number for the typical B2C send per the 2026 Klaviyo and Mailchimp benchmarks), at 95% confidence and 80% power, the sends per cell needed to detect a given relative shift in the easiest design:
 
@@ -22,7 +22,7 @@ Anchored on a 2% campaign click rate (a defensible round number for the typical 
 
 These are floor numbers for the easiest design. More complex designs raise the requirement further, and splitting by cohort, segment, or channel multiplies the cells, so the requirement compounds.
 
-# How to use this table
+## How to use this table
 
 Read the table before you design a test, not after it fails to reach significance.
 
@@ -32,14 +32,14 @@ Read the table before you design a test, not after it fails to reach significanc
 * **Chase bigger swings.** A small list can only detect large effects, so spend test budget on changes big enough to clear the floor (a creative pivot, a new offer), not on subject-line micro-tweaks it can never read.
 * **Lean on holdouts for the big questions.** Programme-level incrementality (does this automation pay at all) is a large effect and is readable at far lower volume than a per-campaign click delta. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
-# Related
+## Related
 
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 * [Impact sizing](/measurement/impact-sizing.md)
 
-# Citations
+## Citations
 
 [1] [Klaviyo, ecommerce email benchmarks (typical B2C click-rate baseline)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)
 [2] [Kohavi et al., Trustworthy Online Controlled Experiments (statistical power and sample size for A/B tests)](https://experimentguide.com/)

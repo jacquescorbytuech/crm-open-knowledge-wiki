@@ -6,7 +6,7 @@ tags: [decisioning, personalisation, machine-learning, bandits, send-time, vendo
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Two things the word "AI" hides
+## Two things the word "AI" hides
 
 Marketing platforms use "AI" for two quite different things, and conflating them overstates what a programme is actually running.
 
@@ -15,7 +15,7 @@ Marketing platforms use "AI" for two quite different things, and conflating them
 
 Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category, and the harder one to adopt because it asks the marketer to hand a learning system the wheel and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
 
-# Common decision-support capabilities
+## Common decision-support capabilities
 
 These appear across the major customer-engagement platforms and are largely interchangeable on a feature sheet:
 
@@ -26,7 +26,7 @@ These appear across the major customer-engagement platforms and are largely inte
 
 Most of it does something; how much is often hard to verify independently, since the strongest numbers tend to come from vendor case studies.
 
-# What decisioning adds
+## What decisioning adds
 
 True decisioning borrows the methods used in large-scale recommendation: **contextual bandits** and reinforcement learning, which choose an action from each customer's context and keep reallocating as feedback arrives, measured against a control rather than an open or click. **Next-best-action / next-best-offer** engines rank the best action per customer in real time. The theoretical edge over test-and-roll-out is real: committing to an A/B winner leaves traffic parked on losing variants, where a system that keeps learning does not. The contrast with a rules-based journey builder is the whole point, predefined paths versus continuous per-customer optimisation.
 
@@ -35,7 +35,7 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 > [!warning] Do not read exploration as waste
 > A learning system spends some sends on actions it is unsure about, which look like the worse option on this week's open rate. Killing it for that dip is the standard way an organisation strangles a decisioning system before it can pay back.
 
-# The vendor landscape
+## The vendor landscape
 
 * **Decision-support suites.** Salesforce Einstein, Adobe Sensei / Journey Optimizer, Klaviyo, Iterable, Braze, HubSpot, and the mobile-first names converge on the capability list above.
 * **AI-decisioning specialists.** Vendors such as Aampe (per-user agents using bandits and Thompson sampling) and Hightouch (decisioning on top of the data warehouse) make the per-customer decision the product, measuring each decision against a control.
@@ -44,7 +44,7 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 
 When evaluating, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
 
-# Why the claims are hard to verify
+## Why the claims are hard to verify
 
 The reason these features resist comparison is structural, not just marketing opacity, and it is worth understanding before you weight them in a vendor choice.
 
@@ -54,15 +54,15 @@ The reason these features resist comparison is structural, not just marketing op
 
 The practical consequence is the one [ESP selection](/foundations/esp-selection.md) draws: treat AI feature lists as a tiebreaker between otherwise-equal platforms, never as the deciding factor, and insist that any claimed lift be one you can reproduce against your own holdout.
 
-# What adopting decisioning asks of you
+## What adopting decisioning asks of you
 
 Decisioning is harder to adopt than decision support because it changes who decides, not just what tooling runs. Handing a learning system the per-customer choice means setting an objective and guardrails rather than designing the journey, tolerating the exploration cost above, and trusting a [holdout](/measurement/holdouts-and-control-groups.md) to tell you whether it is working when no single decision can be inspected. The guardrails are the real design surface: the frequency ceilings, suppression rules, and brand or eligibility constraints the system must respect while it optimises inside them. A programme that cannot yet state its objective and guardrails, or cannot run a clean holdout, is not ready to hand over the wheel, whatever the vendor demo shows.
 
-# The data prerequisite
+## The data prerequisite
 
 Every capability above depends on the same thing: unified, clean, training-ready first-party data. The decisioning specialists need a high-fidelity event feed or a warehouse with your behaviour in it; the enterprise tier needs the unified profile in production. Data quality determines how well any of it works, which is why the [customer data and identity](/foundations/customer-data-and-identity.md) layer comes first. Build the data foundation, and the advanced options stay open; skip it, and no amount of vendor AI compensates.
 
-# Related
+## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Segmentation models](/foundations/segmentation-models.md)
@@ -70,7 +70,7 @@ Every capability above depends on the same thing: unified, clean, training-ready
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 
-# Citations
+## Citations
 
 [1] [Hightouch, journeys vs AI decisioning (rules-based journeys vs per-customer AI decisioning)](https://hightouch.com/blog/journeys-vs-ai-decisioning)
 [2] [Salesforce, Einstein for Marketing Cloud feature overview](https://help.salesforce.com/s/articleView?id=mktg.mc_ees_einstein_feature_overview.htm&language=en_US&type=5)

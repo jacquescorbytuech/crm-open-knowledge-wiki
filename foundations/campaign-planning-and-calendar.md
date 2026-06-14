@@ -6,7 +6,7 @@ tags: [planning, calendar, broadcast, triggered, governance, cadence, workflow, 
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Two kinds of sending
+## Two kinds of sending
 
 A lifecycle programme sends in two modes, and they are planned differently.
 
@@ -15,11 +15,11 @@ A lifecycle programme sends in two modes, and they are planned differently.
 
 Most programmes lean too hard on broadcast because it is the visible, plannable work, and under-invest in the triggered layer that quietly does more. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).
 
-# The marketing calendar
+## The marketing calendar
 
 The calendar is the shared plan of what broadcasts go out, to whom, and when, across the channels. Its job is not to fill every slot but to coordinate: to make the launch, the seasonal moment, and the promotion line up rather than collide, and to make the total contact load visible before it is sent. A calendar planned per channel re-creates the collision problem the [contact strategy](/foundations/orchestration-and-frequency.md) exists to prevent, so plan it across channels, against the one contact budget.
 
-# What the planning view contains
+## What the planning view contains
 
 Lay the calendar out as a grid of time against channel lanes, so total contact load down any week is visible at a glance. A workable default view holds:
 
@@ -29,7 +29,7 @@ Lay the calendar out as a grid of time against channel lanes, so total contact l
 * **Key retail and seasonal moments.** The fixed anchors the plan bends around: your category's peak periods, paydays, your own launch and renewal dates, and the public holidays of your main markets. Place these first, then plan campaigns relative to them.
 * **Suppression and exclusion notes.** Who is held back or excluded for a given send, recent purchasers, an experiment holdout, so it is decided in planning, not at build.
 
-# Cadence of planning
+## Cadence of planning
 
 Run a rolling plan, not a fixed quarterly document that goes stale by week two. A default rhythm:
 
@@ -37,15 +37,15 @@ Run a rolling plan, not a fixed quarterly document that goes stale by week two. 
 * **Weekly review.** Once a week, walk the next two weeks: confirm what is briefed and on track, resolve any collisions, fill or kill empty slots, and check the contact load against the budget.
 * **Seasonal pass.** Before each major retail or seasonal peak, plan that window in more detail and earlier than the normal horizon, because lead times and creative load are larger.
 
-# Cadence and the contact budget
+## Cadence and the contact budget
 
 Decide cadence from what the audience tolerates and what you have to say, not from a quota of sends to hit. Over-sending is the fastest way to lose a list: too many messages is consistently the top reason people unsubscribe and complain, and both signals drive [deliverability](/foundations/deliverability.md) down. The calendar should respect the [frequency caps](/foundations/orchestration-and-frequency.md), counting triggered sends against the same budget, not just the broadcasts.
 
-# Goals before slots
+## Goals before slots
 
 Every planned campaign needs a defined objective before it earns a place on the calendar, or it cannot be measured or improved and becomes filler. The slot does not justify the send; the goal does. Frame each campaign in one line before it is built: who it is for, the single action you want them to take, and the one metric that says it worked, with a rough target. If you cannot fill that line, the campaign is not ready to schedule. See [set a goal before you build](/principles/goal-before-build.md).
 
-# The production workflow
+## The production workflow
 
 Once more than one person sends, the programme needs a single agreed workflow so nothing ships half-built. Run each campaign through these ordered steps, each with a named owner, so a missed handoff is visible:
 
@@ -57,7 +57,7 @@ Once more than one person sends, the programme needs a single agreed workflow so
 6. **Schedule.** Specialist schedules the send for the planned slot, against the single source-of-truth calendar.
 7. **Post-send review.** Owner reads results against the goal metric within a few days, records what to repeat or change, and feeds it back into the next plan.
 
-# Pre-send QA checklist
+## Pre-send QA checklist
 
 Run this before every broadcast, and before activating any automation, since an automation error runs at scale and silently. Do not skip it because the campaign looks small.
 
@@ -71,7 +71,7 @@ Run this before every broadcast, and before activating any automation, since an 
 * [ ] **Suppression and frequency logic** applied: exclusions, recent-send caps, and any holdout in place.
 * [ ] **Tracking** configured so the send can be read against its goal metric.
 
-# Seed-list and inbox testing
+## Seed-list and inbox testing
 
 A seed list is a set of internal and proxy addresses you send a final test to before the real audience, to catch what a content preview cannot: how the message actually renders and behaves in a real inbox. Maintain a standing seed list and cover, at minimum:
 
@@ -82,11 +82,11 @@ A seed list is a set of internal and proxy addresses you send a final test to be
 
 Where the platform offers an inbox-preview render gallery, use it alongside live seeds, not instead of them.
 
-# Governance
+## Governance
 
 Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. The discipline matters most for [automations](/foundations/automation-and-sequences.md), because an error there runs at scale and silently. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
 
-# Related
+## Related
 
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
@@ -95,7 +95,7 @@ Once more than one person sends, the programme needs light governance to stay co
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Deliverability](/foundations/deliverability.md)
 
-# Citations
+## Citations
 
 [1] [HubSpot, email automation (trigger-based sending outperforms scheduled broadcasts)](https://www.hubspot.com/glossary/email-automation)
 [2] [Klaviyo, ecommerce benchmarks (targeted and automated sends beat broad broadcasts on revenue per recipient)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)

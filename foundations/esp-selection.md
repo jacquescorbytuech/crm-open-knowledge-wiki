@@ -6,7 +6,7 @@ tags: [esp, vendor-selection, framework, tooling, migration, pricing]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# The five factors, in priority order
+## The five factors, in priority order
 
 1. **Features.** Visual editor, automation (drip builder preferred), dynamic segmentation, list growth tools, personalisation, A/B testing, and exportable reporting. Know your must haves versus nice to haves before comparing.
 2. **Cost.** Can you afford it at your current list size, how does it scale (per contact or per send limits), and are must have features at your tier or pushed to a more expensive one?
@@ -14,11 +14,11 @@ timestamp: 2026-06-14T00:00:00Z
 4. **Integrations.** Does it integrate natively with your CRM, ecommerce, and CMS? Native beats Zapier or Make. Only matters if you have specific requirements; do not over engineer this.
 5. **Expandability.** The least important factor. Migrating between ESPs is easier than it used to be, so do not pay for features you do not need yet on the promise you will need them later.
 
-# Beginner guidance
+## Beginner guidance
 
 Over 220 email platforms exist, and most beginners overthink the choice. Under about 1,000 subscribers the entry level platforms (Mailchimp, Kit, MailerLite, Brevo) are broadly similar and often free. Pick the one that feels most intuitive and start. Stop researching. The rest of this page is for a team that has outgrown that advice and is making a deliberate, comparable choice, usually a paid switch with real data and automations to move.
 
-# Evaluate what you can actually compare
+## Evaluate what you can actually compare
 
 Score vendors on dimensions you can observe and test, and ignore the ones you cannot. The comparable dimensions are concrete and most of them are the features themselves:
 
@@ -32,7 +32,7 @@ Score vendors on dimensions you can observe and test, and ignore the ones you ca
 
 AI and "predictive" features are not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed, and a trial on your small slice of data cannot show whether they work at your scale. Treat them as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
-# Split must have from nice to have
+## Split must have from nice to have
 
 Before scoring anything, write down what the tool has to do, derived from the five factors and your actual programme, not from feature lists. A must have is something the absence of which is a hard no, regardless of price. A nice to have improves the score but never decides it. Keep the must have list short; the longer it grows the more you are letting a vendor's roadmap define your requirements.
 
@@ -46,7 +46,7 @@ Before scoring anything, write down what the tool has to do, derived from the fi
 
 Decide each row before you see a demo. Any must have a candidate fails removes it from scoring entirely; do not let a strong score elsewhere buy back a missing must have.
 
-# Weighted scoring worksheet
+## Weighted scoring worksheet
 
 Score the survivors against your own weighting, not vendor marketing. Set a weight per criterion so the priority order is built into the maths, score each candidate 1 to 5 on evidence you gathered (trial, docs, references), then sum weight times score. Weights should sum to 100 and follow your priorities; the column below is a starting point that mirrors the five factor order, adjust it to your situation.
 
@@ -67,7 +67,7 @@ Rules that keep the worksheet honest:
 * Do not retrofit weights to make a preferred vendor win. Set weights before you score.
 * A close result means either candidate is fine; revert to the beginner instinct and pick the one your team finds most intuitive.
 
-# Compare pricing models, not headline prices
+## Compare pricing models, not headline prices
 
 The headline price is not comparable across vendors because the unit differs. The two common models are **per contact** (you pay for the size of your stored list regardless of sends) and **per send** (you pay for volume sent, often as a monthly send allowance). Neither is cheaper in the abstract; which wins depends entirely on your list size, send frequency, and how fast the list grows.
 
@@ -81,7 +81,7 @@ To compare, model the unit cost yourself rather than reading the page:
 
 The output is two cost figures per candidate, today and projected, that feed the cost row of the scoring worksheet. A vendor that is cheapest today but steps up sharply at your projected size is often the more expensive choice.
 
-# Run a trial before committing
+## Run a trial before committing
 
 Do not choose on a demo. A demo shows the happy path on the vendor's data. A trial shows how the tool behaves on yours. Load a representative slice of your own list and run a fixed agenda against each shortlisted candidate, scoring the same tasks for each so the worksheet rests on like for like evidence.
 
@@ -93,7 +93,7 @@ Do not choose on a demo. A demo shows the happy path on the vendor's data. A tri
 
 Record each result as a 1 to 5 score against the worksheet. A capability you could not get working in a trial is unlikely to work better in production.
 
-# Migration plan outline
+## Migration plan outline
 
 Migration is less costly than it used to be, but it is not free, and a botched cutover can dent deliverability for weeks. Plan it as a sequence, not a flip of a switch.
 
@@ -104,7 +104,7 @@ Migration is less costly than it used to be, but it is not free, and a botched c
 5. **Parallel run.** For a defined window, run critical flows on both platforms or route a slice of traffic to the new one, and reconcile that sends, triggers, and reporting match before you trust it.
 6. **Cutover.** Switch remaining traffic over, keep the old platform readable (not sending) for a fallback window, then decommission once the new platform has proven stable across a full cycle.
 
-# Related
+## Related
 
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
@@ -113,6 +113,6 @@ Migration is less costly than it used to be, but it is not free, and a botched c
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Glossary](/references/glossary.md)
 
-# Citations
+## Citations
 
 This page is practitioner guidance and introduces no external statistics or benchmarks. Where a claim depends on measurement (deliverability, incrementality), see the linked pages and their citations.

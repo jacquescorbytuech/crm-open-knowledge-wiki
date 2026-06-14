@@ -6,15 +6,15 @@ tags: [design, rendering, responsive, dark-mode, accessibility, alt-text, prehea
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Design for where it actually lands
+## Design for where it actually lands
 
 A message is not rendered once. It is rendered by dozens of clients that disagree about CSS, light and dark, and image handling, and most of them open on a phone. Apple's mail clients alone take the largest single share of opens, with Gmail next and Outlook well behind, so a layout tested only in one desktop client is untested. Design for the spread, not for your own inbox.
 
-# Mobile-first
+## Mobile-first
 
 Most email is opened on a mobile device, and a message that breaks on a small screen is deleted rather than zoomed. Design mobile-first: a single-column layout, type large enough to read without pinching, and tap targets big enough for a thumb. Responsive techniques adapt the same message to the screen it lands on.
 
-# How to build it
+## How to build it
 
 A robust email build is deliberately conservative. The steps that keep it intact across the spread:
 
@@ -25,7 +25,7 @@ A robust email build is deliberately conservative. The steps that keep it intact
 5. **Keep the substance in live text, not images.** Build headlines, offers, and CTAs as real text with a bulletproof (table-and-link) button, so they render with images off, read under a screen reader, and survive dark-mode recolouring.
 6. **Use a coding framework to cut breakage.** Hand-writing bulletproof email HTML is error-prone. A framework such as **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients. Either removes a large class of rendering bugs before you test.
 
-# Type and size defaults
+## Type and size defaults
 
 Set defaults that read on a phone held at arm's length, then adjust up, never down.
 
@@ -34,7 +34,7 @@ Set defaults that read on a phone held at arm's length, then adjust up, never do
 * **Line length and spacing** comfortable: generous line height and a single column keep long-form readable on a narrow screen.
 * **Tap targets** large enough for a thumb, with space around each so adjacent links are not mis-tapped.
 
-# Dark mode
+## Dark mode
 
 Every major client now offers a dark mode, and several recolour your message when it is on. A design that assumes a white background, a logo on white, an image with a baked-in light background, dark text with no contrast fallback, can invert into something unreadable. The handling steps:
 
@@ -44,7 +44,7 @@ Every major client now offers a dark mode, and several recolour your message whe
 4. **Add a `prefers-color-scheme` block where supported.** Apple Mail and a few others honour it, letting you supply intentional dark-mode colours instead of accepting the client's automatic inversion. Treat it as an enhancement, not a guarantee.
 5. **Test with dark mode on.** Several clients recolour differently, so render the message in dark mode across the clients in your market share, not just the one you use.
 
-# Accessibility
+## Accessibility
 
 A meaningful share of recipients use assistive technology, and an inaccessible message simply fails for them. The basics carry most of the weight, and they are concrete steps:
 
@@ -57,23 +57,23 @@ A meaningful share of recipients use assistive technology, and an inaccessible m
 
 Accessible design also tends to be cleaner design, so the cost is low.
 
-# Alt text
+## Alt text
 
 Alt text is the text a client shows in place of an image that is blocked, slow, or failed, and many clients block images by default until the recipient chooses to load them. Without alt text, an image-led message renders as empty boxes. Write functional alt text that carries the image's message, and never let a critical word, the offer, the code, the call to action, live only inside an image. This is also why image-only emails are a [deliverability](/foundations/deliverability.md) risk: the classifier and the summariser read text, not pixels.
 
-# Preheader text
+## Preheader text
 
 The preheader (preview text) is the snippet a client shows after the subject line in the inbox, the third part of the envelope alongside sender and subject. Left unset, clients pull the first text in the message, often "view in browser" or an address block, wasting the most valuable real estate you have before the open. Write it deliberately to extend the subject line, not repeat it. See [copywriting](/foundations/copywriting.md) for the envelope as a whole.
 
-# Keep real text in the message
+## Keep real text in the message
 
 Across all of the above runs one rule: keep the substance in live text, not locked in images. It renders when images are blocked, it reads under a screen reader, it survives dark-mode recolouring, and it is the structure the inbox's classifier and summariser parse. Send a proper multipart message with a plain-text part as well as HTML. See [deliverability](/foundations/deliverability.md) and [copywriting](/foundations/copywriting.md).
 
-# Coding for the inbox
+## Coding for the inbox
 
 Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would, so the discipline is writing the most robust, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references carry most of this weight and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
 
-# Pre-send rendering QA
+## Pre-send rendering QA
 
 Run the same checklist before every send, weighted to the clients in your market share. A rendering tool that captures real client screenshots makes most of this a single pass; the rest is a visual read.
 
@@ -88,14 +88,14 @@ Run the same checklist before every send, weighted to the clients in your market
 * [ ] **Size.** HTML lean enough to stay under the Gmail clipping threshold so the CTA and tracking are not buried. See [email](/channels/email.md).
 * [ ] **Links and tracking.** Every link resolves, UTM and tracking parameters are correct, and the unsubscribe link works.
 
-# Related
+## Related
 
 * [Copywriting](/foundations/copywriting.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Email](/channels/email.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 
-# Citations
+## Citations
 
 [1] [Litmus, email client market share (Apple largest, then Gmail, then Outlook)](https://www.litmus.com/email-client-market-share)
 [2] [Litmus, the how-to guide to responsive email design (mobile opens; messages deleted if they render badly on mobile)](https://www.litmus.com/blog/the-how-to-guide-to-responsive-email-design-infographic)

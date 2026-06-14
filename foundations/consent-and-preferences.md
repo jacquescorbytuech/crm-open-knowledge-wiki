@@ -6,11 +6,11 @@ tags: [consent, preferences, permission, suppression, compliance, gdpr, pecr, ca
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# Why permission is a foundation, not a footnote
+## Why permission is a foundation, not a footnote
 
 Permission is the asset the whole programme rests on. It decides who you may contact, it decides deliverability because complaint rates follow weak consent, and it decides trust. The regimes differ by region, but a programme built to the strictest standard it touches satisfies the rest by construction. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
 
-# Two consent models, and the channels they govern
+## Two consent models, and the channels they govern
 
 The world splits into opt out and opt in, and the split runs by channel and region rather than uniformly.
 
@@ -23,11 +23,11 @@ Consent under the GDPR standard means freely given, specific, informed, and unam
 > [!danger] SMS consent is never inherited from email
 > The TCPA bar for marketing texts is prior express written consent, a separate and stronger grant than email consent. An email subscriber has not consented to SMS. Capture it on its own, or the send is a breach.
 
-# Capture that holds up
+## Capture that holds up
 
 Collect consent you can evidence: what they agreed to, when, and how. Keep channel grants separate, because email permission is not SMS permission and is not push permission. State who you are and what they will receive at the point of capture. Prefer an explicit, granular opt in wherever an opt in regime applies, and record the source so a weak channel can be traced and fixed. See [list building](/foundations/list-building.md).
 
-# Priming the ask
+## Priming the ask
 
 Permission converts better, and the grant holds up better, when you set the expectation before you ask for it. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed subscriber complains and unsubscribes less because the mail matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
 
@@ -36,7 +36,7 @@ Permission converts better, and the grant holds up better, when you set the expe
 
 Across both, priming is why a smaller, expectation-matched list outperforms a larger cold one; see [list quality over size](/principles/list-quality-over-size.md).
 
-# A CAN-SPAM compliance checklist
+## A CAN-SPAM compliance checklist
 
 Run every US commercial email against this before it sends. None of these is optional, and a single failing send is a separate violation per recipient.
 
@@ -48,7 +48,7 @@ Run every US commercial email against this before it sends. None of these is opt
 - [ ] **Opt out honoured within ten business days.** The request is processed and the address suppressed within ten business days; you may not sell or transfer an address once opt out is requested.
 - [ ] **Liability for others.** If a partner or agency mails on your behalf, you are still responsible. Confirm they meet the same checklist.
 
-# GDPR and PECR opt in: form mechanics
+## GDPR and PECR opt in: form mechanics
 
 Where an opt in regime applies, the form is the evidence. Build it so the record itself proves the consent was valid.
 
@@ -63,7 +63,7 @@ Where an opt in regime applies, the form is the evidence. Build it so the record
 5. **Confirm where it strengthens the record.** Double opt in (a confirmation click on a follow up email) both proves the address is controlled by the consenter and filters mistyped or hostile signups; it is the stronger evidence and improves early deliverability.
 6. **Make withdrawal as easy as granting.** Withdrawing consent must be as simple as giving it, and on withdrawal you keep the suppression record but stop the processing.
 
-# Preference centre design
+## Preference centre design
 
 A preference centre lets a subscriber choose channels, topics, and frequency instead of facing a binary stay or leave. It is one of the few retention tools that is also a compliance asset, because a genuine, easy choice is exactly what the regimes ask for. Honour the choices immediately in the sending logic, not eventually. See [zero-party data](/foundations/segmentation-and-data.md) for using the declared preferences in targeting.
 
@@ -75,7 +75,7 @@ Design it with three independent controls:
 
 Pre fill the centre with the subscriber's current state so they edit rather than reconstruct, and write changes to the sending logic on save so the next send already obeys them.
 
-# The unsubscribe page: offer the down shift first
+## The unsubscribe page: offer the down shift first
 
 The link in the footer should not land on a bare "you are unsubscribed" confirmation. Sequence it so full opt out is the last resort, never the only option.
 
@@ -86,7 +86,7 @@ The link in the footer should not land on a bare "you are unsubscribed" confirma
 
 The down shift converts a total loss into a reduced, still permissioned relationship: fewer emails rather than none, one channel dropped rather than all.
 
-# TCPA SMS: opt in capture, STOP and HELP, logging
+## TCPA SMS: opt in capture, STOP and HELP, logging
 
 Marketing SMS in the US needs prior express written consent, which is a higher bar than email. Build the flow to produce that record and to handle the standard keywords automatically.
 
@@ -97,7 +97,7 @@ Marketing SMS in the US needs prior express written consent, which is a higher b
 * **Log every consent and opt out event.** Keep an auditable trail of the opt in, the confirmation, any HELP request, and the STOP, each with a timestamp, so you can evidence the grant and the cessation.
 * **Never inherit it.** An email subscriber has not consented to SMS. Capture SMS consent on its own.
 
-# Suppression workflow
+## Suppression workflow
 
 A suppression list is the set of addresses and numbers that must never be mailed: the unsubscribed, hard bounces, complainers, and legal suppressions. It is mailed against on every send and is never purged for volume. Suppression is where compliance and deliverability meet, because mailing a complainer or an opt out is both a legal breach and a reputation hit.
 
@@ -111,7 +111,7 @@ Operate it as a continuous loop:
 
 See [respect the subscriber](/principles/respect-the-subscriber.md) and [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
-# Related
+## Related
 
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
@@ -121,7 +121,7 @@ See [respect the subscriber](/principles/respect-the-subscriber.md) and [engagem
 * [Respect the subscriber](/principles/respect-the-subscriber.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 
-# Citations
+## Citations
 
 [1] [ICO, electronic mail marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
 [2] [FTC, CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)

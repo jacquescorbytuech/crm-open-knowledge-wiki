@@ -6,11 +6,11 @@ tags: [authentication, spf, dkim, dmarc, bimi, deliverability, dns, alignment]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What this covers
+## What this covers
 
 Authentication is the set of DNS records and signatures that let a receiving mailbox verify your mail is really from you. It is the precondition for inbox placement, not an optimisation. Set it up before your first send, then verify it with the checklist at the end before you turn the tap on.
 
-# The records
+## The records
 
 * SPF authorises which servers may send for your domain.
 * DKIM cryptographically signs the message so the receiver can verify it was not altered and came from an authorised source.
@@ -19,7 +19,7 @@ Authentication is the set of DNS records and signatures that let a receiving mai
 
 The three core records do different jobs and you need all three. SPF and DKIM each prove authorisation by a different mechanism, DMARC ties them to the visible From domain and tells receivers what to do on failure. BIMI is optional and depends on the other three being right first.
 
-# How to set up SPF
+## How to set up SPF
 
 SPF is a single DNS TXT record published at the root of your sending domain. It lists the mechanisms allowed to send, then ends with an `all` qualifier that decides the verdict for everything else.
 
@@ -39,7 +39,7 @@ Steps:
 
 The pitfall: SPF allows at most 10 DNS lookups when a receiver evaluates the record, counting every `include`, `a`, `mx`, `ptr`, and `redirect`. Chained includes blow this limit quietly and the record then returns permerror, which most receivers treat as a failure. Audit the lookup count, flatten or remove unused includes, and prefer a small fixed set of senders.
 
-# How to set up DKIM
+## How to set up DKIM
 
 DKIM signs each message with a private key, and receivers fetch the matching public key from a DNS TXT record at a selector you choose.
 
@@ -58,7 +58,7 @@ The signature header on outgoing mail names the domain (`d=`) and selector (`s=`
 
 Rotate keys on a schedule. A sensible default is every six to twelve months, and immediately if a key is ever exposed. Rotate by publishing a new selector first, switching signing to it, then removing the old record once no in-flight mail still references it. Running two selectors during the overlap is why selectors exist.
 
-# DMARC rollout
+## DMARC rollout
 
 DMARC is a TXT record at `_dmarc.<domain>`. Its policy decides what receivers do when a message fails both SPF and DKIM alignment, and `rua` collects the aggregate reports that tell you who is sending as you.
 
@@ -90,7 +90,7 @@ _dmarc.example.com  TXT  "v=DMARC1; p=reject; rua=mailto:dmarc@example.com; fo=1
 
 The whole point of the staged path is that `p=none` lets you discover your own legitimate senders without bouncing real mail, so you reach `p=reject` having already proven nothing legitimate fails.
 
-# Subdomain strategy
+## Subdomain strategy
 
 Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot poison the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
 
@@ -101,7 +101,7 @@ A common, readable convention:
 
 Each subdomain gets its own SPF and DKIM records. Publish DMARC at the organisational domain so it covers the subdomains by default (relaxed alignment lets a subdomain align up to the parent), and add a subdomain-specific record only if you want a different policy there via the `sp=` tag. Warm each sending subdomain independently, reputation is tracked per sending domain and per IP, not per brand.
 
-# BIMI
+## BIMI
 
 BIMI displays your verified logo next to your mail in supporting clients. It is the reward for getting authentication fully right, and it has hard prerequisites:
 
@@ -112,13 +112,13 @@ BIMI displays your verified logo next to your mail in supporting clients. It is 
 
 Treat BIMI as the last item, only worth starting once DMARC is at enforcement and stable.
 
-# Bulk sender requirements
+## Bulk sender requirements
 
 Since February 2024 any sender of roughly 5,000 or more messages a day to Gmail or Yahoo must authenticate with SPF and DKIM, align DMARC, support one click unsubscribe per RFC 8058, and keep the reported spam rate under 0.3% (0.1% is the safe target). Microsoft enforced equivalent rules from May 2025, and Gmail moved from deferral to rejection in November 2025. See [platform interventions](/references/platform-interventions.md).
 
 To meet them: publish SPF and DKIM as above, get DMARC to at least `p=none` with alignment confirmed (the rules require a DMARC record and that mail authenticates and aligns), include a working `List-Unsubscribe` header with the `List-Unsubscribe-Post` one click form, and watch the spam rate in Google Postmaster Tools so you act before you cross 0.1%.
 
-# Troubleshooting checklist
+## Troubleshooting checklist
 
 Before the first send, and whenever placement drops, verify:
 
@@ -135,13 +135,13 @@ Verify with the receiver, not just by reading your own DNS. Send a test to a Gma
 
 Missing SPF or DKIM causes deliverability problems and block bounces, so set up authentication before the first send.
 
-# Related
+## Related
 
 * [Deliverability](/foundations/deliverability.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Bulk sender requirements](/references/platform-interventions.md)
 
-# Citations
+## Citations
 
 [1] [Google, email sender guidelines (SPF, DKIM, DMARC, bulk sender requirements)](https://support.google.com/a/answer/81126)
 [2] [RFC 8058, one-click unsubscribe](https://www.rfc-editor.org/rfc/rfc8058)

@@ -6,7 +6,7 @@ tags: [research, notifications, reinforcement-learning, bandits, uplift, agentic
 timestamp: 2026-06-02T00:00:00Z
 ---
 
-# Production notification systems
+## Production notification systems
 
 These are peer reviewed papers on production systems, a useful floor on platform capability since the internal systems are at least as good.
 
@@ -21,24 +21,24 @@ These are peer reviewed papers on production systems, a useful floor on platform
 | Kuaishou PushGen, WSDM 2026 | LLM generates push copy under style controls, a learned reward model ranks candidates. |
 | Pinterest TransAct, KDD 2023 | Transformer over realtime user activity feeding ranking across surfaces. |
 
-# The agentic messaging and uplift literature
+## The agentic messaging and uplift literature
 
 * Aampe published randomised controlled trials of agent led messaging on a financial services app, cutting unsubscribes against a rule based baseline by sending more relevantly, with a longitudinal follow up showing autonomous agents sustaining lift for months after a human curated initialisation phase.
 * The uplift literature formalises the persuadable, sure thing, and do not disturber framing and the diminishing returns curve beyond the most responsive segment, including work on delayed feedback and the public Hillstrom dataset.
 * Google and DeepMind showed that the long-term value of exploration is hard to see in standard A/B tests and needs bespoke experiment designs, so a per-campaign open rate is unlikely to surface it.
 * The systems literature notes that these algorithms assume clean, correctly logged data, and producing that reliably is a substantial engineering task, the practical side of the data prerequisite.
 
-# On device editor models
+## On device editor models
 
 The receiving end runs its own published models: Apple Intelligence on a 3 billion parameter on device foundation model with task specific LoRA adapters, and Google's Gemini Nano inside AICore, with notification rewriting and prioritisation patents predating the iOS 18 controversy by years.
 
-# Related
+## Related
 
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Platform interventions](/references/platform-interventions.md)
 
-# Citations
+## Citations
 
 [1] [Li et al., A Contextual-Bandit Approach to Personalized Recommendation, WWW 2010 (arXiv 1003.0146)](https://arxiv.org/abs/1003.0146)
 [2] Jeunen and Wheeler, Behavioural Effects of Agentic Messaging, 2025 (arXiv 2512.17462)

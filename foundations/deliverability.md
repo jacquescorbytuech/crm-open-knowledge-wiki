@@ -6,11 +6,11 @@ tags: [deliverability, spam, ip-warming, metrics, promotions-tab, mime, postmast
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# How placement works
+## How placement works
 
 Inbox placement is decided by machine learning, not rules, and has been since Bayesian spam filtering in the late 1990s. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md); for day-to-day operations, the levers below are what you act on.
 
-# How to warm a new IP or domain
+## How to warm a new IP or domain
 
 Reputation is built from a clean engagement signal at rising volume. A cold IP or domain that suddenly emits a large volume looks exactly like a compromised one, so you ramp. Start with your most engaged subscribers (recent openers and clickers), send a small volume, and increase it gradually over days and weeks while watching the complaint rate at each step.
 
@@ -32,7 +32,7 @@ Rules for the ramp:
 4. Keep sending cadence steady, gaps reset trust, erratic volume reads as suspicious.
 5. Warm each sending domain and each IP independently, reputation is tracked per sending domain and per IP, not per brand. See the subdomain strategy in [authentication](/foundations/authentication.md).
 
-# How to recover from spam
+## How to recover from spam
 
 If you are landing in spam, work the causes in order.
 
@@ -48,7 +48,7 @@ If you are landing in spam, work the causes in order.
 
 Recovery is the warming ramp run on a list that already burned trust, so it is slower. Do not re-add the pruned addresses, they are what put you in spam.
 
-# How to monitor complaint rate
+## How to monitor complaint rate
 
 Complaint rate (recipients marking your mail as spam) is a hard deliverability limit. The bulk sender rules cap the reported spam rate at 0.3%, and 0.1% is the safe target you manage to, see [authentication](/foundations/authentication.md) and [platform interventions](/references/platform-interventions.md).
 
@@ -70,7 +70,7 @@ Action thresholds:
 
 A single bad send spikes the rate, so read the trend, but a sustained climb is reputation damage in progress.
 
-# Postmaster Tools and SNDS setup
+## Postmaster Tools and SNDS setup
 
 Set these up before you scale, they are the only platform-cooperative signal you get. They report aggregate deliverability, not per message placement or summarisation.
 
@@ -82,15 +82,15 @@ Set these up before you scale, they are the only platform-cooperative signal you
 - [ ] Confirm data is populating, both tools need a few days and a minimum volume before dashboards fill.
 - [ ] Set a weekly review and alert on complaint rate and reputation tier changes.
 
-# Hard-bounce auto-suppression
+## Hard-bounce auto-suppression
 
 A hard bounce is a permanent failure (the address does not exist). Add hard-bounced addresses to a suppression list automatically and immediately, before the next send, and never mail them again. Continuing to send to dead addresses is a clear negative reputation signal and is one of the fastest ways into spam. Soft bounces (temporary, for example a full mailbox) can be retried, but suppress them too after repeated failures.
 
-# The Promotions tab
+## The Promotions tab
 
 Being in Promotions is not a failure: deal seekers actively browse it. Since September 2025 Gmail sorts Promotions by relevance rather than recency by default, so within tab placement is engagement weighted. Engaged senders pin near the top of an actively scanned surface; weak senders sink below the fold and become functionally invisible. The outcome is bimodal, and per sender engagement history decides which half you land in.
 
-# The metrics reference
+## The metrics reference
 
 | Metric | What it tells you | Caveat |
 | --- | --- | --- |
@@ -106,15 +106,15 @@ Being in Promotions is not a failure: deal seekers actively browse it. Since Sep
 
 Two cautions on the engagement rows. An open is an image load, not a read, and the load can be triggered by privacy proxies, prefetch, or filters in the delivery path rather than by a person. Clicks can be inflated by automated security scanners that follow links at scale, seen most sharply at Microsoft properties, so treat clicks in the first few minutes after delivery with suspicion and lean on later, human looking clicks and downstream conversion. The engagement a provider actually acts on, dwell time, scrolling, replies, and folder moves, is richer than either and is not visible to you. See [email metrics are directional](/principles/metrics-are-directional.md).
 
-# Platform diagnostics
+## Platform diagnostics
 
 Gmail Postmaster Tools and Microsoft SNDS, set up per the checklist above, are tracked weekly with alerts on complaint rate and reputation tier changes. They report aggregate deliverability, not per message placement or summarisation, but they are the only platform cooperative signal you get. See [platform interventions](/references/platform-interventions.md).
 
-# MIME structure
+## MIME structure
 
 Send a proper multipart message. Use a `multipart/alternative` container holding both a plain text part and an HTML part, in that order, so a client that prefers text gets a real text version and one that prefers HTML gets the rich version. A missing or empty plain text part is a spam signal and degrades rendering in clients that prefer it. Keep the image to text ratio sane, because a heavy image to text ratio is a Promotions classifier signal, and an all-image email with no real text is a classic spam pattern. If you embed inline images, wrap the alternative part and its images in a `multipart/related` container. The wider rendering question, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
-# Related
+## Related
 
 * [Authentication](/foundations/authentication.md)
 * [Database health and sunsetting](/foundations/database-health.md)
@@ -124,7 +124,7 @@ Send a proper multipart message. Use a `multipart/alternative` container holding
 * [Email intelligence research](/references/email-intelligence-research.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
 
-# Citations
+## Citations
 
 [1] [Word to the Wise, deliveries and opens and clicks (opens and clicks are noisy, directional signals)](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)
 [2] [Google, email sender guidelines (authentication, spam-rate threshold, one-click unsubscribe)](https://support.google.com/a/answer/81126)

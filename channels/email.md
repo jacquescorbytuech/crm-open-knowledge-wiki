@@ -6,19 +6,19 @@ tags: [channel, email, deliverability, lifecycle]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What it is
+## What it is
 
 Email is the workhorse of lifecycle marketing: a message addressed to an address on a list you hold, delivered over open federated protocols, at effectively zero marginal cost per send. It is the highest volume and lowest cost channel, and the one with the deepest tooling, the longest measurement history, and the most editing between you and the recipient.
 
-# Permission and reach
+## Permission and reach
 
 A subscription is an address plus a consent record you hold and can take to another provider. Reach is governed by deliverability rather than by a per device permission. Authentication is the price of entry (see [authentication](/foundations/authentication.md)), and sender level engagement decides placement above it (see [engagement is the new deliverability](/principles/engagement-is-deliverability.md)). The reachable audience is the engaged subset, not the list size.
 
-# Filtering and editing
+## Filtering and editing
 
 The inbox is no longer a passive transport layer. Providers classify mail into tabs, rank it within them, and increasingly summarise it for the recipient, and the sender sees none of these decisions directly. This is the layer above the classical spam-or-inbox question; the dated platform changes that built it are catalogued in [platform interventions](/references/platform-interventions.md), and the research behind the parsing in [email intelligence research](/references/email-intelligence-research.md). For operations, the response is in [deliverability](/foundations/deliverability.md).
 
-# Technical specifics
+## Technical specifics
 
 The format constrains the craft, and the constraints are concrete.
 
@@ -31,25 +31,25 @@ The format constrains the craft, and the constraints are concrete.
 
 Rendering across the client landscape, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
-# Best-fit jobs
+## Best-fit jobs
 
 Broad mid funnel work where some summary distortion is acceptable: newsletters, content and education, promotional offers to engaged subscribers, lifecycle nurture, and transactional confirmations. Editorial content tends to survive mediation better than pure promotion. Email is rarely the right channel for a genuinely time critical alert, where SMS or push lands faster and more intact.
 
-# Constraints
+## Constraints
 
 Opens are corrupted by image prefetch and Mail Privacy Protection, so they are directional only and click, conversion, reply, and unsubscribe carry the signal. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
 
 List hygiene is a deliverability lever, not housekeeping. Suppress hard bounces immediately and never resend to them, retire addresses after repeated soft bounces, and sunset the never-engaging tail before it drags sender reputation down. Wire these as automated suppression rules, see [automation and sequences](/foundations/automation-and-sequences.md), run them as part of ongoing [database health](/foundations/database-health.md), and work the recovery order in [deliverability](/foundations/deliverability.md).
 
-# Measurement
+## Measurement
 
 Click through, click to open, downstream conversion, reply rate, one click unsubscribe timing, and complaint rate, monitored with Postmaster Tools and SNDS. See [the deliverability metrics reference](/foundations/deliverability.md) and, where volume allows, [measuring intermediation](/measurement/measuring-intermediation.md).
 
-# Lifecycle role
+## Lifecycle role
 
 The default backbone for nurture, retention, and winback at scale, complemented rather than replaced by the other channels. Frequency and cadence are governed in [orchestration and frequency](/foundations/orchestration-and-frequency.md), which also covers how it sits in the channel mix.
 
-# Related
+## Related
 
 * [Authentication](/foundations/authentication.md)
 * [Deliverability](/foundations/deliverability.md)
@@ -61,7 +61,7 @@ The default backbone for nurture, retention, and winback at scale, complemented 
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Email metrics are directional](/principles/metrics-are-directional.md)
 
-# Citations
+## Citations
 
 [1] [Google, email sender guidelines](https://support.google.com/a/answer/81126)
 [2] [Word to the Wise, deliveries and opens and clicks](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)

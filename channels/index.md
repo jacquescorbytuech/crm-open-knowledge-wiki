@@ -2,7 +2,7 @@
 
 The delivery layer: the messaging channels a lifecycle programme actually sends through. Each concept describes the medium, its permission and reach model, the editing or filtering between you and the recipient, the jobs it is best suited to, its constraints, how it is measured, and where it sits in the lifecycle. Channel specific mechanics live here; the cross channel operations that run across all of them live in [foundations](/foundations/).
 
-# The channels
+## The channels
 
 * [Email](email.md) - the highest volume, lowest cost, most mediated channel, addressable to a list you hold.
 * [SMS and RCS](sms-and-rcs.md) - short, interruptive, expensive per message, with the least editing between you and the recipient today.
@@ -14,10 +14,10 @@ The delivery layer: the messaging channels a lifecycle programme actually sends 
 * [Voice](voice.md) - the highest-bandwidth, highest-cost, most regulated channel, including AI voice agents, for the few moments worth a conversation.
 * [Direct mail](direct-mail.md) - genuinely owned, lands intact, expensive per touch, measured by control group.
 
-# Ownership and reach
+## Ownership and reach
 
 The channels differ in how much of the delivery you actually control and whom they can reach. In-app and direct mail land intact with no platform editing, but reach only the active user or a postal address you hold. Email and push reach dormant users but are filtered and, increasingly, edited between you and the recipient. SMS sits in between: interruptive and largely unedited today, but expensive and low-tolerance. No single channel is the relationship; the relationship is the customer record and the addressability across all of them.
 
-# Choosing between them
+## Choosing between them
 
 Match the channel to the job, run them as a portfolio under one contact strategy, and let [orchestration and frequency](/foundations/orchestration-and-frequency.md) decide which carries which message. The general rule the per channel pages share: reserve the interruptive, filtered channels (push, SMS) for what only they can do, and move the rest onto surfaces the recipient opened on purpose.

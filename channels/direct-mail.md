@@ -6,19 +6,19 @@ tags: [channel, direct-mail, physical, retention, control-group, variable-data, 
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-# What it is
+## What it is
 
 Direct mail is a physical piece delivered to a postal address: a postcard, a letter, a catalogue, a dimensional package. It has seen renewed interest in direct-to-consumer marketing precisely because the message arrives whole, with no model in the pipe to summarise, rank, or suppress it, on a surface the recipient handles directly.
 
-# Permission and reach
+## Permission and reach
 
 Postal marketing operates under a lighter consent regime than electronic channels in most jurisdictions, though data protection law still governs how the address was obtained and used. Reach depends on holding a deliverable postal address, which is a different and often staler data point than an email or phone number.
 
-# Filtering and editing
+## Filtering and editing
 
 None, and this is the point. Nothing ranks, bundles, summarises, or filters a physical piece. It lands on a surface the recipient handles directly. The trade is that it is the slowest channel and the most expensive per touch by a wide margin.
 
-# Technical specifics
+## Technical specifics
 
 The format constrains the cost, the lead time, and the cut-through, and the choices are concrete.
 
@@ -27,7 +27,7 @@ The format constrains the cost, the lead time, and the cut-through, and the choi
 * **Variable-data printing.** Variable-data printing personalises copy, imagery, and offers per recipient from the customer record, the physical analogue of merge tags and dynamic content. Drive it from the same fields the rest of the programme uses, name, last product, lapsed segment, tier, so the piece carries the relevance the digital channels do rather than a generic mailshot.
 * **Bridging to digital.** A QR code, personalised URL (PURL), or unique promo code per recipient connects the physical piece to a trackable digital response. The mechanics matter: mint a unique value per recipient, not one shared code for the whole drop, and stamp it on the CRM record before the file goes to the printer. A per-recipient QR or PURL resolves to a landing page that records who scanned; a per-recipient promo code redeems against that one customer. Shared codes tell you the drop worked; unique codes tell you which recipient acted, which is what match-back needs.
 
-# Format decision rule
+## Format decision rule
 
 Pick the format from the value of the segment and the job, because the per-piece cost climbs fast and only high-value work earns the dimensional end.
 
@@ -37,7 +37,7 @@ Pick the format from the value of the segment and the job, because the per-piece
 
 The rule of thumb: match the unit cost of the piece to the value at stake in the segment, and never send the dimensional package to a list the postcard would have served.
 
-# Address hygiene
+## Address hygiene
 
 The address is the staler data point and it decays continuously as people move, so a drop runs through a hygiene step before it goes to print.
 
@@ -48,15 +48,15 @@ The address is the staler data point and it decays continuously as people move, 
 
 Validate before the file leaves for the printer, because nothing about the piece can change once it is printed and posted.
 
-# Best-fit jobs
+## Best-fit jobs
 
 High value retention and reactivation moments where the cost is justified: top tier customer recognition, winback of lapsed high value accounts, milestone and loyalty gestures, and premium acquisition where a physical piece cuts through a saturated inbox. It is a scalpel, not a broadcast tool.
 
-# Constraints
+## Constraints
 
 Cost per piece is orders of magnitude above email, lead times are measured in days or weeks, and creative cannot be changed once printed and posted. Address data decays, so list hygiene is a postal returns problem rather than a bounce problem.
 
-# Measurement
+## Measurement
 
 There is no open or click, so measurement is by holdout and match-back, and the channel is one of the more honestly measured because incrementality is built into how it has always been run.
 
@@ -69,7 +69,7 @@ The how-to, in order:
 
 Match-back alone counts responses; the holdout is what turns that count into a causal lift. Run both. See also [attribution](/measurement/attribution.md).
 
-# Production-readiness checklist
+## Production-readiness checklist
 
 Run this before committing a drop, because there is no post-print fix. Frame the timeline in weeks, not minutes, and build the lead time in.
 
@@ -80,11 +80,11 @@ Run this before committing a drop, because there is no post-print fix. Frame the
 * **Seed and proof.** Send a physical proof and seed a few internal addresses in the live drop to confirm print, finishing, and the scan-to-landing-page path actually work end to end.
 * **Postal class** chosen and the mailing checked against its rules (for USPS Marketing Mail, the 200-piece or 50-pound minimum).
 
-# Lifecycle role
+## Lifecycle role
 
 A premium, low frequency complement to the digital channels, reserved for moments that earn the spend. It owns the high value end of retention that the cheap channels handle poorly.
 
-# Related
+## Related
 
 * [The channel mix](/channels/index.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
@@ -92,7 +92,7 @@ A premium, low frequency complement to the digital channels, reserved for moment
 * [Retention and LTV](/measurement/retention-and-ltv.md)
 * [Loyalty and retention programs](/foundations/loyalty-and-retention-programs.md)
 
-# Citations
+## Citations
 
 [1] [USPS, Marketing Mail (formats and 200-piece / 50-pound minimum)](https://pe.usps.com/businessmail101?ViewName=StandardMail)
 [2] [Poplar, direct mail attribution (match-back and control-group lift)](https://heypoplar.com/articles/a-complete-guide-to-direct-mail-attribution)
