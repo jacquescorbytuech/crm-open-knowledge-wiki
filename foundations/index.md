@@ -16,6 +16,7 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [Lifecycle mapping](lifecycle-mapping.md) - the acquisition, onboarding, engagement, retention, and winback stages, and mapping the journey between them.
 * [Consent and preferences](consent-and-preferences.md) - permission that holds across channels, the preference centre as a retention tool, and suppression.
 * [List building](list-building.md) - forms, placement, lead magnets, single versus double opt in, and source tracking.
+* [Cold email](cold-email.md) - the contrast case: why unsolicited outreach is spam by this bundle's consent standard, the narrow legal window in the US and UK B2B, and why lawful is not the same as effective.
 * [Database health and sunsetting](database-health.md) - the list as a decaying asset, the contact lifecycle from active to sunset, and net growth as acquisition minus decay.
 
 ## Create and orchestrate

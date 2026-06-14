@@ -46,6 +46,7 @@ Respecting the subscriber is both the ethical and the commercial position. Hones
 ## Related
 
 * [Consent and preferences](/foundations/consent-and-preferences.md)
+* [Cold email](/foundations/cold-email.md)
 * [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 * [Authentication](/foundations/authentication.md)
 * [SMS and RCS](/channels/sms-and-rcs.md)

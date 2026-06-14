@@ -18,3 +18,4 @@ The cost of an unwanted send used to be fractions of a cent. It is not any more.
 
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [List building](/foundations/list-building.md)
+* [Cold email](/foundations/cold-email.md)

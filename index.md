@@ -24,7 +24,7 @@ The bundle is organised around the work itself. The **principles** are the stanc
 
 ## Foundations
 
-* [Foundations](foundations/) - customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration and frequency, AI decisioning and personalisation, plus email's authentication and deliverability mechanics and ESP selection.
+* [Foundations](foundations/) - customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration and frequency, AI decisioning and personalisation, plus email's authentication and deliverability mechanics and ESP selection, and cold email as the case that falls outside the consent model entirely.
 
 ## Channels
 
