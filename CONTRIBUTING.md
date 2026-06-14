@@ -2,7 +2,7 @@
 
 This is a practitioner knowledge base for email, lifecycle and CRM marketing, written as an [Open Knowledge Format](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing) (OKF) bundle: a directory of plain Markdown files, each one a self-contained concept, linked into a graph. Contributions are welcome: fixing an error, sharpening an explanation, adding a missing concept, or grounding a claim in a better source.
 
-Before you start, read [`README.md`](README.md) and [`references/about-this-bundle.md`](references/about-this-bundle.md) so your change fits the format.
+Before you start, read [`README.md`](README.md) and [`references/about-this-bundle.md`](references/about-this-bundle.md) so your change fits the format. The bundle is also published online at [crmknowledgebase.com](https://crmknowledgebase.com).
 
 ## How to contribute
 

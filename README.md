@@ -4,6 +4,8 @@ A practitioner knowledge base covering email, lifecycle and CRM marketing: the c
 
 It is written as an **Open Knowledge Format (OKF)** bundle, a directory of plain Markdown files, each one a self-contained concept, linked to the others so the whole thing reads as a graph from any entry point. There is no app to run and no database: clone it, open any file, and follow the links.
 
+The bundle is also browsable online at [crmknowledgebase.com](https://crmknowledgebase.com).
+
 ## What is OKF?
 
 [Open Knowledge Format](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing) (OKF) is an open, vendor-neutral specification for representing knowledge as a portable bundle of Markdown files with YAML frontmatter. The core ideas:
