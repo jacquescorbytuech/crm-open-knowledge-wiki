@@ -20,7 +20,7 @@ The channel's frontier is the AI voice agent: software that converses in a synth
 
 # Filtering and editing
 
-Carrier-level call labelling and blocking now sit between you and the answer. STIR/SHAKEN signs the calling number, and a number that draws complaints gets a "spam likely" label and stops being answered, the voice analogue of a sender-reputation collapse. Answer rate is the gating metric, and it degrades with the same irrelevance that sinks every other channel.
+Carrier-level call labelling and blocking now sit between you and the answer. STIR/SHAKEN signs the calling number, and a number that draws complaints gets a "spam likely" label and stops being answered, the voice analogue of a sender-reputation collapse. Answer rate is the metric that decides everything else, and it degrades with the same irrelevance that sinks every other channel.
 
 # Technical specifics
 

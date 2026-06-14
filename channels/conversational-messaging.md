@@ -16,7 +16,7 @@ The opt-in bar is set by the platform and sits above the law. WhatsApp requires 
 
 # Filtering and editing
 
-Little algorithmic rewriting of an individual message once it is delivered, but the platform polices hard at the policy layer instead. Templates are pre-approved and classified by category, and each sending number carries a quality rating that throttles or blocks it when users block or report. The editor here is policy and the quality rating, not an on-device summariser, and it gates volume rather than wording.
+Little algorithmic rewriting of an individual message once it is delivered, but the platform polices hard at the policy layer instead. Templates are pre-approved and classified by category, and each sending number carries a quality rating that throttles or blocks it when users block or report. The editor here is policy and the quality rating, not an on-device summariser, and it limits volume rather than wording.
 
 # Technical specifics
 

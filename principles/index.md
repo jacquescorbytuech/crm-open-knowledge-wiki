@@ -16,4 +16,4 @@ The stances that should inform every recommendation in this bundle. They are opi
 # Cross cutting stances
 
 * [Email is a free impression channel](email-is-a-free-impression-channel.md) - the halo effect that last click attribution never captures.
-* [Engagement is the new deliverability](engagement-is-deliverability.md) - sender level engagement now gates reach for the whole list.
+* [Engagement is the new deliverability](engagement-is-deliverability.md) - sender level engagement now decides reach for the whole list.

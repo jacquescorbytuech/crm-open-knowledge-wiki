@@ -79,7 +79,7 @@ Within a tier, break ties by business value and by recency of the triggering eve
 
 # Suppression check before every send
 
-Run this list as a gate before any send fires. A message that clears every job, channel, and cap decision above must still pass suppression, because suppression is where legal and deliverability constraints live.
+Run this list as a final check before any send fires. A message that clears every job, channel, and cap decision above must still pass suppression, because suppression is where legal and deliverability constraints live.
 
 * Hard bounces: address or number is dead, never send again.
 * Unsubscribes: global opt out, suppress on every channel.

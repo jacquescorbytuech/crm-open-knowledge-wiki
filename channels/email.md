@@ -12,7 +12,7 @@ Email is the workhorse of lifecycle marketing: a message addressed to an address
 
 # Permission and reach
 
-A subscription is an address plus a consent record you hold and can take to another provider. Reach is gated by deliverability rather than by a per device permission. Authentication is the entry gate (see [authentication](/foundations/authentication.md)), and sender level engagement decides placement above it (see [engagement is the new deliverability](/principles/engagement-is-deliverability.md)). The reachable audience is the engaged subset, not the list size.
+A subscription is an address plus a consent record you hold and can take to another provider. Reach is governed by deliverability rather than by a per device permission. Authentication is the price of entry (see [authentication](/foundations/authentication.md)), and sender level engagement decides placement above it (see [engagement is the new deliverability](/principles/engagement-is-deliverability.md)). The reachable audience is the engaged subset, not the list size.
 
 # Filtering and editing
 
@@ -26,7 +26,7 @@ The format constrains the craft, and the constraints are concrete.
 * **Message size.** Gmail clips a message above roughly 102KB, hiding the rest behind a "view entire message" link, which can bury your CTA and conversion tracking. Keep the HTML lean.
 * **MIME.** Send a `multipart/alternative` message carrying both a plain-text and an HTML part, plainest first per the standard; a missing plain-text part is a spam signal and degrades clients that prefer it.
 * **Unsubscribe headers.** Bulk senders must include a `List-Unsubscribe` header (RFC 2369) and support one-click unsubscribe via the `List-Unsubscribe-Post` header (RFC 8058), in addition to a visible in-body link.
-* **Authentication.** SPF, DKIM, and aligned DMARC are the entry gate, not an optimisation. See [authentication](/foundations/authentication.md).
+* **Authentication.** SPF, DKIM, and aligned DMARC are the price of entry, not an optimisation. See [authentication](/foundations/authentication.md).
 * **Sending infrastructure.** A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate transactional and marketing streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
 
 Rendering across the client landscape, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).

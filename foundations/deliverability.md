@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 # How placement works
 
-Inbox placement is decided by machine learning, not rules, and has been since Bayesian spam filtering in the late 1990s. Authentication is the entry gate, set it up before your first send, see [authentication](/foundations/authentication.md). Above that gate, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md); for day-to-day operations, the levers below are what you act on.
+Inbox placement is decided by machine learning, not rules, and has been since Bayesian spam filtering in the late 1990s. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md); for day-to-day operations, the levers below are what you act on.
 
 # How to warm a new IP or domain
 
@@ -36,7 +36,7 @@ Rules for the ramp:
 
 If you are landing in spam, work the causes in order. Pushing more volume never fixes it, it deepens it.
 
-1. Fix authentication first. Confirm SPF, DKIM, and aligned DMARC all pass with an end-to-end test, this is the entry gate and a silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
+1. Fix authentication first. Confirm SPF, DKIM, and aligned DMARC all pass with an end-to-end test, this is the price of entry and a silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
 2. Auto-suppress hard bounces immediately, before the next send (see below). Bouncing into dead addresses is a strong negative signal.
 3. Prune the disengaged. Remove or suppress addresses with no opens or clicks over a long window, they drag reputation and inflate complaint rate.
 4. Reduce volume to the engaged core. Cut back to recent openers and clickers only, so the provider sees a clean engagement signal again.

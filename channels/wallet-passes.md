@@ -16,7 +16,7 @@ The user adds the pass deliberately, the add-to-wallet action is the opt-in, and
 
 # Filtering and editing
 
-Minimal. The pass renders as you define it and remote updates land directly on the held copy. The lock-screen relevance surfacing is OS-driven by the time and geofence you set on the pass, not by an editor between you and the user. The only real gate is whether the user kept notifications enabled for that pass.
+Minimal. The pass renders as you define it and remote updates land directly on the held copy. The lock-screen relevance surfacing is OS-driven by the time and geofence you set on the pass, not by an editor between you and the user. The only real constraint is whether the user kept notifications enabled for that pass.
 
 # Technical specifics
 

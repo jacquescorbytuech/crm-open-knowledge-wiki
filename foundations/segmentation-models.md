@@ -75,7 +75,7 @@ A workable pattern: let stage decide the message (onboarding sequence, retention
 
 # Propensity
 
-Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, and like all of it, they are gated by the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, and like all of it, they are only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
 A propensity score answers who is likely to act, which is not the same as who your sending changes. The first keeps messaging people who would have acted anyway; the second is the uplift question, and it needs a randomised holdout to answer honestly. Treat propensity as the accessible first step and reach for the rigorous version when you have the volume. See [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
