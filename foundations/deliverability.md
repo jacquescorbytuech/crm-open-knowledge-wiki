@@ -104,7 +104,7 @@ Being in Promotions is not a failure: deal seekers actively browse it. Since Sep
 | Reply rate | Strong positive inbox signal | Even 1 to 2% improves placement |
 | Bounce rate | Hard and soft delivery failures | Suppress hard bounces immediately |
 
-Two cautions on the engagement rows. An open is an image load, not a read, and the load can be triggered by privacy proxies, prefetch, or filters in the delivery path rather than by a person. Clicks can be inflated by automated security scanners that follow links at scale, seen most sharply at Microsoft properties, so treat clicks in the first few minutes after delivery with suspicion and lean on later, human looking clicks and downstream conversion. The engagement a provider actually acts on, dwell time, scrolling, replies, and folder moves, is richer than either and is not visible to you. See [email metrics are directional](/principles/metrics-are-directional.md).
+The engagement rows are the ones to distrust. An open is an image load, not a read, and the load can be triggered by privacy proxies, prefetch, or filters in the delivery path rather than by a person. Clicks can be inflated by automated security scanners that follow links at scale, seen most sharply at Microsoft properties, so treat clicks in the first few minutes after delivery with suspicion and lean on later, human looking clicks and downstream conversion. The engagement a provider actually acts on, dwell time, scrolling, replies, and folder moves, is richer than either and is not visible to you. See [email metrics are directional](/principles/metrics-are-directional.md).
 
 ## Platform diagnostics
 

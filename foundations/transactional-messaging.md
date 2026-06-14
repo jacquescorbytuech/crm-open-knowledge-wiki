@@ -12,8 +12,6 @@ A transactional message is one sent in response to a specific action a customer 
 
 ## What the distinction governs
 
-Three systems read the transactional-versus-marketing line, which is why so many other concepts in this bundle lean on it.
-
 * **Consent.** A transactional message generally rests on the contract or relationship rather than on marketing consent, so it can be sent to a customer who never opted in to marketing, and it is not suppressed by a marketing unsubscribe. A marketing message needs the appropriate consent or lawful basis for the channel. The capture and suppression mechanics live in [consent and preferences](/foundations/consent-and-preferences.md); the regime detail is in [legislation and compliance](/references/legislation-and-compliance.md).
 * **Deliverability.** Transactional mail is high-engagement and time-sensitive, and a customer expects it immediately. Mixing it into the marketing stream means a marketing reputation problem, a complaint spike, or a sunsetted-list drag can delay or junk a password reset. Senders separate the two onto distinct subdomains and sending identities so the reputations cannot contaminate each other. The subdomain split and warming detail live in [authentication](/foundations/authentication.md) and [deliverability](/foundations/deliverability.md).
 * **Orchestration.** Transactional and service messages sit at the top of the [orchestration and frequency](/foundations/orchestration-and-frequency.md) priority order: they always send, are never frequency-capped, and are never suppressed for fatigue. A receipt does not wait behind a newsletter for budget.

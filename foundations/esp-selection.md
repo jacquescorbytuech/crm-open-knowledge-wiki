@@ -16,7 +16,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Beginner guidance
 
-Over 220 email platforms exist, and most beginners overthink the choice. Under about 1,000 subscribers the entry level platforms (Mailchimp, Kit, MailerLite, Brevo) are broadly similar and often free. Pick the one that feels most intuitive and start. Stop researching. The rest of this page is for a team that has outgrown that advice and is making a deliberate, comparable choice, usually a paid switch with real data and automations to move.
+Over 220 email platforms exist, and most beginners overthink the choice. Under about 1,000 subscribers the entry level platforms (Mailchimp, Kit, MailerLite, Brevo) are broadly similar and often free. Pick the one that feels most intuitive and start. Stop researching. The deliberate, comparable choice is for a team that has outgrown that advice, usually a paid switch with real data and automations to move.
 
 ## Evaluate what you can actually compare
 

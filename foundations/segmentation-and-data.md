@@ -23,7 +23,7 @@ A dynamic segment is a rule expression over profile and event fields. Write the 
 * **Onboarding incomplete.** `signup_date within last 14 days AND onboarding_completed = false AND email_consent = true`. Drives the welcome flow in [automation and sequences](/foundations/automation-and-sequences.md).
 * **Active SMS-permissioned.** `sms_consent = true AND last_click within last 60 days AND country = [region]`. Channel grant plus engagement, so an SMS send only ever reaches the permissioned and warm.
 
-Two practical rules when writing expressions. Be explicit about time windows (last 30 days, not recently), because a vague window becomes a different segment on every platform. And always carry the consent and suppression conditions into the rule itself, so a segment can never resolve to a contact you may not message.
+When writing expressions, be explicit about time windows (last 30 days, not recently), because a vague window becomes a different segment on every platform, and always carry the consent and suppression conditions into the rule itself, so a segment can never resolve to a contact you may not message.
 
 ## Segment overlap and the cascade into frequency
 

@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 In app messaging is everything you can show inside your own product: passive cards in a feed the user reaches deliberately, a persistent message centre or inbox, modal and slide up messages triggered on session events, and messaging primitives embedded in the product flows themselves. It is the highest fidelity owned surface most brands have.
 
-What sets it apart is what is missing from the path: in-app is the only channel with no platform editor and no permission gate standing between you and the user. Nothing ranks, bundles, or silences the message, and nothing has to grant it reach first. That absence is not just a delivery convenience; it is exactly what makes in-app the one channel where holdout-based incrementality can be measured cleanly and honestly, because both arms of the test see the same unmediated surface. The measurement section at the foot of the page is where that pays off; the permission and filtering sections below are the two halves of why.
+What sets it apart is what is missing from the path: in-app is the only channel with no platform editor and no permission gate standing between you and the user. Nothing ranks, bundles, or silences the message, and nothing has to grant it reach first. That absence is not just a delivery convenience; it is exactly what makes in-app the one channel where holdout-based incrementality can be measured cleanly and honestly, because both arms of the test see the same unmediated surface.
 
 ## Permission and reach
 
