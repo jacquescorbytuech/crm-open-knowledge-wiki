@@ -14,6 +14,10 @@ A push notification is a short message delivered to a device through APNs on iOS
 
 Permission lives inside a specific install on a specific device, tied to a token the platform can invalidate. Since Android made notification permission an explicit runtime grant, opt in rates have fallen, so the permission is scarce and should be requested in context after showing value, not on first launch. You hold no list you can take elsewhere.
 
+# The pre-permission prompt
+
+The platform permission dialog is effectively one-shot. On iOS a denial can only be reversed by the user in Settings, and Android's runtime grant behaves the same way once dismissed, so firing the OS prompt cold spends the single ask on a user who has no reason yet to say yes. Prime it instead: show your own in-app screen first, framed in the value the user came for, "get told the moment your size is back in stock", and trigger the real OS dialog only after they accept that soft ask. A decline on the soft ask costs nothing, you keep the OS prompt for a better moment and can re-prime later; a decline on the OS prompt is the grant gone. Tie the ask to a moment that earns it, just after the user sets a price alert or completes a first order, not on first launch before any value has landed. The same one-shot trap and the same fix govern every scarce permission you hold, [browser push](/channels/browser-push.md), location, and App Tracking Transparency, and the consent asks on owned channels share the logic; see [consent and preferences](/foundations/consent-and-preferences.md).
+
 # Filtering and editing
 
 Push is the most opaque channel. On recent devices an on-device model can summarise, reorder, and on some surfaces rewrite a notification before the lock screen, and user controls like Focus can suppress it, with no API to tell you which happened. Apple Intelligence and Google's Gemini Nano run these models locally; the dated rollout is in [platform interventions](/references/platform-interventions.md) and the published models in [notification and decisioning research](/references/notification-and-decisioning-research.md).
@@ -53,7 +57,9 @@ The re engagement and time critical channel for app audiences. Once the user is 
 
 # Related
 
+* [Browser push](/channels/browser-push.md)
 * [In-app](/channels/in-app.md)
+* [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Platform interventions](/references/platform-interventions.md)
 * [Copywriting](/foundations/copywriting.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
@@ -68,3 +74,4 @@ The re engagement and time critical channel for app audiences. Once the user is 
 [4] [Firebase, FCM message types and payload size](https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type)
 [5] [Apple, UNNotificationInterruptionLevel (passive, active, time-sensitive, critical)](https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel)
 [6] [Android Developers, create and manage notification channels](https://developer.android.com/develop/ui/views/notifications/channels)
+[7] [Apple, asking permission to use notifications (request in response to value, not at launch)](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications)

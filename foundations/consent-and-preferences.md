@@ -24,6 +24,15 @@ Consent under the GDPR standard means freely given, specific, informed, and unam
 
 Collect consent you can evidence: what they agreed to, when, and how. Keep channel grants separate, because email permission is not SMS permission and is not push permission. State who you are and what they will receive at the point of capture. Prefer an explicit, granular opt in wherever an opt in regime applies, and record the source so a weak channel can be traced and fixed. See [list building](/foundations/list-building.md).
 
+# Priming the ask
+
+Permission converts better, and the grant holds up better, when you set the expectation before you ask for it. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed subscriber complains and unsubscribes less because the mail matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
+
+* **Scarce platform permissions are structurally one-shot, so priming is mandatory.** The push, [browser push](/channels/browser-push.md), location, and App Tracking Transparency dialogs can be shown once, and a denial is sticky, so a cold prompt with no context spends the only ask you get. Show your own soft prompt first, framed in the value, and fire the native dialog only when the user accepts it, so a no on the soft ask costs nothing. See [the pre-permission prompt](/channels/push.md).
+* **Owned channels prime through pre opt in context.** Email and SMS let you ask again, so the failure mode is not a burned grant but a weak, complaint-prone one. Name the programme and its frequency at the point of capture, prefer a value exchange the subscriber understands over a bare "subscribe" box, and lead with what they get rather than the form. This is the same expectation setting, applied to a channel you can re-approach.
+
+Across both, priming is why a smaller, expectation-matched list outperforms a larger cold one; see [list quality over size](/principles/list-quality-over-size.md).
+
 # A CAN-SPAM compliance checklist
 
 Run every US commercial email against this before it sends. None of these is optional, and a single failing send is a separate violation per recipient.
