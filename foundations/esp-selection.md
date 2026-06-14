@@ -20,7 +20,17 @@ Over 220 email platforms exist, and most beginners overthink the choice. Under a
 
 # Evaluate what you can actually compare
 
-Pick on the things you can evaluate, audience model, channel orchestration, deliverability hygiene, native data layer, and developer experience, not on AI feature inventory that all reads the same on a comparison sheet. Why a vendor's undisclosed machine learning is one of those things you cannot cleanly compare is treated in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+Score vendors on dimensions you can observe and test, and ignore the ones you cannot. The comparable dimensions are concrete and most of them are the features themselves:
+
+* **Channels.** Which channels the platform sends and orchestrates natively (email, SMS, push, in-app, WhatsApp, web, ad-audience sync), versus channels it only reaches through a bolt-on or a third party.
+* **Automation.** The triggers, branching, wait/delay logic, and exit conditions the journey builder actually supports, tested against a real flow your programme needs.
+* **Segmentation and the data layer.** What customer data it can store and act on, whether segments update dynamically on behaviour and attributes, and how it resolves identity across channels. See [customer data and identity](/foundations/customer-data-and-identity.md).
+* **Native integrations.** Whether a first-party connector to your system of record (CRM, ecommerce, CMS) exists, versus a Zapier or Make bridge.
+* **Reporting.** What you can measure in-platform and export cleanly, versus what is locked to a dashboard.
+* **Pricing model.** Computable to a unit cost (see below).
+* **Developer experience.** The API, webhooks, and docs, judged from a real call you make during the trial.
+
+AI and "predictive" features are not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed, and a trial on your small slice of data cannot show whether they work at your scale. Treat them as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
 # Split must have from nice to have
 
