@@ -43,6 +43,8 @@ A frequency cap is a hard ceiling on messages per channel and in total over a ro
 
 # Engagement-tiered starting caps
 
+An **engagement tier** is a band a user falls into based on how recently and how often they engage — the [engagement score](/foundations/lifecycle-mapping.md) from the lifecycle map, cut into a few groups. Most programmes use three: recently active (opened, clicked, or purchased inside a short window), moderately engaged (active only in a longer window), and dormant (no engagement across the sunset window). Set the window boundaries from your own engagement distribution and keep them consistent with the sunset logic in [segmentation and data](/foundations/segmentation-and-data.md); the tier is derived from observed behaviour and recomputed as it moves, not assigned once.
+
 Set caps by segment, since your most engaged and your least engaged tolerate very different volumes. The figures below are starting defaults to tune against your own complaint and unsubscribe signals, not universal facts; the right cap for any programme is whatever maximises incremental value before fatigue costs overtake it. Begin here, then tune.
 
 | Engagement tier | Email starting cap | Push / SMS starting cap |

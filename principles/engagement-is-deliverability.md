@@ -14,9 +14,9 @@ Sender level engagement is the currency of inbox placement. Consistently weak en
 
 This was always partly true. What changed is that the major providers codified it. From February 2024 the Gmail and Yahoo bulk sender rules made authentication, one click unsubscribe, and a spam complaint ceiling of 0.3% (0.1% recommended) non negotiable, with Microsoft following in 2025 and Gmail escalating to rejection in November 2025. Above the explicit thresholds sits a category aware retrieval gate driven by quality and engagement: a sender can pass SPF, DKIM, and DMARC and still never be retrieved into intelligent views, search, or assistant answers. See [platform interventions](/references/platform-interventions.md).
 
-# Two senses of engagement
+# Which engagement this is
 
-Be precise about which engagement this is. The provider acts on what it can observe directly, dwell time, scrolling, replies, deletes, and folder moves, aggregated across users into a view of the sender. That is not the open and click data you measure, which is a thinner proxy you happen to have access to. The principle holds on the provider's sense: it is the behaviour the provider sees, not your reported open rate, that moves placement. See [email metrics are directional](/principles/metrics-are-directional.md).
+The engagement that moves placement is the one the provider observes directly, not the opens and clicks you measure. The principle holds on the provider's sense: it is the behaviour the provider sees, not your reported open rate, that decides placement. The full distinction between the two, and why your own metrics are the wrong instrument for it, is in [email metrics are directional](/principles/metrics-are-directional.md).
 
 # Consequences
 

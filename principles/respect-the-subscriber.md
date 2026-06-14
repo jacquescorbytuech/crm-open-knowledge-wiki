@@ -12,7 +12,7 @@ Be honest about what subscribers signed up for. Deliver on promises. Make opt ou
 
 # Why the commercial case is now stronger
 
-The cost of an unwanted send used to be fractions of a cent. It is not any more. One click unsubscribe is a single tap surfaced in two different inboxes, provider initiated unsubscribe banners actively prompt removal of low engagement senders, and consistent low engagement drags placement for the whole list. Respecting the subscriber is now the same thing as protecting deliverability. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+The cost of an unwanted send used to be fractions of a cent. It is not any more. One click unsubscribe is a single tap surfaced in two different inboxes, and provider initiated unsubscribe banners actively prompt removal of low engagement senders. Because of the engagement drag that follows (the mechanism is in [engagement is the new deliverability](/principles/engagement-is-deliverability.md)), respecting the subscriber is now the same thing as protecting deliverability: the honest programme and the deliverable one are the same programme.
 
 # Related
 

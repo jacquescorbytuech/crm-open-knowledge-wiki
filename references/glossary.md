@@ -16,6 +16,8 @@ timestamp: 2026-06-14T00:00:00Z
 | BIMI | Brand Indicators for Message Identification. Puts a verified logo into supporting clients, on top of aligned DMARC. |
 | MPP | Apple Mail Privacy Protection. Prefetches images through Apple proxies, inflating and corrupting the open metric. |
 | Deliverability | Whether mail reaches the inbox rather than spam. One layer below the category aware retrieval gate. |
+| Category-aware retrieval gate | The quality-and-engagement layer above classical spam filtering that decides whether mail is surfaced in intelligent inbox views, search, and assistant answers. A sender can pass authentication and still fail it. |
+| One-click unsubscribe | A `List-Unsubscribe-Post` header (RFC 8058) that lets a recipient opt out in a single tap from the inbox UI. Required of bulk senders alongside the in-body link. |
 | Bounce | A failed delivery. Hard bounces are permanent and must be suppressed immediately; soft bounces are transient. |
 | Sender reputation | The provider's running assessment of a sending domain and IP, driven heavily by engagement. |
 
@@ -25,6 +27,8 @@ timestamp: 2026-06-14T00:00:00Z
 | --- | --- |
 | Single opt in | Subscriber added on form submission, no confirmation step. |
 | Double opt in | Subscriber must confirm via a link before being added. Better for quality and consent records. |
+| Soft opt in | A narrow lawful basis (PECR) for marketing existing customers about similar products without prior express consent, provided an opt-out was offered at collection and in every message. |
+| Sunset | Moving persistently disengaged contacts out of regular sending, after a re-engagement attempt fails, to protect deliverability for the active cohort. |
 | Lead magnet | An incentive offered in exchange for contact details. |
 | Segment | A subset of the list, dynamic (auto updating) or static (fixed at creation). |
 | Merge tag | A placeholder replaced with subscriber specific data at send time. |
@@ -53,6 +57,9 @@ timestamp: 2026-06-14T00:00:00Z
 | Churn | A customer lapsing or ending the relationship; churn rate is the share who do so in a period. |
 | Retention rate | The share of customers retained over a period; its inverse is churn. |
 | Lifecycle stage | Where a customer sits in the journey: acquisition, onboarding, engagement, retention, or winback. |
+| Winback | The lifecycle stage, and the messaging it carries, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
+| Engagement score | A composite measure of how recently and often a contact engages (opens, clicks, sessions, purchases), used to trigger lifecycle stage transitions. |
+| Engagement tier | An engagement score banded into a few groups, such as active, moderate, and dormant, used to set frequency caps and channel eligibility. |
 | Loyalty program | A structured points, tier, or referral scheme that rewards repeat business. |
 | Referral | Acquisition through an existing customer recommending the brand. |
 

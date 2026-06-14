@@ -1,7 +1,7 @@
 ---
 type: Method
 title: Sample Size and Power
-description: The two proportion z-test for planning experiments, and how to turn a required sample into a test duration.
+description: The two proportion z-test for planning experiments, how to turn a required sample into a test duration, and the companion test for reading significance once the experiment has run.
 tags: [statistics, power, sample-size, z-test, experiments]
 timestamp: 2026-06-14T00:00:00Z
 ---
@@ -25,6 +25,16 @@ Test duration = (Users per variant x 2) / Users entering per week
 ```
 
 You do not have to compute this by hand. Evan Miller's [sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html) does the proportion case interactively and is the quickest way to sanity check a plan before building a test; the page also explains why fixing the sample in advance, rather than stopping when the result looks good, is what keeps the false positive rate honest. See [frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md) for that distinction.
+
+# Reading the result once it has run
+
+Planning sizes the test; reading it asks whether the gap you observed is real. This is the test the [holdout](/measurement/holdouts-and-control-groups.md), [uplift](/measurement/uplift-and-incrementality.md), and incrementality reads refer back to. For two observed proportions `p1` and `p2` over `n1` and `n2` users, the difference `p2 - p1` has a standard error:
+
+```
+SE = sqrt( p1(1-p1)/n1 + p2(1-p2)/n2 )
+```
+
+The 95% confidence interval on the difference is `(p2 - p1) ± 1.96 x SE`. The effect is significant at that level when the interval excludes zero, equivalently when `|p2 - p1| / SE` exceeds 1.96. Report the interval, not just the point estimate: it is the range the other measurement pages mean by "attach an interval." Below the [volume floor](/measurement/volume-thresholds.md) that interval is a wide band around zero whatever the point looks like, which is the frequentist reason small lists cannot read small effects. The Bayesian alternative reading is in [frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md).
 
 # The hard truth this surfaces
 
