@@ -29,6 +29,8 @@ timestamp: 2026-06-14T00:00:00Z
 | Double opt in | Subscriber must confirm via a link before being added. Better for quality and consent records. |
 | Soft opt in | A narrow lawful basis (PECR) for marketing existing customers about similar products without prior express consent, provided an opt-out was offered at collection and in every message. |
 | Sunset | Moving persistently disengaged contacts out of regular sending, after a re-engagement attempt fails, to protect deliverability for the active cohort. |
+| List decay | The continuous loss of a list's value as contacts change addresses, disengage, or go dormant; net list growth is acquisition minus decay. |
+| Database health | The ongoing practice of keeping the contactable list deliverable and valuable through hygiene, re-engagement, and sunsetting. |
 | Lead magnet | An incentive offered in exchange for contact details. |
 | Segment | A subset of the list, dynamic (auto updating) or static (fixed at creation). |
 | Merge tag | A placeholder replaced with subscriber specific data at send time. |
@@ -67,6 +69,8 @@ timestamp: 2026-06-14T00:00:00Z
 
 | Term | Meaning |
 | --- | --- |
+| Transactional message | A message sent in response to a customer action or relationship (receipt, password reset, shipping update), governed by the contract rather than marketing consent. Distinct from a marketing message by primary purpose. |
+| Marketing message | A message sent to drive a commercial outcome (campaign, promotion, winback), requiring marketing consent and an unsubscribe path. |
 | Triggered (behavioural) message | A send fired by a customer's behaviour or state, rather than a schedule. |
 | Broadcast (batch) | A send to a segment on a schedule. |
 | Orchestration | Deciding, per customer and moment, which message goes on which channel, and whether to send. |

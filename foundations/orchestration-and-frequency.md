@@ -12,7 +12,7 @@ Orchestration is the layer that decides, for a given customer at a given moment,
 
 # One contact strategy, not many
 
-The unit of fatigue is the customer, not the channel. A customer who got an email, a push, and an SMS in an afternoon experienced one over contacted relationship, not three well run channels. A contact strategy sets the total acceptable contact across all channels, with priority rules for what wins when several messages are eligible at once. The channel teams optimise inside that budget; they do not each spend it in full.
+The unit of fatigue is the customer, not the channel. A customer who got an email, a push, and an SMS in an afternoon experienced one over contacted relationship, not three well run channels. A contact strategy sets the total acceptable contact across all channels, with priority rules for what wins when several messages are eligible at once. The channel teams optimise inside that budget; they do not each spend it in full. Paid media counts too: a customer chased by a retargeting ad the day after they bought is the contact strategy leaking into the channel it most often forgets, which is why [audience sync](/foundations/audience-sync.md) brings paid under the same governance and suppression rules.
 
 # Spending the single contact budget
 
@@ -71,7 +71,7 @@ A cap that lifts gross opens but loses incremental revenue or raises complaints 
 
 When several messages are eligible for the same user in the same window and the budget will not cover all of them, a fixed priority order decides what sends and what waits or drops. Higher priority wins; the rest queue or are suppressed for the window.
 
-1. Transactional and service (receipts, password resets, shipping, fraud alerts). Always sends, never capped, never suppressed for frequency.
+1. [Transactional and service](/foundations/transactional-messaging.md) (receipts, password resets, shipping, fraud alerts). Always sends, never capped, never suppressed for frequency.
 2. Triggered and lifecycle (cart abandon, onboarding step, winback, renewal). Sends if the budget allows, by recency and value.
 3. Broadcast and promotional (newsletters, campaigns, sales). Lowest priority, the first to yield when the budget is tight.
 
@@ -97,6 +97,8 @@ Quiet hours and consent based suppressions are legal constraints, not courtesies
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Campaign planning and calendar](/foundations/campaign-planning-and-calendar.md)
 * [The channel mix](/channels/index.md)
+* [Audience sync](/foundations/audience-sync.md)
+* [Transactional messaging](/foundations/transactional-messaging.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 

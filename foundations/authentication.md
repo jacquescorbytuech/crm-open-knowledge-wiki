@@ -86,7 +86,7 @@ The whole point of the staged path is that `p=none` lets you discover your own l
 
 # Subdomain strategy
 
-Send marketing and transactional mail from separate subdomains so a reputation problem in one cannot poison the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
+Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot poison the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
 
 A common, readable convention:
 

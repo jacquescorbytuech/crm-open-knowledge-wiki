@@ -16,12 +16,14 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [Lifecycle mapping](lifecycle-mapping.md) - the acquisition, onboarding, engagement, retention, and winback stages, and mapping the journey between them.
 * [Consent and preferences](consent-and-preferences.md) - permission that holds across channels, the preference centre as a retention tool, and suppression.
 * [List building](list-building.md) - forms, placement, lead magnets, single versus double opt in, and source tracking.
+* [Database health and sunsetting](database-health.md) - the list as a decaying asset, the contact lifecycle from active to sunset, and net growth as acquisition minus decay.
 
 # Create and orchestrate
 
 * [Copywriting](copywriting.md) - subject lines, message anatomy, CTAs, spam triggers, and writing for the summariser.
 * [Message design and rendering](message-design-and-rendering.md) - mobile-first layout, dark mode, accessibility, alt text, and preheader text across clients.
 * [Automation and sequences](automation-and-sequences.md) - triggers, welcome, abandoned cart, re-engagement, and goal setting.
+* [Transactional messaging](transactional-messaging.md) - the line between transactional and marketing, why it governs consent, deliverability, and orchestration, and the contamination trap.
 * [Offers and incentives](offers-and-incentives.md) - discount discipline, promotion strategy, and the alternatives to money off.
 * [Loyalty and retention programs](loyalty-and-retention-programs.md) - points, tiers, and referral, and the economics of retention.
 * [Campaign planning and calendar](campaign-planning-and-calendar.md) - triggered versus broadcast, the calendar, cadence, and governance.

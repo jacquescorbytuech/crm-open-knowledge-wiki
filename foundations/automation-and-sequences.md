@@ -38,7 +38,7 @@ The same discount discipline applies: a reflexive discount in the first abandone
 
 # Re-engagement and sunset
 
-Run a re-engagement sequence for subscribers who have gone quiet, then sunset the ones who do not respond. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender level reach. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+Run a re-engagement sequence for subscribers who have gone quiet, then sunset the ones who do not respond. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender level reach. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md). This flow is the active step in the wider [database health and sunsetting](/foundations/database-health.md) lifecycle, which frames decay, re-engagement, and sunset as one ongoing practice.
 
 Define the trigger by an inactivity window: no open, click, or purchase for a set period. A sensible default is 90 days. The win-back is short, two to three messages:
 

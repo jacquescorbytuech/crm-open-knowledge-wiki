@@ -27,7 +27,7 @@ The format constrains the craft, and the constraints are concrete.
 * **MIME.** Send a `multipart/alternative` message carrying both a plain-text and an HTML part, plainest first per the standard; a missing plain-text part is a spam signal and degrades clients that prefer it.
 * **Unsubscribe headers.** Bulk senders must include a `List-Unsubscribe` header (RFC 2369) and support one-click unsubscribe via the `List-Unsubscribe-Post` header (RFC 8058), in addition to a visible in-body link.
 * **Authentication.** SPF, DKIM, and aligned DMARC are the price of entry, not an optimisation. See [authentication](/foundations/authentication.md).
-* **Sending infrastructure.** A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate transactional and marketing streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
+* **Sending infrastructure.** A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate [transactional and marketing](/foundations/transactional-messaging.md) streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
 
 Rendering across the client landscape, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
@@ -39,7 +39,7 @@ Broad mid funnel work where some summary distortion is acceptable: newsletters, 
 
 Opens are corrupted by image prefetch and Mail Privacy Protection, so they are directional only and click, conversion, reply, and unsubscribe carry the signal. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
 
-List hygiene is a deliverability lever, not housekeeping. Suppress hard bounces immediately and never resend to them, retire addresses after repeated soft bounces, and sunset the never-engaging tail before it drags sender reputation down. Wire these as automated suppression rules, see [automation and sequences](/foundations/automation-and-sequences.md), and work the recovery order in [deliverability](/foundations/deliverability.md).
+List hygiene is a deliverability lever, not housekeeping. Suppress hard bounces immediately and never resend to them, retire addresses after repeated soft bounces, and sunset the never-engaging tail before it drags sender reputation down. Wire these as automated suppression rules, see [automation and sequences](/foundations/automation-and-sequences.md), run them as part of ongoing [database health](/foundations/database-health.md), and work the recovery order in [deliverability](/foundations/deliverability.md).
 
 # Measurement
 
@@ -53,6 +53,8 @@ The default backbone for nurture, retention, and winback at scale, complemented 
 
 * [Authentication](/foundations/authentication.md)
 * [Deliverability](/foundations/deliverability.md)
+* [Transactional messaging](/foundations/transactional-messaging.md)
+* [Database health and sunsetting](/foundations/database-health.md)
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)

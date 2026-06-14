@@ -47,8 +47,8 @@ Segmentation trades statistical power for relevance. Below list sizes in the low
 Hygiene is the foundation the rest sits on: a clean list is what makes segments accurate and sends deliverable. Run it to a service level, not on remembering to, so the standard is a written threshold rather than a habit.
 
 * **Hard bounces: suppress immediately.** A hard bounce means the address is dead. Auto-suppress it the moment it is reported and never re-send, certainly before the next send to that segment fires. A hard bounce that is still in the audience on the following send is an SLA breach.
-* **Complaints and unsubscribes: suppress immediately, treat as permanent.** Feed both into the suppression list at once and never reactivate. These are also legal obligations, not just hygiene; see the suppression workflow in [consent and preferences](/foundations/consent-and-preferences.md).
-* **Sunset by inactivity window.** Define dormancy as no open, click, or purchase across a set window (a sensible default is 90 days), run the re-engagement sequence, then move any contact who does not respond to a sunset segment, suppressed from broadcast. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender-level reach. Keep the criteria identical to the sunset logic in [automation and sequences](/foundations/automation-and-sequences.md) so the flow and the segment agree.
+* **Complaints and unsubscribes: suppress immediately, treat as permanent.** Feed both into the suppression list at once and never reactivate. These are also legal obligations, not just hygiene; see the suppression workflow in [consent and preferences](/foundations/consent-and-preferences.md). Suppression has to travel beyond the sending channels too: a contact removed here must also drop out of any ad-platform [audience sync](/foundations/audience-sync.md), or you are pursuing in paid someone you stopped emailing.
+* **Sunset by inactivity window.** Define dormancy as no open, click, or purchase across a set window (a sensible default is 90 days), run the re-engagement sequence, then move any contact who does not respond to a sunset segment, suppressed from broadcast. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender-level reach. Keep the criteria identical to the sunset logic in [automation and sequences](/foundations/automation-and-sequences.md) so the flow and the segment agree. The full lifecycle this hygiene step sits inside, decay, re-engagement, and sunsetting as one practice, is [database health and sunsetting](/foundations/database-health.md).
 
 See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
@@ -87,6 +87,8 @@ Set the cadence to your volume and risk; the point is that it is scheduled, with
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Automation and sequences](/foundations/automation-and-sequences.md)
+* [Database health and sunsetting](/foundations/database-health.md)
+* [Audience sync](/foundations/audience-sync.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 * [Volume thresholds](/measurement/volume-thresholds.md)

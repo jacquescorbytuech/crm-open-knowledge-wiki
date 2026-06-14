@@ -38,7 +38,7 @@ If you are landing in spam, work the causes in order. Pushing more volume never 
 
 1. Fix authentication first. Confirm SPF, DKIM, and aligned DMARC all pass with an end-to-end test, this is the price of entry and a silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
 2. Auto-suppress hard bounces immediately, before the next send (see below). Bouncing into dead addresses is a strong negative signal.
-3. Prune the disengaged. Remove or suppress addresses with no opens or clicks over a long window, they drag reputation and inflate complaint rate.
+3. Prune the disengaged. Remove or suppress addresses with no opens or clicks over a long window, they drag reputation and inflate complaint rate. Done routinely rather than only in a crisis, this is the sunset step of [database health](/foundations/database-health.md).
 4. Reduce volume to the engaged core. Cut back to recent openers and clickers only, so the provider sees a clean engagement signal again.
 5. Rebuild slowly. Treat the engaged core as a warming exercise and ramp volume back up on the schedule above, widening only as reputation recovers.
 6. Monitor at every step in Postmaster Tools and SNDS, watch complaint rate and reputation tier, and slow down the moment either worsens.
@@ -111,6 +111,8 @@ Send a proper multipart message. Use a `multipart/alternative` container holding
 # Related
 
 * [Authentication](/foundations/authentication.md)
+* [Database health and sunsetting](/foundations/database-health.md)
+* [Transactional messaging](/foundations/transactional-messaging.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
