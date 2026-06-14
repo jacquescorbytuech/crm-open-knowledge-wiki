@@ -30,6 +30,14 @@ Start at [`index.md`](index.md), then follow the layer your question sits in:
 
 Each concept carries a **Citations** section grounded in primary and authoritative sources — standards and RFCs, platform documentation, regulators (FTC, ICO, FCC), and recognised industry and research references. Attribution lives in those Citations sections rather than in a single frontmatter field.
 
+## Community
+
+If you work in this field, the [Email Geeks](https://email.geeks.chat/) community is where a lot of the practitioners behind these sources hang out — a vendor-neutral Slack for email, deliverability, and lifecycle marketing. A good place to ask the questions this bundle doesn't yet answer.
+
+## Contributing
+
+Corrections, sharper explanations, and missing concepts are welcome. The bundle is **vendor-neutral**: cite tools to show how something works, never to sell them, and disclose any relationship you have with a product or vendor you add or cite. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the conventions and the rules on disclosure and self-promotion.
+
 ## License
 
 See [`LICENSE`](LICENSE).

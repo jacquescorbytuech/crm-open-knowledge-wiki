@@ -1,5 +1,10 @@
 # Bundle Update Log
 
+## 2026-06-14 (contribution guidelines)
+* **Directive**: Add contribution guidance and rules for the project, weighted toward preventing undisclosed self-promotion.
+* **Added**: A root [`CONTRIBUTING.md`](CONTRIBUTING.md) covering how to contribute (issue-then-PR, focused changes), what a good contribution looks like (frontmatter shape, bundle-relative links, grounded Citations, no fabricated facts, house style, updating `index.md`/`log.md`), and the contribution rules. The rules lead with vendor neutrality and disclosure: disclose any material relationship with a product, vendor, or source you mention or cite; no undisclosed self-promotion; no link-building (backlink-seeking PRs declined, outbound commercial links marked `nofollow` to remove the incentive); citations support claims rather than advertise; no sponsored rankings. Plus accuracy/scope and conduct sections, and a license note.
+* **README**: Added a "Contributing" section linking to `CONTRIBUTING.md` and summarising the vendor-neutrality and disclosure stance.
+
 ## 2026-06-14 (graph-consistency pass)
 * **Directive**: Fix KB-level defects (incomplete or self-inconsistent concept graph) surfaced by a gap audit, without turning reference concepts into how-to. Scope held to defining load-bearing terms, terminating dangling cross-references, glossary completeness, and principle de-duplication.
 * **Undefined concepts**: Defined **engagement score** in [lifecycle mapping](/foundations/lifecycle-mapping.md) (the composite that gates the stage transitions referencing it) and **engagement tier** in [orchestration and frequency](/foundations/orchestration-and-frequency.md) (the band that drives the frequency caps referencing it), cross-linking the two and tying both to the recency/frequency logic in [segmentation models](/foundations/segmentation-models.md).
