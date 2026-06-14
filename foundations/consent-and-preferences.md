@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Why permission is a foundation, not a footnote
 
-Permission is the asset the whole programme rests on. It decides who you may contact, it decides deliverability because complaint rates follow weak consent, and it decides trust. The regimes differ by region, but a programme built to the strictest standard it touches satisfies the rest by construction. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
+Permission is the asset the whole programme rests on. It decides who you may contact, it decides deliverability because complaint rates follow weak consent, and it decides trust. The regimes differ by region, and not only in strictness. Where they turn the same dial, a consent bar, a retention limit, an opt out window, building to the strictest setting satisfies the looser ones. Where they impose different affirmative obligations, or pull in opposite directions, there is no single strictest point to inherit from: CAN-SPAM wants a postal address and an ad identification the GDPR never asks for, the TCPA wants its own written grant, and a data localisation rule can forbid the very routing another regime requires. Build to the ceiling where the requirements stack, and treat the conflicts as separate grants rather than one standard. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
 
 ## Two consent models, and the channels they govern
 
