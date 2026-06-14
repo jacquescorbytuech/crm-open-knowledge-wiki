@@ -85,6 +85,7 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 ## Related
 
 * [Push](/channels/push.md)
+* [Voice](/channels/voice.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)

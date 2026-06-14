@@ -52,6 +52,7 @@ The two-way, high-intent relationship channel, strongest in transactional and po
 * [SMS and RCS](/channels/sms-and-rcs.md)
 * [Email](/channels/email.md)
 * [Push](/channels/push.md)
+* [Voice](/channels/voice.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
