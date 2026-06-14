@@ -23,7 +23,7 @@ A robust email build is deliberately conservative. The steps that keep it intact
 3. **Inline your CSS.** Many clients strip or ignore a `<style>` block, so the styling you depend on for layout and colour should be inline on the elements. Keep a `<style>` block as well for the things inlining cannot do (media queries, `prefers-color-scheme`), but never rely on it alone.
 4. **Lay out with tables, not floats or flexbox.** Email CSS support is years behind the browser. Table-based structure renders predictably where modern layout does not. Check any feature you want to lean on against the support tables before you rely on it.
 5. **Keep the substance in live text, not images.** Build headlines, offers, and CTAs as real text with a bulletproof (table-and-link) button, so they render with images off, read under a screen reader, and survive dark-mode recolouring.
-6. **Use a coding framework to cut breakage.** Hand-writing bulletproof email HTML is error-prone. A framework such as **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients. Either removes a large class of rendering bugs before you test.
+6. **Treat frameworks as an aid, not a substitute for skill.** Hand-written HTML is the standard a talented email developer works to: it gives the most control over how a message renders across the client spread, and nothing replaces that judgement. Frameworks can speed the work — **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients — but they constrain what you can express and still need a developer who understands the underlying markup to extend, debug, and verify the output. Reach for them to save time, not to skip the expertise.
 
 ## Type and size defaults
 
@@ -108,3 +108,5 @@ Run the same checklist before every send, weighted to the clients in your market
 [9] [RFC 2046, multipart/alternative (put the plainest part first)](https://www.rfc-editor.org/rfc/rfc2046.html)
 [10] [Good Email Code, by Mark Robbins (accessible, semantic email-code patterns)](https://www.goodemailcode.com/)
 [11] [Can I email, by Rémi Parmentier (HTeuMeuLeu) and Tilt Studio (HTML/CSS support tables across email clients)](https://www.caniemail.com/)
+[12] [MJML, a markup language that compiles to responsive, table-based email HTML](https://mjml.io/)
+[13] [Cerberus, by Ted Goas, a set of tested responsive email patterns](https://www.cerberusemail.com/)
