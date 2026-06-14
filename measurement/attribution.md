@@ -10,9 +10,11 @@ timestamp: 2026-06-14T00:00:00Z
 
 Attribution assigns credit for an outcome to the things that may have caused it. The mistake that organises most attribution debates is treating it as one question with competing answers. It is three questions, and the methods below each answer one of them well and the others badly.
 
+Before any of that, the point most attribution work skips: a tracked click proves nothing about causation. It tells you a send was opened and acted on, not that the send changed what the user would have done. Only a controlled holdout establishes that. The three-method taxonomy below matters once you accept this, and not before, because each method is a different way of approximating a causal answer you can only get cleanly from a holdout.
+
 ## Last-click and multi-touch
 
-Last-click gives all credit to the final touch. It is simple, available, and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, and it credits nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency, and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
+With that caveat in place, here are the three methods. Last-click gives all credit to the final touch. It is simple, available, and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, and it credits nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency, and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
 
 ## Marketing mix modelling
 
@@ -27,7 +29,7 @@ Only a controlled experiment, treatment against a randomised holdout or geo cont
 > [!warning] A tracked click is not proof of cause
 > Owned channel attribution looks easy because the click is yours to track, which is exactly the trap: a tracked click is not proof the send caused the outcome.
 
-Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome, and anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
+This is where the opening point pays off. Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome, and anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
 
 ## Related
 

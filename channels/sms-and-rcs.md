@@ -22,8 +22,10 @@ Less than email or push, but not zero. Carriers run their own spam filtering and
 
 SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode. Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched character can quietly multiply the cost of a campaign.
 
+Treat length discipline here as a budget control, not a style preference. One out-of-range character flips the encoding and roughly halves the characters per segment, so a single character can double the per-message bill across the whole send. The mechanism is in the encoding rules below, which is why they earn the attention.
+
 > [!warning] One stray character can flip the encoding
-> GSM-7 covers the basic Latin alphabet, digits, and a short set of punctuation. The moment one character falls outside it, the whole message flips to UCS-2 and the budget halves, from 160 to 70. The usual culprits are invisible: a single emoji, or a curly quote and em dash auto-inserted by a word processor, or an accented letter, or a non-breaking space pasted from a web page. One smart quote in a 158-character draft turns a one-segment send into a three-segment send.
+> This is where the budget halves in practice. GSM-7 covers the basic Latin alphabet, digits, and a short set of punctuation. The moment one character falls outside it, the whole message flips to UCS-2 and the budget halves, from 160 to 70. The usual culprits are invisible: a single emoji, or a curly quote and em dash auto-inserted by a word processor, or an accented letter, or a non-breaking space pasted from a web page. One smart quote in a 158-character draft turns a one-segment send into a three-segment send.
 
 To keep within one segment:
 

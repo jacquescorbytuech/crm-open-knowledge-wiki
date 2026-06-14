@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Stance
 
-Email metrics are directionally useful, not precisely meaningful. Open rates especially. Never treat them as gospel. Never make a major decision on a small metric difference without proper statistical rigour.
+Email metrics are directionally useful, not precisely meaningful. The engagement a mailbox provider acts on, dwell, scrolling, replies, moves out of spam, is a different thing from the opens and clicks you can measure, and optimising the proxy as if it were the real signal trains the provider against you and damages placement. Open rates especially. Never treat them as gospel. Never make a major decision on a small metric difference without proper statistical rigour.
 
 ## An open is an image load
 
@@ -16,7 +16,7 @@ What a sender calls an open is an image load: a one pixel image fetched from a t
 
 ## Two different things called engagement
 
-The engagement a mailbox provider acts on, dwell time, scrolling, replies, deletes, folder moves, the IMAP seen and answered flags, is far richer than anything a sender can see, and it is what actually drives placement. The opens and clicks a sender measures are a thin, noisy proxy for it. Conflating the two is the core error: a move in your open rate is a move in image load behaviour, not direct evidence of how the provider rates you. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+The engagement a mailbox provider acts on, dwell time, scrolling, replies, deletes, folder moves, the IMAP seen and answered flags, is far richer than anything a sender can see, and it is what actually drives placement. The opens and clicks a sender measures are a thin, noisy proxy for it. This is the distinction the stance turns on: a move in your open rate is a move in image load behaviour, not direct evidence of how the provider rates you. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 ## What to use instead
 

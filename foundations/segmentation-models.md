@@ -10,6 +10,8 @@ timestamp: 2026-06-14T00:00:00Z
 
 Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene, and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
 
+Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, and below volume most of those slices are untestable, so most programmes over-segment and reach for proprietary models when RFM on transaction data would do. The catalogue below is there to choose from, not to stack; the closing section on choosing returns to this.
+
 ## RFM
 
 RFM scores each customer on three axes: Recency (how recently they bought), Frequency (how often), and Monetary value (how much). It originated in mid-twentieth-century direct and catalogue marketing and remains the most durable behavioural model because it needs only transaction data and predicts future behaviour well. Customers who score high on all three are your core; high-monetary but low-recency are your at-risk best customers, the most valuable reactivation target you have.
@@ -85,7 +87,7 @@ Segments go stale at different rates, so recompute them on different clocks. RFM
 
 ## Choosing a model
 
-Match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
+To return to where the opener started: match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable, which is why the over-segmentation the opener warned about is the common failure and RFM on transaction data is so often enough. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

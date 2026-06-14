@@ -10,7 +10,9 @@ timestamp: 2026-06-11T00:00:00Z
 
 When a platform changes how it filters, ranks, or summarises mail (the dated changes in [platform interventions](/references/platform-interventions.md)), it does not report what it did to your sends. The methods below estimate the effect from your own data. They are channel-agnostic in shape and channel-specific in detail, and none reads the wording layer, what a summary kept versus what you wrote, directly.
 
-## Most senders should not try
+Before reaching for any of them: most senders should not attempt to read intermediation effects at all. The methods need volume far above typical thresholds, hundreds of thousands of sends per cell and often millions, so below that floor they return wide intervals around zero whatever the platform actually did. None of this applies to you unless you operate at platform scale. Take the diagnostic from the methods, leave the methodology, and treat the rest of this page as the work you graduate into rather than the work you start with.
+
+## The volume floor, concretely
 
 > [!warning] Below the volume floor this kit reads zero
 > Reading these effects needs hundreds of thousands of sends per cell, often millions, which is far above what a typical sender has. Below the volume threshold the kit gives wide confidence intervals around zero. Take the diagnostic and leave the methodology.

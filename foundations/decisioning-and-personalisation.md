@@ -15,6 +15,8 @@ Marketing platforms use "AI" for two quite different things, and conflating them
 
 Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category, and the harder one to adopt because it asks the marketer to hand a learning system the wheel and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
 
+But every capability on this page, decision support and decisioning alike, is downstream of one upstream decision you make before any of it: whether you have built a unified, clean, training-ready first-party data foundation. Build it and the advanced options stay open; skip it and no amount of vendor AI compensates. The vendor and method taxonomy below only starts to matter once that is settled, so read it as the menu you earn access to, not the first choice you make.
+
 ## Common decision-support capabilities
 
 These appear across the major customer-engagement platforms and are largely interchangeable on a feature sheet:
@@ -42,7 +44,7 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 * **Enterprise decisioning.** Adobe Journey Optimizer real-time decisioning, Salesforce on Data Cloud, and Pega Customer Decision Hub (next-best-action for regulated industries) run the offer-ranking and adaptive-journey machinery natively on a unified profile.
 * **Acquisition signal.** Braze's acquisition of OfferFit folded a reinforcement-learning decisioning engine into a major engagement platform, a sign the categories are converging.
 
-When evaluating, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
+When evaluating, and assuming the data foundation the opening named is already in place, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
 
 ## Why the claims are hard to verify
 
@@ -60,7 +62,7 @@ Decisioning is harder to adopt than decision support because it changes who deci
 
 ## The data prerequisite
 
-Every capability above depends on the same thing: unified, clean, training-ready first-party data. The decisioning specialists need a high-fidelity event feed or a warehouse with your behaviour in it; the enterprise tier needs the unified profile in production. Data quality determines how well any of it works, which is why the [customer data and identity](/foundations/customer-data-and-identity.md) layer comes first. Build the data foundation, and the advanced options stay open; skip it, and no amount of vendor AI compensates.
+The upstream decision the opening named is worth seeing concretely. Every capability above depends on the same thing: unified, clean, training-ready first-party data. The decisioning specialists need a high-fidelity event feed or a warehouse with your behaviour in it; the enterprise tier needs the unified profile in production. Data quality determines how well any of it works, which is why the [customer data and identity](/foundations/customer-data-and-identity.md) layer comes first. Build the data foundation, and the advanced options stay open; skip it, and no amount of vendor AI compensates.
 
 ## Related
 

@@ -51,10 +51,12 @@ Identity resolution is the work of deciding that the anonymous browser, the app 
 
 Resolution comes down to a matching rule: given two records, decide same person or not. Two families of rule, and most stacks use deterministic first and add probabilistic only where they must.
 
+The errors here are not symmetric, and that asymmetry should govern how you read this whole section. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, and keep every merge fully reversible.
+
 * **Deterministic matching** joins on an exact shared identifier: the same email, the same phone, the same account or loyalty id. It is the default because it is explainable and auditable. When a user logs in, you also bind the anonymous id they were carrying to that account id, which is how pre-signup behaviour attaches to the person.
 * **Probabilistic matching** infers a match from a cluster of weaker signals (name plus postal address plus device plus IP) with a confidence score. Use it only where a hard identifier is missing, treat every match as a probability, and never let it silently overwrite a deterministic field.
 
-Merge or keep separate is the live decision, and the asymmetry of the costs should drive it:
+Merge or keep separate is the live decision, and the asymmetry the opener named is what should drive it:
 
 1. **Score the candidate pair.** A shared, verified hard identifier is high confidence. A shared weak signal alone is low. Set a high threshold for an automatic merge and a lower band that flags for review rather than merging.
 2. **Weigh the two failure modes, which are not equal.** A false split (one person seen as two) costs a duplicated send, a leaky frequency cap, and double-counting in measurement, all annoying but recoverable. A false merge (two people fused) is worse: it can expose one person's order history or address to another, a privacy incident, and it is hard to detect after the fact. So bias the rule toward keeping separate when confidence is below the merge threshold.
@@ -62,7 +64,7 @@ Merge or keep separate is the live decision, and the asymmetry of the costs shou
 4. **Make merges reversible.** Because a false merge is the expensive error, keep the source records and lineage (as above) so a merge can be unwound when a later signal contradicts it.
 
 > [!caution] A false merge is the expensive error
-> Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
+> To restate the asymmetry concretely: fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
 
 ## CRM, CDP, and warehouse
 
