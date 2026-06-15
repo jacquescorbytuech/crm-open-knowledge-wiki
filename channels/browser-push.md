@@ -26,7 +26,7 @@ Lighter on-device rewriting than the mobile lock screen today, but suppression i
 
 The plumbing is a small set of web standards, and you talk to a push service, never the device directly.
 
-* **Service worker.** A background script registered on your origin receives the `push` event and calls `showNotification()`. Without a registered service worker there is no web push; it is what lets the notification fire while your site is closed.
+* **Service worker.** A background script registered on your origin receives the `push` event and calls `showNotification()`. Without a registered service worker there is no web push; it is what lets the notification fire while your site is closed. To see what the `showNotification()` options actually render to across browsers, Peter Beverloo's [notification generator](https://tests.peter.sh/notification-generator/) builds a live call from every option and fires it on your own device.
 * **Subscription and VAPID.** The browser returns a `PushSubscription` with a per-user endpoint URL. You identify your server to the push service with a VAPID key pair (RFC 8292, Voluntary Application Server Identification) so it accepts your messages for that endpoint.
 * **Per-browser push services.** Each browser uses its own: Chrome and Edge via FCM, Firefox via Mozilla's autopush, Safari via Apple's APNs. You POST your message to the subscription endpoint and the service relays it; the differences are abstracted by the protocol.
 * **Encryption and payload size.** Payloads are encrypted end to end (RFC 8291) and capped at roughly 4KB, so, as with mobile push, the proposition has to lead.
@@ -71,3 +71,4 @@ The web analogue of mobile push: the way back for a user who has no app to recei
 [6] [Chromium Blog, introducing quieter permission UI for notifications](https://blog.chromium.org/2020/01/introducing-quieter-permission-ui-for.html)
 [7] [Apple, sending web push notifications in web apps and browsers](https://developer.apple.com/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers)
 [8] [WebKit, web push for web apps on iOS and iPadOS (Home Screen requirement)](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+[9] [Peter Beverloo, web notification generator (test showNotification options per browser)](https://tests.peter.sh/notification-generator/)

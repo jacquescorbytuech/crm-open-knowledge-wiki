@@ -17,3 +17,4 @@ The stances that should inform every recommendation in this bundle. They are opi
 
 * [Email is a free impression channel](email-is-a-free-impression-channel.md) - the halo effect that last click attribution never captures.
 * [Engagement is the new deliverability](engagement-is-deliverability.md) - sender level engagement now decides reach for the whole list.
+* [Device channels are leased, not owned](device-channels-are-leased.md) - push, browser push, and wallet passes run on capabilities the OS grants and can revoke.
