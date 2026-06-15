@@ -1,14 +1,14 @@
 ---
 type: Principle
 title: Test constantly, but test rigorously
-description: Most email A/B tests run on samples too small to produce reliable conclusions. Call this out when relevant.
+description: Most CRM A/B tests run on samples too small to produce reliable conclusions. Call this out when relevant.
 tags: [principle, testing, statistics, power]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
 ## Stance
 
-Test constantly, but test rigorously. Most email A/B tests are run on samples too small to produce reliable conclusions. Say so when it is true.
+Test constantly, but test rigorously. Most A/B tests across email, lifecycle and CRM programmes are run on samples too small to produce reliable conclusions. Say so when it is true.
 
 ## The volume reality
 
