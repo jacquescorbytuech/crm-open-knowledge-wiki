@@ -17,16 +17,19 @@ Orchestration is the layer that decides, for a given customer at a given moment,
 
 The unit of fatigue is the customer, not the channel. A customer who got an email, a push, and an SMS in an afternoon experienced one over contacted relationship, not three well run channels. A contact strategy sets the total acceptable contact across all channels, with priority rules for what wins when several messages are eligible at once. The channel teams optimise inside that budget; they do not each spend it in full. Paid media counts too: a customer chased by a retargeting ad the day after they bought is the contact strategy leaking into the channel it most often forgets, which is why [audience sync](/foundations/audience-sync.md) brings paid under the same governance and suppression rules.
 
-## Spending the single contact budget
+## The contact budget is a ceiling, not a target
 
-Make the shared budget operational by treating a user's attention as a fixed weekly allowance that all channels draw from the same pool, not a per channel quota each team fills.
+Treating a user's weekly attention as an allowance that every channel draws down assumes the cap is there to be spent. It is not. The cap is a safety rail. The discipline that governs volume is to hold one cross-channel ceiling and then judge each send on its own merit, so most users sit well below it.
 
-1. Set a total contact budget per engagement tier (the caps in the next section), counted across every channel together.
+1. Set a total contact ceiling per engagement tier (the caps in the next section), counted across every channel together. It is the most a user may receive, not the amount they should.
 2. When a message becomes eligible, pick the channel by the job it needs to do (see below), not by which team owns it.
-3. Charge the send against the shared budget. When the budget is spent for the window, further non transactional messages wait or drop by priority, whichever channel they came from.
-4. Prefer one well chosen send over the same message duplicated across channels. Reserve a second channel for genuine fallback, for example email did not open within N hours so a push follows, not for simultaneous blasts.
+3. Gate each eligible send on the best value signal you have, not on whether the cap has room. With an uplift model, that signal is the predicted incremental effect of sending; without one, it is concrete proxies, recency of engagement, prior response to similar messages, and whether the triggering event is still live. A send that clears the cap but fails the value signal waits or drops.
+4. Count only the sends that clear that test against the shared ceiling. When a user reaches it, further non transactional messages wait or drop by priority, whichever channel they came from.
+5. Prefer one well chosen send over the same message duplicated across channels. Reserve a second channel for genuine fallback, for example email did not open within N hours so a push follows, not for simultaneous blasts.
 
-The decision is which single channel carries this message, then whether the user can afford it this window. Two channels firing the same content in an afternoon is the budget being double spent.
+A programme fails in two directions here. Let each channel fill its own quota and the customer is over contacted; treat the shared cap as a quota to fill in turn and you have moved the same mistake up a level. The ceiling bounds the harm, but the per message value test is what sets volume, and volume floats below the cap whenever another send would not earn its place.
+
+Be clear about what that value test actually costs. Deciding per person and per message whether contact raises the probability of the action you want is uplift, or incremental, modelling: estimating the causal effect of a send against the counterfactual where it never went out. It needs [holdouts](/measurement/holdouts-and-control-groups.md) feeding the model, enough volume to estimate effects per segment, and tolerance for a system that withholds messages it cannot justify. Most programmes do not have this, and a rules engine that fires on triggers is not it. The workable version is to enforce the hard cap, which you can always do, and approximate value with the proxies you have, recency, prior response, a propensity score, while treating true per send uplift as the harder system the capable platforms are reaching for, not a setting you switch on.
 
 ## Choosing the channel for the job
 
@@ -109,3 +112,4 @@ Quiet hours and consent based suppressions are legal constraints, not courtesies
 
 [1] [MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)](https://marketingsherpa.com/article/chart/why-consumers-unsubscribe)
 [2] [FCC, telemarketing and robocall rules (SMS quiet hours)](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
+[3] [Uplift modelling (estimating a message's incremental effect per person; withholding from "Do Not Disturb" recipients it would not move)](https://en.wikipedia.org/wiki/Uplift_modelling)
