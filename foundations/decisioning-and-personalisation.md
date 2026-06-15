@@ -6,16 +6,16 @@ tags: [decisioning, personalisation, machine-learning, bandits, send-time, vendo
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## Two things the word "AI" hides
+## Decision support versus decisioning
 
-Marketing platforms use "AI" for two quite different things, and conflating them overstates what a programme is actually running.
+Marketing platforms use "AI" for quite different things, and conflating them overstates what a programme is actually running.
 
 * **Decision support** is machine learning that assists a journey the marketer designed: it scores, ranks, recommends, and optimises at points inside a structure a human built. The marketer still decides what the journey is.
 * **Decisioning** is machine learning that makes the decision: a system that chooses, per customer, what to send, when, on which channel, and increasingly whether to send at all, within goals and guardrails the marketer sets. The marketer sets the objective; the system explores and learns.
 
 Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category, and the harder one to adopt because it asks the marketer to hand a learning system the wheel and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
 
-But every capability on this page, decision support and decisioning alike, is downstream of one upstream decision you make before any of it: whether you have built a unified, clean, training-ready first-party data foundation. Build it and the advanced options stay open; skip it and no amount of vendor AI compensates. The vendor and method taxonomy below only starts to matter once that is settled, so read it as the menu you earn access to, not the first choice you make.
+But every capability here, decision support and decisioning alike, is downstream of one upstream decision you make before any of it: whether you have built a unified, clean, training-ready first-party data foundation. Build it and the advanced options stay open; skip it and no amount of vendor AI compensates. The vendor and method taxonomy only starts to matter once that is settled: it is the menu you earn access to, not the first choice you make.
 
 ## Common decision-support capabilities
 
@@ -30,7 +30,7 @@ Most of it does something; how much is often hard to verify independently, since
 
 ## What decisioning adds
 
-True decisioning borrows the methods used in large-scale recommendation: **contextual bandits** and reinforcement learning, which choose an action from each customer's context and keep reallocating as feedback arrives, measured against a control rather than an open or click. **Next-best-action / next-best-offer** engines rank the best action per customer in real time. The theoretical edge over test-and-roll-out is real: committing to an A/B winner leaves traffic parked on losing variants, where a system that keeps learning does not. The contrast with a rules-based journey builder is the whole point, predefined paths versus continuous per-customer optimisation.
+True decisioning borrows the methods used in large-scale recommendation: **contextual bandits** and reinforcement learning, which choose an action from each customer's context and keep reallocating as feedback arrives, measured against a control rather than an open or click. **Next-best-action / next-best-offer** engines rank the best action per customer in real time. The theoretical edge over test-and-roll-out is real: committing to an A/B winner leaves traffic parked on losing variants, where a system that keeps learning does not. It differs from a rules-based journey builder in kind: predefined paths versus continuous per-customer optimisation.
 
 The mechanism that makes this work is also its hardest cost to swallow. A learning system has to **explore**, deliberately spending some sends on actions it is unsure about so it can find the better ones, rather than only **exploiting** what currently looks best. Exploration is what a fixed A/B test cannot do once it has crowned a winner, and it is what lets a bandit keep improving. But the exploratory sends look like waste on short-horizon metrics, since some of them are by design the worse option, and the payoff arrives later as the system converges. Valuing it correctly takes a longer measurement horizon than most programmes run; the incrementality framing is in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
@@ -58,7 +58,7 @@ The practical consequence is the one [ESP selection](/foundations/esp-selection.
 
 ## What adopting decisioning asks of you
 
-Decisioning is harder to adopt than decision support because it changes who decides, not just what tooling runs. Handing a learning system the per-customer choice means setting an objective and guardrails rather than designing the journey, tolerating the exploration cost above, and trusting a [holdout](/measurement/holdouts-and-control-groups.md) to tell you whether it is working when no single decision can be inspected. The guardrails are the real design surface: the frequency ceilings, suppression rules, and brand or eligibility constraints the system must respect while it optimises inside them. A programme that cannot yet state its objective and guardrails, or cannot run a clean holdout, is not ready to hand over the wheel, whatever the vendor demo shows.
+Decisioning is harder to adopt than decision support because it changes who decides, not just what tooling runs. Handing a learning system the per-customer choice means setting an objective and guardrails rather than designing the journey, tolerating the exploration cost above, and trusting a [holdout](/measurement/holdouts-and-control-groups.md) to tell you whether it is working when no single decision can be inspected. The guardrails are the design surface: the frequency ceilings, suppression rules, and brand or eligibility constraints the system must respect while it optimises inside them. A programme that cannot yet state its objective and guardrails, or cannot run a clean holdout, is not ready to hand over the wheel, whatever the vendor demo shows.
 
 ## The recipient's side of the decision
 

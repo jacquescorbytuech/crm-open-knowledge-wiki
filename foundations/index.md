@@ -18,11 +18,13 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [List building](list-building.md) - forms, placement, lead magnets, single versus double opt in, and source tracking.
 * [Cold email](cold-email.md) - the contrast case: why unsolicited outreach is spam by this bundle's consent standard, the narrow legal window in the US and UK B2B, and why lawful is not the same as effective.
 * [Database health and sunsetting](database-health.md) - the list as a decaying asset, the contact lifecycle from active to sunset, and net growth as acquisition minus decay.
+* [Lead management](lead-management.md) - the B2B funnel the consumer lifecycle frame omits: lead scoring on fit and engagement, the MQL and SQL definitions and the sales handoff, nurturing, and where account-based marketing inverts it.
 
 ## Create and orchestrate
 
 * [Copywriting](copywriting.md) - subject lines, message anatomy, CTAs, spam triggers, and writing for the summariser.
 * [Message design and rendering](message-design-and-rendering.md) - mobile-first layout, dark mode, accessibility, alt text, and preheader text across clients.
+* [Localisation](localisation.md) - send-time by the recipient's timezone, locale-keyed templates and translation, multi-currency offers, and the script and encoding traps of a multi-region audience.
 * [Personalisation mechanics](personalisation-mechanics.md) - templating languages, and the range from profile-attribute substitution to send-time API fetch to open-time live content, by data source and binding time.
 * [Automation and sequences](automation-and-sequences.md) - triggers, welcome, abandoned cart, re-engagement, and goal setting.
 * [Transactional messaging](transactional-messaging.md) - the line between transactional and marketing, why it governs consent, deliverability, and orchestration, and the contamination trap.

@@ -18,7 +18,7 @@ You control the proposition, the payload you compose, the trigger logic you choo
 
 ## The capabilities the platform grants
 
-What you can actually do resolves into a handful of capability classes, each one a discrete grant the OS defines, polices, and revises. The specifics belong on the channel pages; the point here is that none of them are yours to set.
+What you can actually do resolves into a handful of capability classes, each one a discrete grant the OS defines, polices, and revises. The specifics belong on the channel pages; none of them are yours to set.
 
 * **Interruption and priority.** How loudly a message may arrive is the platform's call, not yours. iOS fixes four interruption levels (`passive`, `active`, `time-sensitive`, `critical`), and only time-sensitive can break through Focus, only with the user's leave and never for marketing; critical needs an Apple entitlement you will not get. Android routes every notification through a channel whose importance the user, not you, controls once it exists. You request a level; the user and the OS decide whether you get it.
 * **Rich content.** Media beyond text, an image, a custom layout, an action button, is allowed only through the platform's own mechanism: a notification service extension and attachment on iOS, the expanded notification styles on Android. The 4KB payload ceiling caps how much you can include, so the proposition has to lead and the platform may or may not render the rest.

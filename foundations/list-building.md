@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Forms
 
-Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form has six essentials: a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
+Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form carries a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
 
 Fewer fields convert better, so collect the minimum that makes the subscriber usable and ask for the rest later through progressive profiling. To do that concretely:
 

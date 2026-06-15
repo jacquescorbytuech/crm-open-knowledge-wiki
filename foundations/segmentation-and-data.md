@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## What this covers
 
-This is the operational how of segmentation: defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md), and the data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). This file does not repeat that theory; it tells you how to build and run the segments once a model has chosen the cut.
+This is the operational how of segmentation: defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md), and the data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). The focus here is building and running the segments once a model has chosen the cut.
 
 ## Dynamic versus static segments
 

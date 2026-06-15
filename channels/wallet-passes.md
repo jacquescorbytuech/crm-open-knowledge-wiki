@@ -41,7 +41,7 @@ Adoption is the limiter. The user must add the pass, so you need a clear reason 
 
 ## Measurement
 
-Scans and redemptions are first-party and clean, the barcode ties each one to the customer record, but a redemption count is not the channel's incremental effect. The honest read is still a holdout: hold back a slice from the pass programme and compare redemption rate and repeat purchase against it, so a pass that would have been redeemed anyway is not credited to the channel. Watch add rate and on-device retention as the programme's health metrics. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
+Scans and redemptions are first-party and clean, the barcode ties each one to the customer record, but a redemption count is not the channel's incremental effect. The read that isolates it is a holdout: hold back a slice from the pass programme and compare redemption rate and repeat purchase against it, so a pass that would have been redeemed anyway is not credited to the channel. Watch add rate and on-device retention as the programme's health metrics. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
 ## Lifecycle role
 

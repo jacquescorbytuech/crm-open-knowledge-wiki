@@ -115,4 +115,4 @@ Migration is less costly than it used to be, but it is not free, and a botched c
 
 ## Citations
 
-This page is practitioner guidance and introduces no external statistics or benchmarks. Where a claim depends on measurement (deliverability, incrementality), see the linked pages and their citations.
+Practitioner guidance, with no external statistics or benchmarks introduced. Where a claim depends on measurement (deliverability, incrementality), see the linked pages and their citations.

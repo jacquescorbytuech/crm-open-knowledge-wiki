@@ -33,7 +33,7 @@ Pick one North Star metric that best proxies the value the programme creates, lo
 
 ## How to choose a North Star
 
-A candidate metric earns the role only if it passes all three of these. Treat them as a decision rule, not a wish list.
+A candidate metric earns the role only if it passes each of these tests. Treat them as a decision rule, not a wish list.
 
 * **In the causal path to value.** Moving it should move the business, not just a dashboard. Incremental revenue per recipient and repeat purchase rate sit on the path; open rate does not, because a programme can lift opens without lifting a thing the business sells.
 * **Movable by the programme.** The team must be able to shift it with the levers it actually controls: content, targeting, timing, frequency. Total company revenue fails here, because pricing, product, and acquisition swamp anything CRM does. A North Star you cannot move is a report, not a goal.

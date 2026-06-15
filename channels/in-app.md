@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 In app messaging is everything you can show inside your own product: passive cards in a feed the user reaches deliberately, a persistent message centre or inbox, modal and slide up messages triggered on session events, and messaging primitives embedded in the product flows themselves. It is the highest fidelity owned surface most brands have.
 
-What sets it apart is what is missing from the path: in-app is the only channel with no platform editor and no permission gate standing between you and the user. Nothing ranks, bundles, or silences the message, and nothing has to grant it reach first. That absence is not just a delivery convenience; it is exactly what makes in-app the one channel where holdout-based incrementality can be measured cleanly and honestly, because both arms of the test see the same unmediated surface.
+What sets it apart is what is missing from the path: in-app is the only channel with no platform editor and no permission gate standing between you and the user. Nothing ranks, bundles, or silences the message, and nothing has to grant it reach first. That absence is what makes in-app the one channel where holdout-based incrementality can be measured cleanly, because both arms of the test see the same unmediated surface.
 
 ## Permission and reach
 
@@ -51,7 +51,7 @@ It cannot initiate contact; it can only act on a session the user started. Over 
 
 ## Measurement
 
-The cleanest measurement of any channel. The SDK records impression, dismiss, and interaction with no platform mediated gap, so render to conversion is fully attributable end to end. Read the obvious response metrics, CTR on the message and downstream conversion on the action it asked for, but do not stop there: an interruptive format can lift its own click rate while quietly costing the session. Watch the guardrails alongside the response, session abandonment, task completion, and dismiss rate, to catch a modal that converts the few who engage while pushing the rest out of the flow. The honest read of both is against a randomised holdout: hold back a slice of the eligible users, show to the rest, and measure the difference in the action you wanted and in the guardrail metrics, so you see the message's true incremental effect and its true cost. With no platform-mediated editor or permission gate between you and the device, both arms are clean, which is why holdout based incrementality testing is easiest to run honestly here. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
+The cleanest measurement of any channel. The SDK records impression, dismiss, and interaction with no platform mediated gap, so render to conversion is fully attributable end to end. Read the obvious response metrics, CTR on the message and downstream conversion on the action it asked for, but do not stop there: an interruptive format can lift its own click rate while quietly costing the session. Watch the guardrails alongside the response, session abandonment, task completion, and dismiss rate, to catch a modal that converts the few who engage while pushing the rest out of the flow. Read both against a randomised holdout: hold back a slice of the eligible users, show to the rest, and measure the difference in the action you wanted and in the guardrail metrics, so you see the message's true incremental effect and its true cost. With no platform-mediated editor or permission gate between you and the device, both arms are clean, which is why holdout based incrementality testing is easiest to run honestly here. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
 ## Lifecycle role
 
@@ -71,5 +71,3 @@ The destination the other channels drive toward. Push and email bring the user b
 
 [1] [Braze, in-app messages reach only active users](https://www.braze.com/docs/user_guide/channels/in_app_messages/faq)
 [2] [Airship, in-app automation cached and displayed on trigger conditions](https://www.airship.com/docs/guides/features/messaging/in-app-automation/)
-</content>
-</invoke>

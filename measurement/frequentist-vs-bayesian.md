@@ -6,11 +6,11 @@ tags: [statistics, bayesian, frequentist, ab-testing, significance, sequential]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## Two ways to read the same test
+## Frequentist and Bayesian readings
 
 A test gives you two conversion rates and the question of whether the difference is real. There are two schools of answer, and they answer subtly different questions. Knowing which one a tool is giving you prevents the most common misreading in marketing analytics: treating a p-value as the probability the variant is better, which it is not.
 
-Before going further, the deflating point: every method here hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero whichever school drew it. So in a low-volume CRM programme the frequentist-versus-Bayesian choice is a rounding error against the real question, which is whether you have the volume for either to say anything. The two readings below are worth knowing, but read them as the layer that matters once you are past that floor, not before.
+Every method here hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero whichever school drew it. So in a low-volume CRM programme the frequentist-versus-Bayesian choice is a rounding error against the real question, whether you have the volume for either to say anything. The two readings are worth knowing, but they only matter once you are past that floor.
 
 ## The frequentist reading
 
@@ -50,6 +50,7 @@ Whichever school you pick, it hands you a distribution, not a verdict, and below
 
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Volume thresholds](/measurement/volume-thresholds.md)
+* [Variance reduction and sequential testing](/measurement/variance-reduction.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Test rigorously](/principles/test-rigorously.md)

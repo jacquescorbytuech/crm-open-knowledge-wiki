@@ -1,6 +1,6 @@
 # Channels
 
-The delivery layer: the messaging channels a lifecycle programme actually sends through. Each concept describes the medium, its permission and reach model, the editing or filtering between you and the recipient, the jobs it is best suited to, its constraints, how it is measured, and where it sits in the lifecycle. Channel specific mechanics live here; the cross channel operations that run across all of them live in [foundations](/foundations/).
+The delivery layer: the messaging channels a lifecycle programme actually sends through. Each concept describes the medium, its permission and reach model, the editing or filtering between you and the recipient, the jobs it is best suited to, its constraints, how it is measured, and where it sits in the lifecycle. Each page covers the channel specific mechanics; the cross channel operations that run across all of them live in [foundations](/foundations/).
 
 ## The channels
 

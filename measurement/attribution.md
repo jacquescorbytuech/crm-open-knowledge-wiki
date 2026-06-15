@@ -8,17 +8,17 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## What attribution is for
 
-Attribution assigns credit for an outcome to the things that may have caused it. The mistake that organises most attribution debates is treating it as one question with competing answers. It is three questions, and the methods below each answer one of them well and the others badly.
+Attribution assigns credit for an outcome to the things that may have caused it. The mistake that organises most attribution debates is treating it as one question with competing answers. It is three questions, and each method answers one of them well and the others badly.
 
-Before any of that, the point most attribution work skips: a tracked click proves nothing about causation. It tells you a send was opened and acted on, not that the send changed what the user would have done. Only a controlled holdout establishes that. The three-method taxonomy below matters once you accept this, and not before, because each method is a different way of approximating a causal answer you can only get cleanly from a holdout.
+Before any of that, the point most attribution work skips: a tracked click proves nothing about causation. It tells you a send was opened and acted on, not that the send changed what the user would have done. Only a controlled holdout establishes that. Each method is a different way of approximating a causal answer you can only get cleanly from a holdout, and none of it matters until you accept that.
 
 ## Last-click and multi-touch
 
-With that caveat in place, here are the three methods. Last-click gives all credit to the final touch. It is simple, available, and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, and it credits nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency, and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
+With that caveat in place, last-click gives all credit to the final touch. It is simple, available, and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, and it credits nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency, and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
 
 ## Marketing mix modelling
 
-MMM works top down, regressing outcomes on aggregate, time series spend and external factors. It values offline and brand alongside digital, and it survives the privacy decay that breaks MTA, because it needs no user level tracking. The costs are that it is data hungry, needs real expertise to build and validate, and smooths over short term and tactical effects. It answers how to allocate budget across the portfolio, not which message to send next.
+MMM works top down, regressing outcomes on aggregate, time series spend and external factors. It values offline and brand alongside digital, and it survives the privacy decay that breaks MTA, because it needs no user level tracking. A credible model captures what a naive regression misses: adstock, the carryover by which a campaign's effect decays over later weeks rather than landing all at once, and saturation, the diminishing return as spend in a channel rises, so the model fits a curve rather than a straight line. The costs follow from this. It is data hungry, because estimating those shapes needs long histories; it needs real expertise to build and validate; and it is vulnerable to multicollinearity, because channels whose budgets move together are hard to tell apart, which is why a clean incrementality test is the standard way to calibrate and sanity-check the coefficients. It smooths over short term and tactical effects, and it answers how to allocate budget across the portfolio, not which message to send next.
 
 ## Incrementality as the referee
 

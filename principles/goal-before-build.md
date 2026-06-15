@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 Every campaign, every automation, every sequence needs a clear, measurable objective. Without one, it is theatre.
 
-## Why it matters
+## What a goal enables
 
 A goal is what makes [impact sizing](/measurement/impact-sizing.md) possible: you cannot estimate incremental actions against a metric you have not named. It is also what makes retrospective evaluation possible. A measurement programme that runs on cadence and tells you nothing is the failure mode, and it usually traces back to a missing objective rather than a missing tool.
 

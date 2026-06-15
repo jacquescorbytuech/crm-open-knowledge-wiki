@@ -12,7 +12,9 @@ Most CRM programmes are better served by well executed basics than poorly execut
 
 ## In practice
 
-AI personalisation is where this bites hardest. For most brands the limiting factor is not that the bought machine learning lags the platforms; it is that the basics, clean data, a defined goal, and disciplined frequency, are not yet in place, and no vendor AI compensates for that. See [decisioning and personalisation](/foundations/decisioning-and-personalisation.md) and [customer data and identity](/foundations/customer-data-and-identity.md).
+Crawl, walk, run is a concrete progression, not a slogan. Crawl is a working welcome sequence, clean suppression, and authentication that passes. Walk is lifecycle triggers and simple [RFM segmentation](/foundations/segmentation-models.md) on the data you already hold, read against a holdout. Run is the [decisioning](/foundations/decisioning-and-personalisation.md) and per-user [uplift modelling](/measurement/uplift-and-incrementality.md) that only earns its keep once the crawl and walk layers are solid and measured.
+
+AI personalisation is where neglecting the basics costs most. For most brands the limiting factor is not that the bought machine learning lags the platforms; it is that the basics, clean data, a defined goal, and disciplined frequency, are not yet in place, and no vendor AI compensates for that. Skipping to run on shaky basics is the common and expensive mistake. See [decisioning and personalisation](/foundations/decisioning-and-personalisation.md) and [customer data and identity](/foundations/customer-data-and-identity.md).
 
 ## Related
 

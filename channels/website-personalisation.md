@@ -10,7 +10,7 @@ timestamp: 2026-06-15T00:00:00Z
 
 Website personalisation is your own site used as a delivery surface: a hero or banner swapped for the visitor, product and content recommendations, an overlay or inline prompt, a returning-visitor greeting, the order of a listing reranked to the person looking at it. The content settles in a live browser session at the moment of view, which makes it the web counterpart of [in-app](/channels/in-app.md), with one difference that governs everything else: most of the traffic is anonymous.
 
-The decisioning that chooses what fills a slot lives in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md), and the mechanics that resolve a value into it live in [personalisation mechanics](/foundations/personalisation-mechanics.md), where onsite is the case that resolves cleanly at view because the client is genuinely present. This page is the surface those render onto: how the web session reaches the visitor, what mediates it, and how it is deployed and measured.
+The decisioning that chooses what fills a slot lives in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md), and the mechanics that resolve a value into it live in [personalisation mechanics](/foundations/personalisation-mechanics.md), where onsite is the case that resolves cleanly at view because the client is genuinely present. Onsite is the surface those render onto: how the web session reaches the visitor, what mediates it, and how it is deployed and measured.
 
 ## Permission and reach
 
@@ -46,7 +46,7 @@ The anonymous tail is the structural limit, a large share of visitors you cannot
 
 ## Measurement
 
-The cleanest experimental surface alongside in-app, because the tooling is built around the test. The honest read is an onsite A/B or holdout: split eligible traffic, show the variant to one arm and the unchanged page to the other, and measure the difference in the action you wanted. Read the response metric, conversion or click on the module, but watch the guardrails beside it, bounce rate, page-load time, and overall conversion, because a personalisation can lift its own module's click while a heavy anti-flicker snippet slows the page and costs more conversions than the module wins. The discipline is the same one in [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md); the advantage onsite has is that the unmediated page makes both arms clean.
+The cleanest experimental surface alongside in-app, because the tooling is built around the test. Read it with an onsite A/B or holdout: split eligible traffic, show the variant to one arm and the unchanged page to the other, and measure the difference in the action you wanted. Read the response metric, conversion or click on the module, but watch the guardrails beside it, bounce rate, page-load time, and overall conversion, because a personalisation can lift its own module's click while a heavy anti-flicker snippet slows the page and costs more conversions than the module wins. The discipline is the same one in [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md); the advantage onsite has is that the unmediated page makes both arms clean.
 
 ## Lifecycle role
 

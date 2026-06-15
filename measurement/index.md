@@ -1,6 +1,6 @@
 # Measurement
 
-The measurement layer: how to tell whether a lifecycle programme actually worked, and how to keep reading channel effects once the platforms in the middle stopped reporting honestly. The first group is the general core every programme needs. The second is the specialised kit for measuring under intermediation, which most senders should understand and few have the volume to run.
+The measurement layer: how to tell whether a lifecycle programme actually worked, and how to keep reading channel effects once the platforms in the middle stopped reporting honestly. The general core every programme needs comes first, then the specialised kit for measuring under intermediation, which most senders should understand and few have the volume to run.
 
 The discipline running through both: every method here hands you a distribution, not a verdict, and a number without a control group is usually the customers who were going to act anyway.
 
@@ -17,6 +17,7 @@ The discipline running through both: every method here hands you a distribution,
 * [Sample size and power](sample-size-and-power.md) - the two proportion z-test, and how long a test must run to detect what the sizing model promises.
 * [Volume thresholds](volume-thresholds.md) - the sends per cell needed to detect a given relative shift, and the line below which probes are theatre.
 * [Frequentist and Bayesian testing](frequentist-vs-bayesian.md) - the two ways to read a test, the peeking trap that catches both, and which to reach for on a small list.
+* [Variance reduction and sequential testing](variance-reduction.md) - CUPED and sequential methods, the two standard ways to get more from the volume you have, and the floor neither repeals.
 
 ## Measuring under intermediation
 

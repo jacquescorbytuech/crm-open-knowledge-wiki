@@ -49,14 +49,14 @@ Identity resolution is the work of deciding that the anonymous browser, the app 
 
 ## Matching rules in practice
 
-Resolution comes down to a matching rule: given two records, decide same person or not. Two families of rule, and most stacks use deterministic first and add probabilistic only where they must.
+Resolution is a matching rule: given two records, decide same person or not. Stacks use deterministic matching first and add probabilistic only where they must.
 
-The errors here are not symmetric, and that asymmetry should govern how you read this whole section. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, and keep every merge fully reversible.
+The errors here are not symmetric, and that asymmetry is what should drive the merge rule. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, and keep every merge fully reversible.
 
 * **Deterministic matching** joins on an exact shared identifier: the same email, the same phone, the same account or loyalty id. It is the default because it is explainable and auditable. When a user logs in, you also bind the anonymous id they were carrying to that account id, which is how pre-signup behaviour attaches to the person.
 * **Probabilistic matching** infers a match from a cluster of weaker signals (name plus postal address plus device plus IP) with a confidence score. Use it only where a hard identifier is missing, treat every match as a probability, and never let it silently overwrite a deterministic field.
 
-Merge or keep separate is the live decision, and the asymmetry the opener named is what should drive it:
+Merge or keep separate is the live decision, and the asymmetry between a false merge and a missed one is what should drive it:
 
 1. **Score the candidate pair.** A shared, verified hard identifier is high confidence. A shared weak signal alone is low. Set a high threshold for an automatic merge and a lower band that flags for review rather than merging.
 2. **Weigh the two failure modes, which are not equal.** A false split (one person seen as two) costs a duplicated send, a leaky frequency cap, and double-counting in measurement, all annoying but recoverable. A false merge (two people fused) is worse: it can expose one person's order history or address to another, a privacy incident, and it is hard to detect after the fact. So bias the rule toward keeping separate when confidence is below the merge threshold.
@@ -64,7 +64,7 @@ Merge or keep separate is the live decision, and the asymmetry the opener named 
 4. **Make merges reversible.** Because a false merge is the expensive error, keep the source records and lineage (as above) so a merge can be unwound when a later signal contradicts it.
 
 > [!caution] A false merge is the expensive error
-> To restate the asymmetry concretely: fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
+> Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
 
 ## CRM, CDP, and warehouse
 
@@ -74,7 +74,7 @@ Three systems are easy to confuse, and most stacks run more than one.
 * A **CDP (customer data platform)** ingests data from every source, resolves identity, and maintains the unified, activation-ready profile that the channels and decisioning read from.
 * A **data warehouse** is built for analysis and storage at scale, not for real-time activation.
 
-The distinction that matters operationally: a warehouse is built for analysis, a CDP is built for activation. Which combination you need follows from the [ESP and tooling choices](/foundations/esp-selection.md), not the reverse.
+Operationally, a warehouse is built for analysis and a CDP for activation. Which combination you need follows from the [ESP and tooling choices](/foundations/esp-selection.md), not the reverse.
 
 ## Choosing a CDP
 
@@ -98,7 +98,7 @@ Data decays. A unified profile that is wrong is worse than no profile, because i
 4. **Suppress and clean continuously.** Suppress hard bounces immediately, suppress spam complaints, and run unengaged contacts through the re-engagement and sunset logic in [segmentation and data](/foundations/segmentation-and-data.md) rather than mailing a decaying list.
 5. **Archive what you no longer use.** Profiles past a defined inactivity window, and fields no destination reads, should be archived or deleted under the retention policy. Holding data you do not use is cost and compliance risk with no upside. See [legislation and compliance](/references/legislation-and-compliance.md) for the retention and lawful-basis obligations.
 
-Throughout, hold a documented lawful basis for every contact and deduplicate on the rules above. See [segmentation and data](/foundations/segmentation-and-data.md) for the operational hygiene and [legislation and compliance](/references/legislation-and-compliance.md) for the obligations.
+Throughout, hold a documented lawful basis for every contact and deduplicate on the matching rules. See [segmentation and data](/foundations/segmentation-and-data.md) for the operational hygiene and [legislation and compliance](/references/legislation-and-compliance.md) for the obligations.
 
 ## The decisioning link
 

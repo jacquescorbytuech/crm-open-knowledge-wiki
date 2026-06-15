@@ -45,7 +45,7 @@ The channel is bounded by the POS integration, by the human editor, and by physi
 
 ## Measurement
 
-Redemptions and scans are first-party and clean, the loyalty key ties each one to the record, but a redemption count is not the channel's incremental effect, exactly as it is not for [direct mail](/channels/direct-mail.md) or the [wallet](/channels/wallet-passes.md). The honest read is a holdout: hold back a slice of the eligible customers from the lane treatment and compare redemption and repeat purchase against it, so an offer that would have been taken anyway is not credited to the channel. Match the issued offer back to the redeemed one by the unique code, and watch enrolment rate and identity-capture rate as the programme's health metrics. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md).
+Redemptions and scans are first-party and clean, the loyalty key ties each one to the record, but a redemption count is not the channel's incremental effect, exactly as it is not for [direct mail](/channels/direct-mail.md) or the [wallet](/channels/wallet-passes.md). The incremental read is a holdout: hold back a slice of the eligible customers from the lane treatment and compare redemption and repeat purchase against it, so an offer that would have been taken anyway is not credited to the channel. Match the issued offer back to the redeemed one by the unique code, and watch enrolment rate and identity-capture rate as the programme's health metrics. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 ## Lifecycle role
 

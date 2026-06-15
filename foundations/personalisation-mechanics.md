@@ -16,11 +16,11 @@ Every personalised message is, underneath, a template: static markup with placeh
 
 A merge field is the simplest expression in that language, a placeholder swapped for subscriber data: `Hi {{ first_name }}`. The same language also carries the logic that makes personalisation more than substitution: conditionals (`{% if %}`), loops over a collection (`{% for item in cart %}`), filters that transform a value (`{{ price | money }}`), and the fallback that protects against missing data (`{{ first_name | default: "there" }}`). Dynamic-content blocks, regions that show different markup to different audiences, are the same conditional logic applied to a layout instead of a word. The discipline of testing all of this, the blank-merge check, fallback coverage, and branch audit, lives in [segmentation and data](/foundations/segmentation-and-data.md); it is the same check whether the value is a name or a whole block.
 
-Templating is the *how-expressed* layer and is largely independent of the next question, when the value resolves. The same `{{ }}` syntax can hold a profile attribute fixed at send or an external value fetched mid-render.
+Templating is the *how-expressed* layer and is largely independent of when the value resolves. The same `{{ }}` syntax can hold a profile attribute fixed at send or an external value fetched mid-render.
 
 ## Binding time, earliest to latest
 
-* **Profile-attribute substitution.** The value is a stored property, first name, loyalty tier, last order, read from the [customer record](/foundations/customer-data-and-identity.md) and written into the message as the send is composed. It is the cheapest and most robust method and the easiest to get subtly wrong: a tag mapped to the wrong field renders a real but incorrect value that no blank-check catches, and a missing attribute renders the fallback or, without one, `Hi ,`. Whatever it resolves to is frozen at send and correct only as long as the attribute was.
+* **Profile-attribute substitution.** The value is a stored property, first name, loyalty tier, last order, read from the [customer record](/foundations/customer-data-and-identity.md) and written into the message as the send is composed. It is the cheapest and most reliable method and the easiest to get subtly wrong: a tag mapped to the wrong field renders a real but incorrect value that no blank-check catches, and a missing attribute renders the fallback or, without one, `Hi ,`. Whatever it resolves to is frozen at send and correct only as long as the attribute was.
 
 * **Relational or connected data.** A richer form of the same send-time method reaches past flat profile fields into related datasets the platform holds: tables of a contact's orders, catalogue items, or loyalty events, joined into personalisation and segmentation at render without an external call. Emarsys exposes this as connected (relational) data, MessageGears by querying the customer's own data warehouse directly at send, Braze through catalogs, among others. It stays first-party and resolves at send, sourced from a join rather than a single field, so it can loop over related rows (`{% for item in last_order %}`) and segment on conditions a flat profile cannot hold, such as a purchase from a given category in the last 30 days.
 
@@ -38,7 +38,7 @@ It also breaks mechanically. Apple's Mail Privacy Protection prefetches images w
 
 ## The same axes in other channels
 
-Everything above is drawn in email, but the source axis is channel-independent and the binding-time axis just shifts with each channel's rendering model. What changes is the latest moment a channel still lets you influence the render, and that sorts them.
+These examples are drawn from email, but the source axis is channel-independent and the binding-time axis just shifts with each channel's rendering model. What changes is the latest moment a channel still lets you influence the render, and that sorts them.
 
 * **Direct mail** is fixed at print, the earliest point and the only irreversible one. [Variable-data printing](/channels/direct-mail.md) is profile-attribute substitution rendered onto a physical page and then frozen for the days of transit, with no fallback once the press has run, so it can only safely personalise on data stable enough to survive the gap between print and delivery.
 * **Email** resolves at send, with open-time live content as the fragile extension drawn above: image-only, and undercut by proxy prefetch.

@@ -30,7 +30,7 @@ There is no universal percentage. The size of a holdout is a trade-off you set d
 * A bigger holdout tightens the read. More users on each side narrows the interval around the measured lift, so you can detect a smaller effect and see it sooner.
 * A bigger holdout withholds more revenue. Everyone in the holdout gets no messaging, so the holdout itself has a cost while it runs.
 
-Pick the smallest holdout that can still detect the effect size that would change a decision over the period you are willing to wait. The exact n is a power question, not a rule of thumb: work it from the baseline rate, the minimum effect worth detecting, and the cell volume available, per [sample size and power](/measurement/sample-size-and-power.md), and check it against the per-cell floor in [volume thresholds](/measurement/volume-thresholds.md). Two further rules hold regardless of size: the holdout must be random, and for a global holdout it must be stable over the measurement period (see maintenance below).
+Pick the smallest holdout that can still detect the effect size that would change a decision over the period you are willing to wait. The exact n is a power question, not a rule of thumb: work it from the baseline rate, the minimum effect worth detecting, and the cell volume available, per [sample size and power](/measurement/sample-size-and-power.md), and check it against the per-cell floor in [volume thresholds](/measurement/volume-thresholds.md). Whatever the size, the holdout must be random, and a global holdout must also be stable over the measurement period.
 
 ## How to randomise correctly
 
@@ -74,7 +74,7 @@ The setup essentials, at a practical level:
 1. Pick comparable regions. Choose treated and control geographies that tracked each other closely before the test, so the control is a credible stand-in for what the treated region would have done untreated.
 2. Define a pre-period. Measure both sets over a baseline window before any change, to establish the normal relationship between them.
 3. Run the change in the treated regions only, holding the controls untouched for the full test window.
-4. Read the difference against controls. The lift is how far the treated regions diverged from where the pre-period relationship said they should be. The tooling handles the matching and inference: see GeoLift and Meridian below.
+4. Read the difference against controls. The lift is how far the treated regions diverged from where the pre-period relationship said they should be. Under the hood the tooling builds a synthetic control: a weighted combination of untreated regions chosen to track the treated region through the pre-period, which then models what the treated region would have done untreated. That counterfactual, not any single control region, is what the lift is measured against. See GeoLift and Meridian below.
 
 ## What it costs and what it returns
 

@@ -7,7 +7,7 @@ timestamp: 2026-06-14T00:00:00Z
 ---
 
 > [!caution] This is not legal advice
-> This orients you to a fast-moving area; it is not legal advice. The rulings below are recent and obligations turn on where your recipients are. Take qualified advice for your specific situation.
+> This orients you to a fast-moving area; it is not legal advice. These rulings are recent and obligations turn on where your recipients are. Take qualified advice for your specific situation.
 
 See [legislation and compliance](/references/legislation-and-compliance.md) for the sending-consent regimes this sits alongside.
 
@@ -24,7 +24,7 @@ In the EU these are not the same permission. The right to send rests on consent 
 
 Article 5(3) of the ePrivacy Directive requires consent before storing information on, or accessing information already stored on, a user's terminal equipment, unless it is strictly necessary to provide a service the user requested. The European Data Protection Board's **Guidelines 2/2023** on the technical scope of Article 5(3) confirmed that the provision is technology-neutral and reaches email tracking pixels, not only browser cookies. Because every EU and EEA member state transposes the same directive, this baseline applies across the bloc, and national authorities cite each other's reasoning when they apply it.
 
-The practical consequence: open and click tracking in the EU is presumptively a consent activity, with a narrow strictly-necessary exemption, regardless of how solid your sending consent is.
+So open and click tracking in the EU is presumptively a consent activity, with a narrow strictly-necessary exemption, regardless of how solid your sending consent is.
 
 ## France: the CNIL recommendation
 
@@ -58,11 +58,11 @@ The email pixel is one instance of a rule that is not about email. EDPB Guidelin
 * **Wallet and point of sale.** A scanned barcode and pass analytics are first-party and tied to an identity the customer presented, a lighter position than third-party device tracking, but the data is still processed under the GDPR even where Article 5(3) is not engaged. See [wallet passes](/channels/wallet-passes.md) and [point of sale](/channels/point-of-sale.md).
 * **Direct mail.** No device, no Article 5(3): the match-back and the per-recipient code are ordinary personal-data processing under the GDPR and nothing more. See [direct mail](/channels/direct-mail.md).
 
-The shape holds throughout: the right to reach someone on a channel never carries the right to measure what they did there. On the device-based channels a platform gate, the tracking prompt, the advertising-identifier phase-out, the push opt-in, sits on top of the legal one; on the channels that never touch the device, only the GDPR's processing rules apply.
+Across all of them, the right to reach someone on a channel never carries the right to measure what they did there. On the device-based channels a platform gate, the tracking prompt, the advertising-identifier phase-out, the push opt-in, sits on top of the legal one; on the channels that never touch the device, only the GDPR's processing rules apply.
 
 ## What this means for measurement
 
-This is not only a legal note; it changes how to read your numbers. The bundle already warns that open rate is corrupted by Mail Privacy Protection and is directional at best; see [metrics are directional](/principles/metrics-are-directional.md) and [core metrics](/measurement/core-metrics.md). Tracking consent adds a second, structural source of missingness: in strict-consent jurisdictions a slice of your EU audience may never be measured at all, and that slice is not random, so EU open and click rates understate true engagement and can skew segment and cohort comparisons. The robust response is the one the measurement layer already argues for: lean on outcomes you can observe without the pixel, clicks to first-party destinations, on-site and in-app conversion, and incrementality via [holdouts](/measurement/holdouts-and-control-groups.md), rather than on the open as a primary metric. See [deliverability](/foundations/deliverability.md) for how the open signal degrades on the delivery side too.
+This is not only a legal note; it changes how to read your numbers. The bundle already warns that open rate is corrupted by Mail Privacy Protection and is directional at best; see [metrics are directional](/principles/metrics-are-directional.md) and [core metrics](/measurement/core-metrics.md). Tracking consent adds a second, structural source of missingness: in strict-consent jurisdictions a slice of your EU audience may never be measured at all, and that slice is not random, so EU open and click rates understate true engagement and can skew segment and cohort comparisons. The sound response is the one the measurement layer already argues for: lean on outcomes you can observe without the pixel, clicks to first-party destinations, on-site and in-app conversion, and incrementality via [holdouts](/measurement/holdouts-and-control-groups.md), rather than on the open as a primary metric. See [deliverability](/foundations/deliverability.md) for how the open signal degrades on the delivery side too.
 
 ## The practical minimum
 

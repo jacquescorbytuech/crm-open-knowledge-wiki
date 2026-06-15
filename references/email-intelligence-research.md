@@ -8,7 +8,7 @@ timestamp: 2026-05-21T00:00:00Z
 
 ## The extraction pipeline
 
-Because consumer mail is overwhelmingly templated, providers treat the inbox as data extraction. Messages are clustered into templates by hashing the HTML structure, and a k anonymity threshold determines whether a template is processed at all, so low volume mail can be invisible to the pipeline. Once a template clears the threshold, field extractors pull structured data for search, assistants, and cards. The scale is real: Google's Crusher system discovers around 1.5 million new templates a week, so the corpus of recognised senders constantly expands.
+Because consumer mail is overwhelmingly templated, providers treat the inbox as data extraction. Messages are clustered into templates by hashing the HTML structure, and a k anonymity threshold determines whether a template is processed at all, so low volume mail can be invisible to the pipeline. Once a template clears the threshold, field extractors pull structured data for search, assistants, and cards. Google's Crusher system discovers around 1.5 million new templates a week, so the corpus of recognised senders constantly expands.
 
 | System | What it does |
 | --- | --- |

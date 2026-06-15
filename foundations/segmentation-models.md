@@ -6,11 +6,11 @@ tags: [segmentation, rfm, clv, propensity, behavioural, lifecycle, framework, sc
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## What this is
+## Matching a model to the job
 
 Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene, and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
 
-Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, and below volume most of those slices are untestable, so most programmes over-segment and reach for proprietary models when RFM on transaction data would do. The catalogue below is there to choose from, not to stack; the closing section on choosing returns to this.
+Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, and below volume most of those slices are untestable, so most programmes over-segment and reach for proprietary models when RFM on transaction data would do. The catalogue is there to choose from, not to stack.
 
 ## RFM
 
@@ -28,7 +28,7 @@ F score = quintile of (order count in window), most frequent = 5
 M score = quintile of (spend in window), highest spend = 5
 ```
 
-That gives every customer a three-digit code from 111 to 555. You do not act on 125 distinct cells. Collapse the code into a handful of named groups and attach one action to each. The score-to-action map below is illustrative, not a benchmark; set the boundaries against your own base and revise them as you learn which groups respond.
+That gives every customer a three-digit code from 111 to 555. You do not act on 125 distinct cells. Collapse the code into a handful of named groups and attach one action to each. The score-to-action map is illustrative, not a benchmark; set the boundaries against your own base and revise them as you learn which groups respond.
 
 ```
 RFM pattern          Example codes   Reading                     Action
@@ -47,7 +47,7 @@ Value segmentation tiers the audience by what each customer is worth, usually by
 
 ## A simple CLV for tiering
 
-You do not need a probabilistic model to start tiering. Two pragmatic approaches:
+You do not need a probabilistic model to start tiering.
 
 Historic value is just observed spend to date, the sum of past orders per customer, optionally net of returns. It is backward-looking and says nothing about the future, but it ranks the base cleanly and is enough to cut value tiers on day one.
 
@@ -63,7 +63,7 @@ Use margin, not revenue, so the tiers reflect what a customer is actually worth 
 
 * **Behavioural** segmentation divides on what customers do: purchases, product usage, browse patterns, engagement. It is usually the most actionable for lifecycle marketing because behaviour predicts behaviour.
 * **Demographic** segmentation divides on who customers are: age, location, income, gender. Easy to capture, but a weaker predictor of action than behaviour.
-* **Firmographic** segmentation is the B2B equivalent of demographic, dividing organisations by industry, size, and revenue.
+* **Firmographic** segmentation is the B2B equivalent of demographic, dividing organisations by industry, size, and revenue. In a B2B programme it is also the fit half of a lead score; see [lead management](/foundations/lead-management.md).
 
 ## Lifecycle-stage
 
@@ -87,7 +87,7 @@ Segments go stale at different rates, so recompute them on different clocks. RFM
 
 ## Choosing a model
 
-To return to where the opener started: match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable, which is why the over-segmentation the opener warned about is the common failure and RFM on transaction data is so often enough. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
+Match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable, which is why over-segmentation is the common failure and RFM on transaction data is so often enough. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

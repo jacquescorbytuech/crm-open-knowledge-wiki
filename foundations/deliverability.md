@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## How placement works
 
-Inbox placement is decided by machine learning, not rules, and has been since Bayesian spam filtering in the late 1990s. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md); for day-to-day operations, the levers below are what you act on.
+Inbox placement is decided by machine learning, not fixed rules, an approach that goes back to the statistical (Bayesian) spam filtering of the early 2000s, though that early work only separated spam from not-spam, and modern placement layers sender reputation and per-recipient engagement on top of that binary decision. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md).
 
 ## How to warm a new IP or domain
 
@@ -50,14 +50,14 @@ Recovery is the warming ramp run on a list that already burned trust, so it is s
 
 ## How to monitor complaint rate
 
-Complaint rate (recipients marking your mail as spam) is a hard deliverability limit. The bulk sender rules cap the reported spam rate at 0.3%, and 0.1% is the safe target you manage to, see [authentication](/foundations/authentication.md) and [platform interventions](/references/platform-interventions.md).
+Complaint rate (recipients marking your mail as spam) is a hard deliverability limit. The bulk sender rules require the reported spam rate to stay below 0.3%, and 0.1% is the safe target you manage to, see [authentication](/foundations/authentication.md) and [platform interventions](/references/platform-interventions.md).
 
 * Watch it in Google Postmaster Tools (the Spam Rate dashboard) and Microsoft SNDS, per sending domain and IP.
 * Track it weekly in steady state, and per send while warming or recovering.
 * Act before 0.1%, not at it. A rising trend below the line is the warning, treat 0.1% as a ceiling you never reach, not a budget you spend.
 
-> [!danger] 0.3% is a hard breach, not a target
-> The bulk sender rules cap the reported spam rate at 0.3%. At or above it you are in breach, expect blocking, and must run the spam-recovery procedure. Manage to 0.1% as the safe ceiling, well below the line.
+> [!danger] 0.3% is the breach line, not a target
+> The bulk sender rules require the reported spam rate to stay below 0.3%. At or above it you are in breach, expect blocking, and must run the spam-recovery procedure. Manage to 0.1% as the safe operating ceiling, well below the line.
 
 Action thresholds:
 
@@ -109,6 +109,8 @@ The engagement rows are the ones to distrust. An open is an image load, not a re
 ## Platform diagnostics
 
 Gmail Postmaster Tools and Microsoft SNDS, set up per the checklist above, are tracked weekly with alerts on complaint rate and reputation tier changes. They report aggregate deliverability, not per message placement or summarisation, but they are the only platform cooperative signal you get. See [platform interventions](/references/platform-interventions.md).
+
+The gap they leave, inbox versus spam placement for a specific send, is what seed-list (inbox-placement) testing estimates: a panel of monitored seed addresses across the major providers receives the campaign, and the tool reports where it landed. Treat the result as an estimate from a synthetic panel, not a read of where real recipients saw the message, because seed accounts have no genuine engagement history and engagement is what now drives placement. It is most useful as a pre-send check and for catching a sudden placement drop, not as a substitute for the engagement and reputation signals above.
 
 ## MIME structure
 

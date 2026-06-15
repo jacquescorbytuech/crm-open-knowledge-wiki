@@ -50,7 +50,7 @@ Highest cost per touch and highest legal exposure of any channel. Carrier labell
 
 ## Measurement
 
-Read it like the other channels: distrust the dashboard and measure the downstream action against a randomised holdout. Hold back an eligible, consented slice, call the rest, and measure the difference in the action you wanted, renewal, payment, retention, not the connect. Watch answer rate, complaint rate, and spam-labelling as guardrails, since a rising complaint rate caps future reach. AI-agent calls add transcript-level signal, but the honest read of the channel's lift is still incremental conversion against the held-out group. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
+Read it like the other channels: distrust the dashboard and measure the downstream action against a randomised holdout. Hold back an eligible, consented slice, call the rest, and measure the difference in the action you wanted, renewal, payment, retention, not the connect. Watch answer rate, complaint rate, and spam-labelling as guardrails, since a rising complaint rate caps future reach. AI-agent calls add transcript-level signal, but the channel's lift is still incremental conversion against the held-out group. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
 ## Lifecycle role
 

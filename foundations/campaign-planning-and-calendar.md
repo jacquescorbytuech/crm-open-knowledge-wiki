@@ -6,9 +6,9 @@ tags: [planning, calendar, broadcast, triggered, governance, cadence, workflow, 
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## Two kinds of sending
+## Triggered and broadcast sending
 
-A lifecycle programme sends in two modes, and they are planned differently.
+A lifecycle programme sends triggered and broadcast messages, and plans them differently.
 
 * **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse, and run continuously once built. They carry most of the relevance because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
 * **Broadcast** (batch) messages go to a segment on a schedule: the newsletter, the launch, the promotion. They are how the calendar's planned moments reach the audience.
@@ -84,7 +84,7 @@ Where the platform offers an inbox-preview render gallery, use it alongside live
 
 ## Governance
 
-Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. The discipline matters most for [automations](/foundations/automation-and-sequences.md), because an error there runs at scale and silently. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
+Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. An automation error runs at scale and silently, so apply this discipline to [automations](/foundations/automation-and-sequences.md) first. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
 
 ## Related
 

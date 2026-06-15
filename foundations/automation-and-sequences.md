@@ -13,7 +13,7 @@ An automation fires from an event (signup, purchase, browse, inactivity) rather 
 > [!warning] An error in an automation runs at scale, silently
 > A broadcast mistake reaches one audience once; a broken flow keeps misfiring to everyone who enters it. Test the trigger, content, and timing before going live.
 
-Before you build any flow, write down five things: the entry trigger (the event that admits a contact), the exit condition (the event that pulls them out, almost always the conversion the flow exists to drive), the goal metric you will read it against, the suppression rules that override it, and the channel each message goes out on. Get these on paper first; the message copy is the easy part.
+Before you build any flow, write down the entry trigger (the event that admits a contact), the exit condition (the event that pulls them out, almost always the conversion the flow exists to drive), the goal metric you will read it against, the suppression rules that override it, and the channel each message goes out on. Get these on paper first; the message copy is the easy part.
 
 ## Trigger types
 

@@ -8,7 +8,7 @@ timestamp: 2026-06-15T00:00:00Z
 
 ## The exception to consent
 
-Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party, and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. It is included here precisely because it contradicts that assumption, and the contradiction is the point. Measured against the standard the rest of this bundle holds, cold email is spam.
+Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party, and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. It contradicts that assumption, and the contradiction is the point. Measured against the standard the rest of this bundle holds, cold email is spam.
 
 ## Why it is spam by this bundle's own standard
 
@@ -28,7 +28,7 @@ Spam in the moral sense is not the same as unlawful, and the regimes diverge sha
 
 Even inside the window, cold email works against the asset the rest of this programme spends its effort building. A cold list has no engagement history, so the provider has nothing good to weigh, and the early complaints and spam-trap hits that cold sending attracts feed straight into the sender-level reputation that decides placement. That is the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): weak engagement is read as a property of the sender, so a cold campaign does not only underperform on its own, it drags the placement of the warmed, consented programme sharing that reputation. The complaint thresholds the bulk-sender rules enforce are easy to breach with a list that never opted in.
 
-The practical consequence: if cold outreach is run at all, it is run on separate sending infrastructure (a distinct domain and IP) so it cannot poison the warmed estate, at low volume, to genuinely relevant recipients, with the opt out honoured instantly. Those are damage-limitation guardrails, not a recipe for it working well. The honest summary is that the lawful window is real and narrow, and that even within it cold email earns less and risks more than the consent-first path it bypasses.
+In practice, if cold outreach is run at all, it is run on separate sending infrastructure (a distinct domain and IP) so it cannot poison the warmed estate, at low volume, to genuinely relevant recipients, with the opt out honoured instantly. Those are damage-limitation guardrails, not a recipe for it working well. In short, the lawful window is real and narrow, and even within it cold email earns less and risks more than the consent-first path it bypasses.
 
 ## Related
 

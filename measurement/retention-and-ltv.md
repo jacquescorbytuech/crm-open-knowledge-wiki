@@ -6,9 +6,9 @@ tags: [retention, ltv, cohort, ltv-cac, churn, unit-economics, payback, sensitiv
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## Why this is the measurement that matters
+## What retention and value measure
 
-Engagement and conversion metrics measure the message. Retention and lifetime value measure the business. A lifecycle programme exists to keep customers and grow their value, so these are the numbers it should ultimately be judged on, and the ones most worth moving.
+Engagement and conversion metrics measure the message. Retention and lifetime value measure the business. A lifecycle programme exists to keep customers and grow their value, so these are the numbers it should be judged on, and the ones most worth moving.
 
 ## How to build a cohort retention curve
 
@@ -27,7 +27,7 @@ The shape carries the signal. Read it as decline then flatten: an early drop as 
 
 ## Lifetime value
 
-LTV combines what a customer is worth per period with how long they stay, derived from the retention curve rather than guessed. Three disciplines keep it honest. Use contribution margin, not revenue, so the number reflects real unit economics. Discount future value, because a relationship that only turns profitable years out is worth less than the undiscounted total suggests, sometimes dramatically less. And prefer cohort based LTV to a single blended figure, which hides the differences that decisions depend on.
+LTV combines what a customer is worth per period with how long they stay, derived from the retention curve rather than guessed. Keeping it honest takes some discipline. Use contribution margin, not revenue, so the number reflects real unit economics. Discount future value, because a relationship that only turns profitable years out is worth less than the undiscounted total suggests, sometimes dramatically less. And prefer cohort based LTV to a single blended figure, which hides the differences that decisions depend on.
 
 The simplest defensible form sums contribution margin per active period, weighted by the share still retained in that period, discounted back to today:
 

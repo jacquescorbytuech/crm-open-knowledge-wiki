@@ -18,7 +18,7 @@ These are peer reviewed papers on production systems, a useful floor on platform
 | LinkedIn, 2022 and 2026 | Offline reinforcement learning for notifications, then BanditLP pairing neural Thompson sampling with a large linear program for email. |
 | Zillow, RecSys 2022 | Boosted tree send or do not send, keeping 98% of clicks while shedding surplus sends. |
 | Meta, 2023 | Instagram notification slots as an auction across internal teams; fewer sends, higher click through, across 77M users per arm. |
-| Kuaishou PushGen, WSDM 2026 | LLM generates push copy under style controls, a learned reward model ranks candidates. |
+| [Kuaishou PushGen, WSDM 2026](https://arxiv.org/abs/2512.14490) | LLM generates push copy under style controls, a learned reward model ranks candidates. |
 | Pinterest TransAct, KDD 2023 | Transformer over realtime user activity feeding ranking across surfaces. |
 
 ## The agentic messaging and uplift literature

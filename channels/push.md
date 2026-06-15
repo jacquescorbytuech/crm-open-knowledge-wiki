@@ -33,7 +33,7 @@ The payload is small and the prioritisation controls are explicit.
 
 ## Best-fit jobs
 
-Two jobs survive the editor by design. Waking dormant users, which only push can do. And messages tied to the recipient's own activity or requests: a price or back in stock alert they set, a delivery status, a reply on their work, a job that finished. Broadcast promotion competes worst for the interruption budget and usually does more on a surface the user opened on purpose.
+Some jobs survive the editor by design. Waking dormant users, which only push can do. And messages tied to the recipient's own activity or requests: a price or back in stock alert they set, a delivery status, a reply on their work, a job that finished. Broadcast promotion competes worst for the interruption budget and usually does more on a surface the user opened on purpose.
 
 ## Push versus in-app versus email
 

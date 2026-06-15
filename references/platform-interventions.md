@@ -6,7 +6,7 @@ tags: [timeline, platform, mpp, bulk-sender, apple-intelligence, gmail]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## Why this matters
+## Each change is a dated natural experiment
 
 Each intervention is discrete and dated, which makes each one a natural experiment a sender can measure a before-and-after against (see [measuring intermediation](/measurement/measuring-intermediation.md)). Most of these changes add a layer of filtering, ranking, or summarisation between the sender and the recipient, and most are framed by the platform as a user-protection feature. The practical upshot for a programme is that the inbox and the lock screen are moving targets, and the levers that survive are authentication, list hygiene, and engagement.
 
@@ -31,7 +31,7 @@ The signals senders get back are aggregate and deliverability-focused: Gmail Pos
 
 ## The earlier intermediation layer
 
-The summarisation panic is a thin layer on a much older story: Gmail tabs since 2013, Outlook Focused Inbox since 2016, machine learning spam filtering since the late 1990s, Android notification channels since 2017, and Focus modes since 2021. A user who silenced your channel in 2019 has been a non engager for years that nobody measured.
+The summarisation panic is a thin layer on a much older story: Gmail tabs since 2013, Outlook Focused Inbox since 2016, statistical spam filtering since the early 2000s, Android notification channels since 2017, and Focus modes since 2021. A user who silenced your channel in 2019 has been a non engager for years that nobody measured.
 
 ## Related
 
@@ -49,3 +49,5 @@ The summarisation panic is a thin layer on a much older story: Gmail tabs since 
 [5] [TechCrunch, Apple pauses AI notification summaries for news after false alerts](https://techcrunch.com/2025/01/16/apple-pauses-ai-notification-summaries-for-news-after-generating-false-alerts)
 [6] [RFC 8058, one-click unsubscribe](https://datatracker.ietf.org/doc/html/rfc8058)
 [7] [IETF, draft-brotman-aggregate-performance-reporting](https://datatracker.ietf.org/doc/draft-brotman-aggregate-performance-reporting/)
+[8] [Microsoft, strengthening the email ecosystem: Outlook's new requirements for high-volume senders (enforcement from 5 May 2025)](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730)
+[9] [Proofpoint, stricter Google email authentication enforcement begins November 2025 (deferral to rejection)](https://www.proofpoint.com/us/blog/email-and-cloud-threats/clock-ticking-stricter-email-authentication-enforcements-google-start)

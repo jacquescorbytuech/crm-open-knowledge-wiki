@@ -28,7 +28,7 @@ A single-intent email has a predictable skeleton. Each block does one job, and t
 * **Hero message.** One headline carrying the single core message in real text. This is the line a scanner and a summariser will keep, so state the offer, change, or news plainly.
 * **Primary CTA.** One button, placed near the hero, repeated lower down if the email is long. Same wording each time.
 * **Supporting content.** Detail, proof, or secondary context below the primary action, never competing with it.
-* **Footer.** Physical address, clear unsubscribe, sender identity. Required and load-bearing for deliverability.
+* **Footer.** Physical address, clear unsubscribe, sender identity. Required, and essential to deliverability.
 * **Plain-text part.** A real plain-text alternative alongside the HTML. Some clients and summarisers read it, and it keeps the message legible when images are blocked.
 
 ## CTAs
@@ -58,6 +58,17 @@ Concrete rules, with phrasings:
 * **Use explicit verbs in key blocks.** "Confirm your address by Friday" not "Action may be required". The verb tells the summariser, and the reader, what to do.
 * **Put the fact before the framing.** "Order shipped, arrives Tuesday" before any thank-you copy, so the gist holds even if everything after the first clause is dropped.
 
+## Generating copy with AI
+
+A language model is a competent first-drafter and a poor final author. It is genuinely useful for volume work, producing subject-line variants to test, adapting one message to several segments, getting past a blank page, and the discipline that makes it safe is to treat its output as a draft a human edits, not as copy that ships unread. The production pattern is already published: Kuaishou's [PushGen](https://arxiv.org/abs/2512.14490) generates push copy under style controls and has a learned reward model rank the candidates, rather than shipping the raw generation, one of the systems catalogued in [notification and decisioning research](/references/notification-and-decisioning-research.md).
+
+The risks specific to generated marketing copy:
+
+* **Hallucinated specifics.** The model will happily invent a discount depth, a deadline, a product name, or a policy detail that reads fluently and is wrong. The front-loaded fact, the amount, the date, the item, is exactly the part a model is least reliable on and the part a wrong value does the most damage. Bind those values from your own data through [personalisation mechanics](/foundations/personalisation-mechanics.md) rather than letting the model assert them, and verify every concrete claim against the actual offer before send.
+* **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that carries no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, and hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
+
+This sits under [start simple](/principles/start-simple.md) and the decision-support framing in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md): the model accelerates a writer who knows what good looks like, and amplifies the mistakes of one who does not.
+
 ## Metric to watch
 
 Use click to open rate (CTOR), clicks divided by opens, as the content engagement measure independent of open noise. See [metrics are directional](/principles/metrics-are-directional.md).
@@ -78,6 +89,8 @@ Use click to open rate (CTOR), clicks divided by opens, as the content engagemen
 
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
+* [Notification and decisioning research](/references/notification-and-decisioning-research.md)
+* [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Metrics are directional](/principles/metrics-are-directional.md)
 

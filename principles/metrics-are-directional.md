@@ -16,7 +16,7 @@ What a sender calls an open is an image load: a one pixel image fetched from a t
 
 ## Two different things called engagement
 
-The engagement a mailbox provider acts on, dwell time, scrolling, replies, deletes, folder moves, the IMAP seen and answered flags, is far richer than anything a sender can see, and it is what actually drives placement. The opens and clicks a sender measures are a thin, noisy proxy for it. This is the distinction the stance turns on: a move in your open rate is a move in image load behaviour, not direct evidence of how the provider rates you. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+The engagement a mailbox provider acts on, dwell time, scrolling, replies, deletes, folder moves, the IMAP seen and answered flags, is far richer than anything a sender can see, and it is what actually drives placement. The opens and clicks a sender measures are a thin, noisy proxy for it. A move in your open rate is a move in image load behaviour, not direct evidence of how the provider rates you. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 ## What to use instead
 

@@ -6,11 +6,11 @@ tags: [offers, incentives, discounts, promotions, margin, pricing, break-even, h
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## The discipline, in one line
+## Discount discipline
 
 An incentive is a lever that works once you stop pulling it reflexively. Used with discipline it converts a hesitant buyer; used by default it teaches your whole audience to wait, attracts the customers who leave when it stops, and gives away margin you did not need to spend. Most of the offer mistakes in a programme are mistakes of reflex, not of generosity.
 
-The test is one piece of arithmetic, not a feeling about generosity: an offer only pays when its measured incremental share, verified against a holdout, beats the break-even the discount sets, and most broad sends fail that math because the would-have-bought majority swamps the incremental few you actually convert. So target the offer narrow, always hold out a control, and prefer a non-price lever wherever you can name no price barrier. The sizing later down the page is where that test gets worked out; treat everything above it as the reflexes that test is meant to discipline.
+The test is one piece of arithmetic, not a feeling about generosity: an offer only pays when its measured incremental share, verified against a holdout, beats the break-even the discount sets, and most broad sends fail that math because the would-have-bought majority swamps the incremental few you actually convert. So target the offer narrow, always hold out a control, and prefer a non-price lever wherever you can name no price barrier.
 
 ## What over-discounting costs
 
@@ -34,7 +34,7 @@ There is no correct discount depth, only a depth set against your margin. As a h
 
 ## Does the offer pay: sizing against margin
 
-This is the test the opener named, worked out as arithmetic. Before sending, work out whether the offer can pay for itself. A discount costs you margin on every redeemer, including the ones who would have bought anyway. It only pays if the margin won from buyers it actually converts exceeds that cost. The break-even is the share of redeemers who must be genuinely incremental.
+This is the discount discipline worked out as arithmetic. Before sending, work out whether the offer can pay for itself. A discount costs you margin on every redeemer, including the ones who would have bought anyway. It only pays if the margin won from buyers it actually converts exceeds that cost. The break-even is the share of redeemers who must be genuinely incremental.
 
 ```
 offer cost per redeemer       = unit_price x discount_rate

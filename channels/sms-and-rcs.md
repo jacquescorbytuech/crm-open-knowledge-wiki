@@ -22,7 +22,7 @@ Less than email or push, but not zero. Carriers run their own spam filtering and
 
 SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode. Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched character can quietly multiply the cost of a campaign.
 
-Treat length discipline here as a budget control, not a style preference. One out-of-range character flips the encoding and roughly halves the characters per segment, so a single character can double the per-message bill across the whole send. The mechanism is in the encoding rules below, which is why they earn the attention.
+Treat length discipline here as a budget control, not a style preference. One out-of-range character flips the encoding and roughly halves the characters per segment, so a single character can double the per-message bill across the whole send.
 
 > [!warning] One stray character can flip the encoding
 > This is where the budget halves in practice. GSM-7 covers the basic Latin alphabet, digits, and a short set of punctuation. The moment one character falls outside it, the whole message flips to UCS-2 and the budget halves, from 160 to 70. The usual culprits are invisible: a single emoji, or a curly quote and em dash auto-inserted by a word processor, or an accented letter, or a non-breaking space pasted from a web page. One smart quote in a 158-character draft turns a one-segment send into a three-segment send.
@@ -42,7 +42,7 @@ In the US, application-to-person (A2P) traffic runs over one of three route type
 * **Short codes.** 5-7 digit numbers engineered for high throughput, built for high-volume and time-sensitive programmes. Highest cost and the slowest to provision (carrier approval and lease), but the fastest and most reliable to deliver at scale once live.
 * **Toll-free.** A middle option with its own verification process, lighter than short-code provisioning and offering more throughput than an unregistered long code. Suitable for moderate volume and a quicker start than a short code.
 
-Relative cost runs short code above toll-free and 10DLC, and segments multiply whatever the per-message rate is. Pick by the question that bites first: low volume and cost-sensitive, register 10DLC and wait out the registration; high sustained volume or burst sends where deliverability cannot wobble, lease a short code; somewhere between, or you need to start sooner than 10DLC vetting allows, take toll-free.
+Relative cost runs short code above toll-free and 10DLC, and segments multiply whatever the per-message rate is. Pick by the constraint that matters first: low volume and cost-sensitive, register 10DLC and wait out the registration; high sustained volume or burst sends where deliverability cannot wobble, lease a short code; somewhere between, or you need to start sooner than 10DLC vetting allows, take toll-free.
 
 ## Compliance in practice
 
@@ -50,13 +50,13 @@ The consent bar is the operational core of the channel, not a footnote.
 
 * **Capture explicit opt-in and log it.** Consent must be an affirmative act tied to the number: a ticked unticked box, a keyword reply, a double opt-in confirmation. Log what they agreed to, when, the exact disclosure text shown, and the source. The record is your defence in a TCPA or PECR challenge, and you cannot reconstruct it later.
 * **Handle STOP and HELP.** STOP (and its variants) must unsubscribe the number immediately and send one confirmation; HELP must return sender identity and contact. These are mandatory and carrier-enforced. Most platforms process them automatically, but confirm yours does and that suppression propagates across every campaign on the number, not just the one that triggered it.
-* **Enforce quiet hours by recipient local time.** US practice under the TCPA confines marketing sends to roughly 8am to 9pm in the recipient's local time zone. Schedule against the recipient's zone, not the server's or the brand's, which means you need a reliable zone for each number and a queue that holds sends outside the window rather than dropping them.
+* **Enforce quiet hours by recipient local time.** The federal TCPA baseline confines marketing sends to roughly 8am to 9pm in the recipient's local time zone, but treat that as the floor, not the rule: several state mini-TCPA laws (Florida, Oklahoma, Texas, and Connecticut among them) impose tighter windows and weekend or holiday limits, and obligations follow the recipient's location. Apply 8am to 9pm local as the baseline and the strictest applicable state window on top. Schedule against the recipient's zone, not the server's or the brand's, which means you need a reliable zone for each number and a queue that holds sends outside the window rather than dropping them.
 
 ## RCS
 
 RCS Business Messaging adds a verified-sender check mark, brand logo and colour, rich cards with media, suggested replies, and read receipts, delivered through Google Messages on Android. Apple added RCS to iPhone Messages from iOS 18 on carriers that support it, bringing read receipts, typing indicators, and high-resolution media to cross-platform threads. It is richer than SMS but still carrier-mediated, and its reach depends on device, carrier, and client support.
 
-Use the rich features for what plain SMS cannot do: the verified sender and brand identity to cut spoofing and lift trust, suggested replies and suggested actions to make the next step a single tap, and cards with media for confirmations or product moments that benefit from an image. Because reach is uneven across device, carrier, and client, design every RCS message with a graceful SMS fallback. Write the SMS version first as a self-contained message that works alone, then enrich it for RCS, so a recipient whose client does not support RCS still gets a complete, actionable text rather than a degraded fragment. Never put load-bearing content only in a card or a suggested reply.
+Use the rich features for what plain SMS cannot do: the verified sender and brand identity to cut spoofing and lift trust, suggested replies and suggested actions to make the next step a single tap, and cards with media for confirmations or product moments that benefit from an image. Because reach is uneven across device, carrier, and client, design every RCS message with a graceful SMS fallback. Write the SMS version first as a self-contained message that works alone, then enrich it for RCS, so a recipient whose client does not support RCS still gets a complete, actionable text rather than a degraded fragment. Never put essential content only in a card or a suggested reply.
 
 ## Best-fit jobs
 
@@ -66,7 +66,7 @@ Time critical and high value messages that must not be summarised or delayed: fr
 
 Length limits and weak layout control mean the proposition must be the message, not the wrapper. The craft is to land one idea and one action inside a single segment.
 
-* **Write to one segment.** Lead with the value or the instruction, name the sender so the message is not anonymous, and cut every word the recipient can infer. Watch the live segment count and the encoding as you draft (see above).
+* **Write to one segment.** Lead with the value or the instruction, name the sender so the message is not anonymous, and cut every word the recipient can infer. Watch the live segment count and the encoding as you draft.
 * **Use branded, tracked short links, not generic shorteners.** A link on your own short domain looks legitimate, carries the tracking you need, and is far less likely to be flagged by carrier filters than a public shortener that spam traffic also uses. Make sure click attribution survives the redirect; a link the recipient does not trust does not get tapped, and a link your stack cannot measure breaks the only mid-funnel signal you have.
 * **For RCS, prefer a suggested action over a raw URL** where the client supports it, and keep the SMS fallback link intact for everyone else. A scannable QR is for cross-channel print and screen, not for a message read on the same phone.
 
@@ -101,3 +101,4 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 [3] [Twilio, A2P 10DLC registration](https://www.twilio.com/docs/messaging/compliance/a2p-10dlc)
 [4] [Google, RCS Business Messaging best practices](https://developers.google.com/business-communications/rcs-business-messaging/guides/learn/best-practices)
 [5] [Apple, turn on RCS messaging on iPhone (iOS 18)](https://support.apple.com/en-us/122195)
+[6] [Kelley Drye, state mini-TCPA laws and quiet-hours rules for marketing texts](https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/texas-mini-tcpa-law-faqs-for-marketing-texts)

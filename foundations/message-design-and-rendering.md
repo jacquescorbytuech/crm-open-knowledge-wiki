@@ -16,14 +16,14 @@ Most email is opened on a mobile device, and a message that breaks on a small sc
 
 ## How to build it
 
-A robust email build is deliberately conservative. The steps that keep it intact across the spread:
+A resilient email build is deliberately conservative. The steps that keep it intact across the spread:
 
 1. **Start single-column.** One column reflows on a phone without media-query support and degrades to the same layout in clients that strip your CSS. Reach for multi-column only where you can accept it stacking, and stack it by default on mobile.
 2. **Constrain the content width.** Set a maximum content width of around 600px, which renders without clipping in desktop clients and scales down on mobile. Let the body fill the viewport below that.
 3. **Inline your CSS.** Many clients strip or ignore a `<style>` block, so the styling you depend on for layout and colour should be inline on the elements. Keep a `<style>` block as well for the things inlining cannot do (media queries, `prefers-color-scheme`), but never rely on it alone.
 4. **Lay out with tables, not floats or flexbox.** Email CSS support is years behind the browser. Table-based structure renders predictably where modern layout does not. Check any feature you want to lean on against the support tables before you rely on it.
 5. **Keep the substance in live text, not images.** Build headlines, offers, and CTAs as real text with a bulletproof (table-and-link) button, so they render with images off, read under a screen reader, and survive dark-mode recolouring.
-6. **Treat frameworks as an aid, not a substitute for skill.** Hand-written HTML is the standard a talented email developer works to: it gives the most control over how a message renders across the client spread, and nothing replaces that judgement. Frameworks can speed the work — **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients — but they constrain what you can express and still need a developer who understands the underlying markup to extend, debug, and verify the output. Reach for them to save time, not to skip the expertise.
+6. **Treat frameworks as an aid, not a substitute for skill.** Hand-written HTML is the standard a talented email developer works to: it gives the most control over how a message renders across the client spread, and nothing replaces that judgement. Frameworks can speed the work: **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients. But they constrain what you can express and still need a developer who understands the underlying markup to extend, debug, and verify the output. Reach for them to save time, not to skip the expertise.
 
 ## Type and size defaults
 
@@ -36,7 +36,7 @@ Set defaults that read on a phone held at arm's length, then adjust up, never do
 
 ## Dark mode
 
-Every major client now offers a dark mode, and several recolour your message when it is on. A design that assumes a white background, a logo on white, an image with a baked-in light background, dark text with no contrast fallback, can invert into something unreadable. The handling steps:
+Every major client now offers a dark mode, and several recolour your message when it is on. A design that assumes a white background, a logo on white, an image with a baked-in light background, dark text with no contrast fallback, can invert into something unreadable.
 
 1. **Do not rely on pure black or pure white.** Clients that auto-invert push extremes hardest, so a near-black or near-white shifts more predictably than the absolute. Choose colours that survive a partial recolour rather than ones that flip to their opposite.
 2. **Use transparent-background logos and icons.** A logo baked onto a white tile becomes a white box on a dark background. Export with a transparent background, and give dark-on-light marks a subtle outline or padded container so they stay visible either way.
@@ -46,11 +46,11 @@ Every major client now offers a dark mode, and several recolour your message whe
 
 ## Accessibility
 
-A meaningful share of recipients use assistive technology, and an inaccessible message simply fails for them. The basics carry most of the weight, and they are concrete steps:
+A meaningful share of recipients use assistive technology, and an inaccessible message simply fails for them. The basics carry most of the weight:
 
 1. **Use genuine semantic headings in reading order.** Mark headings as real headings, not bold text, and order the source so a screen reader reads it the way a sighted reader scans it. Visual order and source order should agree.
 2. **Set the language and a meaningful title.** Declare the document language so a screen reader pronounces it correctly.
-3. **Write descriptive alt text that carries the key info.** The amount, the code, the CTA, anything load-bearing must be in the alt text, not only in the image. Mark purely decorative images as such so a screen reader skips them.
+3. **Write descriptive alt text that carries the key info.** The amount, the code, the CTA, anything the message depends on must be in the alt text, not only in the image. Mark purely decorative images as such so a screen reader skips them.
 4. **Clear WCAG AA contrast.** Aim for at least 4.5:1 for normal text against its background, and check the dark-mode rendering separately since recolouring can drop a passing pair below the threshold.
 5. **Do not rely on colour alone.** Pair colour with text or shape so meaning survives for a recipient who cannot distinguish it.
 6. **Keep the substance as real, live text.** Real text resizes, reflows, and reads under assistive technology in a way an image of text never will.
@@ -67,11 +67,11 @@ The preheader (preview text) is the snippet a client shows after the subject lin
 
 ## Keep real text in the message
 
-Across all of the above runs one rule: keep the substance in live text, not locked in images. It renders when images are blocked, it reads under a screen reader, it survives dark-mode recolouring, and it is the structure the inbox's classifier and summariser parse. Send a proper multipart message with a plain-text part as well as HTML. See [deliverability](/foundations/deliverability.md) and [copywriting](/foundations/copywriting.md).
+The substance belongs in live text, not locked in images. It renders when images are blocked, it reads under a screen reader, it survives dark-mode recolouring, and it is the structure the inbox's classifier and summariser parse. Send a proper multipart message with a plain-text part as well as HTML. See [deliverability](/foundations/deliverability.md) and [copywriting](/foundations/copywriting.md).
 
 ## Coding for the inbox
 
-Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would, so the discipline is writing the most robust, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references carry most of this weight and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
+Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would, so the discipline is writing the most resilient, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references carry most of this weight and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
 
 ## Pre-send rendering QA
 
