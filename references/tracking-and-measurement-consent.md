@@ -1,8 +1,8 @@
 ---
 type: Reference
 title: Tracking and Measurement Consent
-description: Why open and click tracking is a separate consent question from the right to send, grounded in the ePrivacy Directive and the 2026 French and Italian rulings on email tracking pixels, and what it means for measurement in the EU.
-tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement]
+description: Why the right to track is a separate consent from the right to send, grounded in Article 5(3) of the ePrivacy Directive and the 2026 French and Italian rulings on email tracking pixels, and how the same split runs across web, app, push and the other channels.
+tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -48,6 +48,18 @@ Days later, in April 2026, the Italian Garante adopted guidelines on tracking pi
 
 Germany transposes Article 5(3) through §25 of the TDDDG (the renamed TTDSG). The German Data Protection Conference's guidance, supplementing EDPB Guidelines 2/2023, treats email pixel tracking as requiring consent on the same basis. France and Italy are simply the authorities that have published the most explicit email-specific guidance; the underlying obligation exists in every member state, and the Dutch, Spanish and other DPAs apply the same logic. Treat the French and Italian texts as the clearest statement of a rule that holds bloc-wide, not as two national quirks.
 
+## The same split, across the channels
+
+The email pixel is one instance of a rule that is not about email. EDPB Guidelines 2/2023 read Article 5(3) as technology-neutral: it governs any storing of information on, or access to information already on, a user's terminal equipment, and that terminal equipment is the smartphone, laptop, or connected TV, not the inbox. So the divide between the permission to deliver and the permission to track recurs in every channel that reaches the device, and the deeper the reach, the sharper it gets.
+
+* **Web and onsite.** Cookies and local storage are the original case of Article 5(3), and the consent banner is where it is asked. A visitor who declines tracking consent cannot be profiled, which is a legal cap on what [website personalisation](/channels/website-personalisation.md) can do rather than a technical one, and it is the same grant the email pixel needs, asked at a different surface.
+* **Mobile app, push and in-app.** An app SDK that reads a device identifier or writes to local storage sits squarely within Article 5(3), and platform rules stack on top of the law: Apple's App Tracking Transparency requires a prompt before an app may access the IDFA to track across apps, and Android has been moving to restrict its advertising identifier on a similar path. The OS permission to send a [push](/channels/push.md) is a separate grant again, distinct from both the right to track and the analytics the SDK records inside [in-app](/channels/in-app.md).
+* **SMS and RCS.** There is no open pixel, but the tracking link that records a [click](/channels/sms-and-rcs.md) resolves on the device's browser and raises the same storage-and-access question once it lands, so click measurement carries a tracking-consent question the bare delivery does not.
+* **Wallet and point of sale.** A scanned barcode and pass analytics are first-party and tied to an identity the customer presented, a lighter position than third-party device tracking, but the data is still processed under the GDPR even where Article 5(3) is not engaged. See [wallet passes](/channels/wallet-passes.md) and [point of sale](/channels/point-of-sale.md).
+* **Direct mail.** No device, no Article 5(3): the match-back and the per-recipient code are ordinary personal-data processing under the GDPR and nothing more. See [direct mail](/channels/direct-mail.md).
+
+The shape holds throughout: the right to reach someone on a channel never carries the right to measure what they did there. On the device-based channels a platform gate, the tracking prompt, the advertising-identifier phase-out, the push opt-in, sits on top of the legal one; on the channels that never touch the device, only the GDPR's processing rules apply.
+
 ## What this means for measurement
 
 This is not only a legal note; it changes how to read your numbers. The bundle already warns that open rate is corrupted by Mail Privacy Protection and is directional at best; see [metrics are directional](/principles/metrics-are-directional.md) and [core metrics](/measurement/core-metrics.md). Tracking consent adds a second, structural source of missingness: in strict-consent jurisdictions a slice of your EU audience may never be measured at all, and that slice is not random, so EU open and click rates understate true engagement and can skew segment and cohort comparisons. The robust response is the one the measurement layer already argues for: lean on outcomes you can observe without the pixel, clicks to first-party destinations, on-site and in-app conversion, and incrementality via [holdouts](/measurement/holdouts-and-control-groups.md), rather than on the open as a primary metric. See [deliverability](/foundations/deliverability.md) for how the open signal degrades on the delivery side too.
@@ -67,6 +79,8 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 * [Metrics are directional](/principles/metrics-are-directional.md)
 * [Core metrics](/measurement/core-metrics.md)
 * [Deliverability](/foundations/deliverability.md)
+* [Website personalisation](/channels/website-personalisation.md)
+* [The channel mix](/channels/index.md)
 
 ## Citations
 
@@ -76,3 +90,5 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 [4] [Covington Global Policy Watch, Italian DPA publishes guidelines on email tracking pixels](https://www.globalpolicywatch.com/2026/05/italian-dpa-publishes-guidelines-on-email-tracking-pixels/)
 [5] [A&O Shearman, tracking pixels in emails: the Garante's new guidelines and requirements for businesses](https://www.aoshearman.com/en/insights/tracking-pixels-in-emails-the-garantes-new-guidelines-and-requirements-for-businesses)
 [6] [CMS, tracking according to the ePrivacy Directive and German law](https://cms.law/en/deu/insight/e-privacy/tracking-according-to-the-eprivacy-directive-and-german-law)
+[7] [Apple, User Privacy and Data Use (App Tracking Transparency and the IDFA prompt)](https://developer.apple.com/app-store/user-privacy-and-data-use/)
+[8] [Trackier, GAID and mobile attribution in 2026 (the advertising-identifier phase-out)](https://trackier.com/everything-you-need-to-know-about-gaid/)

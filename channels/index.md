@@ -10,7 +10,9 @@ The delivery layer: the messaging channels a lifecycle programme actually sends 
 * [Push](push.md) - the only channel that reaches a dormant app user, edited on device before the lock screen.
 * [Browser push](browser-push.md) - web push to a granted browser, the way back for a web product with no app, and the one channel that reaches the desktop.
 * [In-app](in-app.md) - an owned surface with no editor in the pipe, reaching only the active user.
+* [Website personalisation](website-personalisation.md) - your own site as an owned surface, adapting content to a live visitor who is anonymous until resolved.
 * [Wallet passes](wallet-passes.md) - a persistent, updatable, location-aware loyalty object on the device, present without a send.
+* [Point of sale](point-of-sale.md) - the checkout as a CRM surface: catches the customer in person at the moment of purchase, where the anonymous shopper becomes an addressable one.
 * [Voice](voice.md) - the highest-bandwidth, highest-cost, most regulated channel, including AI voice agents, for the few moments worth a conversation.
 * [Direct mail](direct-mail.md) - genuinely owned, lands intact, expensive per touch, measured by control group.
 
