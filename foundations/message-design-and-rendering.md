@@ -93,6 +93,7 @@ Run the same checklist before every send, weighted to the clients in your market
 * [Copywriting](/foundations/copywriting.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Email](/channels/email.md)
+* [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 
 ## Citations

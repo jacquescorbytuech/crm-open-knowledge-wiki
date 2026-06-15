@@ -87,6 +87,7 @@ A premium, low frequency complement to the digital channels, reserved for moment
 ## Related
 
 * [The channel mix](/channels/index.md)
+* [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Retention and LTV](/measurement/retention-and-ltv.md)

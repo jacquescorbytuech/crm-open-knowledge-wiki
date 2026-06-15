@@ -71,6 +71,7 @@ Every capability above depends on the same thing: unified, clean, training-ready
 ## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
+* [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Segmentation models](/foundations/segmentation-models.md)
 * [ESP selection](/foundations/esp-selection.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)

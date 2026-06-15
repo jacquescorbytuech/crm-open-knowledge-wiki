@@ -23,6 +23,7 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 
 * [Copywriting](copywriting.md) - subject lines, message anatomy, CTAs, spam triggers, and writing for the summariser.
 * [Message design and rendering](message-design-and-rendering.md) - mobile-first layout, dark mode, accessibility, alt text, and preheader text across clients.
+* [Personalisation mechanics](personalisation-mechanics.md) - templating languages, and the range from profile-attribute substitution to send-time API fetch to open-time live content, by data source and binding time.
 * [Automation and sequences](automation-and-sequences.md) - triggers, welcome, abandoned cart, re-engagement, and goal setting.
 * [Transactional messaging](transactional-messaging.md) - the line between transactional and marketing, why it governs consent, deliverability, and orchestration, and the contamination trap.
 * [Offers and incentives](offers-and-incentives.md) - discount discipline, promotion strategy, and the alternatives to money off.

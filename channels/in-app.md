@@ -62,6 +62,7 @@ The destination the other channels drive toward. Push and email bring the user b
 * [Push](/channels/push.md)
 * [Email](/channels/email.md)
 * [The channel mix](/channels/index.md)
+* [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Respect the subscriber](/principles/respect-the-subscriber.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
