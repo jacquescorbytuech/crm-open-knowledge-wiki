@@ -38,9 +38,9 @@ SE = sqrt( p1(1-p1)/n1 + p2(1-p2)/n2 )
 
 The 95% confidence interval on the difference is `(p2 - p1) ± 1.96 x SE`. The effect is significant at that level when the interval excludes zero, equivalently when `|p2 - p1| / SE` exceeds 1.96. Report the interval, not just the point estimate: it is the range the other measurement pages mean by "attach an interval." Below the [volume floor](/measurement/volume-thresholds.md) that interval is a wide band around zero whatever the point looks like, which is the frequentist reason small lists cannot read small effects. The Bayesian alternative reading is in [frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md).
 
-## The hard truth this surfaces
+## The hard truth in the numbers
 
-The filter the opening named is worth seeing in numbers. The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, so treat this formula as the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
+The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, so treat this formula as the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

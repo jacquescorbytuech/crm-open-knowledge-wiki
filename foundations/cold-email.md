@@ -1,16 +1,16 @@
 ---
 type: Reference
 title: Cold email
-description: Why cold email sits outside the consent-first discipline the rest of this wiki describes, why it is spam by that standard, the narrow legal window where it is nonetheless permitted (US CAN-SPAM and UK B2B to corporate or role-based addresses under PECR), and why lawful is not the same as effective.
+description: Why cold email sits outside the consent-first discipline the rest of this bundle describes, why it is spam by that standard, the narrow legal window where it is nonetheless permitted (US CAN-SPAM and UK B2B to corporate or role-based addresses under PECR), and why lawful is not the same as effective.
 tags: [cold-email, spam, consent, can-spam, pecr, deliverability, b2b]
 timestamp: 2026-06-15T00:00:00Z
 ---
 
-## The page that contradicts the rest
+## The exception to consent
 
-Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party, and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. It is included here precisely because it contradicts that assumption, and the contradiction is the point. Measured against the standard the rest of this wiki holds, cold email is spam, and the page says so plainly before it says anything else.
+Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party, and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. It is included here precisely because it contradicts that assumption, and the contradiction is the point. Measured against the standard the rest of this bundle holds, cold email is spam.
 
-## Why it is spam by this wiki's own standard
+## Why it is spam by this bundle's own standard
 
 [Respect the subscriber](/principles/respect-the-subscriber.md) starts from being honest about what someone signed up for. With cold email there is nothing they signed up for; the relationship begins with a message they did not ask for, optimised for your goal rather than any expectation of theirs. The legitimate way to reach a stranger is to earn the opt in, which is the entire subject of [list building](/foundations/list-building.md): a value proposition, a clear ask, and a consent record you can evidence. Cold email skips that and treats the absence of a relationship as a thing to be exploited rather than built. That it can be done at volume does not change what it is.
 

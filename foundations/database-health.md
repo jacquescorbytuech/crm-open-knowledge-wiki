@@ -35,7 +35,7 @@ This is a lifecycle of the database itself, parallel to the customer [lifecycle 
 
 ## Why it pays to shrink the list on purpose
 
-Sunsetting feels like destroying the asset you spent to build, which is why so many programmes refuse to do it. The logic runs the other way, and it is the mechanism behind the claim the opening made. Sender-level engagement now governs placement for the whole list, so the never-engaging tail does not sit there harmlessly; it drags inbox placement down for the engaged contacts who do convert. Removing dead weight raises the deliverability of everyone who remains. This is the operational expression of [list quality over size](/principles/list-quality-over-size.md) and the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): the reachable list is the engaged subset, and protecting it is worth more than the headline count.
+Sunsetting feels like destroying the asset you spent to build, which is why so many programmes refuse to do it. The logic runs the other way. Sender-level engagement now governs placement for the whole list, so the never-engaging tail does not sit there harmlessly; it drags inbox placement down for the engaged contacts who do convert. Removing dead weight raises the deliverability of everyone who remains. This is the operational expression of [list quality over size](/principles/list-quality-over-size.md) and the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): the reachable list is the engaged subset, and protecting it is worth more than the headline count.
 
 ## Running it
 

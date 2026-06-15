@@ -44,7 +44,7 @@ For brand or offline activity that cannot be split at the person level, randomis
 
 ## How to model uplift at the individual level
 
-This is the high volume tier the opening flagged; if you cannot yet run a clean programme holdout, it is not where you are. The hard part is that you never observe both outcomes for one person: a user is either sent to or held out, never both, so the per user treatment effect is never directly in the data. Every method below is a way around that missing counterfactual, and all of them require training data from a randomised experiment, not from the observational history of who happened to get messaged.
+This is the high volume tier; if you cannot yet run a clean programme holdout, it is not where you are. The hard part is that you never observe both outcomes for one person: a user is either sent to or held out, never both, so the per user treatment effect is never directly in the data. Every method below is a way around that missing counterfactual, and all of them require training data from a randomised experiment, not from the observational history of who happened to get messaged.
 
 * **Two model (T-learner).** Fit one outcome model on the treated and a separate one on the control, then score uplift as the difference in their predictions. Simple and uses any classifier, but it models the two responses well and the difference between them badly, so small true effects get swamped by the errors of two large models.
 * **Single model with a treatment flag (S-learner).** One model with treatment as a feature; uplift is the prediction with the flag on minus the flag off. Stable but tends to underplay the treatment effect, since a flat learner can ignore a weak treatment feature entirely.
@@ -65,7 +65,7 @@ The curve also tells you where to stop sending, which is the decision the model 
 
 ## Why most brands cannot do it
 
-The volume wall the opening named is worth seeing concretely. A platform can read a 0.42% lift across tens of millions of users an arm. A brand with a list in the tens of thousands cannot detect a sub percent move in anything, so it can only ever measure gross proxies like opens, never the small shifts in retention or revenue that decide the business. Measure outcomes, not opens is good advice that most brands cannot act on, which is the real reason the long tail clings to opens. Modelling uplift, which differences two already noisy models, needs more volume still, so for most senders the honest stopping point is a programme level holdout and a handful of per flow controls. See [volume thresholds](/measurement/volume-thresholds.md).
+A platform can read a 0.42% lift across tens of millions of users an arm. A brand with a list in the tens of thousands cannot detect a sub percent move in anything, so it can only ever measure gross proxies like opens, never the small shifts in retention or revenue that decide the business. Measure outcomes, not opens is good advice that most brands cannot act on, which is the real reason the long tail clings to opens. Modelling uplift, which differences two already noisy models, needs more volume still, so for most senders the honest stopping point is a programme level holdout and a handful of per flow controls. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## The exploration layer above it
 

@@ -71,7 +71,7 @@ Narrow scope also tightens the holdout: a control drawn from inside the same tri
 
 ## Alternatives to money off
 
-The non-price preference the opening named is worth stating plainly. Money is the most expensive and least differentiated incentive. Often a non-price lever moves the same decision without training the discount habit: early or exclusive access, free shipping or returns, a useful add-on, content, or status in a [loyalty programme](/foundations/loyalty-and-retention-programs.md). These build the relationship rather than discounting it.
+Money is the most expensive and least differentiated incentive. Often a non-price lever moves the same decision without training the discount habit: early or exclusive access, free shipping or returns, a useful add-on, content, or status in a [loyalty programme](/foundations/loyalty-and-retention-programs.md). These build the relationship rather than discounting it.
 
 ## Related
 

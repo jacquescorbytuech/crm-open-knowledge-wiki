@@ -10,7 +10,7 @@ timestamp: 2026-06-15T00:00:00Z
 
 Point of sale is the checkout used as a delivery surface: an offer presented on the terminal or the customer-facing display, a coupon or message printed on the receipt, a loyalty enrolment captured at the lane, a next-best-action surfaced to the associate as they ring the sale. The message lands in person, at the moment of purchase, with intent already proven by the transaction in front of you.
 
-POS as a *source* is the transaction event flowing into the customer record, the purchase, the basket, the store and time, which belongs to [customer data and identity](/foundations/customer-data-and-identity.md). POS as a *channel*, the sense this page covers, is the platform pushing something back out at the till. It assumes the source side is already wired up, because you cannot personalise anything at the lane until the transaction is resolved to a known customer.
+POS as a *source* is the transaction event flowing into the customer record, the purchase, the basket, the store and time, which belongs to [customer data and identity](/foundations/customer-data-and-identity.md). POS as a *channel* is the platform pushing something back out at the till. It assumes the source side is already wired up, because you cannot personalise anything at the lane until the transaction is resolved to a known customer.
 
 ## Permission and reach
 

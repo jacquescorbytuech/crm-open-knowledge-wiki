@@ -44,11 +44,11 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 * **Enterprise decisioning.** Adobe Journey Optimizer real-time decisioning, Salesforce on Data Cloud, and Pega Customer Decision Hub (next-best-action for regulated industries) run the offer-ranking and adaptive-journey machinery natively on a unified profile.
 * **Acquisition signal.** Braze's acquisition of OfferFit folded a reinforcement-learning decisioning engine into a major engagement platform, a sign the categories are converging.
 
-When evaluating, and assuming the data foundation the opening named is already in place, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
+When evaluating, and assuming the data foundation is already in place, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
 
 ## Why the claims are hard to verify
 
-The reason these features resist comparison is structural, not just marketing opacity, and it is worth understanding before you weight them in a vendor choice.
+The reason these features resist comparison is structural, not just marketing opacity.
 
 * **The models are undisclosed.** Vendors do not expose the model, its features, or its training data, so two "send-time optimisation" features that look identical on a feature sheet can behave nothing alike, and you cannot tell which from the outside.
 * **There is no ground truth at the individual level.** You see what the system chose to send and what happened next, never what would have happened had it chosen differently for that same person. Without a counterfactual, a per-customer decision cannot be scored directly; only the aggregate effect against a [holdout](/measurement/holdouts-and-control-groups.md) can.

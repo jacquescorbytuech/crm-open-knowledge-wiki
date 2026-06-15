@@ -37,14 +37,14 @@ Naive Bayesian dashboards are not automatically immune: stopping as soon as prob
 
 ## Which to reach for in CRM
 
-Assuming you are past the volume floor the opening named, so that either school has something to say, the choice comes down to this:
+Assuming you are past the volume floor, so that either school has something to say, the choice comes down to this:
 
 * **Default to frequentist with a fixed sample.** It is the lingua franca, the planning is simple, and it forces the volume discipline a small list most needs. Size the test, run it, read it once. See [test rigorously](/principles/test-rigorously.md).
 * **Reach for Bayesian when the framing earns its keep.** When you must communicate to non-statisticians, probability to be best and expected loss are far easier to act on than a p-value. The expected-loss rule also gives a principled way to ship a marginal winner rather than declaring no result.
 * **Bayesian shrinkage helps when you run many small tests.** A hierarchical model pools information across campaigns and pulls extreme small-sample estimates toward the group average, which damps the false dramatic wins a low-volume programme throws off. This is one of the few places it materially beats the frequentist default for a typical sender.
 * **Either way, do not peek without a method that allows it.** The choice of school does not rescue you from optional stopping; only the right procedure does.
 
-Which returns to the point the opening led with, now that the methods make it concrete: every method here hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero whichever school drew it. See [volume thresholds](/measurement/volume-thresholds.md).
+Whichever school you pick, it hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 
