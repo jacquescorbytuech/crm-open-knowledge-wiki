@@ -46,6 +46,12 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 
 When evaluating, and assuming the data foundation is already in place, note that AI feature inventories read almost identically across vendors; differentiate on the audience model, the data layer, and the experiment runner, as in [ESP selection](/foundations/esp-selection.md), not the marketing page.
 
+## Building rather than buying
+
+The vendor categories are not the only option. A team with the scale and the people can build the decisioning itself, and the sophisticated ones do. It is the path the frontier consumer platforms took: Pinterest, LinkedIn, Meta and the like built custom systems because they needed to optimise for outcomes no vendor sells, weekly actives, multi-day retention, sitewide engagement, rather than the open and click proxies a packaged feature is tuned to. The same logic reaches any business large enough to justify it. An in-house churn or propensity model can be trained against the margin or retention outcome you actually care about, inspected and corrected because you own the method, and pointed at your whole event stream rather than the slice a vendor ingests.
+
+What gates it is not the modelling, it is scale and data maturity. Building pays back only at enterprise volume, where a fractional lift clears the cost of a standing data-engineering and ML team, and only once the [training-ready data foundation](#the-data-prerequisite) is already in place, the same prerequisite the vendor tools need and the one most programmes have not met. Talent is its own constraint, since ML engineers are easier to attract to a platform's problems than a mid-market marketing team's. So the honest reading matches the rest of this page: most brands should not build, many are not even using the bought models they already own, and the binding question is data and organisation, not whose method is better. But treating predictive scoring as something you can only rent understates it. For the team that has done the groundwork and runs at the right scale, a model built against your own objective beats one rented to optimise someone else's.
+
 ## Why the claims are hard to verify
 
 The reason these features resist comparison is structural, not just marketing opacity.
