@@ -10,6 +10,8 @@ timestamp: 2026-06-14T00:00:00Z
 
 Sender level engagement is the currency of inbox placement. Consistently weak engagement from a dormant segment drags down placement for the engaged segment too, because the provider's classifier treats engagement as a property of the sender, not just the recipient.
 
+Email is where this is most explicit and best documented, but the dynamic is not email's alone. Mobile platforms demote or strip the notification privileges of apps whose pushes are routinely dismissed or disabled, and carriers and aggregators filter A2P SMS traffic by complaint and spam-report rates at the sender level. The thresholds and machinery differ; the principle that the intermediary scores the sender by how recipients react does not.
+
 ## What changed
 
 This was always partly true. What changed is that the major providers codified it. From February 2024 the Gmail and Yahoo bulk sender rules made authentication, one click unsubscribe, and a spam complaint ceiling of 0.3% (0.1% recommended) non negotiable, with Microsoft following in 2025 and Gmail escalating to rejection in November 2025. Above the explicit thresholds sits a category aware retrieval gate driven by quality and engagement: a sender can pass SPF, DKIM, and DMARC and still never be retrieved into intelligent views, search, or assistant answers. See [platform interventions](/references/platform-interventions.md).

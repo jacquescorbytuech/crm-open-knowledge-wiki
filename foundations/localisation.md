@@ -32,7 +32,7 @@ A price, a date, and a number all carry locale. `$1,000` and `1.000 $` are the s
 
 ## Scripts and encoding
 
-Non-Latin scripts reach into the channel mechanics. On [SMS](/channels/sms-and-rcs.md) any character outside the GSM-7 set forces the whole message into UCS-2, which cuts the per-segment limit from 160 characters to 70, so a localised SMS can cost several times its English equivalent for the same words. Right-to-left scripts such as Arabic and Hebrew need the layout direction set, not just the text swapped, and [accessibility](/foundations/message-design-and-rendering.md) depends on declaring the message language so a screen reader pronounces it correctly. These are not edge cases in a global programme; they are the difference between a message that renders and one that arrives garbled.
+Non-Latin scripts reach into the channel mechanics. On [SMS](/channels/sms-and-rcs.md) any character outside the `GSM-7` set forces the whole message into `UCS-2`, which cuts the per-segment limit from 160 characters to 70, so a localised SMS can cost several times its English equivalent for the same words. Right-to-left scripts such as Arabic and Hebrew need the layout direction set, not just the text swapped, and [accessibility](/foundations/message-design-and-rendering.md) depends on declaring the message language so a screen reader pronounces it correctly. These are not edge cases in a global programme; they are the difference between a message that renders and one that arrives garbled.
 
 ## Related
 

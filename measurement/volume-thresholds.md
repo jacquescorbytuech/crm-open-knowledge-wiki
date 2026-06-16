@@ -1,7 +1,7 @@
 ---
 type: Method
 title: Volume Thresholds
-description: The sends per cell needed to detect a given relative shift at a 2% click baseline, and how a team should use that table to decide which tests are worth running.
+description: The sends per cell needed to detect a given relative shift at a 2% email click baseline, how to read it across channels whose base rates differ, and how a team should use that table to decide which tests are worth running.
 tags: [statistics, power, volume, testing, measurement]
 timestamp: 2026-06-11T00:00:00Z
 ---
@@ -21,6 +21,10 @@ Anchored on a 2% campaign click rate (a defensible round number for the typical 
 | 0.5% | +0.01pp | ~30,800,000 | Meta scale notification optimisation |
 
 These are floor numbers for the easiest design. More complex designs raise the requirement further, and splitting by cohort, segment, or channel multiplies the cells, so the requirement compounds.
+
+## Reading the table for another channel
+
+The 2% anchor is an email click rate, and the table is calibrated to it. The method does not change by channel, but the numbers do, because the channel-specific input that drives them is the baseline rate the test moves around. A channel measured on a higher base rate, an in-app prompt or an RCS card acted on in session, needs proportionally fewer observations to detect the same relative shift; one read on a lower base rate, a push tap-through, needs more. To size a test on any channel, take your own measured baseline for that channel in place of the 2% here and run it through the formula in [sample size and power](/measurement/sample-size-and-power.md). The table's lesson, that small relative effects need very large samples, holds wherever the baseline sits.
 
 ## How to use this table
 

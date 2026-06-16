@@ -48,7 +48,7 @@ Each move between stages needs a defined entry trigger and an exit, so a custome
 
 An **engagement score** is the composite those transitions test: a single measure of how recently and how often a customer engages, rolled up from a few signals (opens, clicks, sessions, purchases over a rolling window) into one number a rule can compare against a threshold. It is the same recency-and-frequency logic [segmentation models](/foundations/segmentation-models.md) use to score an audience, applied here to drive stage transitions rather than segments, and banded into [engagement tiers](/foundations/orchestration-and-frequency.md) to set frequency. Define it from the signals you can instrument and set the threshold from your own distribution, not from a borrowed number.
 
-Risk indicators worth watching inside Engagement and Retention, before a hard transition fires: falling open or click rate over a rolling window, lengthening gaps between key actions, a single high-value action followed by silence, and declining session frequency.
+Risk indicators worth watching inside Engagement and Retention, before a hard transition fires: falling engagement rate across whichever channels you send (opens and clicks in email, taps in push, replies in SMS), lengthening gaps between key actions, a single high-value action followed by silence, and declining session frequency.
 
 ## Running a lifecycle-mapping workshop
 

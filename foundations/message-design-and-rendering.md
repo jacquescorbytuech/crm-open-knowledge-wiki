@@ -1,14 +1,14 @@
 ---
 type: Playbook
 title: Message Design and Rendering
-description: How to build a message so it renders and reads everywhere it lands, a single-column mobile-first layout with inline CSS, dark-mode and accessibility steps, functional alt text, preheader text, and a pre-send rendering QA checklist, across an inbox landscape where one client dominates and several render the same message differently.
+description: How to build a message so it renders and reads everywhere it lands, a single-column mobile-first layout with inline CSS, dark-mode and accessibility steps, functional alt text, preheader text, and a pre-send rendering QA checklist for email as the hard case, plus how SMS, RCS, push, in-app, and wallet passes each constrain the design differently.
 tags: [design, rendering, responsive, dark-mode, accessibility, alt-text, preheader, mjml, qa]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
 ## Design for where it actually lands
 
-A message is not rendered once. It is rendered by dozens of clients that disagree about CSS, light and dark, and image handling, and most of them open on a phone. Apple's mail clients alone take the largest single share of opens, with Gmail next and Outlook well behind, so a layout tested only in one desktop client is untested. Design for the spread, not for your own inbox.
+A message is not rendered once. Email is the unforgiving case: it is rendered by dozens of clients that disagree about CSS, light and dark, and image handling, and most of them open on a phone. Apple's mail clients alone take the largest single share of opens, with Gmail next and Outlook well behind, so a layout tested only in one desktop client is untested. The other channels constrain the design differently, a fixed OS template for push, plain text for SMS, native components you control in-app, but the rule is the same everywhere: design for the surface as it actually renders, not for the preview in front of you.
 
 ## Mobile-first
 
@@ -88,11 +88,23 @@ Run the same checklist before every send, weighted to the clients in your market
 * [ ] **Size.** HTML lean enough to stay under the Gmail clipping threshold so the CTA and tracking are not buried. See [email](/channels/email.md).
 * [ ] **Links and tracking.** Every link resolves, UTM and tracking parameters are correct, and the unsubscribe link works.
 
+## Rendering in the other channels
+
+Email's rendering is the least predictable of the channels. The other channels trade that fragmentation for tighter templates, which removes most of the cross-client risk and replaces it with format limits.
+
+* **SMS** has no rendering to speak of: plain text, no styling, one link. The design constraint is length, the `GSM-7` and `UCS-2` segment boundary that governs cost and splitting. See [SMS and RCS](/channels/sms-and-rcs.md).
+* **RCS** adds rich cards, carousels, and suggested replies, but only where both endpoints support it, so every RCS message needs an SMS fallback designed in.
+* **Push** renders in a fixed OS template you cannot restyle: a title, a short body truncated on the lock screen, an optional image or action buttons the platform may or may not show. Design to the truncation and assume the image is absent. See [push](/channels/push.md).
+* **In-app** is the surface you fully control, native components rendered by your own SDK, so the variation is device size and OS version rather than client quirks, and the same mobile-first, accessibility, and contrast discipline applies. See [in-app](/channels/in-app.md).
+* **Wallet passes** render into the platform's pass template, so the design work is choosing which fields carry the message within Apple's and Google's fixed layouts. See [wallet passes](/channels/wallet-passes.md).
+
 ## Related
 
 * [Copywriting](/foundations/copywriting.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Email](/channels/email.md)
+* [SMS and RCS](/channels/sms-and-rcs.md)
+* [Push](/channels/push.md)
 * [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 

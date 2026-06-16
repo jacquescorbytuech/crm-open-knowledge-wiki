@@ -27,7 +27,7 @@ Treat each contact as moving through states, and define the transition rules onc
 
 1. **Active.** Engaged inside the recent window; mailed at the normal cadence.
 2. **Declining.** Engagement recency slipping; a candidate for reduced frequency and a re-engagement touch.
-3. **Dormant.** No open, click, or purchase across the sunset window (a common default is 90 days, set from your own engagement distribution, not a universal figure).
+3. **Dormant.** No engagement across the sunset window, an open or click in email, a tap or session from push and in-app, a reply to an SMS, a purchase in any (a common default is 90 days, set from your own engagement distribution, not a universal figure).
 4. **Re-engagement.** Run the win-back sequence in [automation and sequences](/foundations/automation-and-sequences.md) once, as a deliberate last attempt, not an indefinite drip.
 5. **Sunset.** A contact who does not respond is moved out of regular sending and suppressed from broadcast. Keep the sunset criteria identical across the flow and the segment so they never disagree, as noted in [segmentation and data](/foundations/segmentation-and-data.md).
 

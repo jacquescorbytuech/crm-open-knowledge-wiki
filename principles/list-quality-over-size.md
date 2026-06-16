@@ -12,7 +12,7 @@ Engagement weighted list size is the only growth metric that means anything; raw
 
 ## Why it holds
 
-The classical metric of CRM, list size, is increasingly disconnected from the size of the audience you can actually reach. A list that is mostly dormant is not worth its headline count. It is worth the engaged subset the provider still routes your mail toward, and the dormant remainder actively drags reach for the engaged part. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md) for the mechanism.
+The classical metric of CRM, list size, is increasingly disconnected from the size of the audience you can actually reach. A database that is mostly dormant is not worth its headline count. It is worth the engaged subset the provider still routes your messages toward, and the dormant remainder actively drags reach for the engaged part. The mechanism is sharpest in email, where sender reputation is shared across the file, but the logic carries to any addressable channel: a push audience is the install base still opted in and opening the app, an SMS file the numbers that still respond rather than report. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md) for the mechanism.
 
 ## Consequences
 

@@ -41,7 +41,7 @@ Operate to the strictest regime your list touches and you satisfy the rest by co
 
 ## Where compliance and strategy meet
 
-Respecting the subscriber is both the ethical and the commercial position. Honest expectations at signup, easy exit, and prompt opt out reduce complaints, which protect sender reputation, which protect reach. The regimes formalise a floor a well run programme would clear anyway. See [respect the subscriber](/principles/respect-the-subscriber.md).
+Respecting the recipient is both the ethical and the commercial position. Honest expectations at opt-in, easy exit, and prompt opt out reduce complaints, which protect sender reputation, which protect reach. The regimes formalise a floor a well run programme would clear anyway. See [respect the recipient](/principles/respect-the-recipient.md).
 
 ## Related
 
@@ -50,7 +50,7 @@ Respecting the subscriber is both the ethical and the commercial position. Hones
 * [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 * [Authentication](/foundations/authentication.md)
 * [SMS and RCS](/channels/sms-and-rcs.md)
-* [Respect the subscriber](/principles/respect-the-subscriber.md)
+* [Respect the recipient](/principles/respect-the-recipient.md)
 
 ## Citations
 

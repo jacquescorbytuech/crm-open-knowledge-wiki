@@ -9,9 +9,9 @@ The stances that should inform every recommendation in this bundle. They are opi
 * [Start simple, then add complexity](start-simple.md) - well executed basics beat poorly executed sophistication.
 * [Set a goal before you build](goal-before-build.md) - without a measurable objective, a campaign is theatre.
 * [Test rigorously, not just constantly](test-rigorously.md) - most CRM A/B tests are underpowered.
-* [Respect the subscriber](respect-the-subscriber.md) - honest, deliverable, easy to leave. Ethical and commercial at once.
+* [Respect the recipient](respect-the-recipient.md) - honest, deliverable, easy to leave. Ethical and commercial at once.
 * [Segmentation has real costs](segmentation-has-costs.md) - time, complexity, error risk, shrinking samples.
-* [The welcome window](the-welcome-window.md) - subscribers are at peak engagement right after sign up.
+* [The welcome window](the-welcome-window.md) - new customers are at peak engagement right after opting in.
 
 ## Cross cutting stances
 

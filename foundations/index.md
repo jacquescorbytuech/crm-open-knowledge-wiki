@@ -22,8 +22,8 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 
 ## Create and orchestrate
 
-* [Copywriting](copywriting.md) - subject lines, message anatomy, CTAs, spam triggers, and writing for the summariser.
-* [Message design and rendering](message-design-and-rendering.md) - mobile-first layout, dark mode, accessibility, alt text, and preheader text across clients.
+* [Copywriting](copywriting.md) - the message across channels, the email envelope and skeleton as the worked case, CTAs, writing for the summariser, and the copy shapes SMS, push, and in-app impose.
+* [Message design and rendering](message-design-and-rendering.md) - email's mobile-first layout, dark mode, accessibility, and alt text across clients as the hard case, and how SMS, RCS, push, in-app, and wallet passes each constrain design.
 * [Localisation](localisation.md) - send-time by the recipient's timezone, locale-keyed templates and translation, multi-currency offers, and the script and encoding traps of a multi-region audience.
 * [Personalisation mechanics](personalisation-mechanics.md) - templating languages, and the range from profile-attribute substitution to send-time API fetch to open-time live content, by data source and binding time.
 * [Automation and sequences](automation-and-sequences.md) - triggers, welcome, abandoned cart, re-engagement, and goal setting.

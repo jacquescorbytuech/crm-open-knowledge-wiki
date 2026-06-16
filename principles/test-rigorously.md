@@ -8,14 +8,14 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Stance
 
-Test constantly, but test rigorously. Most A/B tests across email, lifecycle and CRM programmes are run on samples too small to produce reliable conclusions. Say so when it is true.
+Test constantly, but test rigorously. Most A/B tests across lifecycle and CRM programmes, in whichever channel they run, are on samples too small to produce reliable conclusions. Say so when it is true.
 
 ## The volume reality
 
 > [!example] What detecting a small shift actually costs
 > A 2% campaign click rate baseline needs roughly 80,000 sends per cell to detect a 10% relative shift at 95% confidence and 80% power, and around 315,000 to detect a 5% shift.
 
-The platform intermediation effects people argue about are usually smaller than that. If your list is in the tens of thousands or low six figures, most elaborate tests give you a wide confidence interval around zero. See [volume thresholds](/measurement/volume-thresholds.md) and [sample size and power](/measurement/sample-size-and-power.md).
+The platform intermediation effects people argue about are usually smaller than that. If your addressable audience is in the tens of thousands or low six figures, most elaborate tests give you a wide confidence interval around zero. See [volume thresholds](/measurement/volume-thresholds.md) and [sample size and power](/measurement/sample-size-and-power.md).
 
 ## What rigour requires
 

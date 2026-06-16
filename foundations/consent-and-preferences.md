@@ -29,7 +29,7 @@ Collect consent you can evidence: what they agreed to, when, and how. Keep chann
 
 ## Priming the ask
 
-Permission converts better, and the grant holds up better, when you set the expectation before you ask for it. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed subscriber complains and unsubscribes less because the mail matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
+Permission converts better, and the grant holds up better, when you set the expectation before you ask for it. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed recipient complains and opts out less because the message matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
 
 * **Scarce platform permissions are structurally one-shot, so priming is mandatory.** The push, [browser push](/channels/browser-push.md), location, and App Tracking Transparency dialogs can be shown once, and a denial is sticky, so a cold prompt with no context spends the only ask you get. Show your own soft prompt first, framed in the value, and fire the native dialog only when the user accepts it, so a no on the soft ask costs nothing. See [the pre-permission prompt](/channels/push.md).
 * **Owned channels prime through pre opt in context.** Email and SMS let you ask again, so the failure mode is not a burned grant but a weak, complaint-prone one. Name the programme and its frequency at the point of capture, prefer a value exchange the subscriber understands over a bare "subscribe" box, and lead with what they get rather than the form. This is the same expectation setting, applied to a channel you can re-approach.
@@ -77,7 +77,7 @@ Pre fill the centre with the subscriber's current state so they edit rather than
 
 ## The unsubscribe page: offer the down shift first
 
-The link in the footer should not land on a bare "you are unsubscribed" confirmation. Sequence it so full opt out is the last resort, never the only option.
+This is an email mechanic by necessity: an SMS `STOP` and a push toggle are binary by design and rightly so, so the graded exit, fewer rather than none, one topic dropped rather than all, lives on the email unsubscribe page and in the preference centre. The link in the footer should not land on a bare "you are unsubscribed" confirmation. Sequence it so full opt out is the last resort, never the only option.
 
 1. Land the user on a page that leads with the lighter alternatives: reduce frequency, pause for a period, or pick only the topics they care about.
 2. Present full unsubscribe as a clearly available choice on the same page, not hidden, because the law requires it to be easy and burying it is both a breach and an annoyance.
@@ -109,7 +109,7 @@ Operate it as a continuous loop:
 4. **Honour promptly.** Process opt outs into suppression fast, well inside the CAN-SPAM ten business day ceiling, and immediately for STOP and preference changes.
 5. **Audit periodically.** Spot check that suppressed contacts are not receiving mail and that complaint and bounce feeds are still flowing into the list.
 
-See [respect the subscriber](/principles/respect-the-subscriber.md) and [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+See [respect the recipient](/principles/respect-the-recipient.md) and [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 ## Related
 
@@ -118,7 +118,7 @@ See [respect the subscriber](/principles/respect-the-subscriber.md) and [engagem
 * [List building](/foundations/list-building.md)
 * [Segmentation and data](/foundations/segmentation-and-data.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
-* [Respect the subscriber](/principles/respect-the-subscriber.md)
+* [Respect the recipient](/principles/respect-the-recipient.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 
 ## Citations

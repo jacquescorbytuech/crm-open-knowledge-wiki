@@ -8,7 +8,7 @@ timestamp: 2026-06-11T00:00:00Z
 
 ## The problem
 
-When a platform changes how it filters, ranks, or summarises mail (the dated changes in [platform interventions](/references/platform-interventions.md)), it does not report what it did to your sends. These methods estimate the effect from your own data. They are channel-agnostic in shape and channel-specific in detail, and none reads the wording layer, what a summary kept versus what you wrote, directly.
+When a platform changes how it filters, ranks, or summarises what you send (the dated changes in [platform interventions](/references/platform-interventions.md)), it does not report what it did to your sends. These methods estimate the effect from your own data. They are channel-agnostic in shape and channel-specific in detail, and none reads the wording layer, what a summary kept versus what you wrote, directly.
 
 Before reaching for any of them: most senders should not attempt to read intermediation effects at all. The methods need volume far above typical thresholds, hundreds of thousands of sends per cell and often millions, so below that floor they return wide intervals around zero whatever the platform actually did. None of this applies to you unless you operate at platform scale. Below that floor the useful output is the diagnostic, not the measurement: intermediation is bending your numbers and you cannot cleanly say by how much, so treat them with that suspicion instead of spending effort quantifying the distortion.
 

@@ -50,16 +50,16 @@ Every planned campaign needs a defined objective before it earns a place on the 
 Once more than one person sends, the programme needs a single agreed workflow so nothing ships half-built. Run each campaign through these ordered steps, each with a named owner, so a missed handoff is visible:
 
 1. **Brief.** Campaign owner writes the one-line goal frame, audience, offer, key message, and the send window. Nothing proceeds without it.
-2. **Copy.** Copywriter drafts subject, preheader, body, and call to action against the brief.
-3. **Design.** Designer produces the creative and any assets, to template, with alt text supplied for every image.
-4. **Build.** Email/CRM specialist assembles the message in the platform, wires links and UTMs, and sets the suppression and frequency logic.
+2. **Copy.** Copywriter drafts the message to the channel's shape, subject, preheader, and body for email, title and body for push, the line and its link for SMS, against the brief.
+3. **Design.** Designer produces the creative and any assets, to template, with alt text supplied for every image (where the channel renders images at all).
+4. **Build.** CRM specialist assembles the message in the platform, wires links and UTMs, and sets the suppression and frequency logic.
 5. **Send-list and QA.** Owner pulls and confirms the target audience and its count, then runs the pre-send QA checklist below against a seed list. Owner or a second person signs off.
 6. **Schedule.** Specialist schedules the send for the planned slot, against the single source-of-truth calendar.
 7. **Post-send review.** Owner reads results against the goal metric within a few days, records what to repeat or change, and feeds it back into the next plan.
 
 ## Pre-send QA checklist
 
-Run this before every broadcast, and before activating any automation, since an automation error runs at scale and silently. Do not skip it because the campaign looks small.
+Run this before every broadcast, and before activating any automation, since an automation error runs at scale and silently. Do not skip it because the campaign looks small. These items are email's; each other channel swaps in its own equivalents.
 
 * [ ] **Subject line** present, correct, and within the platform's display length.
 * [ ] **Preheader** set and not pulling stray body text.
@@ -71,6 +71,12 @@ Run this before every broadcast, and before activating any automation, since an 
 * [ ] **Suppression and frequency logic** applied: exclusions, recent-send caps, and any holdout in place.
 * [ ] **Tracking** configured so the send can be read against its goal metric.
 
+The audience-count, suppression, link, and tracking checks hold for every channel. For the others, swap the email-specific items for their equivalents:
+
+* [ ] **SMS** sender identity correct, the message within the intended segment count (`GSM-7` versus `UCS-2`), the single link resolving, `STOP` and `HELP` handling live, and the send inside quiet hours.
+* [ ] **Push** title and body within the lock-screen truncation, the deep link opening the right screen, the payload rendering on both iOS and Android, and notification caps respected.
+* [ ] **In-app** rendering at the device sizes you support, firing on the intended trigger and audience, and dismissing cleanly without trapping the session.
+
 ## Seed-list and inbox testing
 
 A seed list is a set of internal and proxy addresses you send a final test to before the real audience, to catch what a content preview cannot: how the message actually renders and behaves in a real inbox. Maintain a standing seed list and cover, at minimum:
@@ -81,6 +87,8 @@ A seed list is a set of internal and proxy addresses you send a final test to be
 * **Seats for major clients or VIP segments**, if you serve any, so a key recipient never receives something untested.
 
 Where the platform offers an inbox-preview render gallery, use it alongside live seeds, not instead of them.
+
+Seeding is an email technique. The other channels prove a send the same way in their own terms: a test SMS to a real handset on each major carrier to check the segment count and how the link renders, a test push to an iOS and an Android device to check truncation and the deep link, and an in-app preview on the device sizes you support.
 
 ## Governance
 

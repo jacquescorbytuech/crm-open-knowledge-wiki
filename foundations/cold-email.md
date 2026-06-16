@@ -12,7 +12,7 @@ Every other page here assumes consent. The list is built from people who asked t
 
 ## Why it is spam by this bundle's own standard
 
-[Respect the subscriber](/principles/respect-the-subscriber.md) starts from being honest about what someone signed up for. With cold email there is nothing they signed up for; the relationship begins with a message they did not ask for, optimised for your goal rather than any expectation of theirs. The legitimate way to reach a stranger is to earn the opt in, which is the entire subject of [list building](/foundations/list-building.md): a value proposition, a clear ask, and a consent record you can evidence. Cold email skips that and treats the absence of a relationship as a thing to be exploited rather than built. That it can be done at volume does not change what it is.
+[Respect the recipient](/principles/respect-the-recipient.md) starts from being honest about what someone signed up for. With cold email there is nothing they signed up for; the relationship begins with a message they did not ask for, optimised for your goal rather than any expectation of theirs. The legitimate way to reach a stranger is to earn the opt in, which is the entire subject of [list building](/foundations/list-building.md): a value proposition, a clear ask, and a consent record you can evidence. Cold email skips that and treats the absence of a relationship as a thing to be exploited rather than built. That it can be done at volume does not change what it is.
 
 ## The legal window
 
@@ -32,7 +32,7 @@ In practice, if cold outreach is run at all, it is run on separate sending infra
 
 ## Related
 
-* [Respect the subscriber](/principles/respect-the-subscriber.md)
+* [Respect the recipient](/principles/respect-the-recipient.md)
 * [List building](/foundations/list-building.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)

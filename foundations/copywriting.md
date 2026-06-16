@@ -1,10 +1,14 @@
 ---
 type: Playbook
 title: Copywriting
-description: How to write subject lines, CTAs, and a sound email skeleton, plus writing so the substance survives a summariser, with a pre-send checklist.
-tags: [copywriting, subject-lines, cta, email-anatomy, deliverability, summarisation]
+description: How to write the message across channels, the email envelope and skeleton as the worked case, CTAs, writing so the substance survives a summariser, and the copy shapes SMS, push, and in-app each impose, with a pre-send checklist.
+tags: [copywriting, subject-lines, cta, email-anatomy, deliverability, summarisation, sms, push]
 timestamp: 2026-06-14T00:00:00Z
 ---
+
+## What copy has to do in any channel
+
+The job is the same wherever the message lands: earn attention with an honest signal, carry one concrete fact the recipient can act on, and ask for one thing. What changes is the surface that signal has to fit. Email gives a sender name, a subject, and a snippet before the open; push gives a title and a short body on the lock screen; SMS gives a sender identity and the first line or two before the fold; in-app gives a headline inside a layout you control. Email's surface is the most constrained and the best studied, but the discipline carries unchanged: front-load the fact, write for the machine that compresses you, keep one action.
 
 ## Subject lines and the envelope
 
@@ -58,6 +62,14 @@ Concrete rules, with phrasings:
 * **Use explicit verbs in key blocks.** "Confirm your address by Friday" not "Action may be required". The verb tells the summariser, and the reader, what to do.
 * **Put the fact before the framing.** "Order shipped, arrives Tuesday" before any thank-you copy, so the gist holds even if everything after the first clause is dropped.
 
+## The same discipline in SMS, push, and in-app
+
+The envelope and skeleton are email's. The other channels compress the same job into less room, which makes the front-loaded fact more important, not less.
+
+* **SMS.** No subject and no styling, so the opening words are the envelope, and an unrecognised number reads as spam unless the sender identity is clear early. Watch the segment boundary, 160 characters in `GSM-7`, 70 once any character forces `UCS-2`, keep to one link, and respect that the message arrives in a thread the recipient otherwise reserves for people they know. See [SMS and RCS](/channels/sms-and-rcs.md).
+* **Push.** A title and a short body, truncated hard on the lock screen and shown with no guarantee an image renders. Carry the fact in the title, treat the body as the single supporting line, and make the tap open the thing the copy promised. See [push](/channels/push.md).
+* **In-app.** Copy inside a surface you control and a recipient already in session, so none of the other channels' format limits apply: no segment count, no lock-screen truncation, as much or as little room as the moment needs. The constraint is relevance, not length, the cost is interrupting a live session rather than deliverability. Say the one thing the moment is about and offer the single next action. See [in-app](/channels/in-app.md).
+
 ## Generating copy with AI
 
 A language model is a competent first-drafter and a poor final author. It is genuinely useful for volume work, producing subject-line variants to test, adapting one message to several segments, getting past a blank page, and the discipline that makes it safe is to treat its output as a draft a human edits, not as copy that ships unread. The production pattern is already published: Kuaishou's [PushGen](https://arxiv.org/abs/2512.14490) generates push copy under style controls and has a learned reward model rank the candidates, rather than shipping the raw generation, one of the systems catalogued in [notification and decisioning research](/references/notification-and-decisioning-research.md).
@@ -71,7 +83,7 @@ This sits under [start simple](/principles/start-simple.md) and the decision-sup
 
 ## Metric to watch
 
-Use click to open rate (CTOR), clicks divided by opens, as the content engagement measure independent of open noise. See [metrics are directional](/principles/metrics-are-directional.md).
+Use click to open rate (CTOR), clicks divided by opens, as the content engagement measure independent of open noise. The same idea, action over the reach that could have acted, gives the cross-channel read: tap-through on a push, click on an SMS, interaction rate on an in-app message. See [metrics are directional](/principles/metrics-are-directional.md).
 
 ## Pre-send copy checklist
 

@@ -21,8 +21,8 @@ The unit of fatigue is the customer, not the channel. A customer who got an emai
 
 Treating a user's weekly attention as an allowance that every channel draws down assumes the cap is there to be spent. It is not. The cap is a safety rail. The discipline that governs volume is to hold one cross-channel ceiling and then judge each send on its own merit, so most users sit well below it.
 
-1. Set a total contact ceiling per engagement tier (the caps in the next section), counted across every channel together. It is the most a user may receive, not the amount they should.
-2. When a message becomes eligible, pick the channel by the job it needs to do (see below), not by which team owns it.
+1. Set a total contact ceiling per engagement tier, counted across every channel together. It is the most a user may receive, not the amount they should.
+2. When a message becomes eligible, pick the channel by the job it needs to do, not by which team owns it.
 3. Gate each eligible send on the best value signal you have, not on whether the cap has room. With an uplift model, that signal is the predicted incremental effect of sending; without one, it is concrete proxies, recency of engagement, prior response to similar messages, and whether the triggering event is still live. A send that clears the cap but fails the value signal waits or drops.
 4. Count only the sends that clear that test against the shared ceiling. When a user reaches it, further non transactional messages wait or drop by priority, whichever channel they came from.
 5. Prefer one well chosen send over the same message duplicated across channels. Reserve a second channel for genuine fallback, for example email did not open within N hours so a push follows, not for simultaneous blasts.
@@ -45,7 +45,7 @@ Default to the cheapest channel that does the job, and reserve the interruptive,
 
 ## Why capping matters
 
-A frequency cap is a hard ceiling on messages per channel and in total over a rolling window, applied before send. Caps protect the two things over mailing destroys: deliverability, because complaint and disengagement signals drive placement, so a fatigued list quietly slides toward the spam folder, and the long run value of the list, because a fatigued subscriber unsubscribes once and is gone. Too many messages is consistently the single most common reason people unsubscribe, so frequency is not a minor dial. See [respect the subscriber](/principles/respect-the-subscriber.md) and [segmentation has costs](/principles/segmentation-has-costs.md).
+A frequency cap is a hard ceiling on messages per channel and in total over a rolling window, applied before send. Caps protect the two things over mailing destroys: deliverability, because complaint and disengagement signals drive placement, so a fatigued list quietly slides toward the spam folder, and the long run value of the list, because a fatigued subscriber unsubscribes once and is gone. Too many messages is consistently the single most common reason people unsubscribe, so frequency is not a minor dial. See [respect the recipient](/principles/respect-the-recipient.md) and [segmentation has costs](/principles/segmentation-has-costs.md).
 
 ## Engagement-tiered starting caps
 

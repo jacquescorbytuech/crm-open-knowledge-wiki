@@ -65,7 +65,7 @@ The curve also tells you where to stop sending, which is the decision the model 
 
 ## Why most brands cannot do it
 
-A platform can read a 0.42% lift across tens of millions of users an arm. A brand with a list in the tens of thousands cannot detect a sub percent move in anything, so it can only ever measure gross proxies like opens, never the small shifts in retention or revenue that decide the business. Measure outcomes, not opens is good advice that most brands cannot act on, which is the real reason the long tail clings to opens. Modelling uplift, which differences two already noisy models, needs more volume still, so for most senders the honest stopping point is a programme level holdout and a handful of per flow controls. See [volume thresholds](/measurement/volume-thresholds.md).
+A platform can read a 0.42% lift across tens of millions of users an arm. A brand with a list in the tens of thousands cannot detect a sub percent move in anything, so it can only ever measure gross surface proxies, never the small shifts in retention or revenue that decide the business. Measure outcomes, not opens is good advice that most brands cannot act on, which is the real reason the long tail clings to the cheap surface metric, opens in email, taps and delivery receipts elsewhere. Modelling uplift, which differences two already noisy models, needs more volume still, so for most senders the honest stopping point is a programme level holdout and a handful of per flow controls. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## The exploration layer above it
 

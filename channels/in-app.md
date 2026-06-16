@@ -47,7 +47,7 @@ The channels do different jobs, so split by where the user is. In-app does the i
 
 ## Constraints
 
-It cannot initiate contact; it can only act on a session the user started. Over using modals and interstitials degrades the product experience, which is a steeper cost here than an ignored email, because it sits on the surface the relationship is actually built on. See [respect the subscriber](/principles/respect-the-subscriber.md).
+It cannot initiate contact; it can only act on a session the user started. Over using modals and interstitials degrades the product experience, which is a steeper cost here than an ignored email, because it sits on the surface the relationship is actually built on. See [respect the recipient](/principles/respect-the-recipient.md).
 
 ## Measurement
 
@@ -64,7 +64,7 @@ The destination the other channels drive toward. Push and email bring the user b
 * [The channel mix](/channels/index.md)
 * [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
-* [Respect the subscriber](/principles/respect-the-subscriber.md)
+* [Respect the recipient](/principles/respect-the-recipient.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 
 ## Citations
