@@ -20,6 +20,12 @@ timestamp: 2026-06-14T00:00:00Z
 | One-click unsubscribe | A `List-Unsubscribe-Post` header (RFC 8058) that lets a recipient opt out in a single tap from the inbox UI. Required of bulk senders alongside the in-body link. |
 | Bounce | A failed delivery. Hard bounces are permanent and must be suppressed immediately; soft bounces are transient. |
 | Sender reputation | The provider's running assessment of a sending domain and IP, driven heavily by engagement. |
+| MTA | Mail Transfer Agent. The server that routes email between hosts over SMTP; an ESP is a managed fleet of them. |
+| SMTP | Simple Mail Transfer Protocol. The scripted command-and-response conversation MTAs use to relay mail (RFC 5321). |
+| Envelope | The `MAIL FROM` and `RCPT TO` addresses that route a message, separate from the visible `From`/`To` headers; bounces go to the envelope sender (return-path). |
+| DSN | Delivery Status Notification. The asynchronous bounce a receiving server mails back after it accepts a message and then fails to deliver it (RFC 3464). |
+| Feedback loop (FBL) | A provider service that forwards spam complaints back to the sender in Abuse Reporting Format (ARF) for suppression. |
+| Webhook | An HTTP callback a provider POSTs to an endpoint you expose, reporting an event (bounce, delivery, click, dead token) asynchronously and usually at least once. |
 
 ## List and data
 
@@ -82,6 +88,10 @@ timestamp: 2026-06-14T00:00:00Z
 | A2P 10DLC | The US registration standard for application-to-person SMS over long codes. |
 | RCS | Rich Communication Services. The richer successor to SMS, with branding, cards, and read receipts. |
 | APNs / FCM | Apple Push Notification service and Firebase Cloud Messaging, the two push delivery pipes. |
+| Device token | The opaque, per-install identifier a push notification is addressed to; the OS can rotate or invalidate it, and dead tokens must be pruned like hard bounces. |
+| SMPP | Short Message Peer-to-Peer. The binary protocol for submitting SMS to an aggregator or carrier, beneath the REST APIs. |
+| DLR | Delivery receipt. The carrier's advisory, and not always reliable, confirmation that an SMS reached the handset. |
+| Aggregator (CPaaS) | The intermediary holding carrier interconnects that routes your SMS onto mobile networks; you integrate with it, not the carriers. |
 
 ## Metrics
 
@@ -111,6 +121,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Segmentation models](/foundations/segmentation-models.md)
+* [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [ESP selection](/foundations/esp-selection.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 

@@ -27,7 +27,7 @@ The format constrains the craft, and the constraints are concrete.
 * **MIME.** Send a `multipart/alternative` message carrying both a plain-text and an HTML part, plainest first per the standard; a missing plain-text part is a spam signal and degrades clients that prefer it.
 * **Unsubscribe headers.** Bulk senders must include a `List-Unsubscribe` header (RFC 2369) and support one-click unsubscribe via the `List-Unsubscribe-Post` header (RFC 8058), in addition to a visible in-body link.
 * **Authentication.** SPF, DKIM, and aligned DMARC are the price of entry, not an optimisation. See [authentication](/foundations/authentication.md).
-* **Sending infrastructure.** A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate [transactional and marketing](/foundations/transactional-messaging.md) streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
+* **Sending infrastructure.** Mail is relayed by Mail Transfer Agents over SMTP, which is why an ESP is at bottom a managed MTA fleet; the transport itself, the SMTP conversation, the envelope-versus-headers distinction, and how bounces come back, is in [sending infrastructure](/foundations/sending-infrastructure.md). A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate [transactional and marketing](/foundations/transactional-messaging.md) streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
 
 Rendering across the client landscape, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
@@ -53,6 +53,7 @@ The default backbone for nurture, retention, and winback at scale, complemented 
 
 * [Authentication](/foundations/authentication.md)
 * [Deliverability](/foundations/deliverability.md)
+* [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [Transactional messaging](/foundations/transactional-messaging.md)
 * [Database health and sunsetting](/foundations/database-health.md)
 * [Message design and rendering](/foundations/message-design-and-rendering.md)

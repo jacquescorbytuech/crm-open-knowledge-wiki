@@ -57,6 +57,7 @@ The web analogue of mobile push: the way back for a user who has no app to recei
 * [Push](/channels/push.md)
 * [In-app](/channels/in-app.md)
 * [Email](/channels/email.md)
+* [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [The channel mix](/channels/index.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)

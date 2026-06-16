@@ -2,7 +2,7 @@
 
 The operational layer: the cross-channel practices that run a lifecycle programme well. Read these alongside the [principles](/principles/), which set the stances these operations serve, and the [channels](/channels/), which carry the channel-specific delivery mechanics.
 
-Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack, and reason about AI personalisation. Email's authentication and deliverability sit here too, as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
+Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack, and reason about AI personalisation. The transport layer beneath every channel sits here too, alongside email's authentication and deliverability as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
 
 ## Data and audience
 
@@ -33,8 +33,9 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 * [Campaign planning and calendar](campaign-planning-and-calendar.md) - triggered versus broadcast, the calendar, cadence, and governance.
 * [Orchestration and frequency](orchestration-and-frequency.md) - one contact strategy across channels, channel selection per job, and frequency capping.
 
-## Email delivery mechanics
+## Delivery mechanics and infrastructure
 
+* [Sending infrastructure](sending-infrastructure.md) - the transport layer beneath every channel: what an MTA is and how the SMTP conversation works, how a push token routes through APNs and FCM, how SMS reaches the carrier through an aggregator, and the webhook feedback path that carries bounces, delivery receipts, and dead tokens back to suppression.
 * [Authentication](authentication.md) - SPF, DKIM, DMARC, BIMI, one-click unsubscribe, and the bulk sender requirements.
 * [Deliverability](deliverability.md) - how placement works, spam recovery, IP warming, the metrics reference, and the Promotions tab.
 

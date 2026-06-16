@@ -44,6 +44,10 @@ In the US, application-to-person (A2P) traffic runs over one of three route type
 
 Relative cost runs short code above toll-free and 10DLC, and segments multiply whatever the per-message rate is. Pick by the constraint that matters first: low volume and cost-sensitive, register 10DLC and wait out the registration; high sustained volume or burst sends where deliverability cannot wobble, lease a short code; somewhere between, or you need to start sooner than 10DLC vetting allows, take toll-free.
 
+## How the message reaches the carrier
+
+You do not connect to mobile networks directly. An aggregator (the messaging side of a CPaaS) holds the carrier interconnects and routes your traffic, and you reach it either through an HTTP REST API or through SMPP, the binary telecom protocol the REST APIs sit on top of. A message you send is mobile-terminated (MT); a reply, including a `STOP` or `HELP` keyword, comes back mobile-originated (MO). Delivery confirmation arrives as a delivery receipt (DLR) relayed back from the carrier, but treat it as advisory: carriers differ in whether and when they return one, some mark "delivered" on network handoff rather than handset receipt, and a missing DLR does not reliably mean a missing message. The registration regimes above are the carrier's admission control sitting in front of that route. The transport, the SMPP bind types, and the webhook path that carries DLRs back are in [sending infrastructure](/foundations/sending-infrastructure.md).
+
 ## Compliance in practice
 
 The consent bar is the operational core of the channel, not a footnote.
@@ -88,6 +92,7 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 
 * [Push](/channels/push.md)
 * [Voice](/channels/voice.md)
+* [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)

@@ -30,6 +30,7 @@ The payload is small and the prioritisation controls are explicit.
 * **iOS interruption levels.** Notifications declare one of four levels, passive, active, time-sensitive, and critical. Set the `interruption-level` key in the payload `aps` dictionary. Use them by message type. Passive for things that can wait silently in the tray, a digest or a soft offer, delivered without sound or wake. Active, the default, for ordinary timely notifications. Time-sensitive only for messages the user genuinely needs now, a delivery arriving, a security event, a price alert they set, since it can break through Focus and a scheduled summary; do not use it for marketing, and the user can switch it off per app, which spends trust you will want later. Critical is reserved for safety and health and requires a special Apple entitlement, never available for marketing.
 * **Android notification channels.** Since Android 8.0 (Oreo) every notification must be assigned to a channel created at runtime, and the user, not you, controls importance, sound, and behaviour per channel once it exists. Define a small set of meaningful categories the user can reason about, for example transactional, shipping, and offers, so they can mute offers without losing shipping updates, which protects the rest of the opt-in. The risk is in the categorisation, not the count. Over-categorising buries the user in toggles; mis-categorising, routing an offer through a channel the user kept on for transactional messages, gets the whole channel muted and is hard to undo since a channel's importance cannot be raised again in code once the user has set it.
 * **Rich and silent push.** Both platforms support media attachments (image, etc.) via a notification service extension, and silent/background pushes that update app state without surfacing to the user.
+* **The send path and the token.** You never address the device; you address a token the OS issues per install and send it to the platform's push service, which holds the only connection to the handset. APNs takes one request per notification over a persistent HTTP/2 connection with a rotating JWT, FCM takes a JSON message with an OAuth bearer. The token rotates on reinstall or restore and goes dead silently; the service tells you when (APNs `410 Unregistered`, FCM `UNREGISTERED`), and pruning those tokens is the push equivalent of suppressing a hard bounce, since mailing a dead token wastes budget and inflates your apparent reach. The full transport, headers, and feedback path are in [sending infrastructure](/foundations/sending-infrastructure.md).
 
 ## Best-fit jobs
 
@@ -59,6 +60,7 @@ The re engagement and time critical channel for app audiences. Once the user is 
 
 * [Browser push](/channels/browser-push.md)
 * [In-app](/channels/in-app.md)
+* [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Platform interventions](/references/platform-interventions.md)
 * [Copywriting](/foundations/copywriting.md)
