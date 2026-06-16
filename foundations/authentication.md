@@ -58,6 +58,9 @@ The signature header on outgoing mail names the domain (`d=`) and selector (`s=`
 
 Rotate keys on a schedule. A sensible default is every six to twelve months, and immediately if a key is ever exposed. Rotate by publishing a new selector first, switching signing to it, then removing the old record once no in-flight mail still references it. Running two selectors during the overlap is why selectors exist.
 
+> [!note] What's coming: DKIM2
+> DKIM2 is the proposed successor to DKIM, an IETF working group draft (`draft-ietf-dkim-dkim2-spec`) with nothing to publish yet and no deployment before late 2026 at the earliest. It targets the two structural weaknesses DKIM1 cannot fix. The first is replay: DKIM1 signs the message but not its recipient, so one validly signed message can be captured and re-sent to thousands of addresses on the original sender's reputation. DKIM2 signs the envelope sender and recipient, binding the signature to the path the mail was meant to take. The second is breakage in transit: a forwarder or mailing list that rewrites a subject or appends a footer invalidates a DKIM1 signature, which is the entire reason ARC exists. DKIM2 has each hop that alters a message record the change and resign, so a receiver can verify the chain back to the origin without trusting the intermediaries, where ARC only attests what each hop saw rather than what it did. It also signs the return-path, which lets a receiver trust where a bounce belongs and closes the backscatter gap. Nothing to act on yet; track it, and read today's ARC handling as the stopgap it is built to replace.
+
 ## DMARC rollout
 
 DMARC is a TXT record at `_dmarc.<domain>`. Its policy decides what receivers do when a message fails both SPF and DKIM alignment, and `rua` collects the aggregate reports that tell you who is sending as you.
@@ -149,3 +152,6 @@ Missing SPF or DKIM causes deliverability problems and block bounces, so set up 
 [4] [RFC 6376, DomainKeys Identified Mail (DKIM) signatures](https://www.rfc-editor.org/rfc/rfc6376)
 [5] [RFC 7489, Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://www.rfc-editor.org/rfc/rfc7489)
 [6] [BIMI Group, BIMI implementation and VMC requirements](https://bimigroup.org/)
+[7] [draft-ietf-dkim-dkim2-spec, DomainKeys Identified Mail Signatures v2 (DKIM2)](https://datatracker.ietf.org/doc/draft-ietf-dkim-dkim2-spec/)
+[8] [Word to the Wise, DKIM2 and what it means for the future of email](https://www.wordtothewise.com/2026/04/dkim2-what-it-means-for-the-future-of-email/)
+[9] [Word to the Wise, DKIM2, asynchronous bounces, and VERP](https://www.wordtothewise.com/2026/04/dkim2-asynchronous-bounces-and-verp/)
