@@ -19,9 +19,9 @@ A lifecycle programme is measured in layers, each one closer to money than the l
 
 A decision metric changes what you do when it moves. A vanity metric only changes how you feel. Open rate rising while conversion is flat is a vanity result, and after Mail Privacy Protection inflated opens it is often not even real.
 
-The test for any metric on a dashboard is one question: if this number moved ten percent, would it change what you do next week? Walk it through:
+The test for any metric on a dashboard is one question: if this number moved 10%, would it change what you do next week? Walk it through:
 
-* Name the move. Write down the concrete action a ten percent swing would trigger: cut a flow, shift budget, change a send time, raise an alarm.
+* Name the move. Write down the concrete action a 10% swing would trigger: cut a flow, shift budget, change a send time, raise an alarm.
 * If there is no action, the metric is decoration. Move it off the scorecard and into diagnostics, where it earns its place by explaining other numbers, not by being a goal.
 * Watch for proxies that have drifted from the thing they proxy. Opens once tracked attention; MPP severed that link, so an opens move no longer maps to any reliable action. A metric that can rise without the underlying value rising is a vanity metric whatever it used to be.
 

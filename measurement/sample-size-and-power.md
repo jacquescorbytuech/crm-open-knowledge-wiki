@@ -8,7 +8,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 ## Why it belongs with sizing
 
-A sizing model without a sample size estimate is incomplete. It tells you what you could achieve, not whether you can detect it. A compelling opportunity that needs sixteen weeks of test time to confirm may be a worse use of resources than a faster test on a smaller prize.
+A sizing model without a sample size estimate is incomplete. It tells you what you could achieve, not whether you can detect it. A compelling opportunity that needs 16 weeks of test time to confirm may be a worse use of resources than a faster test on a smaller prize.
 
 The reason this matters more than the formula does: the sample required to detect an effect grows explosively as the effect shrinks, so sub-percent effects like platform intermediation sit in a zone where the required n is infeasible for most teams. The real use of sizing is not to plan the test you will run, it is to decide in advance which tests are not worth running. Treat the formula as a filter, not a recipe.
 

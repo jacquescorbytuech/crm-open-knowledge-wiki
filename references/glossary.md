@@ -68,7 +68,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Winback | The lifecycle stage, and the messaging it carries, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
 | Engagement score | A composite measure of how recently and often a contact engages (opens, clicks, sessions, purchases), used to trigger lifecycle stage transitions. |
 | Engagement tier | An engagement score banded into a few groups, such as active, moderate, and dormant, used to set frequency caps and channel eligibility. |
-| Loyalty program | A structured points, tier, or referral scheme that rewards repeat business. |
+| Loyalty programme | A structured points, tier, or referral scheme that rewards repeat business. |
 | Referral | Acquisition through an existing customer recommending the brand. |
 
 ## Channels and design

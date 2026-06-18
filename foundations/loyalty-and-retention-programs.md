@@ -1,6 +1,6 @@
 ---
 type: Playbook
-title: Loyalty and Retention Programs
+title: Loyalty and Retention Programmes
 description: How to structure a loyalty programme, points earn and redemption ratios, tier ladders and progress nudges, two-sided referrals, and the enrolment, lifecycle comms, and holdout-proven metrics that justify spending on keeping customers rather than only acquiring them.
 tags: [loyalty, retention, referral, repeat-purchase, ltv, programs, points, tiers, enrolment, holdout]
 timestamp: 2026-06-14T00:00:00Z
@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 A loyalty programme is a CRM instrument, not a perk bolted on the side. The case for it is the case for retention generally: acquiring a new customer costs several times more than keeping an existing one, and small improvements in retention compound into large profit gains, the classic finding that a five-point lift in retention can raise profit by a quarter or more. A programme that pours its budget into acquisition and lets customers lapse is spending at the expensive end of its own economics. See [retention and LTV](/measurement/retention-and-ltv.md).
 
-## What a loyalty program does
+## What a loyalty programme does
 
 A loyalty programme gives a customer a structured reason to come back and a record of the relationship that makes the next purchase easier. Done well it raises repeat-purchase rate and share of wallet; loyal customers spend more and more often. The programme is also a first-party data engine: every enrolled member is an identified, consenting customer whose behaviour feeds the [single customer view](/foundations/customer-data-and-identity.md).
 

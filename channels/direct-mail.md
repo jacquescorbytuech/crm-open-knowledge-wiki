@@ -60,8 +60,6 @@ Cost per piece is orders of magnitude above email, lead times are measured in da
 
 There is no open or click, so measurement is by holdout and match-back, and the channel is one of the more honestly measured because incrementality is built into how it has always been run.
 
-The how-to, in order:
-
 1. **Hold out a randomised control.** Before the drop, randomly split the eligible audience into a treated group that gets mailed and a control group that does not. Randomise at the individual or household level so the two arms are otherwise identical. Size the control so the expected lift clears the noise. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 2. **Mail the treated group** with a unique per-recipient code, QR, or PURL stamped on each record, so a response can be traced to the individual who acted.
 3. **Match responders back over a defined window.** Pick a window long enough to capture the physical channel's slow response, then attribute conversions to the mailed file by the unique code first, and by name and address match where a code was not used. Match-back is how a physical piece with no click gets connected to a downstream order.

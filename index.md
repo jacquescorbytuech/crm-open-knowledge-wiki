@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 A self-describing knowledge base in Open Knowledge Format covering the practice of email, lifecycle and CRM marketing: the customer data a programme is built on, the channels it sends through, the operations that run it day to day, and the measurement that tells you whether it worked. Each file is a concept; the links between them turn the directory into a graph you can read from any entry point.
 
-The bundle is organised around the work itself. The **principles** are the stances every recommendation should serve. The **foundations** are the cross-channel operations: data, segmentation, consent, lifecycle, content, automation, and the stack. The **channels** are the media you actually send through. The **measurement** layer is how you prove incrementality and size experiments. Start with the layer your question sits in, then follow the cross links.
+The bundle is organised around the work itself. The principles are the stances every recommendation should serve. The foundations are the cross-channel operations: data, segmentation, consent, lifecycle, content, automation, and the stack. The channels are the media you actually send through. The measurement layer is how you prove incrementality and size experiments. Start with the layer your question sits in, then follow the cross links.
 
 ## Start here
 

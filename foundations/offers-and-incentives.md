@@ -10,7 +10,7 @@ timestamp: 2026-06-14T00:00:00Z
 
 An incentive is a lever that works once you stop pulling it reflexively. Used with discipline it converts a hesitant buyer; used by default it teaches your whole audience to wait, attracts the customers who leave when it stops, and gives away margin you did not need to spend. Most of the offer mistakes in a programme are mistakes of reflex, not of generosity.
 
-The test is one piece of arithmetic, not a feeling about generosity: an offer only pays when its measured incremental share, verified against a holdout, beats the break-even the discount sets, and most broad sends fail that math because the would-have-bought majority swamps the incremental few you actually convert. So target the offer narrow, always hold out a control, and prefer a non-price lever wherever you can name no price barrier.
+The test is one piece of arithmetic, not a feeling about generosity: an offer only pays when its measured incremental share, verified against a holdout, beats the break-even the discount sets, and most broad sends fail that maths because the would-have-bought majority swamps the incremental few you actually convert. So target the offer narrow, always hold out a control, and prefer a non-price lever wherever you can name no price barrier.
 
 ## What over-discounting costs
 

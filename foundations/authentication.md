@@ -6,7 +6,7 @@ tags: [authentication, spf, dkim, dmarc, bimi, deliverability, dns, alignment]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## What this covers
+## What authentication is
 
 Authentication is the set of DNS records and signatures that let a receiving mailbox verify your mail is really from you. It is the precondition for inbox placement, not an optimisation. Set it up before your first send, and verify it end-to-end before you turn the tap on.
 
