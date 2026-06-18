@@ -33,7 +33,7 @@ The ICO defines electronic mail broadly, covering email, text messages, picture 
 
 ## TCPA, the higher bar for SMS
 
-Marketing texts in the US sit under the TCPA, which requires prior express written consent rather than the opt out model that governs email. Honour STOP and, since the FCC's 2025 rules, any reasonable opt out method, within ten business days. Observe quiet hours. Application to person traffic also runs through carrier registration via the 10DLC system; see [SMS and RCS](/channels/sms-and-rcs.md).
+Marketing texts in the US sit under the TCPA, which requires prior express written consent rather than the opt out model that governs email. Honour STOP and, since the FCC's 2025 rules, any reasonable opt out method. A STOP reply is suppressed immediately at the carrier level; an opt out arriving by any other route must be actioned within ten business days. Observe quiet hours. Application to person traffic also runs through carrier registration via the 10DLC system; see [SMS and RCS](/channels/sms-and-rcs.md).
 
 ## Carrier-level sender registration
 

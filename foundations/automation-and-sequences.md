@@ -74,7 +74,7 @@ Run a re-engagement sequence for subscribers who have gone quiet, then sunset th
 
 Dormancy is usually measured per channel, so someone who has stopped opening email may still read a text or tap a push. The win-back is the natural place to try a channel the contact is not dormant on, where you hold the consent for it, since the whole point is to break a pattern that email alone is no longer breaking.
 
-Define the trigger by an inactivity window: no open, click, or purchase for a set period. A sensible default is 90 days. The win-back is short, two to three messages:
+Define the trigger by an inactivity window: no open, click, or purchase for a period read off your own engagement distribution rather than a flat figure. The right length scales with how often you send and how often the customer naturally buys, since 90 days is dozens of sends for a daily sender and only a handful for a monthly one. The win-back is short, two to three messages:
 
 | Message | Timing | Channel | Job |
 | --- | --- | --- | --- |

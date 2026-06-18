@@ -1,13 +1,13 @@
 ---
 type: Reference
 title: Tracking and Measurement Consent
-description: Why the right to track is a separate consent from the right to send, grounded in Article 5(3) of the ePrivacy Directive and the 2026 French and Italian rulings on email tracking pixels, how the same split runs across web, app, push and the other channels, and how the consent travels downstream to constrain further processing of the data collected.
+description: Why the right to track is a separate consent from the right to send, grounded in Article 5(3) of the ePrivacy Directive and the 2026 French and Italian guidance on email tracking pixels, how the same split runs across web, app, push and the other channels, and how the consent travels downstream to constrain further processing of the data collected.
 tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att, purpose-limitation, further-processing]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
 > [!caution] This is not legal advice
-> This orients you to a fast-moving area; it is not legal advice. These rulings are recent and obligations turn on where your recipients are. Take qualified advice for your specific situation.
+> This orients you to a fast-moving area; it is not legal advice. This guidance is recent and obligations turn on where your recipients are. Take qualified advice for your specific situation.
 
 See [legislation and compliance](/references/legislation-and-compliance.md) for the sending-consent regimes this sits alongside.
 
