@@ -10,6 +10,8 @@ timestamp: 2026-06-14T00:00:00Z
 
 Engagement and conversion metrics measure the message. Retention and lifetime value measure the business. A lifecycle programme exists to keep customers and grow their value, so these are the numbers it should be judged on, and the ones most worth moving.
 
+Retention is measured as a curve, not a single churn rate: the share of a cohort still active as it ages. Lifetime value is built from that curve, then weighed against what the customer cost to acquire.
+
 ## How to build a cohort retention curve
 
 Group customers by when they were acquired and track what share remain active over time. The construction is mechanical.
