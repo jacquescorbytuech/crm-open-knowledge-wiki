@@ -1,8 +1,8 @@
 ---
 type: Reference
 title: Tracking and Measurement Consent
-description: Why the right to track is a separate consent from the right to send, grounded in Article 5(3) of the ePrivacy Directive and the 2026 French and Italian rulings on email tracking pixels, and how the same split runs across web, app, push and the other channels.
-tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att]
+description: Why the right to track is a separate consent from the right to send, grounded in Article 5(3) of the ePrivacy Directive and the 2026 French and Italian rulings on email tracking pixels, how the same split runs across web, app, push and the other channels, and how the consent travels downstream to constrain further processing of the data collected.
+tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att, purpose-limitation, further-processing]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -60,6 +60,15 @@ The email pixel is one instance of a rule that is not about email. EDPB Guidelin
 
 Across all of them, the right to reach someone on a channel never carries the right to measure what they did there. On the device-based channels a platform gate, the tracking prompt, the advertising-identifier phase-out, the push opt-in, sits on top of the legal one; on the channels that never touch the device, only the GDPR's processing rules apply.
 
+## After collection: the further processing
+
+Article 5(3) governs one operation, the storing on or accessing of information on the device. The personal data that operation yields, the open event, the click, the behavioural or device signal, is then processed under the GDPR like any other, and that processing needs its own lawful basis. The EDPB set this two-layer structure out in its Opinion 5/2019 on the interplay between the ePrivacy Directive and the GDPR: the 5(3) consent covers the gaining of access; the GDPR covers everything done with what was accessed.
+
+* **The basis does not reset.** Where the collection required consent under Article 5(3), you generally cannot then process that same data for the same purpose on a different basis such as legitimate interests. The consent obtained, or not obtained, at the device travels downstream with the data, and authorities including the CNIL reject the move of collecting on consent and then re-characterising the processing as legitimate interest.
+* **Purpose limitation caps reuse.** Data collected for measurement is held for that purpose. Repurposing it to build profiles, enrich identities, train propensity models, construct lookalike audiences or target advertising is a further purpose, and under Article 5(1)(b) that needs either a compatibility assessment that holds or fresh consent for the new purpose.
+
+For an owned-channel programme the tracking-consent question is therefore a constraint on the data platform, not on measurement alone. Segments, propensity scores, personalisation rules and [decisioning](/foundations/decisioning-and-personalisation.md) logic built on tracking signals inherit the consent status of those signals. The EU recipient who consented to mail but not to tracking is absent from the open-rate denominator, and their behaviour also cannot lawfully feed the models and audiences that tracking data trains. Excluding them has to happen in the [customer data](/foundations/customer-data-and-identity.md) and [segmentation](/foundations/segmentation-and-data.md) layers, not in the dashboard alone.
+
 ## What this means for measurement
 
 This is not only a legal note; it changes how to read your numbers. The bundle already warns that open rate is corrupted by Mail Privacy Protection and is directional at best; see [metrics are directional](/principles/metrics-are-directional.md) and [core metrics](/measurement/core-metrics.md). Tracking consent adds a second, structural source of missingness: in strict-consent jurisdictions a slice of your EU audience may never be measured at all, and that slice is not random, so EU open and click rates understate true engagement and can skew segment and cohort comparisons. The sound response is the one the measurement layer already argues for: lean on outcomes you can observe without the pixel, clicks to first-party destinations, on-site and in-app conversion, and incrementality via [holdouts](/measurement/holdouts-and-control-groups.md), rather than on the open as a primary metric. See [deliverability](/foundations/deliverability.md) for how the open signal degrades on the delivery side too.
@@ -70,6 +79,7 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 * Do not bundle pixel consent into the newsletter opt-in or the terms.
 * Keep a strictly-necessary tier (deliverability, security) separate from the analytics tier that needs consent, and, where you rely on Italy's exemption, ensure the aggregate count is genuinely anonymised.
 * Suppress tracking, not sending, for EU recipients who consent to mail but not to measurement, and design reporting that tolerates an unmeasured EU slice.
+* Treat tracking-derived data as carrying its collection basis: do not repurpose measurement signals into profiling, modelling or ad audiences without a fresh purpose check, and exclude the consent-withheld slice from the segments and models built on tracking data, not only from the reports.
 * Operate to the strictest regime your list touches, exactly as for sending consent.
 
 ## Related
@@ -80,6 +90,9 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 * [Core metrics](/measurement/core-metrics.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Website personalisation](/channels/website-personalisation.md)
+* [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
+* [Segmentation and data](/foundations/segmentation-and-data.md)
+* [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [The channel mix](/channels/index.md)
 
 ## Citations
@@ -92,3 +105,4 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 [6] [CMS, tracking according to the ePrivacy Directive and German law](https://cms.law/en/deu/insight/e-privacy/tracking-according-to-the-eprivacy-directive-and-german-law)
 [7] [Apple, User Privacy and Data Use (App Tracking Transparency and the IDFA prompt)](https://developer.apple.com/app-store/user-privacy-and-data-use/)
 [8] [Trackier, GAID and mobile attribution in 2026 (the advertising-identifier phase-out)](https://trackier.com/everything-you-need-to-know-about-gaid/)
+[9] [EDPB, Opinion 5/2019 on the interplay between the ePrivacy Directive and the GDPR](https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-52019-interplay-between-eprivacy-directive-and_en)

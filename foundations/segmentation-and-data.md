@@ -6,9 +6,9 @@ tags: [segmentation, data, personalisation, privacy, merge-tags, hygiene, dynami
 timestamp: 2026-06-14T00:00:00Z
 ---
 
-## What this covers
+## Building and running segments
 
-This is the operational how of segmentation: defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md), and the data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). The focus here is building and running the segments once a model has chosen the cut.
+Once a model has chosen how to cut the audience, the operational work is defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md), and the data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md).
 
 ## Dynamic versus static segments
 
@@ -78,6 +78,7 @@ Audit the data and consent state on a cadence rather than waiting for a problem 
 * **Profile completeness.** Track the fill rate of the fields your segments depend on (consent flags, engagement dates, value fields). A field your targeting relies on that is blank for much of the list is a silent segmentation failure.
 * **Deduplication.** Periodically scan for duplicate identities and merge them under the controlled process above, so one person is not counted, contacted, or suppressed as two.
 * **Lawful basis and consent date.** Confirm every contact carries a recorded lawful basis and a consent timestamp, and that channel grants are stored separately (email permission is not SMS permission). Flag any contact missing a basis for review or suppression.
+* **Tracking-derived fields.** The engagement and behavioural fields many segments target are collected under a separate tracking consent, and that consent travels with the data: a contact who withheld it cannot be targeted on those fields even with a clean sending permission. Carry the tracking-consent state alongside the channel grants. See [tracking and measurement consent](/references/tracking-and-measurement-consent.md).
 
 Set the cadence to your volume and risk; the point is that it is scheduled, with a written threshold, not triggered by an incident.
 
@@ -90,6 +91,7 @@ Set the cadence to your volume and risk; the point is that it is scheduled, with
 * [Database health and sunsetting](/foundations/database-health.md)
 * [Audience sync](/foundations/audience-sync.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
+* [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 * [Volume thresholds](/measurement/volume-thresholds.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)

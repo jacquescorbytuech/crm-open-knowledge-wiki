@@ -74,6 +74,8 @@ The properties that make a decisioning system hard to audit from the inside also
 
 Every capability above depends on the same thing: unified, clean, training-ready first-party data. The decisioning specialists need a high-fidelity event feed or a warehouse with your behaviour in it; the enterprise tier needs the unified profile in production. Data quality determines how well any of it works, which is why the [customer data and identity](/foundations/customer-data-and-identity.md) layer comes first. Build the data foundation, and the advanced options stay open; skip it, and no amount of vendor AI compensates.
 
+That behavioural feed carries a legal constraint as well. Much of it is tracking-derived, and tracking consent travels downstream with the data: a signal collected for measurement cannot be repurposed to train a decisioning model without a fresh purpose check, and the EU recipient who withheld tracking consent has to be excluded from the training set, not the dashboard alone. See [tracking and measurement consent](/references/tracking-and-measurement-consent.md) for the further-processing rule.
+
 ## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
@@ -82,6 +84,7 @@ Every capability above depends on the same thing: unified, clean, training-ready
 * [ESP selection](/foundations/esp-selection.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
+* [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 
 ## Citations
 
