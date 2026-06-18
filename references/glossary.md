@@ -86,6 +86,7 @@ timestamp: 2026-06-14T00:00:00Z
 | Dark mode | A client display mode that recolours messages; designs must survive the inversion. |
 | Alt text | Text shown in place of an image that is blocked or fails to load. |
 | A2P 10DLC | The US registration standard for application-to-person SMS over long codes. |
+| Sender ID | The label shown as the source of an SMS, either a phone number or an alphanumeric brand name. Registers such as Australia's bind the brand label to its owner; an unregistered one is relabelled `Unverified`. |
 | RCS | Rich Communication Services. The richer successor to SMS, with branding, cards, and read receipts. |
 | APNs / FCM | Apple Push Notification service and Firebase Cloud Messaging, the two push delivery pipes. |
 | Device token | The opaque, per-install identifier a push notification is addressed to; the OS can rotate or invalidate it, and dead tokens must be pruned like hard bounces. |

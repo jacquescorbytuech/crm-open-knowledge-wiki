@@ -2,7 +2,7 @@
 type: Reference
 title: Legislation and Compliance
 description: The main email and privacy regimes a sender operates under, grounded in the regulators' own guidance, and the practical minimum that satisfies the spirit of all of them.
-tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa]
+tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa, sender-id]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -35,6 +35,10 @@ The ICO defines electronic mail broadly, covering email, text messages, picture 
 
 Marketing texts in the US sit under the TCPA, which requires prior express written consent rather than the opt out model that governs email. Honour STOP and, since the FCC's 2025 rules, any reasonable opt out method, within ten business days. Observe quiet hours. Application to person traffic also runs through carrier registration via the 10DLC system; see [SMS and RCS](/channels/sms-and-rcs.md).
 
+## Carrier-level sender registration
+
+Consent is not the only gate on messaging. Some markets run registers that verify which organisation a message claims to come from, independently of whether the recipient consented. US application-to-person SMS requires 10DLC brand and campaign registration; Australia's SMS Sender ID Register, run by the ACMA, makes registration of branded (alphanumeric) sender IDs mandatory from 1 July 2026, after which an unregistered brand label is shown to recipients as `Unverified` alongside suspected scams. These sit on top of consent law, not in place of it: you can hold valid consent and still have your brand traffic degraded if the sender ID is unregistered. See [SMS and RCS](/channels/sms-and-rcs.md).
+
 ## The practical minimum
 
 Operate to the strictest regime your list touches and you satisfy the rest by construction. Collect consent you can evidence, keep channel grants separate, prefer an explicit opt in wherever an opt in regime applies, identify yourself honestly in every message, include a real postal address, make opt out easy and honour it without delay, keep a suppression list that is never mailed, and hold a documented lawful basis for every contact. This is also good deliverability practice, since the bulk sender requirements enforce one click unsubscribe and a low complaint rate as a condition of reaching the inbox. See [authentication](/foundations/authentication.md) and [consent and preferences](/foundations/consent-and-preferences.md).
@@ -57,3 +61,4 @@ Respecting the recipient is both the ethical and the commercial position. Honest
 [1] [FTC, CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 [2] [ICO, electronic mail marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
 [3] [FCC, telemarketing and robocall rules](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
+[4] [ACMA, SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)

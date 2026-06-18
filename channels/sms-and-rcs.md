@@ -2,7 +2,7 @@
 type: Channel
 title: SMS and RCS
 description: How to run SMS and RCS as a premium sparing channel, controlling encoding and segment cost, choosing a sending route, enforcing consent, and measuring against a holdout.
-tags: [channel, sms, rcs, consent, transactional, carrier, encoding, 10dlc]
+tags: [channel, sms, rcs, consent, transactional, carrier, encoding, 10dlc, sender-id]
 timestamp: 2026-06-14T00:00:00Z
 ---
 
@@ -47,6 +47,17 @@ Relative cost runs short code above toll-free and 10DLC, and segments multiply w
 ## How the message reaches the carrier
 
 You do not connect to mobile networks directly. An aggregator (the messaging side of a CPaaS) holds the carrier interconnects and routes your traffic, and you reach it either through an HTTP REST API or through SMPP, the binary telecom protocol the REST APIs sit on top of. A message you send is mobile-terminated (MT); a reply, including a `STOP` or `HELP` keyword, comes back mobile-originated (MO). Delivery confirmation arrives as a delivery receipt (DLR) relayed back from the carrier, but treat it as advisory: carriers differ in whether and when they return one, some mark "delivered" on network handoff rather than handset receipt, and a missing DLR does not reliably mean a missing message. The registration regimes above are the carrier's admission control sitting in front of that route. The transport, the SMPP bind types, and the webhook path that carries DLRs back are in [sending infrastructure](/foundations/sending-infrastructure.md).
+
+## Branded sender IDs and verification
+
+Outside the US, a large share of A2P traffic uses an alphanumeric sender ID: a short text label, usually the brand name, shown in place of a phone number at the top of the message. It gives the message an identity but carries no reply path, so it suits one-way alerts and notifications rather than two-way exchanges. It is also trivial to spoof, since nothing in the protocol stops a sender from setting whatever label it likes, which is why scam texts so often arrive under a bank or government name.
+
+Markets are closing that gap with sender ID registers that bind the label to the organisation entitled to use it. Australia's SMS Sender ID Register, run by the ACMA as part of its anti-scam programme, is the furthest along. Registration through a participating telco or message provider opened on 30 November 2025, and registration becomes mandatory from 1 July 2026. A registered sender ID must be clearly tied to the organisation, such as a matching business name or trademark, and an Australian business registers against the contact details held in the Australian Business Register, which must be current. The mechanism mirrors US 10DLC: a registration regime that gates whether your branded identity reaches the handset, with the unregistered case degraded rather than blocked outright.
+
+> [!warning] An unregistered brand label is shown as `Unverified`
+> From 1 July 2026, an SMS sent under an unregistered Australian sender ID has its brand name replaced with `Unverified` and is grouped into a single thread alongside other unregistered senders, including suspected scams. Legitimate traffic then lands next to the spam, stripped of the identity the label was meant to carry.
+
+Treat this as the SMS counterpart of email authentication. An unverified sender label does to a text roughly what a failed `DMARC` check does to an email: the message may survive, but it arrives without its trust markers and in worse company. Where a register operates in a market you send to, register every sender ID you use before its deadline and keep the underlying business-register record current, or your own brand traffic falls into the unverified bucket. See [authentication](/foundations/authentication.md).
 
 ## Compliance in practice
 
@@ -107,3 +118,5 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 [4] [Google, RCS Business Messaging best practices](https://developers.google.com/business-communications/rcs-business-messaging/guides/learn/best-practices)
 [5] [Apple, turn on RCS messaging on iPhone (iOS 18)](https://support.apple.com/en-us/122195)
 [6] [Kelley Drye, state mini-TCPA laws and quiet-hours rules for marketing texts](https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/texas-mini-tcpa-law-faqs-for-marketing-texts)
+[7] [ACMA, SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)
+[8] [ACMA, unregistered branded SMS to be labelled 'Unverified' from 1 July 2026](https://www.acma.gov.au/articles/2026-05/unregistered-branded-sms-be-labelled-unverified-1-july-acma-warns)
