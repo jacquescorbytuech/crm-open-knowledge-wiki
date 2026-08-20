@@ -1,9 +1,9 @@
 ---
 type: Reference
 title: About This Bundle
-description: What the Open Knowledge Format is, where this bundle's content comes from, and how to navigate it.
+description: What the Open Knowledge Format is, where this bundle's content comes from, and how to navigate it, on GitHub or in a local Obsidian vault.
 resource: https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf
-tags: [meta, okf, provenance]
+tags: [meta, okf, provenance, obsidian]
 generated:
   by: human:jacquescorbytuech
   at: 2026-08-20T00:00:00Z
@@ -17,6 +17,12 @@ sources:
   - id: okf-v02-announcement
     resource: https://cloud.google.com/blog/products/data-analytics/okf-v0-2-adds-trust-signals
     title: "OKF v0.2 adds trust signals"
+  - id: obsidian-manage-vaults
+    resource: https://obsidian.md/help/manage-vaults
+    title: "Obsidian Help, manage vaults"
+  - id: obsidian-links
+    resource: https://obsidian.md/help/links
+    title: "Obsidian Help, links"
 ---
 
 ## What this is
@@ -41,3 +47,15 @@ This is a general practitioner reference for email, lifecycle and CRM marketing,
 ## How to navigate
 
 The bundle is organised around the work: the [principles](/principles/) that set the stances, the [foundations](/foundations/) that hold the cross-channel operations (data, segmentation, lifecycle, content, automation, tooling), the [channels](/channels/) you send through, and the [measurement](/measurement/) layer that proves incrementality and sizes experiments. The [references](/references/) hold the external platform behaviour, research, legislation, and a glossary. The [root index](/index.md) maps the lot; start with the layer your question sits in and follow the cross links.
+
+## Reading it in Obsidian
+
+Nothing here requires an app: any text editor or the GitHub file view reads the bundle fine. A reader built for linked markdown makes the graph easier to walk, though. [Obsidian](https://obsidian.md), a free, local markdown application, fits the bundle's conventions well: cross links become click-through navigation, a backlinks pane lists the concepts that link to the one you are reading, and the graph view draws the whole bundle at once.
+
+Clone the repository, then in Obsidian choose 'Manage vaults' and use 'Open folder as vault' to select the cloned folder itself, the one containing the root `index.md`.[^obsidian-manage-vaults] The folder choice matters. Obsidian resolves link paths from the vault root,[^obsidian-links] and this bundle's cross links resolve from the bundle root, so the two must be the same folder. Opening a parent directory instead, or nesting the bundle inside an existing vault, points every cross link at a path that does not exist.
+
+Once the vault is open, each concept's frontmatter displays as properties, and the callouts and footnotes render as written. Obsidian keeps its own settings in a hidden `.obsidian` folder at the vault root. That folder is local state, not part of the bundle; keep it out of any pull request, for instance by adding `.obsidian/` to `.git/info/exclude` in your clone, which ignores it without changing the repository.
+
+[^obsidian-manage-vaults]: Obsidian Help, [Manage vaults](https://obsidian.md/help/manage-vaults). Creating a vault from an existing folder, and the `.obsidian` settings folder.
+
+[^obsidian-links]: Obsidian Help, [Links](https://obsidian.md/help/links). Link syntax and resolution; folder paths start at the vault root.

@@ -1,5 +1,10 @@
 # Bundle Update Log
 
+## 2026-08-20 (reading the bundle in Obsidian)
+* **Directive**: Document how to read the bundle in a local Obsidian vault, since a linked-markdown reader makes browsing the graph easier than raw files.
+* **Documentation**: [About this bundle](/references/about-this-bundle.md) gained a **Reading it in Obsidian** section: open the cloned folder itself via 'Open folder as vault', because the bundle's cross links resolve from the bundle root and only land when bundle root and vault root are the same folder; frontmatter, callouts, and footnotes render as written; and the local `.obsidian` settings folder stays out of pull requests (`.git/info/exclude`). `README.md` gained a matching pointer under the online-browsing line.
+* **Registration**: Two Obsidian Help entries added to the page's `sources` (`obsidian-manage-vaults`, `obsidian-links`) with matching footnotes on the setup claims; description updated and `obsidian` tag added. No concept claims changed.
+
 ## 2026-08-20 (wording sweep: sneaky-adverb and stacking-metaphor tics)
 * **Directive**: Multiple pages overused trite intensifier adverbs, "quietly" and "silently" attached to failures and costs, plus "under the hood" and the vertical-stacking metaphor for how two rules or systems relate. Sweep the bundle and state the facts plainly.
 * **Adverbs dropped**: Removed the sneak-framing "quietly"/"silently" from 16 sentences across the channels, foundations, and measurement layers, keeping the substance (an unwatched character multiplies cost; a merge corrupts the profile; repeated peeking invalidates the test). The repeated "an automation error runs at scale and silently" became concrete in each spot: it repeats until you catch it, or reaches its full audience before anyone notices. Literal technical uses stay: silent push, Focus's silent kill, and "silent failure" where the point is that no error is surfaced.

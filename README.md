@@ -6,6 +6,8 @@ It is written as an **Open Knowledge Format (OKF)** bundle, a directory of plain
 
 The bundle is also browsable online at [crmknowledgebase.com](https://crmknowledgebase.com).
 
+It also reads well as an [Obsidian](https://obsidian.md) vault: clone the repo, then use 'Open folder as vault' on the cloned folder itself, so the bundle's root-relative links resolve. Setup details are in [`references/about-this-bundle.md`](references/about-this-bundle.md).
+
 ## What is OKF?
 
 [Open Knowledge Format](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing) (OKF) is an open, vendor-neutral specification for representing knowledge as a portable bundle of Markdown files with YAML frontmatter. The core ideas:
