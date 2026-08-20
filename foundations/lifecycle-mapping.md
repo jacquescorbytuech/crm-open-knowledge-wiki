@@ -5,7 +5,7 @@ description: The customer lifecycle stages a programme is built around, and how 
 tags: [lifecycle, journey-mapping, stages, retention, crm, workshop, triggers]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: braze-customer-lifecycle-management-acquisition-activation-engagement
     resource: https://www.braze.com/resources/articles/customer-lifecycle-management
@@ -28,7 +28,7 @@ Most programmes resolve to five stages, whatever the local names.
 
 ## Mapping the journey
 
-A journey map lays the stages against the moments that move a customer between them: the trigger events, the decisions, the points of friction, and the messages each stage should carry. The output is not a diagram for its own sake. It is the specification the [automations](/foundations/automation-and-sequences.md) implement and the [orchestration](/foundations/orchestration-and-frequency.md) layer sequences across channels.
+A journey map lays the stages against the moments that move a customer between them: the trigger events, the decisions, the points of friction, and the messages each stage should send. The output is not a diagram for its own sake. It is the specification the [automations](/foundations/automation-and-sequences.md) implement and the [orchestration](/foundations/orchestration-and-frequency.md) layer sequences across channels.
 
 ## The journey-map template
 

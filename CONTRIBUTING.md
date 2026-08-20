@@ -36,7 +36,7 @@ Omit the title text to use the type's default ("Warning", "Note", and so on). Ad
 
 Use them sparingly. This is a dense reference, and a callout earns its place by lifting one sharp, self-contained point out of the prose, not by boxing a whole paragraph or restating a heading. Most pages need none. Pick the type by meaning:
 
-- **`warning`** (orange) for a genuine gotcha or a "don't do this" the reader is likely to get wrong. This is the workhorse type here.
+- **`warning`** (orange) for a genuine gotcha or a "don't do this" the reader is likely to get wrong. This is the most common type here.
 - **`danger`** (red) for a hard limit with real consequences: a legal or compliance breach, getting blocked, an irreversible action. Reserve it, an orange warning is usually enough.
 - **`note`** or **`info`** (blue, cyan) for a caveat or piece of context worth pulling out of the flow.
 - **`tip`** (green) for an actionable best-practice nudge or a call to action. Green should mean "do this", so do not green-box ordinary statements.
@@ -56,7 +56,7 @@ This bundle is **vendor-neutral**. It cites tools and platforms where they illus
 
 - **Disclose any interest.** If you have a financial, employment, or other material relationship with a product, vendor, platform, blog, or service that your contribution mentions, cites, or recommends, **say so in the pull request**. Disclosure is not disqualifying; an undisclosed relationship is.
 - **No undisclosed self-promotion.** Do not add your own (or your employer's or client's) product, company, blog post, or affiliate link as a citation, recommendation, or example without disclosing the relationship. Submissions that exist mainly to drive traffic or rank a particular vendor will be declined.
-- **No link-building.** A contribution made primarily to earn a backlink will be declined, disclosed or not. This is a public, well-linked resource, and "add our URL as a source/reference/further reading" PRs that don't make the content materially better are the most common abuse we reject. To remove the incentive: outbound links to commercial or vendor sites are marked `rel="nofollow"` and carry no SEO value, and we may convert a link to a plain text citation or drop it entirely if it reads as placement rather than evidence.
+- **No link-building.** A contribution made primarily to earn a backlink will be declined, disclosed or not. This is a public, well-linked resource, and "add our URL as a source/reference/further reading" PRs that don't make the content materially better are the most common abuse we reject. To remove the incentive: outbound links to commercial or vendor sites are marked `rel="nofollow"` and pass no SEO value, and we may convert a link to a plain text citation or drop it entirely if it reads as placement rather than evidence.
 - **Citations support claims, they don't advertise.** A link earns its place by being the best available source for a specific statement. Links whose main purpose is promotion (SEO backlinks, affiliate URLs, "recommended tool" call-outs) will be removed, disclosed or not.
 - **No sponsored rankings or "best tool" lists** that favour a particular vendor. Where the bundle compares options (for example, ESP selection), it describes how to evaluate, not which brand to buy.
 

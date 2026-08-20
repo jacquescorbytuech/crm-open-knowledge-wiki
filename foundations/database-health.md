@@ -17,7 +17,7 @@ sources:
 
 ## What it is
 
-A marketing database is not a stock that only grows; it is an asset that decays continuously and has to be maintained. People change addresses, lose interest, switch the channel they read, and abandon accounts that later turn into spam traps. Database health is the ongoing practice of keeping the contactable list both deliverable and valuable: managing that decay deliberately rather than letting it accumulate as dead weight. It is the place several scattered ideas in the bundle, hygiene, re-engagement, suppression of the unresponsive, and the sunset policy, come together as one lifecycle for the contact, not the campaign.
+A marketing database is not a stock that only grows; it is an asset that decays continuously and has to be maintained. People change addresses, lose interest, switch the channel they read, and abandon accounts that later turn into spam traps. Database health is the ongoing practice of keeping the contactable list both deliverable and valuable: managing that decay deliberately rather than letting dormant contacts accumulate. It is the place several scattered ideas in the bundle, hygiene, re-engagement, suppression of the unresponsive, and the sunset policy, come together as one lifecycle for the contact, not the campaign.
 
 The never-engaging tail does not sit there harmlessly, and that is what turns this from housekeeping into reach. Under sender-level reputation it actively drags inbox placement for the engaged contacts who actually convert, so the reachable list is the engaged subset, and sunsetting is a net gain in reachability, not a loss of reach. The lifecycle and running practice that follow are how you act on that, the operational consequence of it, not a reluctant trim of a healthy asset.
 
@@ -28,7 +28,7 @@ Decay has several independent sources, and a healthy programme expects all of th
 * **Address and channel churn.** Contacts abandon mailboxes and phone numbers, or simply stop reading the channel they signed up on. The grant is still on file; the human behind it is gone.
 * **Disengagement.** A contact who was active goes quiet, then dormant. The address still accepts mail, but the person no longer opens it, which is the more dangerous case because it looks alive.
 * **Hard failures.** Hard bounces and complaints remove contacts outright and must be suppressed immediately, per the hygiene SLA in [segmentation and data](/foundations/segmentation-and-data.md).
-* **Spam-trap formation.** A long-abandoned address can be recycled by a provider into a spam trap. Continuing to mail the never-engaging tail is how a sender walks into one, which is why dormancy is a deliverability risk and not just a soft metric.
+* **Spam-trap formation.** A long-abandoned address can be recycled by a provider into a spam trap. Continuing to mail the never-engaging tail is how a sender hits one, which is why dormancy is a deliverability risk and not just a soft metric.
 
 ## The contact lifecycle inside the database
 
@@ -44,7 +44,7 @@ This is a lifecycle of the database itself, parallel to the customer [lifecycle 
 
 ## Why it pays to shrink the list on purpose
 
-Sunsetting feels like destroying the asset you spent to build, which is why so many programmes refuse to do it. The logic runs the other way. Sender-level engagement now governs placement for the whole list, so the never-engaging tail does not sit there harmlessly; it drags inbox placement down for the engaged contacts who do convert. Removing dead weight raises the deliverability of everyone who remains. This is the operational expression of [list quality over size](/principles/list-quality-over-size.md) and the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): the reachable list is the engaged subset, and protecting it is worth more than the headline count.
+Sunsetting feels like destroying the asset you spent to build, which is why so many programmes refuse to do it. The logic runs the other way. Sender-level engagement now governs placement for the whole list, so the never-engaging tail does not sit there harmlessly; it drags inbox placement down for the engaged contacts who do convert. Removing the dormant tail raises the deliverability of everyone who remains. This is the operational expression of [list quality over size](/principles/list-quality-over-size.md) and the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): the reachable list is the engaged subset, and protecting it is worth more than the headline count.
 
 ## Running it
 

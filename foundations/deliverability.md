@@ -117,7 +117,7 @@ Being in Promotions is not a failure: deal seekers actively browse it. Since Sep
 | --- | --- | --- |
 | Delivery rate | Accepted by the receiving server | Not the same as inbox placement |
 | Open rate | An image load fired | Not a read; corrupted by MPP, prefetch, and filter fetches; directional only |
-| Click through rate | Clicked a link | The workhorse engagement metric |
+| Click through rate | Clicked a link | The primary engagement metric |
 | Click to open rate (CTOR) | Content engagement | Independent of open noise |
 | Conversion | Downstream action | The metric that pays; needs volume to read |
 | Complaint rate | Marked as spam | Hard deliverability limit, keep under 0.1% |

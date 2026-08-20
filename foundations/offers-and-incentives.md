@@ -5,7 +5,7 @@ description: How to use discounts and incentives without training deal-seeking o
 tags: [offers, incentives, discounts, promotions, margin, pricing, break-even, holdout]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: the-good-why-discounting-is-bad-for
     resource: https://thegood.com/insights/discounting-for-ecommerce/
@@ -28,7 +28,7 @@ The test is one piece of arithmetic, not a feeling about generosity: an offer on
 
 Heavy, habitual discounting has three predictable effects. It trains customers to hold out for the next sale rather than pay full price. It attracts deal-seekers whose lifetime value is low and whose retention is worse, the opposite of the customer the programme wants. And it erodes margin directly: a broad price cut reduces the margin on everyone who would have bought anyway, not just the incremental buyers it wins. A brand that becomes a discount brand struggles to stop being one.
 
-## When an incentive earns its place
+## When an incentive is justified
 
 Reserve incentives for the moments where they change a decision rather than subsidise one already made.
 

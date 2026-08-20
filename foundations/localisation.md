@@ -5,7 +5,7 @@ description: Sending to a multi-region, multi-language audience: send-time by th
 tags: [localisation, internationalisation, timezone, multi-language, multi-currency, send-time, i18n]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-15T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: unicode-cldr-locale-data-for-dates-numbers
     resource: https://cldr.unicode.org/
@@ -23,7 +23,7 @@ A programme sending to one country in one language can ignore everything here. T
 
 A single send clock is a single timezone's clock. Fire a broadcast at 9am headquarters time and half a global list gets it at 3am. Send-time localisation splits the send so each recipient receives it at the intended local hour, keyed to the timezone on their profile rather than the server's. On the interruptive channels a mistimed send does real harm: an [SMS](/channels/sms-and-rcs.md) or [push](/channels/push.md) that arrives in the middle of the night is worse than ignored, and for SMS the [quiet-hours law](/channels/sms-and-rcs.md) is defined in the recipient's local time, so timezone-correct sending is a compliance control, not just a courtesy. [Email](/channels/email.md) is more forgiving because it waits in the inbox, but local-morning delivery still reads better than overnight.
 
-The data prerequisite is a reliable timezone per contact, inferred from country, postal address, or observed open times, and a sensible fallback when it is missing (the account's primary market, not the server default). Per-recipient send-time optimisation, where the platform learns each contact's responsive hour, is the more sophisticated version of the same idea and carries the same prerequisite.
+The data prerequisite is a reliable timezone per contact, inferred from country, postal address, or observed open times, and a sensible fallback when it is missing (the account's primary market, not the server default). Per-recipient send-time optimisation, where the platform learns each contact's responsive hour, is the more sophisticated version of the same idea and has the same prerequisite.
 
 ## Locale-keyed templates and translation
 
@@ -34,7 +34,7 @@ Hard-coded copy is monolingual by construction. The localised pattern is to key 
 
 ## Currency, dates, and formatting
 
-A price, a date, and a number all carry locale. `$1,000` and `1.000 $` are the same amount formatted by opposite conventions, and `03/04` is two different days on the two sides of the Atlantic. Localise the format, and where the offer is transactional, localise the value: show prices in the recipient's currency, set against local price points rather than a raw exchange-rate conversion, so an [offer](/foundations/offers-and-incentives.md) reads as deliberate rather than as a foreign price run through a calculator. The standard locale data for these conventions, currency symbols, date and number formats, and the rest, is maintained centrally in the Unicode CLDR rather than reinvented per programme.
+A price, a date, and a number are all locale-dependent. `$1,000` and `1.000 $` are the same amount formatted by opposite conventions, and `03/04` is two different days on the two sides of the Atlantic. Localise the format, and where the offer is transactional, localise the value: show prices in the recipient's currency, set against local price points rather than a raw exchange-rate conversion, so an [offer](/foundations/offers-and-incentives.md) reads as deliberate rather than as a foreign price run through a calculator. The standard locale data for these conventions, currency symbols, date and number formats, and the rest, is maintained centrally in the Unicode CLDR rather than reinvented per programme.
 
 > [!warning] Localise the whole message, not just the body
 > A translated body under an English subject line, a local price next to a US date format, or a localised email linking to an English-only landing page all break the spell. The recipient notices the seam, and the seam reads as carelessness. The unit of localisation is the whole journey, message, links, and the page it lands on.

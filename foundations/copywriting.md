@@ -20,7 +20,7 @@ sources:
 
 ## What copy has to do in any channel
 
-The job is the same wherever the message lands: earn attention with an honest signal, carry one concrete fact the recipient can act on, and ask for one thing. What changes is the surface that signal has to fit. Email gives a sender name, a subject, and a snippet before the open; push gives a title and a short body on the lock screen; SMS gives a sender identity and the first line or two before the fold; in-app gives a headline inside a layout you control. Email's surface is the most constrained and the best studied, but the discipline carries unchanged: front-load the fact, write for the machine that compresses you, keep one action.
+The job is the same wherever the message lands: earn attention with an honest signal, state one concrete fact the recipient can act on, and ask for one thing. What changes is the surface that signal has to fit. Email gives a sender name, a subject, and a snippet before the open; push gives a title and a short body on the lock screen; SMS gives a sender identity and the first line or two before the fold; in-app gives a headline inside a layout you control. Email's surface is the most constrained and the best studied, but the discipline is unchanged: front-load the fact, write for the machine that compresses you, keep one action.
 
 ## Subject lines and the envelope
 
@@ -39,9 +39,9 @@ Test subject lines honestly. An A/B subject test on a single send is usually too
 
 A single-intent email has a predictable skeleton. Each block does one job, and the order keeps the most important message above the fold and machine-readable.
 
-* **Preheader / preview text.** The first text the client surfaces after the subject. Carry one extra concrete fact here, not a repeat of the subject.
+* **Preheader / preview text.** The first text the client surfaces after the subject. Add one extra concrete fact here, not a repeat of the subject.
 * **Header.** Logo and a thin nav at most. Recognisable sender, minimal links.
-* **Hero message.** One headline carrying the single core message in real text. This is the line a scanner and a summariser will keep, so state the offer, change, or news plainly.
+* **Hero message.** One headline stating the single core message in real text. This is the line a scanner and a summariser will keep, so state the offer, change, or news plainly.
 * **Primary CTA.** One button, placed near the hero, repeated lower down if the email is long. Same wording each time.
 * **Supporting content.** Detail, proof, or secondary context below the primary action, never competing with it.
 * **Footer.** Physical address, clear unsubscribe, sender identity. Required, and essential to deliverability.
@@ -64,12 +64,12 @@ Authentication and engagement matter far more than word lists, but avoid the obv
 
 ## Writing for the summariser
 
-On-device and inbox summarisers compress a message to its gist, keeping what is machine readable and dropping brand voice. Lead with the concrete fact, the amount, the name, the time, the action, so a summary has something to keep. A useful self check: if the subject still tells the user something useful when stripped to its first few words, it carries a fact a summariser can keep. The platform research behind this is in [email intelligence research](/references/email-intelligence-research.md).
+On-device and inbox summarisers compress a message to its gist, keeping what is machine readable and dropping brand voice. Lead with the concrete fact, the amount, the name, the time, the action, so a summary has something to keep. A useful self check: if the subject still tells the user something useful when stripped to its first few words, it contains a fact a summariser can keep. The platform research behind this is in [email intelligence research](/references/email-intelligence-research.md).
 
 Concrete rules, with phrasings:
 
 * **Quantify.** "Save 20%" not "Save big". A number survives compression; an adjective does not.
-* **Name the date or deadline.** "Ends Sunday 22 June" not "Ending soon". An explicit date is something a summary can carry verbatim.
+* **Name the date or deadline.** "Ends Sunday 22 June" not "Ending soon". An explicit date is something a summary can quote verbatim.
 * **Name the amount or item.** "Your £15 credit" not "a special reward". The specific noun is what the recipient acts on.
 * **Use explicit verbs in key blocks.** "Confirm your address by Friday" not "Action may be required". The verb tells the summariser, and the reader, what to do.
 * **Put the fact before the framing.** "Order shipped, arrives Tuesday" before any thank-you copy, so the gist holds even if everything after the first clause is dropped.
@@ -79,7 +79,7 @@ Concrete rules, with phrasings:
 The envelope and skeleton are email's. The other channels compress the same job into less room, which makes the front-loaded fact more important, not less.
 
 * **SMS.** No subject and no styling, so the opening words are the envelope, and an unrecognised number reads as spam unless the sender identity is clear early. Watch the segment boundary, 160 characters in `GSM-7`, 70 once any character forces `UCS-2`, keep to one link, and respect that the message arrives in a thread the recipient otherwise reserves for people they know. See [SMS and RCS](/channels/sms-and-rcs.md).
-* **Push.** A title and a short body, truncated hard on the lock screen and shown with no guarantee an image renders. Carry the fact in the title, treat the body as the single supporting line, and make the tap open the thing the copy promised. See [push](/channels/push.md).
+* **Push.** A title and a short body, truncated hard on the lock screen and shown with no guarantee an image renders. Put the fact in the title, treat the body as the single supporting line, and make the tap open the thing the copy promised. See [push](/channels/push.md).
 * **In-app.** Copy inside a surface you control and a recipient already in session, so none of the other channels' format limits apply: no segment count, no lock-screen truncation, as much or as little room as the moment needs. The constraint is relevance, not length, the cost is interrupting a live session rather than deliverability. Say the one thing the moment is about and offer the single next action. See [in-app](/channels/in-app.md).
 
 ## Generating copy with AI
@@ -89,7 +89,7 @@ A language model is a competent first-drafter and a poor final author. It is gen
 The risks specific to generated marketing copy:
 
 * **Hallucinated specifics.** The model will happily invent a discount depth, a deadline, a product name, or a policy detail that reads fluently and is wrong. The front-loaded fact, the amount, the date, the item, is exactly the part a model is least reliable on and the part a wrong value does the most damage. Bind those values from your own data through [personalisation mechanics](/foundations/personalisation-mechanics.md) rather than letting the model assert them, and verify every concrete claim against the actual offer before send.
-* **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that carries no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, and hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
+* **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that has no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, and hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
 
 This follows [start simple](/principles/start-simple.md) and the decision-support framing in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md): the model accelerates a writer who knows what good looks like, and amplifies the mistakes of one who does not.
 

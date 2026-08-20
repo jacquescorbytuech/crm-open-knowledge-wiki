@@ -5,7 +5,7 @@ description: The line between transactional and marketing messages, why it gover
 tags: [transactional, marketing, consent, deliverability, sending-streams, can-spam, orchestration]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: ftc-can-spam-act-compliance-guide-primary
     resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
@@ -40,12 +40,12 @@ The rule is to keep transactional messages transactional. A small, clearly secon
 
 * **Classify by primary purpose, once, at design time.** Decide whether a template is transactional or marketing before it ships, and route it to the matching stream. An ambiguous template is a template to split.
 * **Separate the sending streams.** Send transactional and marketing on distinct subdomains and identities so reputation cannot cross over, per [deliverability](/foundations/deliverability.md). Keep transactional templates lean and fast.
-* **Carry consent state correctly.** A marketing unsubscribe must not stop a transactional message, and a transactional relationship must not be treated as marketing consent. Store the basis per message category, not per contact.
+* **Track consent state correctly.** A marketing unsubscribe must not stop a transactional message, and a transactional relationship must not be treated as marketing consent. Store the basis per message category, not per contact.
 * **Monitor the streams separately.** Transactional mail should show very high open and click engagement and near-zero complaints; a complaint rate creeping up on the transactional stream usually means marketing content has leaked into it.
 
 ## Lifecycle and measurement role
 
-Transactional touches are the most-opened mail a programme sends, which makes them tempting real estate and the contamination trap tempting to fall into. Their job in the lifecycle is reassurance and service, not promotion; their reliability is part of the customer relationship the owned channels are built on. Where a transactional template does carry a secondary offer, measure that offer's incremental contribution against a holdout rather than crediting it with the transactional message's baseline engagement. See [orchestration and frequency](/foundations/orchestration-and-frequency.md) for where it sits against the rest of the contact strategy.
+Transactional touches are the most-opened mail a programme sends, which makes them a tempting place for promotion and the contamination trap easy to fall into. Their job in the lifecycle is reassurance and service, not promotion; their reliability is part of the customer relationship the owned channels are built on. Where a transactional template does include a secondary offer, measure that offer's incremental contribution against a holdout rather than crediting it with the transactional message's baseline engagement. See [orchestration and frequency](/foundations/orchestration-and-frequency.md) for where it sits against the rest of the contact strategy.
 
 ## Related
 

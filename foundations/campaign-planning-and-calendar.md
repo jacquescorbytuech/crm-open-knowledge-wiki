@@ -25,7 +25,7 @@ sources:
 
 A lifecycle programme sends triggered and broadcast messages, and plans them differently.
 
-* **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse, and run continuously once built. They carry most of the relevance because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
+* **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse, and run continuously once built. Most of the programme's relevance comes from them, because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
 * **Broadcast** (batch) messages go to a segment on a schedule: the newsletter, the launch, the promotion. They are how the calendar's planned moments reach the audience.
 
 Most programmes lean too hard on broadcast because it is the visible, plannable work, and under-invest in the triggered layer that does more of the work. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).

@@ -1,11 +1,11 @@
 ---
 type: Reference
 title: Personalisation Mechanics
-description: How a personalised value is resolved into a message: the templating languages that express it, and the range from profile-attribute substitution fixed at send, through external content fetched as the send renders, to live content resolved at the moment of open, with the freshness-versus-fragility trade each point on the timeline carries.
+description: How a personalised value is resolved into a message: the templating languages that express it, and the range from profile-attribute substitution fixed at send, through external content fetched as the send renders, to live content resolved at the moment of open, and the freshness-versus-fragility trade at each point on the timeline.
 tags: [personalisation, dynamic-content, merge-tags, templating, liquid, connected-content, open-time, live-content]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-15T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: salesforce-ampscript-for-marketing-cloud-engagement
     resource: https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ampscript.html
@@ -50,7 +50,7 @@ sources:
 
 Every personalised message is, underneath, a template: static markup with placeholders and logic that a rendering engine resolves per recipient. The language that template is written in is the substrate the rest of this sits on, and each engagement platform ships its own. Salesforce Marketing Cloud has `AMPscript`, with `GTL` (Guide Template Language) and server-side JavaScript (`SSJS`) alongside it for heavier logic. Braze uses `Liquid`. Iterable uses `Handlebars`. Marketo runs Apache `Velocity` for its email scripting. Each platform picks a base syntax and extends it with its own functions, so a template is rarely portable between them even when the `{{ }}` placeholders look alike.
 
-A merge field is the simplest expression in that language, a placeholder swapped for subscriber data: `Hi {{ first_name }}`. The same language also carries the logic that makes personalisation more than substitution: conditionals (`{% if %}`), loops over a collection (`{% for item in cart %}`), filters that transform a value (`{{ price | money }}`), and the fallback that protects against missing data (`{{ first_name | default: "there" }}`). Dynamic-content blocks, regions that show different markup to different audiences, are the same conditional logic applied to a layout instead of a word. The discipline of testing all of this, the blank-merge check, fallback coverage, and branch audit, lives in [segmentation and data](/foundations/segmentation-and-data.md); it is the same check whether the value is a name or a whole block.
+A merge field is the simplest expression in that language, a placeholder swapped for subscriber data: `Hi {{ first_name }}`. The same language also provides the logic that makes personalisation more than substitution: conditionals (`{% if %}`), loops over a collection (`{% for item in cart %}`), filters that transform a value (`{{ price | money }}`), and the fallback that protects against missing data (`{{ first_name | default: "there" }}`). Dynamic-content blocks, regions that show different markup to different audiences, are the same conditional logic applied to a layout instead of a word. The discipline of testing all of this, the blank-merge check, fallback coverage, and branch audit, lives in [segmentation and data](/foundations/segmentation-and-data.md); it is the same check whether the value is a name or a whole block.
 
 Templating is the *how-expressed* layer and is largely independent of when the value resolves. The same `{{ }}` syntax can hold a profile attribute fixed at send or an external value fetched mid-render.
 
@@ -68,7 +68,7 @@ Templating is the *how-expressed* layer and is largely independent of when the v
 
 All of them trade freshness against reliability. A profile attribute is cheap and almost always renders, but its value can be out of date by the time it is read. An external fetch is current at send but adds a call that can time out. An open-time image is current when it is seen but depends on a chain of steps that can each break. Resolving later in the timeline gains freshness and adds points where the render can fail.
 
-Open-time content carries the sharpest version of that cost, because it collides with rules that hold elsewhere in the programme. The substance of a message belongs in live text, not locked in an image, since [images are blocked by default in many clients](/foundations/message-design-and-rendering.md) and an image of an offer renders as an empty box and reads as nothing under a screen reader. Open-time personalisation requires the value to be an image, so it can only safely carry content that is secondary or decorative, never the only copy of the offer or the call to action.
+Open-time content pays the sharpest version of that cost, because it collides with rules that hold elsewhere in the programme. The substance of a message belongs in live text, not locked in an image, since [images are blocked by default in many clients](/foundations/message-design-and-rendering.md) and an image of an offer renders as an empty box and reads as nothing under a screen reader. Open-time personalisation requires the value to be an image, so it can only safely hold content that is secondary or decorative, never the only copy of the offer or the call to action.
 
 It also breaks mechanically. Apple's Mail Privacy Protection prefetches images when a message is received rather than when it is opened, so the request that was meant to resolve at the open resolves at the proxy instead, at a time and from a network that are not the recipient's: the countdown freezes at prefetch, the location resolves to a data centre, and open tracking breaks in the same stroke. Image caching does the rest. Mailbox providers route images through their own proxies (Gmail through `googleusercontent.com`) and cache the fetched copy, so a live image that does not defeat the cache is rendered once and then served stale to every later open, even the same recipient reopening. Live-content tools work around this with a unique URL per request and `Cache-Control: no-store` headers, but the technique only pays off for the share of the audience whose client fetches images live and uncached, which is a shrinking one. See [deliverability](/foundations/deliverability.md).
 
@@ -87,7 +87,7 @@ A value's source should resolve the same across all of them, the same `loyalty_t
 
 ## The recipient's side of resolving at open
 
-The open-time image request is also a disclosure. It reports that the message was opened and can carry the recipient's IP, rough location, device, and the time, the same surface that an open-tracking pixel exposes, now carrying the content as well as the metric. A method that resolves at open necessarily signals that the open happened. That is defensible when the personalisation serves the recipient, a delivery window, a genuinely current price, and harder to defend when the same channel is used to time pressure against them. What separates personalisation a recipient would accept from personalisation aimed against them is the objective it serves, the same distinction drawn in [decisioning](/foundations/decisioning-and-personalisation.md).
+The open-time image request is also a disclosure. It reports that the message was opened and can reveal the recipient's IP, rough location, device, and the time, the same surface that an open-tracking pixel exposes, now serving the content as well as the metric. A method that resolves at open necessarily signals that the open happened. That is defensible when the personalisation serves the recipient, a delivery window, a genuinely current price, and harder to defend when the same channel is used to time pressure against them. What separates personalisation a recipient would accept from personalisation aimed against them is the objective it serves, the same distinction drawn in [decisioning](/foundations/decisioning-and-personalisation.md).
 
 ## How this sits with decisioning and rendering
 

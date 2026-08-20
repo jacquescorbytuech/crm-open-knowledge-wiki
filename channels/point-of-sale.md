@@ -46,11 +46,11 @@ Capturing identity at the moment of first purchase, turning an anonymous transac
 
 ## Point of sale versus the digital channels
 
-POS is the bridge between the offline transaction and the addressable record, and the one surface that catches the customer in person with intent already demonstrated. Use it for what only it can do: convert an anonymous shopper into a known, consented customer, and act at the instant of purchase. Hand everything between visits to the channels built for it, the receipt offer drops into the [wallet](/channels/wallet-passes.md), the follow-up arrives by [email](/channels/email.md) or [SMS](/channels/sms-and-rcs.md), and [orchestration and frequency](/foundations/orchestration-and-frequency.md) decides which of them carries the next message. The pass is the natural companion: the barcode the lane scans is the same token the digital programme updates.
+POS is the bridge between the offline transaction and the addressable record, and the one surface that catches the customer in person with intent already demonstrated. Use it for what only it can do: convert an anonymous shopper into a known, consented customer, and act at the instant of purchase. Hand everything between visits to the channels built for it, the receipt offer drops into the [wallet](/channels/wallet-passes.md), the follow-up arrives by [email](/channels/email.md) or [SMS](/channels/sms-and-rcs.md), and [orchestration and frequency](/foundations/orchestration-and-frequency.md) decides which of them sends the next message. The pass is the natural companion: the barcode the lane scans is the same token the digital programme updates.
 
 ## Constraints
 
-The channel is bounded by the POS integration, by the human editor, and by physical presence. The vendor API limits what can render and how fast; the associate is an unreliable conduit who may never surface the message; the receipt and terminal carry only a few lines and share them with operational content; and identity resolution fails on any transaction where the customer presents no loyalty key, leaving a large anonymous tail you cannot personalise to. None of this reaches an absent customer at all.
+The channel is bounded by the POS integration, by the human editor, and by physical presence. The vendor API limits what can render and how fast; the associate is an unreliable conduit who may never surface the message; the receipt and terminal fit only a few lines and share them with operational content; and identity resolution fails on any transaction where the customer presents no loyalty key, leaving a large anonymous tail you cannot personalise to. None of this reaches an absent customer at all.
 
 ## Measurement
 

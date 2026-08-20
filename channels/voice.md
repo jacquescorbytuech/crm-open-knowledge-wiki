@@ -57,7 +57,7 @@ High-value, complex, or time-sensitive moments that justify a synchronous call a
 
 ## Voice versus the messaging channels
 
-Voice is synchronous, persuasive, and expensive, and it carries the heaviest legal load, so reserve it for the moment that genuinely needs a conversation. Anything that can be a message should be one, an [SMS](/channels/sms-and-rcs.md), a [conversational](/channels/conversational-messaging.md) thread, or an [email](/channels/email.md); the call is for what a message cannot resolve, a negotiation, a complex support case, a high-value save. Run it under the same contact strategy so a call does not land on top of three other touches; see [orchestration and frequency](/foundations/orchestration-and-frequency.md).
+Voice is synchronous, persuasive, and expensive, and it is the most legally exposed channel, so reserve it for the moment that genuinely needs a conversation. Anything that can be a message should be one, an [SMS](/channels/sms-and-rcs.md), a [conversational](/channels/conversational-messaging.md) thread, or an [email](/channels/email.md); the call is for what a message cannot resolve, a negotiation, a complex support case, a high-value save. Run it under the same contact strategy so a call does not land on top of three other touches; see [orchestration and frequency](/foundations/orchestration-and-frequency.md).
 
 ## Constraints
 

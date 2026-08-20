@@ -5,7 +5,7 @@ description: The highest volume, lowest marginal cost, and most heavily mediated
 tags: [channel, email, deliverability, lifecycle]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: google-email-sender-guidelines
     resource: https://support.google.com/a/answer/81126
@@ -29,7 +29,7 @@ sources:
 
 ## What it is
 
-Email is the workhorse of lifecycle marketing: a message addressed to an address on a list you hold, delivered over open federated protocols, at effectively zero marginal cost per send. It is the highest volume and lowest cost channel, and the one with the deepest tooling, the longest measurement history, and the most editing between you and the recipient.
+Email is the core channel of lifecycle marketing: a message addressed to an address on a list you hold, delivered over open federated protocols, at effectively zero marginal cost per send. It is the highest volume and lowest cost channel, and the one with the deepest tooling, the longest measurement history, and the most editing between you and the recipient.
 
 ## Permission and reach
 
@@ -48,7 +48,7 @@ The format constrains the craft, and the constraints are concrete.
 * **MIME.** Send a `multipart/alternative` message carrying both a plain-text and an HTML part, plainest first per the standard; a missing plain-text part is a spam signal and degrades clients that prefer it.
 * **Unsubscribe headers.** Bulk senders must include a `List-Unsubscribe` header (RFC 2369) and support one-click unsubscribe via the `List-Unsubscribe-Post` header (RFC 8058), in addition to a visible in-body link.
 * **Authentication.** SPF, DKIM, and aligned DMARC are the price of entry, not an optimisation. See [authentication](/foundations/authentication.md).
-* **Sending infrastructure.** Mail is relayed by Mail Transfer Agents over SMTP, which is why an ESP is at bottom a managed MTA fleet; the transport itself, the SMTP conversation, the envelope-versus-headers distinction, and how bounces come back, is in [sending infrastructure](/foundations/sending-infrastructure.md). A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate [transactional and marketing](/foundations/transactional-messaging.md) streams, ideally on distinct subdomains, so a marketing reputation problem cannot poison transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
+* **Sending infrastructure.** Mail is relayed by Mail Transfer Agents over SMTP, which is why an ESP is at bottom a managed MTA fleet; the transport itself, the SMTP conversation, the envelope-versus-headers distinction, and how bounces come back, is in [sending infrastructure](/foundations/sending-infrastructure.md). A new sending IP or domain needs warming, ramping volume on the most engaged subscribers first. Separate [transactional and marketing](/foundations/transactional-messaging.md) streams, ideally on distinct subdomains, so a marketing reputation problem cannot affect transactional delivery. The warming ramp, subdomain split, and recovery steps live in [deliverability](/foundations/deliverability.md).
 
 Rendering across the client landscape, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
@@ -58,7 +58,7 @@ Broad mid funnel work where some summary distortion is acceptable: newsletters, 
 
 ## Constraints
 
-Opens are corrupted by image prefetch and Mail Privacy Protection, so they are directional only and click, conversion, reply, and unsubscribe carry the signal. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
+Opens are corrupted by image prefetch and Mail Privacy Protection, so they are directional only and click, conversion, reply, and unsubscribe are the reliable signals. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
 
 List hygiene is a deliverability lever, not housekeeping. Suppress hard bounces immediately and never resend to them, retire addresses after repeated soft bounces, and sunset the never-engaging tail before it drags sender reputation down. Wire these as automated suppression rules, see [automation and sequences](/foundations/automation-and-sequences.md), run them as part of ongoing [database health](/foundations/database-health.md), and work the recovery order in [deliverability](/foundations/deliverability.md).
 

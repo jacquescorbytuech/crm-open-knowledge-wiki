@@ -5,7 +5,7 @@ description: Providers treat engagement as a property of the sender, so weak eng
 tags: [principle, deliverability, engagement, reputation]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: word-to-the-wise-deliveries-and-opens
     resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
@@ -30,7 +30,7 @@ The engagement that moves placement is the one the provider observes directly, n
 
 * The set and forget approach to disengaged segments is now actively expensive.
 * List hygiene and frequency discipline are deliverability inputs, not nice to haves.
-* The cost of sending to dead weight is the engagement cohort drag on active sends plus the accelerated loss of the dormant cohort to provider initiated unsubscribe.
+* The cost of sending to the dormant tail is the engagement cohort drag on active sends plus the accelerated loss of the dormant cohort to provider initiated unsubscribe.
 
 ## Related
 

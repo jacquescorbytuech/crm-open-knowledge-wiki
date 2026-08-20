@@ -66,7 +66,7 @@ An example tier ladder, a common structure rather than a recommended set of numb
 | Gold | 750 units | Free shipping, priority support |
 | Platinum | 2,000 units | Dedicated service, exclusive events |
 
-Two design choices carry most of the weight. First, escalate the benefit, not just the discount, so higher tiers offer status and access the brand can sustain. Second, run the nudge mechanic: show each member their progress to the next tier, in absolute terms ("180 units to Gold") and on a visible bar, in account and in lifecycle email. Progress framing turns an abstract status into a goal a member is part-way through and reluctant to abandon, which is the mechanism that drives incremental spend near a threshold. Decide and publish how status renews (rolling window or annual reset) so a member knows what protects their tier.
+Escalate the benefit, not just the discount, so higher tiers offer status and access the brand can sustain. Then run the nudge mechanic: show each member their progress to the next tier, in absolute terms ("180 units to Gold") and on a visible bar, in account and in lifecycle email. Progress framing turns an abstract status into a goal a member is part-way through and reluctant to abandon, which is the mechanism that drives incremental spend near a threshold. Decide and publish how status renews (rolling window or annual reset) so a member knows what protects their tier.
 
 ## How to run referrals
 

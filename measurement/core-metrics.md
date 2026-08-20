@@ -5,7 +5,7 @@ description: The metric tree a lifecycle programme is judged on, from engagement
 tags: [metrics, metric-tree, north-star, guardrails, kpis, leading-indicators]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: apple-mail-privacy-protection-apple-support
     resource: https://support.apple.com/guide/iphone/protect-mail-activity-iphd22a4a3a8/ios
@@ -28,10 +28,10 @@ A decision metric changes what you do when it moves. A vanity metric only change
 The test for any metric on a dashboard is one question: if this number moved ten percent, would it change what you do next week? Walk it through:
 
 * Name the move. Write down the concrete action a ten percent swing would trigger: cut a flow, shift budget, change a send time, raise an alarm.
-* If there is no action, the metric is decoration. Move it off the scorecard and into diagnostics, where it earns its place by explaining other numbers, not by being a goal.
+* If there is no action, the metric is decoration. Move it off the scorecard and into diagnostics, where its job is explaining other numbers, not being a goal.
 * Watch for proxies that have drifted from the thing they proxy. Opens once tracked attention; MPP severed that link, so an opens move no longer maps to any reliable action. A metric that can rise without the underlying value rising is a vanity metric whatever it used to be.
 
-Most dashboards carry more vanity than decision metrics. The work is demoting the decoration, not adding more of it.
+Most dashboards show more vanity than decision metrics. The work is demoting the decoration, not adding more of it.
 
 ## A North Star and its guardrails
 

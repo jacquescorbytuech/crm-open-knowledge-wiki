@@ -5,7 +5,7 @@ description: How to use Apple Wallet and Google Wallet passes as a persistent, u
 tags: [channel, wallet, apple-wallet, google-wallet, passkit, passes, loyalty, coupons, lock-screen]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: apple-wallet-developer-guide-passkit
     resource: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html
@@ -27,7 +27,7 @@ A wallet pass is a loyalty card, coupon, ticket, or membership stored in Apple W
 
 ## Permission and reach
 
-The user adds the pass deliberately, the add-to-wallet action is the opt-in, and can allow the pass to send notifications. Updating a held pass needs no fresh consent and carries no per-message cost, which is the channel's quiet advantage over the send-based channels. The trade is reach: a pass is bound to the wallet on a device, there is no portable list, and the audience is only ever the set of users who chose to add it.
+The user adds the pass deliberately, the add-to-wallet action is the opt-in, and can allow the pass to send notifications. Updating a held pass needs no fresh consent and has no per-message cost, the channel's advantage over the send-based channels. The trade is reach: a pass is bound to the wallet on a device, there is no portable list, and the audience is only ever the set of users who chose to add it.
 
 ## Filtering and editing
 

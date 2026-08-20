@@ -5,7 +5,7 @@ description: How to build a cohort retention curve, compute and segment lifetime
 tags: [retention, ltv, cohort, ltv-cac, churn, unit-economics, payback, sensitivity]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: ama-ltv-calculator
     resource: https://www.ama.org/toolkits/ama-lifetime-value-calculator/
@@ -55,7 +55,7 @@ Group customers by when they were acquired and track what share remain active ov
 retention(N) = active_in_month_N / cohort_size_at_acquisition
 ```
 
-The shape carries the signal. Read it as decline then flatten: an early drop as casual sign ups fall away, settling onto a flatter floor that is your stable core of long term customers. The height of that floor is the number that matters, because it is the fraction worth a programme. A curve that keeps falling steeply without ever flattening has no core, which points to a product or fit problem that no amount of messaging will paper over. Reading retention as a curve rather than a single churn number is what turns it from a report card into a diagnostic. Segment the cohorts by acquisition channel, because customers acquired cheaply through one route often retain quite differently from another.
+The shape is the signal. Read it as decline then flatten: an early drop as casual sign ups fall away, settling onto a flatter floor that is your stable core of long term customers. The height of that floor is the number that matters, because it is the fraction worth a programme. A curve that keeps falling steeply without ever flattening has no core, which points to a product or fit problem that no amount of messaging will fix. Reading retention as a curve rather than a single churn number is what turns it from a report card into a diagnostic. Segment the cohorts by acquisition channel, because customers acquired cheaply through one route often retain quite differently from another.
 
 ## Contractual and non-contractual settings
 
@@ -67,11 +67,11 @@ The distinction dictates which tools fit. Contractual retention projects well fr
 
 The flattening has a mechanism worth understanding, because it changes the arithmetic. Period by period, the retention rate, meaning the share of last period's survivors who stay this period, usually rises as a cohort ages. It is tempting to read that as customers growing more loyal over time. Mostly they are not. A cohort mixes high-churn and low-churn customers, and the high-churn ones leave first, so what remains is steadily enriched in the loyal. The average retention rate climbs even when no single customer's churn probability has moved. This is a sorting effect in a mixed population, not a change of heart.[^fader-2010]
 
-The consequence is practical. Take one blended churn rate from an early period and apply it flat into the future and you will understate lifetime value, often badly, because you have assumed away the dynamic that makes long-lived customers valuable.[^fader-2010] The curve has to be read as a curve, rising tail and all, not collapsed to a single number. It is also why segmenting earns its keep: a blended curve mixes populations that churn differently and smears the sorting across them.
+The consequence is practical. Take one blended churn rate from an early period and apply it flat into the future and you will understate lifetime value, often badly, because you have assumed away the dynamic that makes long-lived customers valuable.[^fader-2010] The curve has to be read as a curve, rising tail and all, not collapsed to a single number. It is also the argument for segmenting: a blended curve mixes populations that churn differently and averages the sorting away.
 
 ## Projecting the curve beyond your data
 
-You usually need value over a longer horizon than your data covers. Two tempting shortcuts both go wrong: extrapolating the curve by eye, and assuming a constant retention rate. The constant rate ignores the rising tail and understates; a freehand fit tends to overstate. The disciplined route is to fit a model with an explicit story for how customers churn and let it project the tail. For contractual retention the shifted-beta-geometric model does this from as few as a handful of periods and runs in a spreadsheet.[^fader-2007] Whatever you fit, cap the horizon where the projection stops adding meaningful value rather than carrying it to infinity, and re-fit per cohort so a pricing or product change surfaces as a new curve instead of hiding inside an old average.
+You usually need value over a longer horizon than your data covers. Two tempting shortcuts both go wrong: extrapolating the curve by eye, and assuming a constant retention rate. The constant rate ignores the rising tail and understates; a freehand fit tends to overstate. The disciplined route is to fit a model with an explicit story for how customers churn and let it project the tail. For contractual retention the shifted-beta-geometric model does this from as few as a handful of periods and runs in a spreadsheet.[^fader-2007] Whatever you fit, cap the horizon where the projection stops adding meaningful value rather than projecting it to infinity, and re-fit per cohort so a pricing or product change surfaces as a new curve instead of hiding inside an old average.
 
 ## Lifetime value
 
@@ -119,7 +119,7 @@ A blended LTV averages away the decisions. Compute it separately by:
 
 * Acquisition source. Channels differ in both CAC and retention, so a cheap source can still be the worst once you weigh how badly it retains, and an expensive one the best. Only segmented LTV:CAC tells you where the next acquisition pound should go.
 * Cohort. Comparing acquisition months shows whether newer customers are retaining better or worse, which is the earliest read on whether a programme or product change is working.
-* Tier or plan. Higher tiers usually carry both higher margin and higher retention, so their LTV justifies more acquisition spend and more programme attention.
+* Tier or plan. Higher tiers usually have both higher margin and higher retention, so their LTV justifies more acquisition spend and more programme attention.
 
 The point of segmenting is that LTV is an input to a decision, and the decision (where to spend, whom to keep) lives at the segment level, not the average.
 

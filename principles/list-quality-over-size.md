@@ -5,7 +5,7 @@ description: An engaged list of 500 outperforms a disengaged list of 10,000. Opt
 tags: [principle, list, engagement]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 ---
 
 ## Stance
@@ -14,7 +14,7 @@ Engagement weighted list size is the only growth metric that means anything; raw
 
 ## Why it holds
 
-The classical metric of CRM, list size, is increasingly disconnected from the size of the audience you can actually reach. A database that is mostly dormant is not worth its headline count. It is worth the engaged subset the provider still routes your messages toward, and the dormant remainder actively drags reach for the engaged part. The mechanism is sharpest in email, where sender reputation is shared across the file, but the logic carries to any addressable channel: a push audience is the install base still opted in and opening the app, an SMS file the numbers that still respond rather than report. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md) for the mechanism.
+The classical metric of CRM, list size, is increasingly disconnected from the size of the audience you can actually reach. A database that is mostly dormant is not worth its headline count. It is worth the engaged subset the provider still routes your messages toward, and the dormant remainder actively drags reach for the engaged part. The mechanism is sharpest in email, where sender reputation is shared across the file, but the logic holds on any addressable channel: a push audience is the install base still opted in and opening the app, an SMS file the numbers that still respond rather than report. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md) for the mechanism.
 
 ## Consequences
 

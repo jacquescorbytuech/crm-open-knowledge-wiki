@@ -5,7 +5,7 @@ description: How to build a message so it renders and reads everywhere it lands,
 tags: [design, rendering, responsive, dark-mode, accessibility, alt-text, preheader, mjml, qa]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: litmus-email-client-market-share-apple-largest
     resource: https://www.litmus.com/email-client-market-share
@@ -88,11 +88,11 @@ Every major client now offers a dark mode, and several recolour your message whe
 
 ## Accessibility
 
-A meaningful share of recipients use assistive technology, and an inaccessible message simply fails for them. The basics carry most of the weight:
+A meaningful share of recipients use assistive technology, and an inaccessible message simply fails for them. The basics get you most of the way:
 
 1. **Use genuine semantic headings in reading order.** Mark headings as real headings, not bold text, and order the source so a screen reader reads it the way a sighted reader scans it. Visual order and source order should agree.
 2. **Set the language and a meaningful title.** Declare the document language so a screen reader pronounces it correctly.
-3. **Write descriptive alt text that carries the key info.** The amount, the code, the CTA, anything the message depends on must be in the alt text, not only in the image. Mark purely decorative images as such so a screen reader skips them.
+3. **Write descriptive alt text with the key info.** The amount, the code, the CTA, anything the message depends on must be in the alt text, not only in the image. Mark purely decorative images as such so a screen reader skips them.
 4. **Clear WCAG AA contrast.** Aim for at least 4.5:1 for normal text against its background, and check the dark-mode rendering separately since recolouring can drop a passing pair below the threshold.
 5. **Do not rely on colour alone.** Pair colour with text or shape so meaning survives for a recipient who cannot distinguish it.
 6. **Keep the substance as real, live text.** Real text resizes, reflows, and reads under assistive technology in a way an image of text never will.
@@ -101,7 +101,7 @@ Accessible design also tends to be cleaner design, so the cost is low.
 
 ## Alt text
 
-Alt text is the text a client shows in place of an image that is blocked, slow, or failed, and many clients block images by default until the recipient chooses to load them. Without alt text, an image-led message renders as empty boxes. Write functional alt text that carries the image's message, and never let a critical word, the offer, the code, the call to action, live only inside an image. This is also why image-only emails are a [deliverability](/foundations/deliverability.md) risk: the classifier and the summariser read text, not pixels.
+Alt text is the text a client shows in place of an image that is blocked, slow, or failed, and many clients block images by default until the recipient chooses to load them. Without alt text, an image-led message renders as empty boxes. Write functional alt text that states the image's message, and never leave a critical word, the offer, the code, the call to action, only inside an image. This is also why image-only emails are a [deliverability](/foundations/deliverability.md) risk: the classifier and the summariser read text, not pixels.
 
 ## Preheader text
 
@@ -113,7 +113,7 @@ The substance belongs in live text, not locked in images. It renders when images
 
 ## Coding for the inbox
 
-Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would, so the discipline is writing the most resilient, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references carry most of this weight and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
+Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would, so the discipline is writing the most resilient, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references cover most of this and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
 
 ## Pre-send rendering QA
 
@@ -122,9 +122,9 @@ Run the same checklist before every send, weighted to the clients in your market
 * [ ] **Major clients.** Renders correctly in Apple Mail, Gmail, and Outlook at minimum, the three that take most opens, plus any other client significant in your list.
 * [ ] **Mobile.** Single column, no horizontal scroll, body text readable without pinching, tap targets large and well spaced.
 * [ ] **Dark mode.** Logos and icons stay visible, text keeps contrast, nothing inverts into an unreadable block, checked across clients that recolour.
-* [ ] **Images off.** The message still makes sense with images blocked: alt text carries the offer, the code, and the CTA, and the layout does not collapse to empty boxes.
+* [ ] **Images off.** The message still makes sense with images blocked: alt text covers the offer, the code, and the CTA, and the layout does not collapse to empty boxes.
 * [ ] **Real text and links.** Headlines, offer, and CTA are live text with a working bulletproof button, not locked inside an image.
-* [ ] **Accessibility.** Semantic headings in reading order, AA contrast in both light and dark, no meaning carried by colour alone.
+* [ ] **Accessibility.** Semantic headings in reading order, AA contrast in both light and dark, no meaning conveyed by colour alone.
 * [ ] **Preheader.** Set deliberately to extend the subject, not a stray "view in browser" or address block.
 * [ ] **Multipart.** A plain-text part is present alongside the HTML, plainest first.
 * [ ] **Size.** HTML lean enough to stay under the Gmail clipping threshold so the CTA and tracking are not buried. See [email](/channels/email.md).
@@ -138,7 +138,7 @@ Email's rendering is the least predictable of the channels. The other channels t
 * **RCS** adds rich cards, carousels, and suggested replies, but only where both endpoints support it, so every RCS message needs an SMS fallback designed in.
 * **Push** renders in a fixed OS template you cannot restyle: a title, a short body truncated on the lock screen, an optional image or action buttons the platform may or may not show. Design to the truncation and assume the image is absent. See [push](/channels/push.md).
 * **In-app** is the surface you fully control, native components rendered by your own SDK, so the variation is device size and OS version rather than client quirks, and the same mobile-first, accessibility, and contrast discipline applies. See [in-app](/channels/in-app.md).
-* **Wallet passes** render into the platform's pass template, so the design work is choosing which fields carry the message within Apple's and Google's fixed layouts. See [wallet passes](/channels/wallet-passes.md).
+* **Wallet passes** render into the platform's pass template, so the design work is choosing which fields hold the message within Apple's and Google's fixed layouts. See [wallet passes](/channels/wallet-passes.md).
 
 ## Related
 

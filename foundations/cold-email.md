@@ -5,7 +5,7 @@ description: Why cold email sits outside the consent-first discipline the rest o
 tags: [cold-email, spam, consent, can-spam, pecr, deliverability, b2b]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-15T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: ftc-can-spam-act-compliance-guide-for
     resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
@@ -30,7 +30,7 @@ Every other page here assumes consent. The list is built from people who asked t
 
 Spam in the moral sense is not the same as unlawful, and the regimes diverge sharply on this exact point. The mechanics are in [legislation and compliance](/references/legislation-and-compliance.md); what matters here is where the window is open.
 
-* **United States.** CAN-SPAM is an opt-out regime, not an opt-in one. There is no prior consent requirement for commercial email, so cold email to US recipients is lawful provided the message uses accurate headers and a truthful subject, identifies itself as an advertisement, carries a valid physical postal address, and offers an opt out honoured within ten business days. This is the widest window of any major regime.
+* **United States.** CAN-SPAM is an opt-out regime, not an opt-in one. There is no prior consent requirement for commercial email, so cold email to US recipients is lawful provided the message uses accurate headers and a truthful subject, identifies itself as an advertisement, includes a valid physical postal address, and offers an opt out honoured within ten business days. This is the widest window of any major regime.
 * **United Kingdom, business addresses.** PECR regulation 22's consent requirement applies to *individual* subscribers. Marketing to *corporate* subscribers (companies, LLPs, public bodies) does not require consent, so B2B cold email has a lawful path the consumer channel does not. It is cleanest at role-based addresses such as `info@`, `sales@`, or `enquiries@`, which are not personal data and sit unambiguously on the corporate side of the line. A message to a named individual at a company (`jane.smith@`) is still that person's personal data under UK GDPR, so the right to object and a lawful basis apply even there.
 
 > [!warning] The window does not cover consumers in opt-in regimes
@@ -40,7 +40,7 @@ Spam in the moral sense is not the same as unlawful, and the regimes diverge sha
 
 Even inside the window, cold email works against the asset the rest of this programme spends its effort building. A cold list has no engagement history, so the provider has nothing good to weigh, and the early complaints and spam-trap hits that cold sending attracts feed straight into the sender-level reputation that decides placement. That is the mechanism in [engagement is the new deliverability](/principles/engagement-is-deliverability.md): weak engagement is read as a property of the sender, so a cold campaign does not only underperform on its own, it drags the placement of the warmed, consented programme sharing that reputation. The complaint thresholds the bulk-sender rules enforce are easy to breach with a list that never opted in.
 
-In practice, if cold outreach is run at all, it is run on separate sending infrastructure (a distinct domain and IP) so it cannot poison the warmed estate, at low volume, to genuinely relevant recipients, with the opt out honoured instantly. Those are damage-limitation guardrails, not a recipe for it working well. In short, the lawful window is real and narrow, and even within it cold email earns less and risks more than the consent-first path it bypasses.
+In practice, if cold outreach is run at all, it is run on separate sending infrastructure (a distinct domain and IP) so it cannot damage the warmed estate, at low volume, to genuinely relevant recipients, with the opt out honoured instantly. Those are damage-limitation guardrails, not a recipe for it working well. In short, the lawful window is real and narrow, and even within it cold email earns less and risks more than the consent-first path it bypasses.
 
 ## Related
 

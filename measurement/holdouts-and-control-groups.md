@@ -33,7 +33,7 @@ Keep it small, keep it random, and keep it permanent.
 
 ## Per-campaign control groups
 
-For an individual send, sequence, or new automation, hold out a control from the eligible audience and measure the same outcomes. This reads the incremental effect of that specific intervention rather than the programme as a whole, and it is how a new idea earns its place before it is rolled out. The discipline is the same one direct mail has always used: the mailed file against a held back control. See [direct mail](/channels/direct-mail.md).
+For an individual send, sequence, or new automation, hold out a control from the eligible audience and measure the same outcomes. This reads the incremental effect of that specific intervention rather than the programme as a whole, and it is how a new idea proves itself before it is rolled out. The discipline is the same one direct mail has always used: the mailed file against a held back control. See [direct mail](/channels/direct-mail.md).
 
 ## How to size and place a holdout
 
@@ -79,7 +79,7 @@ Once an experiment has run, the read is the same arithmetic whether it is a glob
 
 ## Geo experiments when individuals cannot be split
 
-When you cannot randomise at the person level, for instance with brand or offline activity, randomise geographies instead: comparable regions are treated or held back and the difference is read against the controls. This is the workhorse of paid media incrementality, with open tooling such as Meta GeoLift and Google's Meridian, and the same logic applies to any channel that resists user level holdout.
+When you cannot randomise at the person level, for instance with brand or offline activity, randomise geographies instead: comparable regions are treated or held back and the difference is read against the controls. This is the standard method of paid media incrementality, with open tooling such as Meta GeoLift and Google's Meridian, and the same logic applies to any channel that resists user level holdout.
 
 The setup essentials, at a practical level:
 

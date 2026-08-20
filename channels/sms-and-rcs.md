@@ -77,12 +77,12 @@ You do not connect to mobile networks directly. An aggregator (the messaging sid
 
 ## Branded sender IDs and verification
 
-Outside the US, a large share of A2P traffic uses an alphanumeric sender ID: a short text label, usually the brand name, shown in place of a phone number at the top of the message. It gives the message an identity but carries no reply path, so it suits one-way alerts and notifications rather than two-way exchanges. It is also trivial to spoof, since nothing in the protocol stops a sender from setting whatever label it likes, which is why scam texts so often arrive under a bank or government name.
+Outside the US, a large share of A2P traffic uses an alphanumeric sender ID: a short text label, usually the brand name, shown in place of a phone number at the top of the message. It gives the message an identity but has no reply path, so it suits one-way alerts and notifications rather than two-way exchanges. It is also trivial to spoof, since nothing in the protocol stops a sender from setting whatever label it likes, which is why scam texts so often arrive under a bank or government name.
 
 Markets are closing that gap with sender ID registers that bind the label to the organisation entitled to use it. Australia's SMS Sender ID Register, run by the ACMA as part of its anti-scam programme, is the furthest along. Registration through a participating telco or message provider opened on 30 November 2025, and registration becomes mandatory from 1 July 2026. A registered sender ID must be clearly tied to the organisation, such as a matching business name or trademark, and an Australian business registers against the contact details held in the Australian Business Register, which must be current. The mechanism mirrors US 10DLC: a registration regime that gates whether your branded identity reaches the handset, with the unregistered case degraded rather than blocked outright.
 
 > [!warning] An unregistered brand label is shown as `Unverified`
-> From 1 July 2026, an SMS sent under an unregistered Australian sender ID has its brand name replaced with `Unverified` and is grouped into a single thread alongside other unregistered senders, including suspected scams. Legitimate traffic then lands next to the spam, stripped of the identity the label was meant to carry.
+> From 1 July 2026, an SMS sent under an unregistered Australian sender ID has its brand name replaced with `Unverified` and is grouped into a single thread alongside other unregistered senders, including suspected scams. Legitimate traffic then lands next to the spam, stripped of the identity the label was meant to establish.
 
 Treat this as the SMS counterpart of email authentication. An unverified sender label does to a text roughly what a failed `DMARC` check does to an email: the message may survive, but it arrives without its trust markers and in worse company. Where a register operates in a market you send to, register every sender ID you use before its deadline and keep the underlying business-register record current, or your own brand traffic falls into the unverified bucket. See [authentication](/foundations/authentication.md).
 
@@ -109,7 +109,7 @@ Time critical and high value messages that must not be summarised or delayed: fr
 Length limits and weak layout control mean the proposition must be the message, not the wrapper. The craft is to land one idea and one action inside a single segment.
 
 * **Write to one segment.** Lead with the value or the instruction, name the sender so the message is not anonymous, and cut every word the recipient can infer. Watch the live segment count and the encoding as you draft.
-* **Use branded, tracked short links, not generic shorteners.** A link on your own short domain looks legitimate, carries the tracking you need, and is far less likely to be flagged by carrier filters than a public shortener that spam traffic also uses. Make sure click attribution survives the redirect; a link the recipient does not trust does not get tapped, and a link your stack cannot measure breaks the only mid-funnel signal you have.
+* **Use branded, tracked short links, not generic shorteners.** A link on your own short domain looks legitimate, includes the tracking you need, and is far less likely to be flagged by carrier filters than a public shortener that spam traffic also uses. Make sure click attribution survives the redirect; a link the recipient does not trust does not get tapped, and a link your stack cannot measure breaks the only mid-funnel signal you have.
 * **For RCS, prefer a suggested action over a raw URL** where the client supports it, and keep the SMS fallback link intact for everyone else. A scannable QR is for cross-channel print and screen, not for a message read on the same phone.
 
 See [copywriting](/foundations/copywriting.md).
@@ -120,7 +120,7 @@ Among the more expensive digital channels per message, well above email and push
 
 ## Measurement
 
-Opens do not exist on this channel, so measurement reads delivery and downstream conversion, not engagement proxies. Delivery receipts are more reliable than push and confirm the message landed; clicks on a tracked link plus the conversion behind it carry the outcome signal. Because the cost and the intrusion are both high, read that conversion against a randomised holdout rather than crediting every conversion behind a send: hold back a control, compare treated against control, and bank only the incremental lift. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md). Opt out rate and per message cost are the discipline metrics, since SMS is the channel where frequency mistakes are most directly expensive.
+Opens do not exist on this channel, so measurement reads delivery and downstream conversion, not engagement proxies. Delivery receipts are more reliable than push and confirm the message landed; clicks on a tracked link plus the conversion behind it are the outcome signal. Because the cost and the intrusion are both high, read that conversion against a randomised holdout rather than crediting every conversion behind a send: hold back a control, compare treated against control, and bank only the incremental lift. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md). Opt out rate and per message cost are the discipline metrics, since SMS is the channel where frequency mistakes are most directly expensive.
 
 ## Lifecycle role
 

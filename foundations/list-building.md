@@ -5,7 +5,7 @@ description: How to build forms, choose single versus double opt in, design a co
 tags: [list-building, forms, lead-magnets, opt-in, double-opt-in, utm, attribution]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: baymard-institute-fewer-form-fields-reduce-abandonment
     resource: https://baymard.com/blog/checkout-flow-average-form-fields
@@ -20,7 +20,7 @@ sources:
 
 ## Forms
 
-Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form carries a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
+Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form has a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
 
 Fewer fields convert better, so collect the minimum that makes the subscriber usable and ask for the rest later through progressive profiling. To do that concretely:
 
@@ -82,7 +82,7 @@ When you run double opt in, the confirmation is a short flow, not just one email
 
 Knowing where a subscriber came from is as valuable as knowing how many you have. Use UTM parameters, dedicated landing pages, hidden form fields, custom ESP fields, and QR codes, and combine methods because attribution is always incomplete. Use a consistent naming convention from day one, or the data is useless within months.
 
-Fix a convention and apply it everywhere. The standard UTM trio carries it:
+Fix a convention and apply it everywhere. The standard UTM trio covers it:
 
 * `utm_source`, where the click came from (the platform or site): `instagram`, `newsletter`, `partner-site`.
 * `utm_medium`, the channel type: `social`, `email`, `cpc`, `qr`.
@@ -94,7 +94,7 @@ Lock the rules so the values stay clean: lowercase only, hyphens not spaces, a f
 https://example.com/guide?utm_source=instagram&utm_medium=social&utm_campaign=2026-spring-guide
 ```
 
-Capture those values into hidden form fields so they land on the contact record as the acquisition source, alongside the magnet tag from [Delivering the lead magnet](#delivering-the-lead-magnet). Now every subscriber carries where they came from, what brought them in, and which sequence they entered, which is what makes acquisition source attributable later.
+Capture those values into hidden form fields so they land on the contact record as the acquisition source, alongside the magnet tag from [Delivering the lead magnet](#delivering-the-lead-magnet). Now every subscriber record shows where they came from, what brought them in, and which sequence they entered, which is what makes acquisition source attributable later.
 
 ## Related
 

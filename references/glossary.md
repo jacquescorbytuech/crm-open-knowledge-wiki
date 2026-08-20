@@ -77,7 +77,7 @@ sources:
 | Churn | A customer lapsing or ending the relationship; churn rate is the share who do so in a period. |
 | Retention rate | The share of customers retained over a period; its inverse is churn. |
 | Lifecycle stage | Where a customer sits in the journey: acquisition, onboarding, engagement, retention, or winback. |
-| Winback | The lifecycle stage, and the messaging it carries, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
+| Winback | The lifecycle stage, and its messaging, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
 | Engagement score | A composite measure of how recently and often a contact engages (opens, clicks, sessions, purchases), used to trigger lifecycle stage transitions. |
 | Engagement tier | An engagement score banded into a few groups, such as active, moderate, and dormant, used to set frequency caps and channel eligibility. |
 | Loyalty program | A structured points, tier, or referral scheme that rewards repeat business. |
@@ -111,7 +111,7 @@ sources:
 | Term | Meaning |
 | --- | --- |
 | Open rate | Share of delivered mail where the pixel fired. Corrupted by MPP; directional only. |
-| Click through rate | Share of delivered mail that produced a link click. The workhorse metric. |
+| Click through rate | Share of delivered mail that produced a link click. The primary engagement metric. |
 | Click to open rate (CTOR) | Clicks divided by opens. Content engagement, independent of open noise. |
 | Conversion rate | Share that produced the downstream target action. The metric that pays. |
 | Complaint rate | Share marked as spam. A hard deliverability limit; keep under 0.1%. |

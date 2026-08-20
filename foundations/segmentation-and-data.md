@@ -29,7 +29,7 @@ A dynamic segment is a rule expression over profile and event fields. Write the 
 * **Onboarding incomplete.** `signup_date within last 14 days AND onboarding_completed = false AND email_consent = true`. Drives the welcome flow in [automation and sequences](/foundations/automation-and-sequences.md).
 * **Active SMS-permissioned.** `sms_consent = true AND last_click within last 60 days AND country = [region]`. Channel grant plus engagement, so an SMS send only ever reaches the permissioned and warm.
 
-When writing expressions, be explicit about time windows (last 30 days, not recently), because a vague window becomes a different segment on every platform, and always carry the consent and suppression conditions into the rule itself, so a segment can never resolve to a contact you may not message.
+When writing expressions, be explicit about time windows (last 30 days, not recently), because a vague window becomes a different segment on every platform, and always write the consent and suppression conditions into the rule itself, so a segment can never resolve to a contact you may not message.
 
 ## Segment overlap and the cascade into frequency
 
@@ -83,7 +83,7 @@ Audit the data and consent state on a cadence rather than waiting for a problem 
 
 * **Profile completeness.** Track the fill rate of the fields your segments depend on (consent flags, engagement dates, value fields). A field your targeting relies on that is blank for much of the list is a silent segmentation failure.
 * **Deduplication.** Periodically scan for duplicate identities and merge them under the controlled process above, so one person is not counted, contacted, or suppressed as two.
-* **Lawful basis and consent date.** Confirm every contact carries a recorded lawful basis and a consent timestamp, and that channel grants are stored separately (email permission is not SMS permission). Flag any contact missing a basis for review or suppression.
+* **Lawful basis and consent date.** Confirm every contact has a recorded lawful basis and a consent timestamp, and that channel grants are stored separately (email permission is not SMS permission). Flag any contact missing a basis for review or suppression.
 
 Set the cadence to your volume and risk; the point is that it is scheduled, with a written threshold, not triggered by an incident.
 

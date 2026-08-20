@@ -1,6 +1,6 @@
 # Foundations
 
-The operational layer: the cross-channel practices that run a lifecycle programme well. Read these alongside the [principles](/principles/), which set the stances these operations serve, and the [channels](/channels/), which carry the channel-specific delivery mechanics.
+The operational layer: the cross-channel practices that run a lifecycle programme well. Read these alongside the [principles](/principles/), which set the stances these operations serve, and the [channels](/channels/), which cover the channel-specific delivery mechanics.
 
 Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack, and reason about AI personalisation. The transport layer beneath every channel sits here too, alongside email's authentication and deliverability as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
 

@@ -31,7 +31,7 @@ sources:
 
 The real question in lifecycle marketing is not did the user open it. It is did sending it change what they did, against an identical user left alone. That is the uplift question, and it separates three groups: the persuadables, whom a message wins over; the sure things, who convert anyway and whom you waste a send on; and the do not disturbers, who would have converted if you had stayed quiet and whom messaging actively loses.
 
-For most senders the honest answer to that question is a number, not a model. A randomised holdout tells you whether a send, sequence, or programme moved behaviour in aggregate, and that single number is as far as the volume on most lists will carry you. Modelling which individuals are persuadable is a real thing you can do, but it is the high volume tier: a brand with a list in the tens of thousands cannot detect the sub percent moves it would need to train on. So lead with the holdout, treat the per user model as the layer you earn your way up to, and know which of the two you are actually in a position to run.
+For most senders the honest answer to that question is a number, not a model. A randomised holdout tells you whether a send, sequence, or programme moved behaviour in aggregate, and that single number is as much as the volume on most lists can support. Modelling which individuals are persuadable is a real thing you can do, but it is the high volume tier: a brand with a list in the tens of thousands cannot detect the sub percent moves it would need to train on. So lead with the holdout, treat the per user model as the layer you earn your way up to, and know which of the two you are actually in a position to run.
 
 ## Why prediction is not enough
 

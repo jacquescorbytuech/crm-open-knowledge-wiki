@@ -5,7 +5,7 @@ description: How to run a physical channel that lands intact: choose a format by
 tags: [channel, direct-mail, physical, retention, control-group, variable-data, match-back]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: usps-marketing-mail-formats-and-200-piece
     resource: https://pe.usps.com/businessmail101?ViewName=StandardMail
@@ -17,7 +17,7 @@ sources:
 
 ## What it is
 
-Direct mail is a physical piece delivered to a postal address: a postcard, a letter, a catalogue, a dimensional package. It has seen renewed interest in direct-to-consumer marketing precisely because the message arrives whole, with no model in the pipe to summarise, rank, or suppress it, on a surface the recipient handles directly.
+Direct mail is a physical piece delivered to a postal address: a postcard, a letter, a catalogue, a dimensional package. It has seen renewed interest in direct-to-consumer marketing precisely because the message arrives whole, with no model in the delivery path to summarise, rank, or suppress it, on a surface the recipient handles directly.
 
 ## Permission and reach
 
@@ -33,14 +33,14 @@ The format constrains the cost, the lead time, and the cut-through, and the choi
 
 * **Formats.** Postcards (cheapest, no envelope to open), letters, flats and large envelopes, catalogues, and dimensional packages that trade cost for cut-through. The cost ladder runs postcard, then letter, then dimensional, climbing steeply; the lead time runs to weeks, not minutes, because everything is printed, finished, and physically transported.
 * **Postal class.** In the US, bulk promotional mail goes as USPS Marketing Mail, which is bulk-only: a mailing must meet a minimum of 200 pieces or 50 pounds, so there is no economical single-piece send.
-* **Variable-data printing.** Variable-data printing personalises copy, imagery, and offers per recipient from the customer record, the physical analogue of merge tags and dynamic content. Drive it from the same fields the rest of the programme uses, name, last product, lapsed segment, tier, so the piece carries the relevance the digital channels do rather than a generic mailshot.
+* **Variable-data printing.** Variable-data printing personalises copy, imagery, and offers per recipient from the customer record, the physical analogue of merge tags and dynamic content. Drive it from the same fields the rest of the programme uses, name, last product, lapsed segment, tier, so the piece is as relevant as the digital channels rather than a generic mailshot.
 * **Bridging to digital.** A QR code, personalised URL (PURL), or unique promo code per recipient connects the physical piece to a trackable digital response. The mechanics matter: mint a unique value per recipient, not one shared code for the whole drop, and stamp it on the CRM record before the file goes to the printer. A per-recipient QR or PURL resolves to a landing page that records who scanned; a per-recipient promo code redeems against that one customer. Shared codes tell you the drop worked; unique codes tell you which recipient acted, which is what match-back needs.
 
 ## Format decision rule
 
 Pick the format from the value of the segment and the job, because the per-piece cost climbs fast and only high-value work earns the dimensional end.
 
-* **Postcard** for volume reactivation and offer drops to mid-value segments: cheapest, lands face-up with no envelope to open, carries one offer and one code.
+* **Postcard** for volume reactivation and offer drops to mid-value segments: cheapest, lands face-up with no envelope to open, fits one offer and one code.
 * **Letter** for recognition, winback copy that needs length, or anything where an envelope and a personalised letter raise the perceived value: more expensive, but it reads as addressed-to-you rather than a flyer.
 * **Dimensional package** only for the top tier where the lifetime value of recovering or retaining the account dwarfs the piece cost: high-value winback, top-customer recognition, premium acquisition into a saturated inbox. Reserve the spend for segments where the expected incremental return clears the steep cost.
 

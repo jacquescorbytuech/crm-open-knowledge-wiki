@@ -31,7 +31,7 @@ Lead scoring ranks contacts so the programme can act on the ones worth acting on
 * **Fit (explicit).** How closely the contact matches the ideal customer: the [firmographic](/foundations/segmentation-models.md) attributes (industry, company size, revenue) and the person's role and seniority. Fit answers *should we want them*.
 * **Engagement (implicit).** What the contact has done: content downloads, pricing-page visits, webinar attendance, email engagement. Engagement answers *are they interested now*.
 
-Score each axis on its own rather than collapsing them into one number, because the failure modes are opposite and need different handling. A high-fit, low-engagement contact is a target to nurture; a low-fit, high-engagement contact is often a student, a competitor, or a job-seeker, and feeding them to sales burns the goodwill the handoff depends on. The score is a [propensity](/foundations/segmentation-models.md) prediction dressed in points, so the same caution applies: it predicts who looks ready, not who your contact changed, and it is only as good as the data underneath it.
+Score each axis on its own rather than collapsing them into one number, because the failure modes are opposite and need different handling. A high-fit, low-engagement contact is a target to nurture; a low-fit, high-engagement contact is often a student, a competitor, or a job-seeker, and feeding them to sales erodes the goodwill the handoff depends on. The score is a [propensity](/foundations/segmentation-models.md) prediction dressed in points, so the same caution applies: it predicts who looks ready, not who your contact changed, and it is only as good as the data underneath it.
 
 ## MQL, SQL, and the handoff
 

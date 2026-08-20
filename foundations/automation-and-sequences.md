@@ -33,7 +33,7 @@ The entry trigger is whatever event your platform can listen for, and the menu v
 
 | Trigger | Fires when | Typical use |
 | --- | --- | --- |
-| List or segment entry | A contact is added to a list or segment, one at a time or as a batch | The workhorse, and an option in every capable platform: welcome series, onboarding, any flow keyed to joining a group. |
+| List or segment entry | A contact is added to a list or segment, one at a time or as a batch | The most common trigger, and an option in every capable platform: welcome series, onboarding, any flow keyed to joining a group. |
 | Field or tag change | A field or tag on a contact is set or updated, including by an import touching many contacts at once | Reacting to a status the rest of your stack writes: a score crossing a threshold, a preference set, a tag applied. Widely supported. |
 | Date based | A contact reaches a set offset from a date field | Birthday and anniversary messages, renewal and expiry reminders, a re-engagement nudge a fixed number of days after a last-purchase date. Common. |
 | Import | A scheduled CSV drop to a secure FTP or similar location lands | Largely superseded by APIs and now mostly an enterprise-tier feature; once a standard way to drive flows such as an hourly abandoned-cart export. |
@@ -52,7 +52,7 @@ Choose the outbound channel by fit:
 * **SMS** is immediate and near-certain to be seen, but short, interruptive, and costed per send. Reserve it for time-critical touches where being seen now is the point: an abandoned cart while intent is warm, a last call before a link expires.
 * **Push**, app or browser, is free and immediate but easy to ignore and gone once dismissed. It suits users who have the app installed and a job that can be said in a line.
 
-[In-app](/channels/in-app.md) sits apart from the three above, which is why it does not appear as a row in the cadence tables. It needs no opt-in, since the user is already inside the product, but it cannot initiate contact: it only fires when the user is in a session, so it cannot be scheduled as a touch at a fixed offset to someone who is not there. It carries the steps that land while the user is present, in-product onboarding, a finish-setup prompt, a cart reminder shown on the next visit, and leans on the outbound channels to do the reaching. Treat it as the destination a flow drives toward, fired on a session trigger, not as a timed step in the sequence.
+[In-app](/channels/in-app.md) sits apart from the three above, which is why it does not appear as a row in the cadence tables. It needs no opt-in, since the user is already inside the product, but it cannot initiate contact: it only fires when the user is in a session, so it cannot be scheduled as a touch at a fixed offset to someone who is not there. It handles the steps that land while the user is present, in-product onboarding, a finish-setup prompt, a cart reminder shown on the next visit, and leans on the outbound channels to do the reaching. Treat it as the destination a flow drives toward, fired on a session trigger, not as a timed step in the sequence.
 
 The same frequency budget and collision rules govern every channel a flow uses, so a sequence does not get to spend contact allowance the broadcast calendar has already claimed. See [orchestration and frequency](/foundations/orchestration-and-frequency.md) for how the channel-per-job decision and the shared cap are managed across the programme.
 
@@ -70,7 +70,7 @@ Do not lead with a discount: it trains customers to game the system and attracts
 
 ## Abandoned cart cadence
 
-Most carts are abandoned, around seven in ten, so a recovery sequence is one of the highest-return automations there is. Trigger from the abandonment event with a short, useful sequence that reminds rather than nags. The immediacy of the trigger makes this the flow where SMS and push earn their place: a text or push notification while the cart is still warm is seen in minutes, where an email may wait for the next inbox check. Use them where you hold the consent, and keep email as the channel that carries the detail. A standard three-touch cadence, each touch with a distinct job:
+Most carts are abandoned, around seven in ten, so a recovery sequence is one of the highest-return automations there is. Trigger from the abandonment event with a short, useful sequence that reminds rather than nags. The immediacy of the trigger makes this the flow where SMS and push are worth their cost: a text or push notification while the cart is still warm is seen in minutes, where an email may wait for the next inbox check. Use them where you hold the consent, and keep email for the detail. A standard three-touch cadence, each touch with a distinct job:
 
 | Touch | Timing | Channel | Job |
 | --- | --- | --- | --- |

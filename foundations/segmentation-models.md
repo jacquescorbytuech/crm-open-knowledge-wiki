@@ -5,7 +5,7 @@ description: The models a programme uses to divide an audience, RFM, value and l
 tags: [segmentation, rfm, clv, propensity, behavioural, lifecycle, framework, scoring]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: qualtrics-market-segmentation-types-behavioural-demographic-firmographic
     resource: https://www.qualtrics.com/articles/strategy-research/what-is-market-segmentation/
@@ -92,7 +92,7 @@ Lifecycle-stage segmentation divides the audience by where each customer sits in
 
 ## Combining RFM with lifecycle stage
 
-The clean way to combine the two is to nest, not cross. Use lifecycle stage as the outer frame and apply RFM only inside the stage where it earns its keep. Two RFM axes already encode lifecycle signal (recency separates engaged from lapsing), so crossing the full 555 code against every stage just re-splits the same customers and multiplies cells you cannot send to.
+The clean way to combine the two is to nest, not cross. Use lifecycle stage as the outer frame and apply RFM only inside the stage where it adds information. Two RFM axes already encode lifecycle signal (recency separates engaged from lapsing), so crossing the full 555 code against every stage just re-splits the same customers and multiplies cells you cannot send to.
 
 A workable pattern: let stage decide the message (onboarding sequence, retention nurture, winback), and let RFM decide priority and offer depth within that stage. In the engaged stage, RFM tier sets who gets VIP treatment; in the lapsing stage, monetary score sets how hard you bid to win them back. That keeps the segment count to stage times a few RFM tiers, not stage times 125. The same overlap discipline and dynamic-versus-static handling lives in [segmentation and data](/foundations/segmentation-and-data.md).
 

@@ -5,7 +5,7 @@ description: Why the right to track is a separate permission from the right to s
 tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 stale_after: 2027-08-20
 sources:
   - id: edpb-guidelines-2-2023-on-the-technical
@@ -91,7 +91,7 @@ The email pixel is one instance of a rule that is not about email. On any channe
 * **Wallet and point of sale.** A scanned barcode and pass analytics are first-party and tied to an identity the customer presented, a lighter position than third-party device tracking, but the data is still processed under the GDPR even where Article 5(3) is not engaged. See [wallet passes](/channels/wallet-passes.md) and [point of sale](/channels/point-of-sale.md).
 * **Direct mail.** No device, no Article 5(3): the match-back and the per-recipient code are ordinary personal-data processing under the GDPR and nothing more. See [direct mail](/channels/direct-mail.md).
 
-Across all of them, the right to reach someone on a channel never carries the right to measure what they did there. The GDPR governs the measurement data on every channel. On the device-based channels Article 5(3) adds a consent requirement for the device access, and a platform gate, the tracking prompt, the advertising-identifier phase-out or the push opt-in, is a further condition again; on the channels that never touch the device, only the GDPR's processing rules apply.
+Across all of them, the right to reach someone on a channel never includes the right to measure what they did there. The GDPR governs the measurement data on every channel. On the device-based channels Article 5(3) adds a consent requirement for the device access, and a platform gate, the tracking prompt, the advertising-identifier phase-out or the push opt-in, is a further condition again; on the channels that never touch the device, only the GDPR's processing rules apply.
 
 ## What this means for measurement
 

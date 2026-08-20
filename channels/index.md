@@ -9,7 +9,7 @@ The delivery layer: the messaging channels a lifecycle programme actually sends 
 * [Conversational messaging](conversational-messaging.md) - CRM over WhatsApp and the messaging apps: rich, two-way, opt-in only, dominant outside North America.
 * [Push](push.md) - the only channel that reaches a dormant app user, edited on device before the lock screen.
 * [Browser push](browser-push.md) - web push to a granted browser, the way back for a web product with no app, and the one channel that reaches the desktop.
-* [In-app](in-app.md) - an owned surface with no editor in the pipe, reaching only the active user.
+* [In-app](in-app.md) - an owned surface with no editor in the delivery path, reaching only the active user.
 * [Website personalisation](website-personalisation.md) - your own site as an owned surface, adapting content to a live visitor who is anonymous until resolved.
 * [Wallet passes](wallet-passes.md) - a persistent, updatable, location-aware loyalty object on the device, present without a send.
 * [Point of sale](point-of-sale.md) - the checkout as a CRM surface: catches the customer in person at the moment of purchase, where the anonymous shopper becomes an addressable one.
@@ -22,4 +22,4 @@ The channels differ in how much of the delivery you actually control and whom th
 
 ## Choosing between them
 
-Match the channel to the job, run them as a portfolio under one contact strategy, and let [orchestration and frequency](/foundations/orchestration-and-frequency.md) decide which carries which message. The general rule the per channel pages share: reserve the interruptive, filtered channels (push, SMS) for what only they can do, and move the rest onto surfaces the recipient opened on purpose.
+Match the channel to the job, run them as a portfolio under one contact strategy, and let [orchestration and frequency](/foundations/orchestration-and-frequency.md) decide which channel sends which message. The general rule the per channel pages share: reserve the interruptive, filtered channels (push, SMS) for what only they can do, and move the rest onto surfaces the recipient opened on purpose.

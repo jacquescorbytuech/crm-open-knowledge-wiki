@@ -23,7 +23,7 @@ sources:
 
 ## What it is
 
-Conversational messaging is CRM run over the consumer messaging apps the customer already uses with friends and family: WhatsApp above all, plus Facebook Messenger, Instagram DM, and Apple Messages for Business. Its distinctive value is a rich, two-way thread inside a trusted app, with media, buttons, read receipts, and a verified business profile. It is separate from [SMS and RCS](/channels/sms-and-rcs.md): those ride the carriers, these are over-the-top app channels governed by the platform's own policy. WhatsApp is the giant, the default messaging channel across much of Europe, Latin America, Africa, and Asia, and marginal in North America where SMS still holds.
+Conversational messaging is CRM run over the consumer messaging apps the customer already uses with friends and family: WhatsApp above all, plus Facebook Messenger, Instagram DM, and Apple Messages for Business. Its distinctive value is a rich, two-way thread inside a trusted app, with media, buttons, read receipts, and a verified business profile. It is separate from [SMS and RCS](/channels/sms-and-rcs.md): those ride the carriers, these are over-the-top app channels governed by the platform's own policy. WhatsApp is by far the largest, the default messaging channel across much of Europe, Latin America, Africa, and Asia, and marginal in North America where SMS still holds.
 
 ## Permission and reach
 
@@ -31,20 +31,20 @@ The opt-in bar is set by the platform and is stricter than the law requires. Wha
 
 ## Filtering and editing
 
-Little algorithmic rewriting of an individual message once it is delivered, but the platform polices hard at the policy layer instead. Templates are pre-approved and classified by category, and each sending number carries a quality rating that throttles or blocks it when users block or report. The editor here is policy and the quality rating, not an on-device summariser, and it limits volume rather than wording.
+Little algorithmic rewriting of an individual message once it is delivered, but the platform polices hard at the policy layer instead. Templates are pre-approved and classified by category, and each sending number has a quality rating that throttles or blocks it when users block or report. The editor here is policy and the quality rating, not an on-device summariser, and it limits volume rather than wording.
 
 ## Technical specifics
 
 The mechanics revolve around one window and a set of message categories.
 
 * **The customer-service window.** When a user messages you, a 24-hour timer opens during which you can send free-form (session) messages of any type. Outside that window you may only send pre-approved template messages. This window is the core mechanic that separates reactive service from proactive outreach.
-* **Template categories and pricing.** Templates are classified marketing, utility, or authentication. Since 1 July 2025 WhatsApp bills per delivered template message, priced by that category and the recipient's country, replacing the per-conversation (24-hour window) model that ran from 2022. Marketing is the promotional lane and needs approval; utility follows up a user action (order, delivery, alert) and is free when sent inside an open customer-service window; authentication carries one-time passcodes. The category you choose is both a compliance and a cost decision.
+* **Template categories and pricing.** Templates are classified marketing, utility, or authentication. Since 1 July 2025 WhatsApp bills per delivered template message, priced by that category and the recipient's country, replacing the per-conversation (24-hour window) model that ran from 2022. Marketing is the promotional lane and needs approval; utility follows up a user action (order, delivery, alert) and is free when sent inside an open customer-service window; authentication covers one-time passcodes. The category you choose is both a compliance and a cost decision.
 * **Rich payloads.** Media, quick-reply and call-to-action buttons, list pickers, and location, well past SMS, so a message can carry an interaction rather than only text.
-* **Quality rating and messaging limits.** Each number sits in a messaging-limit tier and carries a quality rating; blocks and reports lower it and cap how many users you can reach, so relevance directly governs reach.
+* **Quality rating and messaging limits.** Each number sits in a messaging-limit tier with a quality rating; blocks and reports lower it and cap how many users you can reach, so relevance directly governs reach.
 
 ## Best-fit jobs
 
-Two-way, high-intent lifecycle moments: order and delivery updates, appointment reminders, authentication codes, post-purchase support, and conversational reactivation, plus opted-in promotional sends where the relationship clearly supports them. The channel shines wherever a reply is expected and the thread persists. Its worst job is cold broadcast promotion, which burns the quality rating and the opt-in that make the channel worth holding.
+Two-way, high-intent lifecycle moments: order and delivery updates, appointment reminders, authentication codes, post-purchase support, and conversational reactivation, plus opted-in promotional sends where the relationship clearly supports them. The channel is at its best wherever a reply is expected and the thread persists. Its worst job is cold broadcast promotion, which wrecks the quality rating and the opt-in that make the channel worth holding.
 
 ## Conversational messaging versus SMS versus email
 
@@ -60,7 +60,7 @@ Read it against a holdout like the rest. Delivered and read receipts are richer 
 
 ## Lifecycle role
 
-The two-way, high-intent relationship channel, strongest in transactional and post-purchase moments and in WhatsApp-first markets, where it can carry much of what email and SMS do elsewhere. It sits alongside SMS and email under one contact strategy rather than replacing them.
+The two-way, high-intent relationship channel, strongest in transactional and post-purchase moments and in WhatsApp-first markets, where it can do much of what email and SMS do elsewhere. It sits alongside SMS and email under one contact strategy rather than replacing them.
 
 ## Related
 

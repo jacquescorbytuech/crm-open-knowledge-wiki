@@ -46,7 +46,7 @@ Marketing platforms use "AI" for quite different things, and conflating them ove
 * **Decision support** is machine learning that assists a journey the marketer designed: it scores, ranks, recommends, and optimises at points inside a structure a human built. The marketer still decides what the journey is.
 * **Decisioning** is machine learning that makes the decision: a system that chooses, per customer, what to send, when, on which channel, and increasingly whether to send at all, within goals and guardrails the marketer sets. The marketer sets the objective; the system explores and learns.
 
-Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category, and the harder one to adopt because it asks the marketer to hand a learning system the wheel and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
+Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category, and the harder one to adopt because it asks the marketer to let a learning system make the decisions and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
 
 But every capability here, decision support and decisioning alike, is downstream of one upstream decision you make before any of it: whether you have built a unified, clean, training-ready first-party data foundation. Build it and the advanced options stay open; skip it and no amount of vendor AI compensates. The vendor and method taxonomy only starts to matter once that is settled: it is the menu you earn access to, not the first choice you make.
 
@@ -68,7 +68,7 @@ True decisioning borrows the methods used in large-scale recommendation: **conte
 The mechanism that makes this work is also its hardest cost to swallow. A learning system has to **explore**, deliberately spending some sends on actions it is unsure about so it can find the better ones, rather than only **exploiting** what currently looks best. Exploration is what a fixed A/B test cannot do once it has crowned a winner, and it is what lets a bandit keep improving. But the exploratory sends look like waste on short-horizon metrics, since some of them are by design the worse option, and the payoff arrives later as the system converges. Valuing it correctly takes a longer measurement horizon than most programmes run; the incrementality framing is in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 > [!warning] Do not read exploration as waste
-> A learning system spends some sends on actions it is unsure about, which look like the worse option on this week's open rate. Killing it for that dip is the standard way an organisation strangles a decisioning system before it can pay back.
+> A learning system spends some sends on actions it is unsure about, which look like the worse option on this week's open rate. Killing it for that dip is the standard way an organisation shuts down a decisioning system before it can pay back.
 
 ## The vendor landscape
 
@@ -91,13 +91,13 @@ The reason these features resist comparison is structural, not just marketing op
 
 * **The models are undisclosed.** Vendors do not expose the model, its features, or its training data, so two "send-time optimisation" features that look identical on a feature sheet can behave nothing alike, and you cannot tell which from the outside.
 * **There is no ground truth at the individual level.** You see what the system chose to send and what happened next, never what would have happened had it chosen differently for that same person. Without a counterfactual, a per-customer decision cannot be scored directly; only the aggregate effect against a [holdout](/measurement/holdouts-and-control-groups.md) can.
-* **A trial cannot settle it.** These systems need volume and time to learn, so a short proof-of-concept on a slice of your data shows the cold-start, not the converged, behaviour. The strongest numbers in the market are vendor case studies, which select for success and rarely carry a clean control.
+* **A trial cannot settle it.** These systems need volume and time to learn, so a short proof-of-concept on a slice of your data shows the cold-start, not the converged, behaviour. The strongest numbers in the market are vendor case studies, which select for success and rarely include a clean control.
 
 The practical consequence is the one [ESP selection](/foundations/esp-selection.md) draws: treat AI feature lists as a tiebreaker between otherwise-equal platforms, never as the deciding factor, and insist that any claimed lift be one you can reproduce against your own holdout.
 
 ## What adopting decisioning asks of you
 
-Decisioning is harder to adopt than decision support because it changes who decides, not just what tooling runs. Handing a learning system the per-customer choice means setting an objective and guardrails rather than designing the journey, tolerating the exploration cost above, and trusting a [holdout](/measurement/holdouts-and-control-groups.md) to tell you whether it is working when no single decision can be inspected. The guardrails are the design surface: the frequency ceilings, suppression rules, and brand or eligibility constraints the system must respect while it optimises inside them. A programme that cannot yet state its objective and guardrails, or cannot run a clean holdout, is not ready to hand over the wheel, whatever the vendor demo shows.
+Decisioning is harder to adopt than decision support because it changes who decides, not just what tooling runs. Handing a learning system the per-customer choice means setting an objective and guardrails rather than designing the journey, tolerating the exploration cost above, and trusting a [holdout](/measurement/holdouts-and-control-groups.md) to tell you whether it is working when no single decision can be inspected. The guardrails are the design surface: the frequency ceilings, suppression rules, and brand or eligibility constraints the system must respect while it optimises inside them. A programme that cannot yet state its objective and guardrails, or cannot run a clean holdout, is not ready to hand over the decision, whatever the vendor demo shows.
 
 ## The recipient's side of the decision
 

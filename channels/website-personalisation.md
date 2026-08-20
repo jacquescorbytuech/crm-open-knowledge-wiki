@@ -47,7 +47,7 @@ Converting anonymous traffic, the welcome offer and email capture that turn a fi
 
 ## Website versus in-app versus browser push
 
-They split by where the visitor is and whether they are reachable. Onsite and [in-app](/channels/in-app.md) are the live owned surfaces and do the in-session work, the difference being that in-app acts on an authenticated user inside your product while onsite acts on a largely anonymous web visitor, so identity resolution is a job onsite owns and in-app mostly assumes. [Browser push](/channels/browser-push.md) is the web channel that reaches back out to a granted browser when the visitor has gone, the way to bring them to the site so onsite can do its work. The default: if the visitor is on the site, let onsite carry it; if they have left and you need them back, that is a browser push or an email, not an onsite change.
+They split by where the visitor is and whether they are reachable. Onsite and [in-app](/channels/in-app.md) are the live owned surfaces and do the in-session work, the difference being that in-app acts on an authenticated user inside your product while onsite acts on a largely anonymous web visitor, so identity resolution is a job onsite owns and in-app mostly assumes. [Browser push](/channels/browser-push.md) is the web channel that reaches back out to a granted browser when the visitor has gone, the way to bring them to the site so onsite can do its work. The default: if the visitor is on the site, let onsite handle it; if they have left and you need them back, that is a browser push or an email, not an onsite change.
 
 ## Constraints
 

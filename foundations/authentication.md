@@ -45,7 +45,7 @@ Authentication is the set of DNS records and signatures that let a receiving mai
 * SPF authorises which servers may send for your domain.
 * DKIM cryptographically signs the message so the receiver can verify it was not altered and came from an authorised source.
 * DMARC tells receivers what to do when SPF or DKIM alignment fails, and sends you aggregate reports (the `rua` tag) on who is sending under your domain. Parse these with a DMARC aggregator.
-* BIMI requires a fully aligned DMARC at enforcement and puts your verified logo into supporting clients. Not a measurement instrument, but deliverability table stakes worth claiming.
+* BIMI requires a fully aligned DMARC at enforcement and puts your verified logo into supporting clients. Not a measurement instrument, but a basic deliverability credential worth claiming.
 
 The three core records do different jobs and you need all three. SPF and DKIM each prove authorisation by a different mechanism, DMARC ties them to the visible From domain and tells receivers what to do on failure. BIMI is optional and depends on the other three being right first.
 
@@ -125,7 +125,7 @@ The whole point of the staged path is that `p=none` lets you discover your own l
 
 ## Subdomain strategy
 
-Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot poison the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
+Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot spread to the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
 
 A common, readable convention:
 
