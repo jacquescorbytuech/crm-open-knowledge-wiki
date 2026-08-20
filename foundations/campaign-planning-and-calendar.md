@@ -5,7 +5,7 @@ description: How to plan and run the sending programme as a system, the split be
 tags: [planning, calendar, broadcast, triggered, governance, cadence, workflow, qa, seed-list]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: hubspot-email-automation-trigger-based-sending-outperforms
     resource: https://www.hubspot.com/glossary/email-automation
@@ -28,7 +28,7 @@ A lifecycle programme sends triggered and broadcast messages, and plans them dif
 * **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse, and run continuously once built. They carry most of the relevance because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
 * **Broadcast** (batch) messages go to a segment on a schedule: the newsletter, the launch, the promotion. They are how the calendar's planned moments reach the audience.
 
-Most programmes lean too hard on broadcast because it is the visible, plannable work, and under-invest in the triggered layer that quietly does more. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).
+Most programmes lean too hard on broadcast because it is the visible, plannable work, and under-invest in the triggered layer that does more of the work. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).
 
 ## The marketing calendar
 
@@ -74,7 +74,7 @@ Once more than one person sends, the programme needs a single agreed workflow so
 
 ## Pre-send QA checklist
 
-Run this before every broadcast, and before activating any automation, since an automation error runs at scale and silently. Do not skip it because the campaign looks small. These items are email's; each other channel swaps in its own equivalents.
+Run this before every broadcast, and before activating any automation, since an automation error keeps sending until someone notices. Do not skip it because the campaign looks small. These items are email's; each other channel swaps in its own equivalents.
 
 * [ ] **Subject line** present, correct, and within the platform's display length.
 * [ ] **Preheader** set and not pulling stray body text.
@@ -107,7 +107,7 @@ Seeding is an email technique. The other channels prove a send the same way in t
 
 ## Governance
 
-Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. An automation error runs at scale and silently, so apply this discipline to [automations](/foundations/automation-and-sequences.md) first. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
+Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. An automation error reaches its full audience before anyone notices, so apply this discipline to [automations](/foundations/automation-and-sequences.md) first. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
 
 ## Related
 

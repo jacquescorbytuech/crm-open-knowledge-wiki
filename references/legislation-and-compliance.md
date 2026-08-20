@@ -5,7 +5,7 @@ description: The main email and privacy regimes a sender operates under, grounde
 tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa, sender-id]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 stale_after: 2027-08-20
 sources:
   - id: ftc-can-spam-act-compliance-guide-for
@@ -32,7 +32,7 @@ sources:
 | CAN-SPAM | United States, email | Opt out | Accurate headers and from line, no deceptive subject, identify the message as an ad, a valid physical postal address, a clear opt out honoured within ten business days, and responsibility for anyone mailing on your behalf. |
 | TCPA | United States, SMS and calls | Express written | Prior express written consent for marketing texts, STOP and any reasonable opt out method, and quiet hours of 8am to 9pm in the recipient's local time. |
 | GDPR | EU and EEA | Opt in | A documented lawful basis, consent that is freely given, specific, informed, and unambiguous where relied on, records of consent, data subject rights, and prompt opt out. |
-| UK GDPR and PECR | United Kingdom | Opt in, narrow soft opt in | PECR regulation 22 governs electronic marketing on top of UK GDPR; consent or the soft opt in is needed to market to individuals by electronic mail. |
+| UK GDPR and PECR | United Kingdom | Opt in, narrow soft opt in | PECR regulation 22 governs electronic marketing in addition to UK GDPR; consent or the soft opt in is needed to market to individuals by electronic mail. |
 | CASL | Canada | Express or implied opt in | One of the strictest regimes: express or implied consent, clear sender identification, and a working unsubscribe, with significant penalties. |
 | CCPA and CPRA | California | Opt out, plus deletion right | Disclosure of data practices, a right to opt out of sale or sharing, and a right to deletion. |
 
@@ -53,7 +53,7 @@ Marketing texts in the US sit under the TCPA, which requires prior express writt
 
 ## Carrier-level sender registration
 
-Consent is not the only gate on messaging. Some markets run registers that verify which organisation a message claims to come from, independently of whether the recipient consented. US application-to-person SMS requires 10DLC brand and campaign registration; Australia's SMS Sender ID Register, run by the ACMA, makes registration of branded (alphanumeric) sender IDs mandatory from 1 July 2026, after which an unregistered brand label is shown to recipients as `Unverified` alongside suspected scams. These sit on top of consent law, not in place of it: you can hold valid consent and still have your brand traffic degraded if the sender ID is unregistered. See [SMS and RCS](/channels/sms-and-rcs.md).
+Consent is not the only gate on messaging. Some markets run registers that verify which organisation a message claims to come from, independently of whether the recipient consented. US application-to-person SMS requires 10DLC brand and campaign registration; Australia's SMS Sender ID Register, run by the ACMA, makes registration of branded (alphanumeric) sender IDs mandatory from 1 July 2026, after which an unregistered brand label is shown to recipients as `Unverified` alongside suspected scams. These apply in addition to consent law, not in place of it: you can hold valid consent and still have your brand traffic degraded if the sender ID is unregistered. See [SMS and RCS](/channels/sms-and-rcs.md).
 
 ## The practical minimum
 

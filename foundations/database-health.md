@@ -5,7 +5,7 @@ description: The marketing database as a decaying asset, the contact lifecycle f
 tags: [database-health, list-decay, sunset, hygiene, re-engagement, deliverability, list-growth]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: google-email-sender-guidelines-engagement-drives-reputation
     resource: https://support.google.com/a/answer/81126
@@ -51,7 +51,7 @@ Sunsetting feels like destroying the asset you spent to build, which is why so m
 * **Track the engagement-recency distribution, not just the total.** Watch how the list splits across active, declining, and dormant over time. A list whose total is flat but whose active share is falling is decaying under a healthy-looking number.
 * **Run hygiene to an SLA.** Suppress hard bounces and complaints immediately and permanently; the written thresholds live in [segmentation and data](/foundations/segmentation-and-data.md).
 * **Re-engage once, then sunset.** A single, well-timed win-back attempt, then move the unresponsive to the sunset segment. Endless re-engagement to the dormant is the failure mode it is meant to prevent.
-* **Suppress, do not delete, by default.** Keep sunsetted contacts on a suppression record so they are not re-imported and re-mailed later, which is how a sunset quietly undoes itself.
+* **Suppress, do not delete, by default.** Keep sunsetted contacts on a suppression record so they are not re-imported and re-mailed later, which is how a sunset undoes itself.
 * **Measure net growth, not gross adds.** Net list growth is acquisition minus decay. A programme reporting only new sign-ups while ignoring decay can be shrinking its engaged base while claiming growth. Read database health alongside [list building](/foundations/list-building.md), which feeds the top of the same pipe.
 
 ## Related

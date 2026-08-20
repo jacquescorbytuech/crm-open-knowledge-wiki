@@ -5,7 +5,7 @@ description: How to structure a loyalty programme, points earn and redemption ra
 tags: [loyalty, retention, referral, repeat-purchase, ltv, programs, points, tiers, enrolment, holdout]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: hbr-the-value-of-keeping-the-right
     resource: https://hbr.org/2014/10/the-value-of-keeping-the-right-customers
@@ -80,7 +80,7 @@ Reward referrals with programme value (points, credit, perks) on the same logic 
 
 ## Enrolment and lifecycle comms
 
-A loyalty programme is delivered through the lifecycle, not separately from it. Enrolment belongs in [onboarding](/foundations/lifecycle-mapping.md), points and tier nudges belong in engagement, and an at-risk member is a retention trigger. Coordinate its messages under the one [contact strategy](/foundations/orchestration-and-frequency.md) so loyalty mail does not become an uncapped extra stream on top of the marketing calendar.
+A loyalty programme is delivered through the lifecycle, not separately from it. Enrolment belongs in [onboarding](/foundations/lifecycle-mapping.md), points and tier nudges belong in engagement, and an at-risk member is a retention trigger. Coordinate its messages under the one [contact strategy](/foundations/orchestration-and-frequency.md) so loyalty mail does not become an uncapped extra stream outside the marketing calendar.
 
 A workable comms backbone:
 

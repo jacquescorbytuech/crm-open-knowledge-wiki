@@ -5,7 +5,7 @@ description: How to run a single contact strategy across channels, choose the ch
 tags: [orchestration, frequency, contact-strategy, channels, cross-channel, suppression, frequency-cap]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: marketingsherpa-why-consumers-unsubscribe-too-many-emails
     resource: https://marketingsherpa.com/article/chart/why-consumers-unsubscribe
@@ -57,7 +57,7 @@ Default to the cheapest channel that does the job, and reserve the interruptive,
 
 ## Why capping matters
 
-A frequency cap is a hard ceiling on messages per channel and in total over a rolling window, applied before send. Caps protect the two things over mailing destroys: deliverability, because complaint and disengagement signals drive placement, so a fatigued list quietly slides toward the spam folder, and the long run value of the list, because a fatigued subscriber unsubscribes once and is gone. Too many messages is consistently the single most common reason people unsubscribe, so frequency is not a minor dial. See [respect the recipient](/principles/respect-the-recipient.md) and [segmentation has costs](/principles/segmentation-has-costs.md).
+A frequency cap is a hard ceiling on messages per channel and in total over a rolling window, applied before send. Caps protect the two things over mailing destroys: deliverability, because complaint and disengagement signals drive placement, so a fatigued list slides toward the spam folder, and the long run value of the list, because a fatigued subscriber unsubscribes once and is gone. Too many messages is consistently the single most common reason people unsubscribe, so frequency is not a minor dial. See [respect the recipient](/principles/respect-the-recipient.md) and [segmentation has costs](/principles/segmentation-has-costs.md).
 
 ## Engagement-tiered starting caps
 

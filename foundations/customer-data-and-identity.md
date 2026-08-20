@@ -5,7 +5,7 @@ description: The data foundation a CRM programme runs on, with the practical ste
 tags: [customer-data, cdp, identity-resolution, first-party-data, single-customer-view, golden-record, data-quality, data]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: customer-data-platform-david-raab-persistent-unified
     resource: https://en.wikipedia.org/wiki/Customer_data_platform
@@ -78,7 +78,7 @@ Resolution is a matching rule: given two records, decide same person or not. Sta
 The errors here are not symmetric, and that asymmetry is what should drive the merge rule. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, and keep every merge fully reversible.
 
 * **Deterministic matching** joins on an exact shared identifier: the same email, the same phone, the same account or loyalty id. It is the default because it is explainable and auditable. When a user logs in, you also bind the anonymous id they were carrying to that account id, which is how pre-signup behaviour attaches to the person.
-* **Probabilistic matching** infers a match from a cluster of weaker signals (name plus postal address plus device plus IP) with a confidence score. Use it only where a hard identifier is missing, treat every match as a probability, and never let it silently overwrite a deterministic field.
+* **Probabilistic matching** infers a match from a cluster of weaker signals (name plus postal address plus device plus IP) with a confidence score. Use it only where a hard identifier is missing, treat every match as a probability, and never let it overwrite a deterministic field.
 
 Merge or keep separate is the live decision, and the asymmetry between a false merge and a missed one is what should drive it:
 
@@ -92,7 +92,7 @@ Merge or keep separate is the live decision, and the asymmetry between a false m
 
 ## CRM, CDP, and warehouse
 
-Three systems are easy to confuse, and most stacks run more than one.
+CRM, CDP, and warehouse are easy to confuse, and most stacks run more than one.
 
 * A **CRM** manages known relationships and the interactions with them. It is built around the identified customer and the people who act on that relationship.
 * A **CDP (customer data platform)** ingests data from every source, resolves identity, and maintains the unified, activation-ready profile that the channels and decisioning read from.

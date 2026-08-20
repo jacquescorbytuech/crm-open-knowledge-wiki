@@ -5,7 +5,7 @@ description: How to run CRM over WhatsApp and the messaging apps, work the opt-i
 tags: [channel, conversational-messaging, whatsapp, messenger, apple-messages-for-business, instagram-dm, opt-in, message-templates, customer-service-window]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: meta-get-opt-in-for-whatsapp
     resource: https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in
@@ -27,7 +27,7 @@ Conversational messaging is CRM run over the consumer messaging apps the custome
 
 ## Permission and reach
 
-The opt-in bar is set by the platform and sits above the law. WhatsApp requires you to obtain and record opt-in through any channel before you message a user, naming your business and making clear they will receive WhatsApp messages from you. Reach is per platform and per phone number or handle, and the thread lives in Meta's or Apple's graph, so there is no portable list you can carry elsewhere. The compensation for the high bar is quality: an opted-in conversational contact is a high-intent, high-engagement grant, not a cold address.
+The opt-in bar is set by the platform and is stricter than the law requires. WhatsApp requires you to obtain and record opt-in through any channel before you message a user, naming your business and making clear they will receive WhatsApp messages from you. Reach is per platform and per phone number or handle, and the thread lives in Meta's or Apple's graph, so there is no portable list you can carry elsewhere. The compensation for the high bar is quality: an opted-in conversational contact is a high-intent, high-engagement grant, not a cold address.
 
 ## Filtering and editing
 

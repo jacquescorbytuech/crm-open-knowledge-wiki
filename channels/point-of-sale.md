@@ -5,7 +5,7 @@ description: How to use the checkout as a CRM surface: resolve identity at the l
 tags: [channel, point-of-sale, pos, in-store, loyalty, identity-resolution, receipt, clienteling, control-group]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-15T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: square-loyalty-api-overview-identity-and-rewards
     resource: https://developer.squareup.com/docs/loyalty-api/overview
@@ -25,7 +25,7 @@ POS as a *source* is the transaction event flowing into the customer record, the
 
 Reach is whoever is physically at the till, or whoever the associate is serving. There is no standing list and no way to reach an absent customer, so like [in-app](/channels/in-app.md) the channel acts on a visit the customer started rather than initiating contact. The gate is identity: a cash transaction with no loyalty lookup is anonymous and unaddressable, and everything personalised depends on the customer presenting a loyalty ID, a phone number, a card, or an app barcode at the lane.
 
-The transaction itself sits under a lighter regime than the electronic channels, but the moment you capture an email or mobile number to send a digital receipt or to start a relationship, that capture and any later send fall under the same [consent and preferences](/foundations/consent-and-preferences.md) rules as every other channel. The opt-in taken at the till is a real opt-in and has to be recorded as one.
+The transaction itself is governed by a lighter regime than the electronic channels, but the moment you capture an email or mobile number to send a digital receipt or to start a relationship, that capture and any later send fall under the same [consent and preferences](/foundations/consent-and-preferences.md) rules as every other channel. The opt-in taken at the till is a real opt-in and has to be recorded as one.
 
 ## Filtering and editing
 

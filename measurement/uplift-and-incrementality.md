@@ -5,7 +5,7 @@ description: The difference between predicting who will act and measuring whethe
 tags: [uplift, incrementality, holdout, decisioning, measurement, causal, qini]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: gutierrez-g-rardy-causal-inference-and-uplift
     resource: http://proceedings.mlr.press/v67/gutierrez17a/gutierrez17a.pdf
@@ -35,7 +35,7 @@ For most senders the honest answer to that question is a number, not a model. A 
 
 ## Why prediction is not enough
 
-A static model asks which users are most likely to open or buy and aims at them, which keeps messaging the people who were going to act regardless while quietly annoying the ones a message pushes the wrong way. An adaptive model asks how sending this, now, changes what this user does, which is why the same model has to be willing to send nothing at all. The skill is knowing whom not to message, which is harder to learn than whom to message. Uplift studies show the cumulative incremental effect peaks well before you have reached the whole list, and past that peak more targeting reduces it. Send to the whole list and you are into zero or negative territory.
+A static model asks which users are most likely to open or buy and aims at them, which keeps messaging the people who were going to act regardless while annoying the ones a message pushes the wrong way. An adaptive model asks how sending this, now, changes what this user does, which is why the same model has to be willing to send nothing at all. The skill is knowing whom not to message, which is harder to learn than whom to message. Uplift studies show the cumulative incremental effect peaks well before you have reached the whole list, and past that peak more targeting reduces it. Send to the whole list and you are into zero or negative territory.
 
 ## The two things people call uplift
 

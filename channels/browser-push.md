@@ -5,7 +5,7 @@ description: How to reach a user through web push when you have no app, prime th
 tags: [channel, browser-push, web-push, service-worker, vapid, notifications-api, permission-priming, desktop, re-engagement]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: w3c-push-api-specification
     resource: https://www.w3.org/TR/push-api/
@@ -50,7 +50,7 @@ The same one-shot trap as mobile [push](/channels/push.md), and sharper. A brows
 
 ## Filtering and editing
 
-Lighter on-device rewriting than the mobile lock screen today, but suppression is real and silent: operating-system notification settings, Focus and Do Not Disturb, and the browser's own per-site controls all drop the notification with no signal back. Delivery depends on a background process, the browser, or on Safari a system service, being able to receive, and on Safari web push is routed through Apple's Push Notification service under the hood. As with the app channels, confirmed delivery tells you the push service accepted the payload, not that the user saw it.
+Lighter on-device rewriting than the mobile lock screen today, but suppression is common: operating-system notification settings, Focus and Do Not Disturb, and the browser's own per-site controls all drop the notification with no signal back. Delivery depends on a background process, the browser, or on Safari a system service, being able to receive, and on Safari web push is routed through Apple's Push Notification service. As with the app channels, confirmed delivery tells you the push service accepted the payload, not that the user saw it.
 
 ## Technical specifics
 

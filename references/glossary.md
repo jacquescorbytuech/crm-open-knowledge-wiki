@@ -5,7 +5,7 @@ description: The working vocabulary of email, lifecycle, and CRM marketing used 
 tags: [glossary, terminology, reference]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: tealium-what-is-a-cdp
     resource: https://tealium.com/resource/fundamentals/what-is-a-cdp/
@@ -25,7 +25,7 @@ sources:
 | SPF | Sender Policy Framework. DNS record authorising which servers may send for your domain. |
 | DKIM | DomainKeys Identified Mail. A cryptographic signature verifying the message was not altered and came from an authorised source. |
 | DMARC | Policy telling receivers what to do on SPF or DKIM alignment failure, with aggregate reporting. |
-| BIMI | Brand Indicators for Message Identification. Puts a verified logo into supporting clients, on top of aligned DMARC. |
+| BIMI | Brand Indicators for Message Identification. Puts a verified logo into supporting clients; requires aligned DMARC. |
 | MPP | Apple Mail Privacy Protection. Prefetches images through Apple proxies, inflating and corrupting the open metric. |
 | Deliverability | Whether mail reaches the inbox rather than spam. One layer below the category aware retrieval gate. |
 | Category-aware retrieval gate | The quality-and-engagement layer above classical spam filtering that decides whether mail is surfaced in intelligent inbox views, search, and assistant answers. A sender can pass authentication and still fail it. |

@@ -5,7 +5,7 @@ description: How to size, randomise, maintain, and read an always-on global hold
 tags: [holdout, control-group, incrementality, experiment, geo-lift, causal, randomisation]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: emarketer-faq-on-incrementality
     resource: https://www.emarketer.com/content/faq-on-incrementality-how-prove-your-ads-actually-work-2026
@@ -52,7 +52,7 @@ The read is only as honest as the assignment. Get this wrong and the gap you mea
 2. Use a stable random key. Hash a durable user id and bucket on the hash, so the same user always lands in the same group. This keeps membership fixed across sends and across reporting periods without storing a flag you might forget to honour.
 3. Assign before eligibility, not after. Split the whole addressable audience first, then let normal targeting run inside both arms. If you pick the treated group by who qualified for a campaign and call the rest control, the two arms differ on the thing that drives conversion.
 
-Pitfalls that quietly break randomisation:
+Pitfalls that break randomisation:
 
 * Re-rolling the random assignment each run, so users drift between arms and the holdout is no longer the same people.
 * Excluding the holdout from a journey's entry criteria, so it is selected differently from the treated group.
@@ -86,7 +86,7 @@ The setup essentials, at a practical level:
 1. Pick comparable regions. Choose treated and control geographies that tracked each other closely before the test, so the control is a credible stand-in for what the treated region would have done untreated.
 2. Define a pre-period. Measure both sets over a baseline window before any change, to establish the normal relationship between them.
 3. Run the change in the treated regions only, holding the controls untouched for the full test window.
-4. Read the difference against controls. The lift is how far the treated regions diverged from where the pre-period relationship said they should be. Under the hood the tooling builds a synthetic control: a weighted combination of untreated regions chosen to track the treated region through the pre-period, which then models what the treated region would have done untreated. That counterfactual, not any single control region, is what the lift is measured against. See GeoLift and Meridian below.
+4. Read the difference against controls. The lift is how far the treated regions diverged from where the pre-period relationship said they should be. The tooling builds a synthetic control: a weighted combination of untreated regions chosen to track the treated region through the pre-period, which then models what the treated region would have done untreated. That counterfactual, not any single control region, is what the lift is measured against. See GeoLift and Meridian.
 
 ## What it costs and what it returns
 

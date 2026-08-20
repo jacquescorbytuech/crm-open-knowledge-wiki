@@ -5,7 +5,7 @@ description: How to define dynamic and static segments, spot and resolve overlap
 tags: [segmentation, data, personalisation, privacy, merge-tags, hygiene, dynamic-segments, overlap, data-quality]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: klaviyo-ecommerce-benchmarks-targeted-segments-outperform-broad
     resource: https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks
@@ -60,7 +60,7 @@ See [engagement is the new deliverability](/principles/engagement-is-deliverabil
 
 ## Merge identities carefully
 
-When two records resolve to one person and get merged, the merge itself is a data-quality risk: a bad merge tag mapping, or a merge that picks the wrong field as the survivor, silently corrupts the profile that every downstream segment and merge field reads. Treat merge and dedup as a controlled operation, not a background convenience: define which record wins per field, preserve the consent and suppression state of both records (a merge must never resurrect a suppressed contact), and spot-check merged profiles. The identity mechanics live in [customer data and identity](/foundations/customer-data-and-identity.md).
+When two records resolve to one person and get merged, the merge itself is a data-quality risk: a bad merge tag mapping, or a merge that picks the wrong field as the survivor, corrupts the profile that every downstream segment and merge field reads. Treat merge and dedup as a controlled operation, not a background convenience: define which record wins per field, preserve the consent and suppression state of both records (a merge must never resurrect a suppressed contact), and spot-check merged profiles. The identity mechanics live in [customer data and identity](/foundations/customer-data-and-identity.md).
 
 ## Personalisation and merge tags
 

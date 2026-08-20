@@ -5,7 +5,7 @@ description: How to set up and roll out SPF, DKIM, DMARC, and BIMI, structure se
 tags: [authentication, spf, dkim, dmarc, bimi, deliverability, dns, alignment]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: google-email-sender-guidelines-spf-dkim-dmarc
     resource: https://support.google.com/a/answer/81126
@@ -45,7 +45,7 @@ Authentication is the set of DNS records and signatures that let a receiving mai
 * SPF authorises which servers may send for your domain.
 * DKIM cryptographically signs the message so the receiver can verify it was not altered and came from an authorised source.
 * DMARC tells receivers what to do when SPF or DKIM alignment fails, and sends you aggregate reports (the `rua` tag) on who is sending under your domain. Parse these with a DMARC aggregator.
-* BIMI sits on top of a fully aligned DMARC at enforcement and puts your verified logo into supporting clients. Not a measurement instrument, but deliverability table stakes worth claiming.
+* BIMI requires a fully aligned DMARC at enforcement and puts your verified logo into supporting clients. Not a measurement instrument, but deliverability table stakes worth claiming.
 
 The three core records do different jobs and you need all three. SPF and DKIM each prove authorisation by a different mechanism, DMARC ties them to the visible From domain and tells receivers what to do on failure. BIMI is optional and depends on the other three being right first.
 
@@ -65,9 +65,9 @@ Steps:
 4. Publish exactly one SPF record per domain. Two SPF records is a permanent error and voids SPF entirely.
 
 > [!warning] One SPF record, within 10 lookups
-> Two SPF records voids SPF entirely, and chained includes that exceed the 10 DNS lookup limit return permerror, which most receivers treat as a failure. Both fail quietly. Audit the lookup count and keep a small, fixed set of senders.
+> Two SPF records voids SPF entirely, and chained includes that exceed the 10 DNS lookup limit return permerror, which most receivers treat as a failure. Neither failure is reported back to you. Audit the lookup count and keep a small, fixed set of senders.
 
-The pitfall: SPF allows at most 10 DNS lookups when a receiver evaluates the record, counting every `include`, `a`, `mx`, `ptr`, and `redirect`. Chained includes blow this limit quietly and the record then returns permerror, which most receivers treat as a failure. Audit the lookup count, flatten or remove unused includes, and prefer a small fixed set of senders.
+The pitfall: SPF allows at most 10 DNS lookups when a receiver evaluates the record, counting every `include`, `a`, `mx`, `ptr`, and `redirect`. Chained includes creep past this limit and the record then returns permerror, which most receivers treat as a failure. Audit the lookup count, flatten or remove unused includes, and prefer a small fixed set of senders.
 
 ## How to set up DKIM
 

@@ -5,7 +5,7 @@ description: How to run SMS and RCS as a premium sparing channel, controlling en
 tags: [channel, sms, rcs, consent, transactional, carrier, encoding, 10dlc, sender-id]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: fcc-telemarketing-and-robocall-rules-tcpa-consent
     resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
@@ -47,7 +47,7 @@ Less than email or push, but not zero. Carriers run their own spam filtering and
 
 ## Message length and encoding
 
-SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode. Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched character can quietly multiply the cost of a campaign.
+SMS length is a hard technical limit, and exceeding it costs you. A single segment holds 160 characters in GSM-7 encoding, or just 70 in UCS-2/Unicode. Longer messages are split and reassembled, which reserves header space and drops the per-segment count to 153 (GSM-7) or 67 (UCS-2). You are billed per segment, so an unwatched character can multiply the cost of a campaign.
 
 Treat length discipline here as a budget control, not a style preference. One out-of-range character flips the encoding and roughly halves the characters per segment, so a single character can double the per-message bill across the whole send.
 
@@ -73,7 +73,7 @@ Relative cost runs short code above toll-free and 10DLC, and segments multiply w
 
 ## How the message reaches the carrier
 
-You do not connect to mobile networks directly. An aggregator (the messaging side of a CPaaS) holds the carrier interconnects and routes your traffic, and you reach it either through an HTTP REST API or through SMPP, the binary telecom protocol the REST APIs sit on top of. A message you send is mobile-terminated (MT); a reply, including a `STOP` or `HELP` keyword, comes back mobile-originated (MO). Delivery confirmation arrives as a delivery receipt (DLR) relayed back from the carrier, but treat it as advisory: carriers differ in whether and when they return one, some mark "delivered" on network handoff rather than handset receipt, and a missing DLR does not reliably mean a missing message. The registration regimes above are the carrier's admission control sitting in front of that route. The transport, the SMPP bind types, and the webhook path that carries DLRs back are in [sending infrastructure](/foundations/sending-infrastructure.md).
+You do not connect to mobile networks directly. An aggregator (the messaging side of a CPaaS) holds the carrier interconnects and routes your traffic, and you reach it either through an HTTP REST API or through SMPP, the binary telecom protocol the REST APIs are built on. A message you send is mobile-terminated (MT); a reply, including a `STOP` or `HELP` keyword, comes back mobile-originated (MO). Delivery confirmation arrives as a delivery receipt (DLR) relayed back from the carrier, but treat it as advisory: carriers differ in whether and when they return one, some mark "delivered" on network handoff rather than handset receipt, and a missing DLR does not reliably mean a missing message. The registration regimes are the carrier's admission control on that route. The transport, the SMPP bind types, and the webhook path that carries DLRs back are in [sending infrastructure](/foundations/sending-infrastructure.md).
 
 ## Branded sender IDs and verification
 

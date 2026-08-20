@@ -5,7 +5,7 @@ description: How to build trigger-based welcome, abandoned cart, and re-engageme
 tags: [automation, welcome, abandoned-cart, re-engagement, sunset, lifecycle]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: hubspot-email-automation-trigger-based-sending-outperforms
     resource: https://www.hubspot.com/glossary/email-automation
@@ -22,7 +22,7 @@ sources:
 
 An automation fires from an event (signup, purchase, browse, inactivity) rather than a calendar. Every automation needs a defined objective before it is built, or you cannot measure or improve it. See [set a goal before you build](/principles/goal-before-build.md).
 
-> [!warning] An error in an automation runs at scale, silently
+> [!warning] An error in an automation repeats until you catch it
 > A broadcast mistake reaches one audience once; a broken flow keeps misfiring to everyone who enters it. Test the trigger, content, and timing before going live.
 
 Before you build any flow, write down the entry trigger (the event that admits a contact), the exit condition (the event that pulls them out, almost always the conversion the flow exists to drive), the goal metric you will read it against, the suppression rules that override it, and the channel each message goes out on. Get these on paper first; the message copy is the easy part.
@@ -98,7 +98,7 @@ Sunset criteria: any contact who does not open, click, or purchase across the fu
 
 ## Pre-launch testing
 
-An error in an automation runs at scale and silently, so test every flow before it goes live to a real audience. Walk this checklist with a seeded test contact:
+An error in an automation repeats until you catch it, so test every flow before it goes live to a real audience. Walk this checklist with a seeded test contact:
 
 1. **Trigger fires.** The entry event admits the contact, and only that event does. Unrelated events do not enrol them.
 2. **Entry and exit conditions hold.** Converters exit; non-qualifying contacts never enter; nobody can enter twice unintentionally.

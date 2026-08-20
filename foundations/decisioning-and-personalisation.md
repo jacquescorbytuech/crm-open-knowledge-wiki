@@ -5,7 +5,7 @@ description: The landscape of AI personalisation in CRM and lifecycle platforms,
 tags: [decisioning, personalisation, machine-learning, bandits, send-time, vendors]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: hightouch-journeys-vs-ai-decisioning-rules-based
     resource: https://hightouch.com/blog/journeys-vs-ai-decisioning
@@ -73,7 +73,7 @@ The mechanism that makes this work is also its hardest cost to swallow. A learni
 ## The vendor landscape
 
 * **Decision-support suites.** Salesforce Einstein, Adobe Sensei / Journey Optimizer, Klaviyo, Iterable, Braze, HubSpot, and the mobile-first names converge on the capability list above.
-* **AI-decisioning specialists.** Vendors such as Aampe (per-user agents using bandits and Thompson sampling) and Hightouch (decisioning on top of the data warehouse) make the per-customer decision the product, measuring each decision against a control.
+* **AI-decisioning specialists.** Vendors such as Aampe (per-user agents using bandits and Thompson sampling) and Hightouch (decisioning built on the data warehouse) make the per-customer decision the product, measuring each decision against a control.
 * **Enterprise decisioning.** Adobe Journey Optimizer real-time decisioning, Salesforce on Data Cloud, and Pega Customer Decision Hub (next-best-action for regulated industries) run the offer-ranking and adaptive-journey machinery natively on a unified profile.
 * **Acquisition signal.** Braze's acquisition of OfferFit folded a reinforcement-learning decisioning engine into a major engagement platform, a sign the categories are converging.
 

@@ -5,7 +5,7 @@ description: How inbox placement works, how to warm an IP or domain, how to reco
 tags: [deliverability, spam, ip-warming, metrics, promotions-tab, mime, postmaster-tools, snds]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: word-to-the-wise-deliveries-and-opens
     resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
@@ -29,7 +29,7 @@ sources:
 
 ## How placement works
 
-Inbox placement is decided by machine learning, not fixed rules, an approach that goes back to the statistical (Bayesian) spam filtering of the early 2000s, though that early work only separated spam from not-spam, and modern placement layers sender reputation and per-recipient engagement on top of that binary decision. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer sits above the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md).
+Inbox placement is decided by machine learning, not fixed rules, an approach that goes back to the statistical (Bayesian) spam filtering of the early 2000s, though that early work only separated spam from not-spam, and modern placement adds sender reputation and per-recipient engagement to that binary decision. Authentication is the price of entry, set it up before your first send, see [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer runs after the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md).
 
 ## How to warm a new IP or domain
 

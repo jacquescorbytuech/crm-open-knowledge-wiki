@@ -5,7 +5,7 @@ description: The two ways to read an A/B test, what each one actually tells you,
 tags: [statistics, bayesian, frequentist, ab-testing, significance, sequential]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: evan-miller-how-not-to-run-an
     resource: https://www.evanmiller.org/how-not-to-run-an-ab-test.html
@@ -46,7 +46,7 @@ The cost is the prior. A weak or default prior gives results close to the freque
 
 ## The peeking trap that catches both
 
-The single most common way to get a false win is to watch a running test and stop the moment it crosses significance. Doing this inflates the false positive rate far above the nominal 5%, because you have given the noise many chances to cross the line. A fixed-sample frequentist test is only valid if you read it once; repeatedly peeking quietly breaks it. Evan Miller's [How Not To Run an A/B Test](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) is the canonical explanation.
+The single most common way to get a false win is to watch a running test and stop the moment it crosses significance. Doing this inflates the false positive rate far above the nominal 5%, because you have given the noise many chances to cross the line. A fixed-sample frequentist test is only valid if you read it once; repeated peeking invalidates it. Evan Miller's [How Not To Run an A/B Test](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) is the canonical explanation.
 
 Naive Bayesian dashboards are not automatically immune: stopping as soon as probability to be best crosses 95% has the same problem unless the method was designed for it. The honest fixes are to fix the sample in advance, or to use a method built for repeated looks: sequential testing, always-valid p-values, or a properly specified Bayesian decision rule with a loss threshold.
 

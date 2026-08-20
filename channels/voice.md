@@ -5,7 +5,7 @@ description: How to use outbound and inbound phone calls, including AI voice age
 tags: [channel, voice, outbound-calls, ai-voice-agents, ivr, tcpa, robocall, consent, stir-shaken]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: fcc-ai-generated-voices-in-robocalls-are
     resource: https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal
@@ -27,7 +27,7 @@ Voice is the phone call as a CRM touch: a live agent, an automated IVR, or, incr
 
 ## Permission and reach
 
-The most heavily regulated channel in the bundle. In the US the TCPA governs marketing calls: a call using an artificial or prerecorded voice, or an autodialler, to a consumer needs prior express written consent, on top of national and internal Do-Not-Call compliance, caller identification, and immediate opt-out. Reach is any number you hold with the required consent, but the consent bar, not the number, is the binding constraint. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
+The most heavily regulated channel in the bundle. In the US the TCPA governs marketing calls: a call using an artificial or prerecorded voice, or an autodialler, to a consumer needs prior express written consent, in addition to national and internal Do-Not-Call compliance, caller identification, and immediate opt-out. Reach is any number you hold with the required consent, but the consent bar, not the number, is the binding constraint. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
 
 ## AI voice agents and the consent line
 

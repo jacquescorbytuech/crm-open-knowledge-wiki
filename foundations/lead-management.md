@@ -1,11 +1,11 @@
 ---
 type: Framework
 title: Lead management
-description: The B2B motion the rest of this bundle's lifecycle frame does not cover: scoring leads on fit and engagement, the MQL and SQL definitions and the sales handoff that sit on top of them, nurturing the not-yet-ready, and where account-based marketing inverts the whole funnel.
+description: The B2B motion the rest of this bundle's lifecycle frame does not cover: scoring leads on fit and engagement, the MQL and SQL definitions and the sales handoff built on them, nurturing the not-yet-ready, and where account-based marketing inverts the whole funnel.
 tags: [b2b, lead-scoring, mql, sql, nurturing, abm, lifecycle, sales]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-15T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: smartbug-media-handing-leads-off-to-sales
     resource: https://www.smartbugmedia.com/blog/handing-leads-off-to-sales-the-mql-vs-sql-difference
@@ -40,7 +40,7 @@ MQL and SQL are thresholds a team agrees on, not states a contact is objectively
 * **Marketing-qualified lead (MQL).** A contact whose combined fit and engagement clears the threshold marketing and sales have agreed means *ready for a sales conversation*. The threshold is a decision, not a fact: set it where the leads sales actually accepts cluster, and move it when acceptance drifts.
 * **Sales-qualified lead (SQL).** An MQL that a salesperson has accepted and confirmed, through their own qualification, as a genuine opportunity worth working.
 
-The handoff between them is where most B2B programmes leak, and the fix is an explicit service-level agreement between the two teams. The SLA pins down the MQL and SQL definitions, so both sides agree what qualifies; commits sales to follow up an MQL within a fixed window (24 to 48 hours is the common default, because a lead's engagement decays the way [the welcome window](/principles/the-welcome-window.md) describes); and sets up a feedback loop where sales marks why rejected MQLs were rejected, which is the signal that recalibrates the score. Without that loop the score drifts and sales quietly stops trusting marketing's leads.
+The handoff between them is where most B2B programmes leak, and the fix is an explicit service-level agreement between the two teams. The SLA pins down the MQL and SQL definitions, so both sides agree what qualifies; commits sales to follow up an MQL within a fixed window (24 to 48 hours is the common default, because a lead's engagement decays the way [the welcome window](/principles/the-welcome-window.md) describes); and sets up a feedback loop where sales marks why rejected MQLs were rejected, which is the signal that recalibrates the score. Without that loop the score drifts and sales stops trusting marketing's leads.
 
 > [!warning] A lead is still personal data
 > B2B does not exempt you from consent. Capture is governed by the same rules as [list building](/foundations/list-building.md) and [consent and preferences](/foundations/consent-and-preferences.md); a named individual at a company is their personal data under UK GDPR even where [cold email](/foundations/cold-email.md)'s narrow B2B window is open. Score and nurture the leads you captured lawfully, not a bought list.

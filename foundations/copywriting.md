@@ -5,7 +5,7 @@ description: How to write the message across channels, the email envelope and sk
 tags: [copywriting, subject-lines, cta, email-anatomy, deliverability, summarisation, sms, push]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: litmus-the-email-envelope-is-the-from
     resource: https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support
@@ -91,7 +91,7 @@ The risks specific to generated marketing copy:
 * **Hallucinated specifics.** The model will happily invent a discount depth, a deadline, a product name, or a policy detail that reads fluently and is wrong. The front-loaded fact, the amount, the date, the item, is exactly the part a model is least reliable on and the part a wrong value does the most damage. Bind those values from your own data through [personalisation mechanics](/foundations/personalisation-mechanics.md) rather than letting the model assert them, and verify every concrete claim against the actual offer before send.
 * **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that carries no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, and hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
 
-This sits under [start simple](/principles/start-simple.md) and the decision-support framing in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md): the model accelerates a writer who knows what good looks like, and amplifies the mistakes of one who does not.
+This follows [start simple](/principles/start-simple.md) and the decision-support framing in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md): the model accelerates a writer who knows what good looks like, and amplifies the mistakes of one who does not.
 
 ## Metric to watch
 
