@@ -5,7 +5,7 @@ description: How to size the potential impact of an experiment so experiments ca
 tags: [impact-sizing, prioritisation, modelling, experiments]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: kohavi-tang-xu-trustworthy-online-controlled-experiments
     resource: https://experimentguide.com/
@@ -25,10 +25,12 @@ Impact sizing answers one question: how many incremental actions will this exper
 ## The core formula
 
 ```
-Non-actors          = Audience x (1 - Baseline rate)
 Target rate         = Baseline rate x (1 + Relative lift)
-Incremental actions = (Target rate - Baseline rate) x Non-actors
+Incremental actions = (Target rate - Baseline rate) x Audience
+Ceiling             = Audience x (1 - Baseline rate)
 ```
+
+Multiply the rate delta by the whole audience, the population the target rate describes; [uplift and incrementality](/measurement/uplift-and-incrementality.md) reads a finished test with the same arithmetic. The ceiling is the sanity check: a lift cannot convert more people than currently do not act.
 
 Funnel adds: `Incremental downstream = Incremental upfunnel x Downstream conversion rate`.
 

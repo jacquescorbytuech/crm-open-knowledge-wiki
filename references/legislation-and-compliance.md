@@ -17,6 +17,12 @@ sources:
   - id: fcc-telemarketing-and-robocall-rules
     resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
     title: "FCC, telemarketing and robocall rules"
+  - id: fcc-24-24-tcpa-consent-order
+    resource: https://docs.fcc.gov/public/attachments/FCC-24-24A1.pdf
+    title: "FCC, 2024 TCPA Consent Order (revocation by any reasonable means, ten-business-day processing)"
+  - id: ctia-messaging-principles-and-best-practices
+    resource: https://api.ctia.org/wp-content/uploads/2023/05/230523-CTIA-Messaging-Principles-and-Best-Practices-FINAL.pdf
+    title: "CTIA, Messaging Principles and Best Practices (May 2023)"
   - id: acma-sms-sender-id-register
     resource: https://www.acma.gov.au/sms-sender-id-register
     title: "ACMA, SMS Sender ID Register"
@@ -30,7 +36,7 @@ sources:
 | Regime | Region | Consent model | Core obligations |
 | --- | --- | --- | --- |
 | CAN-SPAM | United States, email | Opt out | Accurate headers and from line, no deceptive subject, identify the message as an ad, a valid physical postal address, a clear opt out honoured within ten business days, and responsibility for anyone mailing on your behalf. |
-| TCPA | United States, SMS and calls | Express written | Prior express written consent for marketing texts, STOP and any reasonable opt out method, and quiet hours of 8am to 9pm in the recipient's local time. |
+| TCPA | United States, SMS and calls | Express written for texts and robocalls | Prior express written consent for marketing texts and for autodialled or artificial-voice calls; a manually dialled live call falls under the Do-Not-Call rules instead. STOP and any reasonable opt out method, and quiet hours of 8am to 9pm in the recipient's local time. |
 | GDPR | EU and EEA | Opt in | A documented lawful basis, consent that is freely given, specific, informed, and unambiguous where relied on, records of consent, data subject rights, and prompt opt out. |
 | UK GDPR and PECR | United Kingdom | Opt in, narrow soft opt in | PECR regulation 22 governs electronic marketing in addition to UK GDPR; consent or the soft opt in is needed to market to individuals by electronic mail. |
 | CASL | Canada | Express or implied opt in | One of the strictest regimes: express or implied consent, clear sender identification, and a working unsubscribe, with significant penalties. |
@@ -49,11 +55,11 @@ The ICO defines electronic mail broadly, covering email, text messages, picture 
 
 ## TCPA, the higher bar for SMS
 
-Marketing texts in the US sit under the TCPA, which requires prior express written consent rather than the opt out model that governs email. Honour STOP and, since the FCC's 2025 rules, any reasonable opt out method, within ten business days. Observe quiet hours. Application to person traffic also runs through carrier registration via the 10DLC system; see [SMS and RCS](/channels/sms-and-rcs.md).
+Marketing texts in the US sit under the TCPA, which requires prior express written consent rather than the opt out model that governs email. The FCC's revocation rules, in force since April 2025, give a sender ten business days to honour STOP or any reasonable opt out method. The CTIA code the carriers enforce is stricter: one final opt-out confirmation, then nothing. Treat STOP as immediate. Observe quiet hours. Long-code application to person traffic also runs through carrier registration via the 10DLC system; short codes and toll-free numbers have their own approval and verification schemes. See [SMS and RCS](/channels/sms-and-rcs.md).
 
 ## Carrier-level sender registration
 
-Consent is not the only gate on messaging. Some markets run registers that verify which organisation a message claims to come from, independently of whether the recipient consented. US application-to-person SMS requires 10DLC brand and campaign registration; Australia's SMS Sender ID Register, run by the ACMA, makes registration of branded (alphanumeric) sender IDs mandatory from 1 July 2026, after which an unregistered brand label is shown to recipients as `Unverified` alongside suspected scams. These apply in addition to consent law, not in place of it: you can hold valid consent and still have your brand traffic degraded if the sender ID is unregistered. See [SMS and RCS](/channels/sms-and-rcs.md).
+Consent is not the only gate on messaging. Some markets run registers that verify which organisation a message claims to come from, independently of whether the recipient consented. US application-to-person SMS on standard long codes requires 10DLC brand and campaign registration; short codes and toll-free numbers have separate approval and verification schemes. Australia's SMS Sender ID Register, run by the ACMA, makes registration of branded (alphanumeric) sender IDs mandatory from 1 July 2026, after which an unregistered brand label is shown to recipients as `Unverified` alongside suspected scams. These apply in addition to consent law, not in place of it: you can hold valid consent and still have your brand traffic degraded if the sender ID is unregistered. See [SMS and RCS](/channels/sms-and-rcs.md).
 
 ## The practical minimum
 

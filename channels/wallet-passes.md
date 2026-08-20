@@ -23,7 +23,7 @@ sources:
 
 ## What it is
 
-A wallet pass is a loyalty card, coupon, ticket, or membership stored in Apple Wallet or Google Wallet on the phone. Its distinctive value is presence without a send: a persistent, owned object on the device that you update remotely and that can surface itself on the lock screen by time or location. Where every other channel costs a message to reach the user, a pass simply sits on the device staying current, and asks for attention only when it is relevant.
+A wallet pass is a loyalty card, coupon, ticket, or membership stored in Apple Wallet or Google Wallet on the phone. Its distinctive value is presence without a send: a persistent object held on the device that you update remotely and that can surface itself on the lock screen by time or location. Where every other channel costs a message to reach the user, a pass simply sits on the device staying current, and asks for attention only when it is relevant.
 
 ## Permission and reach
 
@@ -31,7 +31,7 @@ The user adds the pass deliberately, the add-to-wallet action is the opt-in, and
 
 ## Filtering and editing
 
-Minimal. The pass renders as you define it and remote updates land directly on the held copy. The lock-screen relevance surfacing is OS-driven by the time and geofence you set on the pass, not by an editor between you and the user. The only real constraint is whether the user kept notifications enabled for that pass.
+No editor touches the content: the pass renders exactly as you define it. Delivery is the weak point. A remote update rides an empty APNs wake-up push that the OS may coalesce, defer, or drop before the device ever pulls the new pass; nothing guarantees it arrives. The automatic-updates setting on each pass decides whether new versions reach it at all; the notifications setting decides only whether the change is announced. The lock-screen relevance surfacing is OS-driven by the time and geofence you set on the pass. See [device channels are leased](/principles/device-channels-are-leased.md).
 
 ## Technical specifics
 

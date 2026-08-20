@@ -58,7 +58,7 @@ Broad mid funnel work where some summary distortion is acceptable: newsletters, 
 
 ## Constraints
 
-Opens are corrupted by image prefetch and Mail Privacy Protection, and security scanners inflate clicks, so both are directional; conversion, reply, and unsubscribe are the cleaner signals. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
+Neither opens nor clicks deserve full trust: image prefetch and Mail Privacy Protection corrupt the first, security scanners inflate the second. The cleaner signals are conversion, reply, and unsubscribe. See [email metrics are directional](/principles/metrics-are-directional.md). The bulk sender requirements make poor list hygiene a deliverability cost, not just a waste. Image only design loses the structure the classifier reads.
 
 List hygiene is a deliverability lever, not housekeeping. Suppress hard bounces immediately and never resend to them, retire addresses after repeated soft bounces, and sunset the never-engaging tail before it drags sender reputation down. Wire these as automated suppression rules, see [automation and sequences](/foundations/automation-and-sequences.md), run them as part of ongoing [database health](/foundations/database-health.md), and work the recovery order in [deliverability](/foundations/deliverability.md).
 

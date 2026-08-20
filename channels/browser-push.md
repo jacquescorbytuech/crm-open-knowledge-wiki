@@ -38,7 +38,7 @@ sources:
 
 ## What it is
 
-Browser push, or web push, is a notification delivered to a browser through the Web Push protocol and surfaced by the operating system's notification centre even when the site's tab is closed, driven by a service worker registered on your origin. Its distinctive value is reach without an install: it pulls a user back to a web product that has no app, and it is the one CRM channel that lands on the desktop, where mobile push cannot go. It works in Chrome, Firefox, and Edge across desktop and Android, and in Safari on macOS and, since iOS and iPadOS 16.4, for web apps the user has added to the Home Screen.
+Browser push, or web push, is a notification delivered to a browser through the Web Push protocol and surfaced by the operating system's notification centre even when the site's tab is closed, driven by a service worker registered on your origin. Its distinctive value is reach without an install: it pulls a user back to a web product that has no app, and it is the one notification channel that lands on the desktop, where mobile push cannot go. It works in Chrome, Firefox, and Edge across desktop and Android, and in Safari on macOS and, since iOS and iPadOS 16.4, for web apps the user has added to the Home Screen.
 
 ## Permission and reach
 

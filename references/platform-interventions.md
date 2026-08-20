@@ -5,12 +5,15 @@ description: The dated, citable platform interventions on email and push that do
 tags: [timeline, platform, mpp, bulk-sender, apple-intelligence, gmail]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 stale_after: 2027-08-20
 sources:
   - id: apple-protect-email-privacy-in-mail-mail
     resource: https://support.apple.com/guide/mail/protect-email-privacy-mlhlp1205/mac
     title: "Apple, protect email privacy in Mail (Mail Privacy Protection hides IP and preloads images)"
+  - id: litmus-apple-mail-privacy-protection-for-marketers
+    resource: https://www.litmus.com/blog/apple-mail-privacy-protection-for-marketers
+    title: "Litmus, Apple Mail Privacy Protection for marketers (inflated Apple Mail open rates near 75%)"
   - id: google-email-sender-guidelines-bulk-sender-requirements
     resource: https://support.google.com/a/answer/81126
     title: "Google, email sender guidelines (bulk sender requirements)"
@@ -45,7 +48,7 @@ Each intervention is discrete and dated, which makes each one a natural experime
 
 | Date | Intervention | Note |
 | --- | --- | --- |
-| Sep 2021 | Apple Mail Privacy Protection (iOS 15) | Image proxy inflates opens 30 to 50% on Apple heavy lists; the Mozilla/5.0 user agent becomes the canonical proxy signature. |
+| Sep 2021 | Apple Mail Privacy Protection (iOS 15) | Image proxy inflates opens by tens of percentage points on Apple heavy lists, roughly doubling measured open rates; the Mozilla/5.0 user agent becomes the canonical proxy signature. |
 | Sep 2021 | iOS 15 Focus and interruption levels | Four level taxonomy; time sensitive is the only addressable level and is not for marketing. |
 | Aug 2022 | Android 13 runtime notification permission | Opt in becomes an explicit grant; opt in rates fall sharply. |
 | Feb 2024 | Gmail and Yahoo bulk sender requirements | SPF, DKIM, DMARC alignment, RFC 8058 one click unsubscribe, spam rate under 0.3%. Microsoft followed May 2025; Google escalated to rejection Nov 2025. |

@@ -5,7 +5,7 @@ description: How to capture permission that holds up across every channel, run a
 tags: [consent, preferences, permission, suppression, compliance, gdpr, pecr, can-spam, tcpa, preference-centre, unsubscribe]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-20T00:00:00Z
 sources:
   - id: ico-electronic-mail-marketing-under-pecr
     resource: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
@@ -111,7 +111,7 @@ Marketing SMS in the US needs prior express written consent, which is a higher b
 
 ## Suppression workflow
 
-A suppression list is the set of addresses and numbers that must never be mailed: the unsubscribed, hard bounces, complainers, and legal suppressions. It is mailed against on every send and is never purged for volume. Suppression is where compliance and deliverability meet, because mailing a complainer or an opt out is both a legal breach and a reputation hit.
+A suppression list is the set of addresses and numbers that must never receive marketing: the unsubscribed, hard bounces, complainers, and legal suppressions. It is mailed against on every marketing send and is never purged for volume. A marketing unsubscribe does not block a [transactional message](/foundations/transactional-messaging.md), which rests on the contract rather than marketing consent. Hard bounces are different: a dead address is dead for both streams. Suppression is where compliance and deliverability meet, because mailing a complainer or an opt out is both a legal breach and a reputation hit.
 
 Operate it as a continuous loop:
 

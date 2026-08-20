@@ -5,10 +5,10 @@ The delivery layer: the messaging channels a lifecycle programme actually sends 
 ## The channels
 
 * [Email](email.md) - the highest volume, lowest cost, most mediated channel, addressable to a list you hold.
-* [SMS and RCS](sms-and-rcs.md) - short, interruptive, expensive per message, with the least editing between you and the recipient today.
+* [SMS and RCS](sms-and-rcs.md) - short, interruptive, expensive per message, the least-edited high-volume channel today.
 * [Conversational messaging](conversational-messaging.md) - CRM over WhatsApp and the messaging apps: rich, two-way, opt-in only, dominant outside North America.
-* [Push](push.md) - the only channel that reaches a dormant app user, edited on device before the lock screen.
-* [Browser push](browser-push.md) - web push to a granted browser, the way back for a web product with no app, and the one channel that reaches the desktop.
+* [Push](push.md) - the route to a dormant app user, edited on device before the lock screen.
+* [Browser push](browser-push.md) - web push to a granted browser, the way back for a web product with no app, and the one notification channel that reaches the desktop.
 * [In-app](in-app.md) - an owned surface with no editor in the delivery path, reaching only the active user.
 * [Website personalisation](website-personalisation.md) - your own site as an owned surface, adapting content to a live visitor who is anonymous until resolved.
 * [Wallet passes](wallet-passes.md) - a persistent, updatable, location-aware loyalty object on the device, present without a send.

@@ -25,7 +25,7 @@ Postal marketing operates under a lighter consent regime than electronic channel
 
 ## Filtering and editing
 
-None, and this is the point. Nothing ranks, bundles, summarises, or filters a physical piece. It lands on a surface the recipient handles directly. The trade is that it is the slowest channel and the most expensive per touch by a wide margin.
+None, and this is the point. Nothing ranks, bundles, summarises, or filters a physical piece. It lands on a surface the recipient handles directly. The trade is that it is the slowest channel and the most expensive per touch short of a staffed call.
 
 ## Technical specifics
 

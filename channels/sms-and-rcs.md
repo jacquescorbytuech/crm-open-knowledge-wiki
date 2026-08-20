@@ -25,6 +25,9 @@ sources:
   - id: kelley-drye-state-mini-tcpa-laws-and
     resource: https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/texas-mini-tcpa-law-faqs-for-marketing-texts
     title: "Kelley Drye, state mini-TCPA laws and quiet-hours rules for marketing texts"
+  - id: ctia-messaging-principles-and-best-practices
+    resource: https://api.ctia.org/wp-content/uploads/2023/05/230523-CTIA-Messaging-Principles-and-Best-Practices-FINAL.pdf
+    title: "CTIA, Messaging Principles and Best Practices (May 2023)"
   - id: acma-sms-sender-id-register
     resource: https://www.acma.gov.au/sms-sender-id-register
     title: "ACMA, SMS Sender ID Register"
@@ -35,11 +38,11 @@ sources:
 
 ## What it is
 
-SMS delivers a short text message to a phone number, read almost immediately and almost always. RCS is its richer successor on Android, adding branding, images, suggested replies, and read receipts, rolling out through Google Messages. Together they are the most interruptive lifecycle channel and, today, the one with the least editing between sender and recipient.
+SMS delivers a short text message to a phone number, read almost immediately and almost always. RCS is its richer successor on Android, adding branding, images, suggested replies, and read receipts, rolling out through Google Messages. Together they are the most interruptive lifecycle channel and, today, the least edited of the high-volume channels.
 
 ## Permission and reach
 
-Permission is an explicit opt in tied to a phone number, and the consent bar is high: TCPA in the United States, PECR in the United Kingdom, and equivalents elsewhere, with quiet hours, clear identification, and easy STOP handling expected. In the United States, application to person traffic runs over registered 10DLC numbers or short codes with carrier vetting. The number is the asset, and you cannot take a carrier relationship elsewhere the way you can an email list.
+Permission is consent tied to a phone number. The bar is high: the TCPA in the United States demands prior express written consent, PECR in the United Kingdom accepts consent or the narrow soft opt in under the same regulation 22 that governs email, and equivalents apply elsewhere. Quiet hours, clear identification, and easy STOP handling are expected everywhere. In the United States, application to person traffic runs over registered 10DLC numbers or short codes with carrier vetting. The number is the asset, and you cannot take a carrier relationship elsewhere the way you can an email list.
 
 ## Filtering and editing
 
@@ -91,7 +94,7 @@ Treat this as the SMS counterpart of email authentication. An unverified sender 
 The consent bar is the operational core of the channel, not a footnote.
 
 * **Capture explicit opt-in and log it.** Consent must be an affirmative act tied to the number: a ticked unticked box, a keyword reply, a double opt-in confirmation. Log what they agreed to, when, the exact disclosure text shown, and the source. The record is your defence in a TCPA or PECR challenge, and you cannot reconstruct it later.
-* **Handle STOP and HELP.** STOP (and its variants) must unsubscribe the number immediately and send one confirmation; HELP must return sender identity and contact. These are mandatory and carrier-enforced. Most platforms process them automatically, but confirm yours does and that suppression propagates across every campaign on the number, not just the one that triggered it.
+* **Handle STOP and HELP.** STOP (and its variants) must unsubscribe the number immediately and send one confirmation; HELP must return sender identity and contact. The carriers enforce these under the CTIA code, a stricter bar than the FCC revocation rule's ten business days. Most platforms process them automatically, but confirm yours does and that suppression propagates across every campaign on the number, not just the one that triggered it.
 * **Enforce quiet hours by recipient local time.** The federal TCPA baseline confines marketing sends to roughly 8am to 9pm in the recipient's local time zone, but treat that as the floor, not the rule: several state mini-TCPA laws (Florida, Oklahoma, Texas, and Connecticut among them) impose tighter windows and weekend or holiday limits, and obligations follow the recipient's location. Apply 8am to 9pm local as the baseline and the strictest applicable state window on top. Schedule against the recipient's zone, not the server's or the brand's, which means you need a reliable zone for each number and a queue that holds sends outside the window rather than dropping them.
 
 ## RCS
@@ -120,7 +123,7 @@ Among the more expensive digital channels per message, well above email and push
 
 ## Measurement
 
-Opens do not exist on this channel, so measurement reads delivery and downstream conversion, not engagement proxies. Delivery receipts are more reliable than push and confirm the message landed; clicks on a tracked link plus the conversion behind it are the outcome signal. Because the cost and the intrusion are both high, read that conversion against a randomised holdout rather than crediting every conversion behind a send: hold back a control, compare treated against control, and bank only the incremental lift. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md). Opt out rate and per message cost are the discipline metrics, since SMS is the channel where frequency mistakes are most directly expensive.
+Opens do not exist on this channel, so measurement reads delivery and downstream conversion, not engagement proxies. Delivery receipts are advisory rather than confirmation; clicks on a tracked link plus the conversion behind it are the outcome signal. Because the cost and the intrusion are both high, read that conversion against a randomised holdout rather than crediting every conversion behind a send: hold back a control, compare treated against control, and bank only the incremental lift. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md). Opt out rate and per message cost are the discipline metrics, since SMS is the channel where frequency mistakes are most directly expensive.
 
 ## Lifecycle role
 
