@@ -3,7 +3,9 @@ type: Principle
 title: Welcome windows are uniquely valuable
 description: New customers are at peak engagement immediately after opting in. Maximise this.
 tags: [principle, welcome, automation, onboarding]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

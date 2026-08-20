@@ -3,7 +3,16 @@ type: Playbook
 title: Localisation
 description: Sending to a multi-region, multi-language audience: send-time by the recipient's timezone across channels, locale-keyed templates and the translation that fills them, multi-currency and locale-correct formatting of offers, and the encoding and layout traps that come with non-Latin scripts.
 tags: [localisation, internationalisation, timezone, multi-language, multi-currency, send-time, i18n]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: unicode-cldr-locale-data-for-dates-numbers
+    resource: https://cldr.unicode.org/
+    title: "Unicode CLDR, locale data for dates, numbers, and currencies"
+  - id: w3c-internationalisation-text-direction-and-language-declaration
+    resource: https://www.w3.org/International/
+    title: "W3C Internationalisation, text direction and language declaration"
 ---
 
 ## When defaults become decisions
@@ -42,8 +51,3 @@ Non-Latin scripts reach into the channel mechanics. On [SMS](/channels/sms-and-r
 * [Offers and incentives](/foundations/offers-and-incentives.md)
 * [SMS and RCS](/channels/sms-and-rcs.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
-
-## Citations
-
-[1] [Unicode CLDR, locale data for dates, numbers, and currencies](https://cldr.unicode.org/)
-[2] [W3C Internationalisation, text direction and language declaration](https://www.w3.org/International/)

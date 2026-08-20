@@ -3,7 +3,22 @@ type: Playbook
 title: Campaign Planning and Calendar
 description: How to plan and run the sending programme as a system, the split between triggered and broadcast messaging, how to lay out and cadence a cross-channel calendar, the campaign production workflow with owners, and a pre-send QA checklist.
 tags: [planning, calendar, broadcast, triggered, governance, cadence, workflow, qa, seed-list]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: hubspot-email-automation-trigger-based-sending-outperforms
+    resource: https://www.hubspot.com/glossary/email-automation
+    title: "HubSpot, email automation (trigger-based sending outperforms scheduled broadcasts)"
+  - id: klaviyo-ecommerce-benchmarks-targeted-and-automated-sends
+    resource: https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks
+    title: "Klaviyo, ecommerce benchmarks (targeted and automated sends beat broad broadcasts on revenue per recipient)"
+  - id: marketingsherpa-why-consumers-unsubscribe-too-many-emails
+    resource: https://marketingsherpa.com/article/chart/why-consumers-unsubscribe
+    title: "MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)"
+  - id: hubspot-building-an-editorial-marketing-calendar-with
+    resource: https://blog.hubspot.com/marketing/business-blog-editorial-calendar-templates
+    title: "HubSpot, building an editorial/marketing calendar with an approval workflow"
 ---
 
 ## Triggered and broadcast sending
@@ -102,10 +117,3 @@ Once more than one person sends, the programme needs light governance to stay co
 * [Offers and incentives](/foundations/offers-and-incentives.md)
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Deliverability](/foundations/deliverability.md)
-
-## Citations
-
-[1] [HubSpot, email automation (trigger-based sending outperforms scheduled broadcasts)](https://www.hubspot.com/glossary/email-automation)
-[2] [Klaviyo, ecommerce benchmarks (targeted and automated sends beat broad broadcasts on revenue per recipient)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)
-[3] [MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)](https://marketingsherpa.com/article/chart/why-consumers-unsubscribe)
-[4] [HubSpot, building an editorial/marketing calendar with an approval workflow](https://blog.hubspot.com/marketing/business-blog-editorial-calendar-templates)

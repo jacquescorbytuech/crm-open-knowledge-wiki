@@ -3,7 +3,31 @@ type: Playbook
 title: Customer Data and Identity
 description: The data foundation a CRM programme runs on, with the practical steps to capture first-party data, resolve identity with deterministic matching rules, consolidate a single customer view with a golden record, run a decay routine, and evaluate a CDP, and how the CRM, the CDP, and the data warehouse divide the work.
 tags: [customer-data, cdp, identity-resolution, first-party-data, single-customer-view, golden-record, data-quality, data]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: customer-data-platform-david-raab-persistent-unified
+    resource: https://en.wikipedia.org/wiki/Customer_data_platform
+    title: "Customer data platform (David Raab, \"persistent, unified customer view\")"
+  - id: tealium-what-is-a-cdp-a-warehouse
+    resource: https://tealium.com/resource/fundamentals/what-is-a-cdp/
+    title: "Tealium, what is a CDP (a warehouse is built for analysis, a CDP for activation)"
+  - id: twilio-identity-resolution-explained
+    resource: https://www.twilio.com/en-us/blog/insights/identity-resolution
+    title: "Twilio, identity resolution explained"
+  - id: adobe-experience-league-identity-stitching-across-anonymous
+    resource: https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorial-on-identity-stitching-in-aep/introduction
+    title: "Adobe Experience League, identity stitching across anonymous and authenticated profiles"
+  - id: twilio-zero-party-vs-first-party-data
+    resource: https://www.twilio.com/en-us/blog/insights/data/first-vs-zero-party-data
+    title: "Twilio, zero-party vs first-party data"
+  - id: twilio-first-party-vs-third-party-data
+    resource: https://www.twilio.com/en-us/blog/insights/data/first-vs-third-party-data
+    title: "Twilio, first-party vs third-party data and the third-party cookie phase-out"
+  - id: forrester-google-s-third-party-cookie-deprecation
+    resource: https://www.forrester.com/blogs/google-makes-good-on-third-party-cookie-deprecation/
+    title: "Forrester, Google's third-party cookie deprecation"
 ---
 
 ## Why data is the foundation
@@ -111,13 +135,3 @@ Unified, training-ready customer data is also the prerequisite for the AI person
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
-
-## Citations
-
-[1] [Customer data platform (David Raab, "persistent, unified customer view")](https://en.wikipedia.org/wiki/Customer_data_platform)
-[2] [Tealium, what is a CDP (a warehouse is built for analysis, a CDP for activation)](https://tealium.com/resource/fundamentals/what-is-a-cdp/)
-[3] [Twilio, identity resolution explained](https://www.twilio.com/en-us/blog/insights/identity-resolution)
-[4] [Adobe Experience League, identity stitching across anonymous and authenticated profiles](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorial-on-identity-stitching-in-aep/introduction)
-[5] [Twilio, zero-party vs first-party data](https://www.twilio.com/en-us/blog/insights/data/first-vs-zero-party-data)
-[6] [Twilio, first-party vs third-party data and the third-party cookie phase-out](https://www.twilio.com/en-us/blog/insights/data/first-vs-third-party-data)
-[7] [Forrester, Google's third-party cookie deprecation](https://www.forrester.com/blogs/google-makes-good-on-third-party-cookie-deprecation/)

@@ -11,7 +11,8 @@ The bundle is also browsable online at [crmknowledgebase.com](https://crmknowled
 [Open Knowledge Format](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing) (OKF) is an open, vendor-neutral specification for representing knowledge as a portable bundle of Markdown files with YAML frontmatter. The core ideas:
 
 - **Every file is a concept.** Its path is its identity.
-- **Frontmatter carries metadata.** Each concept declares a `type` (Principle, Playbook, Framework, Channel, Method, Reference, …) plus `title`, `description`, `tags`, and a `timestamp`.
+- **Frontmatter carries metadata.** Each concept declares a `type` (Principle, Playbook, Framework, Channel, Method, Reference, …) plus `title`, `description`, and `tags`.
+- **Frontmatter carries trust signals.** Since OKF v0.2, provenance is structured: `generated` records who produced the content and when, `sources` lists the material a concept draws on, `verified` records review events, and `stale_after` dates mark content due a freshness check.
 - **Links are the structure.** Concepts reference each other with ordinary Markdown links, turning the directory into a navigable graph. Broken links are allowed and simply mark knowledge not yet written.
 - **Reserved files.** `index.md` gives a directory a human-readable table of contents; `log.md` records the change history.
 - **No required tooling.** If you can read Markdown and clone a git repo, you can read and ship this bundle.
@@ -30,7 +31,7 @@ Start at [`index.md`](index.md), then follow the layer your question sits in:
 
 ## Attribution
 
-Each concept carries a **Citations** section grounded in primary and authoritative sources: standards and RFCs, platform documentation, regulators (FTC, ICO, FCC), and recognised industry and research references. Attribution lives in those Citations sections rather than in a single frontmatter field.
+Each concept declares its sources in a frontmatter `sources` list (the OKF v0.2 convention), grounded in primary and authoritative material: standards and RFCs, platform documentation, regulators (FTC, ICO, FCC), and recognised industry and research references. Where a page attributes individual claims, it uses Markdown footnotes whose labels match the `sources` ids.
 
 ## Community
 

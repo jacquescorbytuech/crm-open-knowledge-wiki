@@ -3,7 +3,38 @@ type: Reference
 title: Platform Interventions
 description: The dated, citable platform interventions on email and push that double as natural experiments, and the lone motion toward sender side reporting.
 tags: [timeline, platform, mpp, bulk-sender, apple-intelligence, gmail]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+stale_after: 2027-08-20
+sources:
+  - id: apple-protect-email-privacy-in-mail-mail
+    resource: https://support.apple.com/guide/mail/protect-email-privacy-mlhlp1205/mac
+    title: "Apple, protect email privacy in Mail (Mail Privacy Protection hides IP and preloads images)"
+  - id: google-email-sender-guidelines-bulk-sender-requirements
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (bulk sender requirements)"
+  - id: google-the-2013-tabbed-inbox-promotions-and
+    resource: https://blog.google/products/gmail/a-new-inbox-that-puts-you-back-in/
+    title: "Google, the 2013 tabbed inbox (Promotions and other tabs)"
+  - id: 9to5mac-ios-18-1-ships-apple-intelligence
+    resource: https://9to5mac.com/2024/10/28/apple-intelligence-is-here-iphone-ios-8-1/
+    title: "9to5Mac, iOS 18.1 ships Apple Intelligence notification summaries"
+  - id: techcrunch-apple-pauses-ai-notification-summaries-for
+    resource: https://techcrunch.com/2025/01/16/apple-pauses-ai-notification-summaries-for-news-after-generating-false-alerts
+    title: "TechCrunch, Apple pauses AI notification summaries for news after false alerts"
+  - id: rfc-8058-one-click-unsubscribe
+    resource: https://datatracker.ietf.org/doc/html/rfc8058
+    title: "RFC 8058, one-click unsubscribe"
+  - id: ietf-draft-brotman-aggregate-performance-reporting
+    resource: https://datatracker.ietf.org/doc/draft-brotman-aggregate-performance-reporting/
+    title: "IETF, draft-brotman-aggregate-performance-reporting"
+  - id: microsoft-strengthening-the-email-ecosystem-outlook-s
+    resource: https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730
+    title: "Microsoft, strengthening the email ecosystem: Outlook's new requirements for high-volume senders (enforcement from 5 May 2025)"
+  - id: proofpoint-stricter-google-email-authentication-enforcement-begins
+    resource: https://www.proofpoint.com/us/blog/email-and-cloud-threats/clock-ticking-stricter-email-authentication-enforcements-google-start
+    title: "Proofpoint, stricter Google email authentication enforcement begins November 2025 (deferral to rejection)"
 ---
 
 ## Each change is a dated natural experiment
@@ -39,15 +70,3 @@ The summarisation panic is a thin layer on a much older story: Gmail tabs since 
 * [Deliverability](/foundations/deliverability.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
-
-## Citations
-
-[1] [Apple, protect email privacy in Mail (Mail Privacy Protection hides IP and preloads images)](https://support.apple.com/guide/mail/protect-email-privacy-mlhlp1205/mac)
-[2] [Google, email sender guidelines (bulk sender requirements)](https://support.google.com/a/answer/81126)
-[3] [Google, the 2013 tabbed inbox (Promotions and other tabs)](https://blog.google/products/gmail/a-new-inbox-that-puts-you-back-in/)
-[4] [9to5Mac, iOS 18.1 ships Apple Intelligence notification summaries](https://9to5mac.com/2024/10/28/apple-intelligence-is-here-iphone-ios-8-1/)
-[5] [TechCrunch, Apple pauses AI notification summaries for news after false alerts](https://techcrunch.com/2025/01/16/apple-pauses-ai-notification-summaries-for-news-after-generating-false-alerts)
-[6] [RFC 8058, one-click unsubscribe](https://datatracker.ietf.org/doc/html/rfc8058)
-[7] [IETF, draft-brotman-aggregate-performance-reporting](https://datatracker.ietf.org/doc/draft-brotman-aggregate-performance-reporting/)
-[8] [Microsoft, strengthening the email ecosystem: Outlook's new requirements for high-volume senders (enforcement from 5 May 2025)](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730)
-[9] [Proofpoint, stricter Google email authentication enforcement begins November 2025 (deferral to rejection)](https://www.proofpoint.com/us/blog/email-and-cloud-threats/clock-ticking-stricter-email-authentication-enforcements-google-start)

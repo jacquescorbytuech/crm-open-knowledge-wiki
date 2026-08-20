@@ -3,7 +3,16 @@ type: Concept
 title: Transactional Messaging
 description: The line between transactional and marketing messages, why it governs consent, deliverability, and orchestration, the contamination trap that reclassifies a transactional message as marketing, and how to keep the two streams separate.
 tags: [transactional, marketing, consent, deliverability, sending-streams, can-spam, orchestration]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: ftc-can-spam-act-compliance-guide-primary
+    resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+    title: "FTC, CAN-SPAM Act compliance guide (primary purpose, transactional or relationship messages)"
+  - id: google-email-sender-guidelines-separate-sending-streams
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (separate sending streams and reputation)"
 ---
 
 ## What it is
@@ -46,8 +55,3 @@ Transactional touches are the most-opened mail a programme sends, which makes th
 * [Deliverability](/foundations/deliverability.md)
 * [Email](/channels/email.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
-
-## Citations
-
-[1] [FTC, CAN-SPAM Act compliance guide (primary purpose, transactional or relationship messages)](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
-[2] [Google, email sender guidelines (separate sending streams and reputation)](https://support.google.com/a/answer/81126)

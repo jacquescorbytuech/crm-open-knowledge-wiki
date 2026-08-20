@@ -3,7 +3,19 @@ type: Method
 title: Holdouts and Control Groups
 description: How to size, randomise, maintain, and read an always-on global holdout and per-campaign control groups, plus geo experiments when individuals cannot be split, so you measure programme incrementality honestly.
 tags: [holdout, control-group, incrementality, experiment, geo-lift, causal, randomisation]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: emarketer-faq-on-incrementality
+    resource: https://www.emarketer.com/content/faq-on-incrementality-how-prove-your-ads-actually-work-2026
+    title: "EMARKETER, FAQ on incrementality"
+  - id: meta-geolift-open-source
+    resource: https://github.com/facebookincubator/GeoLift
+    title: "Meta GeoLift (open source)"
+  - id: google-meridian
+    resource: https://developers.google.com/meridian
+    title: "Google Meridian"
 ---
 
 ## The question only a control group answers
@@ -87,9 +99,3 @@ Incrementality is the higher bar, so incremental return reads lower than last to
 * [Attribution](/measurement/attribution.md)
 * [Retention and LTV](/measurement/retention-and-ltv.md)
 * [Volume thresholds](/measurement/volume-thresholds.md)
-
-## Citations
-
-[1] [EMARKETER, FAQ on incrementality](https://www.emarketer.com/content/faq-on-incrementality-how-prove-your-ads-actually-work-2026)
-[2] [Meta GeoLift (open source)](https://github.com/facebookincubator/GeoLift)
-[3] [Google Meridian](https://developers.google.com/meridian)

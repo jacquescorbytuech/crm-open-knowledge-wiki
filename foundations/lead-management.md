@@ -3,7 +3,19 @@ type: Framework
 title: Lead management
 description: The B2B motion the rest of this bundle's lifecycle frame does not cover: scoring leads on fit and engagement, the MQL and SQL definitions and the sales handoff that sit on top of them, nurturing the not-yet-ready, and where account-based marketing inverts the whole funnel.
 tags: [b2b, lead-scoring, mql, sql, nurturing, abm, lifecycle, sales]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: smartbug-media-handing-leads-off-to-sales
+    resource: https://www.smartbugmedia.com/blog/handing-leads-off-to-sales-the-mql-vs-sql-difference
+    title: "SmartBug Media, handing leads off to sales and the MQL vs SQL difference"
+  - id: factors-ai-mql-vs-sql-and-sales
+    resource: https://www.factors.ai/blog/mql-vs-sql
+    title: "Factors.ai, MQL vs SQL and sales-marketing alignment"
+  - id: marqeu-b2b-demand-waterfall-implementation-guide-stage
+    resource: https://www.marqeu.com/demand-waterfall-implementation-guide
+    title: "Marqeu, B2B demand waterfall implementation guide (stage definitions, entry/exit criteria, SLAs)"
 ---
 
 ## The B2B funnel the lifecycle frame omits
@@ -55,9 +67,3 @@ Lead management's tempting metrics are the funnel counts (leads, MQLs, SQLs), an
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
-
-## Citations
-
-[1] [SmartBug Media, handing leads off to sales and the MQL vs SQL difference](https://www.smartbugmedia.com/blog/handing-leads-off-to-sales-the-mql-vs-sql-difference)
-[2] [Factors.ai, MQL vs SQL and sales-marketing alignment](https://www.factors.ai/blog/mql-vs-sql)
-[3] [Marqeu, B2B demand waterfall implementation guide (stage definitions, entry/exit criteria, SLAs)](https://www.marqeu.com/demand-waterfall-implementation-guide)

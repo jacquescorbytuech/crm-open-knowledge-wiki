@@ -3,7 +3,19 @@ type: Playbook
 title: Consent and Preferences
 description: How to capture permission that holds up across every channel, run a preference centre that reduces churn, and operate suppression so the programme stays both compliant and deliverable, with the checklists and form mechanics to do each.
 tags: [consent, preferences, permission, suppression, compliance, gdpr, pecr, can-spam, tcpa, preference-centre, unsubscribe]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: ico-electronic-mail-marketing-under-pecr
+    resource: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
+    title: "ICO, electronic mail marketing under PECR"
+  - id: ftc-can-spam-act-compliance-guide-for
+    resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+    title: "FTC, CAN-SPAM Act compliance guide for business"
+  - id: fcc-telephone-consumer-protection-act-rules
+    resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
+    title: "FCC, Telephone Consumer Protection Act rules"
 ---
 
 ## Why permission is a foundation, not a footnote
@@ -120,9 +132,3 @@ See [respect the recipient](/principles/respect-the-recipient.md) and [engagemen
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Respect the recipient](/principles/respect-the-recipient.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
-
-## Citations
-
-[1] [ICO, electronic mail marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
-[2] [FTC, CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
-[3] [FCC, Telephone Consumer Protection Act rules](https://www.fcc.gov/general/telemarketing-and-robocall-rules)

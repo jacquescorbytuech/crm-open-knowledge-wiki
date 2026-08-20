@@ -3,7 +3,31 @@ type: Principle
 title: Device channels are leased, not owned
 description: Push, browser push, and wallet passes run on capabilities iOS and Android grant and can revoke, so the platform sets the ceiling on what you can do and moves it without notice.
 tags: [principle, push, browser-push, wallet, platform, ios, android, capabilities, permission]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: apple-unnotificationinterruptionlevel-passive-active-time-sensitive-critical
+    resource: https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel
+    title: "Apple, UNNotificationInterruptionLevel (passive, active, time-sensitive, critical)"
+  - id: android-developers-create-and-manage-notification-channels
+    resource: https://developer.android.com/develop/ui/views/notifications/channels
+    title: "Android Developers, create and manage notification channels"
+  - id: android-developers-notification-runtime-permission
+    resource: https://developer.android.com/develop/ui/views/notifications/notification-permission
+    title: "Android Developers, notification runtime permission"
+  - id: apple-unnotificationattachment-rich-notification-media
+    resource: https://developer.apple.com/documentation/usernotifications/unnotificationattachment
+    title: "Apple, UNNotificationAttachment (rich notification media)"
+  - id: android-developers-create-an-expanded-notification
+    resource: https://developer.android.com/develop/ui/views/notifications/expanded
+    title: "Android Developers, create an expanded notification"
+  - id: apple-apns-payload-size-limit-4kb-5kb
+    resource: https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html
+    title: "Apple, APNs payload size limit (4KB; 5KB VoIP)"
+  - id: apple-asking-permission-to-use-notifications-request
+    resource: https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications
+    title: "Apple, asking permission to use notifications (request in response to value, not at launch)"
 ---
 
 ## Stance
@@ -48,13 +72,3 @@ The desktop works the same way. Reach there runs through [browser push](/channel
 * [Platform interventions](/references/platform-interventions.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Apple, UNNotificationInterruptionLevel (passive, active, time-sensitive, critical)](https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel)
-[2] [Android Developers, create and manage notification channels](https://developer.android.com/develop/ui/views/notifications/channels)
-[3] [Android Developers, notification runtime permission](https://developer.android.com/develop/ui/views/notifications/notification-permission)
-[4] [Apple, UNNotificationAttachment (rich notification media)](https://developer.apple.com/documentation/usernotifications/unnotificationattachment)
-[5] [Android Developers, create an expanded notification](https://developer.android.com/develop/ui/views/notifications/expanded)
-[6] [Apple, APNs payload size limit (4KB; 5KB VoIP)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html)
-[7] [Apple, asking permission to use notifications (request in response to value, not at launch)](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications)

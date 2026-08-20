@@ -3,7 +3,37 @@ type: Channel
 title: Browser push
 description: How to reach a user through web push when you have no app, prime the browser permission so a cold prompt does not burn it, handle the service-worker and VAPID mechanics, and measure it against a holdout.
 tags: [channel, browser-push, web-push, service-worker, vapid, notifications-api, permission-priming, desktop, re-engagement]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: w3c-push-api-specification
+    resource: https://www.w3.org/TR/push-api/
+    title: "W3C, Push API specification"
+  - id: mdn-push-api-overview
+    resource: https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+    title: "MDN, Push API overview"
+  - id: mdn-notification-requestpermission
+    resource: https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static
+    title: "MDN, Notification.requestPermission()"
+  - id: ietf-rfc-8292-voluntary-application-server-identification
+    resource: https://www.rfc-editor.org/rfc/rfc8292
+    title: "IETF, RFC 8292: Voluntary Application Server Identification (VAPID) for Web Push"
+  - id: ietf-rfc-8291-message-encryption-for-web
+    resource: https://www.rfc-editor.org/rfc/rfc8291
+    title: "IETF, RFC 8291: Message Encryption for Web Push"
+  - id: chromium-blog-introducing-quieter-permission-ui-for
+    resource: https://blog.chromium.org/2020/01/introducing-quieter-permission-ui-for.html
+    title: "Chromium Blog, introducing quieter permission UI for notifications"
+  - id: apple-sending-web-push-notifications-in-web
+    resource: https://developer.apple.com/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers
+    title: "Apple, sending web push notifications in web apps and browsers"
+  - id: webkit-web-push-for-web-apps-on
+    resource: https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/
+    title: "WebKit, web push for web apps on iOS and iPadOS (Home Screen requirement)"
+  - id: peter-beverloo-web-notification-generator-test-shownotification
+    resource: https://tests.peter.sh/notification-generator/
+    title: "Peter Beverloo, web notification generator (test showNotification options per browser)"
 ---
 
 ## What it is
@@ -61,15 +91,3 @@ The web analogue of mobile push: the way back for a user who has no app to recei
 * [The channel mix](/channels/index.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [W3C, Push API specification](https://www.w3.org/TR/push-api/)
-[2] [MDN, Push API overview](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
-[3] [MDN, Notification.requestPermission()](https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static)
-[4] [IETF, RFC 8292: Voluntary Application Server Identification (VAPID) for Web Push](https://www.rfc-editor.org/rfc/rfc8292)
-[5] [IETF, RFC 8291: Message Encryption for Web Push](https://www.rfc-editor.org/rfc/rfc8291)
-[6] [Chromium Blog, introducing quieter permission UI for notifications](https://blog.chromium.org/2020/01/introducing-quieter-permission-ui-for.html)
-[7] [Apple, sending web push notifications in web apps and browsers](https://developer.apple.com/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers)
-[8] [WebKit, web push for web apps on iOS and iPadOS (Home Screen requirement)](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
-[9] [Peter Beverloo, web notification generator (test showNotification options per browser)](https://tests.peter.sh/notification-generator/)

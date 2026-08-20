@@ -3,7 +3,19 @@ type: Playbook
 title: Offers and Incentives
 description: How to use discounts and incentives without training deal-seeking or eroding margin, with the arithmetic to size an offer against margin, the holdout to measure its true effect, a price vs non-price decision rule, and offer-window targeting.
 tags: [offers, incentives, discounts, promotions, margin, pricing, break-even, holdout]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: the-good-why-discounting-is-bad-for
+    resource: https://thegood.com/insights/discounting-for-ecommerce/
+    title: "The Good, why discounting is bad for your brand (trains deal-seeking; attracts bargain hunters)"
+  - id: competera-discount-pricing-strategy-depth-vs-margin
+    resource: https://competera.ai/resources/articles/discount-pricing-strategy-definition-example
+    title: "Competera, discount pricing strategy (depth vs margin; selective discounting)"
+  - id: hbr-the-value-of-keeping-the-right
+    resource: https://hbr.org/2014/10/the-value-of-keeping-the-right-customers
+    title: "HBR, the value of keeping the right customers (low-value vs high-value customers)"
 ---
 
 ## Discount discipline
@@ -80,9 +92,3 @@ Money is the most expensive and least differentiated incentive. Often a non-pric
 * [The welcome window](/principles/the-welcome-window.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Segmentation models](/foundations/segmentation-models.md)
-
-## Citations
-
-[1] [The Good, why discounting is bad for your brand (trains deal-seeking; attracts bargain hunters)](https://thegood.com/insights/discounting-for-ecommerce/)
-[2] [Competera, discount pricing strategy (depth vs margin; selective discounting)](https://competera.ai/resources/articles/discount-pricing-strategy-definition-example)
-[3] [HBR, the value of keeping the right customers (low-value vs high-value customers)](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)

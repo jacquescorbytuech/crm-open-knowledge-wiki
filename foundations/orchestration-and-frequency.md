@@ -3,7 +3,19 @@ type: Playbook
 title: Orchestration and Frequency
 description: How to run a single contact strategy across channels, choose the channel for each job, set and tune engagement-tiered frequency caps, resolve message collisions by priority, and run a suppression check before every send.
 tags: [orchestration, frequency, contact-strategy, channels, cross-channel, suppression, frequency-cap]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: marketingsherpa-why-consumers-unsubscribe-too-many-emails
+    resource: https://marketingsherpa.com/article/chart/why-consumers-unsubscribe
+    title: "MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)"
+  - id: fcc-telemarketing-and-robocall-rules-sms-quiet
+    resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
+    title: "FCC, telemarketing and robocall rules (SMS quiet hours)"
+  - id: uplift-modelling-estimating-a-message-s-incremental
+    resource: https://en.wikipedia.org/wiki/Uplift_modelling
+    title: "Uplift modelling (estimating a message's incremental effect per person; withholding from \"Do Not Disturb\" recipients it would not move)"
 ---
 
 ## What it is
@@ -107,9 +119,3 @@ Quiet hours and consent based suppressions are legal constraints, not courtesies
 * [Transactional messaging](/foundations/transactional-messaging.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [MarketingSherpa, why consumers unsubscribe (too many emails is the top reason)](https://marketingsherpa.com/article/chart/why-consumers-unsubscribe)
-[2] [FCC, telemarketing and robocall rules (SMS quiet hours)](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
-[3] [Uplift modelling (estimating a message's incremental effect per person; withholding from "Do Not Disturb" recipients it would not move)](https://en.wikipedia.org/wiki/Uplift_modelling)

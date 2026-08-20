@@ -3,7 +3,16 @@ type: Channel
 title: Website personalisation
 description: How to use your own website as a CRM surface: adapt content and show messages to a live visitor who is anonymous until resolved, deploy it without the flicker tax, decide onsite versus in-app versus browser push, and measure it by onsite experiment against a control.
 tags: [channel, website, onsite, web-personalisation, experimentation, anonymous, identity-resolution, flicker, recommendations]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: adobe-target-and-flicker-the-pre-hiding
+    resource: https://experienceleague.adobe.com/en/docs/target/using/implement-target/client-side/how-at-js-works/manage-flicker-with-at-js
+    title: "Adobe, Target and flicker / the pre-hiding snippet"
+  - id: optimizely-the-anti-flicker-snippet-for-client
+    resource: https://support.optimizely.com/hc/en-us/articles/4410289706253-Use-the-anti-flicker-snippet
+    title: "Optimizely, the anti-flicker snippet for client-side experiments"
 ---
 
 ## What it is
@@ -63,8 +72,3 @@ The acquisition and conversion surface for web traffic, and the landing surface 
 * [Tracking and measurement consent](/references/tracking-and-measurement-consent.md)
 * [List building](/foundations/list-building.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Adobe, Target and flicker / the pre-hiding snippet](https://experienceleague.adobe.com/en/docs/target/using/implement-target/client-side/how-at-js-works/manage-flicker-with-at-js)
-[2] [Optimizely, the anti-flicker snippet for client-side experiments](https://support.optimizely.com/hc/en-us/articles/4410289706253-Use-the-anti-flicker-snippet)

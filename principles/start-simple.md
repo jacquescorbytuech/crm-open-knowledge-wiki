@@ -3,7 +3,9 @@ type: Principle
 title: Start simple, then add complexity
 description: Most CRM programmes are better served by well executed basics than poorly executed sophistication. Crawl, then walk, then run.
 tags: [principle, strategy]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

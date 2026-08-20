@@ -3,7 +3,38 @@ type: Reference
 title: Tracking and Measurement Consent
 description: Why the right to track is a separate permission from the right to send, resting on the GDPR, which governs the tracking data as personal data, together with Article 5(3) of the ePrivacy Directive where the measurement reads or writes on the device, read through the 2026 French and Italian rulings on email tracking pixels, and how the split runs across web, app, push and the other channels.
 tags: [legislation, compliance, gdpr, eprivacy, tracking-pixel, consent, cnil, garante, measurement, cookies, app-tracking, att]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+stale_after: 2027-08-20
+sources:
+  - id: edpb-guidelines-2-2023-on-the-technical
+    resource: https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+    title: "EDPB, Guidelines 2/2023 on the technical scope of Article 5(3) of the ePrivacy Directive"
+  - id: hogan-lovells-french-dpa-establishes-heightened-consent
+    resource: https://www.hoganlovells.com/en/publications/french-data-protection-authority-establishes-heightened-consent-rules-for-tracking-pixels-in-emails
+    title: "Hogan Lovells, French DPA establishes heightened consent rules for tracking pixels in emails"
+  - id: twilio-consent-needed-for-open-tracking-pixels
+    resource: https://www.twilio.com/en-us/blog/insights/tracking-consent-cnil-france
+    title: "Twilio, consent needed for open tracking pixels: CNIL says yes"
+  - id: covington-global-policy-watch-italian-dpa-publishes
+    resource: https://www.globalpolicywatch.com/2026/05/italian-dpa-publishes-guidelines-on-email-tracking-pixels/
+    title: "Covington Global Policy Watch, Italian DPA publishes guidelines on email tracking pixels"
+  - id: a-o-shearman-tracking-pixels-in-emails
+    resource: https://www.aoshearman.com/en/insights/tracking-pixels-in-emails-the-garantes-new-guidelines-and-requirements-for-businesses
+    title: "A&O Shearman, tracking pixels in emails: the Garante's new guidelines and requirements for businesses"
+  - id: cms-tracking-according-to-the-eprivacy-directive
+    resource: https://cms.law/en/deu/insight/e-privacy/tracking-according-to-the-eprivacy-directive-and-german-law
+    title: "CMS, tracking according to the ePrivacy Directive and German law"
+  - id: apple-user-privacy-and-data-use-app
+    resource: https://developer.apple.com/app-store/user-privacy-and-data-use/
+    title: "Apple, User Privacy and Data Use (App Tracking Transparency and the IDFA prompt)"
+  - id: trackier-gaid-and-mobile-attribution-in-2026
+    resource: https://trackier.com/everything-you-need-to-know-about-gaid/
+    title: "Trackier, GAID and mobile attribution in 2026 (the advertising-identifier phase-out)"
+  - id: edpb-opinion-5-2019-on-the-interplay
+    resource: https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-52019-interplay-between-eprivacy_en
+    title: "EDPB, Opinion 5/2019 on the interplay between the ePrivacy Directive and the GDPR"
 ---
 
 > [!caution] This is not legal advice
@@ -83,15 +114,3 @@ This is not only a legal note; it changes how to read your numbers. The bundle a
 * [Deliverability](/foundations/deliverability.md)
 * [Website personalisation](/channels/website-personalisation.md)
 * [The channel mix](/channels/index.md)
-
-## Citations
-
-[1] [EDPB, Guidelines 2/2023 on the technical scope of Article 5(3) of the ePrivacy Directive](https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en)
-[2] [Hogan Lovells, French DPA establishes heightened consent rules for tracking pixels in emails](https://www.hoganlovells.com/en/publications/french-data-protection-authority-establishes-heightened-consent-rules-for-tracking-pixels-in-emails)
-[3] [Twilio, consent needed for open tracking pixels: CNIL says yes](https://www.twilio.com/en-us/blog/insights/tracking-consent-cnil-france)
-[4] [Covington Global Policy Watch, Italian DPA publishes guidelines on email tracking pixels](https://www.globalpolicywatch.com/2026/05/italian-dpa-publishes-guidelines-on-email-tracking-pixels/)
-[5] [A&O Shearman, tracking pixels in emails: the Garante's new guidelines and requirements for businesses](https://www.aoshearman.com/en/insights/tracking-pixels-in-emails-the-garantes-new-guidelines-and-requirements-for-businesses)
-[6] [CMS, tracking according to the ePrivacy Directive and German law](https://cms.law/en/deu/insight/e-privacy/tracking-according-to-the-eprivacy-directive-and-german-law)
-[7] [Apple, User Privacy and Data Use (App Tracking Transparency and the IDFA prompt)](https://developer.apple.com/app-store/user-privacy-and-data-use/)
-[8] [Trackier, GAID and mobile attribution in 2026 (the advertising-identifier phase-out)](https://trackier.com/everything-you-need-to-know-about-gaid/)
-[9] [EDPB, Opinion 5/2019 on the interplay between the ePrivacy Directive and the GDPR](https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-52019-interplay-between-eprivacy_en)

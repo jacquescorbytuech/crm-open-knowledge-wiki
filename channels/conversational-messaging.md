@@ -3,7 +3,22 @@ type: Channel
 title: Conversational messaging
 description: How to run CRM over WhatsApp and the messaging apps, work the opt-in and the 24-hour customer-service window, choose template categories, and measure it against a holdout.
 tags: [channel, conversational-messaging, whatsapp, messenger, apple-messages-for-business, instagram-dm, opt-in, message-templates, customer-service-window]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: meta-get-opt-in-for-whatsapp
+    resource: https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in
+    title: "Meta, get opt-in for WhatsApp"
+  - id: meta-whatsapp-business-platform-pricing-and-conversation
+    resource: https://developers.facebook.com/docs/whatsapp/pricing
+    title: "Meta, WhatsApp Business Platform pricing and conversation categories"
+  - id: meta-whatsapp-customer-service-window-and-message
+    resource: https://developers.facebook.com/documentation/business-messaging/whatsapp/messages/send-messages
+    title: "Meta, WhatsApp customer-service window and message types"
+  - id: meta-messenger-platform-documentation
+    resource: https://developers.facebook.com/docs/messenger-platform/
+    title: "Meta, Messenger Platform documentation"
 ---
 
 ## What it is
@@ -56,10 +71,3 @@ The two-way, high-intent relationship channel, strongest in transactional and po
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Meta, get opt-in for WhatsApp](https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in)
-[2] [Meta, WhatsApp Business Platform pricing and conversation categories](https://developers.facebook.com/docs/whatsapp/pricing)
-[3] [Meta, WhatsApp customer-service window and message types](https://developers.facebook.com/documentation/business-messaging/whatsapp/messages/send-messages)
-[4] [Meta, Messenger Platform documentation](https://developers.facebook.com/docs/messenger-platform/)

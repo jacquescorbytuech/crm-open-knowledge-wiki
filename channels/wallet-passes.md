@@ -3,7 +3,22 @@ type: Channel
 title: Wallet passes
 description: How to use Apple Wallet and Google Wallet passes as a persistent, updatable, location-aware loyalty surface, distribute and update them, and measure them against a holdout.
 tags: [channel, wallet, apple-wallet, google-wallet, passkit, passes, loyalty, coupons, lock-screen]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: apple-wallet-developer-guide-passkit
+    resource: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html
+    title: "Apple, Wallet Developer Guide (PassKit)"
+  - id: apple-updating-a-pass-with-push-notifications
+    resource: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Updating.html
+    title: "Apple, updating a pass with push notifications"
+  - id: google-google-wallet-api
+    resource: https://developers.google.com/wallet
+    title: "Google, Google Wallet API"
+  - id: google-google-wallet-generic-pass
+    resource: https://developers.google.com/wallet/generic
+    title: "Google, Google Wallet generic pass"
 ---
 
 ## What it is
@@ -54,10 +69,3 @@ The retention and loyalty surface that persists between sends, strongest for pro
 * [Loyalty and retention programs](/foundations/loyalty-and-retention-programs.md)
 * [Offers and incentives](/foundations/offers-and-incentives.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Apple, Wallet Developer Guide (PassKit)](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html)
-[2] [Apple, updating a pass with push notifications](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Updating.html)
-[3] [Google, Google Wallet API](https://developers.google.com/wallet)
-[4] [Google, Google Wallet generic pass](https://developers.google.com/wallet/generic)

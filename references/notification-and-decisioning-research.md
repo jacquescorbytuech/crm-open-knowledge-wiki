@@ -3,7 +3,23 @@ type: Reference
 title: Notification and Decisioning Research
 description: The published production notification systems and the agentic messaging and uplift literature behind AI decisioning in marketing, with citations to the primary papers.
 tags: [research, notifications, reinforcement-learning, bandits, uplift, agentic]
-timestamp: 2026-06-02T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-02T00:00:00Z
+stale_after: 2027-08-20
+sources:
+  - id: li-2010-contextual-bandit
+    resource: https://arxiv.org/abs/1003.0146
+    title: "Li et al., A Contextual-Bandit Approach to Personalized Recommendation, WWW 2010"
+  - id: jeunen-wheeler-2025-agentic-messaging
+    resource: https://arxiv.org/abs/2512.17462
+    title: "Jeunen and Wheeler, Behavioural Effects of Agentic Messaging, 2025"
+  - id: su-2024-long-term-value-of-exploration
+    resource: https://arxiv.org/abs/2305.07764
+    title: "Su et al., Long-Term Value of Exploration, WSDM 2024"
+  - id: agarwal-2016-contextual-decisions
+    resource: https://arxiv.org/abs/1606.03966
+    title: "Agarwal et al., Making Contextual Decisions with Low Technical Debt, 2016"
 ---
 
 ## Production notification systems
@@ -37,10 +53,3 @@ The receiving end runs its own published models: Apple Intelligence on a 3 billi
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Platform interventions](/references/platform-interventions.md)
-
-## Citations
-
-[1] [Li et al., A Contextual-Bandit Approach to Personalized Recommendation, WWW 2010 (arXiv 1003.0146)](https://arxiv.org/abs/1003.0146)
-[2] Jeunen and Wheeler, Behavioural Effects of Agentic Messaging, 2025 (arXiv 2512.17462)
-[3] Su et al., Long-Term Value of Exploration, WSDM 2024 (arXiv 2305.07764)
-[4] Agarwal et al., Making Contextual Decisions with Low Technical Debt, 2016 (arXiv 1606.03966)

@@ -3,7 +3,13 @@ type: Principle
 title: Email metrics are directional, not precise
 description: Open rates especially. Never treat metrics as gospel, and never make major decisions on small differences without statistical rigour.
 tags: [principle, metrics, opens, ctor]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: word-to-the-wise-deliveries-and-opens
+    resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
+    title: "Word to the Wise, Deliveries and Opens and Clicks"
 ---
 
 ## Stance
@@ -41,7 +47,3 @@ Optimising for opens through misdirection lifts delete without read at the same 
 * [Volume thresholds](/measurement/volume-thresholds.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Core metrics](/measurement/core-metrics.md)
-
-## Citations
-
-[1] [Word to the Wise, Deliveries and Opens and Clicks](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)

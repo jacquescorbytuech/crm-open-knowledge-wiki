@@ -3,7 +3,9 @@ type: Principle
 title: List quality over size, always
 description: An engaged list of 500 outperforms a disengaged list of 10,000. Optimise for attracting the right subscriber.
 tags: [principle, list, engagement]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

@@ -3,7 +3,16 @@ type: Channel
 title: In-app
 description: How to use an owned in-product surface, choose the message format by interruption tolerance, set trigger conditions and frequency caps, decide in-app versus push versus email, and measure it cleanly against a holdout.
 tags: [channel, in-app, owned, in-product, onboarding, formats, triggers, frequency]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: braze-in-app-messages-reach-only-active
+    resource: https://www.braze.com/docs/user_guide/channels/in_app_messages/faq
+    title: "Braze, in-app messages reach only active users"
+  - id: airship-in-app-automation-cached-and-displayed
+    resource: https://www.airship.com/docs/guides/features/messaging/in-app-automation/
+    title: "Airship, in-app automation cached and displayed on trigger conditions"
 ---
 
 ## What it is
@@ -66,8 +75,3 @@ The destination the other channels drive toward. Push and email bring the user b
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Respect the recipient](/principles/respect-the-recipient.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Braze, in-app messages reach only active users](https://www.braze.com/docs/user_guide/channels/in_app_messages/faq)
-[2] [Airship, in-app automation cached and displayed on trigger conditions](https://www.airship.com/docs/guides/features/messaging/in-app-automation/)

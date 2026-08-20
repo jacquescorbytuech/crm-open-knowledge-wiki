@@ -3,7 +3,16 @@ type: Channel
 title: Point of sale
 description: How to use the checkout as a CRM surface: resolve identity at the lane, deliver an offer or an enrolment at the moment of purchase, hand off to the digital channels between visits, and measure it against a holdout.
 tags: [channel, point-of-sale, pos, in-store, loyalty, identity-resolution, receipt, clienteling, control-group]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: square-loyalty-api-overview-identity-and-rewards
+    resource: https://developer.squareup.com/docs/loyalty-api/overview
+    title: "Square, Loyalty API overview (identity and rewards at the point of sale)"
+  - id: square-terminal-api-rendering-at-the-customer
+    resource: https://developer.squareup.com/docs/terminal-api/overview
+    title: "Square, Terminal API (rendering at the customer-facing terminal)"
 ---
 
 ## What it is
@@ -59,8 +68,3 @@ The acquisition-into-the-programme and redemption surface, where the offline cus
 * [Loyalty and retention programs](/foundations/loyalty-and-retention-programs.md)
 * [Offers and incentives](/foundations/offers-and-incentives.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Square, Loyalty API overview (identity and rewards at the point of sale)](https://developer.squareup.com/docs/loyalty-api/overview)
-[2] [Square, Terminal API (rendering at the customer-facing terminal)](https://developer.squareup.com/docs/terminal-api/overview)

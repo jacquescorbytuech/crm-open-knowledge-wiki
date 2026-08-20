@@ -3,7 +3,9 @@ type: Principle
 title: Email is a free impression channel
 description: Every send is a brand impression at effectively zero marginal cost, with a halo effect across channels that last click attribution never captures.
 tags: [principle, attribution, brand, halo]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

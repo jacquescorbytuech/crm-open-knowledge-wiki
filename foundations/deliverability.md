@@ -3,7 +3,28 @@ type: Playbook
 title: Deliverability and Metrics
 description: How inbox placement works, how to warm an IP or domain, how to recover from spam, how to monitor complaint rate, the full metrics reference, the Gmail Promotions tab, and MIME structure.
 tags: [deliverability, spam, ip-warming, metrics, promotions-tab, mime, postmaster-tools, snds]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: word-to-the-wise-deliveries-and-opens
+    resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
+    title: "Word to the Wise, deliveries and opens and clicks (opens and clicks are noisy, directional signals)"
+  - id: google-email-sender-guidelines-authentication-spam-rate
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (authentication, spam-rate threshold, one-click unsubscribe)"
+  - id: rfc-2046-multipart-alternative-include-a-plain
+    resource: https://www.rfc-editor.org/rfc/rfc2046.html
+    title: "RFC 2046, multipart/alternative (include a plain-text part)"
+  - id: google-postmaster-tools-spam-rate-and-reputation
+    resource: https://support.google.com/mail/answer/9981691
+    title: "Google Postmaster Tools, spam rate and reputation dashboards"
+  - id: microsoft-snds-smart-network-data-services
+    resource: https://sendersupport.olc.protection.outlook.com/snds/
+    title: "Microsoft SNDS, Smart Network Data Services"
+  - id: m3aawg-sender-best-practices-and-reputation-guidance
+    resource: https://www.m3aawg.org/published-documents
+    title: "M3AAWG, sender best practices and reputation guidance"
 ---
 
 ## How placement works
@@ -125,12 +146,3 @@ Send a proper multipart message. Use a `multipart/alternative` container holding
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
-
-## Citations
-
-[1] [Word to the Wise, deliveries and opens and clicks (opens and clicks are noisy, directional signals)](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)
-[2] [Google, email sender guidelines (authentication, spam-rate threshold, one-click unsubscribe)](https://support.google.com/a/answer/81126)
-[3] [RFC 2046, multipart/alternative (include a plain-text part)](https://www.rfc-editor.org/rfc/rfc2046.html)
-[4] [Google Postmaster Tools, spam rate and reputation dashboards](https://support.google.com/mail/answer/9981691)
-[5] [Microsoft SNDS, Smart Network Data Services](https://sendersupport.olc.protection.outlook.com/snds/)
-[6] [M3AAWG, sender best practices and reputation guidance](https://www.m3aawg.org/published-documents)

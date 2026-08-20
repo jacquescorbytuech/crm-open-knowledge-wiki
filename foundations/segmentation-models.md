@@ -3,7 +3,28 @@ type: Framework
 title: Segmentation Models
 description: The models a programme uses to divide an audience, RFM, value and lifetime-value tiers, behavioural, demographic and firmographic, lifecycle-stage, and propensity, with how to compute RFM and a simple CLV, how to combine them with lifecycle stage, and how to choose between them for a given job.
 tags: [segmentation, rfm, clv, propensity, behavioural, lifecycle, framework, scoring]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: qualtrics-market-segmentation-types-behavioural-demographic-firmographic
+    resource: https://www.qualtrics.com/articles/strategy-research/what-is-market-segmentation/
+    title: "Qualtrics, market segmentation types (behavioural, demographic, firmographic)"
+  - id: omniconvert-the-rfm-model-and-its-origin
+    resource: https://www.omniconvert.com/blog/rfm-model/
+    title: "Omniconvert, the RFM model and its origin in 1960s direct marketing"
+  - id: techtarget-rfm-analysis-definition
+    resource: https://www.techtarget.com/searchdatamanagement/definition/RFM-analysis
+    title: "TechTarget, RFM analysis definition"
+  - id: klaviyo-segmenting-by-customer-lifetime-value
+    resource: https://help.klaviyo.com/hc/en-us/articles/360013201072
+    title: "Klaviyo, segmenting by customer lifetime value"
+  - id: clevertap-propensity-modelling-for-marketers
+    resource: https://clevertap.com/blog/what-is-propensity-modeling/
+    title: "CleverTap, propensity modelling for marketers"
+  - id: amperity-churn-propensity-model-reference
+    resource: https://docs.amperity.com/reference/model_churn_propensity.html
+    title: "Amperity, churn propensity model reference"
 ---
 
 ## Matching a model to the job
@@ -97,12 +118,3 @@ Match the model to the job, and prefer the simplest model that answers the quest
 * [Retention and LTV](/measurement/retention-and-ltv.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
-
-## Citations
-
-[1] [Qualtrics, market segmentation types (behavioural, demographic, firmographic)](https://www.qualtrics.com/articles/strategy-research/what-is-market-segmentation/)
-[2] [Omniconvert, the RFM model and its origin in 1960s direct marketing](https://www.omniconvert.com/blog/rfm-model/)
-[3] [TechTarget, RFM analysis definition](https://www.techtarget.com/searchdatamanagement/definition/RFM-analysis)
-[4] [Klaviyo, segmenting by customer lifetime value](https://help.klaviyo.com/hc/en-us/articles/360013201072)
-[5] [CleverTap, propensity modelling for marketers](https://clevertap.com/blog/what-is-propensity-modeling/)
-[6] [Amperity, churn propensity model reference](https://docs.amperity.com/reference/model_churn_propensity.html)

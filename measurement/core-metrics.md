@@ -3,7 +3,13 @@ type: Concept
 title: Core Metrics
 description: The metric tree a lifecycle programme is judged on, from engagement through conversion to retention and revenue, and how to choose a North Star, set guardrails, and tell the metrics that decide actions from the ones that only decorate a dashboard.
 tags: [metrics, metric-tree, north-star, guardrails, kpis, leading-indicators]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: apple-mail-privacy-protection-apple-support
+    resource: https://support.apple.com/guide/iphone/protect-mail-activity-iphd22a4a3a8/ios
+    title: "Apple, Mail Privacy Protection (Apple Support)"
 ---
 
 ## The metric tree
@@ -89,7 +95,3 @@ So watch leading indicators alongside it: earlier, movable signals that tend to 
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
-
-## Citations
-
-[1] [Apple, Mail Privacy Protection (Apple Support)](https://support.apple.com/guide/iphone/protect-mail-activity-iphd22a4a3a8/ios)

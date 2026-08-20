@@ -14,9 +14,9 @@ Before you start, read [`README.md`](README.md) and [`references/about-this-bund
 
 Every file is a concept and its path is its identity, so changes follow the bundle's conventions:
 
-- **Frontmatter.** Each concept declares a `type` (Principle, Playbook, Framework, Channel, Method, Reference, …) plus `title`, `description`, `tags`, and a `timestamp`. Match the shape of the files already in the directory you're editing.
+- **Frontmatter.** Each concept declares a `type` (Principle, Playbook, Framework, Channel, Method, Reference, …) plus `title`, `description`, and `tags`, and records provenance in the OKF v0.2 fields: `generated` (who produced the content and when; agents as `producer/version`, humans as `human:<id>`) and `sources` (each entry an `id`, a `resource` URL, and a title). Match the shape of the files already in the directory you're editing, and update `generated` when you change a page's content.
 - **Links are the structure.** Cross-link related concepts with ordinary Markdown links, bundle-relative and beginning with a slash (`/foundations/lifecycle-mapping.md`). A link to a concept that doesn't exist yet is fine, it marks knowledge not yet written.
-- **Ground every claim.** Add or extend the concept's **Citations** section. Sources should be primary or authoritative (standards and RFCs, platform documentation, regulators such as the FTC, ICO, FCC, or recognised industry and research references), not marketing pages.
+- **Ground every claim.** Add or extend the concept's frontmatter `sources` list; where you attribute an individual claim in the body, use a Markdown footnote whose label matches the source's `id`. Sources should be primary or authoritative (standards and RFCs, platform documentation, regulators such as the FTC, ICO, FCC, or recognised industry and research references), not marketing pages.
 - **No fabricated facts.** Do not invent statistics, benchmarks, or citations. Numbers should be genuine conventions (RFC limits, character counts, statutory quiet hours) or be explicitly framed as defaults.
 - **House style.** Plain Markdown, prose over bullet-soup where a paragraph reads better, and no em-dashes in concept files (use commas or restructure).
 - **Update the reserved files.** If you add or rename a concept, register it in the relevant `index.md`, and add a short entry to [`log.md`](log.md) describing the change and its sourcing.
@@ -43,7 +43,7 @@ Use them sparingly. This is a dense reference, and a callout earns its place by 
 - **`example`** (purple) for a concrete worked example or calculation, wrapping numbers that are already in the page.
 - **`bug`** (red), **`question`** (yellow), **`abstract`** (light blue) and the rest are available; see the [Quartz callout list](https://quartz.jzhao.xyz/features/callouts).
 
-Keep titles short and in sentence case, and follow the bundle's house style inside the box: no em-dashes, no invented facts, and no boxing of tables, the **Related** list, or the **Citations** section. A callout should wrap text that already reads as prose elsewhere on the page, not introduce new claims.
+Keep titles short and in sentence case, and follow the bundle's house style inside the box: no em-dashes, no invented facts, and no boxing of tables, the **Related** list, or footnote definitions. A callout should wrap text that already reads as prose elsewhere on the page, not introduce new claims.
 
 > [!tip] Before adding one
 > If you are unsure whether a callout helps, leave it as prose. The bundle should read cleanly without any of them.

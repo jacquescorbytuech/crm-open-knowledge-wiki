@@ -3,7 +3,19 @@ type: Playbook
 title: List Building
 description: How to build forms, choose single versus double opt in, design a confirmation flow, deliver a lead magnet through automation, and tag acquisition source so it stays attributable.
 tags: [list-building, forms, lead-magnets, opt-in, double-opt-in, utm, attribution]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: baymard-institute-fewer-form-fields-reduce-abandonment
+    resource: https://baymard.com/blog/checkout-flow-average-form-fields
+    title: "Baymard Institute, fewer form fields reduce abandonment"
+  - id: mailjet-double-opt-in-improves-list-quality
+    resource: https://www.mailjet.com/blog/deliverability/double-opt-in-should-i-or-shouldnt-i/
+    title: "Mailjet, double opt-in improves list quality, deliverability, and gives a consent record"
+  - id: the-good-discount-led-acquisition-attracts-bargain
+    resource: https://thegood.com/insights/discounting-for-ecommerce/
+    title: "The Good, discount-led acquisition attracts bargain hunters who churn"
 ---
 
 ## Forms
@@ -92,9 +104,3 @@ Capture those values into hidden form fields so they land on the contact record 
 * [Segmentation and data](/foundations/segmentation-and-data.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Automation and sequences](/foundations/automation-and-sequences.md)
-
-## Citations
-
-[1] [Baymard Institute, fewer form fields reduce abandonment](https://baymard.com/blog/checkout-flow-average-form-fields)
-[2] [Mailjet, double opt-in improves list quality, deliverability, and gives a consent record](https://www.mailjet.com/blog/deliverability/double-opt-in-should-i-or-shouldnt-i/)
-[3] [The Good, discount-led acquisition attracts bargain hunters who churn](https://thegood.com/insights/discounting-for-ecommerce/)

@@ -3,7 +3,16 @@ type: Method
 title: Volume Thresholds
 description: The sends per cell needed to detect a given relative shift at a 2% email click baseline, how to read it across channels whose base rates differ, and how a team should use that table to decide which tests are worth running.
 tags: [statistics, power, volume, testing, measurement]
-timestamp: 2026-06-11T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-11T00:00:00Z
+sources:
+  - id: klaviyo-ecommerce-email-benchmarks-typical-b2c-click
+    resource: https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks
+    title: "Klaviyo, ecommerce email benchmarks (typical B2C click-rate baseline)"
+  - id: kohavi-et-al-trustworthy-online-controlled-experiments
+    resource: https://experimentguide.com/
+    title: "Kohavi et al., Trustworthy Online Controlled Experiments (statistical power and sample size for A/B tests)"
 ---
 
 ## The floor table
@@ -42,8 +51,3 @@ Read the table before you design a test, not after it fails to reach significanc
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 * [Impact sizing](/measurement/impact-sizing.md)
-
-## Citations
-
-[1] [Klaviyo, ecommerce email benchmarks (typical B2C click-rate baseline)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)
-[2] [Kohavi et al., Trustworthy Online Controlled Experiments (statistical power and sample size for A/B tests)](https://experimentguide.com/)

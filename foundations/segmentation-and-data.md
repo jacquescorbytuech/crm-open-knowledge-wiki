@@ -3,7 +3,13 @@ type: Playbook
 title: Segmentation and Data
 description: How to define dynamic and static segments, spot and resolve overlap, run hygiene to an SLA, QA merge tags and dynamic content, and audit consent on a cadence, with the segmentation models and the wider data layer treated separately.
 tags: [segmentation, data, personalisation, privacy, merge-tags, hygiene, dynamic-segments, overlap, data-quality]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: klaviyo-ecommerce-benchmarks-targeted-segments-outperform-broad
+    resource: https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks
+    title: "Klaviyo, ecommerce benchmarks (targeted segments outperform broad sends on engagement and revenue per recipient)"
 ---
 
 ## What this covers
@@ -93,7 +99,3 @@ Set the cadence to your volume and risk; the point is that it is scheduled, with
 * [Segmentation has real costs](/principles/segmentation-has-costs.md)
 * [Volume thresholds](/measurement/volume-thresholds.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
-
-## Citations
-
-[1] [Klaviyo, ecommerce benchmarks (targeted segments outperform broad sends on engagement and revenue per recipient)](https://www.klaviyo.com/marketing-resources/ecommerce-benchmarks)

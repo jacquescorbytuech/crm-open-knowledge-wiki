@@ -3,7 +3,43 @@ type: Reference
 title: Personalisation Mechanics
 description: How a personalised value is resolved into a message: the templating languages that express it, and the range from profile-attribute substitution fixed at send, through external content fetched as the send renders, to live content resolved at the moment of open, with the freshness-versus-fragility trade each point on the timeline carries.
 tags: [personalisation, dynamic-content, merge-tags, templating, liquid, connected-content, open-time, live-content]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: salesforce-ampscript-for-marketing-cloud-engagement
+    resource: https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ampscript.html
+    title: "Salesforce, AMPscript for Marketing Cloud Engagement"
+  - id: salesforce-ampscript-httpget-retrieve-content-from-an
+    resource: https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/httpget.html
+    title: "Salesforce, AMPscript HTTPGet (retrieve content from an external URL at send)"
+  - id: braze-liquid-personalisation-and-supported-tags
+    resource: https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/liquid
+    title: "Braze, Liquid personalisation and supported tags"
+  - id: iterable-handlebars-personalisation-syntax
+    resource: https://support.iterable.com/hc/en-us/articles/205480275-Personalizing-Messages-with-Handlebars
+    title: "Iterable, Handlebars personalisation syntax"
+  - id: marketo-velocity-email-scripting-the-email-script
+    resource: https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/dynamic-content/velocity
+    title: "Marketo, Velocity email scripting (the Email Script token)"
+  - id: braze-connected-content-call-an-external-api
+    resource: https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/connected_content
+    title: "Braze, Connected Content (call an external API at message render time)"
+  - id: emarsys-relational-data-related-data-tables-for
+    resource: https://help.emarsys.com/hc/en-us/articles/115004845945
+    title: "Emarsys, relational data (related data tables for personalisation and segmentation)"
+  - id: messagegears-warehouse-native-messaging-personalise-directly-from
+    resource: https://www.messagegears.com/
+    title: "MessageGears, warehouse-native messaging (personalise directly from the customer's data warehouse)"
+  - id: movable-ink-open-time-activate-on-open
+    resource: https://movableink.com/
+    title: "Movable Ink, open-time / activate-on-open personalisation"
+  - id: litmus-real-time-and-live-content-in
+    resource: https://www.litmus.com/blog/how-to-use-real-time-personalization-in-email
+    title: "Litmus, real-time and live content in email"
+  - id: apple-mail-privacy-protection-prefetches-remote-content
+    resource: https://support.apple.com/guide/iphone/protect-your-email-activity-iph2af30b8be/ios
+    title: "Apple, Mail Privacy Protection (prefetches remote content at receipt)"
 ---
 
 ## Where the value comes from and when it resolves
@@ -67,17 +103,3 @@ These layers stack rather than compete. [Decisioning](/foundations/decisioning-a
 * [Direct mail](/channels/direct-mail.md)
 * [In-app](/channels/in-app.md)
 * [Deliverability](/foundations/deliverability.md)
-
-## Citations
-
-[1] [Salesforce, AMPscript for Marketing Cloud Engagement](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ampscript.html)
-[2] [Salesforce, AMPscript HTTPGet (retrieve content from an external URL at send)](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/httpget.html)
-[3] [Braze, Liquid personalisation and supported tags](https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/liquid)
-[4] [Iterable, Handlebars personalisation syntax](https://support.iterable.com/hc/en-us/articles/205480275-Personalizing-Messages-with-Handlebars)
-[5] [Marketo, Velocity email scripting (the Email Script token)](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/dynamic-content/velocity)
-[6] [Braze, Connected Content (call an external API at message render time)](https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/connected_content)
-[7] [Emarsys, relational data (related data tables for personalisation and segmentation)](https://help.emarsys.com/hc/en-us/articles/115004845945)
-[8] [MessageGears, warehouse-native messaging (personalise directly from the customer's data warehouse)](https://www.messagegears.com/)
-[9] [Movable Ink, open-time / activate-on-open personalisation](https://movableink.com/)
-[10] [Litmus, real-time and live content in email](https://www.litmus.com/blog/how-to-use-real-time-personalization-in-email)
-[11] [Apple, Mail Privacy Protection (prefetches remote content at receipt)](https://support.apple.com/guide/iphone/protect-your-email-activity-iph2af30b8be/ios)

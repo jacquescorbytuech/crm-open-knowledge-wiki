@@ -3,7 +3,9 @@ type: Principle
 title: Segmentation has real costs
 description: Time, complexity, human error risk, shrinking sample sizes. Do not recommend aggressive segmentation below list sizes in the low thousands.
 tags: [principle, segmentation, statistics]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

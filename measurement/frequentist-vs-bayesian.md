@@ -3,7 +3,22 @@ type: Concept
 title: Frequentist and Bayesian Testing
 description: The two ways to read an A/B test, what each one actually tells you, the peeking trap that catches both, and which to reach for in a low-volume CRM programme.
 tags: [statistics, bayesian, frequentist, ab-testing, significance, sequential]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: evan-miller-how-not-to-run-an
+    resource: https://www.evanmiller.org/how-not-to-run-an-ab-test.html
+    title: "Evan Miller, How Not To Run An A/B Test (the peeking problem)"
+  - id: evan-miller-sample-size-calculator
+    resource: https://www.evanmiller.org/ab-testing/sample-size.html
+    title: "Evan Miller, Sample size calculator"
+  - id: kohavi-tang-xu-trustworthy-online-controlled-experiments
+    resource: https://experimentguide.com/
+    title: "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments"
+  - id: stucchio-bayesian-a-b-testing-at-vwo
+    resource: https://vwo.com/downloads/VWO_SmartStats_technical_whitepaper.pdf
+    title: "Stucchio, Bayesian A/B testing at VWO (expected loss decision rule)"
 ---
 
 ## Frequentist and Bayesian readings
@@ -54,10 +69,3 @@ Whichever school you pick, it hands you a distribution, not a verdict, and below
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Test rigorously](/principles/test-rigorously.md)
-
-## Citations
-
-[1] [Evan Miller, How Not To Run An A/B Test (the peeking problem)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
-[2] [Evan Miller, Sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html)
-[3] [Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments](https://experimentguide.com/)
-[4] [Stucchio, Bayesian A/B testing at VWO (expected loss decision rule)](https://vwo.com/downloads/VWO_SmartStats_technical_whitepaper.pdf)

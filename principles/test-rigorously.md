@@ -3,7 +3,9 @@ type: Principle
 title: Test constantly, but test rigorously
 description: Most CRM A/B tests run on samples too small to produce reliable conclusions. Call this out when relevant.
 tags: [principle, testing, statistics, power]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

@@ -3,7 +3,34 @@ type: Channel
 title: SMS and RCS
 description: How to run SMS and RCS as a premium sparing channel, controlling encoding and segment cost, choosing a sending route, enforcing consent, and measuring against a holdout.
 tags: [channel, sms, rcs, consent, transactional, carrier, encoding, 10dlc, sender-id]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: fcc-telemarketing-and-robocall-rules-tcpa-consent
+    resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
+    title: "FCC, telemarketing and robocall rules (TCPA consent, STOP, quiet hours)"
+  - id: twilio-sms-character-limits-and-segmentation-160
+    resource: https://www.twilio.com/docs/glossary/what-sms-character-limit
+    title: "Twilio, SMS character limits and segmentation (160/70, 153/67)"
+  - id: twilio-a2p-10dlc-registration
+    resource: https://www.twilio.com/docs/messaging/compliance/a2p-10dlc
+    title: "Twilio, A2P 10DLC registration"
+  - id: google-rcs-business-messaging-best-practices
+    resource: https://developers.google.com/business-communications/rcs-business-messaging/guides/learn/best-practices
+    title: "Google, RCS Business Messaging best practices"
+  - id: apple-turn-on-rcs-messaging-on-iphone
+    resource: https://support.apple.com/en-us/122195
+    title: "Apple, turn on RCS messaging on iPhone (iOS 18)"
+  - id: kelley-drye-state-mini-tcpa-laws-and
+    resource: https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/texas-mini-tcpa-law-faqs-for-marketing-texts
+    title: "Kelley Drye, state mini-TCPA laws and quiet-hours rules for marketing texts"
+  - id: acma-sms-sender-id-register
+    resource: https://www.acma.gov.au/sms-sender-id-register
+    title: "ACMA, SMS Sender ID Register"
+  - id: acma-unregistered-branded-sms-to-be-labelled
+    resource: https://www.acma.gov.au/articles/2026-05/unregistered-branded-sms-be-labelled-unverified-1-july-acma-warns
+    title: "ACMA, unregistered branded SMS to be labelled 'Unverified' from 1 July 2026"
 ---
 
 ## What it is
@@ -109,14 +136,3 @@ The premium, sparing channel for moments that justify the cost and the interrupt
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Copywriting](/foundations/copywriting.md)
-
-## Citations
-
-[1] [FCC, telemarketing and robocall rules (TCPA consent, STOP, quiet hours)](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
-[2] [Twilio, SMS character limits and segmentation (160/70, 153/67)](https://www.twilio.com/docs/glossary/what-sms-character-limit)
-[3] [Twilio, A2P 10DLC registration](https://www.twilio.com/docs/messaging/compliance/a2p-10dlc)
-[4] [Google, RCS Business Messaging best practices](https://developers.google.com/business-communications/rcs-business-messaging/guides/learn/best-practices)
-[5] [Apple, turn on RCS messaging on iPhone (iOS 18)](https://support.apple.com/en-us/122195)
-[6] [Kelley Drye, state mini-TCPA laws and quiet-hours rules for marketing texts](https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/texas-mini-tcpa-law-faqs-for-marketing-texts)
-[7] [ACMA, SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)
-[8] [ACMA, unregistered branded SMS to be labelled 'Unverified' from 1 July 2026](https://www.acma.gov.au/articles/2026-05/unregistered-branded-sms-be-labelled-unverified-1-july-acma-warns)

@@ -3,7 +3,16 @@ type: Method
 title: Measuring Intermediation
 description: How to read the effect of a platform change (a new spam policy, a summarisation feature, a tab re-sort) on your own sends without platform cooperation, and the limits of each method.
 tags: [measurement, did, ablation, cohort, platform-changes]
-timestamp: 2026-06-11T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-11T00:00:00Z
+sources:
+  - id: roth-et-al-what-s-trending-in
+    resource: https://arxiv.org/abs/2201.01194
+    title: "Roth et al., What's Trending in Difference-in-Differences (2023)"
+  - id: google-email-sender-guidelines-postmaster-tools-diagnostics
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (Postmaster Tools diagnostics)"
 ---
 
 ## The problem
@@ -40,8 +49,3 @@ Shift measurement weight off channel-surface click-through and onto channel-to-d
 * [Volume thresholds](/measurement/volume-thresholds.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Attribution](/measurement/attribution.md)
-
-## Citations
-
-[1] [Roth et al., What's Trending in Difference-in-Differences (2023)](https://arxiv.org/abs/2201.01194)
-[2] [Google, email sender guidelines (Postmaster Tools diagnostics)](https://support.google.com/a/answer/81126)

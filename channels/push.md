@@ -3,7 +3,31 @@ type: Channel
 title: Push
 description: How to reach a dormant app user with push, choose interruption levels and notification channels, decide push versus in-app versus email, and measure it against a holdout.
 tags: [channel, push, apns, fcm, on-device, dormant-users, interruption-levels, re-engagement]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: apple-on-device-and-server-foundation-models
+    resource: https://machinelearning.apple.com/research/introducing-apple-foundation-models
+    title: "Apple, on-device and server foundation models (~3B-parameter on-device model)"
+  - id: android-developers-gemini-nano-on-device-model
+    resource: https://developer.android.com/ai/gemini-nano
+    title: "Android Developers, Gemini Nano on-device model"
+  - id: apple-apns-payload-size-limit-4kb-5kb
+    resource: https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html
+    title: "Apple, APNs payload size limit (4KB; 5KB VoIP)"
+  - id: firebase-fcm-message-types-and-payload-size
+    resource: https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type
+    title: "Firebase, FCM message types and payload size"
+  - id: apple-unnotificationinterruptionlevel-passive-active-time-sensitive-critical
+    resource: https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel
+    title: "Apple, UNNotificationInterruptionLevel (passive, active, time-sensitive, critical)"
+  - id: android-developers-create-and-manage-notification-channels
+    resource: https://developer.android.com/develop/ui/views/notifications/channels
+    title: "Android Developers, create and manage notification channels"
+  - id: apple-asking-permission-to-use-notifications-request
+    resource: https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications
+    title: "Apple, asking permission to use notifications (request in response to value, not at launch)"
 ---
 
 ## What it is
@@ -67,13 +91,3 @@ The re engagement and time critical channel for app audiences. Once the user is 
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
-
-## Citations
-
-[1] [Apple, on-device and server foundation models (~3B-parameter on-device model)](https://machinelearning.apple.com/research/introducing-apple-foundation-models)
-[2] [Android Developers, Gemini Nano on-device model](https://developer.android.com/ai/gemini-nano)
-[3] [Apple, APNs payload size limit (4KB; 5KB VoIP)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html)
-[4] [Firebase, FCM message types and payload size](https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type)
-[5] [Apple, UNNotificationInterruptionLevel (passive, active, time-sensitive, critical)](https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel)
-[6] [Android Developers, create and manage notification channels](https://developer.android.com/develop/ui/views/notifications/channels)
-[7] [Apple, asking permission to use notifications (request in response to value, not at launch)](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications)

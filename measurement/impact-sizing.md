@@ -3,7 +3,13 @@ type: Method
 title: Impact Sizing
 description: How to size the potential impact of an experiment so experiments can be ranked, using three model types and a shared core formula.
 tags: [impact-sizing, prioritisation, modelling, experiments]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: kohavi-tang-xu-trustworthy-online-controlled-experiments
+    resource: https://experimentguide.com/
+    title: "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (effect sizing and prioritising experiments)"
 ---
 
 ## What it is
@@ -51,7 +57,3 @@ The relative lift is the one variable you change to model scenarios. Everything 
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Set a goal before you build](/principles/goal-before-build.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
-
-## Citations
-
-[1] [Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (effect sizing and prioritising experiments)](https://experimentguide.com/)

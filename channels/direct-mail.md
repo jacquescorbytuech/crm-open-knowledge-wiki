@@ -3,7 +3,16 @@ type: Channel
 title: Direct Mail
 description: How to run a physical channel that lands intact: choose a format by segment value, make each piece trackable back to the CRM, validate addresses against decay, and measure by holdout and match-back.
 tags: [channel, direct-mail, physical, retention, control-group, variable-data, match-back]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: usps-marketing-mail-formats-and-200-piece
+    resource: https://pe.usps.com/businessmail101?ViewName=StandardMail
+    title: "USPS, Marketing Mail (formats and 200-piece / 50-pound minimum)"
+  - id: poplar-direct-mail-attribution-match-back-and
+    resource: https://heypoplar.com/articles/a-complete-guide-to-direct-mail-attribution
+    title: "Poplar, direct mail attribution (match-back and control-group lift)"
 ---
 
 ## What it is
@@ -92,8 +101,3 @@ A premium, low frequency complement to the digital channels, reserved for moment
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Retention and LTV](/measurement/retention-and-ltv.md)
 * [Loyalty and retention programs](/foundations/loyalty-and-retention-programs.md)
-
-## Citations
-
-[1] [USPS, Marketing Mail (formats and 200-piece / 50-pound minimum)](https://pe.usps.com/businessmail101?ViewName=StandardMail)
-[2] [Poplar, direct mail attribution (match-back and control-group lift)](https://heypoplar.com/articles/a-complete-guide-to-direct-mail-attribution)

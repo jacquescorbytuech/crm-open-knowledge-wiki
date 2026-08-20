@@ -3,7 +3,37 @@ type: Playbook
 title: Email Authentication
 description: How to set up and roll out SPF, DKIM, DMARC, and BIMI, structure sending subdomains, meet bulk sender requirements, and troubleshoot alignment failures before you send.
 tags: [authentication, spf, dkim, dmarc, bimi, deliverability, dns, alignment]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: google-email-sender-guidelines-spf-dkim-dmarc
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (SPF, DKIM, DMARC, bulk sender requirements)"
+  - id: rfc-8058-one-click-unsubscribe
+    resource: https://www.rfc-editor.org/rfc/rfc8058
+    title: "RFC 8058, one-click unsubscribe"
+  - id: rfc-7208-sender-policy-framework-spf-including
+    resource: https://www.rfc-editor.org/rfc/rfc7208
+    title: "RFC 7208, Sender Policy Framework (SPF), including the 10 DNS lookup limit"
+  - id: rfc-6376-domainkeys-identified-mail-dkim-signatures
+    resource: https://www.rfc-editor.org/rfc/rfc6376
+    title: "RFC 6376, DomainKeys Identified Mail (DKIM) signatures"
+  - id: rfc-7489-domain-based-message-authentication-reporting
+    resource: https://www.rfc-editor.org/rfc/rfc7489
+    title: "RFC 7489, Domain-based Message Authentication, Reporting, and Conformance (DMARC)"
+  - id: bimi-group-bimi-implementation-and-vmc-requirements
+    resource: https://bimigroup.org/
+    title: "BIMI Group, BIMI implementation and VMC requirements"
+  - id: draft-ietf-dkim-dkim2-spec-domainkeys-identified
+    resource: https://datatracker.ietf.org/doc/draft-ietf-dkim-dkim2-spec/
+    title: "draft-ietf-dkim-dkim2-spec, DomainKeys Identified Mail Signatures v2 (DKIM2)"
+  - id: word-to-the-wise-dkim2-and-what
+    resource: https://www.wordtothewise.com/2026/04/dkim2-what-it-means-for-the-future-of-email/
+    title: "Word to the Wise, DKIM2 and what it means for the future of email"
+  - id: word-to-the-wise-dkim2-asynchronous-bounces
+    resource: https://www.wordtothewise.com/2026/04/dkim2-asynchronous-bounces-and-verp/
+    title: "Word to the Wise, DKIM2, asynchronous bounces, and VERP"
 ---
 
 ## What this covers
@@ -143,15 +173,3 @@ Missing SPF or DKIM causes deliverability problems and block bounces, so set up 
 * [Deliverability](/foundations/deliverability.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Bulk sender requirements](/references/platform-interventions.md)
-
-## Citations
-
-[1] [Google, email sender guidelines (SPF, DKIM, DMARC, bulk sender requirements)](https://support.google.com/a/answer/81126)
-[2] [RFC 8058, one-click unsubscribe](https://www.rfc-editor.org/rfc/rfc8058)
-[3] [RFC 7208, Sender Policy Framework (SPF), including the 10 DNS lookup limit](https://www.rfc-editor.org/rfc/rfc7208)
-[4] [RFC 6376, DomainKeys Identified Mail (DKIM) signatures](https://www.rfc-editor.org/rfc/rfc6376)
-[5] [RFC 7489, Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://www.rfc-editor.org/rfc/rfc7489)
-[6] [BIMI Group, BIMI implementation and VMC requirements](https://bimigroup.org/)
-[7] [draft-ietf-dkim-dkim2-spec, DomainKeys Identified Mail Signatures v2 (DKIM2)](https://datatracker.ietf.org/doc/draft-ietf-dkim-dkim2-spec/)
-[8] [Word to the Wise, DKIM2 and what it means for the future of email](https://www.wordtothewise.com/2026/04/dkim2-what-it-means-for-the-future-of-email/)
-[9] [Word to the Wise, DKIM2, asynchronous bounces, and VERP](https://www.wordtothewise.com/2026/04/dkim2-asynchronous-bounces-and-verp/)

@@ -3,7 +3,19 @@ type: Reference
 title: Cold email
 description: Why cold email sits outside the consent-first discipline the rest of this bundle describes, why it is spam by that standard, the narrow legal window where it is nonetheless permitted (US CAN-SPAM and UK B2B to corporate or role-based addresses under PECR), and why lawful is not the same as effective.
 tags: [cold-email, spam, consent, can-spam, pecr, deliverability, b2b]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: ftc-can-spam-act-compliance-guide-for
+    resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+    title: "FTC, CAN-SPAM Act compliance guide for business"
+  - id: ico-electronic-mail-marketing-under-pecr
+    resource: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
+    title: "ICO, electronic mail marketing under PECR"
+  - id: ico-business-to-business-direct-marketing-under
+    resource: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/business-to-business-direct-marketing/
+    title: "ICO, business-to-business direct marketing under PECR"
 ---
 
 ## The exception to consent
@@ -38,9 +50,3 @@ In practice, if cold outreach is run at all, it is run on separate sending infra
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
-
-## Citations
-
-[1] [FTC, CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
-[2] [ICO, electronic mail marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
-[3] [ICO, business-to-business direct marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/business-to-business-direct-marketing/)

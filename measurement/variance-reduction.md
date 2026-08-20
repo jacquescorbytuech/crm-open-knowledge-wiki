@@ -3,7 +3,19 @@ type: Method
 title: Variance Reduction and Sequential Testing
 description: The two standard ways to get more out of the volume you already have, CUPED variance reduction using pre-experiment data and sequential testing that lets you monitor without inflating false positives, and the limit that neither repeals the volume floor.
 tags: [statistics, cuped, variance-reduction, sequential, always-valid, power, experiments]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: deng-xu-kohavi-walker-improving-the-sensitivity
+    resource: https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf
+    title: "Deng, Xu, Kohavi & Walker, Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data (CUPED), WSDM 2013"
+  - id: johari-pekelis-koomen-walsh-always-valid-inference
+    resource: https://arxiv.org/abs/1512.04922
+    title: "Johari, Pekelis, Koomen & Walsh, Always Valid Inference: Continuous Monitoring of A/B Tests"
+  - id: kohavi-tang-xu-trustworthy-online-controlled-experiments
+    resource: https://experimentguide.com/
+    title: "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments"
 ---
 
 ## Why it belongs with sizing
@@ -33,9 +45,3 @@ Variance reduction needs a pre-period covariate genuinely correlated with the ou
 * [Frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Test rigorously](/principles/test-rigorously.md)
-
-## Citations
-
-[1] [Deng, Xu, Kohavi & Walker, Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data (CUPED), WSDM 2013](https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf)
-[2] [Johari, Pekelis, Koomen & Walsh, Always Valid Inference: Continuous Monitoring of A/B Tests](https://arxiv.org/abs/1512.04922)
-[3] [Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments](https://experimentguide.com/)

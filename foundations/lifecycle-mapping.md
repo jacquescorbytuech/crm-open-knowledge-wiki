@@ -3,7 +3,13 @@ type: Framework
 title: Lifecycle Mapping
 description: The customer lifecycle stages a programme is built around, and how to map the journey into a copyable template, transition triggers, and a workshop that produces the spec your automations, orchestration, and measurement are built from.
 tags: [lifecycle, journey-mapping, stages, retention, crm, workshop, triggers]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: braze-customer-lifecycle-management-acquisition-activation-engagement
+    resource: https://www.braze.com/resources/articles/customer-lifecycle-management
+    title: "Braze, customer lifecycle management (acquisition, activation, engagement, retention, reactivation)"
 ---
 
 ## What it is
@@ -74,7 +80,3 @@ Channel and tooling choices follow the map, not the other way round. The stage d
 * [Loyalty and retention programs](/foundations/loyalty-and-retention-programs.md)
 * [The welcome window](/principles/the-welcome-window.md)
 * [Retention and LTV](/measurement/retention-and-ltv.md)
-
-## Citations
-
-[1] [Braze, customer lifecycle management (acquisition, activation, engagement, retention, reactivation)](https://www.braze.com/resources/articles/customer-lifecycle-management)

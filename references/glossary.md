@@ -3,7 +3,19 @@ type: Glossary
 title: Glossary
 description: The working vocabulary of email, lifecycle, and CRM marketing used across this bundle, from customer data and segmentation through channels, design, and measurement.
 tags: [glossary, terminology, reference]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: tealium-what-is-a-cdp
+    resource: https://tealium.com/resource/fundamentals/what-is-a-cdp/
+    title: "Tealium, what is a CDP"
+  - id: techtarget-rfm-analysis
+    resource: https://www.techtarget.com/searchdatamanagement/definition/RFM-analysis
+    title: "TechTarget, RFM analysis"
+  - id: litmus-email-preview-text
+    resource: https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support
+    title: "Litmus, email preview text"
 ---
 
 ## Authentication and delivery
@@ -125,9 +137,3 @@ timestamp: 2026-06-14T00:00:00Z
 * [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [ESP selection](/foundations/esp-selection.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
-
-## Citations
-
-[1] [Tealium, what is a CDP](https://tealium.com/resource/fundamentals/what-is-a-cdp/)
-[2] [TechTarget, RFM analysis](https://www.techtarget.com/searchdatamanagement/definition/RFM-analysis)
-[3] [Litmus, email preview text](https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support)

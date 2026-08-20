@@ -3,7 +3,40 @@ type: Reference
 title: Decisioning and Personalisation
 description: The landscape of AI personalisation in CRM and lifecycle platforms, the difference between machine learning that supports a marketer's decision and machine learning that makes it, the common product capabilities, the vendor categories, and the data prerequisite they all share.
 tags: [decisioning, personalisation, machine-learning, bandits, send-time, vendors]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: hightouch-journeys-vs-ai-decisioning-rules-based
+    resource: https://hightouch.com/blog/journeys-vs-ai-decisioning
+    title: "Hightouch, journeys vs AI decisioning (rules-based journeys vs per-customer AI decisioning)"
+  - id: salesforce-einstein-for-marketing-cloud-feature-overview
+    resource: https://help.salesforce.com/s/articleView?id=mktg.mc_ees_einstein_feature_overview.htm&language=en_US&type=5
+    title: "Salesforce, Einstein for Marketing Cloud feature overview"
+  - id: adobe-journey-optimizer-offer-selection-in-decisions
+    resource: https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-manage-activities/configure-offer-selection
+    title: "Adobe Journey Optimizer, offer selection in decisions (AI-ranked next-best offer)"
+  - id: braze-intelligent-timing-per-user-send-time
+    resource: https://www.braze.com/docs/user_guide/brazeai/intelligence_suite/intelligent_timing
+    title: "Braze, intelligent timing (per-user send-time optimisation)"
+  - id: klaviyo-personalised-send-time
+    resource: https://help.klaviyo.com/hc/en-us/articles/45231714007323
+    title: "Klaviyo, personalised send time"
+  - id: pega-next-best-action-real-time-ai
+    resource: https://www.pega.com/technology/next-best-action
+    title: "Pega, next best action (real-time AI decisioning)"
+  - id: li-et-al-a-contextual-bandit-approach
+    resource: https://arxiv.org/abs/1003.0146
+    title: "Li et al., a contextual-bandit approach to personalised recommendation (arXiv 1003.0146)"
+  - id: braze-contextual-bandits-for-real-time-personalisation
+    resource: https://www.braze.com/resources/articles/contextual-bandits
+    title: "Braze, contextual bandits for real-time personalisation"
+  - id: twilio-data-quality-as-the-prerequisite-for
+    resource: https://www.twilio.com/en-us/resource-center/data-readiness-ai-driven-personalization
+    title: "Twilio, data quality as the prerequisite for AI personalisation"
+  - id: braze-completes-acquisition-of-offerfit
+    resource: https://www.braze.com/press-releases/braze-completes-acquisition-of-offerfit
+    title: "Braze completes acquisition of OfferFit"
 ---
 
 ## Decision support versus decisioning
@@ -82,16 +115,3 @@ Every capability above depends on the same thing: unified, clean, training-ready
 * [ESP selection](/foundations/esp-selection.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [Hightouch, journeys vs AI decisioning (rules-based journeys vs per-customer AI decisioning)](https://hightouch.com/blog/journeys-vs-ai-decisioning)
-[2] [Salesforce, Einstein for Marketing Cloud feature overview](https://help.salesforce.com/s/articleView?id=mktg.mc_ees_einstein_feature_overview.htm&language=en_US&type=5)
-[3] [Adobe Journey Optimizer, offer selection in decisions (AI-ranked next-best offer)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-manage-activities/configure-offer-selection)
-[4] [Braze, intelligent timing (per-user send-time optimisation)](https://www.braze.com/docs/user_guide/brazeai/intelligence_suite/intelligent_timing)
-[5] [Klaviyo, personalised send time](https://help.klaviyo.com/hc/en-us/articles/45231714007323)
-[6] [Pega, next best action (real-time AI decisioning)](https://www.pega.com/technology/next-best-action)
-[7] [Li et al., a contextual-bandit approach to personalised recommendation (arXiv 1003.0146)](https://arxiv.org/abs/1003.0146)
-[8] [Braze, contextual bandits for real-time personalisation](https://www.braze.com/resources/articles/contextual-bandits)
-[9] [Twilio, data quality as the prerequisite for AI personalisation](https://www.twilio.com/en-us/resource-center/data-readiness-ai-driven-personalization)
-[10] [Braze completes acquisition of OfferFit](https://www.braze.com/press-releases/braze-completes-acquisition-of-offerfit)

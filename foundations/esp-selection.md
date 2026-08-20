@@ -3,7 +3,9 @@ type: Framework
 title: ESP Selection
 description: How to evaluate and choose an email service provider using the five factor framework, a weighted scoring worksheet, a trial agenda, and a migration plan.
 tags: [esp, vendor-selection, framework, tooling, migration, pricing]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## The five factors, in priority order
@@ -112,7 +114,3 @@ Migration is less costly than it used to be, but it is not free, and a botched c
 * [Authentication](/foundations/authentication.md)
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Glossary](/references/glossary.md)
-
-## Citations
-
-Practitioner guidance, with no external statistics or benchmarks introduced. Where a claim depends on measurement (deliverability, incrementality), see the linked pages and their citations.

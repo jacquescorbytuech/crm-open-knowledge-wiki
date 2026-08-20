@@ -3,7 +3,19 @@ type: Playbook
 title: Automation and Sequences
 description: How to build trigger-based welcome, abandoned cart, and re-engagement flows across email, SMS, and push, choosing the channel for each touch, with message-by-message cadences, sunset criteria, and a pre-launch testing checklist.
 tags: [automation, welcome, abandoned-cart, re-engagement, sunset, lifecycle]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: hubspot-email-automation-trigger-based-sending-outperforms
+    resource: https://www.hubspot.com/glossary/email-automation
+    title: "HubSpot, email automation (trigger-based sending outperforms scheduled broadcasts)"
+  - id: mailmodo-welcome-email-statistics-higher-open-and
+    resource: https://www.mailmodo.com/guides/welcome-email-statistics/
+    title: "Mailmodo, welcome email statistics (higher open and click rates than standard campaigns)"
+  - id: baymard-institute-average-cart-abandonment-rate-70
+    resource: https://baymard.com/lists/cart-abandonment-rate
+    title: "Baymard Institute, average cart abandonment rate (~70%)"
 ---
 
 ## Triggers and goals
@@ -117,9 +129,3 @@ Build these foundational automations well first. Where they go next, a system th
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
-
-## Citations
-
-[1] [HubSpot, email automation (trigger-based sending outperforms scheduled broadcasts)](https://www.hubspot.com/glossary/email-automation)
-[2] [Mailmodo, welcome email statistics (higher open and click rates than standard campaigns)](https://www.mailmodo.com/guides/welcome-email-statistics/)
-[3] [Baymard Institute, average cart abandonment rate (~70%)](https://baymard.com/lists/cart-abandonment-rate)

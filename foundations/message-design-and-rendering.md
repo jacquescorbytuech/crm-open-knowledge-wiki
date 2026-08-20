@@ -3,7 +3,49 @@ type: Playbook
 title: Message Design and Rendering
 description: How to build a message so it renders and reads everywhere it lands, a single-column mobile-first layout with inline CSS, dark-mode and accessibility steps, functional alt text, preheader text, and a pre-send rendering QA checklist for email as the hard case, plus how SMS, RCS, push, in-app, and wallet passes each constrain the design differently.
 tags: [design, rendering, responsive, dark-mode, accessibility, alt-text, preheader, mjml, qa]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: litmus-email-client-market-share-apple-largest
+    resource: https://www.litmus.com/email-client-market-share
+    title: "Litmus, email client market share (Apple largest, then Gmail, then Outlook)"
+  - id: litmus-the-how-to-guide-to-responsive
+    resource: https://www.litmus.com/blog/the-how-to-guide-to-responsive-email-design-infographic
+    title: "Litmus, the how-to guide to responsive email design (mobile opens; messages deleted if they render badly on mobile)"
+  - id: litmus-the-ultimate-guide-to-dark-mode
+    resource: https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers
+    title: "Litmus, the ultimate guide to dark mode for email"
+  - id: litmus-the-ultimate-guide-to-email-accessibility
+    resource: https://www.litmus.com/blog/ultimate-guide-accessible-emails
+    title: "Litmus, the ultimate guide to email accessibility"
+  - id: w3c-wcag-understanding-contrast-minimum-4-5
+    resource: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
+    title: "W3C WCAG, understanding contrast minimum (4.5:1)"
+  - id: campaign-monitor-alt-text-shows-when-images
+    resource: https://www.campaignmonitor.com/resources/guides/alt-text-in-email/
+    title: "Campaign Monitor, alt text shows when images are blocked"
+  - id: litmus-the-ultimate-guide-to-email-preview
+    resource: https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support
+    title: "Litmus, the ultimate guide to email preview text"
+  - id: mailchimp-what-an-email-preheader-is
+    resource: https://mailchimp.com/resources/email-preheader/
+    title: "Mailchimp, what an email preheader is"
+  - id: rfc-2046-multipart-alternative-put-the-plainest
+    resource: https://www.rfc-editor.org/rfc/rfc2046.html
+    title: "RFC 2046, multipart/alternative (put the plainest part first)"
+  - id: good-email-code-by-mark-robbins-accessible
+    resource: https://www.goodemailcode.com/
+    title: "Good Email Code, by Mark Robbins (accessible, semantic email-code patterns)"
+  - id: can-i-email-by-r-mi-parmentier
+    resource: https://www.caniemail.com/
+    title: "Can I email, by Rémi Parmentier (HTeuMeuLeu) and Tilt Studio (HTML/CSS support tables across email clients)"
+  - id: mjml-a-markup-language-that-compiles-to
+    resource: https://mjml.io/
+    title: "MJML, a markup language that compiles to responsive, table-based email HTML"
+  - id: cerberus-by-ted-goas-a-set-of
+    resource: https://www.cerberusemail.com/
+    title: "Cerberus, by Ted Goas, a set of tested responsive email patterns"
 ---
 
 ## Design for where it actually lands
@@ -107,19 +149,3 @@ Email's rendering is the least predictable of the channels. The other channels t
 * [Push](/channels/push.md)
 * [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Email intelligence research](/references/email-intelligence-research.md)
-
-## Citations
-
-[1] [Litmus, email client market share (Apple largest, then Gmail, then Outlook)](https://www.litmus.com/email-client-market-share)
-[2] [Litmus, the how-to guide to responsive email design (mobile opens; messages deleted if they render badly on mobile)](https://www.litmus.com/blog/the-how-to-guide-to-responsive-email-design-infographic)
-[3] [Litmus, the ultimate guide to dark mode for email](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers)
-[4] [Litmus, the ultimate guide to email accessibility](https://www.litmus.com/blog/ultimate-guide-accessible-emails)
-[5] [W3C WCAG, understanding contrast minimum (4.5:1)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-[6] [Campaign Monitor, alt text shows when images are blocked](https://www.campaignmonitor.com/resources/guides/alt-text-in-email/)
-[7] [Litmus, the ultimate guide to email preview text](https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support)
-[8] [Mailchimp, what an email preheader is](https://mailchimp.com/resources/email-preheader/)
-[9] [RFC 2046, multipart/alternative (put the plainest part first)](https://www.rfc-editor.org/rfc/rfc2046.html)
-[10] [Good Email Code, by Mark Robbins (accessible, semantic email-code patterns)](https://www.goodemailcode.com/)
-[11] [Can I email, by Rémi Parmentier (HTeuMeuLeu) and Tilt Studio (HTML/CSS support tables across email clients)](https://www.caniemail.com/)
-[12] [MJML, a markup language that compiles to responsive, table-based email HTML](https://mjml.io/)
-[13] [Cerberus, by Ted Goas, a set of tested responsive email patterns](https://www.cerberusemail.com/)

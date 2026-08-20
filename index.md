@@ -1,14 +1,10 @@
 ---
-okf_version: "0.1"
-title: Email, Lifecycle and CRM Marketing Knowledge Bundle
-description: A practitioner knowledge base covering email, lifecycle and CRM marketing, the customer data and channels a programme runs on, the operations that run it, and the measurement that proves it worked.
-tags: [crm, lifecycle, email, sms, push, segmentation, deliverability, measurement]
-timestamp: 2026-06-14T00:00:00Z
+okf_version: "0.2"
 ---
 
-## Email, Lifecycle and CRM Marketing
+# Lifecycle and CRM Marketing
 
-A self-describing knowledge base in Open Knowledge Format covering the practice of email, lifecycle and CRM marketing: the customer data a programme is built on, the channels it sends through, the operations that run it day to day, and the measurement that tells you whether it worked. Each file is a concept; the links between them turn the directory into a graph you can read from any entry point.
+A self-describing knowledge base in Open Knowledge Format covering the practice of lifecycle and CRM marketing: the customer data a programme is built on, the channels it sends through, the operations that run it day to day, and the measurement that tells you whether it worked. Each file is a concept; the links between them turn the directory into a graph you can read from any entry point.
 
 The bundle is organised around the work itself. The **principles** are the stances every recommendation should serve. The **foundations** are the cross-channel operations: data, segmentation, consent, lifecycle, content, automation, and the stack. The **channels** are the media you actually send through. The **measurement** layer is how you prove incrementality and size experiments. Start with the layer your question sits in, then follow the cross links.
 

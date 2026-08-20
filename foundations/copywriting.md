@@ -3,7 +3,19 @@ type: Playbook
 title: Copywriting
 description: How to write the message across channels, the email envelope and skeleton as the worked case, CTAs, writing so the substance survives a summariser, and the copy shapes SMS, push, and in-app each impose, with a pre-send checklist.
 tags: [copywriting, subject-lines, cta, email-anatomy, deliverability, summarisation, sms, push]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: litmus-the-email-envelope-is-the-from
+    resource: https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support
+    title: "Litmus, the email envelope is the from name, subject line, and preview text"
+  - id: campaign-monitor-a-single-cta-receives-far
+    resource: https://www.campaignmonitor.com/resources/knowledge-base/do-ctas-help-to-improve-email-response-rates/
+    title: "Campaign Monitor, a single CTA receives far more clicks than competing CTAs"
+  - id: campaign-monitor-click-to-open-rate-as
+    resource: https://www.campaignmonitor.com/resources/knowledge-base/what-are-good-email-metrics/
+    title: "Campaign Monitor, click-to-open rate as a content-engagement measure"
 ---
 
 ## What copy has to do in any channel
@@ -105,9 +117,3 @@ Use click to open rate (CTOR), clicks divided by opens, as the content engagemen
 * [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Sample size and power](/measurement/sample-size-and-power.md)
 * [Metrics are directional](/principles/metrics-are-directional.md)
-
-## Citations
-
-[1] [Litmus, the email envelope is the from name, subject line, and preview text](https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support)
-[2] [Campaign Monitor, a single CTA receives far more clicks than competing CTAs](https://www.campaignmonitor.com/resources/knowledge-base/do-ctas-help-to-improve-email-response-rates/)
-[3] [Campaign Monitor, click-to-open rate as a content-engagement measure](https://www.campaignmonitor.com/resources/knowledge-base/what-are-good-email-metrics/)

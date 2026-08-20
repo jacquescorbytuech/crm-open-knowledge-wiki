@@ -3,7 +3,9 @@ type: Principle
 title: Respect the recipient
 description: Be honest about what they opted into, deliver on promises, make opt out easy. Ethical and commercially smart at once.
 tags: [principle, consent, ethics, deliverability]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
 ---
 
 ## Stance

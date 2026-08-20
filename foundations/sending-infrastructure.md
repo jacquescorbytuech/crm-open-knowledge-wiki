@@ -3,7 +3,46 @@ type: Reference
 title: Sending Infrastructure
 description: The transport layer beneath every channel, what an MTA is and how the SMTP conversation works, how a push token routes through APNs and FCM, how SMS reaches the carrier through an aggregator, and the webhook feedback path that carries bounces, delivery receipts, and dead tokens back to suppression.
 tags: [infrastructure, mta, smtp, apns, fcm, smpp, webhooks, dsn, transport, delivery]
-timestamp: 2026-06-15T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-15T00:00:00Z
+sources:
+  - id: rfc-5321-simple-mail-transfer-protocol-the
+    resource: https://www.rfc-editor.org/rfc/rfc5321
+    title: "RFC 5321, Simple Mail Transfer Protocol (the SMTP conversation and response codes)"
+  - id: rfc-5322-internet-message-format-header-fields
+    resource: https://www.rfc-editor.org/rfc/rfc5322
+    title: "RFC 5322, Internet Message Format (header fields, distinct from the SMTP envelope)"
+  - id: rfc-6409-message-submission-for-mail-submission
+    resource: https://www.rfc-editor.org/rfc/rfc6409
+    title: "RFC 6409, Message Submission for Mail (submission on port 587, distinct from relay)"
+  - id: rfc-3207-smtp-service-extension-for-secure
+    resource: https://www.rfc-editor.org/rfc/rfc3207
+    title: "RFC 3207, SMTP Service Extension for Secure SMTP over TLS (STARTTLS)"
+  - id: rfc-8461-smtp-mta-strict-transport-security
+    resource: https://www.rfc-editor.org/rfc/rfc8461
+    title: "RFC 8461, SMTP MTA Strict Transport Security (MTA-STS)"
+  - id: rfc-3464-an-extensible-message-format-for
+    resource: https://www.rfc-editor.org/rfc/rfc3464
+    title: "RFC 3464, An Extensible Message Format for Delivery Status Notifications (DSN bounces)"
+  - id: rfc-5965-an-extensible-format-for-email
+    resource: https://www.rfc-editor.org/rfc/rfc5965
+    title: "RFC 5965, An Extensible Format for Email Feedback Reports (ARF)"
+  - id: apple-sending-notification-requests-to-apns-http
+    resource: https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns
+    title: "Apple, sending notification requests to APNs (HTTP/2, JWT auth, request headers)"
+  - id: apple-handling-notification-responses-from-apns-410
+    resource: https://developer.apple.com/documentation/usernotifications/handling-notification-responses-from-apns
+    title: "Apple, handling notification responses from APNs (410 Unregistered, token status)"
+  - id: firebase-fcm-http-v1-api-and-migration
+    resource: https://firebase.google.com/docs/cloud-messaging/migrate-v1
+    title: "Firebase, FCM HTTP v1 API and migration from the legacy API (OAuth 2.0 bearer)"
+  - id: smpp-v3-4-specification-bind-types-and
+    resource: https://smpp.org/SMPP_v3_4_Issue1_2.pdf
+    title: "SMPP v3.4 specification (bind types and submit_sm/deliver_sm/DLR)"
+  - id: twilio-sms-delivery-receipts-and-message-status
+    resource: https://www.twilio.com/docs/messaging/guides/track-outbound-message-status
+    title: "Twilio, SMS delivery receipts and message status callbacks"
 ---
 
 ## What it is
@@ -97,18 +136,3 @@ An ESP, a CPaaS, or a push relay exists to hide most of this: the MTA fleet and 
 * [ESP selection](/foundations/esp-selection.md)
 * [Transactional messaging](/foundations/transactional-messaging.md)
 * [Core metrics](/measurement/core-metrics.md)
-
-## Citations
-
-[1] [RFC 5321, Simple Mail Transfer Protocol (the SMTP conversation and response codes)](https://www.rfc-editor.org/rfc/rfc5321)
-[2] [RFC 5322, Internet Message Format (header fields, distinct from the SMTP envelope)](https://www.rfc-editor.org/rfc/rfc5322)
-[3] [RFC 6409, Message Submission for Mail (submission on port 587, distinct from relay)](https://www.rfc-editor.org/rfc/rfc6409)
-[4] [RFC 3207, SMTP Service Extension for Secure SMTP over TLS (STARTTLS)](https://www.rfc-editor.org/rfc/rfc3207)
-[5] [RFC 8461, SMTP MTA Strict Transport Security (MTA-STS)](https://www.rfc-editor.org/rfc/rfc8461)
-[6] [RFC 3464, An Extensible Message Format for Delivery Status Notifications (DSN bounces)](https://www.rfc-editor.org/rfc/rfc3464)
-[7] [RFC 5965, An Extensible Format for Email Feedback Reports (ARF)](https://www.rfc-editor.org/rfc/rfc5965)
-[8] [Apple, sending notification requests to APNs (HTTP/2, JWT auth, request headers)](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns)
-[9] [Apple, handling notification responses from APNs (410 Unregistered, token status)](https://developer.apple.com/documentation/usernotifications/handling-notification-responses-from-apns)
-[10] [Firebase, FCM HTTP v1 API and migration from the legacy API (OAuth 2.0 bearer)](https://firebase.google.com/docs/cloud-messaging/migrate-v1)
-[11] [SMPP v3.4 specification (bind types and submit_sm/deliver_sm/DLR)](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
-[12] [Twilio, SMS delivery receipts and message status callbacks](https://www.twilio.com/docs/messaging/guides/track-outbound-message-status)

@@ -3,7 +3,16 @@ type: Concept
 title: Attribution
 description: The three families of answer to what drove a result, last-click and multi-touch attribution, marketing mix modelling, and incrementality, and why they answer different questions rather than competing for one.
 tags: [attribution, mta, mmm, incrementality, measurement, cross-channel]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: emarketer-faq-on-incrementality
+    resource: https://www.emarketer.com/content/faq-on-incrementality-how-prove-your-ads-actually-work-2026
+    title: "EMARKETER, FAQ on incrementality"
+  - id: google-meridian-open-source-marketing-mix-modelling
+    resource: https://developers.google.com/meridian
+    title: "Google Meridian, open source marketing mix modelling"
 ---
 
 ## What attribution is for
@@ -37,8 +46,3 @@ Build the read on the authenticated cohort, where identity is deterministic and 
 * [Core metrics](/measurement/core-metrics.md)
 * [Measuring intermediation](/measurement/measuring-intermediation.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
-
-## Citations
-
-[1] [EMARKETER, FAQ on incrementality](https://www.emarketer.com/content/faq-on-incrementality-how-prove-your-ads-actually-work-2026)
-[2] [Google Meridian, open source marketing mix modelling](https://developers.google.com/meridian)

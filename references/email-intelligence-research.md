@@ -3,7 +3,20 @@ type: Reference
 title: Email Intelligence Research
 description: The Yahoo and Google research and patent lineage behind inbox extraction, classification, action prediction, and summarisation, with citations to the primary papers.
 tags: [research, extraction, classification, patents, summarisation, k-anonymity]
-timestamp: 2026-05-21T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-05-21T00:00:00Z
+stale_after: 2027-08-20
+sources:
+  - id: whittaker-2019-crusher
+    resource: https://research.google/pubs/pub48356/
+    title: "Whittaker et al., Online Template Induction for Machine-Generated Emails (Crusher), VLDB 2019"
+  - id: sheng-2018-juicer
+    resource: https://dl.acm.org/doi/10.1145/3219819.3219901
+    title: "Sheng et al., Anatomy of a Privacy-Safe Large-Scale Information Extraction System over Email (Juicer), KDD 2018"
+  - id: early-2023-spice
+    resource: https://doi.org/10.1145/3583780.3615462
+    title: "Early, O'Hare and LuVogt, Content-Based Email Classification at Scale (SPICE), CIKM 2023"
 ---
 
 ## The extraction pipeline
@@ -39,9 +52,3 @@ A Google layout aware document encoder patent treats font size, bold, italic, co
 * [Platform interventions](/references/platform-interventions.md)
 * [Copywriting](/foundations/copywriting.md)
 * [Message design and rendering](/foundations/message-design-and-rendering.md)
-
-## Citations
-
-[1] [Whittaker et al., Online Template Induction for Machine-Generated Emails (Crusher), VLDB 2019](https://research.google/pubs/pub48356/)
-[2] Sheng et al., Anatomy of a Privacy-Safe Large-Scale Information Extraction System over Email (Juicer), KDD 2018
-[3] Early, O'Hare and LuVogt, Content-Based Email Classification at Scale (SPICE), CIKM 2023

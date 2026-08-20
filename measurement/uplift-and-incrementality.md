@@ -3,7 +3,28 @@ type: Concept
 title: Uplift and Incrementality
 description: The difference between predicting who will act and measuring whether sending changed what they did, and the methods that actually measure and model that difference.
 tags: [uplift, incrementality, holdout, decisioning, measurement, causal, qini]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: gutierrez-g-rardy-causal-inference-and-uplift
+    resource: http://proceedings.mlr.press/v67/gutierrez17a/gutierrez17a.pdf
+    title: "Gutierrez & Gérardy, Causal Inference and Uplift Modeling: A review of the literature (PMLR)"
+  - id: radcliffe-surry-real-world-uplift-modelling-with
+    resource: https://www.stochasticsolutions.com/pdf/sig-based-up-trees.pdf
+    title: "Radcliffe & Surry, Real-World Uplift Modelling with Significance-Based Uplift Trees (Qini)"
+  - id: k-nzel-et-al-metalearners-for-estimating
+    resource: https://www.pnas.org/doi/10.1073/pnas.1804597116
+    title: "Künzel et al., Metalearners for estimating heterogeneous treatment effects (X-learner, PNAS)"
+  - id: scikit-uplift-documentation-models-and-evaluation
+    resource: https://www.uplift-modeling.com/en/latest/
+    title: "scikit-uplift documentation (models and evaluation)"
+  - id: uber-causalml-uplift-and-meta-learners
+    resource: https://github.com/uber/causalml
+    title: "Uber CausalML (uplift and meta-learners)"
+  - id: su-et-al-long-term-value-of
+    resource: https://arxiv.org/abs/2305.07764
+    title: "Su et al., Long-Term Value of Exploration, WSDM 2024 (arXiv 2305.07764)"
 ---
 
 ## Did sending change behaviour
@@ -79,12 +100,3 @@ A related idea in adaptive systems is exploration: deliberately sending somethin
 * [Frequentist and Bayesian testing](/measurement/frequentist-vs-bayesian.md)
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
 * [Retention and LTV](/measurement/retention-and-ltv.md)
-
-## Citations
-
-[1] [Gutierrez & Gérardy, Causal Inference and Uplift Modeling: A review of the literature (PMLR)](http://proceedings.mlr.press/v67/gutierrez17a/gutierrez17a.pdf)
-[2] [Radcliffe & Surry, Real-World Uplift Modelling with Significance-Based Uplift Trees (Qini)](https://www.stochasticsolutions.com/pdf/sig-based-up-trees.pdf)
-[3] [Künzel et al., Metalearners for estimating heterogeneous treatment effects (X-learner, PNAS)](https://www.pnas.org/doi/10.1073/pnas.1804597116)
-[4] [scikit-uplift documentation (models and evaluation)](https://www.uplift-modeling.com/en/latest/)
-[5] [Uber CausalML (uplift and meta-learners)](https://github.com/uber/causalml)
-[6] [Su et al., Long-Term Value of Exploration, WSDM 2024 (arXiv 2305.07764)](https://arxiv.org/abs/2305.07764)

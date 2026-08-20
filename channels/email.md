@@ -3,7 +3,28 @@ type: Channel
 title: Email
 description: The highest volume, lowest marginal cost, and most heavily mediated lifecycle channel, addressable to a list the sender holds.
 tags: [channel, email, deliverability, lifecycle]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: google-email-sender-guidelines
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines"
+  - id: word-to-the-wise-deliveries-and-opens
+    resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
+    title: "Word to the Wise, deliveries and opens and clicks"
+  - id: mailchimp-gmail-clips-messages-over-102kb
+    resource: https://mailchimp.com/help/gmail-is-clipping-my-email/
+    title: "Mailchimp, Gmail clips messages over ~102KB"
+  - id: litmus-email-development-600px-template-width
+    resource: https://www.litmus.com/blog/7-myths-of-email-development
+    title: "Litmus, email development (≈600px template width)"
+  - id: rfc-8058-one-click-unsubscribe
+    resource: https://www.rfc-editor.org/rfc/rfc8058
+    title: "RFC 8058, one-click unsubscribe"
+  - id: rfc-2369-list-unsubscribe-header
+    resource: https://www.rfc-editor.org/rfc/rfc2369
+    title: "RFC 2369, List-Unsubscribe header"
 ---
 
 ## What it is
@@ -61,12 +82,3 @@ The default backbone for nurture, retention, and winback at scale, complemented 
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Engagement is the new deliverability](/principles/engagement-is-deliverability.md)
 * [Email metrics are directional](/principles/metrics-are-directional.md)
-
-## Citations
-
-[1] [Google, email sender guidelines](https://support.google.com/a/answer/81126)
-[2] [Word to the Wise, deliveries and opens and clicks](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)
-[3] [Mailchimp, Gmail clips messages over ~102KB](https://mailchimp.com/help/gmail-is-clipping-my-email/)
-[4] [Litmus, email development (≈600px template width)](https://www.litmus.com/blog/7-myths-of-email-development)
-[5] [RFC 8058, one-click unsubscribe](https://www.rfc-editor.org/rfc/rfc8058)
-[6] [RFC 2369, List-Unsubscribe header](https://www.rfc-editor.org/rfc/rfc2369)

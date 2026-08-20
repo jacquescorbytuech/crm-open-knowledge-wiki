@@ -3,7 +3,22 @@ type: Playbook
 title: Audience sync
 description: How to activate CRM segments as audiences on the ad platforms for targeting and suppression, what matching and consent require, and why it extends the owned channels rather than being one.
 tags: [audience-sync, customer-match, custom-audiences, paid-media, retargeting, suppression, crm-activation, hashed-match]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: google-get-started-with-customer-match
+    resource: https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started
+    title: "Google, get started with Customer Match"
+  - id: google-ads-help-create-a-customer-list
+    resource: https://support.google.com/google-ads/answer/6276125
+    title: "Google Ads Help, create a customer list"
+  - id: meta-business-help-center-about-customer-list
+    resource: https://www.facebook.com/business/help/341425252616329
+    title: "Meta Business Help Center, about Customer List Custom Audiences"
+  - id: meta-business-help-center-customer-list-formatting
+    resource: https://www.facebook.com/business/help/2082575038703844
+    title: "Meta Business Help Center, customer list formatting and hashing guidelines"
 ---
 
 ## What it is
@@ -47,10 +62,3 @@ Match rates cap reach, so the synced audience is always a subset of the segment.
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
 * [Uplift and incrementality](/measurement/uplift-and-incrementality.md)
-
-## Citations
-
-[1] [Google, get started with Customer Match](https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started)
-[2] [Google Ads Help, create a customer list](https://support.google.com/google-ads/answer/6276125)
-[3] [Meta Business Help Center, about Customer List Custom Audiences](https://www.facebook.com/business/help/341425252616329)
-[4] [Meta Business Help Center, customer list formatting and hashing guidelines](https://www.facebook.com/business/help/2082575038703844)

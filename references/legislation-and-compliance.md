@@ -3,7 +3,23 @@ type: Reference
 title: Legislation and Compliance
 description: The main email and privacy regimes a sender operates under, grounded in the regulators' own guidance, and the practical minimum that satisfies the spirit of all of them.
 tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa, sender-id]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+stale_after: 2027-08-20
+sources:
+  - id: ftc-can-spam-act-compliance-guide-for
+    resource: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+    title: "FTC, CAN-SPAM Act compliance guide for business"
+  - id: ico-electronic-mail-marketing-under-pecr
+    resource: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
+    title: "ICO, electronic mail marketing under PECR"
+  - id: fcc-telemarketing-and-robocall-rules
+    resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
+    title: "FCC, telemarketing and robocall rules"
+  - id: acma-sms-sender-id-register
+    resource: https://www.acma.gov.au/sms-sender-id-register
+    title: "ACMA, SMS Sender ID Register"
 ---
 
 > [!caution] This is not legal advice
@@ -55,10 +71,3 @@ Respecting the recipient is both the ethical and the commercial position. Honest
 * [Authentication](/foundations/authentication.md)
 * [SMS and RCS](/channels/sms-and-rcs.md)
 * [Respect the recipient](/principles/respect-the-recipient.md)
-
-## Citations
-
-[1] [FTC, CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
-[2] [ICO, electronic mail marketing under PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
-[3] [FCC, telemarketing and robocall rules](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
-[4] [ACMA, SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)

@@ -3,7 +3,22 @@ type: Channel
 title: Voice
 description: How to use outbound and inbound phone calls, including AI voice agents, within the TCPA consent rules, where they fit, and how to measure them against a holdout.
 tags: [channel, voice, outbound-calls, ai-voice-agents, ivr, tcpa, robocall, consent, stir-shaken]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: fcc-ai-generated-voices-in-robocalls-are
+    resource: https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal
+    title: "FCC, AI-generated voices in robocalls are illegal (Declaratory Ruling, February 2024)"
+  - id: fcc-declaratory-ruling-fcc-24-17-full
+    resource: https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf
+    title: "FCC, Declaratory Ruling FCC 24-17 (full text)"
+  - id: fcc-telemarketing-and-robocall-rules
+    resource: https://www.fcc.gov/general/telemarketing-and-robocall-rules
+    title: "FCC, telemarketing and robocall rules"
+  - id: ftc-telemarketing-sales-rule
+    resource: https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule
+    title: "FTC, Telemarketing Sales Rule"
 ---
 
 ## What it is
@@ -64,10 +79,3 @@ The high-touch, high-value channel, for the few moments worth a live conversatio
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)
-
-## Citations
-
-[1] [FCC, AI-generated voices in robocalls are illegal (Declaratory Ruling, February 2024)](https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal)
-[2] [FCC, Declaratory Ruling FCC 24-17 (full text)](https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf)
-[3] [FCC, telemarketing and robocall rules](https://www.fcc.gov/general/telemarketing-and-robocall-rules)
-[4] [FTC, Telemarketing Sales Rule](https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule)

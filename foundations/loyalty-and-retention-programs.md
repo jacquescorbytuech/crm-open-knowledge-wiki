@@ -3,7 +3,25 @@ type: Playbook
 title: Loyalty and Retention Programs
 description: How to structure a loyalty programme, points earn and redemption ratios, tier ladders and progress nudges, two-sided referrals, and the enrolment, lifecycle comms, and holdout-proven metrics that justify spending on keeping customers rather than only acquiring them.
 tags: [loyalty, retention, referral, repeat-purchase, ltv, programs, points, tiers, enrolment, holdout]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: hbr-the-value-of-keeping-the-right
+    resource: https://hbr.org/2014/10/the-value-of-keeping-the-right-customers
+    title: "HBR, the value of keeping the right customers (retention vs acquisition cost; 5% retention to 25-95% profit)"
+  - id: bain-company-reichheld-a-5-increase-in
+    resource: https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf
+    title: "Bain & Company (Reichheld), a 5% increase in retention raises profit by more than 25%"
+  - id: hubspot-customer-loyalty-programs-and-mechanics-points
+    resource: https://blog.hubspot.com/service/customer-loyalty
+    title: "HubSpot, customer loyalty programs and mechanics (points, tiers; loyal customers spend more)"
+  - id: hbr-why-customer-referrals-can-drive-stunning
+    resource: https://hbr.org/2011/06/why-customer-referrals-can-drive-stunning-profits
+    title: "HBR, why customer referrals can drive stunning profits"
+  - id: schmitt-skiera-van-den-bulte-referral-programs
+    resource: https://faculty.wharton.upenn.edu/wp-content/uploads/2012/04/Schmitt-Skiera-vandenBulte-2011-Referral-Programs-Customer-Value.pdf
+    title: "Schmitt, Skiera & Van den Bulte, Referral Programs and Customer Value (referred customers retain better and are worth ~16% more)"
 ---
 
 ## Why retention is where the economics sit
@@ -97,11 +115,3 @@ A programme that only ever rewards with discounts trains customers to wait for t
 * [Lifecycle mapping](/foundations/lifecycle-mapping.md)
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
-
-## Citations
-
-[1] [HBR, the value of keeping the right customers (retention vs acquisition cost; 5% retention to 25-95% profit)](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)
-[2] [Bain & Company (Reichheld), a 5% increase in retention raises profit by more than 25%](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf)
-[3] [HubSpot, customer loyalty programs and mechanics (points, tiers; loyal customers spend more)](https://blog.hubspot.com/service/customer-loyalty)
-[4] [HBR, why customer referrals can drive stunning profits](https://hbr.org/2011/06/why-customer-referrals-can-drive-stunning-profits)
-[5] [Schmitt, Skiera & Van den Bulte, Referral Programs and Customer Value (referred customers retain better and are worth ~16% more)](https://faculty.wharton.upenn.edu/wp-content/uploads/2012/04/Schmitt-Skiera-vandenBulte-2011-Referral-Programs-Customer-Value.pdf)

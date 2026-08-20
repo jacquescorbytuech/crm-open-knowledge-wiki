@@ -3,7 +3,13 @@ type: Method
 title: Sample Size and Power
 description: The two proportion z-test for planning experiments, how to turn a required sample into a test duration, and the companion test for reading significance once the experiment has run.
 tags: [statistics, power, sample-size, z-test, experiments]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: kohavi-tang-xu-trustworthy-online-controlled-experiments
+    resource: https://experimentguide.com/
+    title: "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (statistical power and sample size)"
 ---
 
 ## Why it belongs with sizing
@@ -48,7 +54,3 @@ The required n grows fast as the effect you want to detect shrinks. Platform int
 * [Variance reduction and sequential testing](/measurement/variance-reduction.md)
 * [Impact sizing](/measurement/impact-sizing.md)
 * [Test rigorously](/principles/test-rigorously.md)
-
-## Citations
-
-[1] [Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (statistical power and sample size)](https://experimentguide.com/)

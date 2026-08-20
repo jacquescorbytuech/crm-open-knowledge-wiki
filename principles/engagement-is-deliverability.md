@@ -3,7 +3,13 @@ type: Principle
 title: Engagement is the new deliverability
 description: Providers treat engagement as a property of the sender, so weak engagement from a dormant list drags placement for the engaged part of the list too.
 tags: [principle, deliverability, engagement, reputation]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: word-to-the-wise-deliveries-and-opens
+    resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
+    title: "Word to the Wise, Deliveries and Opens and Clicks"
 ---
 
 ## Stance
@@ -31,7 +37,3 @@ The engagement that moves placement is the one the provider observes directly, n
 * [Deliverability](/foundations/deliverability.md)
 * [Platform interventions](/references/platform-interventions.md)
 * [List quality over size](/principles/list-quality-over-size.md)
-
-## Citations
-
-[1] [Word to the Wise, Deliveries and Opens and Clicks](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)

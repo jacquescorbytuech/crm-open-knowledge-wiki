@@ -3,7 +3,16 @@ type: Playbook
 title: Database Health and Sunsetting
 description: The marketing database as a decaying asset, the contact lifecycle from active through dormant to sunset, how to track decay and run hygiene, re-engagement, and sunsetting as one ongoing practice, and why net list growth is acquisition minus decay.
 tags: [database-health, list-decay, sunset, hygiene, re-engagement, deliverability, list-growth]
-timestamp: 2026-06-14T00:00:00Z
+generated:
+  by: human:jacquescorbytuech
+  at: 2026-06-14T00:00:00Z
+sources:
+  - id: google-email-sender-guidelines-engagement-drives-reputation
+    resource: https://support.google.com/a/answer/81126
+    title: "Google, email sender guidelines (engagement drives reputation and placement)"
+  - id: word-to-the-wise-deliveries-and-opens
+    resource: https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/
+    title: "Word to the Wise, deliveries and opens and clicks (engagement as the placement signal)"
 ---
 
 ## What it is
@@ -54,8 +63,3 @@ Sunsetting feels like destroying the asset you spent to build, which is why so m
 * [Automation and sequences](/foundations/automation-and-sequences.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
-
-## Citations
-
-[1] [Google, email sender guidelines (engagement drives reputation and placement)](https://support.google.com/a/answer/81126)
-[2] [Word to the Wise, deliveries and opens and clicks (engagement as the placement signal)](https://www.wordtothewise.com/2024/06/deliveries-and-opens-and-clicks/)
