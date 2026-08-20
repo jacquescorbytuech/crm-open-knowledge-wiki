@@ -1,5 +1,10 @@
 # Bundle Update Log
 
+## 2026-08-20 (clicks are not a reliable signal)
+* **Directive**: [Email](/channels/email.md) called click, conversion, reply, and unsubscribe "the reliable signals", contradicting [email metrics are directional](/principles/metrics-are-directional.md), which it links in the same sentence: clicks are sturdier than opens but security scanners, notably at Microsoft properties, inflate them, so a naive click count is unreliable.
+* **Correction**: The **Constraints** sentence now matches the principle page: scanners inflate clicks, so opens and clicks are both directional and conversion, reply, and unsubscribe are the cleaner signals. A bundle-wide sweep found no other page asserting click reliability; [core metrics](/measurement/core-metrics.md) and the principle page were already consistent.
+* **Registration**: One sentence in one page; no sources, numbers, or links changed, and `generated.at` already reads 2026-08-20.
+
 ## 2026-08-20 (wording sweep: overused "carry" and stock metaphors)
 * **Directive**: "Carry" appeared 88 times across the bundle as a vague do-everything verb, and several stock metaphors repeated as house tics. Thin them to plain statements while keeping metaphors that are literal or technical.
 * **Carry thinned**: Replaced roughly 70 vague uses with the precise verb each sentence wanted: signals *are* the signal rather than carrying it, frontmatter *holds* metadata, a form *has* a headline, a postcard *fits* one offer, headers *set* policy, a summary *quotes* a date verbatim, in-app *handles* the in-session work. Literal uses stay: a `multipart/alternative` message carrying two parts, a pass carrying a scannable code, webhooks carrying events back, a list you can carry elsewhere, and layout-encoder features carrying more weight in an ML representation.
