@@ -85,7 +85,7 @@ Merge or keep separate is the live decision, driven by the asymmetry between a f
 1. **Score the candidate pair.** A shared, verified hard identifier is high confidence. A shared weak signal alone is low. Set a high threshold for an automatic merge and a lower band that flags for review rather than merging.
 2. **Weigh the two failure modes, which are not equal.** A false split (one person seen as two) costs a duplicated send, a leaky frequency cap and double-counting in measurement, all annoying but recoverable. A false merge (two people fused) is worse: it can expose one person's order history or address to another, a privacy incident and one that is hard to detect after the fact. So bias the rule toward keeping separate when confidence is below the merge threshold.
 3. **Watch for shared identifiers that are not one person.** A household email, a shared family device or a recycled phone number will pull distinct people together under a naive rule. Require a second corroborating signal before merging on an identifier known to be shareable.
-4. **Make merges reversible.** Because a false merge is the expensive error, keep the source records and lineage (as above) so a merge can be unwound when a later signal contradicts it.
+4. **Make merges reversible.** A false merge is the expensive error. Keeping the source records and lineage (as above) lets a merge be unwound when a later signal contradicts it.
 
 > [!caution] A false merge is the expensive error
 > Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold; keep merges reversible.

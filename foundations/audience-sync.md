@@ -23,7 +23,7 @@ sources:
 
 ## What it is
 
-Audience sync is pushing a CRM segment to an ad platform, Meta Custom Audiences, Google Customer Match and their equivalents, so you can target, or suppress, those customers in paid media. It is the bridge between the owned database and bought reach: the same segment logic that drives an email becomes an ad audience. It is not an owned messaging channel, because you are renting the platform's reach against your list rather than holding a grant to message anyone, which is why it sits in foundations next to the data and segmentation it draws on, not in [channels](/channels/).
+Audience sync pushes a CRM segment to an ad platform (Meta Custom Audiences, Google Customer Match and their equivalents) to target or suppress those customers in paid media. It bridges the owned database and bought reach: the same segment logic that drives an email becomes an ad audience. It is not an owned messaging channel; you rent the platform's reach against your list rather than holding a grant to message anyone. It sits in foundations next to the data and segmentation it draws on, not in [channels](/channels/).
 
 ## Why it belongs in the contact strategy
 

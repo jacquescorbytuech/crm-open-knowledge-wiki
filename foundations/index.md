@@ -2,7 +2,7 @@
 
 The operational layer: the cross-channel practices that run a lifecycle programme well. Read these alongside the [principles](/principles/), which set the stances these operations serve, together with the [channels](/channels/), which cover the channel-specific delivery mechanics.
 
-Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack and reason about AI personalisation. The transport layer beneath every channel sits here too, alongside email's authentication and deliverability as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
+Most of what follows is cross-channel: how you hold and unify customer data, map the lifecycle, capture permission, build and segment the audience, write and design the message, automate the journey, structure offers and loyalty, plan the calendar, orchestrate across channels, choose the stack, reason about AI personalisation and govern the agents that now reach both the stack and the customer. The transport layer beneath every channel sits here too, alongside email's authentication and deliverability as the most developed channel-specific operations in the bundle. The per-channel overviews live in [channels](/channels/).
 
 ## Data and audience
 
@@ -43,3 +43,5 @@ Most of what follows is cross-channel: how you hold and unify customer data, map
 
 * [ESP selection](esp-selection.md) - the five-factor framework for evaluating the sending platform.
 * [Decisioning and personalisation](decisioning-and-personalisation.md) - decision support versus decisioning, the vendor landscape and the data prerequisite.
+* [AI agents and platform access](ai-agents-and-platform-access.md) - what MCP tool lists and auth scopes let an agent do to a live sending programme, plus where the confirmation gate runs.
+* [Customer-facing AI agents](customer-facing-ai-agents.md) - what a machine speaking for the brand must disclose, the escalation the messaging platforms require and what the brand is answerable for.

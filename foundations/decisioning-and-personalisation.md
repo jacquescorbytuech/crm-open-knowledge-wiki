@@ -5,7 +5,7 @@ description: The landscape of AI personalisation in CRM and lifecycle platforms,
 tags: [decisioning, personalisation, machine-learning, bandits, send-time, vendors]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-08-20T00:00:00Z
+  at: 2026-08-21T00:00:00Z
 sources:
   - id: hightouch-journeys-vs-ai-decisioning-rules-based
     resource: https://hightouch.com/blog/journeys-vs-ai-decisioning
@@ -47,6 +47,8 @@ Conflating the quite different things marketing platforms call "AI" overstates w
 * **Decisioning** is machine learning that makes the decision: a system that chooses, per customer, what to send, when, on which channel and increasingly whether to send at all, within goals and guardrails the marketer sets. The marketer sets the objective; the system explores and learns.
 
 Most of what ships in a CRM stack is decision support. Decisioning is the smaller, newer, more capable category and the harder one to adopt because it asks the marketer to let a learning system make the decisions and trust a [holdout](/measurement/holdouts-and-control-groups.md) to vindicate it.
+
+A third thing now carries the same "AI" label while belonging to neither category: an agent that operates the platform. A chat assistant that drafts a campaign, builds a segment or answers a reporting question does the marketer's job faster without deciding anything per customer. Vendors sell both under one banner, which makes the distinction worth holding. At least one vendor draws it inside its own documentation, separating an agent layer that composes copy from the reward-based system that learns which action pays. What such an agent can reach in a live account is treated in [AI agents and platform access](/foundations/ai-agents-and-platform-access.md).
 
 But every capability here, decision support and decisioning alike, is downstream of one upstream decision you make before any of it: whether you have built a unified, clean, training-ready first-party data foundation. Build it and the advanced options stay open; skip it and no amount of vendor AI compensates. The vendor and method taxonomy only starts to matter once that is settled: it is the menu you earn access to, not the first choice you make.
 
@@ -110,6 +112,7 @@ Every capability above depends on the same thing: unified, clean, training-ready
 ## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
+* [AI agents and platform access](/foundations/ai-agents-and-platform-access.md)
 * [Personalisation mechanics](/foundations/personalisation-mechanics.md)
 * [Segmentation models](/foundations/segmentation-models.md)
 * [ESP selection](/foundations/esp-selection.md)

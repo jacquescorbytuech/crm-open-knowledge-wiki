@@ -5,7 +5,7 @@ description: How to run CRM over WhatsApp and the messaging apps, work the opt-i
 tags: [channel, conversational-messaging, whatsapp, messenger, apple-messages-for-business, instagram-dm, opt-in, message-templates, customer-service-window]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-08-20T00:00:00Z
+  at: 2026-08-21T00:00:00Z
 sources:
   - id: meta-get-opt-in-for-whatsapp
     resource: https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in
@@ -50,6 +50,10 @@ Two-way, high-intent lifecycle moments: order and delivery updates, appointment 
 
 Pick by reach, richness and where the customer lives. [SMS](/channels/sms-and-rcs.md) is the lowest-common-denominator carrier channel, universal and needing no app, but one-way and plain; conversational messaging needs the app and the opt-in but returns a rich, two-way, identity-bearing thread and, in many markets, lower cost at scale. Use SMS for universal, urgent, one-way reach; conversational for rich, relationship-heavy, two-way exchanges, especially where WhatsApp is the default app. Use [email](/channels/email.md) for anything long or non-urgent. Run all three under one contact strategy; see [orchestration and frequency](/foundations/orchestration-and-frequency.md).
 
+## Automated replies and the agent in the thread
+
+Two-way messaging at scale was always capped by the cost of the people answering. An LLM agent removes that cap, which puts the weight on the platform rules rather than on the capability. Meta permits automation inside the customer-service window provided escalation to a human stays available. Apple requires a bot to identify itself immediately and will not approve a bot-only deployment. Neither the quality rating nor the messaging tiers distinguish a human-handled thread from an automated one, so an agent that irritates people costs reach exactly as fast as a person would. The disclosure obligations, the escalation requirements and what the brand is answerable for when the model gets it wrong are set out in [customer-facing AI agents](/foundations/customer-facing-ai-agents.md).
+
 ## Constraints
 
 Platform dependency is total: Meta and Apple set the policy, the pricing and the quality rules; they can throttle or suspend a number with no appeal you control. Reach skews hard by market, leaving the channel central in much of the world and peripheral in the US for now. Opt-in capture and template approval add friction before the first proactive send, on a list that is not portable. A quality-rating drop cuts future reach: the channel punishes irrelevance structurally.
@@ -68,6 +72,7 @@ The two-way, high-intent relationship channel, strongest in transactional and po
 * [Email](/channels/email.md)
 * [Push](/channels/push.md)
 * [Voice](/channels/voice.md)
+* [Customer-facing AI agents](/foundations/customer-facing-ai-agents.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
 * [Holdouts and control groups](/measurement/holdouts-and-control-groups.md)

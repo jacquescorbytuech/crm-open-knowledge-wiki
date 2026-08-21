@@ -68,7 +68,7 @@ Desktop and no-app re-engagement for web-first products: back-in-stock and price
 
 ## Browser push versus mobile push versus email
 
-Pick by where the user is and what you can reach. Mobile [push](/channels/push.md) owns the phone and the dormant app user; browser push owns the desktop and the web user who never installed an app, the gap mobile push cannot cover. They are not redundant, since a user can be granted on one and not the other, which makes them separate grants under one contact strategy rather than a single "push" channel. Against [email](/channels/email.md), browser push is the interruptive, low-capacity option for something timely the user wants now; email takes anything rich or non-urgent and reaches users on no granted browser at all. The default heuristic mirrors the rest of the channel mix: if it is timely and worth an interruption and the user is on a granted browser, push it; otherwise email it.
+Pick by where the user is and what you can reach. Mobile [push](/channels/push.md) owns the phone and the dormant app user; browser push owns the desktop and the web user who never installed an app, the gap mobile push cannot cover. A user can be granted on one and denied on the other. They are separate grants under one contact strategy, not a single "push" channel. Against [email](/channels/email.md), browser push is the interruptive, low-capacity option for something timely the user wants now; email takes anything rich or non-urgent and reaches users on no granted browser at all. The default heuristic mirrors the rest of the channel mix: if it is timely and worth an interruption and the user is on a granted browser, push it; otherwise email it.
 
 ## Constraints
 

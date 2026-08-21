@@ -26,7 +26,7 @@ See [`references/about-this-bundle.md`](references/about-this-bundle.md) for the
 Start at [`index.md`](index.md), then follow the layer your question sits in:
 
 - **[`principles/`](principles/)**: the stances every recommendation should serve (list quality, metrics discipline, the welcome window, engagement as deliverability, …).
-- **[`foundations/`](foundations/)**: the cross-channel operations: customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration, ESP selection, plus AI decisioning and personalisation.
+- **[`foundations/`](foundations/)**: the cross-channel operations: customer data and identity, segmentation and its models, consent, list building, lifecycle mapping, copywriting, message design, automation, offers, loyalty, campaign planning, orchestration, ESP selection, AI decisioning and personalisation, plus the AI agents that reach the stack and the customer.
 - **[`channels/`](channels/)**: the media you send through: email, SMS and RCS, push, in-app and direct mail, each with its permission, reach, filtering, technical specifics, constraints and measurement.
 - **[`measurement/`](measurement/)**: the metric tree; holdouts and control groups; attribution; retention and LTV; experiment sizing and volume thresholds; frequentist versus Bayesian inference; uplift and incrementality.
 - **[`references/`](references/)**: external platform behaviour, the email-intelligence and notification-decisioning research, legislation and compliance, plus a glossary.

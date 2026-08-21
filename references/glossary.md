@@ -1,11 +1,11 @@
 ---
 type: Glossary
 title: Glossary
-description: The working vocabulary of email, lifecycle and CRM marketing used across this bundle, from customer data and segmentation through channels, design and measurement.
+description: The working vocabulary of email, lifecycle and CRM marketing used across this bundle, from customer data and segmentation through channels, design, measurement and the AI agents that now reach the stack.
 tags: [glossary, terminology, reference]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-08-20T00:00:00Z
+  at: 2026-08-21T00:00:00Z
 sources:
   - id: tealium-what-is-a-cdp
     resource: https://tealium.com/resource/fundamentals/what-is-a-cdp/
@@ -130,10 +130,21 @@ sources:
 | CUPED | Controlled experiment using pre experiment data. A variance reduction technique. |
 | DiD | Difference in differences. Estimates an effect by comparing change across treated and untreated cohorts over a date. |
 
+## AI agents and platform access
+
+| Term | Meaning |
+| --- | --- |
+| MCP | Model Context Protocol. An open standard that exposes a platform's API to an LLM client as callable tools. Its reach is whatever those tools and the credential behind them allow. |
+| In-platform agent | A vendor's own agent product running inside the marketing platform, most of which draft for a human to approve rather than act unsupervised. |
+| Prompt injection | Instructions hidden in content a model reads, which it then follows as though they came from the operator. Indirect injection arrives through data the model ingests, such as a form field or an inbound reply. |
+| Excessive agency | An agent holding more functionality, permission or autonomy than its task needs, so a wrong or manipulated output becomes a damaging action. |
+| RBM agent | In RCS Business Messaging, a brand's registered sender identity rather than an AI system. A brand can run one with no AI behind it. |
+
 ## Related
 
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Segmentation models](/foundations/segmentation-models.md)
 * [Sending infrastructure](/foundations/sending-infrastructure.md)
 * [ESP selection](/foundations/esp-selection.md)
+* [AI agents and platform access](/foundations/ai-agents-and-platform-access.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)

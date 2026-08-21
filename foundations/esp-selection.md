@@ -5,7 +5,7 @@ description: How to evaluate and choose an email service provider using the five
 tags: [esp, vendor-selection, framework, tooling, migration, pricing]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-06-14T00:00:00Z
+  at: 2026-08-21T00:00:00Z
 ---
 
 ## The five factors, in priority order
@@ -30,9 +30,11 @@ Score vendors on dimensions you can observe and test, ignoring the ones you cann
 * **Native integrations.** Whether a first-party connector to your system of record (CRM, ecommerce, CMS) exists, versus a Zapier or Make bridge.
 * **Reporting.** What you can measure in-platform and export cleanly, versus what is locked to a dashboard.
 * **Pricing model.** Computable to a unit cost (see below).
-* **Developer experience.** The API, webhooks and docs, judged from a real call you make during the trial.
+* **Developer experience.** The API, webhooks and docs, judged from a real call you make during the trial. Where the vendor publishes an MCP server, its tool list and auth scopes belong here too. Both are documented, so you can read what an agent holding your credential would be able to do before committing to anything. See [AI agents and platform access](/foundations/ai-agents-and-platform-access.md).
 
-AI and "predictive" features are not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed and a trial on your small slice of data cannot show whether they work at your scale. Treat them as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+Claimed AI performance is not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed and a trial on your small slice of data cannot show whether they work at your scale. Treat claimed lift as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+
+What an agent may do to the account is comparable, because it is documented rather than inferred. Whether suppression and subscription state are writable, whether a read-only mode exists, whether scopes narrow per data area and whether the confirmation step runs inside the vendor's own application are published facts you can score like any other dimension.
 
 ## Split must have from nice to have
 
@@ -92,6 +94,7 @@ Do not choose on a demo. A demo shows the happy path on the vendor's data. A tri
 * **Segmentation.** Build a dynamic segment on your own attributes and behaviour, then confirm it updates as data changes rather than being a one off static list. See [customer data and identity](/foundations/customer-data-and-identity.md).
 * **An API or webhook integration.** Push a contact in and pull an event out through the API or a webhook, the way your stack will actually use it. Read the docs while you do it; their quality is a proxy for the developer experience.
 * **Support response.** Open a real support ticket during the trial and measure the response time and quality on your actual plan tier, not the sales channel.
+* **Agent access, where you intend to use it.** Connect the vendor's MCP server to an LLM client with a throwaway least-privilege credential and run one real task through it. Confirm which write tools appear, whether a read-only mode holds and where the confirmation step happens.
 
 Record each result as a 1 to 5 score against the worksheet. A capability you could not get working in a trial is unlikely to work better in production.
 
@@ -109,6 +112,7 @@ Migration is less costly than it used to be, but it is not free: a botched cutov
 ## Related
 
 * [Decisioning and personalisation](/foundations/decisioning-and-personalisation.md)
+* [AI agents and platform access](/foundations/ai-agents-and-platform-access.md)
 * [Customer data and identity](/foundations/customer-data-and-identity.md)
 * [Deliverability](/foundations/deliverability.md)
 * [Authentication](/foundations/authentication.md)

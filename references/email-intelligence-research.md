@@ -38,7 +38,7 @@ Providers model the action a recipient will take from the envelope alone. With r
 
 ## Layout, summarisation and profiling
 
-A Google layout aware document encoder patent treats font size, bold, italic, colour and position as block level features. Bigger, bolder and higher on the page therefore carries more weight in the representation, which means a model's summary draws disproportionately from headline and CTA blocks. The same research team that built the parser later moved onto LLM summarisation work. A separate Yahoo patent describes classifying the user into a behavioural persona (organizer, minimalist, priority focused, ignorer, unsubscriber and so on) from inbox characteristics, a profile the brand cannot detect or validate.
+A Google layout-aware document-encoder patent treats font size, bold, italic, colour and position as block-level features. Content that is bigger, bolder and higher on the page carries more weight in the representation; a model's summary draws disproportionately from headline and CTA blocks. The same research team that built the parser later moved onto LLM summarisation work. A separate Yahoo patent describes classifying the user into a behavioural persona (organiser, minimalist, priority-focused, ignorer, unsubscriber and so on) from inbox characteristics, a profile the brand cannot detect or validate.
 
 ## Practical consequences
 

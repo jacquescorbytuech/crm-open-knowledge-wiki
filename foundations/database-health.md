@@ -19,7 +19,7 @@ sources:
 
 A marketing database is not a stock that only grows; it is an asset that decays continuously and has to be maintained. People change addresses, lose interest, switch the channel they read and abandon accounts that later turn into spam traps. Database health is the ongoing practice of keeping the contactable list both deliverable and valuable: managing that decay deliberately rather than letting dormant contacts accumulate. It is the place several scattered ideas in the bundle, hygiene, re-engagement, suppression of the unresponsive and the sunset policy, come together as one lifecycle for the contact, not the campaign.
 
-The never-engaging tail does not sit there harmlessly, which is what turns this from housekeeping into reach. Under sender-level reputation it actively drags inbox placement for the engaged contacts who actually convert. The reachable list is therefore the engaged subset, which makes sunsetting a net gain in reachability rather than a loss of reach. The lifecycle and running practice that follow are how you act on that, the operational consequence of it, not a reluctant trim of a healthy asset.
+The never-engaging tail does not sit there harmlessly. Under sender-level reputation it actively drags inbox placement for the engaged contacts who actually convert. The reachable list is the engaged subset; sunsetting is a net gain in reachability, not a loss of reach. The lifecycle and running practice that follow are the operational consequence, not a reluctant trim of a healthy asset.
 
 ## Why a database decays
 

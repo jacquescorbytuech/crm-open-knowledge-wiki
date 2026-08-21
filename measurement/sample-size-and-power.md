@@ -46,7 +46,7 @@ The 95% confidence interval on the difference is `(p2 - p1) ± 1.96 x SE`. The e
 
 ## Why small effects need huge samples
 
-The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, which makes this formula the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
+The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects sit in the low single-digit percent or below, exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference-in-differences in particular, difference several noisy quantities and demand larger samples than a simple two-proportion test. This formula is the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

@@ -5,7 +5,7 @@ description: How to use outbound and inbound phone calls, including AI voice age
 tags: [channel, voice, outbound-calls, ai-voice-agents, ivr, tcpa, robocall, consent, stir-shaken]
 generated:
   by: human:jacquescorbytuech
-  at: 2026-08-20T00:00:00Z
+  at: 2026-08-21T00:00:00Z
 sources:
   - id: fcc-ai-generated-voices-in-robocalls-are
     resource: https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal
@@ -37,6 +37,8 @@ The channel's frontier is the AI voice agent: software that converses in a synth
 > In February 2024 the FCC ruled that an AI-generated voice is an "artificial or prerecorded voice" under the TCPA, which makes an outbound marketing call placed with an AI voice a robocall requiring prior express written consent. The new capability does not change the permission: an AI agent calling cold is an illegal robocall, exactly as a recorded message would be.
 
 The legitimate uses are inbound (the customer called you) and outbound to consumers who gave written consent, where the agent handles reminders, renewals, qualification or support while disclosing that it is automated. The economics invert the old limit. Voice was always capped by human agent time; AI removes that cap, which is why the consent and disclosure discipline matters more here. See [consent and preferences](/foundations/consent-and-preferences.md).
+
+The ruling reaches synthetic speech and stops there. In the US there is no equivalent treatment of AI-generated text, so the analysis for an agent writing SMS or email runs differently; see [customer-facing AI agents](/foundations/customer-facing-ai-agents.md).
 
 ## Filtering and editing
 
@@ -75,6 +77,7 @@ The high-touch, high-value channel, for the few moments worth a live conversatio
 
 * [SMS and RCS](/channels/sms-and-rcs.md)
 * [Conversational messaging](/channels/conversational-messaging.md)
+* [Customer-facing AI agents](/foundations/customer-facing-ai-agents.md)
 * [Consent and preferences](/foundations/consent-and-preferences.md)
 * [Legislation and compliance](/references/legislation-and-compliance.md)
 * [Orchestration and frequency](/foundations/orchestration-and-frequency.md)
