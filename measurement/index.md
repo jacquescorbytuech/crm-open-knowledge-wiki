@@ -2,7 +2,7 @@
 
 The measurement layer: how to tell whether a lifecycle programme actually worked, and how to keep reading channel effects once the platforms in the middle stopped reporting honestly. The general core every programme needs comes first, then the specialised kit for measuring under intermediation, which most senders should understand and few have the volume to run.
 
-The discipline running through both: every method here hands you a distribution, not a verdict, and a number without a control group is usually the customers who were going to act anyway.
+The discipline running through both: every method here hands you a distribution rather than a verdict; a number without a control group usually counts the customers who were going to act anyway.
 
 ## Programme measurement
 

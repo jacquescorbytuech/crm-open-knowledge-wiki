@@ -31,7 +31,7 @@ sources:
 
 Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene, and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
 
-Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, and below volume most of those slices are untestable, so most programmes over-segment and reach for proprietary models when RFM on transaction data would do. The catalogue is there to choose from, not to stack.
+Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, leaving most of the slices untestable below volume. That is how programmes end up over-segmented, reaching for proprietary models when RFM on transaction data would do. The catalogue is there to choose from, not to stack.
 
 ## RFM
 
@@ -41,7 +41,7 @@ RFM scores each customer on three axes: Recency (how recently they bought), Freq
 
 Fix a lookback window first, the period of transaction history you score against. A year is a common default for most retail; shorter for high-frequency categories, longer for considered purchases bought once or twice a year. Everything below is computed inside that window.
 
-For each customer, derive three raw numbers: recency as days since last order (smaller is better), frequency as order count, monetary as total or average spend. Then score each axis independently by ranking the customer base into bands, quintiles (five bands, 1 to 5) for a large list, quartiles for a smaller one. The point of ranking rather than fixing absolute thresholds is that the bands self-calibrate to your own base and stay comparable when you recompute them.
+For each customer, derive three raw numbers: recency as days since last order (smaller is better), frequency as order count, monetary as total or average spend. Then score each axis independently by ranking the customer base into bands, quintiles (five bands, 1 to 5) for a large list, quartiles for a smaller one. Ranking rather than fixing absolute thresholds keeps the bands self-calibrated to your own base and comparable when you recompute them.
 
 ```
 R score = quintile of (days since last order), reversed so most recent = 5
@@ -92,23 +92,23 @@ Lifecycle-stage segmentation divides the audience by where each customer sits in
 
 ## Combining RFM with lifecycle stage
 
-The clean way to combine the two is to nest, not cross. Use lifecycle stage as the outer frame and apply RFM only inside the stage where it adds information. Two RFM axes already encode lifecycle signal (recency separates engaged from lapsing), so crossing the full 555 code against every stage just re-splits the same customers and multiplies cells you cannot send to.
+The clean way to combine the two is to nest, not cross. Use lifecycle stage as the outer frame and apply RFM only inside the stage where it adds information. Since two RFM axes already encode lifecycle signal (recency separates engaged from lapsing), crossing the full 555 code against every stage just re-splits the same customers and multiplies cells you cannot send to.
 
-A workable pattern: let stage decide the message (onboarding sequence, retention nurture, winback), and let RFM decide priority and offer depth within that stage. In the engaged stage, RFM tier sets who gets VIP treatment; in the lapsing stage, monetary score sets how hard you bid to win them back. That keeps the segment count to stage times a few RFM tiers, not stage times 125. The same overlap discipline and dynamic-versus-static handling lives in [segmentation and data](/foundations/segmentation-and-data.md).
+A workable pattern: let stage decide the message (onboarding sequence, retention nurture, winback) and let RFM decide priority and offer depth within that stage. In the engaged stage, RFM tier sets who gets VIP treatment; in the lapsing stage, monetary score sets how hard you bid to win them back. That keeps the segment count to stage times a few RFM tiers, not stage times 125. The same overlap discipline and dynamic-versus-static handling lives in [segmentation and data](/foundations/segmentation-and-data.md).
 
 ## Propensity
 
-Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, and like all of it, they are only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, which like the rest of it is only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
-A propensity score answers who is likely to act, which is not the same as who your sending changes. The first keeps messaging people who would have acted anyway; the second is the uplift question, and it needs a randomised holdout to answer honestly. Treat propensity as the accessible first step and reach for the rigorous version when you have the volume. See [uplift and incrementality](/measurement/uplift-and-incrementality.md).
+A propensity score answers who is likely to act, which is not the same as who your sending changes. The first keeps messaging people who would have acted anyway; the second is the uplift question, which needs a randomised holdout to answer honestly. Treat propensity as the accessible first step and reach for the rigorous version when you have the volume. See [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 ## Refresh cadence
 
-Segments go stale at different rates, so recompute them on different clocks. RFM is behavioural and moves quickly: a recent buyer becomes a lapsing one with no new event at all, just the passage of time, so recompute it on a short, regular cadence (for many programmes weekly or monthly is a sensible default) and let customers move between tiers as they do. CLV tiers move slowly and noisily, so recompute them less often, quarterly is a reasonable default, to avoid churning customers between value tiers on a single large order. Whatever cadence you pick, make it scheduled and consistent so a customer's tier means the same thing each time you read it.
+Segments go stale at different rates and need recomputing on different clocks. RFM is behavioural and moves quickly: a recent buyer becomes a lapsing one with no new event at all, just the passage of time. Recompute it on a short, regular cadence (for many programmes weekly or monthly is a sensible default) and let customers move between tiers as they do. CLV tiers move slowly and noisily. Recompute them less often, quarterly as a reasonable default, to avoid churning customers between value tiers on a single large order. Whatever cadence you pick, make it scheduled and consistent so a customer's tier means the same thing each time you read it.
 
 ## Choosing a model
 
-Match the model to the job, and prefer the simplest model that answers the question. Combining models multiplies segments fast, and below a list in the low thousands the slices stop being testable or sendable, which is why over-segmentation is the common failure and RFM on transaction data is so often enough. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
+Match the model to the job, preferring the simplest model that answers the question. Combining models multiplies segments fast. Below a list in the low thousands the slices stop being testable or sendable, which is why over-segmentation is the common failure and RFM on transaction data is so often enough. See [segmentation has real costs](/principles/segmentation-has-costs.md) and [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

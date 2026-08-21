@@ -33,19 +33,19 @@ How to write one:
 3. Write the preheader as the second line, not a repeat of the subject. Preview text commonly runs roughly 40 to 100 characters depending on the client; use it to add the detail the subject left out, not to echo it.
 4. Apply the self-check as a rule: strip the subject to its first few words and read it aloud. If those words still tell the recipient something concrete and true, keep it. If they say nothing without the rest of the line, rewrite so the fact moves forward.
 
-Test subject lines honestly. An A/B subject test on a single send is usually too small to call: opens are noisy and the difference between two lines is often within that noise. Before declaring a winner, check the test has the volume to detect a real difference, see [sample size and power](/measurement/sample-size-and-power.md), and do not over-read a one-off result from a few thousand sends.
+Test subject lines honestly. An A/B subject test on a single send is usually too small to call: opens are noisy and the difference between two lines is often within that noise. Before declaring a winner, check the test has the volume to detect a real difference; see [sample size and power](/measurement/sample-size-and-power.md). A one-off result from a few thousand sends rarely has it.
 
 ## Email anatomy
 
-A single-intent email has a predictable skeleton. Each block does one job, and the order keeps the most important message above the fold and machine-readable.
+A single-intent email has a predictable skeleton. Each block does one job, in an order that keeps the most important message above the fold and machine-readable.
 
 * **Preheader / preview text.** The first text the client surfaces after the subject. Add one extra concrete fact here, not a repeat of the subject.
 * **Header.** Logo and a thin nav at most. Recognisable sender, minimal links.
-* **Hero message.** One headline stating the single core message in real text. This is the line a scanner and a summariser will keep, so state the offer, change, or news plainly.
+* **Hero message.** One headline stating the single core message in real text. Since this is the line a scanner and a summariser will keep, state the offer, change, or news plainly.
 * **Primary CTA.** One button, placed near the hero, repeated lower down if the email is long. Same wording each time.
 * **Supporting content.** Detail, proof, or secondary context below the primary action, never competing with it.
-* **Footer.** Physical address, clear unsubscribe, sender identity. Required, and essential to deliverability.
-* **Plain-text part.** A real plain-text alternative alongside the HTML. Some clients and summarisers read it, and it keeps the message legible when images are blocked.
+* **Footer.** Clear unsubscribe and sender identity, required everywhere and essential to deliverability. A physical postal address where the law demands one (US CAN-SPAM, Canada's CASL), good practice elsewhere.
+* **Plain-text part.** A real plain-text alternative alongside the HTML. Read by some clients and summarisers, it also keeps the message legible when images are blocked.
 
 ## CTAs
 
@@ -53,18 +53,18 @@ Keep one clear primary action per email; messages with a single call to action c
 
 How to write the button:
 
-1. Lead with a verb and name the outcome. "Get 20% off" beats "Click here", "Track my order" beats "Submit", because the copy tells the recipient what happens next.
+1. Lead with a verb and name the outcome. "Get 20% off" beats "Click here" and "Track my order" beats "Submit", because the copy tells the recipient what happens next.
 2. Keep one primary action. If a second action is unavoidable, make it visibly secondary, a text link rather than a competing button.
 3. Make it tappable. A real button block, not a bare inline link, sized so a thumb can hit it on a phone.
 4. Match the CTA to the subject's promise. The button should deliver the fact the envelope front-loaded, or the open was a bait and switch.
 
 ## Spam trigger avoidance
 
-Authentication and engagement matter far more than word lists, but avoid the obvious: all caps subjects, excessive punctuation, heavy image to text ratios, and link shorteners. Image only emails lose the structure the classifier reads, so the model parses your headline, promo code, body, and footer as one flat block. Keep real text in the message.
+Authentication and engagement matter far more than word lists, but avoid the obvious: all caps subjects, excessive punctuation, heavy image to text ratios, and link shorteners. Image only emails lose the structure the classifier reads, leaving the model to parse your headline, promo code, body, and footer as one flat block. Keep real text in the message.
 
 ## Writing for the summariser
 
-On-device and inbox summarisers compress a message to its gist, keeping what is machine readable and dropping brand voice. Lead with the concrete fact, the amount, the name, the time, the action, so a summary has something to keep. A useful self check: if the subject still tells the user something useful when stripped to its first few words, it contains a fact a summariser can keep. The platform research behind this is in [email intelligence research](/references/email-intelligence-research.md).
+On-device and inbox summarisers compress a message to its gist, keeping what is machine readable and dropping brand voice. Lead with the concrete fact, the amount, the name, the time, the action, giving a summary something to keep. A useful self check: if the subject still tells the user something useful when stripped to its first few words, it contains a fact a summariser can keep. The platform research behind this is in [email intelligence research](/references/email-intelligence-research.md).
 
 Concrete rules, with phrasings:
 
@@ -78,18 +78,18 @@ Concrete rules, with phrasings:
 
 The envelope and skeleton are email's. The other channels compress the same job into less room, which makes the front-loaded fact more important, not less.
 
-* **SMS.** No subject and no styling, so the opening words are the envelope, and an unrecognised number reads as spam unless the sender identity is clear early. Watch the segment boundary, 160 characters in `GSM-7`, 70 once any character forces `UCS-2`, keep to one link, and respect that the message arrives in a thread the recipient otherwise reserves for people they know. See [SMS and RCS](/channels/sms-and-rcs.md).
+* **SMS.** No subject and no styling, which makes the opening words the envelope. An unrecognised number reads as spam unless the sender identity is clear early. Watch the segment boundary, 160 characters in `GSM-7`, 70 once any character forces `UCS-2`, keep to one link, and respect that the message arrives in a thread the recipient otherwise reserves for people they know. See [SMS and RCS](/channels/sms-and-rcs.md).
 * **Push.** A title and a short body, truncated hard on the lock screen and shown with no guarantee an image renders. Put the fact in the title, treat the body as the single supporting line, and make the tap open the thing the copy promised. See [push](/channels/push.md).
-* **In-app.** Copy inside a surface you control and a recipient already in session, so none of the other channels' format limits apply: no segment count, no lock-screen truncation, as much or as little room as the moment needs. The constraint is relevance, not length, the cost is interrupting a live session rather than deliverability. Say the one thing the moment is about and offer the single next action. See [in-app](/channels/in-app.md).
+* **In-app.** Copy inside a surface you control and a recipient already in session, so none of the other channels' format limits apply: no segment count, no lock-screen truncation, as much or as little room as the moment needs. The constraint is relevance, not length. The cost is interrupting a live session rather than deliverability. Say the one thing the moment is about and offer the single next action. See [in-app](/channels/in-app.md).
 
 ## Generating copy with AI
 
-A language model is a competent first-drafter and a poor final author. It is genuinely useful for volume work, producing subject-line variants to test, adapting one message to several segments, getting past a blank page, and the discipline that makes it safe is to treat its output as a draft a human edits, not as copy that ships unread. The production pattern is already published: Kuaishou's [PushGen](https://arxiv.org/abs/2512.14490) generates push copy under style controls and has a learned reward model rank the candidates, rather than shipping the raw generation, one of the systems catalogued in [notification and decisioning research](/references/notification-and-decisioning-research.md).
+A language model is a competent first-drafter and a poor final author. It is genuinely useful for volume work, producing subject-line variants to test, adapting one message to several segments, getting past a blank page. What makes that safe is treating its output as a draft a human edits, not as copy that ships unread. The production pattern is already published: Kuaishou's [PushGen](https://arxiv.org/abs/2512.14490) generates push copy under style controls and has a learned reward model rank the candidates, rather than shipping the raw generation, one of the systems catalogued in [notification and decisioning research](/references/notification-and-decisioning-research.md).
 
 The risks specific to generated marketing copy:
 
-* **Hallucinated specifics.** The model will happily invent a discount depth, a deadline, a product name, or a policy detail that reads fluently and is wrong. The front-loaded fact, the amount, the date, the item, is exactly the part a model is least reliable on and the part a wrong value does the most damage. Bind those values from your own data through [personalisation mechanics](/foundations/personalisation-mechanics.md) rather than letting the model assert them, and verify every concrete claim against the actual offer before send.
-* **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that has no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, and hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
+* **Hallucinated specifics.** The model will happily invent a discount depth, a deadline, a product name, or a policy detail that reads fluently and is wrong. The front-loaded fact, the amount, the date, the item, is exactly the part a model is least reliable on and the part a wrong value does the most damage. Bind those values from your own data through [personalisation mechanics](/foundations/personalisation-mechanics.md) rather than letting the model assert them, then verify every concrete claim against the actual offer before send.
+* **Regression to the generic.** A model trained on everyone's email writes like everyone's email, drifting to the bland, on-trend phrasing that has no brand voice and that a [summariser](/references/email-intelligence-research.md) flattens to nothing. Give it your voice and constraints explicitly, then hold its output to the same envelope and CTA discipline; generated copy that fails the strip-to-first-few-words check fails for the same reason human copy does.
 
 This follows [start simple](/principles/start-simple.md) and the decision-support framing in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md): the model accelerates a writer who knows what good looks like, and amplifies the mistakes of one who does not.
 
@@ -105,7 +105,7 @@ Use click to open rate (CTOR), clicks divided by opens, as the content engagemen
 * One primary CTA, verb plus outcome, tappable, consistent wording throughout.
 * Hero message is real text, not baked into an image.
 * From-address is monitored, not noreply@.
-* Footer has a working unsubscribe, physical address, and clear sender identity.
+* Footer has a working unsubscribe, clear sender identity and the postal address where the law requires one.
 * A plain-text alternative is present.
 * Any A/B subject test has the volume to call a real difference before a winner is declared.
 

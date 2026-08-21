@@ -22,17 +22,17 @@ sources:
 
 Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form has a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
 
-Fewer fields convert better, so collect the minimum that makes the subscriber usable and ask for the rest later through progressive profiling. To do that concretely:
+Because fewer fields convert better, collect the minimum that makes the subscriber usable and ask for the rest later through progressive profiling. To do that concretely:
 
 1. Order fields by how much each one costs the subscriber to give and how much you need it now. Email first, then at most one field you will actually use to personalise the first send.
 2. At the start, capture email only. A name field is optional, not default; add it only if your first email genuinely uses it.
 3. Defer everything else. Collect preferences, segment data, and qualifying detail later through a preference centre, follow up emails, or behaviour, not the signup form. See [consent and preferences](/foundations/consent-and-preferences.md) and [segmentation and data](/foundations/segmentation-and-data.md).
 
-Be deliberate about mode. A handful of fields is collecting subscribers; many fields is qualifying leads, and you should only do the second when sales need the qualification.
+Be deliberate about mode. A handful of fields is collecting subscribers; many fields is qualifying leads, which is worth doing only when sales need the qualification.
 
 ## Placement
 
-Rank placements by the intent of the moment they fire, not by how prominent they are. Inline forms inside relevant content and exit intent overlays catch a reader who has already engaged, so they convert better than a form buried in the footer or sidebar that nobody is looking for. Order to reach for, highest intent first:
+Rank placements by the intent of the moment they fire, not by how prominent they are. Inline forms inside relevant content and exit intent overlays catch a reader who has already engaged, which is why they convert better than a form buried in the footer or sidebar that nobody is looking for. Order to reach for, highest intent first:
 
 1. In content embedded forms, placed next to the content that earned the interest.
 2. Exit intent overlays, fired as the visitor leaves a page they engaged with.
@@ -40,7 +40,7 @@ Rank placements by the intent of the moment they fire, not by how prominent they
 4. Permission priming overlays and sticky banners, which set up a later ask.
 5. Footer or sidebar forms, the fallback for visitors who go looking.
 
-Off site, use link in bio tools, Meta lead generation ads, video callouts, and QR codes to tracked landing pages. Run several placements at once rather than relying on one form in one location, and tag each so you can tell which earns subscribers (see [Source tracking](#source-tracking)).
+Off site, use link in bio tools, Meta lead generation ads, video callouts, and QR codes to tracked landing pages. Run several placements at once rather than relying on one form in one location, tagging each so you can tell which earns subscribers (see [Source tracking](#source-tracking)).
 
 ## Lead magnets
 
@@ -48,14 +48,14 @@ A lead magnet is an incentive offered for contact details. Good ones are relevan
 
 ## Delivering the lead magnet
 
-Deliver the magnet through automation, not by hand, so it arrives instantly while intent is highest. Wire the capture to an event the ESP can trigger on:
+Deliver the magnet through automation, not by hand: it needs to arrive instantly, while intent is highest. Wire the capture to an event the ESP can trigger on:
 
 1. The signup writes the new contact and a tag or field marking which magnet they asked for.
 2. That signup event triggers an automation. With double opt in, the confirmation click is the trigger; with single opt in, the form submission is.
 3. The first email delivers the magnet (the asset, a link, or the promised content) immediately, with no marketing wrapped around it.
 4. The same automation drops them into the welcome sequence so the magnet email is step one, not a dead end. See [automation and sequences](/foundations/automation-and-sequences.md) and [the welcome window](/principles/the-welcome-window.md).
 
-Branch the sequence on which magnet was requested where the magnets imply different interests, so the welcome content matches what they signed up for.
+Where the magnets imply different interests, branch the sequence on which one was requested so the welcome content matches what they signed up for.
 
 ## Single versus double opt in
 
@@ -72,7 +72,7 @@ Single opt in adds the subscriber the moment the form is submitted. Double opt i
 
 When you run double opt in, the confirmation is a short flow, not just one email:
 
-1. On submit, create the contact in a pending or unconfirmed state. Do not send them marketing yet, and do not count them as a subscriber.
+1. On submit, create the contact in a pending or unconfirmed state. They get no marketing yet and do not count as a subscriber.
 2. Send the confirmation email immediately. One clear purpose, one button, restating what they signed up for so the click is informed consent.
 3. The confirmation link sets the contact to confirmed and stamps the consent record (timestamp, source, and what they agreed to). See [consent and preferences](/foundations/consent-and-preferences.md).
 4. Confirmation is the trigger that delivers the lead magnet and starts the welcome sequence (see [Delivering the lead magnet](#delivering-the-lead-magnet)).
@@ -80,7 +80,7 @@ When you run double opt in, the confirmation is a short flow, not just one email
 
 ## Source tracking
 
-Knowing where a subscriber came from is as valuable as knowing how many you have. Use UTM parameters, dedicated landing pages, hidden form fields, custom ESP fields, and QR codes, and combine methods because attribution is always incomplete. Use a consistent naming convention from day one, or the data is useless within months.
+Knowing where a subscriber came from is as valuable as knowing how many you have. Use UTM parameters, dedicated landing pages, hidden form fields, custom ESP fields, and QR codes. Combine methods, because attribution is always incomplete. Use a consistent naming convention from day one, or the data is useless within months.
 
 Fix a convention and apply it everywhere. The standard UTM trio covers it:
 

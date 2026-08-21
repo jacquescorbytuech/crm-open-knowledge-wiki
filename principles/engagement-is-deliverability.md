@@ -1,7 +1,7 @@
 ---
 type: Principle
 title: Engagement is the new deliverability
-description: Providers treat engagement as a property of the sender, so weak engagement from a dormant list drags placement for the engaged part of the list too.
+description: Providers treat engagement as a property of the sender, which lets weak engagement from a dormant list drag placement for the engaged part of the list too.
 tags: [principle, deliverability, engagement, reputation]
 generated:
   by: human:jacquescorbytuech
@@ -16,7 +16,7 @@ sources:
 
 Sender level engagement is the currency of inbox placement. Consistently weak engagement from a dormant segment drags down placement for the engaged segment too, because the provider's classifier treats engagement as a property of the sender, not just the recipient.
 
-Email is where this is most explicit and best documented, but the dynamic is not email's alone. Mobile platforms demote or strip the notification privileges of apps whose pushes are routinely dismissed or disabled, and carriers and aggregators filter A2P SMS traffic by complaint and spam-report rates at the sender level. The thresholds and machinery differ; the principle that the intermediary scores the sender by how recipients react does not.
+Email is where this is most explicit and best documented, but the dynamic is not email's alone. Mobile platforms demote or strip the notification privileges of apps whose pushes are routinely dismissed or disabled. Carriers and aggregators filter A2P SMS traffic by complaint and spam-report rates at the sender level. The thresholds and machinery differ; the principle that the intermediary scores the sender by how recipients react does not.
 
 ## What changed
 

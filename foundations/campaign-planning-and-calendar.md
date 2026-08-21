@@ -23,16 +23,16 @@ sources:
 
 ## Triggered and broadcast sending
 
-A lifecycle programme sends triggered and broadcast messages, and plans them differently.
+A lifecycle programme sends triggered and broadcast messages, but plans them differently.
 
-* **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse, and run continuously once built. Most of the programme's relevance comes from them, because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
+* **Triggered** messages fire from a customer's behaviour or state, a signup, a purchase, an abandonment, a lapse. Once built they run continuously. Most of the programme's relevance comes from them, because they arrive when the customer's action made the message timely. Trigger-based sending consistently outperforms scheduled broadcasts on engagement and revenue per recipient.
 * **Broadcast** (batch) messages go to a segment on a schedule: the newsletter, the launch, the promotion. They are how the calendar's planned moments reach the audience.
 
-Most programmes lean too hard on broadcast because it is the visible, plannable work, and under-invest in the triggered layer that does more of the work. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).
+Most programmes lean too hard on broadcast because it is the visible, plannable work, while under-investing in the triggered layer that does more of the work. Plan the triggered backbone first, then schedule broadcasts around it. See [automation and sequences](/foundations/automation-and-sequences.md).
 
 ## The marketing calendar
 
-The calendar is the shared plan of what broadcasts go out, to whom, and when, across the channels. Its job is not to fill every slot but to coordinate: to make the launch, the seasonal moment, and the promotion line up rather than collide, and to make the total contact load visible before it is sent. A calendar planned per channel re-creates the collision problem the [contact strategy](/foundations/orchestration-and-frequency.md) exists to prevent, so plan it across channels, against the one contact budget.
+The calendar is the shared plan of what broadcasts go out, to whom, and when, across the channels. Its job is not to fill every slot but to coordinate: to make the launch, the seasonal moment, and the promotion line up rather than collide, and to make the total contact load visible before it is sent. Because a calendar planned per channel re-creates the collision problem the [contact strategy](/foundations/orchestration-and-frequency.md) exists to prevent, plan it across channels, against the one contact budget.
 
 ## What the planning view contains
 
@@ -40,7 +40,7 @@ Lay the calendar out as a grid of time against channel lanes, so total contact l
 
 * **Channel lanes.** One row per channel, email, SMS, push, in-app, so a recipient's combined load across lanes is read vertically, not buried in separate tools.
 * **Broadcast slots.** Each planned batch send: the campaign name, segment, goal, and proposed date. An empty slot is fine; a slot with no goal is not.
-* **Triggered/automation checkpoints.** The live flows are not scheduled, but mark them on the view so planners see them competing for the same contact budget, and flag the moments a broadcast would land on top of a heavy trigger (a sale email into an active abandonment series).
+* **Triggered/automation checkpoints.** The live flows are not scheduled, but mark them on the view so planners see them competing for the same contact budget. Flag the moments a broadcast would land on top of a heavy trigger (a sale email into an active abandonment series).
 * **Key retail and seasonal moments.** The fixed anchors the plan bends around: your category's peak periods, paydays, your own launch and renewal dates, and the public holidays of your main markets. Place these first, then plan campaigns relative to them.
 * **Suppression and exclusion notes.** Who is held back or excluded for a given send, recent purchasers, an experiment holdout, so it is decided in planning, not at build.
 
@@ -54,7 +54,7 @@ Run a rolling plan, not a fixed quarterly document that goes stale by week two. 
 
 ## Cadence and the contact budget
 
-Decide cadence from what the audience tolerates and what you have to say, not from a quota of sends to hit. Over-sending is the fastest way to lose a list: too many messages is consistently the top reason people unsubscribe and complain, and both signals drive [deliverability](/foundations/deliverability.md) down. The calendar should respect the [frequency caps](/foundations/orchestration-and-frequency.md), counting triggered sends against the same budget, not just the broadcasts.
+Decide cadence from what the audience tolerates and what you have to say, not from a quota of sends to hit. Over-sending is the fastest way to lose a list: too many messages is consistently the top reason people unsubscribe and complain, both of which drive [deliverability](/foundations/deliverability.md) down. The calendar should respect the [frequency caps](/foundations/orchestration-and-frequency.md), counting triggered sends against the same budget, not just the broadcasts.
 
 ## Goals before slots
 
@@ -80,7 +80,7 @@ Run this before every broadcast, and before activating any automation, since an 
 * [ ] **Preheader** set and not pulling stray body text.
 * [ ] **From-name and from-address** correct and on an authenticated sending domain.
 * [ ] **Links** all resolve to the right pages, with no placeholders, and **UTMs** present and consistent.
-* [ ] **Images** load, and every image has **alt text** for blocked-image and accessibility cases.
+* [ ] **Images** load, with **alt text** on every image for blocked-image and accessibility cases.
 * [ ] **Render and seed test** passed across major mail clients, mobile, and dark mode.
 * [ ] **Audience count** matches the expected number; investigate any large gap before sending.
 * [ ] **Suppression and frequency logic** applied: exclusions, recent-send caps, and any holdout in place.
@@ -107,7 +107,7 @@ Seeding is an email technique. The other channels prove a send the same way in t
 
 ## Governance
 
-Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. An automation error reaches its full audience before anyone notices, so apply this discipline to [automations](/foundations/automation-and-sequences.md) first. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
+Once more than one person sends, the programme needs light governance to stay consistent: the agreed production workflow above, a single source of truth for the calendar, and the pre-send QA step before anything goes out. Since an automation error reaches its full audience before anyone notices, apply this discipline to [automations](/foundations/automation-and-sequences.md) first. Keep one owner accountable for the calendar and the contact budget, so collisions are resolved by a person, not discovered by recipients.
 
 ## Related
 

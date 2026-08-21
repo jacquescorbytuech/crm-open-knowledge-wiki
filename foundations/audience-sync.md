@@ -31,14 +31,14 @@ Paid media usually runs on a separate team and a separate logic, which is exactl
 
 ## How the match works
 
-You upload customer identifiers, email, phone, and sometimes name and address, hashed with SHA-256 before they leave your system or hashed by the platform on upload, and the platform matches them against its own accounts. Only a fraction match, so the addressable audience is always smaller than the list you sent, and the match rate is the number to watch. The audience is rebuilt as you re-sync, so a stale upload targets people whose state has since changed.
+You upload customer identifiers, email, phone, and sometimes name and address, hashed with SHA-256 before they leave your system or hashed by the platform on upload. The platform then matches them against its own accounts. Only a fraction match, which makes the addressable audience always smaller than the list you sent and the match rate the number to watch. The audience is rebuilt as you re-sync, which leaves a stale upload targeting people whose state has since changed.
 
 ## Consent and the privacy line
 
 > [!caution] Suppression must follow the contact into paid
 > A contact who unsubscribed or withdrew consent should be removed from synced audiences, not just from email, or you are pursuing in paid someone who asked you to stop.
 
-Syncing identifiers to an ad platform is a data-sharing act, so treat it as processing that needs a lawful basis and that your privacy notice must disclose, not a free internal use of the list. Honour suppression and withdrawal here as you do on the sending channels: a contact who unsubscribed or withdrew consent should be removed from synced audiences, not just from email, or you are pursuing in paid someone who asked you to stop. Match on hashed identifiers, and govern the sync list with the same suppression source as the channels. See [consent and preferences](/foundations/consent-and-preferences.md).
+Syncing identifiers to an ad platform is a data-sharing act, not a free internal use of the list: treat it as processing that needs a documented legal footing (a lawful basis, in the GDPR's terms) and that your privacy notice must disclose. Honour suppression and withdrawal here as you do on the sending channels: a contact who unsubscribed or withdrew consent should be removed from synced audiences, not just from email, or you are pursuing in paid someone who asked you to stop. Match on hashed identifiers and govern the sync list with the same suppression source as the channels. See [consent and preferences](/foundations/consent-and-preferences.md).
 
 ## Operating it
 
@@ -46,13 +46,13 @@ Run it as a governed, scheduled activation rather than a one-off upload.
 
 * **Sync segments, not the whole list.** Push the segment that matches the paid objective, a winback cohort, a high-value seed, a suppression set, not an undifferentiated dump.
 * **Refresh on a schedule.** Audiences go stale; re-sync regularly so a customer who just bought or unsubscribed leaves the targeted set promptly.
-* **Make suppression a first-class use.** Excluding existing customers from acquisition campaigns and the unsubscribed from retargeting is the cheapest win and the most defensible, and it often beats any targeting gain.
+* **Make suppression a first-class use.** Excluding existing customers from acquisition campaigns and the unsubscribed from retargeting is the cheapest win available and the most defensible, often beating any targeting gain.
 * **Seed lookalikes from your best segment.** A high-value or high-[LTV](/measurement/retention-and-ltv.md) segment is a far better lookalike seed than a generic all-buyers list.
 * **Measure incrementally.** Paid audiences are where attribution flatters itself most; hold out and measure lift rather than crediting the platform's reported conversions. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 ## Limits
 
-Match rates cap reach, so the synced audience is always a subset of the segment. The platform owns the audience and sets the matching and policy rules, which keep tightening as privacy regimes constrain identifier matching. And it is bought reach, not an owned grant, so it can extend or refine the owned channels but cannot replace them; the relationship still lives in the customer record, not in the ad account.
+Match rates cap reach, leaving the synced audience always a subset of the segment. The platform owns the audience and sets the matching and policy rules, which keep tightening as privacy regimes constrain identifier matching. And it is bought reach, not an owned grant, which lets it extend or refine the owned channels but never replace them; the relationship still lives in the customer record, not in the ad account.
 
 ## Related
 

@@ -23,13 +23,13 @@ A lifecycle programme is measured in layers, each one closer to money than the l
 
 ## Decision metrics versus vanity metrics
 
-A decision metric changes what you do when it moves. A vanity metric only changes how you feel. Open rate rising while conversion is flat is a vanity result, and after Mail Privacy Protection inflated opens it is often not even real.
+A decision metric changes what you do when it moves. A vanity metric only changes how you feel. Open rate rising while conversion is flat is a vanity result that, after Mail Privacy Protection inflated opens, is often not even real.
 
 The test for any metric on a dashboard is one question: if this number moved ten percent, would it change what you do next week? Walk it through:
 
 * Name the move. Write down the concrete action a ten percent swing would trigger: cut a flow, shift budget, change a send time, raise an alarm.
 * If there is no action, the metric is decoration. Move it off the scorecard and into diagnostics, where its job is explaining other numbers, not being a goal.
-* Watch for proxies that have drifted from the thing they proxy. Opens once tracked attention; MPP severed that link, so an opens move no longer maps to any reliable action. A metric that can rise without the underlying value rising is a vanity metric whatever it used to be.
+* Watch for proxies that have drifted from the thing they proxy. Opens once tracked attention; with that link severed by MPP, an opens move no longer maps to any reliable action. A metric that can rise without the underlying value rising is a vanity metric whatever it used to be.
 
 Most dashboards show more vanity than decision metrics. The work is demoting the decoration, not adding more of it.
 
@@ -61,7 +61,7 @@ Any single optimised number can be hit by gaming the things it ignores. Guardrai
 
 * **Unsubscribe rate.** Caps the urge to lift short-term conversion by mailing harder. If unsubscribes breach the cap, the win is borrowed against future reach.
 * **Spam complaint rate.** Caps annoyance that does not show up as an unsubscribe. Complaints damage sender reputation directly. See [deliverability](/foundations/deliverability.md).
-* **Deliverability and inbox placement.** Caps the temptation to chase engaged-looking volume at the cost of landing in spam. Engagement is deliverability, so this guardrail protects the channel itself. See [engagement is deliverability](/principles/engagement-is-deliverability.md).
+* **Deliverability and inbox placement.** Caps the temptation to chase engaged-looking volume at the cost of landing in spam. Because engagement is deliverability, this guardrail protects the channel itself. See [engagement is deliverability](/principles/engagement-is-deliverability.md).
 * **Frequency or sends per recipient.** Caps list-burning. A North Star hit by tripling volume is not a real gain. See [orchestration and frequency](/foundations/orchestration-and-frequency.md).
 
 The rule: a North Star move only counts if every guardrail stayed inside its cap. Optimising a North Star without guardrails is how a programme hits its target by burning the list to do it. Set the cap levels from your own baseline and tolerance, not from invented benchmarks; see [volume thresholds](/measurement/volume-thresholds.md) and [sample size and power](/measurement/sample-size-and-power.md).
@@ -83,7 +83,7 @@ Read retention as a cohort, not a snapshot, so a flood of new users cannot mask 
 
 A North Star like incremental revenue per recipient or cohort retention is a lagging indicator: it tells you the truth, but late, after the cohort has had time to stay or leave. You cannot steer a quarter on a number you only learn at the end of it.
 
-So watch leading indicators alongside it: earlier, movable signals that tend to precede the lagging one. Activation in week one leads retention at month three; click-to-conversion on a flow leads its incremental revenue. The discipline is using leading indicators to act fast and lagging indicators to confirm the action worked, never trusting a leading move until the lagging number follows. A leading indicator that stops predicting its lagging partner has decayed into a vanity metric, and the demotion test applies again.
+So watch leading indicators alongside it: earlier, movable signals that tend to precede the lagging one. Activation in week one leads retention at month three; click-to-conversion on a flow leads its incremental revenue. The discipline is using leading indicators to act fast and lagging indicators to confirm the action worked, never trusting a leading move until the lagging number follows. A leading indicator that stops predicting its lagging partner has decayed into a vanity metric, which puts it back under the demotion test.
 
 ## Related
 

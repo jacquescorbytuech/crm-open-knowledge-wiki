@@ -101,7 +101,7 @@ sources:
 | Sender ID | The label shown as the source of an SMS, either a phone number or an alphanumeric brand name. Registers such as Australia's bind the brand label to its owner; an unregistered one is relabelled `Unverified`. |
 | RCS | Rich Communication Services. The richer successor to SMS, with branding, cards, and read receipts. |
 | APNs / FCM | Apple Push Notification service and Firebase Cloud Messaging, the two push delivery pipes. |
-| Device token | The opaque, per-install identifier a push notification is addressed to; the OS can rotate or invalidate it, and dead tokens must be pruned like hard bounces. |
+| Device token | The opaque, per-install identifier a push notification is addressed to. Because the OS can rotate or invalidate it, dead tokens must be pruned like hard bounces. |
 | SMPP | Short Message Peer-to-Peer. The binary protocol for submitting SMS to an aggregator or carrier, beneath the REST APIs. |
 | DLR | Delivery receipt. The carrier's advisory, and not always reliable, confirmation that an SMS reached the handset. |
 | Aggregator (CPaaS) | The intermediary holding carrier interconnects that routes your SMS onto mobile networks; you integrate with it, not the carriers. |

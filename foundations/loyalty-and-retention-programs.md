@@ -26,7 +26,7 @@ sources:
 
 ## Why retention is where the economics sit
 
-A loyalty programme is a CRM instrument, not a perk bolted on the side. The case for it is the case for retention generally: acquiring a new customer costs several times more than keeping an existing one, and small improvements in retention compound into large profit gains, the classic finding that a five-point lift in retention can raise profit by a quarter or more. A programme that pours its budget into acquisition and lets customers lapse is spending at the expensive end of its own economics. See [retention and LTV](/measurement/retention-and-ltv.md).
+A loyalty programme is a CRM instrument, not a perk bolted on the side. The case for it is the case for retention generally: acquiring a new customer costs several times more than keeping an existing one, while small improvements in retention compound into large profit gains, the classic finding that a five-point lift in retention can raise profit by a quarter or more. A programme that pours its budget into acquisition and lets customers lapse is spending at the expensive end of its own economics. See [retention and LTV](/measurement/retention-and-ltv.md).
 
 ## What a loyalty program does
 
@@ -36,11 +36,11 @@ A loyalty programme gives a customer a structured reason to come back and a reco
 
 * **Points.** Customers earn a balance on spend or actions and redeem it for value. Simple, legible, and effective when the earn-to-reward ratio is generous enough to feel attainable.
 * **Tiers.** Status levels unlock better perks as a customer spends more, giving the upper tiers something to protect and the lower tiers something to climb toward. Tiering pairs naturally with [value-based segmentation](/foundations/segmentation-models.md).
-* **Referral.** Existing customers are rewarded for bringing in new ones. Referred customers are not just cheaper to acquire; the evidence is that they retain better and are worth more over their lifetime than customers from other channels, so a referral mechanic compounds rather than just topping up the funnel.
+* **Referral.** Existing customers are rewarded for bringing in new ones. Referred customers are not just cheaper to acquire; the evidence is that they retain better and are worth more over their lifetime than customers from other channels, which is why a referral mechanic compounds rather than just topping up the funnel.
 
 ## How to structure a points programme
 
-A points programme has two ratios to set, and the customer reads them as one number: how fast do points turn back into value. Decide the earn rate first, then the redemption rate, then check the combined value the customer actually gets back.
+A points programme has two ratios to set, which the customer reads as one number: how fast do points turn back into value. Decide the earn rate first, then the redemption rate, then check the combined value the customer actually gets back.
 
 The two levers, as an illustrative example, not a benchmark:
 
@@ -55,7 +55,7 @@ The governing principle is attainability: the first reward has to feel reachable
 
 ## How to design tiers
 
-Tiers reward cumulative spend or activity over a qualifying window with escalating benefits. Set thresholds so each tier is a stretch from the one below but visibly within reach, and make every step up unlock a benefit a member can name.
+Tiers reward cumulative spend or activity over a qualifying window with escalating benefits. Set thresholds so each tier is a stretch from the one below but visibly within reach. Every step up should unlock a benefit a member can name.
 
 An example tier ladder, a common structure rather than a recommended set of numbers:
 
@@ -66,7 +66,7 @@ An example tier ladder, a common structure rather than a recommended set of numb
 | Gold | 750 units | Free shipping, priority support |
 | Platinum | 2,000 units | Dedicated service, exclusive events |
 
-Escalate the benefit, not just the discount, so higher tiers offer status and access the brand can sustain. Then run the nudge mechanic: show each member their progress to the next tier, in absolute terms ("180 units to Gold") and on a visible bar, in account and in lifecycle email. Progress framing turns an abstract status into a goal a member is part-way through and reluctant to abandon, which is the mechanism that drives incremental spend near a threshold. Decide and publish how status renews (rolling window or annual reset) so a member knows what protects their tier.
+Escalate the benefit, not just the discount, so that higher tiers offer status and access the brand can sustain. Then run the nudge mechanic: show each member their progress to the next tier, in absolute terms ("180 units to Gold") and on a visible bar, in account and in lifecycle email. Progress framing turns an abstract status into a goal a member is part-way through and reluctant to abandon, which is the mechanism that drives incremental spend near a threshold. Decide and publish how status renews (rolling window or annual reset) so a member knows what protects their tier.
 
 ## How to run referrals
 
@@ -76,7 +76,7 @@ A referral mechanic works when both sides are rewarded, the attribution is unamb
 2. **Track it cleanly.** Issue each member a unique referral code or link and credit the reward on a qualifying first purchase by the referred customer, not on sign-up alone. Tying the reward to a real purchase aligns the payout with value created.
 3. **Cap and screen for fraud.** Set a per-member cap on referral rewards in a period, require the referred customer to be genuinely new (not an existing account or the referrer's second address), and gate the payout behind the qualifying purchase clearing any return window. Self-referral and circular referral are the common abuse patterns; the qualifying-purchase gate and the cap defuse both.
 
-Reward referrals with programme value (points, credit, perks) on the same logic as the rest of the programme, so they reinforce membership rather than running as a separate discount stream.
+Reward referrals with programme value (points, credit, perks) on the same logic as the rest of the programme, which reinforces membership rather than running a separate discount stream.
 
 ## Enrolment and lifecycle comms
 
@@ -84,7 +84,7 @@ A loyalty programme is delivered through the lifecycle, not separately from it. 
 
 A workable comms backbone:
 
-* **Enrol early.** Invite at or just after the first purchase, when intent is highest and the account already exists. Auto-enrol where the consent and terms allow it, and confirm the benefit in the welcome flow rather than burying it.
+* **Enrol early.** Invite at or just after the first purchase, when intent is highest and the account already exists. Auto-enrol where the consent and terms allow it, confirming the benefit in the welcome flow rather than burying it.
 * **Points and tier-progress emails.** Send a periodic balance statement and a progress-to-next-tier update. These are the programme's engagement engine: they give a member a reason to return that is about their own status, not a generic offer.
 * **Milestone nudges.** Trigger a message when a member is close to a redemption threshold or a tier upgrade ("you are 180 units from Gold"), when points are about to expire, and on the member's anniversary. Proximity and scarcity nudges near a threshold are where most incremental behaviour sits.
 
@@ -99,7 +99,7 @@ Track the programme as a behaviour-change effort, not a sign-up count.
 | Member vs non-member repeat-purchase | Whether members come back more often than comparable non-members |
 | Member vs non-member value lift | Whether members spend more per period than comparable non-members |
 
-The member-versus-non-member comparisons are the headline numbers, and they are also the easiest to fool yourself with: members self-select, so the people who join were already your better customers. A raw member-versus-non-member gap overstates the programme's effect because it includes that selection. To prove the lift is caused by the programme rather than by who joins it, measure against a randomised holdout: withhold the programme (or a specific benefit or nudge) from a random slice of eligible customers and read the difference. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and the aggregate effect it lets you read in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
+The member-versus-non-member comparisons are the headline numbers and the easiest to fool yourself with: members self-select, which means the people who join were already your better customers. A raw member-versus-non-member gap overstates the programme's effect because it includes that selection. To prove the lift is caused by the programme rather than by who joins it, measure against a randomised holdout: withhold the programme (or a specific benefit or nudge) from a random slice of eligible customers and read the difference. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md) and the aggregate effect it lets you read in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 ## A caution on discount-led loyalty
 

@@ -23,13 +23,13 @@ sources:
 
 ## Frequentist and Bayesian readings
 
-A test gives you two conversion rates and the question of whether the difference is real. There are two schools of answer, and they answer subtly different questions. Knowing which one a tool is giving you prevents the most common misreading in marketing analytics: treating a p-value as the probability the variant is better, which it is not.
+A test gives you two conversion rates and the question of whether the difference is real. There are two schools of answer, each addressing a subtly different question. Knowing which one a tool is giving you prevents the most common misreading in marketing analytics: treating a p-value as the probability the variant is better, which it is not.
 
-Every method here hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero whichever school drew it. So in a low-volume CRM programme the frequentist-versus-Bayesian choice is a rounding error against the real question, whether you have the volume for either to say anything. The two readings are worth knowing, but they only matter once you are past that floor.
+Every method here hands you a distribution, not a verdict, which below a volume floor is a wide band around zero whichever school drew it. So in a low-volume CRM programme the frequentist-versus-Bayesian choice is a rounding error against the real question, whether you have the volume for either to say anything. The two readings are worth knowing, but they only matter once you are past that floor.
 
 ## The frequentist reading
 
-The frequentist approach asks: if there were truly no difference, how surprising is the data I observed? The p-value is that surprise, and a result is called significant when it falls below a threshold, conventionally 5%. The confidence interval is the companion: a 95% interval is a range produced by a procedure that brackets the true effect 95% of the time over many repeats.
+The frequentist approach asks: if there were truly no difference, how surprising is the data I observed? The p-value is that surprise; a result is called significant when it falls below a threshold, conventionally 5%. The confidence interval is the companion: a 95% interval is a range produced by a procedure that brackets the true effect 95% of the time over many repeats.
 
 The discipline it demands is that you fix the sample size in advance and read the result once, at the end. Every method in [sample size and power](/measurement/sample-size-and-power.md) and [volume thresholds](/measurement/volume-thresholds.md) is frequentist. This is the default for good reason: it is well understood, needs no assumptions about prior belief, and the planning maths is simple.
 
@@ -40,9 +40,9 @@ What it does not give you is the thing stakeholders actually want to say.
 
 ## The Bayesian reading
 
-The Bayesian approach starts from a prior belief about the effect, updates it with the data, and returns a posterior: a full probability distribution over how large the effect is. From that you can read the statements people instinctively reach for, such as the probability that B beats A is 92%, or the expected loss from picking B is 0.1%. For a decision maker that framing is direct, and the expected loss version maps cleanly onto when it is safe to ship.
+The Bayesian approach starts from a prior belief about the effect, updates it with the data, and returns a posterior: a full probability distribution over how large the effect is. From that you can read the statements people instinctively reach for, such as the probability that B beats A is 92%, or the expected loss from picking B is 0.1%. For a decision maker that framing is direct, especially the expected loss version, which maps cleanly onto when it is safe to ship.
 
-The cost is the prior. A weak or default prior gives results close to the frequentist ones; a strong prior pulls the answer toward it, which is powerful when you genuinely have prior knowledge and misleading when you smuggle in a guess. The other cost is that the machinery is heavier and fewer practitioners can explain it, so it is easier to trust a number nobody in the room can defend.
+The cost is the prior. A weak or default prior gives results close to the frequentist ones; a strong prior pulls the answer toward it, which is powerful when you genuinely have prior knowledge and misleading when you smuggle in a guess. The other cost is that the machinery is heavier and fewer practitioners can explain it, which makes it easier to trust a number nobody in the room can defend.
 
 ## The peeking trap that catches both
 
@@ -59,7 +59,7 @@ Assuming you are past the volume floor, so that either school has something to s
 * **Bayesian shrinkage helps when you run many small tests.** A hierarchical model pools information across campaigns and pulls extreme small-sample estimates toward the group average, which damps the false dramatic wins a low-volume programme throws off. This is one of the few places it materially beats the frequentist default for a typical sender.
 * **Either way, do not peek without a method that allows it.** The choice of school does not rescue you from optional stopping; only the right procedure does.
 
-Whichever school you pick, it hands you a distribution, not a verdict, and below a volume floor that distribution is a wide band around zero. See [volume thresholds](/measurement/volume-thresholds.md).
+Whichever school you pick, it hands you a distribution, not a verdict: below a volume floor, that distribution is a wide band around zero. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

@@ -20,7 +20,7 @@ sources:
 
 ## The question only a control group answers
 
-Attribution tells you which messages preceded a conversion. It cannot tell you which conversions would have happened anyway. Only withholding the message from a randomly chosen, otherwise identical group, and comparing outcomes, isolates the lift the programme actually caused. The difference between the treated group and the control is incrementality, and it is the only number that proves the programme created value rather than taking credit for it.
+Attribution tells you which messages preceded a conversion. It cannot tell you which conversions would have happened anyway. Only withholding the message from a randomly chosen, otherwise identical group, and comparing outcomes, isolates the lift the programme actually caused. The difference between the treated group and the control is incrementality, the only number that proves the programme created value rather than taking credit for it.
 
 ## The always-on global holdout
 
@@ -33,22 +33,22 @@ Keep it small, keep it random, and keep it permanent.
 
 ## Per-campaign control groups
 
-For an individual send, sequence, or new automation, hold out a control from the eligible audience and measure the same outcomes. This reads the incremental effect of that specific intervention rather than the programme as a whole, and it is how a new idea proves itself before it is rolled out. The discipline is the same one direct mail has always used: the mailed file against a held back control. See [direct mail](/channels/direct-mail.md).
+For an individual send, sequence, or new automation, hold out a control from the eligible audience and measure the same outcomes. This reads the incremental effect of that specific intervention rather than the programme as a whole, which is how a new idea proves itself before it is rolled out. The discipline is the same one direct mail has always used: the mailed file against a held back control. See [direct mail](/channels/direct-mail.md).
 
 ## How to size and place a holdout
 
 There is no universal percentage. The size of a holdout is a trade-off you set deliberately, not a number to copy:
 
-* A bigger holdout tightens the read. More users on each side narrows the interval around the measured lift, so you can detect a smaller effect and see it sooner.
-* A bigger holdout withholds more revenue. Everyone in the holdout gets no messaging, so the holdout itself has a cost while it runs.
+* A bigger holdout tightens the read. More users on each side narrows the interval around the measured lift, letting you detect a smaller effect and see it sooner.
+* A bigger holdout withholds more revenue. Because everyone in the holdout gets no messaging, the holdout itself has a cost while it runs.
 
-Pick the smallest holdout that can still detect the effect size that would change a decision over the period you are willing to wait. The exact n is a power question, not a rule of thumb: work it from the baseline rate, the minimum effect worth detecting, and the cell volume available, per [sample size and power](/measurement/sample-size-and-power.md), and check it against the per-cell floor in [volume thresholds](/measurement/volume-thresholds.md). Whatever the size, the holdout must be random, and a global holdout must also be stable over the measurement period.
+Pick the smallest holdout that can still detect the effect size that would change a decision over the period you are willing to wait. The exact n is a power question, not a rule of thumb: work it from the baseline rate, the minimum effect worth detecting, and the cell volume available, per [sample size and power](/measurement/sample-size-and-power.md), and check it against the per-cell floor in [volume thresholds](/measurement/volume-thresholds.md). Whatever the size, the holdout must be random, and a global holdout stable over the measurement period.
 
 ## How to randomise correctly
 
 The read is only as honest as the assignment. Get this wrong and the gap you measure is selection bias, not lift.
 
-1. Assign at the person level, not the send level. A user is in or out of the holdout as a person, so they stay out of every message, not just one.
+1. Assign at the person level, not the send level. A user is in or out of the holdout as a person, staying out of every message rather than just one.
 2. Use a stable random key. Hash a durable user id and bucket on the hash, so the same user always lands in the same group. This keeps membership fixed across sends and across reporting periods without storing a flag you might forget to honour.
 3. Assign before eligibility, not after. Split the whole addressable audience first, then let normal targeting run inside both arms. If you pick the treated group by who qualified for a campaign and call the rest control, the two arms differ on the thing that drives conversion.
 
@@ -61,11 +61,11 @@ Pitfalls that break randomisation:
 
 ## Maintaining the global holdout
 
-A global holdout is a standing measurement, so its value depends on stability over time.
+As a standing measurement, a global holdout depends for its value on stability over time.
 
 1. Fix membership at the start of the measurement period and keep it fixed. The same users stay held out for the whole window, which is what the stable random key buys you.
 2. Read the gap over a quarter, not a week. The point of an always-on holdout is the slow signal in retention and revenue, which a few days cannot show. Compare cumulative outcomes for the two arms across the full period.
-3. Let new users flow into both arms by the same key. Because assignment is a hash of the user id, anyone who joins is bucketed the same way automatically, so the holdout stays representative without manual top-ups.
+3. Let new users flow into both arms by the same key. Because assignment is a hash of the user id, anyone who joins is bucketed the same way automatically, keeping the holdout representative without manual top-ups.
 4. Refresh deliberately, rarely, and never mid-read. Re-randomise only at a clean period boundary, and only when the population has shifted enough that the old split is no longer representative, or the withheld revenue on long-held users has become hard to justify. Document the date so before and after are not compared as if continuous.
 
 ## How to read the results
@@ -74,12 +74,12 @@ Once an experiment has run, the read is the same arithmetic whether it is a glob
 
 1. Compute the outcome rate in each arm on the same definition and window.
 2. Take the difference, treatment minus control, as the absolute incremental rate. The detailed formulas for absolute lift, relative uplift, and incremental conversions are in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
-3. Attach an interval. The difference is an estimate with noise around it, so report the range, not just the point.
-4. Judge significance, do not eyeball it. A gap is real only if it clears the interval; use the two-proportion test in [sample size and power](/measurement/sample-size-and-power.md).
+3. Attach an interval. The difference is an estimate with noise around it: report the range, not just the point.
+4. Judge significance rather than eyeballing it. A gap is real only if it clears the interval; use the two-proportion test in [sample size and power](/measurement/sample-size-and-power.md).
 
 ## Geo experiments when individuals cannot be split
 
-When you cannot randomise at the person level, for instance with brand or offline activity, randomise geographies instead: comparable regions are treated or held back and the difference is read against the controls. This is the standard method of paid media incrementality, with open tooling such as Meta GeoLift and Google's Meridian, and the same logic applies to any channel that resists user level holdout.
+When you cannot randomise at the person level, for instance with brand or offline activity, randomise geographies instead: comparable regions are treated or held back and the difference is read against the controls. This is the standard method of paid media incrementality, with open tooling such as Meta GeoLift and Google's Meridian. The same logic applies to any channel that resists user level holdout.
 
 The setup essentials, at a practical level:
 
@@ -90,7 +90,7 @@ The setup essentials, at a practical level:
 
 ## What it costs and what it returns
 
-Incrementality is the higher bar, so incremental return reads lower than last touch return, and adjusting expectations to that is part of the method, not a failure of it. Tests are not free: they take weeks, need adequate volume to reach significance, and cannot run on everything at once. Below a volume floor a holdout returns a wide interval around zero, which is the same constraint that governs all small sample reads here. See [volume thresholds](/measurement/volume-thresholds.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md).
+Because incrementality is the higher bar, incremental return reads lower than last touch return; adjusting expectations to that is part of the method rather than a failure of it. Tests are not free: they take weeks, need adequate volume to reach significance, and cannot run on everything at once. Below a volume floor a holdout returns a wide interval around zero, which is the same constraint that governs all small sample reads here. See [volume thresholds](/measurement/volume-thresholds.md) and [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 ## Related
 

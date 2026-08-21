@@ -21,7 +21,7 @@ sources:
 
 ## The extraction pipeline
 
-Because consumer mail is overwhelmingly templated, providers treat the inbox as data extraction. Messages are clustered into templates by hashing the HTML structure, and a k anonymity threshold determines whether a template is processed at all, so low volume mail can be invisible to the pipeline. Once a template clears the threshold, field extractors pull structured data for search, assistants, and cards. Google's Crusher system discovers around 1.5 million new templates a week, so the corpus of recognised senders constantly expands.
+Because consumer mail is overwhelmingly templated, providers treat the inbox as data extraction. Messages are clustered into templates by hashing the HTML structure. A k anonymity threshold then determines whether a template is processed at all, which can leave low volume mail invisible to the pipeline. Once a template clears the threshold, field extractors pull structured data for search, assistants, and cards. Google's Crusher system discovers around 1.5 million new templates a week, constantly expanding the corpus of recognised senders.
 
 | System | What it does |
 | --- | --- |
@@ -34,15 +34,15 @@ The shift from rules to machine learning was explicit: the Gmail team deleted ar
 
 ## Action prediction and ranking
 
-Providers model the action a recipient will take from the envelope alone. Roughly 85% of messages are never read, and around 89.5% of deletes happen without the message being opened, so sender and subject do disproportionate work. Email search has flipped from time ordering to relevance ordering, and user actions like read, reply, and foldering contribute more to rank than sender importance. Apple Mail Priority Messages (Oct 2024) and Gmail AI Inbox (Jan 2026) are this action prediction literature shipped as priority views.
+Providers model the action a recipient will take from the envelope alone. With roughly 85% of messages never read and around 89.5% of deletes happening without the message being opened, sender and subject do disproportionate work. Email search has flipped from time ordering to relevance ordering, where user actions like read, reply, and foldering contribute more to rank than sender importance. Apple Mail Priority Messages (Oct 2024) and Gmail AI Inbox (Jan 2026) are this action prediction literature shipped as priority views.
 
 ## Layout, summarisation, and profiling
 
-A Google layout aware document encoder patent treats font size, bold, italic, colour, and position as block level features, so bigger, bolder, and higher on the page carries more weight in the representation, which means a model's summary draws disproportionately from headline and CTA blocks. The same research team that built the parser later moved onto LLM summarisation work. A separate Yahoo patent describes classifying the user into a behavioural persona (organizer, minimalist, priority focused, ignorer, unsubscriber, and so on) from inbox characteristics, a profile the brand cannot detect or validate.
+A Google layout aware document encoder patent treats font size, bold, italic, colour, and position as block level features. Bigger, bolder, and higher on the page therefore carries more weight in the representation, which means a model's summary draws disproportionately from headline and CTA blocks. The same research team that built the parser later moved onto LLM summarisation work. A separate Yahoo patent describes classifying the user into a behavioural persona (organizer, minimalist, priority focused, ignorer, unsubscriber, and so on) from inbox characteristics, a profile the brand cannot detect or validate.
 
 ## Practical consequences
 
-* Image only emails lose structure, not just text. OCR recovers words but not the DOM, so headline, promo code, body, and footer parse as one flat block.
+* Image only emails lose structure, not just text. OCR recovers words but not the DOM, leaving headline, promo code, body, and footer to parse as one flat block.
 * Schema markup gives creative freedom back. Consistent structured annotations let a brand vary its visual template without losing parse coverage. Adoption is low, which leaves a less crowded surface.
 * Well structured mail becomes a queryable customer record an assistant can cite years later.
 

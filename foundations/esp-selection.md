@@ -14,15 +14,15 @@ generated:
 2. **Cost.** Can you afford it at your current list size, how does it scale (per contact or per send limits), and are must have features at your tier or pushed to a more expensive one?
 3. **Support.** Live chat, ticketing, documentation, and an active user community. Matters more for less technical teams.
 4. **Integrations.** Does it integrate natively with your CRM, ecommerce, and CMS? Native beats Zapier or Make. Only matters if you have specific requirements; do not over engineer this.
-5. **Expandability.** The least important factor. Migrating between ESPs is easier than it used to be, so do not pay for features you do not need yet on the promise you will need them later.
+5. **Expandability.** The least important factor. Since migrating between ESPs is easier than it used to be, do not pay for features you do not need yet on the promise you will need them later.
 
 ## Beginner guidance
 
-Over 220 email platforms exist, and most beginners overthink the choice. Under about 1,000 subscribers the entry level platforms (Mailchimp, Kit, MailerLite, Brevo) are broadly similar and often free. Pick the one that feels most intuitive and start. Stop researching. The deliberate, comparable choice is for a team that has outgrown that advice, usually a paid switch with real data and automations to move.
+With over 220 email platforms to pick from, most beginners overthink the choice. Under about 1,000 subscribers the entry level platforms (Mailchimp, Kit, MailerLite, Brevo) are broadly similar and often free. Pick the one that feels most intuitive and start. Stop researching. The deliberate, comparable choice is for a team that has outgrown that advice, usually a paid switch with real data and automations to move.
 
 ## Evaluate what you can actually compare
 
-Score vendors on dimensions you can observe and test, and ignore the ones you cannot. The comparable dimensions are concrete and most of them are the features themselves:
+Score vendors on dimensions you can observe and test, ignoring the ones you cannot. The comparable dimensions are concrete and most of them are the features themselves:
 
 * **Channels.** Which channels the platform sends and orchestrates natively (email, SMS, push, in-app, WhatsApp, web, ad-audience sync), versus channels it only reaches through a bolt-on or a third party.
 * **Automation.** The triggers, branching, wait/delay logic, and exit conditions the journey builder actually supports, tested against a real flow your programme needs.
@@ -50,7 +50,7 @@ Decide each row before you see a demo. Any must have a candidate fails removes i
 
 ## Weighted scoring worksheet
 
-Score the survivors against your own weighting, not vendor marketing. Set a weight per criterion so the priority order is built into the maths, score each candidate 1 to 5 on evidence you gathered (trial, docs, references), then sum weight times score. Weights should sum to 100 and follow your priorities; the column below is a starting point that mirrors the five factor order, adjust it to your situation.
+Score the survivors against your own weighting, not vendor marketing. Set a weight per criterion so the priority order is built into the maths, score each candidate 1 to 5 on evidence you gathered (trial, docs, references), then sum weight times score. Weights should sum to 100 and follow your priorities. The column below mirrors the five factor order as a starting point; adjust it to your situation.
 
 | Criterion | Weight | Candidate A (1-5) | Candidate B (1-5) | Candidate C (1-5) |
 |---|---:|---:|---:|---:|
@@ -97,13 +97,13 @@ Record each result as a 1 to 5 score against the worksheet. A capability you cou
 
 ## Migration plan outline
 
-Migration is less costly than it used to be, but it is not free, and a botched cutover can dent deliverability for weeks. Plan it as a sequence, not a flip of a switch.
+Migration is less costly than it used to be, but it is not free: a botched cutover can dent deliverability for weeks. Plan it as a sequence, not a flip of a switch.
 
 1. **Export.** Pull contacts, consent and subscription status, custom fields, and as much engagement history as the old platform allows. Owned data should export cleanly; if it cannot, that is itself a finding about lock in.
 2. **Field mapping.** Map every field, segment definition, and consent flag from the old schema to the new one before import. Mismatched consent or status fields are how people get mailed who should not be.
 3. **Automation rebuild.** Rebuild flows in the new platform and test each with the trial agenda above. Automations rarely port directly; treat this as a rebuild, not a copy.
 4. **Deliverability re-warm.** A new sending domain or IP has no reputation. Ramp volume gradually, starting with your most engaged segments, so the new sending identity earns reputation before you send to the long tail. See [deliverability](/foundations/deliverability.md).
-5. **Parallel run.** For a defined window, run critical flows on both platforms or route a slice of traffic to the new one, and reconcile that sends, triggers, and reporting match before you trust it.
+5. **Parallel run.** For a defined window, run critical flows on both platforms or route a slice of traffic to the new one, reconciling that sends, triggers, and reporting match before you trust it.
 6. **Cutover.** Switch remaining traffic over, keep the old platform readable (not sending) for a fallback window, then decommission once the new platform has proven stable across a full cycle.
 
 ## Related

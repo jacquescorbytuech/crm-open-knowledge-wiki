@@ -32,15 +32,15 @@ sources:
 
 ## Why data is the foundation
 
-Every other operation in a lifecycle programme, segmentation, automation, personalisation, measurement, is downstream of the customer data underneath it. A programme cannot target a stage it cannot see, personalise a field it has not captured, or measure a customer it cannot identify across sessions. Getting the data layer right is not a precondition for sophistication; it is the thing sophistication is made of.
+Every other operation in a lifecycle programme, segmentation, automation, personalisation, measurement, is downstream of the customer data underneath it. A programme cannot target a stage it cannot see, personalise a field it has not captured, or measure a customer it cannot identify across sessions. Every more sophisticated capability a programme adds later runs on that data layer.
 
 ## The kinds of data, by who gives it and how
 
 * **Zero-party data** is what a customer deliberately and proactively shares: stated preferences, survey and quiz answers, a preference-centre selection. It is the cleanest and most durable signal because it was given, not inferred.
 * **First-party data** is collected from a customer's direct interactions with your own properties: purchases, site and app behaviour, email engagement, support contacts.
-* **Third-party data** is bought from outside aggregators. It is fading as browsers phase out third-party cookies and regulators tighten, and it is not a foundation to build on.
+* **Third-party data** is bought from outside aggregators. Fading as browsers phase out third-party cookies and regulators tighten, it is not a foundation to build on.
 
-Build the programme on zero- and first-party data, and treat the decline of third-party data as a reason to capture more of your own. See [consent and preferences](/foundations/consent-and-preferences.md) for capturing it lawfully.
+Build the programme on zero- and first-party data, treating the decline of third-party data as a reason to capture more of your own. See [consent and preferences](/foundations/consent-and-preferences.md) for capturing it lawfully.
 
 ## What to capture, and from where
 
@@ -69,30 +69,30 @@ Once identity resolution has decided which records belong to one person, you sti
 
 ## Identity resolution
 
-Identity resolution is the work of deciding that the anonymous browser, the app login, the email address, and the loyalty number are all the same person, and stitching their activity into one profile. It is what turns scattered identifiers into the single customer view. Done well, anonymous behaviour before signup attaches to the customer once they identify themselves; done badly, the same person appears as several, and frequency caps, suppression, and measurement all leak.
+Identity resolution is the work of deciding that the anonymous browser, the app login, the email address, and the loyalty number are all the same person, and stitching their activity into one profile. It is what turns scattered identifiers into the single customer view. Done well, anonymous behaviour before signup attaches to the customer once they identify themselves; done badly, the same person appears as several, leaving frequency caps, suppression, and measurement to leak.
 
 ## Matching rules in practice
 
 Resolution is a matching rule: given two records, decide same person or not. Stacks use deterministic matching first and add probabilistic only where they must.
 
-The errors here are not symmetric, and that asymmetry is what should drive the merge rule. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, and keep every merge fully reversible.
+The errors here are not symmetric, an asymmetry that should drive the merge rule. A false merge fuses two people, exposing one person's history to another, a privacy incident you cannot detect after the fact; a false split is merely annoying and recoverable. So bias toward keeping records separate below your merge threshold, keeping every merge fully reversible.
 
 * **Deterministic matching** joins on an exact shared identifier: the same email, the same phone, the same account or loyalty id. It is the default because it is explainable and auditable. When a user logs in, you also bind the anonymous id they were carrying to that account id, which is how pre-signup behaviour attaches to the person.
 * **Probabilistic matching** infers a match from a cluster of weaker signals (name plus postal address plus device plus IP) with a confidence score. Use it only where a hard identifier is missing, treat every match as a probability, and never let it overwrite a deterministic field.
 
-Merge or keep separate is the live decision, and the asymmetry between a false merge and a missed one is what should drive it:
+Merge or keep separate is the live decision, driven by the asymmetry between a false merge and a missed one:
 
 1. **Score the candidate pair.** A shared, verified hard identifier is high confidence. A shared weak signal alone is low. Set a high threshold for an automatic merge and a lower band that flags for review rather than merging.
-2. **Weigh the two failure modes, which are not equal.** A false split (one person seen as two) costs a duplicated send, a leaky frequency cap, and double-counting in measurement, all annoying but recoverable. A false merge (two people fused) is worse: it can expose one person's order history or address to another, a privacy incident, and it is hard to detect after the fact. So bias the rule toward keeping separate when confidence is below the merge threshold.
+2. **Weigh the two failure modes, which are not equal.** A false split (one person seen as two) costs a duplicated send, a leaky frequency cap, and double-counting in measurement, all annoying but recoverable. A false merge (two people fused) is worse: it can expose one person's order history or address to another, a privacy incident, and one that is hard to detect after the fact. So bias the rule toward keeping separate when confidence is below the merge threshold.
 3. **Watch for shared identifiers that are not one person.** A household email, a shared family device, or a recycled phone number will pull distinct people together under a naive rule. Require a second corroborating signal before merging on an identifier known to be shareable.
 4. **Make merges reversible.** Because a false merge is the expensive error, keep the source records and lineage (as above) so a merge can be unwound when a later signal contradicts it.
 
 > [!caution] A false merge is the expensive error
-> Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold, and keep merges reversible.
+> Fusing two people can expose one person's history to another, a privacy incident that is hard to detect after the fact, where a false split is merely annoying and recoverable. Bias toward keeping separate below the merge threshold; keep merges reversible.
 
 ## CRM, CDP, and warehouse
 
-CRM, CDP, and warehouse are easy to confuse, and most stacks run more than one.
+CRM, CDP, and warehouse are easy to confuse, not least because most stacks run more than one.
 
 * A **CRM** manages known relationships and the interactions with them. It is built around the identified customer and the people who act on that relationship.
 * A **CDP (customer data platform)** ingests data from every source, resolves identity, and maintains the unified, activation-ready profile that the channels and decisioning read from.
@@ -110,23 +110,23 @@ If you decide you need a CDP, judge candidates against the jobs above rather tha
 * **Governance and consent.** Does it store consent state and lawful basis on the profile, honour suppression and deletion across destinations, and enforce field-level access? Governance you bolt on afterwards rarely holds. See [legislation and compliance](/references/legislation-and-compliance.md).
 * **Data ownership and exit.** Can you export the resolved profiles and the raw events, so the resolution work is not trapped in the tool? Test the export before signing.
 
-The data quality you feed it bounds the result more than the brand on the box, so before procuring, run the capture checklist and consolidation rules above against a real sample.
+Because the data quality you feed it bounds the result more than the vendor you choose, run the capture checklist and consolidation rules above against a real sample before procuring.
 
 ## Hygiene and governance
 
 Data decays. A unified profile that is wrong is worse than no profile, because it fires confident, specific, incorrect messages. Run hygiene as a standing routine, not a one-off cleanup:
 
-1. **Measure completeness by attribute.** For each field that drives messaging, track the share of profiles that have it populated and valid. Completeness varies wildly by field, and a personalisation token is only as safe as the completeness of the field behind it, so know the number before you build on the field.
+1. **Measure completeness by attribute.** For each field that drives messaging, track the share of profiles that have it populated and valid. Since completeness varies wildly by field, and a personalisation token is only as safe as the completeness of the field behind it, know the number before you build on the field.
 2. **Set staleness thresholds per field.** A field is stale when it is older than the rate at which the real-world value changes. Address and channel preference go stale slowly; last-active and current cart go stale in days. Define the threshold per field rather than one age for the whole profile.
-3. **Define refresh triggers.** Decide what re-collects or re-derives a stale field: a recompute on the next purchase, a preference-centre prompt, a re-permission email, or a recheck against the source of record. A staleness threshold with no refresh trigger just labels rot, it does not fix it.
+3. **Define refresh triggers.** Decide what re-collects or re-derives a stale field: a recompute on the next purchase, a preference-centre prompt, a re-permission email, or a recheck against the source of record. A staleness threshold with no refresh trigger only labels the stale field; it does not refresh it.
 4. **Suppress and clean continuously.** Suppress hard bounces immediately, suppress spam complaints, and run unengaged contacts through the re-engagement and sunset logic in [segmentation and data](/foundations/segmentation-and-data.md) rather than mailing a decaying list.
 5. **Archive what you no longer use.** Profiles past a defined inactivity window, and fields no destination reads, should be archived or deleted under the retention policy. Holding data you do not use is cost and compliance risk with no upside. See [legislation and compliance](/references/legislation-and-compliance.md) for the retention and lawful-basis obligations.
 
-Throughout, hold a documented lawful basis for every contact and deduplicate on the matching rules. See [segmentation and data](/foundations/segmentation-and-data.md) for the operational hygiene and [legislation and compliance](/references/legislation-and-compliance.md) for the obligations.
+Throughout, hold a documented lawful basis for every contact (or the equivalent your regime requires) and deduplicate on the matching rules. See [segmentation and data](/foundations/segmentation-and-data.md) for the operational hygiene and [legislation and compliance](/references/legislation-and-compliance.md) for the obligations.
 
 ## The decisioning link
 
-Unified, training-ready customer data is also the prerequisite for the AI personalisation and decisioning that platforms and vendors now sell: the data quality underneath usually limits the outcome more than the tooling does. This is treated in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md); for the foundation, the point is simpler: capture and unify your first-party data well, and the advanced options stay open.
+Unified, training-ready customer data is also the prerequisite for the AI personalisation and decisioning that platforms and vendors now sell: the data quality underneath usually limits the outcome more than the tooling does. This is treated in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md); for the foundation, the job is simpler: capture and unify your first-party data well enough that the advanced options stay open.
 
 ## Related
 

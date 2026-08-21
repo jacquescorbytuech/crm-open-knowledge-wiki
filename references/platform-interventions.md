@@ -42,7 +42,7 @@ sources:
 
 ## Each change is a dated natural experiment
 
-Each intervention is discrete and dated, which makes each one a natural experiment a sender can measure a before-and-after against (see [measuring intermediation](/measurement/measuring-intermediation.md)). Most of these changes add a layer of filtering, ranking, or summarisation between the sender and the recipient, and most are framed by the platform as a user-protection feature. The practical upshot for a programme is that the inbox and the lock screen are moving targets, and the levers that survive are authentication, list hygiene, and engagement.
+Each intervention is discrete and dated, which makes each one a natural experiment a sender can measure a before-and-after against (see [measuring intermediation](/measurement/measuring-intermediation.md)). Most of these changes add a layer of filtering, ranking, or summarisation between the sender and the recipient; most are framed by the platform as a user-protection feature. The practical upshot for a programme is that the inbox and the lock screen are moving targets on which the surviving levers are authentication, list hygiene, and engagement.
 
 ## Email and push interventions
 

@@ -22,7 +22,7 @@ The platform intermediation effects people argue about are usually smaller than 
 ## What rigour requires
 
 * A real holdout, and the discipline to trust it over the dashboard.
-* Comfort with a distribution rather than a verdict. This is the harder half, and it is a hiring and culture problem, not a software one.
+* Comfort with a distribution rather than a verdict. This is the harder half, a hiring and culture problem rather than a software one.
 
 ## Related
 

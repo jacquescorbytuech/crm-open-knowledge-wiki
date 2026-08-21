@@ -21,8 +21,8 @@ Lifecycle mapping is the discipline of describing where a customer is in their r
 Most programmes resolve to five stages, whatever the local names.
 
 * **Acquisition.** The lead is captured and consent is taken. The job is a clean, well sourced opt in, not a name on a list. See [list building](/foundations/list-building.md) and [consent and preferences](/foundations/consent-and-preferences.md).
-* **Onboarding.** The first days, where the relationship is made or lost. The welcome window is the highest engagement you will ever have, so the activation job belongs here. See [the welcome window](/principles/the-welcome-window.md).
-* **Engagement.** The long middle, where an active customer is nurtured, educated, and cross sold. Most volume lives here, and so does most of the risk of fatigue.
+* **Onboarding.** The first days, where the relationship is made or lost. Because the welcome window is the highest engagement you will ever have, the activation job belongs here. See [the welcome window](/principles/the-welcome-window.md).
+* **Engagement.** The long middle, where an active customer is nurtured, educated, and cross sold. Most volume lives here, as does most of the risk of fatigue.
 * **Retention.** Holding a customer who is at risk of lapsing, through value reminders, loyalty, and timely intervention. This is where the economics are decided. See [retention and LTV](/measurement/retention-and-ltv.md).
 * **Winback.** Reactivating the lapsed, and the honest decision to stop mailing the truly disengaged because continuing to mail them is a deliverability cost. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
@@ -44,7 +44,7 @@ Map one row per stage, then split a stage into multiple rows where the customer 
 
 ## Stage-transition triggers
 
-Each move between stages needs a defined entry trigger and an exit, so a customer is only ever in one stage and the [automations](/foundations/automation-and-sequences.md) know when to start and stop. The windows below are illustrative defaults, not benchmarks; set them from your own purchase cycle and inactivity distribution.
+Each move between stages needs a defined entry trigger and an exit, so that a customer is only ever in one stage and the [automations](/foundations/automation-and-sequences.md) know when to start and stop. The windows below are illustrative defaults, not benchmarks; set them from your own purchase cycle and inactivity distribution.
 
 * **Acquisition to Onboarding.** Consent confirmed. The trigger is the confirmation event, not the form submit.
 * **Onboarding to Engagement.** First repeat key action (a second session, second purchase), OR a fixed window elapses, say 14 days, whichever comes first. Promote on the behaviour when you can, on the clock when you cannot.
@@ -61,12 +61,12 @@ Risk indicators worth watching inside Engagement and Retention, before a hard tr
 A map is produced by the people who own the customer, not drafted alone in a tool. Run a single working session of roughly two hours to get a first draft on the wall.
 
 * **Who is in the room.** The CRM or lifecycle owner facilitates. Bring product or growth (they know the activation moment), data or analytics (they know what is measurable today), customer support (they know the friction), and someone who can approve channels and budget. Keep it small enough to decide.
-* **The prompts, in order.** Name the five stages in your language. For each stage ask: what is the customer trying to do here? What event tells us they have entered this stage? What event tells us they have left it, up or down? What is the one thing we want them to do, and how would we measure it? What is the risk that loses them here?
+* **The prompts, in order.** Name the five stages in your language. For each stage ask: what is the customer trying to do here? What event tells us they have entered this stage? What event tells us they have left it, up or down? What is the one thing we want them to do? How would we measure it? What is the risk that loses them here?
 * **The output.** A filled-in journey-map table, one row per stage and per distinct customer job, with every entry and exit trigger named and every goal tied to a metric the data owner has confirmed is trackable. Flag rows where the trigger is not yet instrumented; those are the build backlog before the automation can exist.
 
 ## How the map drives builds
 
-The map is not documentation, it is the build spec. Each row becomes an [automation](/foundations/automation-and-sequences.md): the entry trigger is its start condition, the key messages are its steps, the exit trigger and frequency are its stop rules. The rows together feed [orchestration](/foundations/orchestration-and-frequency.md), which sequences across stages and channels and enforces frequency so two stages do not message the same person at once. Each row's goal metric is then read per stage through [core metrics](/measurement/core-metrics.md), so you measure activation against Onboarding and lapse against Retention rather than one programme-wide average that hides both.
+The map is the build spec. Each row becomes an [automation](/foundations/automation-and-sequences.md): the entry trigger is its start condition, the key messages are its steps, the exit trigger and frequency are its stop rules. The rows together feed [orchestration](/foundations/orchestration-and-frequency.md), which sequences across stages and channels and enforces frequency so two stages do not message the same person at once. Each row's goal metric is then read per stage through [core metrics](/measurement/core-metrics.md), which lets you measure activation against Onboarding and lapse against Retention rather than one programme-wide average that hides both.
 
 ## Why it comes first
 

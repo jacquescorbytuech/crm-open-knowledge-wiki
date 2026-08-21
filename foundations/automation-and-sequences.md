@@ -29,7 +29,7 @@ Before you build any flow, write down the entry trigger (the event that admits a
 
 ## Trigger types
 
-The entry trigger is whatever event your platform can listen for, and the menu varies between them. No flow needs all of them, and a trigger you lack can usually be reconstructed from one you have, so treat the list as options rather than requirements:
+The entry trigger is whatever event your platform can listen for, which varies between platforms. No flow needs all of them; a trigger you lack can usually be reconstructed from one you have, which makes the list a set of options rather than requirements:
 
 | Trigger | Fires when | Typical use |
 | --- | --- | --- |
@@ -44,21 +44,21 @@ Choose by what your platform exposes and what writes the signal, not by the labe
 
 ## Choosing the channel for each message
 
-A sequence is a series of jobs, not a series of emails. Each message can go out on whichever channel fits its job. The outbound channels share one hard rule: you can only use a channel the contact has consented to, and consent does not transfer between channels. An email subscriber has not agreed to SMS or push, so most flows start email-only and gain other channels as those grants arrive. See [consent and preferences](/foundations/consent-and-preferences.md).
+A sequence is a series of jobs, not a series of emails. Each message can go out on whichever channel fits its job. The outbound channels share one hard rule: you can only use a channel the contact has consented to. Since consent does not transfer between channels, an email subscriber has not agreed to SMS or push, which is why most flows start email-only and gain other channels as those grants arrive. See [consent and preferences](/foundations/consent-and-preferences.md).
 
 Choose the outbound channel by fit:
 
 * **Email** is the default: rich layout, no per-message cost, room to explain. Most steps live here.
-* **SMS** is immediate and near-certain to be seen, but short, interruptive, and costed per send. Reserve it for time-critical touches where being seen now is the point: an abandoned cart while intent is warm, a last call before a link expires.
+* **SMS** is immediate and near-certain to be seen, but short, interruptive, and costed per send. Reserve it for time-critical touches that need to be seen now: an abandoned cart while intent is warm, a last call before a link expires.
 * **Push**, app or browser, is free and immediate but easy to ignore and gone once dismissed. It suits users who have the app installed and a job that can be said in a line.
 
-[In-app](/channels/in-app.md) sits apart from the three above, which is why it does not appear as a row in the cadence tables. It needs no opt-in, since the user is already inside the product, but it cannot initiate contact: it only fires when the user is in a session, so it cannot be scheduled as a touch at a fixed offset to someone who is not there. It handles the steps that land while the user is present, in-product onboarding, a finish-setup prompt, a cart reminder shown on the next visit, and leans on the outbound channels to do the reaching. Treat it as the destination a flow drives toward, fired on a session trigger, not as a timed step in the sequence.
+[In-app](/channels/in-app.md) sits apart from the three above, which is why it does not appear as a row in the cadence tables. It needs no opt-in, since the user is already inside the product, but it cannot initiate contact: firing only when the user is in a session, it cannot be scheduled as a touch at a fixed offset to someone who is not there. It handles the steps that land while the user is present, in-product onboarding, a finish-setup prompt, a cart reminder shown on the next visit, and leans on the outbound channels to do the reaching. Treat it as the destination a flow drives toward, fired on a session trigger, not as a timed step in the sequence.
 
-The same frequency budget and collision rules govern every channel a flow uses, so a sequence does not get to spend contact allowance the broadcast calendar has already claimed. See [orchestration and frequency](/foundations/orchestration-and-frequency.md) for how the channel-per-job decision and the shared cap are managed across the programme.
+The same frequency budget and collision rules govern every channel a flow uses, which stops a sequence spending contact allowance the broadcast calendar has already claimed. See [orchestration and frequency](/foundations/orchestration-and-frequency.md) for how the channel-per-job decision and the shared cap are managed across the programme.
 
 ## Welcome sequence
 
-The welcome window is the highest engagement moment a subscriber will have with you, and welcome messages earn markedly higher open and click rates than ordinary campaigns, so the first one must deliver on whatever the signup promised. The signup happened on a channel, almost always email, and that is the channel that holds consent at this point, so the series runs there and reaches for another only once the subscriber has opted into it. A sensible default is a three to five message series, each with one job:
+The welcome window is the highest engagement moment a subscriber will have with you: welcome messages earn markedly higher open and click rates than ordinary campaigns, which is why the first one must deliver on whatever the signup promised. Consent at this point exists only for the channel the signup happened on, almost always email. The series runs there and reaches for another only once the subscriber has opted into it. A sensible default is a three to five message series, each with one job:
 
 | Message | Timing | Channel | Job |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ Do not lead with a discount: it trains customers to game the system and attracts
 
 ## Abandoned cart cadence
 
-Most carts are abandoned, around seven in ten, so a recovery sequence is one of the highest-return automations there is. Trigger from the abandonment event with a short, useful sequence that reminds rather than nags. The immediacy of the trigger makes this the flow where SMS and push are worth their cost: a text or push notification while the cart is still warm is seen in minutes, where an email may wait for the next inbox check. Use them where you hold the consent, and keep email for the detail. A standard three-touch cadence, each touch with a distinct job:
+With around seven in ten carts abandoned, a recovery sequence is one of the highest-return automations there is. Trigger from the abandonment event with a short, useful sequence that reminds rather than nags. The immediacy of the trigger makes this the flow where SMS and push are worth their cost: a text or push notification while the cart is still warm is seen in minutes, where an email may wait for the next inbox check. Use them where you hold the consent, keeping email for the detail. A standard three-touch cadence, each touch with a distinct job:
 
 | Touch | Timing | Channel | Job |
 | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ The same discount discipline applies: a reflexive discount in the first abandone
 
 Run a re-engagement sequence for subscribers who have gone quiet, then sunset the ones who do not respond. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender level reach. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md). This flow is the active step in the wider [database health and sunsetting](/foundations/database-health.md) lifecycle, which frames decay, re-engagement, and sunset as one ongoing practice.
 
-Dormancy is usually measured per channel, so someone who has stopped opening email may still read a text or tap a push. The win-back is the natural place to try a channel the contact is not dormant on, where you hold the consent for it, since the whole point is to break a pattern that email alone is no longer breaking.
+Dormancy is usually measured per channel: someone who has stopped opening email may still read a text or tap a push. The win-back is the natural place to try a channel the contact is not dormant on, where you hold the consent for it, since the job is to break a pattern that email alone is no longer breaking.
 
 Define the trigger by an inactivity window: no open, click, or purchase for a set period. A sensible default is 90 days. The win-back is short, two to three messages:
 
@@ -98,13 +98,13 @@ Sunset criteria: any contact who does not open, click, or purchase across the fu
 
 ## Pre-launch testing
 
-An error in an automation repeats until you catch it, so test every flow before it goes live to a real audience. Walk this checklist with a seeded test contact:
+Because an error in an automation repeats until you catch it, test every flow before it goes live to a real audience. Walk this checklist with a seeded test contact:
 
-1. **Trigger fires.** The entry event admits the contact, and only that event does. Unrelated events do not enrol them.
+1. **Trigger fires.** The entry event admits the contact; nothing else does. Unrelated events do not enrol them.
 2. **Entry and exit conditions hold.** Converters exit; non-qualifying contacts never enter; nobody can enter twice unintentionally.
 3. **Each message goes out on the right channel, and renders there.** The step sends on its intended channel, every dynamic field resolves with a sane fallback for missing data, and the content fits the channel: no raw tokens, no broken links, no empty blocks, and nothing that overruns an SMS or a push notification.
 4. **Timing gaps are correct.** The real delays between messages match the design, allowing for any quiet-hours or send-time rules, which differ by channel.
-5. **Consent and suppression are respected.** A contact only receives a step on a channel they have consented to; unsubscribed, sunset, and globally suppressed contacts are excluded, and frequency caps from [orchestration and frequency](/foundations/orchestration-and-frequency.md) apply across all channels the flow uses.
+5. **Consent and suppression are respected.** A contact only receives a step on a channel they have consented to; unsubscribed, sunset, and globally suppressed contacts are excluded, with the frequency caps from [orchestration and frequency](/foundations/orchestration-and-frequency.md) applying across all channels the flow uses.
 
 Then watch a few metrics in the first days live, because they reveal a broken flow before subscribers complain:
 

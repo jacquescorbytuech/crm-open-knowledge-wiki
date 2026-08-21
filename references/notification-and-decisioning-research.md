@@ -34,15 +34,15 @@ These are peer reviewed papers on production systems, a useful floor on platform
 | LinkedIn, 2022 and 2026 | Offline reinforcement learning for notifications, then BanditLP pairing neural Thompson sampling with a large linear program for email. |
 | Zillow, RecSys 2022 | Boosted tree send or do not send, keeping 98% of clicks while shedding surplus sends. |
 | Meta, 2023 | Instagram notification slots as an auction across internal teams; fewer sends, higher click through, across 77M users per arm. |
-| [Kuaishou PushGen, WSDM 2026](https://arxiv.org/abs/2512.14490) | LLM generates push copy under style controls, a learned reward model ranks candidates. |
+| [Kuaishou PushGen, WSDM 2026](https://arxiv.org/abs/2512.14490) | LLM generates push copy under style controls; a learned reward model then ranks candidates. |
 | Pinterest TransAct, KDD 2023 | Transformer over realtime user activity feeding ranking across surfaces. |
 
 ## The agentic messaging and uplift literature
 
 * Aampe published randomised controlled trials of agent led messaging on a financial services app, cutting unsubscribes against a rule based baseline by sending more relevantly, with a longitudinal follow up showing autonomous agents sustaining lift for months after a human curated initialisation phase.
 * The uplift literature formalises the persuadable, sure thing, and do not disturber framing and the diminishing returns curve beyond the most responsive segment, including work on delayed feedback and the public Hillstrom dataset.
-* Google and DeepMind showed that the long-term value of exploration is hard to see in standard A/B tests and needs bespoke experiment designs, so a per-campaign open rate is unlikely to surface it.
-* The systems literature notes that these algorithms assume clean, correctly logged data, and producing that reliably is a substantial engineering task, the practical side of the data prerequisite.
+* Google and DeepMind showed that the long-term value of exploration is hard to see in standard A/B tests and needs bespoke experiment designs, which leaves a per-campaign open rate unlikely to surface it.
+* The systems literature notes that these algorithms assume clean, correctly logged data, which is a substantial engineering task to produce reliably, the practical side of the data prerequisite.
 
 ## On device editor models
 

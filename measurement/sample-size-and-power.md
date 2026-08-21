@@ -16,7 +16,7 @@ sources:
 
 A sizing model without a sample size estimate is incomplete. It tells you what you could achieve, not whether you can detect it. A compelling opportunity that needs sixteen weeks of test time to confirm may be a worse use of resources than a faster test on a smaller prize.
 
-The reason this matters more than the formula does: the sample required to detect an effect grows explosively as the effect shrinks, so sub-percent effects like platform intermediation sit in a zone where the required n is infeasible for most teams. The real use of sizing is not to plan the test you will run, it is to decide in advance which tests are not worth running. Treat the formula as a filter, not a recipe.
+The reason this matters more than the formula does: as the effect shrinks, the sample required to detect it grows explosively, leaving sub-percent effects like platform intermediation in a zone where the required n is infeasible for most teams. The main use of sizing is ruling tests out before anyone builds them, rather than planning the test you will run.
 
 ## The standard approach
 
@@ -26,7 +26,7 @@ Once you have decided the test is worth running, the standard form is a two prop
 Users per variant = (Z_a + Z_b)^2 x (p1(1-p1) + p2(1-p2)) / (p2 - p1)^2
 ```
 
-where `Z_a = 1.96` (two sided, 95% confidence) and `Z_b = 0.8416` (80% power), giving `(Z_a + Z_b)^2` of about 7.85. Two sided is the right default: you do not know in advance which variant wins, and it keeps the planning test consistent with the reading test below, which also uses 1.96. Then:
+where `Z_a = 1.96` (two sided, 95% confidence) and `Z_b = 0.8416` (80% power), giving `(Z_a + Z_b)^2` of about 7.85. Two sided is the right default, both because you do not know in advance which variant wins and because it keeps the planning test consistent with the reading test below, which also uses 1.96. Then:
 
 ```
 Test duration = (Users per variant x 2) / Users entering per week
@@ -46,7 +46,7 @@ The 95% confidence interval on the difference is `(p2 - p1) ± 1.96 x SE`. The e
 
 ## Why small effects need huge samples
 
-The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, so treat this formula as the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
+The required n grows fast as the effect you want to detect shrinks. Platform intermediation effects are usually small, in the low single percent or below, which is exactly where the sample requirement explodes. The cleaner techniques used to read intermediation, difference in differences in particular, demand more than a simple two proportion test because they difference several noisy quantities, which makes this formula the optimistic floor. See [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

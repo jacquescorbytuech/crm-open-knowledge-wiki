@@ -22,4 +22,4 @@ The channels differ in how much of the delivery you actually control and whom th
 
 ## Choosing between them
 
-Match the channel to the job, run them as a portfolio under one contact strategy, and let [orchestration and frequency](/foundations/orchestration-and-frequency.md) decide which channel sends which message. The general rule the per channel pages share: reserve the interruptive, filtered channels (push, SMS) for what only they can do, and move the rest onto surfaces the recipient opened on purpose.
+Match the channel to the job, run them as a portfolio under one contact strategy, and let [orchestration and frequency](/foundations/orchestration-and-frequency.md) decide which channel sends which message. The general rule the per channel pages share: reserve the interruptive, filtered channels (push, SMS) for what only they can do, moving the rest onto surfaces the recipient opened on purpose.

@@ -38,7 +38,7 @@ sources:
 
 ## What retention and value measure
 
-Engagement and conversion metrics measure the message. Retention and lifetime value measure the business. A lifecycle programme exists to keep customers and grow their value, so these are the numbers it should be judged on, and the ones most worth moving.
+Engagement and conversion metrics measure the message. Retention and lifetime value measure the business. Because a lifecycle programme exists to keep customers and grow their value, these are the numbers it should be judged on, and the ones most worth moving.
 
 Retention is measured as a curve, not a single churn rate: the share of a cohort still active as it ages. Lifetime value is built from that curve, then weighed against what the customer cost to acquire.
 
@@ -46,7 +46,7 @@ Retention is measured as a curve, not a single churn rate: the share of a cohort
 
 Group customers by when they were acquired and track what share remain active over time. The construction is mechanical.
 
-1. Define the cohort. The usual key is acquisition month, so the January cohort is everyone who made their first purchase or signed up in January. Acquisition channel or plan tier works as a second key when you want to compare them.
+1. Define the cohort. The usual key is acquisition month, which makes the January cohort everyone who made their first purchase or signed up in January. Acquisition channel or plan tier works as a second key when you want to compare them.
 2. Define active in period. Pick the action that means alive for your business (a purchase, a login, a paid renewal) and a fixed window (a calendar month is the common one). A customer is active in month N if they took that action in month N.
 3. Build numerator and denominator. The denominator is the cohort size, fixed at acquisition and never changing. The numerator for month N is how many of that original cohort were active in month N. Retention at month N is numerator / denominator.
 4. Plot percent active at month 1, 3, 6, 12 for each cohort, with months since acquisition on the x axis and percent retained on the y axis.
@@ -59,13 +59,13 @@ The shape is the signal. Read it as decline then flatten: an early drop as casua
 
 ## Contractual and non-contractual settings
 
-Whether you can see churn at all depends on the setting, and it changes how the curve is built. In a contractual business, a subscription or membership or paid renewal, the customer tells you when they leave. A renewal either happens or it does not, so churn is observed and the curve is read straight off the renewals. In a non-contractual business, retail and ecommerce and most transactional commerce, no one announces their departure. A customer who has not bought in three months may have churned or may simply buy infrequently, and a single gap will not tell you which. Here active in period is a softer judgement, inferred from the pattern of purchase timing rather than read off a contract.
+Whether you can see churn at all depends on the setting, which also changes how the curve is built. In a contractual business, a subscription or membership or paid renewal, the customer tells you when they leave. Because a renewal either happens or it does not, churn is observed and the curve is read straight off the renewals. In a non-contractual business, retail and ecommerce and most transactional commerce, no one announces their departure. A single gap will not tell you whether a customer who has not bought in three months has churned or simply buys infrequently. Here active in period is a softer judgement, inferred from the pattern of purchase timing rather than read off a contract.
 
 The distinction dictates which tools fit. Contractual retention projects well from a shifted-beta-geometric model fitted to a few periods of renewals.[^fader-2007] Non-contractual bases are the domain of buy-till-you-die models, the Pareto/NBD and its lighter BG/NBD variant, which infer a hidden dropout time from how often and how recently each customer has bought.[^schmittlein-1987][^fader-2005][^mccarthy-2018] Reach for the wrong family and the projection will mislead.
 
 ## Why retention rises, and why one churn rate misleads
 
-The flattening has a mechanism worth understanding, because it changes the arithmetic. Period by period, the retention rate, meaning the share of last period's survivors who stay this period, usually rises as a cohort ages. It is tempting to read that as customers growing more loyal over time. Mostly they are not. A cohort mixes high-churn and low-churn customers, and the high-churn ones leave first, so what remains is steadily enriched in the loyal. The average retention rate climbs even when no single customer's churn probability has moved. This is a sorting effect in a mixed population, not a change of heart.[^fader-2010]
+The flattening has a mechanism worth understanding, because it changes the arithmetic. Period by period, the retention rate, meaning the share of last period's survivors who stay this period, usually rises as a cohort ages. It is tempting to read that as customers growing more loyal over time. Mostly they are not. In a cohort mixing high-churn and low-churn customers, the high-churn ones leave first, steadily enriching what remains in the loyal. The average retention rate climbs even when no single customer's churn probability has moved. This is a sorting effect in a mixed population, not a change of heart.[^fader-2010]
 
 The consequence is practical. Take one blended churn rate from an early period and apply it flat into the future and you will understate lifetime value, often badly, because you have assumed away the dynamic that makes long-lived customers valuable.[^fader-2010] The curve has to be read as a curve, rising tail and all, not collapsed to a single number. It is also the argument for segmenting: a blended curve mixes populations that churn differently and averages the sorting away.
 
@@ -99,7 +99,7 @@ month 3: 20 x 0.45 / 1.01^3 =  8.73
 LTV (4 months) = 20.00 + 11.88 + 9.80 + 8.73 = 50.41
 ```
 
-Undiscounted the same flows total 51.00, so the discount shaves a little here and far more over a multi year horizon.
+Undiscounted the same flows total 51.00, which makes the discount a small reduction here and a far larger one over a multi year horizon.
 
 ## LTV to CAC, and payback period
 
@@ -111,27 +111,27 @@ CAC payback  = number of periods until cumulative margin >= CAC
 ```
 
 > [!example] Reading LTV:CAC and payback
-> Continuing the hypothetical above, suppose CAC is 30. Then LTV:CAC is 50.41 / 30 = 1.7, below the three to one marker, so this cohort is acquired too expensively or retained too poorly to be comfortable. For payback, accumulate margin period by period until it clears 30: month 0 reaches 20.00, month 1 reaches 31.88, so this cohort pays back in month 1. The ratio judges whether the customer is worth acquiring at all; payback judges how long your cash is tied up getting there.
+> Continuing the hypothetical above, suppose CAC is 30. Then LTV:CAC is 50.41 / 30 = 1.7, below the three to one marker, a sign that this cohort is acquired too expensively or retained too poorly to be comfortable. For payback, accumulate margin period by period until it clears 30: month 0 reaches 20.00 and month 1 reaches 31.88, putting payback for this cohort in month 1. The ratio judges whether the customer is worth acquiring at all; payback judges how long your cash is tied up getting there.
 
 ## How to segment LTV, and why
 
 A blended LTV averages away the decisions. Compute it separately by:
 
-* Acquisition source. Channels differ in both CAC and retention, so a cheap source can still be the worst once you weigh how badly it retains, and an expensive one the best. Only segmented LTV:CAC tells you where the next acquisition pound should go.
+* Acquisition source. Because channels differ in both CAC and retention, a cheap source can still be the worst once you weigh how badly it retains, and an expensive one the best. Only segmented LTV:CAC tells you where the next acquisition pound should go.
 * Cohort. Comparing acquisition months shows whether newer customers are retaining better or worse, which is the earliest read on whether a programme or product change is working.
-* Tier or plan. Higher tiers usually have both higher margin and higher retention, so their LTV justifies more acquisition spend and more programme attention.
+* Tier or plan. Higher tiers usually have both higher margin and higher retention, which lets their LTV justify more acquisition spend and more programme attention.
 
-The point of segmenting is that LTV is an input to a decision, and the decision (where to spend, whom to keep) lives at the segment level, not the average.
+Segmentation matters because LTV is an input to decisions, about where to spend and whom to keep, that live at the segment level rather than the average.
 
 ## How to run a retention sensitivity check
 
 The most useful thing the model surfaces is sensitivity: which input moves LTV most. Run it as a simple what if. Take the LTV formula, nudge one input at a time by the same proportion, and compare the resulting change in LTV.
 
-* Move retention up by, say, 10% relative across the curve, recompute LTV.
-* Separately move contribution margin up by the same 10%, recompute LTV.
+* Move retention up by, say, 10% relative across the curve and recompute LTV.
+* Separately move contribution margin up by the same 10% and recompute LTV.
 * Compare the two lifts.
 
-Small improvements in retention move LTV more than comparable changes in margin or discounting, because retention compounds through every later period of the sum while a margin change scales a fixed set of flows. That is the quantified case for spending on the retention stage of the lifecycle, and it usually beats cutting price. Published estimates of customer equity point the same way: one widely cited study put the firm value impact of a 1% gain in retention at around 5%, against roughly 1% for an equivalent margin gain and a fraction of that for lower acquisition cost.[^gupta-2004] See [lifecycle mapping](/foundations/lifecycle-mapping.md).
+Small improvements in retention move LTV more than comparable changes in margin or discounting, because retention compounds through every later period of the sum while a margin change scales a fixed set of flows. That is the quantified case for spending on the retention stage of the lifecycle, which usually beats cutting price. Published estimates of customer equity point the same way: one widely cited study put the firm value impact of a 1% gain in retention at around 5%, against roughly 1% for an equivalent margin gain and a fraction of that for lower acquisition cost.[^gupta-2004] See [lifecycle mapping](/foundations/lifecycle-mapping.md).
 
 ## How to move it, and how to prove you did
 

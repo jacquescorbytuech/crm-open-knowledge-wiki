@@ -38,7 +38,7 @@ sources:
 
 ## What this covers
 
-Authentication is the set of DNS records and signatures that let a receiving mailbox verify your mail is really from you. It is the precondition for inbox placement, not an optimisation. Set it up before your first send, and verify it end-to-end before you turn the tap on.
+Authentication is the set of DNS records and signatures that let a receiving mailbox verify your mail is really from you. It is the precondition for inbox placement, not an optimisation. Set it up before your first send, then verify it end-to-end before you turn the tap on.
 
 ## The records
 
@@ -47,7 +47,7 @@ Authentication is the set of DNS records and signatures that let a receiving mai
 * DMARC tells receivers what to do when SPF or DKIM alignment fails, and sends you aggregate reports (the `rua` tag) on who is sending under your domain. Parse these with a DMARC aggregator.
 * BIMI requires a fully aligned DMARC at enforcement and puts your verified logo into supporting clients. Not a measurement instrument, but a basic deliverability credential worth claiming.
 
-The three core records do different jobs and you need all three. SPF and DKIM each prove authorisation by a different mechanism, DMARC ties them to the visible From domain and tells receivers what to do on failure. BIMI is optional and depends on the other three being right first.
+The three core records do different jobs and you need all three. SPF and DKIM each prove authorisation by a different mechanism, while DMARC ties them to the visible From domain and tells receivers what to do on failure. BIMI is optional and depends on the other three being right first.
 
 ## How to set up SPF
 
@@ -65,17 +65,17 @@ Steps:
 4. Publish exactly one SPF record per domain. Two SPF records is a permanent error and voids SPF entirely.
 
 > [!warning] One SPF record, within 10 lookups
-> Two SPF records voids SPF entirely, and chained includes that exceed the 10 DNS lookup limit return permerror, which most receivers treat as a failure. Neither failure is reported back to you. Audit the lookup count and keep a small, fixed set of senders.
+> Two SPF records voids SPF entirely, while chained includes that exceed the 10 DNS lookup limit return permerror, which most receivers treat as a failure. Neither failure is reported back to you. Audit the lookup count and keep a small, fixed set of senders.
 
 The pitfall: SPF allows at most 10 DNS lookups when a receiver evaluates the record, counting every `include`, `a`, `mx`, `ptr`, and `redirect`. Chained includes creep past this limit and the record then returns permerror, which most receivers treat as a failure. Audit the lookup count, flatten or remove unused includes, and prefer a small fixed set of senders.
 
 ## How to set up DKIM
 
-DKIM signs each message with a private key, and receivers fetch the matching public key from a DNS TXT record at a selector you choose.
+DKIM signs each message with a private key, which receivers verify by fetching the matching public key from a DNS TXT record at a selector you choose.
 
 Steps:
 
-1. Generate a key pair, 2048-bit RSA is the current default, 1024-bit is the floor and should not be used for new setups.
+1. Generate a key pair. 2048-bit RSA is the current default; 1024-bit is the floor and should not be used for new setups.
 2. Choose a selector, an arbitrary label that lets you run more than one key at once, for example `s1` or `mail2026`.
 3. Keep the private key on the signing system (your ESP usually generates and holds it for you).
 4. Publish the public key as a TXT record at `<selector>._domainkey.<domain>`.
@@ -84,25 +84,25 @@ Steps:
 s1._domainkey.example.com  TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAA..."
 ```
 
-The signature header on outgoing mail names the domain (`d=`) and selector (`s=`) so the receiver knows which record to fetch. Most ESPs do all of this for you, your job is to publish the record they give you and confirm it resolves.
+The signature header on outgoing mail names the domain (`d=`) and selector (`s=`) so the receiver knows which record to fetch. Most ESPs do all of this for you, leaving you to publish the record they give you and confirm it resolves.
 
 Rotate keys on a schedule. A sensible default is every six to twelve months, and immediately if a key is ever exposed. Rotate by publishing a new selector first, switching signing to it, then removing the old record once no in-flight mail still references it. Running two selectors during the overlap is why selectors exist.
 
 > [!note] What's coming: DKIM2
-> DKIM2 is the proposed successor to DKIM, an IETF working group draft (`draft-ietf-dkim-dkim2-spec`) with nothing to publish yet and no deployment before late 2026 at the earliest. It targets the two structural weaknesses DKIM1 cannot fix. The first is replay: DKIM1 signs the message but not its recipient, so one validly signed message can be captured and re-sent to thousands of addresses on the original sender's reputation. DKIM2 signs the envelope sender and recipient, binding the signature to the path the mail was meant to take. The second is breakage in transit: a forwarder or mailing list that rewrites a subject or appends a footer invalidates a DKIM1 signature, which is the entire reason ARC exists. DKIM2 has each hop that alters a message record the change and resign, so a receiver can verify the chain back to the origin without trusting the intermediaries, where ARC only attests what each hop saw rather than what it did. It also signs the return-path, which lets a receiver trust where a bounce belongs and closes the backscatter gap. Nothing to act on yet; track it, and read today's ARC handling as the stopgap it is built to replace.
+> DKIM2 is the proposed successor to DKIM, an IETF working group draft (`draft-ietf-dkim-dkim2-spec`) with nothing to publish yet and no deployment before late 2026 at the earliest. It targets the two structural weaknesses DKIM1 cannot fix. The first is replay: DKIM1 signs the message but not its recipient, leaving one validly signed message open to capture and re-sending to thousands of addresses on the original sender's reputation. DKIM2 signs the envelope sender and recipient, binding the signature to the path the mail was meant to take. The second is breakage in transit: a forwarder or mailing list that rewrites a subject or appends a footer invalidates a DKIM1 signature, which is the entire reason ARC exists. DKIM2 has each hop that alters a message record the change and resign, letting a receiver verify the chain back to the origin without trusting the intermediaries, where ARC only attests what each hop saw rather than what it did. It also signs the return-path, which lets a receiver trust where a bounce belongs and closes the backscatter gap. Nothing to act on yet, but track it and read today's ARC handling as the stopgap it is built to replace.
 
 ## DMARC rollout
 
-DMARC is a TXT record at `_dmarc.<domain>`. Its policy decides what receivers do when a message fails both SPF and DKIM alignment, and `rua` collects the aggregate reports that tell you who is sending as you.
+DMARC is a TXT record at `_dmarc.<domain>`. Its policy decides what receivers do when a message fails both SPF and DKIM alignment, while `rua` collects the aggregate reports that tell you who is sending as you.
 
 > [!note] Alignment is the part people miss
 > A message can pass raw SPF or DKIM and still fail DMARC, because the domain it authenticated does not match the visible From domain. Reading the records in isolation will not surface this; only an end-to-end test will.
 
-Alignment is the part people miss. A message passes DMARC only if SPF or DKIM passes and the domain it authenticated is aligned with the visible From domain. SPF alignment compares the From domain to the SPF (envelope/return-path) domain, DKIM alignment compares the From domain to the `d=` in the signature. A message can pass raw SPF or DKIM and still fail DMARC because the authenticated domain does not match From. Relaxed alignment (the default) allows a subdomain to align with its organisational domain, strict alignment requires an exact match.
+Alignment is the part people miss. A message passes DMARC only if SPF or DKIM passes and the domain it authenticated is aligned with the visible From domain. SPF alignment compares the From domain to the SPF (envelope/return-path) domain; DKIM alignment compares the From domain to the `d=` in the signature. A message can pass raw SPF or DKIM and still fail DMARC because the authenticated domain does not match From. Relaxed alignment (the default) allows a subdomain to align with its organisational domain. Strict alignment requires an exact match.
 
-Roll it out in stages and read the aggregate reports between each stage, never jump straight to reject.
+Roll it out in stages, reading the aggregate reports between each stage. Never jump straight to reject.
 
-1. Start at `p=none`. This enforces nothing, it only turns on reporting. Publish `rua` and let reports accumulate for two to four weeks as a default observation window.
+1. Start at `p=none`. This enforces nothing: it only turns on reporting. Publish `rua` and let reports accumulate for two to four weeks as a default observation window.
 
 ```
 _dmarc.example.com  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com; fo=1"
@@ -115,28 +115,28 @@ _dmarc.example.com  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com; fo=1"
 _dmarc.example.com  TXT  "v=DMARC1; p=quarantine; pct=25; rua=mailto:dmarc@example.com; fo=1"
 ```
 
-4. When reports show only spoofed or illegitimate mail failing, move to `p=reject`. This is enforcement, and it is the level the bulk sender rules and BIMI both require.
+4. When reports show only spoofed or illegitimate mail failing, move to `p=reject`. This is enforcement, the level the bulk sender rules and BIMI both require.
 
 ```
 _dmarc.example.com  TXT  "v=DMARC1; p=reject; rua=mailto:dmarc@example.com; fo=1"
 ```
 
-The whole point of the staged path is that `p=none` lets you discover your own legitimate senders without bouncing real mail, so you reach `p=reject` having already proven nothing legitimate fails.
+The staged path works because `p=none` lets you discover your own legitimate senders without bouncing real mail: you reach `p=reject` having already proven nothing legitimate fails.
 
 ## Subdomain strategy
 
-Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot spread to the other. Transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, so isolating it protects the mail users genuinely need.
+Send marketing and [transactional](/foundations/transactional-messaging.md) mail from separate subdomains so a reputation problem in one cannot spread to the other. Because transactional mail (receipts, confirmations, password resets) is not routed to the Promotions tab the way promotional mail is and tolerates higher volume, isolating it protects the mail users genuinely need.
 
 A common, readable convention:
 
 * `news.example.com` or `mktg.example.com` for marketing and lifecycle.
 * `mail.example.com` or `t.example.com` for transactional.
 
-Each subdomain gets its own SPF and DKIM records. Publish DMARC at the organisational domain so it covers the subdomains by default (relaxed alignment lets a subdomain align up to the parent), and add a subdomain-specific record only if you want a different policy there via the `sp=` tag. Warm each sending subdomain independently, reputation is tracked per sending domain and per IP, not per brand.
+Each subdomain gets its own SPF and DKIM records. Publish DMARC at the organisational domain so it covers the subdomains by default (relaxed alignment lets a subdomain align up to the parent). Add a subdomain-specific record only if you want a different policy there via the `sp=` tag. Warm each sending subdomain independently, because reputation is tracked per sending domain and per IP, not per brand.
 
 ## BIMI
 
-BIMI displays your verified logo next to your mail in supporting clients. It is the reward for getting authentication fully right, and it has hard prerequisites:
+BIMI displays your verified logo next to your mail in supporting clients. It is the reward for getting authentication fully right, with hard prerequisites:
 
 * DMARC published at enforcement, that is `p=quarantine` or `p=reject` (`p=none` does not qualify).
 * A logo in SVG Tiny PS (P/S) format, square, hosted over HTTPS.
@@ -147,7 +147,7 @@ Treat BIMI as the last item, only worth starting once DMARC is at enforcement an
 
 ## Bulk sender requirements
 
-Since February 2024 any sender of roughly 5,000 or more messages a day to Gmail or Yahoo must authenticate with SPF and DKIM, align DMARC, support one click unsubscribe per RFC 8058, and keep the reported spam rate under 0.3% (0.1% is the safe target). Microsoft enforced equivalent rules from May 2025, and Gmail moved from deferral to rejection in November 2025. See [platform interventions](/references/platform-interventions.md).
+Since February 2024 any sender of roughly 5,000 or more messages a day to Gmail or Yahoo must authenticate with SPF and DKIM, align DMARC, support one click unsubscribe per RFC 8058, and keep the reported spam rate under 0.3% (0.1% is the safe target). Microsoft enforced equivalent rules from May 2025; Gmail moved from deferral to rejection in November 2025. See [platform interventions](/references/platform-interventions.md).
 
 To meet them: publish SPF and DKIM as above, get DMARC to at least `p=none` with alignment confirmed (the rules require a DMARC record and that mail authenticates and aligns), include a working `List-Unsubscribe` header with the `List-Unsubscribe-Post` one click form, and watch the spam rate in Google Postmaster Tools so you act before you cross 0.1%.
 
@@ -155,18 +155,18 @@ To meet them: publish SPF and DKIM as above, get DMARC to at least `p=none` with
 
 Before the first send, and whenever placement drops, verify:
 
-- [ ] Exactly one SPF record exists, and it ends in `-all` (or `~all` only as a deliberate temporary state).
+- [ ] Exactly one SPF record exists, ending in `-all` (or `~all` only as a deliberate temporary state).
 - [ ] SPF evaluates within the 10 DNS lookup limit, no permerror.
 - [ ] The DKIM public key resolves at `<selector>._domainkey.<domain>` and matches the selector the mail signs with (selector mismatch is a common silent failure).
-- [ ] A test message passes DKIM, the `d=` domain aligns with the visible From domain.
+- [ ] A test message passes DKIM, with the `d=` domain aligned to the visible From domain.
 - [ ] A DMARC record exists at `_dmarc.<domain>` and `rua` reports are arriving.
 - [ ] Aggregate reports show your legitimate sources passing with alignment before you raise the policy.
 - [ ] Marketing and transactional are on separate subdomains, each with its own SPF and DKIM.
 - [ ] Hard bounces are auto suppressed immediately rather than re-sent to.
 
-Verify with the receiver, not just by reading your own DNS. Send a test to a Gmail and an Outlook account and inspect the Authentication-Results header (it states `spf=`, `dkim=`, and `dmarc=` verdicts plus alignment). Use a public DMARC/SPF/DKIM record checker and a mail-test tool to read the verdicts a real receiver applies. Reading the records in isolation will not surface an alignment failure, only an end-to-end test will.
+Verify with the receiver, not just by reading your own DNS. Send a test to a Gmail and an Outlook account and inspect the Authentication-Results header (it states `spf=`, `dkim=`, and `dmarc=` verdicts plus alignment). Use a public DMARC/SPF/DKIM record checker and a mail-test tool to read the verdicts a real receiver applies. Reading the records in isolation will not surface an alignment failure; only an end-to-end test will.
 
-Missing SPF or DKIM causes deliverability problems and block bounces, so set up authentication before the first send.
+Missing SPF or DKIM causes deliverability problems and block bounces, which is why authentication has to be in place before the first send.
 
 ## Related
 

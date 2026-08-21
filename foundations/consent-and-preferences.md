@@ -20,14 +20,14 @@ sources:
 
 ## Why permission is a foundation, not a footnote
 
-Permission is the asset the whole programme rests on. It decides who you may contact, it decides deliverability because complaint rates follow weak consent, and it decides trust. The regimes differ by region, and not only in strictness. Where they turn the same dial, a consent bar, a retention limit, an opt out window, building to the strictest setting satisfies the looser ones. Where they impose different affirmative obligations, or pull in opposite directions, there is no single strictest point to inherit from: CAN-SPAM wants a postal address and an ad identification the GDPR never asks for, the TCPA wants its own written grant, and a data localisation rule can forbid the very routing another regime requires. Build to the ceiling where the requirements stack, and treat the conflicts as separate grants rather than one standard. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
+Permission is the asset the whole programme rests on. It decides who you may contact, it decides deliverability because complaint rates follow weak consent, and it decides trust. The regimes differ by region, and not only in strictness. Where they turn the same dial, a consent bar, a retention limit, an opt out window, building to the strictest setting satisfies the looser ones. Where they impose different affirmative obligations, or pull in opposite directions, there is no single strictest point to inherit from: CAN-SPAM wants a postal address and an ad identification the GDPR never asks for, the TCPA wants its own written grant, and a data localisation rule can forbid the very routing another regime requires. Build to the ceiling where the requirements stack. Where they conflict, treat each as a separate grant rather than one standard. This is operational guidance, not legal advice; see [legislation and compliance](/references/legislation-and-compliance.md).
 
 ## Two consent models, and the channels they govern
 
-The world splits into opt out and opt in, and the split runs by channel and region rather than uniformly.
+The world splits into opt out and opt in, a split that runs by channel and region rather than uniformly.
 
 * **Opt out (United States email).** Under CAN-SPAM you may email without prior consent, provided every message has accurate headers, an ad identification, a valid physical postal address, and a working opt out you honour within ten business days. The FTC enforces this and treats you as responsible for anyone mailing on your behalf.
-* **Opt in (United Kingdom and EU, and SMS broadly).** Under PECR and the GDPR you generally need consent before marketing to an individual by electronic mail, with a narrow soft opt in for existing customers being sold similar products who were given an opt out at collection and in every message. PECR defines electronic mail broadly, so email, SMS, in-app messages, and social direct messages all fall under it.
+* **Opt in (United Kingdom and EU, and SMS broadly).** Under PECR and the GDPR you generally need consent before marketing to an individual by electronic mail, with a narrow soft opt in for existing customers being sold similar products who were given an opt out at collection and in every message. PECR defines electronic mail broadly enough that email, SMS, in-app messages, and social direct messages all fall under it.
 * **Express written consent (United States SMS).** The TCPA sets a higher bar for marketing texts: prior express written consent, honouring of STOP and other reasonable opt out methods, and quiet hours. Treat SMS consent as a separate, stronger grant than email consent, never as inherited.
 
 Consent under the GDPR standard means freely given, specific, informed, and unambiguous, by a clear affirmative action. A pre ticked box is not consent.
@@ -37,20 +37,20 @@ Consent under the GDPR standard means freely given, specific, informed, and unam
 
 ## Capture that holds up
 
-Collect consent you can evidence: what they agreed to, when, and how. Keep channel grants separate, because email permission is not SMS permission and is not push permission. State who you are and what they will receive at the point of capture. Prefer an explicit, granular opt in wherever an opt in regime applies, and record the source so a weak channel can be traced and fixed. See [list building](/foundations/list-building.md).
+Collect consent you can evidence: what they agreed to, when, and how. Keep channel grants separate, because email permission is not SMS permission and is not push permission. State who you are and what they will receive at the point of capture. Prefer an explicit, granular opt in wherever an opt in regime applies, recording the source so a weak channel can be traced and fixed. See [list building](/foundations/list-building.md).
 
 ## Priming the ask
 
-Permission converts better, and the grant holds up better, when you set the expectation before you ask for it. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed recipient complains and opts out less because the message matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
+When you set the expectation before you ask for it, permission converts better and the grant holds up better. Priming is showing the value and the terms first, what they will get, why, and roughly how often, so the opt in is a considered yes rather than a reflex, and then making the ask at the moment that value is obvious. It is both a conversion lever and a consent quality lever: a primed recipient complains and opts out less because the message matches what they were told to expect, which is exactly the informed, specific standard the [opt in regimes](#gdpr-and-pecr-opt-in-form-mechanics) ask for. The two settings differ in mechanism but not in principle:
 
-* **Scarce platform permissions are structurally one-shot, so priming is mandatory.** The push, [browser push](/channels/browser-push.md), location, and App Tracking Transparency dialogs can be shown once, and a denial is sticky, so a cold prompt with no context spends the only ask you get. Show your own soft prompt first, framed in the value, and fire the native dialog only when the user accepts it, so a no on the soft ask costs nothing. See [the pre-permission prompt](/channels/push.md).
-* **Owned channels prime through pre opt in context.** Email and SMS let you ask again, so the failure mode is not a burned grant but a weak, complaint-prone one. Name the programme and its frequency at the point of capture, prefer a value exchange the subscriber understands over a bare "subscribe" box, and lead with what they get rather than the form. This is the same expectation setting, applied to a channel you can re-approach.
+* **Scarce platform permissions are structurally one-shot: priming is mandatory.** Because the push, [browser push](/channels/browser-push.md), location, and App Tracking Transparency dialogs can be shown once and a denial is sticky, a cold prompt with no context spends the only ask you get. Show your own soft prompt first, framed in the value, firing the native dialog only when the user accepts it. A no on the soft ask then costs nothing. See [the pre-permission prompt](/channels/push.md).
+* **Owned channels prime through pre opt in context.** Email and SMS let you ask again, which makes the failure mode a weak, complaint-prone grant rather than a burned one. Name the programme and its frequency at the point of capture, prefer a value exchange the subscriber understands over a bare "subscribe" box, and lead with what they get rather than the form. This is the same expectation setting, applied to a channel you can re-approach.
 
 Across both, priming is why a smaller, expectation-matched list outperforms a larger cold one; see [list quality over size](/principles/list-quality-over-size.md).
 
 ## A CAN-SPAM compliance checklist
 
-Run every US commercial email against this before it sends. None of these is optional, and a single failing send is a separate violation per recipient.
+Run every US commercial email against this before it sends. None of these is optional: a single failing send is a separate violation per recipient.
 
 - [ ] **Accurate from, to, and routing.** The from name, from address, and reply path identify the actual sender. No spoofed or misleading origin.
 - [ ] **Non deceptive subject line.** The subject reflects the content of the message; it does not bait an open with a claim the body does not deliver.
@@ -73,7 +73,7 @@ Where an opt in regime applies, the form is the evidence. Build it so the record
    - The exact consent wording shown at that time, or a versioned reference to it.
    - The mechanism, for example double opt in confirmation, with the confirmation timestamp.
 5. **Confirm where it strengthens the record.** Double opt in (a confirmation click on a follow up email) both proves the address is controlled by the consenter and filters mistyped or hostile signups; it is the stronger evidence and improves early deliverability.
-6. **Make withdrawal as easy as granting.** Withdrawing consent must be as simple as giving it, and on withdrawal you keep the suppression record but stop the processing.
+6. **Make withdrawal as easy as granting.** Withdrawing consent must be as simple as giving it. On withdrawal, keep the suppression record but stop the processing.
 
 ## Preference centre design
 
@@ -81,18 +81,18 @@ A preference centre lets a subscriber choose channels, topics, and frequency ins
 
 Design it with three independent controls:
 
-* **Channel toggles.** Separate on or off switches per channel: email, SMS, push, post. Reflect the regime, so an SMS toggle off here also flags the TCPA opt out. Channels are independent grants and must toggle independently.
-* **Frequency options.** A small set of clear choices rather than a slider, for example weekly, monthly, or only the essentials. A frequency down shift is the most common save, so make it the easiest one to pick.
+* **Channel toggles.** Separate on or off switches per channel: email, SMS, push, post. Reflect the regime: an SMS toggle off here must register as the formal opt out under whichever rules apply. Channels are independent grants and must toggle independently.
+* **Frequency options.** A small set of clear choices rather than a slider, for example weekly, monthly, or only the essentials. Make the frequency down shift the easiest one to pick, since it is the most common save.
 * **Topic selection.** Let the subscriber keep the content they want and drop the rest, for example order updates yes, promotions no, or one product line only. Topic granularity also feeds segmentation.
 
-Pre fill the centre with the subscriber's current state so they edit rather than reconstruct, and write changes to the sending logic on save so the next send already obeys them.
+Pre fill the centre with the subscriber's current state so they edit rather than reconstruct. Write the changes to the sending logic on save, so the next send already obeys them.
 
 ## The unsubscribe page: offer the down shift first
 
-This is an email mechanic by necessity: an SMS `STOP` and a push toggle are binary by design and rightly so, so the graded exit, fewer rather than none, one topic dropped rather than all, lives on the email unsubscribe page and in the preference centre. The link in the footer should not land on a bare "you are unsubscribed" confirmation. Sequence it so full opt out is the last resort, never the only option.
+This is an email mechanic by necessity: an SMS `STOP` and a push toggle are binary by design, and rightly so, which leaves the graded exit, fewer rather than none, one topic dropped rather than all, to the email unsubscribe page and the preference centre. The link in the footer should not land on a bare "you are unsubscribed" confirmation. Sequence it so full opt out is the last resort, never the only option.
 
 1. Land the user on a page that leads with the lighter alternatives: reduce frequency, pause for a period, or pick only the topics they care about.
-2. Present full unsubscribe as a clearly available choice on the same page, not hidden, because the law requires it to be easy and burying it is both a breach and an annoyance.
+2. Present full unsubscribe as a clearly available choice on the same page, not hidden, because the regimes that govern marketing email require it to be easy and burying it is both a breach and an annoyance.
 3. If they do unsubscribe, honour it on a single click without forcing a login, and confirm plainly. Write the suppression immediately.
 4. Keep a one click global opt out reachable throughout, so a frustrated user always has the simple exit and never resorts to the spam button.
 
@@ -118,7 +118,7 @@ Operate it as a continuous loop:
 1. **Capture from every signal.** Feed the list from unsubscribe clicks and preference centre opt outs, spam complaints via feedback loops, hard bounces, STOP keywords, and any legal or manual suppressions. Record the reason and timestamp for each.
 2. **Apply across all sources and channels.** Check every send against suppression regardless of which tool or list the audience came from. A suppression in one system must not be defeated by a fresh import or a second platform. Keep one authoritative list per channel and reconcile imports against it.
 3. **Suppress, do not delete.** Keeping the record is what proves you honoured the opt out; deleting the contact loses that evidence and risks re mailing on the next import. Retain the consent and opt out records for as long as you might need to defend the decision.
-4. **Honour promptly.** Process opt outs into suppression fast, well inside the CAN-SPAM ten business day ceiling, and immediately for STOP and preference changes.
+4. **Honour promptly.** Process opt outs into suppression immediately, STOP keywords and preference changes included. Statutory ceilings, such as CAN-SPAM's ten business days in the US, are maxima rather than targets.
 5. **Audit periodically.** Spot check that suppressed contacts are not receiving mail and that complaint and bounce feeds are still flowing into the list.
 
 See [respect the recipient](/principles/respect-the-recipient.md) and [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
