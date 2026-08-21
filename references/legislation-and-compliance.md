@@ -1,7 +1,7 @@
 ---
 type: Reference
 title: Legislation and Compliance
-description: The main email and privacy regimes a sender operates under, grounded in the regulators' own guidance, and the practical minimum that satisfies the spirit of all of them.
+description: The main email and privacy regimes a sender operates under, grounded in the regulators' own guidance, plus the practical minimum that satisfies the spirit of all of them.
 tags: [legislation, compliance, gdpr, can-spam, pecr, tcpa, casl, ccpa, sender-id]
 generated:
   by: human:jacquescorbytuech
@@ -35,12 +35,12 @@ sources:
 
 | Regime | Region | Consent model | Core obligations |
 | --- | --- | --- | --- |
-| CAN-SPAM | United States, email | Opt out | Accurate headers and from line, no deceptive subject, identify the message as an ad, a valid physical postal address, a clear opt out honoured within ten business days, and responsibility for anyone mailing on your behalf. |
-| TCPA | United States, SMS and calls | Express written for texts and robocalls | Prior express written consent for marketing texts and for autodialled or artificial-voice calls; a manually dialled live call falls under the Do-Not-Call rules instead. STOP and any reasonable opt out method, and quiet hours of 8am to 9pm in the recipient's local time. |
-| GDPR | EU and EEA | Opt in | A documented lawful basis, consent that is freely given, specific, informed, and unambiguous where relied on, records of consent, data subject rights, and prompt opt out. |
+| CAN-SPAM | United States, email | Opt out | Accurate headers and from line, no deceptive subject, identify the message as an ad, a valid physical postal address, a clear opt out honoured within ten business days and responsibility for anyone mailing on your behalf. |
+| TCPA | United States, SMS and calls | Express written for texts and robocalls | Prior express written consent for marketing texts and for autodialled or artificial-voice calls; a manually dialled live call falls under the Do-Not-Call rules instead. STOP and any reasonable opt out method, plus quiet hours of 8am to 9pm in the recipient's local time. |
+| GDPR | EU and EEA | Opt in | A documented lawful basis; consent that is freely given, specific, informed and unambiguous where relied on; records of consent; data subject rights; prompt opt out. |
 | UK GDPR and PECR | United Kingdom | Opt in, narrow soft opt in | PECR regulation 22 governs electronic marketing in addition to UK GDPR; consent or the soft opt in is needed to market to individuals by electronic mail. |
-| CASL | Canada | Express or implied opt in | One of the strictest regimes: express or implied consent, clear sender identification, and a working unsubscribe, with significant penalties. |
-| CCPA and CPRA | California | Opt out, plus deletion right | Disclosure of data practices, a right to opt out of sale or sharing, and a right to deletion. |
+| CASL | Canada | Express or implied opt in | One of the strictest regimes: express or implied consent, clear sender identification and a working unsubscribe, with significant penalties. |
+| CCPA and CPRA | California | Opt out, plus deletion right | Disclosure of data practices, a right to opt out of sale or sharing and a right to deletion. |
 
 ## CAN-SPAM, precisely
 
@@ -51,7 +51,7 @@ The FTC distils CAN-SPAM into a short list that applies to every commercial emai
 > [!danger] You must not market to individuals without consent or the soft opt in
 > PECR regulation 22 prohibits unsolicited electronic mail marketing to individuals unless they have consented or you meet the soft opt in: an existing customer, sold similar products, given a clear opt out both when their details were collected and in every message.
 
-The ICO defines electronic mail broadly, covering email, text messages, picture and video messages, voicemail, in-app messages, and direct messages on social media. SMS and in-app messaging therefore fall under these rules, not only email. Consent takes the UK GDPR standard. Marketing to corporate subscribers does not require consent, though honouring objections is good practice.
+The ICO defines electronic mail broadly, covering email, text messages, picture and video messages, voicemail, in-app messages and direct messages on social media. SMS and in-app messaging therefore fall under these rules, not only email. Consent takes the UK GDPR standard. Marketing to corporate subscribers does not require consent, though honouring objections is good practice.
 
 ## TCPA, the higher bar for SMS
 
@@ -63,11 +63,11 @@ Consent is not the only gate on messaging. Some markets run registers that verif
 
 ## The practical minimum
 
-Operate to the strictest regime your list touches and you satisfy the rest by construction. Collect consent you can evidence, keep channel grants separate, prefer an explicit opt in wherever an opt in regime applies, identify yourself honestly in every message, include a real postal address, make opt out easy and honour it without delay, keep a suppression list that is never mailed, and hold a documented lawful basis for every contact. This is also good deliverability practice, since the bulk sender requirements enforce one click unsubscribe and a low complaint rate as a condition of reaching the inbox. See [authentication](/foundations/authentication.md) and [consent and preferences](/foundations/consent-and-preferences.md).
+Operate to the strictest regime your list touches and you satisfy the rest by construction. Collect consent you can evidence, keep channel grants separate, prefer an explicit opt in wherever an opt in regime applies, identify yourself honestly in every message, include a real postal address, make opt out easy and honour it without delay, keep a suppression list that is never mailed and hold a documented lawful basis for every contact. This is also good deliverability practice, since the bulk sender requirements enforce one click unsubscribe and a low complaint rate as a condition of reaching the inbox. See [authentication](/foundations/authentication.md) and [consent and preferences](/foundations/consent-and-preferences.md).
 
 ## Where compliance and strategy meet
 
-Respecting the recipient is both the ethical and the commercial position. Honest expectations at opt-in, easy exit, and prompt opt out reduce complaints, which protect sender reputation, which protect reach. The regimes formalise a floor a well run programme would clear anyway. See [respect the recipient](/principles/respect-the-recipient.md).
+Respecting the recipient is both the ethical and the commercial position. Honest expectations at opt-in, easy exit and prompt opt out reduce complaints, which protect sender reputation, which protect reach. The regimes formalise a floor a well run programme would clear anyway. See [respect the recipient](/principles/respect-the-recipient.md).
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Segmentation and Data
-description: How to define dynamic and static segments, spot and resolve overlap, run hygiene to an SLA, QA merge tags and dynamic content, and audit consent on a cadence, with the segmentation models and the wider data layer treated separately.
+description: How to define dynamic and static segments; spot and resolve overlap; run hygiene to an SLA; QA merge tags and dynamic content; and audit consent on a cadence, with the segmentation models and the wider data layer treated separately.
 tags: [segmentation, data, personalisation, privacy, merge-tags, hygiene, dynamic-segments, overlap, data-quality]
 generated:
   by: human:jacquescorbytuech
@@ -14,13 +14,13 @@ sources:
 
 ## What this covers
 
-This is the operational how of segmentation: defining segments that hold, keeping them correct and current, and keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md). The data layer underneath all of it, capture, identity, and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). The focus here is building and running the segments once a model has chosen the cut.
+This is the operational how of segmentation: defining segments that hold; keeping them correct and current; keeping the data under them clean enough to send on. The models that decide how you divide an audience in the first place, RFM, value, behavioural, propensity, live in [segmentation models](/foundations/segmentation-models.md). The data layer underneath all of it, capture, identity and the single customer view, lives in [customer data and identity](/foundations/customer-data-and-identity.md). The focus here is building and running the segments once a model has chosen the cut.
 
 ## Dynamic versus static segments
 
 A dynamic segment updates automatically as subscriber data changes: membership is a rule the platform re-evaluates, which lets contacts join and leave without anyone touching the list. A static segment has fixed membership set at creation and changes only when someone edits it.
 
-Prefer dynamic segments for anything driven by behaviour or state, because they keep themselves current and cannot drift out of date. Reserve static segments for the cases a rule cannot express or should not: a fixed test or holdout cell whose membership must not move mid-experiment, a one-off list from an external source (an event attendee export), or a manually curated VIP list.
+Prefer dynamic segments for anything driven by behaviour or state, because they keep themselves current and cannot drift out of date. Reserve static segments for the cases a rule cannot express or should not: a fixed test or holdout cell whose membership must not move mid-experiment, a one-off list from an external source (an event attendee export) or a manually curated VIP list.
 
 A dynamic segment is a rule expression over profile and event fields. Write the rule, not a vague description. Worked definitions:
 
@@ -38,7 +38,7 @@ Confirm whether segments overlap before combining or sending them together. Free
 How to check for overlap before a send window:
 
 1. List every segment scheduled to send in the same window (say the coming week).
-2. For each pair, compute the intersection: count the contacts that appear in both. Most platforms expose this as an AND of the two segment rules, or an audience-overlap report.
+2. For each pair, compute the intersection: count the contacts that appear in both. Most platforms expose this as an AND of the two segment rules or an audience-overlap report.
 3. Flag any contact landing in more than the per-tier cap from [orchestration and frequency](/foundations/orchestration-and-frequency.md). The cap, not the overlap count, is the threshold that matters.
 4. Resolve rather than just observe. Apply the contact strategy: let the frequency cap and the priority order decide which send that contact actually receives, then suppress the rest for the window. Transactional always wins; promotional yields first. The detailed priority order lives in [orchestration and frequency](/foundations/orchestration-and-frequency.md).
 
@@ -53,22 +53,22 @@ Segmentation trades statistical power for relevance. Below list sizes in the low
 Hygiene is the foundation the rest sits on: a clean list is what makes segments accurate and sends deliverable. Run it to a service level rather than on remembering to, so that the standard is a written threshold and not a habit.
 
 * **Hard bounces: suppress immediately.** A hard bounce means the address is dead. Auto-suppress it the moment it is reported and never re-send, certainly before the next send to that segment fires. A hard bounce that is still in the audience on the following send is an SLA breach.
-* **Complaints and unsubscribes: suppress immediately, treat as permanent.** Feed both into the suppression list at once and never reactivate. These are also legal obligations, not just hygiene; see the suppression workflow in [consent and preferences](/foundations/consent-and-preferences.md). Suppression has to travel beyond the sending channels too: a contact removed here must also drop out of any ad-platform [audience sync](/foundations/audience-sync.md), or you are pursuing in paid someone you stopped emailing.
-* **Sunset by inactivity window.** Define dormancy as no engagement across a set window (a sensible default is 90 days), an open or click in email, a tap or session from push and in-app, a reply to an SMS, a purchase in any of them, then run the re-engagement sequence and move any contact who does not respond to a sunset segment, suppressed from broadcast. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender-level reach. Keep the criteria identical to the sunset logic in [automation and sequences](/foundations/automation-and-sequences.md) so the flow and the segment agree. The full lifecycle this hygiene step sits inside, decay, re-engagement, and sunsetting as one practice, is [database health and sunsetting](/foundations/database-health.md).
+* **Complaints and unsubscribes: suppress immediately, treat as permanent.** Feed both into the suppression list at once and never reactivate. These are also legal obligations, not just hygiene; see the suppression workflow in [consent and preferences](/foundations/consent-and-preferences.md). Suppression has to travel beyond the sending channels too: a contact removed here must also drop out of any ad-platform [audience sync](/foundations/audience-sync.md); otherwise you are pursuing in paid someone you stopped emailing.
+* **Sunset by inactivity window.** Define dormancy as no engagement across a set window (a sensible default is 90 days), an open or click in email, a tap or session from push and in-app, a reply to an SMS, a purchase in any of them, then run the re-engagement sequence and move any contact who does not respond to a sunset segment, suppressed from broadcast. This protects the engaged cohort rather than shrinking the asset, because dormant contacts drag sender-level reach. Keep the criteria identical to the sunset logic in [automation and sequences](/foundations/automation-and-sequences.md) so the flow and the segment agree. The full lifecycle this hygiene step sits inside, decay, re-engagement and sunsetting as one practice, is [database health and sunsetting](/foundations/database-health.md).
 
 See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 ## Merge identities carefully
 
-When two records resolve to one person and get merged, the merge itself is a data-quality risk: a bad merge tag mapping, or a merge that picks the wrong field as the survivor, corrupts the profile that every downstream segment and merge field reads. Treat merge and dedup as a controlled operation, not a background convenience: define which record wins per field, preserve the consent and suppression state of both records (a merge must never resurrect a suppressed contact), and spot-check merged profiles. The identity mechanics live in [customer data and identity](/foundations/customer-data-and-identity.md).
+When two records resolve to one person and get merged, the merge itself is a data-quality risk: a bad merge tag mapping or a merge that picks the wrong field as the survivor corrupts the profile that every downstream segment and merge field reads. Treat merge and dedup as a controlled operation, not a background convenience: define which record wins per field, preserve the consent and suppression state of both records (a merge must never resurrect a suppressed contact) and spot-check merged profiles. The identity mechanics live in [customer data and identity](/foundations/customer-data-and-identity.md).
 
 ## Personalisation and merge tags
 
-A merge tag is a placeholder replaced with subscriber-specific data at send time. A dynamic content block displays differently based on subscriber data. Personalisation is a real lever, but it depends on clean data: a merge tag firing a blank, a default, or a wrong value is worse than no personalisation at all, which is why the [data layer](/foundations/customer-data-and-identity.md) comes first.
+A merge tag is a placeholder replaced with subscriber-specific data at send time. A dynamic content block displays differently based on subscriber data. Personalisation is a real lever, but it depends on clean data: a merge tag firing a blank, a default or a wrong value is worse than no personalisation at all, which is why the [data layer](/foundations/customer-data-and-identity.md) comes first.
 
 QA every merge field and dynamic block before a send goes live. The checklist:
 
-1. **Test for blanks and defaults.** Send to seed contacts that deliberately have the field missing, empty, and populated. Confirm the missing and empty cases render the fallback, not `Hi ,` or a raw `[FIRST_NAME]` token.
+1. **Test for blanks and defaults.** Send to seed contacts that deliberately have the field missing, empty and populated. Confirm the missing and empty cases render the fallback, not `Hi ,` or a raw `[FIRST_NAME]` token.
 2. **Confirm fallback content exists for every tag.** Every merge field needs a sensible default. `Hi {{ first_name | default: "there" }}` renders `Hi there` when the name is missing, never `Hi`.
 3. **Validate field mapping.** Confirm the tag points at the field you think it does. A common failure is a tag mapped to the wrong source field: it then renders a real but wrong value (someone else's first name, a stale address), which no blank-check catches.
 4. **Check dynamic-content branches.** Each branch must have a defined audience and a fallback branch for contacts who match none, so that nobody receives an empty block. Worked example: a block showing a recommended category renders the recommended category when `top_category` is set and a default best-sellers block when it is empty, which keeps the slot from ever going blank.
@@ -77,13 +77,13 @@ This is the same merge-field check the pre-launch testing list in [automation an
 
 ## Privacy and the consent audit cadence
 
-Privacy is integral to operations, not a separate compliance task bolted on after. Because every segment and every send reads contact data, the lawful basis (the GDPR's term; other regimes have equivalent duties) and consent state must be correct in the same records the segments query. Hold a documented lawful basis for every contact, keep records of how and when consent was obtained, and honour opt-outs immediately. The capture mechanics, the suppression workflow, and the regime details live in [consent and preferences](/foundations/consent-and-preferences.md); declared preferences captured there are also zero-party data you can target on.
+Privacy is integral to operations, not a separate compliance task bolted on after. Because every segment and every send reads contact data, the lawful basis (the GDPR's term; other regimes have equivalent duties) and consent state must be correct in the same records the segments query. Hold a documented lawful basis for every contact; keep records of how and when consent was obtained; honour opt-outs immediately. The capture mechanics, the suppression workflow and the regime details live in [consent and preferences](/foundations/consent-and-preferences.md); declared preferences captured there are also zero-party data you can target on.
 
 Audit the data and consent state on a cadence rather than waiting for a problem to surface it:
 
 * **Profile completeness.** Track the fill rate of the fields your segments depend on (consent flags, engagement dates, value fields). A field your targeting relies on that is blank for much of the list is a silent segmentation failure.
-* **Deduplication.** Periodically scan for duplicate identities and merge them under the controlled process above, so that one person is not counted, contacted, or suppressed as two.
-* **Lawful basis and consent date.** Confirm every contact has a recorded lawful basis and a consent timestamp, and that channel grants are stored separately (email permission is not SMS permission). Flag any contact missing a basis for review or suppression.
+* **Deduplication.** Periodically scan for duplicate identities and merge them under the controlled process above, so that one person is not counted, contacted or suppressed as two.
+* **Lawful basis and consent date.** Confirm that every contact has a recorded lawful basis and a consent timestamp, with channel grants stored separately (email permission is not SMS permission). Flag any contact missing a basis for review or suppression.
 
 Set the cadence to your volume and risk; keep it scheduled, with a written threshold, rather than triggered by an incident.
 

@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Audience sync
-description: How to activate CRM segments as audiences on the ad platforms for targeting and suppression, what matching and consent require, and why it extends the owned channels rather than being one.
+description: How to activate CRM segments as audiences on the ad platforms for targeting and suppression; what matching and consent require; and why it extends the owned channels rather than being one.
 tags: [audience-sync, customer-match, custom-audiences, paid-media, retargeting, suppression, crm-activation, hashed-match]
 generated:
   by: human:jacquescorbytuech
@@ -23,15 +23,15 @@ sources:
 
 ## What it is
 
-Audience sync is pushing a CRM segment to an ad platform, Meta Custom Audiences, Google Customer Match, and their equivalents, so you can target, or suppress, those customers in paid media. It is the bridge between the owned database and bought reach: the same segment logic that drives an email becomes an ad audience. It is not an owned messaging channel, because you are renting the platform's reach against your list rather than holding a grant to message anyone, which is why it sits in foundations next to the data and segmentation it draws on, not in [channels](/channels/).
+Audience sync is pushing a CRM segment to an ad platform, Meta Custom Audiences, Google Customer Match and their equivalents, so you can target, or suppress, those customers in paid media. It is the bridge between the owned database and bought reach: the same segment logic that drives an email becomes an ad audience. It is not an owned messaging channel, because you are renting the platform's reach against your list rather than holding a grant to message anyone, which is why it sits in foundations next to the data and segmentation it draws on, not in [channels](/channels/).
 
 ## Why it belongs in the contact strategy
 
-Paid media usually runs on a separate team and a separate logic, which is exactly how a customer ends up chased by an acquisition ad the day after they bought. Audience sync brings paid under the one contact strategy. It does two distinct jobs. It extends a lifecycle message into paid media, reinforcing a winback or a launch in the feed alongside the email. And, often more valuable, it suppresses: excluding existing customers from acquisition spend, recent buyers from a promotion, and the unsubscribed from being pursued in paid. Treating paid as a CRM-governed surface is what stops the owned and bought channels from contradicting each other. See [orchestration and frequency](/foundations/orchestration-and-frequency.md).
+Paid media usually runs on a separate team and a separate logic, which is exactly how a customer ends up chased by an acquisition ad the day after they bought. Audience sync brings paid under the one contact strategy. It does two distinct jobs. It extends a lifecycle message into paid media, reinforcing a winback or a launch in the feed alongside the email. And, often more valuable, it suppresses: excluding existing customers from acquisition spend, recent buyers from a promotion and the unsubscribed from being pursued in paid. Treating paid as a CRM-governed surface is what stops the owned and bought channels from contradicting each other. See [orchestration and frequency](/foundations/orchestration-and-frequency.md).
 
 ## How the match works
 
-You upload customer identifiers, email, phone, and sometimes name and address, hashed with SHA-256 before they leave your system or hashed by the platform on upload. The platform then matches them against its own accounts. Only a fraction match, which makes the addressable audience always smaller than the list you sent and the match rate the number to watch. The audience is rebuilt as you re-sync, which leaves a stale upload targeting people whose state has since changed.
+You upload customer identifiers (email, phone and sometimes name and address), hashed with SHA-256 before they leave your system or hashed by the platform on upload. The platform then matches them against its own accounts. Only a fraction match, which makes the addressable audience always smaller than the list you sent and the match rate the number to watch. The audience is rebuilt as you re-sync, which leaves a stale upload targeting people whose state has since changed.
 
 ## Consent and the privacy line
 

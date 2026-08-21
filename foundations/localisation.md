@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Localisation
-description: Sending to a multi-region, multi-language audience: send-time by the recipient's timezone across channels, locale-keyed templates and the translation that fills them, multi-currency and locale-correct formatting of offers, and the encoding and layout traps that come with non-Latin scripts.
+description: Sending to a multi-region, multi-language audience: send-time by the recipient's timezone across channels; locale-keyed templates and the translation that fills them; multi-currency and locale-correct formatting of offers; and the encoding and layout traps that come with non-Latin scripts.
 tags: [localisation, internationalisation, timezone, multi-language, multi-currency, send-time, i18n]
 generated:
   by: human:jacquescorbytuech
@@ -9,7 +9,7 @@ generated:
 sources:
   - id: unicode-cldr-locale-data-for-dates-numbers
     resource: https://cldr.unicode.org/
-    title: "Unicode CLDR, locale data for dates, numbers, and currencies"
+    title: "Unicode CLDR, locale data for dates, numbers and currencies"
   - id: w3c-internationalisation-text-direction-and-language-declaration
     resource: https://www.w3.org/International/
     title: "W3C Internationalisation, text direction and language declaration"
@@ -17,27 +17,27 @@ sources:
 
 ## When defaults become decisions
 
-A programme sending to one country in one language can ignore everything here. The moment the list spans timezones, languages, or currencies, defaults that were invisible become decisions: when a send lands, what language it lands in, and what a price and date mean to the person reading them. These are cross-channel concerns. The per-channel mechanics they touch live in [copywriting](/foundations/copywriting.md), [message design and rendering](/foundations/message-design-and-rendering.md), and the [channel](/channels/) pages; localisation is the layer that varies those by who the recipient is and where they are.
+A programme sending to one country in one language can ignore everything here. The moment the list spans timezones, languages or currencies, defaults that were invisible become decisions: when a send lands, what language it lands in and what a price or a date means to the person reading it. These are cross-channel concerns. The per-channel mechanics they touch live in the [channel](/channels/) pages, in [copywriting](/foundations/copywriting.md) and in [message design and rendering](/foundations/message-design-and-rendering.md); localisation is the layer that varies those by who the recipient is and where they are.
 
 ## Send time by the recipient's timezone
 
 A single send clock is a single timezone's clock. Fire a broadcast at 9am headquarters time and half a global list gets it at 3am. Send-time localisation splits the send so each recipient receives it at the intended local hour, keyed to the timezone on their profile rather than the server's. On the interruptive channels a mistimed send does real harm: an [SMS](/channels/sms-and-rcs.md) or [push](/channels/push.md) that arrives in the middle of the night is worse than ignored. Where a jurisdiction sets [quiet hours](/channels/sms-and-rcs.md) for SMS, they are defined in the recipient's local time, which makes timezone-correct sending a compliance control rather than a courtesy. [Email](/channels/email.md) is more forgiving because it waits in the inbox, but local-morning delivery still reads better than overnight.
 
-The data prerequisite is a reliable timezone per contact, inferred from country, postal address, or observed open times, and a sensible fallback when it is missing (the account's primary market, not the server default). Per-recipient send-time optimisation, where the platform learns each contact's responsive hour, is the more sophisticated version of the same idea and has the same prerequisite.
+The data prerequisite is a reliable timezone per contact, inferred from country, postal address or observed open times, with a sensible fallback when it is missing (the account's primary market, not the server default). Per-recipient send-time optimisation, where the platform learns each contact's responsive hour, is the more sophisticated version of the same idea and has the same prerequisite.
 
 ## Locale-keyed templates and translation
 
 Hard-coded copy is monolingual by construction. The localised pattern is to key content by locale (language plus region, such as `en-GB`, `en-US`, `fr-CA`) and resolve the right variant at send through the [personalisation mechanics](/foundations/personalisation-mechanics.md) the programme already uses for any other profile-driven value. The disciplines that keep it honest:
 
-* **Translate, do not just substitute.** Machine translation gives a draft; a fluent reviewer catches the tone, idiom, and legal phrasing it misses. The subject line and CTA, the highest-leverage words, are exactly where a stilted translation costs most. Length changes too: German and Finnish run long, which breaks layouts and truncates subject lines tuned for English.
+* **Translate, do not just substitute.** Machine translation gives a draft; a fluent reviewer catches the tone, idiom and legal phrasing it misses. The subject line and CTA, the highest-leverage words, are exactly where a stilted translation costs most. Length changes too: German and Finnish run long, which breaks layouts and truncates subject lines tuned for English.
 * **Define a fallback locale.** When a contact's locale has no translated variant, fall back to a declared default rather than failing or sending an empty merge field. Make the fallback explicit so a missing translation degrades to a known language, not to a broken message.
 
-## Currency, dates, and formatting
+## Currency, dates and formatting
 
-A price, a date, and a number are all locale-dependent. `$1,000` and `1.000 $` are the same amount formatted by opposite conventions; `03/04` is two different days on the two sides of the Atlantic. Localise the format. Where the offer is transactional, localise the value too: show prices in the recipient's currency, set against local price points rather than a raw exchange-rate conversion, so an [offer](/foundations/offers-and-incentives.md) reads as deliberate rather than as a foreign price run through a calculator. The standard locale data for these conventions, currency symbols, date and number formats, and the rest, is maintained centrally in the Unicode CLDR rather than reinvented per programme.
+A price, a date and a number are all locale-dependent. `$1,000` and `1.000 $` are the same amount formatted by opposite conventions; `03/04` is two different days on the two sides of the Atlantic. Localise the format. Where the offer is transactional, localise the value too: show prices in the recipient's currency, set against local price points rather than a raw exchange-rate conversion, so an [offer](/foundations/offers-and-incentives.md) reads as deliberate rather than as a foreign price run through a calculator. The standard locale data for these conventions (currency symbols, date and number formats and the rest) is maintained centrally in the Unicode CLDR rather than reinvented per programme.
 
 > [!warning] Localise the whole message, not just the body
-> A translated body under an English subject line, a local price next to a US date format, or a localised email linking to an English-only landing page all leave the localisation visibly half-done. The recipient notices the seam and reads it as carelessness. The unit of localisation is the whole journey, message, links, and the page it lands on.
+> A translated body under an English subject line, a local price next to a US date format or a localised email linking to an English-only landing page all leave the localisation visibly half-done. The recipient notices the seam and reads it as carelessness. The unit of localisation is the whole journey, message, links and the page it lands on.
 
 ## Scripts and encoding
 

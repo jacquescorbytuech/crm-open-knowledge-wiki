@@ -10,11 +10,11 @@ generated:
 
 ## Stance
 
-Segmentation has real costs: time, complexity, human error risk, and shrinking sample sizes. Do not recommend aggressive segmentation below list sizes in the low thousands.
+Segmentation has real costs: time, complexity, human error risk and shrinking sample sizes. Do not recommend aggressive segmentation below list sizes in the low thousands.
 
 ## The statistical edge
 
-Splitting a 2,000 person audience into four segments leaves each segment too small to detect meaningful lift. Cells multiply when you split by segment, channel, or eligibility cohort, compounding the volume requirement. Segmentation is a real lever, but it trades statistical power for relevance: below a certain size the trade is a loss. See [segmentation and data](/foundations/segmentation-and-data.md) and [volume thresholds](/measurement/volume-thresholds.md).
+Splitting a 2,000 person audience into four segments leaves each segment too small to detect meaningful lift. Cells multiply when you split by segment, channel or eligibility cohort, compounding the volume requirement. Segmentation is a real lever, but it trades statistical power for relevance: below a certain size the trade is a loss. See [segmentation and data](/foundations/segmentation-and-data.md) and [volume thresholds](/measurement/volume-thresholds.md).
 
 ## Related
 

@@ -1,25 +1,25 @@
 # Measurement
 
-The measurement layer: how to tell whether a lifecycle programme actually worked, and how to keep reading channel effects once the platforms in the middle stopped reporting honestly. The general core every programme needs comes first, then the specialised kit for measuring under intermediation, which most senders should understand and few have the volume to run.
+The measurement layer: how to tell whether a lifecycle programme actually worked and how to keep reading channel effects once the platforms in the middle stopped reporting honestly. The general core every programme needs comes first, then the specialised kit for measuring under intermediation, which most senders should understand and few have the volume to run.
 
 The discipline running through both: every method here hands you a distribution rather than a verdict; a number without a control group usually counts the customers who were going to act anyway.
 
 ## Programme measurement
 
-* [Core metrics](core-metrics.md) - the metric tree from engagement to revenue, the North Star and its guardrails, and decision metrics versus vanity metrics.
-* [Holdouts and control groups](holdouts-and-control-groups.md) - the always-on global holdout, per-campaign controls, and geo experiments, the only honest read of incrementality.
-* [Attribution](attribution.md) - last-click and multi-touch, marketing mix modelling, and incrementality, and which question each one answers.
-* [Retention and LTV](retention-and-ltv.md) - cohort retention curves, lifetime value, LTV to CAC, and the metrics that decide the economics.
+* [Core metrics](core-metrics.md) - the metric tree from engagement to revenue; the North Star and its guardrails; decision metrics versus vanity metrics.
+* [Holdouts and control groups](holdouts-and-control-groups.md) - the always-on global holdout, per-campaign controls and geo experiments, the only honest read of incrementality.
+* [Attribution](attribution.md) - last-click and multi-touch, marketing mix modelling, incrementality; which question each one answers.
+* [Retention and LTV](retention-and-ltv.md) - cohort retention curves, lifetime value, LTV to CAC and the metrics that decide the economics.
 
 ## Sizing and prioritising
 
 * [Impact sizing](impact-sizing.md) - estimate how many incremental actions an experiment will drive, to rank experiments before building.
-* [Sample size and power](sample-size-and-power.md) - the two proportion z-test, and how long a test must run to detect what the sizing model promises.
-* [Volume thresholds](volume-thresholds.md) - the sends per cell needed to detect a given relative shift, and the line below which probes are theatre.
-* [Frequentist and Bayesian testing](frequentist-vs-bayesian.md) - the two ways to read a test, the peeking trap that catches both, and which to reach for on a small list.
-* [Variance reduction and sequential testing](variance-reduction.md) - CUPED and sequential methods, the two standard ways to get more from the volume you have, and the floor neither repeals.
+* [Sample size and power](sample-size-and-power.md) - the two proportion z-test and how long a test must run to detect what the sizing model promises.
+* [Volume thresholds](volume-thresholds.md) - the sends per cell needed to detect a given relative shift and the line below which probes are theatre.
+* [Frequentist and Bayesian testing](frequentist-vs-bayesian.md) - the two ways to read a test, the peeking trap that catches both and which to reach for on a small list.
+* [Variance reduction and sequential testing](variance-reduction.md) - CUPED and sequential testing, the two standard ways to get more from the volume you have; the floor neither repeals.
 
 ## Measuring under intermediation
 
-* [Uplift and incrementality](uplift-and-incrementality.md) - persuadables, sure things, and do not disturbers, and why prediction is not decisioning.
+* [Uplift and incrementality](uplift-and-incrementality.md) - persuadables, sure things and do not disturbers; why prediction is not decisioning.
 * [Measuring intermediation](measuring-intermediation.md) - the probe kit for reading platform editing effects without platform cooperation.

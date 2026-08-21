@@ -1,7 +1,7 @@
 ---
 type: Concept
 title: Attribution
-description: The three families of answer to what drove a result, last-click and multi-touch attribution, marketing mix modelling, and incrementality, and why they answer different questions rather than competing for one.
+description: The three families of answer to what drove a result, last-click and multi-touch attribution, marketing mix modelling and incrementality; why they answer different questions rather than competing for one.
 tags: [attribution, mta, mmm, incrementality, measurement, cross-channel]
 generated:
   by: human:jacquescorbytuech
@@ -23,11 +23,11 @@ Before any of that, the point most attribution work skips: a tracked click prove
 
 ## Last-click and multi-touch
 
-With that caveat in place, last-click gives all credit to the final touch. It is simple, available, and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, while crediting nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency, and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
+With that caveat in place, last-click gives all credit to the final touch. It is simple, available and systematically wrong in one direction: it over credits whatever sat closest to a conversion that was often already going to happen, while crediting nothing to the demand built earlier. Multi-touch attribution (MTA) spreads credit across the observed journey and is sharper for near real time, within channel optimisation, but it only sees the trackable slice and that slice has been eroded by cookie deprecation, Apple's App Tracking Transparency and the walled gardens. Both are bottom up and correlational. Neither establishes cause.
 
 ## Marketing mix modelling
 
-MMM works top down, regressing outcomes on aggregate, time series spend and external factors. It values offline and brand alongside digital. Needing no user level tracking, it also survives the privacy decay that breaks MTA. A credible model captures what a naive regression misses: adstock, the carryover by which a campaign's effect decays over later weeks rather than landing all at once, and saturation, the diminishing return as spend in a channel rises, which is why the model fits a curve rather than a straight line. The costs follow from this. It is data hungry, because estimating those shapes needs long histories; it needs real expertise to build and validate; and it is vulnerable to multicollinearity, because channels whose budgets move together are hard to tell apart, which is why a clean incrementality test is the standard way to calibrate and sanity-check the coefficients. It smooths over short term and tactical effects; its answer is how to allocate budget across the portfolio, not which message to send next.
+MMM works top down, regressing outcomes on aggregate, time series spend and external factors. It values offline and brand alongside digital. Needing no user level tracking, it also survives the privacy decay that breaks MTA. A credible model captures what a naive regression misses. Adstock is the carryover by which a campaign's effect decays over later weeks rather than landing all at once. Saturation is the diminishing return as spend in a channel rises, which is why the model fits a curve rather than a straight line. The costs follow from this. It is data hungry, because estimating those shapes needs long histories; it needs real expertise to build and validate; and it is vulnerable to multicollinearity, because channels whose budgets move together are hard to tell apart, which is why a clean incrementality test is the standard way to calibrate and sanity-check the coefficients. It smooths over short term and tactical effects; its answer is how to allocate budget across the portfolio, not which message to send next.
 
 ## Incrementality as the referee
 
@@ -38,7 +38,7 @@ Only a controlled experiment, treatment against a randomised holdout or geo cont
 > [!warning] A tracked click is not proof of cause
 > Owned channel attribution looks easy because the click is yours to track, which is exactly the trap: a tracked click is not proof the send caused the outcome.
 
-Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome, and anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
+Build the read on the authenticated cohort, where identity is deterministic and you can follow channel to destination and destination to outcome. Anchor it on a holdout rather than on the click. The destination conversion frame is also the one that survives platform intermediation and the agentic shock. See [measuring intermediation](/measurement/measuring-intermediation.md).
 
 ## Related
 

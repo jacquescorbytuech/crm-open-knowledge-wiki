@@ -1,7 +1,7 @@
 ---
 type: Framework
 title: Lead management
-description: The B2B motion the rest of this bundle's lifecycle frame does not cover: scoring leads on fit and engagement, the MQL and SQL definitions and the sales handoff built on them, nurturing the not-yet-ready, and where account-based marketing inverts the whole funnel.
+description: The B2B motion the rest of this bundle's lifecycle frame does not cover: scoring leads on fit and engagement; the MQL and SQL definitions and the sales handoff built on them; nurturing the not-yet-ready; and where account-based marketing inverts the whole funnel.
 tags: [b2b, lead-scoring, mql, sql, nurturing, abm, lifecycle, sales]
 generated:
   by: human:jacquescorbytuech
@@ -20,9 +20,9 @@ sources:
 
 ## The B2B funnel the lifecycle frame omits
 
-[Lifecycle mapping](/foundations/lifecycle-mapping.md) assumes a transactional relationship: someone is a customer, and the programme moves them through onboarding, engagement, retention, and winback. The considered B2B sale, where the deal is large, the cycle is long, and a buying committee decides, has a stage the consumer frame does not: a pre-customer funnel where a contact is captured, qualified, and handed to a salesperson who closes the deal in person. Lead management is the operations of that funnel, the half of CRM practice the rest of this bundle, skewed to consumer lifecycle and retention, otherwise leaves out.
+[Lifecycle mapping](/foundations/lifecycle-mapping.md) assumes a transactional relationship: someone is already a customer whom the programme moves through onboarding, engagement, retention and winback. The considered B2B sale, where the deal is large, the cycle is long and a buying committee decides, has a stage the consumer frame does not: a pre-customer funnel where a contact is captured, qualified and handed to a salesperson who closes the deal in person. Lead management is the operations of that funnel, the half of CRM practice the rest of this bundle, skewed to consumer lifecycle and retention, otherwise leaves out.
 
-The data and channels are the same ones described elsewhere: first-party data, email and the owned channels, consent. What changes is the goal. The programme is not driving a purchase directly; it is producing a qualified, sales-ready contact and a clean handoff, and being measured on the revenue that closes downstream of it.
+The data and channels are the same ones described elsewhere: first-party data, email and the owned channels, consent. What changes is the goal. The programme is not driving a purchase directly; it is producing a qualified, sales-ready contact and a clean handoff, measured on the revenue that closes downstream of it.
 
 ## Lead scoring
 
@@ -31,9 +31,9 @@ Lead scoring ranks contacts so the programme can act on the ones worth acting on
 * **Fit (explicit).** How closely the contact matches the ideal customer: the [firmographic](/foundations/segmentation-models.md) attributes (industry, company size, revenue) and the person's role and seniority. Fit answers *should we want them*.
 * **Engagement (implicit).** What the contact has done: content downloads, pricing-page visits, webinar attendance, email engagement. Engagement answers *are they interested now*.
 
-Score each axis on its own rather than collapsing them into one number, because the failure modes are opposite and need different handling. A high-fit, low-engagement contact is a target to nurture. A low-fit, high-engagement contact is often a student, a competitor, or a job-seeker; feed them to sales and you erode the goodwill the handoff depends on. The score is a [propensity](/foundations/segmentation-models.md) prediction dressed in points, which carries the same caution: it predicts who looks ready rather than who your contact changed, and is only as good as the data underneath it.
+Score each axis on its own rather than collapsing them into one number, because the failure modes are opposite and need different handling. A high-fit, low-engagement contact is a target to nurture. A low-fit, high-engagement contact is often a student, a competitor or a job-seeker; feed them to sales and you erode the goodwill the handoff depends on. The score is a [propensity](/foundations/segmentation-models.md) prediction dressed in points, which carries the same caution: it predicts who looks ready rather than who your contact changed; it is only as good as the data underneath it.
 
-## MQL, SQL, and the handoff
+## MQL, SQL and the handoff
 
 MQL and SQL are thresholds a team agrees on, not states a contact is objectively in:
 
@@ -55,7 +55,7 @@ Lead scoring runs the funnel forward: capture many contacts, score them, surface
 
 ## Measuring it
 
-Lead management's tempting metrics are the funnel counts (leads, MQLs, SQLs), which stay [vanity metrics](/measurement/core-metrics.md) until tied to what closes. Tie the score to downstream conversion: of the contacts scored MQL, what share sales accepted, and of those, what share became revenue. A scoring model that produces MQLs sales rejects is mis-tuned however good the count looks. The score predicts; only a [holdout](/measurement/holdouts-and-control-groups.md) tells you whether the nurturing changed the outcome rather than messaging buyers who would have converted anyway.
+Lead management's tempting metrics are the funnel counts (leads, MQLs, SQLs), which stay [vanity metrics](/measurement/core-metrics.md) until tied to what closes. Tie the score to downstream conversion: of the contacts scored MQL, what share sales accepted; of those, what share became revenue. A scoring model that produces MQLs sales rejects is mis-tuned however good the count looks. The score predicts; only a [holdout](/measurement/holdouts-and-control-groups.md) tells you whether the nurturing changed the outcome rather than messaging buyers who would have converted anyway.
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: Method
 title: Volume Thresholds
-description: The sends per cell needed to detect a given relative shift at a 2% email click baseline, how to read it across channels whose base rates differ, and how a team should use that table to decide which tests are worth running.
+description: The sends per cell needed to detect a given relative shift at a 2% email click baseline, how to read it across channels whose base rates differ and how a team should use that table to decide which tests are worth running.
 tags: [statistics, power, volume, testing, measurement]
 generated:
   by: human:jacquescorbytuech
@@ -29,7 +29,7 @@ Anchored on a 2% campaign click rate (a defensible round number for the typical 
 | 1% | +0.02pp | ~7,720,000 | Platform internal A/B territory |
 | 0.5% | +0.01pp | ~30,800,000 | Meta scale notification optimisation |
 
-These are floor numbers for the easiest design. More complex designs raise the requirement further. Splitting by cohort, segment, or channel multiplies the cells, compounding it again.
+These are floor numbers for the easiest design. More complex designs raise the requirement further. Splitting by cohort, segment or channel multiplies the cells, compounding it again.
 
 ## Reading the table for another channel
 

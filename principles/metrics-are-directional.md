@@ -1,7 +1,7 @@
 ---
 type: Principle
 title: Email metrics are directional, not precise
-description: Open rates especially. Never treat metrics as gospel, and never make major decisions on small differences without statistical rigour.
+description: Open rates especially. Never treat metrics as gospel and never make major decisions on small differences without statistical rigour.
 tags: [principle, metrics, opens, ctor]
 generated:
   by: human:jacquescorbytuech
@@ -30,7 +30,7 @@ The engagement a mailbox provider acts on, dwell time, scrolling, replies, delet
 
 * Click to open rate (CTOR) for content engagement, independent of open noise.
 * Click through and downstream conversion for outcome.
-* Reply rate, one click unsubscribe timing, and complaint rate for relationship health.
+* Reply rate, one click unsubscribe timing and complaint rate for relationship health.
 
 Clicks are sturdier than opens, because providers do not pre-cache the page behind a link, but they are not clean either.
 

@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Deliverability and Metrics
-description: How inbox placement works, how to warm an IP or domain, how to recover from spam, how to monitor complaint rate, the full metrics reference, the Gmail Promotions tab, and MIME structure.
+description: How inbox placement works, how to warm an IP or domain, how to recover from spam, how to monitor complaint rate, the full metrics reference, the Gmail Promotions tab and MIME structure.
 tags: [deliverability, spam, ip-warming, metrics, promotions-tab, mime, postmaster-tools, snds]
 generated:
   by: human:jacquescorbytuech
@@ -29,11 +29,11 @@ sources:
 
 ## How placement works
 
-Inbox placement is decided by machine learning, not fixed rules, an approach that goes back to the statistical (Bayesian) spam filtering of the early 2000s. That early work only separated spam from not-spam; modern placement adds sender reputation and per-recipient engagement to that binary decision. Authentication is the precondition for reaching the inbox at all: set it up before your first send. See [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab, and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer runs after the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md).
+Inbox placement is decided by machine learning, not fixed rules, an approach that goes back to the statistical (Bayesian) spam filtering of the early 2000s. That early work only separated spam from not-spam; modern placement adds sender reputation and per-recipient engagement to that binary decision. Authentication is the precondition for reaching the inbox at all: set it up before your first send. See [authentication](/foundations/authentication.md). Above that, sender reputation and per recipient engagement decide whether you reach the inbox, which tab and where inside the tab. Classical deliverability, inbox versus spam, is no longer the whole story: a category- and relevance-aware sorting layer runs after the spam decision and increasingly governs whether an inboxed message is actually seen. The research and platform changes behind that layer are in [email intelligence research](/references/email-intelligence-research.md) and [platform interventions](/references/platform-interventions.md).
 
 ## How to warm a new IP or domain
 
-Reputation is built from a clean engagement signal at rising volume. A cold IP or domain that suddenly emits a large volume looks exactly like a compromised one, which is why you ramp. Start with your most engaged subscribers (recent openers and clickers), send a small volume, and increase it gradually over days and weeks while watching the complaint rate at each step.
+Reputation is built from a clean engagement signal at rising volume. A cold IP or domain that suddenly emits a large volume looks exactly like a compromised one, which is why you ramp. Start with your most engaged subscribers (recent openers and clickers), send a small volume and increase it gradually over days and weeks while watching the complaint rate at each step.
 
 There is no single official schedule. The principle is the schedule: small start, geometric-ish increases, slow down the moment complaints rise. A concrete default ramp to adapt to your list size:
 
@@ -60,12 +60,12 @@ If you are landing in spam, work the causes in order.
 > [!warning] Pushing more volume never fixes spam placement
 > It deepens it. The engaged core is what you rebuild on, not a bigger send.
 
-1. Fix authentication first. Confirm SPF, DKIM, and aligned DMARC all pass with an end-to-end test. A silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
+1. Fix authentication first. Confirm SPF, DKIM and aligned DMARC all pass with an end-to-end test. A silent failure here caps everything else. See the troubleshooting checklist in [authentication](/foundations/authentication.md).
 2. Auto-suppress hard bounces immediately, before the next send (see below). Bouncing into dead addresses is a strong negative signal.
 3. Prune the disengaged. Remove or suppress addresses with no opens or clicks over a long window, since they drag reputation and inflate complaint rate. Done routinely rather than only in a crisis, this is the sunset step of [database health](/foundations/database-health.md).
 4. Reduce volume to the engaged core. Cut back to recent openers and clickers only, so that the provider sees a clean engagement signal again.
 5. Rebuild slowly. Treat the engaged core as a warming exercise and ramp volume back up on the schedule above, widening only as reputation recovers.
-6. Monitor at every step in Postmaster Tools and SNDS, watch complaint rate and reputation tier, and slow down the moment either worsens.
+6. Monitor at every step in Postmaster Tools and SNDS; watch complaint rate and reputation tier; slow down the moment either worsens.
 
 Recovery is the warming ramp run on a list that already burned trust, which makes it slower. Do not re-add the pruned addresses; they are what put you in spam.
 
@@ -74,11 +74,11 @@ Recovery is the warming ramp run on a list that already burned trust, which make
 Complaint rate (recipients marking your mail as spam) is a hard deliverability limit. The bulk sender rules require the reported spam rate to stay below 0.3%, while 0.1% is the safe target you manage to. See [authentication](/foundations/authentication.md) and [platform interventions](/references/platform-interventions.md).
 
 * Watch it in Google Postmaster Tools (the Spam Rate dashboard) and Microsoft SNDS, per sending domain and IP.
-* Track it weekly in steady state, and per send while warming or recovering.
+* Track it weekly in steady state and per send while warming or recovering.
 * Act before 0.1%, not at it. A rising trend below the line is the warning. Treat 0.1% as a ceiling you never reach, not a level to run at.
 
 > [!danger] 0.3% is the breach line, not a target
-> The bulk sender rules require the reported spam rate to stay below 0.3%. At or above it you are in breach, expect blocking, and must run the spam-recovery procedure. Manage to 0.1% as the safe operating ceiling, well below the line.
+> The bulk sender rules require the reported spam rate to stay below 0.3%. At or above it you are in breach, expect blocking and must run the spam-recovery procedure. Manage to 0.1% as the safe operating ceiling, well below the line.
 
 Action thresholds:
 
@@ -105,7 +105,7 @@ Set these up before you scale, because they are the only platform-cooperative si
 
 ## Hard-bounce auto-suppression
 
-A hard bounce is a permanent failure (the address does not exist). Add hard-bounced addresses to a suppression list automatically and immediately, before the next send, and never mail them again. Continuing to send to dead addresses is a clear negative reputation signal and is one of the fastest ways into spam. Soft bounces (temporary, for example a full mailbox) can be retried, but suppress them too after repeated failures.
+A hard bounce is a permanent failure (the address does not exist). Add hard-bounced addresses to a suppression list automatically and immediately, before the next send; never mail them again. Continuing to send to dead addresses is a clear negative reputation signal and is one of the fastest ways into spam. Soft bounces (temporary, for example a full mailbox) can be retried, but suppress them too after repeated failures.
 
 ## The Promotions tab
 
@@ -116,7 +116,7 @@ Being in Promotions is not a failure: deal seekers actively browse it. Since Sep
 | Metric | What it tells you | Caveat |
 | --- | --- | --- |
 | Delivery rate | Accepted by the receiving server | Not the same as inbox placement |
-| Open rate | An image load fired | Not a read; corrupted by MPP, prefetch, and filter fetches; directional only |
+| Open rate | An image load fired | Not a read; corrupted by MPP, prefetch and filter fetches; directional only |
 | Click through rate | Clicked a link | The primary engagement metric |
 | Click to open rate (CTOR) | Content engagement | Independent of open noise |
 | Conversion | Downstream action | The metric that pays; needs volume to read |
@@ -125,7 +125,7 @@ Being in Promotions is not a failure: deal seekers actively browse it. Since Sep
 | Reply rate | Strong positive inbox signal | Even 1 to 2% improves placement |
 | Bounce rate | Hard and soft delivery failures | Suppress hard bounces immediately |
 
-The engagement rows are the ones to distrust. An open is an image load, not a read: privacy proxies, prefetch, or filters in the delivery path can trigger that load rather than a person. Because clicks can be inflated by automated security scanners that follow links at scale, seen most sharply at Microsoft properties, treat clicks in the first few minutes after delivery with suspicion and lean on later, human looking clicks and downstream conversion. The engagement a provider actually acts on, dwell time, scrolling, replies, and folder moves, is richer than either and is not visible to you. See [email metrics are directional](/principles/metrics-are-directional.md).
+The engagement rows are the ones to distrust. An open is an image load, not a read: privacy proxies, prefetch or filters in the delivery path can trigger that load rather than a person. Because clicks can be inflated by automated security scanners that follow links at scale, seen most sharply at Microsoft properties, treat clicks in the first few minutes after delivery with suspicion and lean on later, human looking clicks and downstream conversion. The engagement a provider actually acts on, dwell time, scrolling, replies and folder moves, is richer than either and is not visible to you. See [email metrics are directional](/principles/metrics-are-directional.md).
 
 ## Platform diagnostics
 
@@ -135,7 +135,7 @@ The gap they leave, inbox versus spam placement for a specific send, is what see
 
 ## MIME structure
 
-Send a proper multipart message. Use a `multipart/alternative` container holding both a plain text part and an HTML part, in that order, so that a client that prefers text gets a real text version and one that prefers HTML gets the rich version. A missing or empty plain text part is a spam signal and degrades rendering in clients that prefer it. Keep the image to text ratio sane, because a heavy image to text ratio is a Promotions classifier signal; an all-image email with no real text is a classic spam pattern. If you embed inline images, wrap the alternative part and its images in a `multipart/related` container. The wider rendering question, mobile, dark mode, accessibility, and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
+Send a proper multipart message. Use a `multipart/alternative` container holding both a plain text part and an HTML part, in that order, so that a client that prefers text gets a real text version and one that prefers HTML gets the rich version. A missing or empty plain text part is a spam signal and degrades rendering in clients that prefer it. Keep the image to text ratio sane, because a heavy image to text ratio is a Promotions classifier signal; an all-image email with no real text is a classic spam pattern. If you embed inline images, wrap the alternative part and its images in a `multipart/related` container. The wider rendering question, mobile, dark mode, accessibility and alt text, is covered in [message design and rendering](/foundations/message-design-and-rendering.md).
 
 ## Related
 

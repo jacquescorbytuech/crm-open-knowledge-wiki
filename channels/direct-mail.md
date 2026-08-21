@@ -1,7 +1,7 @@
 ---
 type: Channel
 title: Direct Mail
-description: How to run a physical channel that lands intact: choose a format by segment value, make each piece trackable back to the CRM, validate addresses against decay, and measure by holdout and match-back.
+description: How to run a physical channel that lands intact: choose a format by segment value, make each piece trackable back to the CRM, validate addresses against decay and measure by holdout and match-back.
 tags: [channel, direct-mail, physical, retention, control-group, variable-data, match-back]
 generated:
   by: human:jacquescorbytuech
@@ -17,7 +17,7 @@ sources:
 
 ## What it is
 
-Direct mail is a physical piece delivered to a postal address: a postcard, a letter, a catalogue, a dimensional package. It has seen renewed interest in direct-to-consumer marketing precisely because the message arrives whole, with no model in the delivery path to summarise, rank, or suppress it, on a surface the recipient handles directly.
+Direct mail is a physical piece delivered to a postal address: a postcard, a letter, a catalogue, a dimensional package. It has seen renewed interest in direct-to-consumer marketing precisely because the message arrives whole, with no model in the delivery path to summarise, rank or suppress it, on a surface the recipient handles directly.
 
 ## Permission and reach
 
@@ -25,23 +25,23 @@ Postal marketing operates under a lighter consent regime than electronic channel
 
 ## Filtering and editing
 
-None. Nothing ranks, bundles, summarises, or filters a physical piece; that absence is the channel's main draw. It lands on a surface the recipient handles directly. The trade is that it is the slowest channel and the most expensive per touch short of a staffed call.
+None. Nothing ranks, bundles, summarises or filters a physical piece; that absence is the channel's main draw. It lands on a surface the recipient handles directly. The trade is that it is the slowest channel and the most expensive per touch short of a staffed call.
 
 ## Technical specifics
 
 The format choice sets the cost, the lead time and how likely the piece is to be noticed.
 
-* **Formats.** Postcards (cheapest, no envelope to open), letters, flats and large envelopes, catalogues, and dimensional packages that trade cost for a better chance of being opened and noticed. Cost rises steeply from postcard to letter to dimensional; the lead time runs to weeks, not minutes, because everything is printed, finished, and physically transported.
+* **Formats.** Postcards (cheapest, no envelope to open), letters, flats and large envelopes, catalogues and dimensional packages that trade cost for a better chance of being opened and noticed. Cost rises steeply from postcard to letter to dimensional; the lead time runs to weeks, not minutes, because everything is printed, finished and physically transported.
 * **Postal class.** Bulk promotional classes carry volume minimums. A single piece falls back to the standard letter rate, which rules out an economical one-off send. In the US, USPS Marketing Mail is bulk-only: 200 pieces or 50 pounds minimum. Royal Mail and other national operators set their own minimums and format rules.
-* **Variable-data printing.** Variable-data printing personalises copy, imagery, and offers per recipient from the customer record, the print equivalent of merge tags and dynamic content. Drive it from the same fields the rest of the programme uses, name, last product, lapsed segment, tier, so the piece is as relevant as the digital channels rather than a generic mailshot.
-* **Bridging to digital.** A QR code, personalised URL (PURL), or unique promo code per recipient connects the physical piece to a trackable digital response. The mechanics matter: mint a unique value per recipient rather than one shared code for the whole drop, then stamp it on the CRM record before the file goes to the printer. A per-recipient QR or PURL resolves to a landing page that records who scanned; a per-recipient promo code redeems against that one customer. Shared codes tell you the drop worked; unique codes tell you which recipient acted, which is what match-back needs.
+* **Variable-data printing.** Variable-data printing personalises copy, imagery and offers per recipient from the customer record, the print equivalent of merge tags and dynamic content. Drive it from the same fields the rest of the programme uses, name, last product, lapsed segment, tier, so the piece is as relevant as the digital channels rather than a generic mailshot.
+* **Bridging to digital.** A QR code, personalised URL (PURL) or unique promo code per recipient connects the physical piece to a trackable digital response. The mechanics matter: mint a unique value per recipient rather than one shared code for the whole drop, then stamp it on the CRM record before the file goes to the printer. A per-recipient QR or PURL resolves to a landing page that records who scanned; a per-recipient promo code redeems against that one customer. Shared codes tell you the drop worked; unique codes tell you which recipient acted, which is what match-back needs.
 
 ## Format decision rule
 
 Pick the format from the value of the segment and the job, because the per-piece cost climbs fast and only high-value work justifies a dimensional package.
 
 * **Postcard** for volume reactivation and offer drops to mid-value segments: cheapest, lands face-up with no envelope to open, fits one offer and one code.
-* **Letter** for recognition, winback copy that needs length, or anything where an envelope and a personalised letter raise the perceived value: more expensive, but it reads as addressed-to-you rather than a flyer.
+* **Letter** for recognition, winback copy that needs length or anything where an envelope and a personalised letter raise the perceived value: more expensive, but it reads as addressed-to-you rather than a flyer.
 * **Dimensional package** only for the top tier where the lifetime value of recovering or retaining the account dwarfs the piece cost: high-value winback, top-customer recognition, premium acquisition where the digital channels are already saturated. Reserve the spend for segments where the expected incremental return clears the steep cost.
 
 ## Address hygiene
@@ -57,11 +57,11 @@ Validate before the file leaves for the printer, because nothing about the piece
 
 ## Best-fit jobs
 
-High value retention and reactivation moments where the cost is justified: top tier customer recognition, winback of lapsed high value accounts, milestone and loyalty gestures, and premium acquisition where a physical piece gets attention that a crowded inbox no longer gives. The channel suits a few high value moments rather than broadcast volume.
+High value retention and reactivation moments where the cost is justified: top tier customer recognition, winback of lapsed high value accounts, milestone and loyalty gestures and premium acquisition where a physical piece gets attention that a crowded inbox no longer gives. The channel suits a few high value moments rather than broadcast volume.
 
 ## Constraints
 
-Cost per piece is orders of magnitude above email, lead times are measured in days or weeks, and creative cannot be changed once printed and posted. Because address data decays, list hygiene here is a postal returns problem rather than a bounce problem.
+Cost per piece is orders of magnitude above email; lead times are measured in days or weeks; creative cannot be changed once printed and posted. Because address data decays, list hygiene here is a postal returns problem rather than a bounce problem.
 
 ## Measurement
 
@@ -70,8 +70,8 @@ Measurement runs on holdout and match-back, because there is no open or click to
 The how-to, in order:
 
 1. **Hold out a randomised control.** Before the drop, randomly split the eligible audience into a treated group that gets mailed and a control group that does not. Randomise at the individual or household level so the two arms are otherwise identical. Size the control so the expected lift clears the noise. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
-2. **Mail the treated group** with a unique per-recipient code, QR, or PURL stamped on each record, so a response can be traced to the individual who acted.
-3. **Match responders back over a defined window.** Pick a window long enough to capture the physical channel's slow response, then attribute conversions to the mailed file by the unique code first, and by name and address match where a code was not used. Match-back is how a physical piece with no click gets connected to a downstream order.
+2. **Mail the treated group** with a unique per-recipient code, QR or PURL stamped on each record, so a response can be traced to the individual who acted.
+3. **Match responders back over a defined window.** Pick a window long enough to capture the physical channel's slow response, then attribute conversions to the mailed file by the unique code first, falling back to a name and address match where no code was used. Match-back is how a physical piece with no click gets connected to a downstream order.
 4. **Read incrementality, not gross response.** Compare conversion in the treated group against the held-out control: the difference is the incremental effect of the mailing, not the raw number of responders, many of whom would have converted anyway. The arithmetic and the worked read are in [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 
 Match-back alone counts responses; the holdout is what turns that count into a causal lift. See also [attribution](/measurement/attribution.md).
@@ -80,11 +80,11 @@ Match-back alone counts responses; the holdout is what turns that count into a c
 
 Run this before committing a drop, because there is no post-print fix. Frame the timeline in weeks rather than minutes so the lead time is built in.
 
-* **Artwork** final and proofed, with the variable-data fields and the per-recipient code, QR, or PURL placed and tested on the layout.
-* **Data file** pulled, with the segment defined, variable fields populated, and the file deduped to one piece per household or customer.
+* **Artwork** final and proofed, with the variable-data fields and the per-recipient code, QR or PURL placed and tested on the layout.
+* **Data file** pulled, with the segment defined, variable fields populated and the file deduped to one piece per household or customer.
 * **Address validation** run: standardised, move-updated, undeliverables removed, decay budgeted.
 * **Control group** split out and recorded, with the unique codes minted and written back to the CRM.
-* **Seed and proof.** Send a physical proof and seed a few internal addresses in the live drop to confirm print, finishing, and the scan-to-landing-page path actually work end to end.
+* **Seed and proof.** Send a physical proof and seed a few internal addresses in the live drop to confirm print, finishing and the scan-to-landing-page path actually work end to end.
 * **Postal class** chosen and the mailing checked against that class's minimums and format rules (in the US, USPS Marketing Mail sets a 200-piece or 50-pound minimum).
 
 ## Lifecycle role

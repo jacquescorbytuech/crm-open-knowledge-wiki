@@ -1,7 +1,7 @@
 ---
 type: Method
 title: Sample Size and Power
-description: The two proportion z-test for planning experiments, how to turn a required sample into a test duration, and the companion test for reading significance once the experiment has run.
+description: The two proportion z-test for planning experiments, how to turn a required sample into a test duration and the companion test for reading significance once the experiment has run.
 tags: [statistics, power, sample-size, z-test, experiments]
 generated:
   by: human:jacquescorbytuech
@@ -36,7 +36,7 @@ You do not have to compute this by hand. Evan Miller's [sample size calculator](
 
 ## Reading the result once it has run
 
-Planning sizes the test; reading it asks whether the gap you observed is real. This is the test the [holdout](/measurement/holdouts-and-control-groups.md), [uplift](/measurement/uplift-and-incrementality.md), and incrementality reads refer back to. For two observed proportions `p1` and `p2` over `n1` and `n2` users, the difference `p2 - p1` has a standard error:
+Planning sizes the test; reading it asks whether the gap you observed is real. This is the test the [holdout](/measurement/holdouts-and-control-groups.md), [uplift](/measurement/uplift-and-incrementality.md) and incrementality reads refer back to. For two observed proportions `p1` and `p2` over `n1` and `n2` users, the difference `p2 - p1` has a standard error:
 
 ```
 SE = sqrt( p1(1-p1)/n1 + p2(1-p2)/n2 )

@@ -1,7 +1,7 @@
 ---
 type: Framework
 title: Lifecycle Mapping
-description: The customer lifecycle stages a programme is built around, and how to map the journey into a copyable template, transition triggers, and a workshop that produces the spec your automations, orchestration, and measurement are built from.
+description: The customer lifecycle stages a programme is built around and how to map the journey into a copyable template, transition triggers and a workshop that produces the spec your automations, orchestration and measurement are built from.
 tags: [lifecycle, journey-mapping, stages, retention, crm, workshop, triggers]
 generated:
   by: human:jacquescorbytuech
@@ -14,7 +14,7 @@ sources:
 
 ## What it is
 
-Lifecycle mapping is the discipline of describing where a customer is in their relationship with you, so that messaging responds to their state rather than to your campaign calendar. It is the organising frame that the channels, the automations, and the measurement all hang off. Without it you have a stream of broadcasts; with it you have a system.
+Lifecycle mapping is the discipline of describing where a customer is in their relationship with you, so that messaging responds to their state rather than to your campaign calendar. It is the organising frame that the channels, the automations and the measurement all hang off. Without it you have a stream of broadcasts; with it you have a system.
 
 ## The stages
 
@@ -22,13 +22,13 @@ Most programmes resolve to five stages, whatever the local names.
 
 * **Acquisition.** The lead is captured and consent is taken. The job is a clean, well sourced opt in, not a name on a list. See [list building](/foundations/list-building.md) and [consent and preferences](/foundations/consent-and-preferences.md).
 * **Onboarding.** The first days, where the relationship is made or lost. Because the welcome window is the highest engagement you will ever have, the activation job belongs here. See [the welcome window](/principles/the-welcome-window.md).
-* **Engagement.** The long middle, where an active customer is nurtured, educated, and cross sold. Most volume lives here, as does most of the risk of fatigue.
-* **Retention.** Holding a customer who is at risk of lapsing, through value reminders, loyalty, and timely intervention. This is where the economics are decided. See [retention and LTV](/measurement/retention-and-ltv.md).
-* **Winback.** Reactivating the lapsed, and the honest decision to stop mailing the truly disengaged because continuing to mail them is a deliverability cost. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
+* **Engagement.** The long middle, where an active customer is nurtured, educated and cross sold. Most volume lives here, as does most of the risk of fatigue.
+* **Retention.** Holding a customer who is at risk of lapsing, through value reminders, loyalty and timely intervention. This is where the economics are decided. See [retention and LTV](/measurement/retention-and-ltv.md).
+* **Winback.** Reactivating the lapsed and the honest decision to stop mailing the truly disengaged because continuing to mail them is a deliverability cost. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
 ## Mapping the journey
 
-A journey map lays the stages against the moments that move a customer between them: the trigger events, the decisions, the points of friction, and the messages each stage should send. The output is not a diagram for its own sake. It is the specification the [automations](/foundations/automation-and-sequences.md) implement and the [orchestration](/foundations/orchestration-and-frequency.md) layer sequences across channels.
+A journey map lays the stages against the moments that move a customer between them: the trigger events, the decisions, the points of friction and the messages each stage should send. The output is not a diagram for its own sake. It is the specification the [automations](/foundations/automation-and-sequences.md) implement and the [orchestration](/foundations/orchestration-and-frequency.md) layer sequences across channels.
 
 ## The journey-map template
 
@@ -52,15 +52,15 @@ Each move between stages needs a defined entry trigger and an exit, so that a cu
 * **Retention to Winback.** Inactivity exceeds the lapsed window, say 90 days, with no response to retention messaging.
 * **Winback to suppressed.** A capped number of reactivation attempts, say three, with no engagement. Stopping is the action; continuing to mail the unresponsive is a deliverability cost. See [engagement is the new deliverability](/principles/engagement-is-deliverability.md).
 
-An **engagement score** is the composite those transitions test: a single measure of how recently and how often a customer engages, rolled up from a few signals (opens, clicks, sessions, purchases over a rolling window) into one number a rule can compare against a threshold. It is the same recency-and-frequency logic [segmentation models](/foundations/segmentation-models.md) use to score an audience, applied here to drive stage transitions rather than segments, and banded into [engagement tiers](/foundations/orchestration-and-frequency.md) to set frequency. Define it from the signals you can instrument and set the threshold from your own distribution, not from a borrowed number.
+An **engagement score** is the composite those transitions test: a single measure of how recently and how often a customer engages, rolled up from a few signals (opens, clicks, sessions, purchases over a rolling window) into one number a rule can compare against a threshold. It is the same recency-and-frequency logic [segmentation models](/foundations/segmentation-models.md) use to score an audience, applied here to drive stage transitions rather than segments; banding it into [engagement tiers](/foundations/orchestration-and-frequency.md) sets frequency. Define it from the signals you can instrument and set the threshold from your own distribution, not from a borrowed number.
 
-Risk indicators worth watching inside Engagement and Retention, before a hard transition fires: falling engagement rate across whichever channels you send (opens and clicks in email, taps in push, replies in SMS), lengthening gaps between key actions, a single high-value action followed by silence, and declining session frequency.
+Risk indicators worth watching inside Engagement and Retention, before a hard transition fires: falling engagement rate across whichever channels you send (opens and clicks in email, taps in push, replies in SMS), lengthening gaps between key actions, a single high-value action followed by silence and declining session frequency.
 
 ## Running a lifecycle-mapping workshop
 
 A map is produced by the people who own the customer, not drafted alone in a tool. Run a single working session of roughly two hours to get a first draft on the wall.
 
-* **Who is in the room.** The CRM or lifecycle owner facilitates. Bring product or growth (they know the activation moment), data or analytics (they know what is measurable today), customer support (they know the friction), and someone who can approve channels and budget. Keep it small enough to decide.
+* **Who is in the room.** The CRM or lifecycle owner facilitates. Bring product or growth (they know the activation moment), data or analytics (they know what is measurable today), customer support (they know the friction) and someone who can approve channels and budget. Keep it small enough to decide.
 * **The prompts, in order.** Name the five stages in your language. For each stage ask: what is the customer trying to do here? What event tells us they have entered this stage? What event tells us they have left it, up or down? What is the one thing we want them to do? How would we measure it? What is the risk that loses them here?
 * **The output.** A filled-in journey-map table, one row per stage and per distinct customer job, with every entry and exit trigger named and every goal tied to a metric the data owner has confirmed is trackable. Flag rows where the trigger is not yet instrumented; those are the build backlog before the automation can exist.
 
@@ -70,7 +70,7 @@ The map is the build spec. Each row becomes an [automation](/foundations/automat
 
 ## Why it comes first
 
-Channel and tooling choices follow the map, not the other way round. The stage decides the job, the job decides the message, and only then does the channel decide the delivery. A programme that picks the channel first ends up sending the same broadcast everywhere and calling it lifecycle. See [set a goal before you build](/principles/goal-before-build.md).
+Channel and tooling choices follow the map, not the other way round. The stage decides the job, the job decides the message and only then does the channel decide the delivery. A programme that picks the channel first ends up sending the same broadcast everywhere and calling it lifecycle. See [set a goal before you build](/principles/goal-before-build.md).
 
 ## Related
 

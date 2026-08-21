@@ -1,7 +1,7 @@
 ---
 type: Framework
 title: ESP Selection
-description: How to evaluate and choose an email service provider using the five factor framework, a weighted scoring worksheet, a trial agenda, and a migration plan.
+description: How to evaluate and choose an email service provider using the five factor framework, a weighted scoring worksheet, a trial agenda and a migration plan.
 tags: [esp, vendor-selection, framework, tooling, migration, pricing]
 generated:
   by: human:jacquescorbytuech
@@ -10,10 +10,10 @@ generated:
 
 ## The five factors, in priority order
 
-1. **Features.** Visual editor, automation (drip builder preferred), dynamic segmentation, list growth tools, personalisation, A/B testing, and exportable reporting. Know your must haves versus nice to haves before comparing.
-2. **Cost.** Can you afford it at your current list size, how does it scale (per contact or per send limits), and are must have features at your tier or pushed to a more expensive one?
-3. **Support.** Live chat, ticketing, documentation, and an active user community. Matters more for less technical teams.
-4. **Integrations.** Does it integrate natively with your CRM, ecommerce, and CMS? Native beats Zapier or Make. Only matters if you have specific requirements; do not over engineer this.
+1. **Features.** Visual editor, automation (drip builder preferred), dynamic segmentation, list growth tools, personalisation, A/B testing and exportable reporting. Know your must haves versus nice to haves before comparing.
+2. **Cost.** Can you afford it at your current list size, how does it scale (per contact or per send limits) and are must have features at your tier or pushed to a more expensive one?
+3. **Support.** Live chat, ticketing, documentation and an active user community. Matters more for less technical teams.
+4. **Integrations.** Does it integrate natively with your CRM, ecommerce and CMS? Native beats Zapier or Make. Only matters if you have specific requirements; do not over engineer this.
 5. **Expandability.** The least important factor. Since migrating between ESPs is easier than it used to be, do not pay for features you do not need yet on the promise you will need them later.
 
 ## Beginner guidance
@@ -25,14 +25,14 @@ With over 220 email platforms to pick from, most beginners overthink the choice.
 Score vendors on dimensions you can observe and test, ignoring the ones you cannot. The comparable dimensions are concrete and most of them are the features themselves:
 
 * **Channels.** Which channels the platform sends and orchestrates natively (email, SMS, push, in-app, WhatsApp, web, ad-audience sync), versus channels it only reaches through a bolt-on or a third party.
-* **Automation.** The triggers, branching, wait/delay logic, and exit conditions the journey builder actually supports, tested against a real flow your programme needs.
-* **Segmentation and the data layer.** What customer data it can store and act on, whether segments update dynamically on behaviour and attributes, and how it resolves identity across channels. See [customer data and identity](/foundations/customer-data-and-identity.md).
+* **Automation.** The triggers, branching, wait/delay logic and exit conditions the journey builder actually supports, tested against a real flow your programme needs.
+* **Segmentation and the data layer.** What customer data it can store and act on; whether segments update dynamically on behaviour and attributes; and how it resolves identity across channels. See [customer data and identity](/foundations/customer-data-and-identity.md).
 * **Native integrations.** Whether a first-party connector to your system of record (CRM, ecommerce, CMS) exists, versus a Zapier or Make bridge.
 * **Reporting.** What you can measure in-platform and export cleanly, versus what is locked to a dashboard.
 * **Pricing model.** Computable to a unit cost (see below).
-* **Developer experience.** The API, webhooks, and docs, judged from a real call you make during the trial.
+* **Developer experience.** The API, webhooks and docs, judged from a real call you make during the trial.
 
-AI and "predictive" features are not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed, and a trial on your small slice of data cannot show whether they work at your scale. Treat them as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+AI and "predictive" features are not comparable. Every vendor lists the same capabilities (send-time optimisation, predictive scoring, subject-line suggestions), the underlying models are undisclosed and a trial on your small slice of data cannot show whether they work at your scale. Treat them as a tiebreaker between otherwise-equal candidates, never as a deciding factor. The reasons undisclosed models resist comparison are covered in [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
 ## Split must have from nice to have
 
@@ -71,11 +71,11 @@ Rules that keep the worksheet honest:
 
 ## Compare pricing models, not headline prices
 
-The headline price is not comparable across vendors because the unit differs. The two common models are **per contact** (you pay for the size of your stored list regardless of sends) and **per send** (you pay for volume sent, often as a monthly send allowance). Neither is cheaper in the abstract; which wins depends entirely on your list size, send frequency, and how fast the list grows.
+The headline price is not comparable across vendors because the unit differs. The two common models are **per contact** (you pay for the size of your stored list regardless of sends) and **per send** (you pay for volume sent, often as a monthly send allowance). Neither is cheaper in the abstract; which wins depends entirely on your list size, send frequency and how fast the list grows.
 
 To compare, model the unit cost yourself rather than reading the page:
 
-1. State your numbers. Current contact count, average sends per contact per month, and a projected contact count for 12 to 18 months out based on your real growth rate.
+1. State your numbers. Current contact count, average sends per contact per month and a projected contact count for 12 to 18 months out based on your real growth rate.
 2. For each candidate, find the tier that holds your **must have features** at your current list size. Features pushed to a higher tier change the real price; record the tier that actually qualifies, not the cheapest one.
 3. Compute monthly cost at current size and at projected size from each vendor's own published rates. Do not invent numbers; use the vendor's stated pricing for the qualifying tier.
 4. Divide by the relevant unit (cost per 1,000 contacts for per contact, cost per 1,000 sends for per send) so the two models become one comparable figure.
@@ -88,7 +88,7 @@ The output is two cost figures per candidate, today and projected, that feed the
 Do not choose on a demo. A demo shows the happy path on the vendor's data. A trial shows how the tool behaves on yours. Load a representative slice of your own list and run a fixed agenda against each shortlisted candidate, scoring the same tasks for each so the worksheet rests on like for like evidence.
 
 * **Deliverability.** Send a real campaign to a seed set across the major mailbox providers and check inbox placement, not just delivered counts. Confirm the platform supports your own authenticated sending domain (SPF, DKIM, DMARC); see [authentication](/foundations/authentication.md) and [deliverability](/foundations/deliverability.md).
-* **An automation trigger.** Build one real flow end to end, fire the trigger, and confirm timing, branching, and exit conditions behave as configured. This is where automation builders differ most from their marketing.
+* **An automation trigger.** Build one real flow end to end, fire the trigger and confirm timing, branching and exit conditions behave as configured. This is where automation builders differ most from their marketing.
 * **Segmentation.** Build a dynamic segment on your own attributes and behaviour, then confirm it updates as data changes rather than being a one off static list. See [customer data and identity](/foundations/customer-data-and-identity.md).
 * **An API or webhook integration.** Push a contact in and pull an event out through the API or a webhook, the way your stack will actually use it. Read the docs while you do it; their quality is a proxy for the developer experience.
 * **Support response.** Open a real support ticket during the trial and measure the response time and quality on your actual plan tier, not the sales channel.
@@ -99,11 +99,11 @@ Record each result as a 1 to 5 score against the worksheet. A capability you cou
 
 Migration is less costly than it used to be, but it is not free: a botched cutover can dent deliverability for weeks. Plan it as a sequence, not a flip of a switch.
 
-1. **Export.** Pull contacts, consent and subscription status, custom fields, and as much engagement history as the old platform allows. Owned data should export cleanly; if it cannot, that is itself a finding about lock in.
-2. **Field mapping.** Map every field, segment definition, and consent flag from the old schema to the new one before import. Mismatched consent or status fields are how people get mailed who should not be.
+1. **Export.** Pull contacts, consent and subscription status, custom fields and as much engagement history as the old platform allows. Owned data should export cleanly; if it cannot, that is itself a finding about lock in.
+2. **Field mapping.** Map every field, segment definition and consent flag from the old schema to the new one before import. Mismatched consent or status fields are how people get mailed who should not be.
 3. **Automation rebuild.** Rebuild flows in the new platform and test each with the trial agenda above. Automations rarely port directly; treat this as a rebuild, not a copy.
 4. **Deliverability re-warm.** A new sending domain or IP has no reputation. Ramp volume gradually, starting with your most engaged segments, so the new sending identity earns reputation before you send to the long tail. See [deliverability](/foundations/deliverability.md).
-5. **Parallel run.** For a defined window, run critical flows on both platforms or route a slice of traffic to the new one, reconciling that sends, triggers, and reporting match before you trust it.
+5. **Parallel run.** For a defined window, run critical flows on both platforms or route a slice of traffic to the new one, reconciling that sends, triggers and reporting match before you trust it.
 6. **Cutover.** Switch remaining traffic over, keep the old platform readable (not sending) for a fallback window, then decommission once the new platform has proven stable across a full cycle.
 
 ## Related

@@ -40,13 +40,13 @@ These are peer reviewed papers on production systems, a useful floor on platform
 ## The agentic messaging and uplift literature
 
 * Aampe published randomised controlled trials of agent led messaging on a financial services app, cutting unsubscribes against a rule based baseline by sending more relevantly, with a longitudinal follow up showing autonomous agents sustaining lift for months after a human curated initialisation phase.
-* The uplift literature formalises the persuadable, sure thing, and do not disturber framing and the diminishing returns curve beyond the most responsive segment, including work on delayed feedback and the public Hillstrom dataset.
+* The uplift literature formalises the persuadable, sure thing and do not disturber framing. It also maps the diminishing returns curve beyond the most responsive segment, with work on delayed feedback and the public Hillstrom dataset.
 * Google and DeepMind showed that the long-term value of exploration is hard to see in standard A/B tests and needs bespoke experiment designs, which leaves a per-campaign open rate unlikely to surface it.
 * The systems literature notes that these algorithms assume clean, correctly logged data, which is a substantial engineering task to produce reliably, the practical side of the data prerequisite.
 
 ## On device editor models
 
-The receiving end runs its own published models: Apple Intelligence on a 3 billion parameter on device foundation model with task specific LoRA adapters, and Google's Gemini Nano inside AICore, with notification rewriting and prioritisation patents predating the iOS 18 controversy by years.
+The receiving end runs its own published models: Apple Intelligence on a 3 billion parameter on device foundation model with task specific LoRA adapters; Google's Gemini Nano inside AICore. Notification rewriting and prioritisation patents predate the iOS 18 controversy by years.
 
 ## Related
 

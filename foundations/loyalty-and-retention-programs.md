@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Loyalty and Retention Programs
-description: How to structure a loyalty programme, points earn and redemption ratios, tier ladders and progress nudges, two-sided referrals, and the enrolment, lifecycle comms, and holdout-proven metrics that justify spending on keeping customers rather than only acquiring them.
+description: How to structure a loyalty programme; points earn and redemption ratios; tier ladders and progress nudges; two-sided referrals; and the enrolment, lifecycle comms and holdout-proven metrics that justify spending on keeping customers rather than only acquiring them.
 tags: [loyalty, retention, referral, repeat-purchase, ltv, programs, points, tiers, enrolment, holdout]
 generated:
   by: human:jacquescorbytuech
@@ -34,7 +34,7 @@ A loyalty programme gives a customer a structured reason to come back and a reco
 
 ## Common mechanics
 
-* **Points.** Customers earn a balance on spend or actions and redeem it for value. Simple, legible, and effective when the earn-to-reward ratio is generous enough to feel attainable.
+* **Points.** Customers earn a balance on spend or actions and redeem it for value. Simple, legible and effective when the earn-to-reward ratio is generous enough to feel attainable.
 * **Tiers.** Status levels unlock better perks as a customer spends more, giving the upper tiers something to protect and the lower tiers something to climb toward. Tiering pairs naturally with [value-based segmentation](/foundations/segmentation-models.md).
 * **Referral.** Existing customers are rewarded for bringing in new ones. Referred customers are not just cheaper to acquire; the evidence is that they retain better and are worth more over their lifetime than customers from other channels, which is why a referral mechanic compounds rather than just topping up the funnel.
 
@@ -70,23 +70,23 @@ Escalate the benefit, not just the discount, so that higher tiers offer status a
 
 ## How to run referrals
 
-A referral mechanic works when both sides are rewarded, the attribution is unambiguous, and abuse is capped before launch.
+A referral mechanic works when both sides are rewarded, the attribution is unambiguous and abuse is capped before launch.
 
 1. **Make it two-sided.** Reward the referrer and the new customer. A one-sided reward gives the advocate nothing to act on or makes the pitch feel mercenary; a two-sided reward gives the advocate a reason to share and the friend a reason to accept.
 2. **Track it cleanly.** Issue each member a unique referral code or link and credit the reward on a qualifying first purchase by the referred customer, not on sign-up alone. Tying the reward to a real purchase aligns the payout with value created.
-3. **Cap and screen for fraud.** Set a per-member cap on referral rewards in a period, require the referred customer to be genuinely new (not an existing account or the referrer's second address), and gate the payout behind the qualifying purchase clearing any return window. Self-referral and circular referral are the common abuse patterns; the qualifying-purchase gate and the cap defuse both.
+3. **Cap and screen for fraud.** Set a per-member cap on referral rewards in a period, require the referred customer to be genuinely new (not an existing account or the referrer's second address) and gate the payout behind the qualifying purchase clearing any return window. Self-referral and circular referral are the common abuse patterns; the qualifying-purchase gate and the cap defuse both.
 
 Reward referrals with programme value (points, credit, perks) on the same logic as the rest of the programme, which reinforces membership rather than running a separate discount stream.
 
 ## Enrolment and lifecycle comms
 
-A loyalty programme is delivered through the lifecycle, not separately from it. Enrolment belongs in [onboarding](/foundations/lifecycle-mapping.md), points and tier nudges belong in engagement, and an at-risk member is a retention trigger. Coordinate its messages under the one [contact strategy](/foundations/orchestration-and-frequency.md) so loyalty mail does not become an uncapped extra stream outside the marketing calendar.
+A loyalty programme is delivered through the lifecycle, not separately from it. Enrolment belongs in [onboarding](/foundations/lifecycle-mapping.md); points and tier nudges belong in engagement; an at-risk member is a retention trigger. Coordinate its messages under the one [contact strategy](/foundations/orchestration-and-frequency.md) so loyalty mail does not become an uncapped extra stream outside the marketing calendar.
 
 A workable comms backbone:
 
 * **Enrol early.** Invite at or just after the first purchase, when intent is highest and the account already exists. Auto-enrol where the consent and terms allow it, confirming the benefit in the welcome flow rather than burying it.
 * **Points and tier-progress emails.** Send a periodic balance statement and a progress-to-next-tier update. These are the programme's engagement engine: they give a member a reason to return that is about their own status, not a generic offer.
-* **Milestone nudges.** Trigger a message when a member is close to a redemption threshold or a tier upgrade ("you are 180 units from Gold"), when points are about to expire, and on the member's anniversary. Proximity and scarcity nudges near a threshold are where most incremental behaviour sits.
+* **Milestone nudges.** Trigger a message when a member is close to a redemption threshold or a tier upgrade ("you are 180 units from Gold"), when points are about to expire and on the member's anniversary. Proximity and scarcity nudges near a threshold are where most incremental behaviour sits.
 
 ## Which programme metrics to track
 

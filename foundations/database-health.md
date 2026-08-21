@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Database Health and Sunsetting
-description: The marketing database as a decaying asset, the contact lifecycle from active through dormant to sunset, how to track decay and run hygiene, re-engagement, and sunsetting as one ongoing practice, and why net list growth is acquisition minus decay.
+description: The marketing database as a decaying asset; the contact lifecycle from active through dormant to sunset; how to track decay and run hygiene, re-engagement and sunsetting as one ongoing practice; and why net list growth is acquisition minus decay.
 tags: [database-health, list-decay, sunset, hygiene, re-engagement, deliverability, list-growth]
 generated:
   by: human:jacquescorbytuech
@@ -17,7 +17,7 @@ sources:
 
 ## What it is
 
-A marketing database is not a stock that only grows; it is an asset that decays continuously and has to be maintained. People change addresses, lose interest, switch the channel they read, and abandon accounts that later turn into spam traps. Database health is the ongoing practice of keeping the contactable list both deliverable and valuable: managing that decay deliberately rather than letting dormant contacts accumulate. It is the place several scattered ideas in the bundle, hygiene, re-engagement, suppression of the unresponsive, and the sunset policy, come together as one lifecycle for the contact, not the campaign.
+A marketing database is not a stock that only grows; it is an asset that decays continuously and has to be maintained. People change addresses, lose interest, switch the channel they read and abandon accounts that later turn into spam traps. Database health is the ongoing practice of keeping the contactable list both deliverable and valuable: managing that decay deliberately rather than letting dormant contacts accumulate. It is the place several scattered ideas in the bundle, hygiene, re-engagement, suppression of the unresponsive and the sunset policy, come together as one lifecycle for the contact, not the campaign.
 
 The never-engaging tail does not sit there harmlessly, which is what turns this from housekeeping into reach. Under sender-level reputation it actively drags inbox placement for the engaged contacts who actually convert. The reachable list is therefore the engaged subset, which makes sunsetting a net gain in reachability rather than a loss of reach. The lifecycle and running practice that follow are how you act on that, the operational consequence of it, not a reluctant trim of a healthy asset.
 
@@ -48,7 +48,7 @@ Sunsetting feels like destroying the asset you spent to build, which is why so m
 
 ## Running it
 
-* **Track the engagement-recency distribution, not just the total.** Watch how the list splits across active, declining, and dormant over time. A list whose total is flat but whose active share is falling is decaying under a healthy-looking number.
+* **Track the engagement-recency distribution, not just the total.** Watch how the list splits across active, declining and dormant over time. A list whose total is flat but whose active share is falling is decaying under a healthy-looking number.
 * **Run hygiene to an SLA.** Suppress hard bounces and complaints immediately and permanently; the written thresholds live in [segmentation and data](/foundations/segmentation-and-data.md).
 * **Re-engage once, then sunset.** A single, well-timed win-back attempt, then move the unresponsive to the sunset segment. Endless re-engagement to the dormant is the failure mode it is meant to prevent.
 * **Suppress, do not delete, by default.** Keep sunsetted contacts on a suppression record so they are not re-imported and re-mailed later, which is how a sunset undoes itself.

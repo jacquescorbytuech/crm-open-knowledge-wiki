@@ -14,7 +14,7 @@ A new customer is at peak engagement immediately after opting in. Maximise this 
 
 ## In practice
 
-The first message must deliver on whatever the opt-in promised, whether that first contact is an email, an SMS, a push, or an in-app prompt. Failing here erodes trust before the relationship has started, which makes it the most common own goal in onboarding. The mechanics differ by channel: an email welcome runs as a multi-step sequence where SMS is a single high-value send. The window and its decay are the same either way.
+The first message must deliver on whatever the opt-in promised, whether that first contact is an email, an SMS, a push or an in-app prompt. Failing here erodes trust before the relationship has started, which makes it the most common own goal in onboarding. The mechanics differ by channel: an email welcome runs as a multi-step sequence where SMS is a single high-value send. The window and its decay are the same either way.
 
 > [!warning] Do not lead with a discount
 > Opening the welcome with a discount trains customers to game the system and attracts the wrong audience.

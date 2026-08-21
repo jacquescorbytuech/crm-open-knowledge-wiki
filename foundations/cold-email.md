@@ -1,7 +1,7 @@
 ---
 type: Reference
 title: Cold email
-description: Why cold email sits outside the consent-first discipline the rest of this bundle describes, why it is spam by that standard, the narrow legal window where it is nonetheless permitted (US CAN-SPAM and UK B2B to corporate or role-based addresses under PECR), and why lawful is not the same as effective.
+description: Why cold email sits outside the consent-first discipline the rest of this bundle describes; why it is spam by that standard; the narrow legal window where it is nonetheless permitted (US CAN-SPAM and UK B2B to corporate or role-based addresses under PECR); and why lawful is not the same as effective.
 tags: [cold-email, spam, consent, can-spam, pecr, deliverability, b2b]
 generated:
   by: human:jacquescorbytuech
@@ -20,21 +20,21 @@ sources:
 
 ## The exception to consent
 
-Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party, and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. Measured against the standard the rest of this bundle holds, cold email is spam.
+Every other page here assumes consent. The list is built from people who asked to hear from you, the data is first-party and the whole programme is downstream of someone opting in. Cold email is the inverse: unsolicited messaging to people who never gave you their address for this purpose and have no relationship with you. Measured against the standard the rest of this bundle holds, cold email is spam.
 
 ## Why it is spam by this bundle's own standard
 
-[Respect the recipient](/principles/respect-the-recipient.md) starts from being honest about what someone signed up for. With cold email there is nothing they signed up for; the relationship begins with a message they did not ask for, optimised for your goal rather than any expectation of theirs. The legitimate way to reach a stranger is to earn the opt in, which is the entire subject of [list building](/foundations/list-building.md): a value proposition, a clear ask, and a consent record you can evidence. Cold email skips that and treats the absence of a relationship as a thing to be exploited rather than built. That it can be done at volume does not change what it is.
+[Respect the recipient](/principles/respect-the-recipient.md) starts from being honest about what someone signed up for. With cold email there is nothing they signed up for; the relationship begins with a message they did not ask for, optimised for your goal rather than any expectation of theirs. The legitimate way to reach a stranger is to earn the opt in, which is the entire subject of [list building](/foundations/list-building.md): a value proposition, a clear ask and a consent record you can evidence. Cold email skips that and treats the absence of a relationship as a thing to be exploited rather than built. That it can be done at volume does not change what it is.
 
 ## The legal window
 
 Spam in the moral sense is not the same as unlawful spam: each regime draws the legal line in a different place. The mechanics are in [legislation and compliance](/references/legislation-and-compliance.md); what matters here is where the window is open.
 
-* **United States.** CAN-SPAM is an opt-out regime, not an opt-in one. No prior consent requirement applies to commercial email, which makes cold email to US recipients lawful provided the message uses accurate headers and a truthful subject, identifies itself as an advertisement, includes a valid physical postal address, and offers an opt out honoured within ten business days. This is the widest window of any major regime.
-* **United Kingdom, business addresses.** PECR regulation 22's consent requirement applies to *individual* subscribers. Marketing to *corporate* subscribers (companies, LLPs, public bodies) does not require consent, which gives B2B cold email a lawful path the consumer channel lacks. It is cleanest at role-based addresses such as `info@`, `sales@`, or `enquiries@`, which are not personal data and sit unambiguously on the corporate side of the line. Because a message to a named individual at a company (`jane.smith@`) is still that person's personal data under UK GDPR, the right to object and a lawful basis apply even there.
+* **United States.** CAN-SPAM is an opt-out regime, not an opt-in one. No prior consent requirement applies to commercial email, which makes cold email to US recipients lawful provided the message uses accurate headers and a truthful subject, identifies itself as an advertisement, includes a valid physical postal address and offers an opt out honoured within ten business days. This is the widest window of any major regime.
+* **United Kingdom, business addresses.** PECR regulation 22's consent requirement applies to *individual* subscribers. Marketing to *corporate* subscribers (companies, LLPs, public bodies) does not require consent, which gives B2B cold email a lawful path the consumer channel lacks. It is cleanest at role-based addresses such as `info@`, `sales@` or `enquiries@`, which are not personal data and sit unambiguously on the corporate side of the line. Because a message to a named individual at a company (`jane.smith@`) is still that person's personal data under UK GDPR, the right to object and a lawful basis apply even there.
 
 > [!warning] The window does not cover consumers in opt-in regimes
-> Cold email to individuals under UK GDPR and PECR, to consumers in the EU, or under CASL in Canada is unlawful without consent or a recognised exception. The two openings above are narrow: US recipients, and UK business or role-based addresses. Obligations follow the recipient's location rather than yours, which leaves one campaign lawful for part of a list and a breach for the rest.
+> Cold email to individuals under UK GDPR and PECR, to consumers in the EU or under CASL in Canada is unlawful without consent or a recognised exception. The two openings above are narrow: US recipients and UK business or role-based addresses. Obligations follow the recipient's location rather than yours, which leaves one campaign lawful for part of a list and a breach for the rest.
 
 ## Lawful is not the same as effective
 

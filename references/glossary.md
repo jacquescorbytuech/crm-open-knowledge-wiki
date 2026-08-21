@@ -1,7 +1,7 @@
 ---
 type: Glossary
 title: Glossary
-description: The working vocabulary of email, lifecycle, and CRM marketing used across this bundle, from customer data and segmentation through channels, design, and measurement.
+description: The working vocabulary of email, lifecycle and CRM marketing used across this bundle, from customer data and segmentation through channels, design and measurement.
 tags: [glossary, terminology, reference]
 generated:
   by: human:jacquescorbytuech
@@ -28,7 +28,7 @@ sources:
 | BIMI | Brand Indicators for Message Identification. Puts a verified logo into supporting clients; requires aligned DMARC. |
 | MPP | Apple Mail Privacy Protection. Prefetches images through Apple proxies, inflating and corrupting the open metric. |
 | Deliverability | Whether mail reaches the inbox rather than spam. One layer below the category aware retrieval gate. |
-| Category-aware retrieval gate | The quality-and-engagement layer above classical spam filtering that decides whether mail is surfaced in intelligent inbox views, search, and assistant answers. A sender can pass authentication and still fail it. |
+| Category-aware retrieval gate | The quality-and-engagement layer above classical spam filtering that decides whether mail is surfaced in intelligent inbox views, search and assistant answers. A sender can pass authentication and still fail it. |
 | One-click unsubscribe | A `List-Unsubscribe-Post` header (RFC 8058) that lets a recipient opt out in a single tap from the inbox UI. Required of bulk senders alongside the in-body link. |
 | Bounce | A failed delivery. Hard bounces are permanent and must be suppressed immediately; soft bounces are transient. |
 | Sender reputation | The provider's running assessment of a sending domain and IP, driven heavily by engagement. |
@@ -47,8 +47,8 @@ sources:
 | Double opt in | Subscriber must confirm via a link before being added. Better for quality and consent records. |
 | Soft opt in | A narrow lawful basis (PECR) for marketing existing customers about similar products without prior express consent, provided an opt-out was offered at collection and in every message. |
 | Sunset | Moving persistently disengaged contacts out of regular sending, after a re-engagement attempt fails, to protect deliverability for the active cohort. |
-| List decay | The continuous loss of a list's value as contacts change addresses, disengage, or go dormant; net list growth is acquisition minus decay. |
-| Database health | The ongoing practice of keeping the contactable list deliverable and valuable through hygiene, re-engagement, and sunsetting. |
+| List decay | The continuous loss of a list's value as contacts change addresses, disengage or go dormant; net list growth is acquisition minus decay. |
+| Database health | The ongoing practice of keeping the contactable list deliverable and valuable through hygiene, re-engagement and sunsetting. |
 | Lead magnet | An incentive offered in exchange for contact details. |
 | Segment | A subset of the list, dynamic (auto updating) or static (fixed at creation). |
 | Merge tag | A placeholder replaced with subscriber specific data at send time. |
@@ -62,7 +62,7 @@ sources:
 | Term | Meaning |
 | --- | --- |
 | CRM | Customer relationship management. The system of record for known customers and the interactions with them. |
-| CDP | Customer data platform. Ingests data from every source, resolves identity, and maintains an activation-ready unified profile. |
+| CDP | Customer data platform. Ingests data from every source, resolves identity and maintains an activation-ready unified profile. |
 | Data warehouse | Central store built for analysis and reporting at scale, not real-time activation. |
 | Single customer view | One unified profile per person, assembled from every source. |
 | Identity resolution | Stitching identifiers across devices and channels into one customer profile. |
@@ -71,16 +71,16 @@ sources:
 
 | Term | Meaning |
 | --- | --- |
-| RFM | Recency, Frequency, Monetary. A behavioural segmentation model scoring customers on how recently, how often, and how much they buy. |
+| RFM | Recency, Frequency, Monetary. A behavioural segmentation model scoring customers on how recently, how often and how much they buy. |
 | CLV / LTV | Customer lifetime value. The total past and predicted value of a customer over the relationship. |
 | Propensity model | A model predicting the probability a customer takes an action, such as buying or churning. |
 | Churn | A customer lapsing or ending the relationship; churn rate is the share who do so in a period. |
 | Retention rate | The share of customers retained over a period; its inverse is churn. |
-| Lifecycle stage | Where a customer sits in the journey: acquisition, onboarding, engagement, retention, or winback. |
-| Winback | The lifecycle stage, and its messaging, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
+| Lifecycle stage | Where a customer sits in the journey: acquisition, onboarding, engagement, retention or winback. |
+| Winback | The lifecycle stage, with its messaging, that tries to reactivate a lapsed customer before suppressing the unresponsive. |
 | Engagement score | A composite measure of how recently and often a contact engages (opens, clicks, sessions, purchases), used to trigger lifecycle stage transitions. |
-| Engagement tier | An engagement score banded into a few groups, such as active, moderate, and dormant, used to set frequency caps and channel eligibility. |
-| Loyalty program | A structured points, tier, or referral scheme that rewards repeat business. |
+| Engagement tier | An engagement score banded into a few groups, such as active, moderate and dormant, used to set frequency caps and channel eligibility. |
+| Loyalty program | A structured points, tier or referral scheme that rewards repeat business. |
 | Referral | Acquisition through an existing customer recommending the brand. |
 
 ## Channels and design
@@ -91,7 +91,7 @@ sources:
 | Marketing message | A message sent to drive a commercial outcome (campaign, promotion, winback), requiring marketing consent and an unsubscribe path. |
 | Triggered (behavioural) message | A send fired by a customer's behaviour or state, rather than a schedule. |
 | Broadcast (batch) | A send to a segment on a schedule. |
-| Orchestration | Deciding, per customer and moment, which message goes on which channel, and whether to send. |
+| Orchestration | Deciding, per customer and moment, which message goes on which channel and whether to send. |
 | Frequency cap | A hard ceiling on messages per channel and in total over a rolling window. |
 | Preheader (preview text) | The snippet shown after the subject line in the inbox; the third part of the envelope. |
 | Responsive design | Layout that adapts to the screen it renders on; most email opens are on mobile. |
@@ -99,11 +99,11 @@ sources:
 | Alt text | Text shown in place of an image that is blocked or fails to load. |
 | A2P 10DLC | The US registration standard for application-to-person SMS over long codes. |
 | Sender ID | The label shown as the source of an SMS, either a phone number or an alphanumeric brand name. Registers such as Australia's bind the brand label to its owner; an unregistered one is relabelled `Unverified`. |
-| RCS | Rich Communication Services. The richer successor to SMS, with branding, cards, and read receipts. |
+| RCS | Rich Communication Services. The richer successor to SMS, with branding, cards and read receipts. |
 | APNs / FCM | Apple Push Notification service and Firebase Cloud Messaging, the two push delivery pipes. |
 | Device token | The opaque, per-install identifier a push notification is addressed to. Because the OS can rotate or invalidate it, dead tokens must be pruned like hard bounces. |
 | SMPP | Short Message Peer-to-Peer. The binary protocol for submitting SMS to an aggregator or carrier, beneath the REST APIs. |
-| DLR | Delivery receipt. The carrier's advisory, and not always reliable, confirmation that an SMS reached the handset. |
+| DLR | Delivery receipt. The carrier's confirmation that an SMS reached the handset; advisory, not always reliable. |
 | Aggregator (CPaaS) | The intermediary holding carrier interconnects that routes your SMS onto mobile networks; you integrate with it, not the carriers. |
 
 ## Metrics
@@ -122,7 +122,7 @@ sources:
 | Term | Meaning |
 | --- | --- |
 | Decision support | Machine learning that assists a journey the marketer designed. |
-| Decisioning | Machine learning that decides per user what to send, when, and whether to send at all. |
+| Decisioning | Machine learning that decides per user what to send, when and whether to send at all. |
 | Holdout | A randomised group deliberately left unmessaged, to measure incremental effect. |
 | Uplift | The incremental effect of sending, against an identical user left alone. |
 | Persuadable | A user a message wins over who would not have acted otherwise. |

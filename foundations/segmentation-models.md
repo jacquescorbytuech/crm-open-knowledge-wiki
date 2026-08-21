@@ -1,7 +1,7 @@
 ---
 type: Framework
 title: Segmentation Models
-description: The models a programme uses to divide an audience, RFM, value and lifetime-value tiers, behavioural, demographic and firmographic, lifecycle-stage, and propensity, with how to compute RFM and a simple CLV, how to combine them with lifecycle stage, and how to choose between them for a given job.
+description: The models a programme uses to divide an audience, RFM, value and lifetime-value tiers, behavioural, demographic and firmographic, lifecycle-stage and propensity, with how to compute RFM and a simple CLV, how to combine them with lifecycle stage and how to choose between them for a given job.
 tags: [segmentation, rfm, clv, propensity, behavioural, lifecycle, framework, scoring]
 generated:
   by: human:jacquescorbytuech
@@ -29,13 +29,13 @@ sources:
 
 ## Matching a model to the job
 
-Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene, and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
+Where [segmentation and data](/foundations/segmentation-and-data.md) covers the operational how, dynamic versus static segments, hygiene and the cost of slicing too thin, this covers the what: the models that decide how an audience is divided in the first place. The model you pick should follow the job. A reactivation campaign wants a recency model; a VIP programme wants a value model; a cross-sell wants a propensity model.
 
 Match the model to the job and prefer the simplest one that answers it. Combining models multiplies segments fast, leaving most of the slices untestable below volume. That is how programmes end up over-segmented, reaching for proprietary models when RFM on transaction data would do. The catalogue is there to choose from, not to stack.
 
 ## RFM
 
-RFM scores each customer on three axes: Recency (how recently they bought), Frequency (how often), and Monetary value (how much). It originated in mid-twentieth-century direct and catalogue marketing and remains the most durable behavioural model because it needs only transaction data and predicts future behaviour well. Customers who score high on all three are your core; high-monetary but low-recency are your at-risk best customers, the most valuable reactivation target you have.
+RFM scores each customer on three axes: Recency (how recently they bought), Frequency (how often) and Monetary value (how much). It originated in mid-twentieth-century direct and catalogue marketing and remains the most durable behavioural model because it needs only transaction data and predicts future behaviour well. Customers who score high on all three are your core; high-monetary but low-recency are your at-risk best customers, the most valuable reactivation target you have.
 
 ## How to compute RFM
 
@@ -78,17 +78,17 @@ A forward estimate uses contribution margin times expected lifetime:
 CLV (simple) = average order value x gross margin % x purchase frequency per year x expected years retained
 ```
 
-Use margin, not revenue, so the tiers reflect what a customer is actually worth to the business. Expected years retained can be seeded from your observed retention rate before you have anything better. Treat this as a tiering input, not a precise forecast. For the proper retention-curve and probabilistic methods, and the pitfalls of each, see [retention and LTV](/measurement/retention-and-ltv.md).
+Use margin, not revenue, so the tiers reflect what a customer is actually worth to the business. Expected years retained can be seeded from your observed retention rate before you have anything better. Treat this as a tiering input, not a precise forecast. For the proper retention-curve and probabilistic methods, with the pitfalls of each, see [retention and LTV](/measurement/retention-and-ltv.md).
 
-## Behavioural, demographic, and firmographic
+## Behavioural, demographic and firmographic
 
 * **Behavioural** segmentation divides on what customers do: purchases, product usage, browse patterns, engagement. It is usually the most actionable for lifecycle marketing because behaviour predicts behaviour.
 * **Demographic** segmentation divides on who customers are: age, location, income, gender. Easy to capture, but a weaker predictor of action than behaviour.
-* **Firmographic** segmentation is the B2B equivalent of demographic, dividing organisations by industry, size, and revenue. In a B2B programme it is also the fit half of a lead score; see [lead management](/foundations/lead-management.md).
+* **Firmographic** segmentation is the B2B equivalent of demographic, dividing organisations by industry, size and revenue. In a B2B programme it is also the fit half of a lead score; see [lead management](/foundations/lead-management.md).
 
 ## Lifecycle-stage
 
-Lifecycle-stage segmentation divides the audience by where each customer sits in the journey, the acquisition, onboarding, engagement, retention, and winback stages from [lifecycle mapping](/foundations/lifecycle-mapping.md). It is less a competing model than the organising frame the others operate inside: you might run an RFM model within the engaged stage and a recency model within the lapsing one.
+Lifecycle-stage segmentation divides the audience by where each customer sits in the journey, the acquisition, onboarding, engagement, retention and winback stages from [lifecycle mapping](/foundations/lifecycle-mapping.md). It is less a competing model than the organising frame the others operate inside: you might run an RFM model within the engaged stage and a recency model within the lapsing one.
 
 ## Combining RFM with lifecycle stage
 
@@ -98,7 +98,7 @@ A workable pattern: let stage decide the message (onboarding sequence, retention
 
 ## Propensity
 
-Propensity models predict the probability a customer takes a specific action, buying a category, upgrading, or churning, and segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, which like the rest of it is only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
+Propensity models predict the probability a customer takes a specific action (buying a category, upgrading or churning) then segment on the score. A churn-propensity model surfaces who to intervene with before they lapse; a purchase-propensity model surfaces who to push. These are the entry point to predictive segmentation, which like the rest of it is only as good as the data underneath. See [customer data and identity](/foundations/customer-data-and-identity.md) and [decisioning and personalisation](/foundations/decisioning-and-personalisation.md).
 
 A propensity score answers who is likely to act, which is not the same as who your sending changes. The first keeps messaging people who would have acted anyway; the second is the uplift question, which needs a randomised holdout to answer honestly. Treat propensity as the accessible first step and reach for the rigorous version when you have the volume. See [uplift and incrementality](/measurement/uplift-and-incrementality.md).
 

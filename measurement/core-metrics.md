@@ -1,7 +1,7 @@
 ---
 type: Concept
 title: Core Metrics
-description: The metric tree a lifecycle programme is judged on, from engagement through conversion to retention and revenue, and how to choose a North Star, set guardrails, and tell the metrics that decide actions from the ones that only decorate a dashboard.
+description: The metric tree a lifecycle programme is judged on, from engagement through conversion to retention and revenue; how to choose a North Star, set guardrails and tell the metrics that decide actions from the ones that only decorate a dashboard.
 tags: [metrics, metric-tree, north-star, guardrails, kpis, leading-indicators]
 generated:
   by: human:jacquescorbytuech
@@ -16,10 +16,10 @@ sources:
 
 A lifecycle programme is measured in layers, each one closer to money than the last. Read them as a tree, not a list, because a win at one level only counts if it survives to the next.
 
-* **Engagement.** Open, click, click to open, reply, and their channel equivalents. The earliest and noisiest signals, and the most corrupted by intermediation. Useful for diagnosis, dangerous as goals. See [metrics are directional](/principles/metrics-are-directional.md).
+* **Engagement.** Open, click, click to open, reply and their channel equivalents. The earliest and noisiest signals, the ones most corrupted by intermediation. Useful for diagnosis, dangerous as goals. See [metrics are directional](/principles/metrics-are-directional.md).
 * **Conversion.** The action the message existed to drive: a purchase, an upgrade, an activation, a booking. The first level that means something on its own.
-* **Retention.** Whether the customer stays, repeats, and remains reachable over time. Where the economics of the programme are actually decided. See [retention and LTV](/measurement/retention-and-ltv.md).
-* **Revenue and value.** Incremental revenue, margin, and lifetime value. The level the business cares about, and the one the others should ladder up to.
+* **Retention.** Whether the customer stays, repeats and remains reachable over time. Where the economics of the programme are actually decided. See [retention and LTV](/measurement/retention-and-ltv.md).
+* **Revenue and value.** Incremental revenue, margin and lifetime value. The level the business cares about and the one the others should ladder up to.
 
 ## Decision metrics versus vanity metrics
 
@@ -42,7 +42,7 @@ Pick one North Star metric that best proxies the value the programme creates, lo
 A candidate metric earns the role only if it passes each of these tests. Treat them as a decision rule, not a wish list.
 
 * **In the causal path to value.** Moving it should move the business, not just a dashboard. Incremental revenue per recipient and repeat purchase rate sit on the path; open rate does not, because a programme can lift opens without lifting a thing the business sells.
-* **Movable by the programme.** The team must be able to shift it with the levers it actually controls: content, targeting, timing, frequency. Total company revenue fails here, because pricing, product, and acquisition swamp anything CRM does. A North Star you cannot move is a report, not a goal.
+* **Movable by the programme.** The team must be able to shift it with the levers it actually controls: content, targeting, timing, frequency. Total company revenue fails here, because pricing, product and acquisition swamp anything CRM does. A North Star you cannot move is a report, not a goal.
 * **Not a vanity proxy.** It must fail the demotion test above: a real change in it should force a real change in action. A metric that can be inflated without creating value, like opens after MPP, disqualifies itself.
 
 | Candidate | In causal path | Movable by programme | Not a vanity proxy | Verdict |
@@ -57,7 +57,7 @@ Prefer the version of a good metric that is measured incrementally, against a ho
 
 ## How to set guardrails
 
-Any single optimised number can be hit by gaming the things it ignores. Guardrails are counter-metrics you cap so the North Star cannot be won by harm. Pick a North Star, then ask how a lazy optimiser would cheat it, and put a ceiling on each cheat.
+Any single optimised number can be hit by gaming the things it ignores. Guardrails are counter-metrics you cap so the North Star cannot be won by harm. Pick a North Star, then ask how a lazy optimiser would cheat it and put a ceiling on each cheat.
 
 * **Unsubscribe rate.** Caps the urge to lift short-term conversion by mailing harder. If unsubscribes breach the cap, the win is borrowed against future reach.
 * **Spam complaint rate.** Caps annoyance that does not show up as an unsubscribe. Complaints damage sender reputation directly. See [deliverability](/foundations/deliverability.md).

@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: List Building
-description: How to build forms, choose single versus double opt in, design a confirmation flow, deliver a lead magnet through automation, and tag acquisition source so it stays attributable.
+description: How to build forms, choose single versus double opt in, design a confirmation flow, deliver a lead magnet through automation and tag acquisition source so it stays attributable.
 tags: [list-building, forms, lead-magnets, opt-in, double-opt-in, utm, attribution]
 generated:
   by: human:jacquescorbytuech
@@ -12,7 +12,7 @@ sources:
     title: "Baymard Institute, fewer form fields reduce abandonment"
   - id: mailjet-double-opt-in-improves-list-quality
     resource: https://www.mailjet.com/blog/deliverability/double-opt-in-should-i-or-shouldnt-i/
-    title: "Mailjet, double opt-in improves list quality, deliverability, and gives a consent record"
+    title: "Mailjet, double opt-in improves list quality and deliverability, giving a consent record"
   - id: the-good-discount-led-acquisition-attracts-bargain
     resource: https://thegood.com/insights/discounting-for-ecommerce/
     title: "The Good, discount-led acquisition attracts bargain hunters who churn"
@@ -20,13 +20,13 @@ sources:
 
 ## Forms
 
-Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form has a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields, and a brief human privacy assurance. Always test on mobile.
+Build forms natively in your ESP where possible, which removes the data plumbing failure point. A good form has a clear value proposition headline (what the subscriber gets, specifically), the right expectations (frequency and content type), a clear action oriented CTA, clear field labels rather than placeholder text alone, minimal fields and a brief human privacy assurance. Always test on mobile.
 
 Because fewer fields convert better, collect the minimum that makes the subscriber usable and ask for the rest later through progressive profiling. To do that concretely:
 
 1. Order fields by how much each one costs the subscriber to give and how much you need it now. Email first, then at most one field you will actually use to personalise the first send.
 2. At the start, capture email only. A name field is optional, not default; add it only if your first email genuinely uses it.
-3. Defer everything else. Collect preferences, segment data, and qualifying detail later through a preference centre, follow up emails, or behaviour, not the signup form. See [consent and preferences](/foundations/consent-and-preferences.md) and [segmentation and data](/foundations/segmentation-and-data.md).
+3. Defer everything else. Collect preferences, segment data and qualifying detail later through a preference centre, follow up emails or behaviour, not the signup form. See [consent and preferences](/foundations/consent-and-preferences.md) and [segmentation and data](/foundations/segmentation-and-data.md).
 
 Be deliberate about mode. A handful of fields is collecting subscribers; many fields is qualifying leads, which is worth doing only when sales need the qualification.
 
@@ -40,11 +40,11 @@ Rank placements by the intent of the moment they fire, not by how prominent they
 4. Permission priming overlays and sticky banners, which set up a later ask.
 5. Footer or sidebar forms, the fallback for visitors who go looking.
 
-Off site, use link in bio tools, Meta lead generation ads, video callouts, and QR codes to tracked landing pages. Run several placements at once rather than relying on one form in one location, tagging each so you can tell which earns subscribers (see [Source tracking](#source-tracking)).
+Off site, use link in bio tools, Meta lead generation ads, video callouts and QR codes to tracked landing pages. Run several placements at once rather than relying on one form in one location, tagging each so you can tell which earns subscribers (see [Source tracking](#source-tracking)).
 
 ## Lead magnets
 
-A lead magnet is an incentive offered for contact details. Good ones are relevant (they attract your actual target profile), useful (they solve a real problem), and valuable (not freely available elsewhere). Avoid discount code lead magnets: they inflate signups with deal seekers who churn immediately, which works against [list quality over size](/principles/list-quality-over-size.md) and the discipline in [offers and incentives](/foundations/offers-and-incentives.md). Deliver on the lead magnet promise in the first email, without exception.
+A lead magnet is an incentive offered for contact details. Good ones are relevant (they attract your actual target profile), useful (they solve a real problem) and valuable (not freely available elsewhere). Avoid discount code lead magnets: they inflate signups with deal seekers who churn immediately, which works against [list quality over size](/principles/list-quality-over-size.md) and the discipline in [offers and incentives](/foundations/offers-and-incentives.md). Deliver on the lead magnet promise in the first email, without exception.
 
 ## Delivering the lead magnet
 
@@ -52,7 +52,7 @@ Deliver the magnet through automation, not by hand: it needs to arrive instantly
 
 1. The signup writes the new contact and a tag or field marking which magnet they asked for.
 2. That signup event triggers an automation. With double opt in, the confirmation click is the trigger; with single opt in, the form submission is.
-3. The first email delivers the magnet (the asset, a link, or the promised content) immediately, with no marketing wrapped around it.
+3. The first email delivers the magnet (the asset, a link or the promised content) immediately, with no marketing wrapped around it.
 4. The same automation drops them into the welcome sequence so the magnet email is step one, not a dead end. See [automation and sequences](/foundations/automation-and-sequences.md) and [the welcome window](/principles/the-welcome-window.md).
 
 Where the magnets imply different interests, branch the sequence on which one was requested so the welcome content matches what they signed up for.
@@ -74,13 +74,13 @@ When you run double opt in, the confirmation is a short flow, not just one email
 
 1. On submit, create the contact in a pending or unconfirmed state. They get no marketing yet and do not count as a subscriber.
 2. Send the confirmation email immediately. One clear purpose, one button, restating what they signed up for so the click is informed consent.
-3. The confirmation link sets the contact to confirmed and stamps the consent record (timestamp, source, and what they agreed to). See [consent and preferences](/foundations/consent-and-preferences.md).
+3. The confirmation link sets the contact to confirmed and stamps the consent record (timestamp, source and what they agreed to). See [consent and preferences](/foundations/consent-and-preferences.md).
 4. Confirmation is the trigger that delivers the lead magnet and starts the welcome sequence (see [Delivering the lead magnet](#delivering-the-lead-magnet)).
 5. Set the link to expire after 24 to 48 hours and send one reminder before it lapses. Unconfirmed contacts get no marketing and should be purged on a schedule so they never inflate list size or skew engagement rates.
 
 ## Source tracking
 
-Knowing where a subscriber came from is as valuable as knowing how many you have. Use UTM parameters, dedicated landing pages, hidden form fields, custom ESP fields, and QR codes. Combine methods, because attribution is always incomplete. Use a consistent naming convention from day one, or the data is useless within months.
+Knowing where a subscriber came from is as valuable as knowing how many you have. Use UTM parameters, dedicated landing pages, hidden form fields, custom ESP fields and QR codes. Combine methods, because attribution is always incomplete. Use a consistent naming convention from day one, or the data is useless within months.
 
 Fix a convention and apply it everywhere. The standard UTM trio covers it:
 
@@ -88,13 +88,13 @@ Fix a convention and apply it everywhere. The standard UTM trio covers it:
 * `utm_medium`, the channel type: `social`, `email`, `cpc`, `qr`.
 * `utm_campaign`, the specific effort or magnet: `2026-spring-guide`, `exit-popup-pricing`.
 
-Lock the rules so the values stay clean: lowercase only, hyphens not spaces, a fixed vocabulary for source and medium, and a date or theme in the campaign. A full example tag on an Instagram bio link to a guide download:
+Lock the rules so the values stay clean: lowercase only; hyphens not spaces; a fixed vocabulary for source and medium; and a date or theme in the campaign. A full example tag on an Instagram bio link to a guide download:
 
 ```
 https://example.com/guide?utm_source=instagram&utm_medium=social&utm_campaign=2026-spring-guide
 ```
 
-Capture those values into hidden form fields so they land on the contact record as the acquisition source, alongside the magnet tag from [Delivering the lead magnet](#delivering-the-lead-magnet). Now every subscriber record shows where they came from, what brought them in, and which sequence they entered, which is what makes acquisition source attributable later.
+Capture those values into hidden form fields so they land on the contact record as the acquisition source, alongside the magnet tag from [Delivering the lead magnet](#delivering-the-lead-magnet). Now every subscriber record shows where they came from, what brought them in and which sequence they entered, which is what makes acquisition source attributable later.
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: Principle
 title: Device channels are leased, not owned
-description: Push, browser push, and wallet passes run on capabilities iOS and Android grant and can revoke, which leaves the platform setting the ceiling on what you can do and moving it without notice.
+description: Push, browser push and wallet passes run on capabilities iOS and Android grant and can revoke, which leaves the platform setting the ceiling on what you can do and moving it without notice.
 tags: [principle, push, browser-push, wallet, platform, ios, android, capabilities, permission]
 generated:
   by: human:jacquescorbytuech
@@ -32,23 +32,23 @@ sources:
 
 ## Stance
 
-The on-device channels are not yours. Push, browser push, and wallet passes all run on a small set of capabilities the operating system grants and can withdraw, which limits what you can do on them to whatever iOS and Android currently allow, no more. You hold no list, you own no surface, and the permission lives inside one install on one device behind a token the platform can invalidate. Treat these channels as leased: useful, but operated inside a boundary you do not set and that shifts under you.
+The on-device channels are not yours. Push, browser push and wallet passes all run on a small set of capabilities the operating system grants and can withdraw, which limits what you can do on them to whatever iOS and Android currently allow, no more. You hold no list, you own no surface and the permission lives inside one install on one device behind a token the platform can invalidate. Treat these channels as leased: useful, but operated inside a boundary you do not set and that shifts under you.
 
 ## Where the boundary sits
 
-You control the proposition, the payload you compose, the trigger logic you choose, and the tie back to the customer record. The platform controls everything that decides whether the message reaches a human and how it looks when it does: whether the permission is granted, which surface it lands on, how much interruption it is allowed, whether an on-device model rewrites it, and whether a Focus mode or a per-channel mute silences it without a signal back. Effort spent fighting the platform's half is wasted; the levers that work are the ones you control.
+You control the proposition, the payload you compose, the trigger logic you choose and the tie back to the customer record. The platform controls everything that decides whether the message reaches a human and how it looks when it does: whether the permission is granted, which surface it lands on, how much interruption it is allowed, whether an on-device model rewrites it and whether a Focus mode or a per-channel mute silences it without a signal back. Effort spent fighting the platform's half is wasted; the levers that work are the ones you control.
 
 [In-app](/channels/in-app.md) is the exception. It has no platform editor and no permission gate, because it runs inside a product the user already opened, which is what makes it the cleanest surface to measure. Every other on-device channel is subject to the platform's editing.
 
 ## The capabilities the platform grants
 
-What you can actually do resolves into a handful of capability classes, each one a discrete grant the OS defines, polices, and revises. The specifics belong on the channel pages; none of them are yours to set.
+What you can actually do resolves into a handful of capability classes, each one a discrete grant the OS defines, polices and revises. The specifics belong on the channel pages; none of them are yours to set.
 
 * **Interruption and priority.** How loudly a message may arrive is the platform's call, not yours. iOS fixes four interruption levels (`passive`, `active`, `time-sensitive`, `critical`), of which only time-sensitive can break through Focus, only with the user's leave and never for marketing; critical needs an Apple entitlement you will not get. Android routes every notification through a channel whose importance the user, not you, controls once it exists. You request a level; the user and the OS decide whether you get it.
 * **Rich content.** Media beyond text, an image, a custom layout, an action button, is allowed only through the platform's own mechanism: a notification service extension and attachment on iOS, the expanded notification styles on Android. Because the 4KB payload ceiling caps how much you can include, the proposition has to lead and the platform may or may not render the rest.
 * **Relevance and triggering.** Surfacing a message by time or place is a platform feature you configure, not code you run. A wallet pass declares a geofence and a time and the OS raises it on the lock screen with no send; you set the trigger, but the OS decides whether and when it fires.
 * **Background update.** Changing state on the device without interrupting the user, a silent push that refreshes app state, a pass field that updates a points balance over the wire, is permitted but throttled and revocable. There is no delivery guarantee: the OS may defer or drop it.
-* **Identity and addressability.** The token is the address, the platform's to issue and to invalidate. It is scoped to one install on one device, the user can reset it, and the OS can expire it: the reachable audience is only ever the set of currently valid grants, rebuilt continuously rather than held.
+* **Identity and addressability.** The token is the address, the platform's to issue and to invalidate. It is scoped to one install on one device, the user can reset it and the OS can expire it: the reachable audience is only ever the set of currently valid grants, rebuilt continuously rather than held.
 
 ## The ceiling moves
 
@@ -59,8 +59,8 @@ The desktop works the same way. Reach there runs through [browser push](/channel
 ## Consequences
 
 * The reachable audience shrinks on its own. Tokens expire and grants are revoked, which holds a device list to its currently valid permissions. The count you hold overstates the count you can reach.
-* The scarce permission is spent once. Because the OS prompt is effectively one-shot, prime it behind your own soft ask tied to a value moment rather than firing it cold; the pattern is the same for mobile push, browser push, location, and tracking consent. See [consent and preferences](/foundations/consent-and-preferences.md).
-* Design to the capability you are granted, not the one you wish you had. Lead with the proposition inside the payload ceiling, pick the honest interruption level, and let rich content be enhancement the platform may strip.
+* The scarce permission is spent once. Because the OS prompt is effectively one-shot, prime it behind your own soft ask tied to a value moment rather than firing it cold; the pattern is the same for mobile push, browser push, location and tracking consent. See [consent and preferences](/foundations/consent-and-preferences.md).
+* Design to the capability you are granted, not the one you wish you had. Lead with the proposition inside the payload ceiling, pick the honest interruption level and let rich content be enhancement the platform may strip.
 * Measure past the platform's editing. Opens and clicks sit downstream of suppression and rewriting you cannot see. The only honest read is the downstream action against a randomised holdout, where both arms sit behind the same boundary. See [holdouts and control groups](/measurement/holdouts-and-control-groups.md).
 
 ## Related

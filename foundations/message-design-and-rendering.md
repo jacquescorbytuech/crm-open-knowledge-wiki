@@ -1,7 +1,7 @@
 ---
 type: Playbook
 title: Message Design and Rendering
-description: How to build a message so it renders and reads everywhere it lands, a single-column mobile-first layout with inline CSS, dark-mode and accessibility steps, functional alt text, preheader text, and a pre-send rendering QA checklist for email as the hard case, plus how SMS, RCS, push, in-app, and wallet passes each constrain the design differently.
+description: How to build a message so it renders and reads everywhere it lands, a single-column mobile-first layout with inline CSS, dark-mode and accessibility steps, functional alt text, preheader text and a pre-send rendering QA checklist for email as the hard case, plus how SMS, RCS, push, in-app and wallet passes each constrain the design differently.
 tags: [design, rendering, responsive, dark-mode, accessibility, alt-text, preheader, mjml, qa]
 generated:
   by: human:jacquescorbytuech
@@ -50,11 +50,11 @@ sources:
 
 ## Design for where it actually lands
 
-A message is not rendered once. Email is the unforgiving case: it is rendered by dozens of clients that disagree about CSS, light and dark, and image handling, most of them on a phone. Because Apple's mail clients alone take the largest single share of opens, with Gmail next and Outlook well behind, a layout tested only in one desktop client is untested. The other channels constrain the design differently, a fixed OS template for push, plain text for SMS, native components you control in-app, but the rule is the same everywhere: design for the surface as it actually renders, not for the preview in front of you.
+A message is not rendered once. Email is the unforgiving case: it is rendered by dozens of clients that disagree about light and dark, CSS and image handling, most of them on a phone. Because Apple's mail clients alone take the largest single share of opens, with Gmail next and Outlook well behind, a layout tested only in one desktop client is untested. The other channels constrain the design differently, a fixed OS template for push, plain text for SMS, native components you control in-app, but the rule is the same everywhere: design for the surface as it actually renders, not for the preview in front of you.
 
 ## Mobile-first
 
-Most email is opened on a mobile device, where a message that breaks on a small screen is deleted rather than zoomed. Design mobile-first: a single-column layout, type large enough to read without pinching, and tap targets big enough for a thumb. Responsive techniques adapt the same message to the screen it lands on.
+Most email is opened on a mobile device, where a message that breaks on a small screen is deleted rather than zoomed. Design mobile-first: a single-column layout, type large enough to read without pinching and tap targets big enough for a thumb. Responsive techniques adapt the same message to the screen it lands on.
 
 ## How to build it
 
@@ -64,8 +64,8 @@ A resilient email build is deliberately conservative. The steps that keep it int
 2. **Constrain the content width.** Set a maximum content width of around 600px, which renders without clipping in desktop clients and scales down on mobile. Let the body fill the viewport below that.
 3. **Inline your CSS.** Many clients strip or ignore a `<style>` block, which is why the styling you depend on for layout and colour belongs inline on the elements. Keep a `<style>` block as well for the things inlining cannot do (media queries, `prefers-color-scheme`), but never rely on it alone.
 4. **Lay out with tables, not floats or flexbox.** Email CSS support is years behind the browser. Table-based structure renders predictably where modern layout does not. Check any feature you want to lean on against the support tables before you rely on it.
-5. **Keep the substance in live text, not images.** Build headlines, offers, and CTAs as real text with a bulletproof (table-and-link) button, so they render with images off, read under a screen reader, and survive dark-mode recolouring.
-6. **Treat frameworks as an aid, not a substitute for skill.** Hand-written HTML is the standard a talented email developer works to, giving the most control over how a message renders across the client spread. Nothing replaces that judgement. Frameworks can speed the work: **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect, and a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients. But they constrain what you can express and still need a developer who understands the underlying markup to extend, debug, and verify the output. Reach for them to save time, not to skip the expertise.
+5. **Keep the substance in live text, not images.** Build headlines, offers and CTAs as real text with a bulletproof (table-and-link) button, so they render with images off, read under a screen reader and survive dark-mode recolouring.
+6. **Treat frameworks as an aid, not a substitute for skill.** Hand-written HTML is the standard a talented email developer works to, giving the most control over how a message renders across the client spread. Nothing replaces that judgement. Frameworks can speed the work: **MJML** compiles a concise syntax down to the table-based, inline-styled markup clients expect; a tested starter such as the **Cerberus** responsive patterns gives you blocks proven across clients. But they constrain what you can express and still need a developer who understands the underlying markup to extend, debug and verify the output. Reach for them to save time, not to skip the expertise.
 
 ## Type and size defaults
 
@@ -95,13 +95,13 @@ A meaningful share of recipients use assistive technology, for whom an inaccessi
 3. **Write descriptive alt text with the key info.** The amount, the code, the CTA, anything the message depends on must be in the alt text, not only in the image. Mark purely decorative images as such so a screen reader skips them.
 4. **Clear WCAG AA contrast.** Aim for at least 4.5:1 for normal text against its background, checking the dark-mode rendering separately since recolouring can drop a passing pair below the threshold.
 5. **Do not rely on colour alone.** Pair colour with text or shape so meaning survives for a recipient who cannot distinguish it.
-6. **Keep the substance as real, live text.** Real text resizes, reflows, and reads under assistive technology in a way an image of text never will.
+6. **Keep the substance as real, live text.** Real text resizes, reflows and reads under assistive technology in a way an image of text never will.
 
 Accessible design also tends to be cleaner design, which keeps the cost low.
 
 ## Alt text
 
-Alt text is the text a client shows in place of an image that is blocked, slow, or failed. Many clients block images by default until the recipient chooses to load them. Without alt text, an image-led message renders as empty boxes. Write functional alt text that states the image's message. Never leave a critical word, the offer, the code, the call to action, only inside an image. This is also why image-only emails are a [deliverability](/foundations/deliverability.md) risk: the classifier and the summariser read text, not pixels.
+Alt text is the text a client shows in place of an image that is blocked, slow or failed. Many clients block images by default until the recipient chooses to load them. Without alt text, an image-led message renders as empty boxes. Write functional alt text that states the image's message. Never leave a critical word, the offer, the code, the call to action, only inside an image. This is also why image-only emails are a [deliverability](/foundations/deliverability.md) risk: the classifier and the summariser read text, not pixels.
 
 ## Preheader text
 
@@ -109,35 +109,35 @@ The preheader (preview text) is the snippet a client shows after the subject lin
 
 ## Keep real text in the message
 
-The substance belongs in live text, not locked in images. It renders when images are blocked, it reads under a screen reader, it survives dark-mode recolouring, and it is the structure the inbox's classifier and summariser parse. Send a proper multipart message with a plain-text part as well as HTML. See [deliverability](/foundations/deliverability.md) and [copywriting](/foundations/copywriting.md).
+The substance belongs in live text, not locked in images. It renders when images are blocked; it reads under a screen reader; it survives dark-mode recolouring; it is the structure the inbox's classifier and summariser parse. Send a proper multipart message with a plain-text part as well as HTML. See [deliverability](/foundations/deliverability.md) and [copywriting](/foundations/copywriting.md).
 
 ## Coding for the inbox
 
-Email HTML is not web HTML. Clients strip, rewrite, and ignore CSS in ways no browser would. The discipline is writing the most resilient, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references cover most of this and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com, so you can check before you rely on a feature whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
+Email HTML is not web HTML. Clients strip, rewrite and ignore CSS in ways no browser would. The discipline is writing the most resilient, accessible markup that degrades gracefully rather than chasing pixel-perfection everywhere. Two community references cover most of this and are worth treating as standing tools. **Good Email Code**, by Mark Robbins, is a library of accessible, semantic email-code patterns that explains the reasoning behind each technique and prioritises making the code work over visual consistency. **Can I email**, by Rémi Parmentier (HTeuMeuLeu) and the team at Tilt Studio, is the support-table reference for HTML and CSS features across email clients, in the mould of caniuse.com. Before relying on a feature, check whether the clients in your [market share](https://www.litmus.com/email-client-market-share) actually support it.
 
 ## Pre-send rendering QA
 
 Run the same checklist before every send, weighted to the clients in your market share. A rendering tool that captures real client screenshots makes most of this a single pass; the rest is a visual read.
 
-* [ ] **Major clients.** Renders correctly in Apple Mail, Gmail, and Outlook at minimum, the three that take most opens, plus any other client significant in your list.
+* [ ] **Major clients.** Renders correctly in Apple Mail, Gmail and Outlook at minimum, the three that take most opens, plus any other client significant in your list.
 * [ ] **Mobile.** Single column, no horizontal scroll, body text readable without pinching, tap targets large and well spaced.
 * [ ] **Dark mode.** Logos and icons stay visible, text keeps contrast, nothing inverts into an unreadable block, checked across clients that recolour.
-* [ ] **Images off.** The message still makes sense with images blocked: alt text covers the offer, the code, and the CTA; the layout does not collapse to empty boxes.
-* [ ] **Real text and links.** Headlines, offer, and CTA are live text with a working bulletproof button, not locked inside an image.
+* [ ] **Images off.** The message still makes sense with images blocked: alt text covers the offer, the code and the CTA; the layout does not collapse to empty boxes.
+* [ ] **Real text and links.** Headlines, offer and CTA are live text with a working bulletproof button, not locked inside an image.
 * [ ] **Accessibility.** Semantic headings in reading order, AA contrast in both light and dark, no meaning conveyed by colour alone.
 * [ ] **Preheader.** Set deliberately to extend the subject, not a stray "view in browser" or address block.
 * [ ] **Multipart.** A plain-text part is present alongside the HTML, plainest first.
 * [ ] **Size.** HTML lean enough to stay under the Gmail clipping threshold so the CTA and tracking are not buried. See [email](/channels/email.md).
-* [ ] **Links and tracking.** Every link resolves, UTM and tracking parameters are correct, and the unsubscribe link works.
+* [ ] **Links and tracking.** Every link resolves; UTM and tracking parameters are correct; the unsubscribe link works.
 
 ## Rendering in the other channels
 
 Email's rendering is the least predictable of the channels. The other channels trade that fragmentation for tighter templates, which removes most of the cross-client risk and replaces it with format limits.
 
 * **SMS** has no rendering to speak of: plain text, no styling, one link. The design constraint is length, the `GSM-7` and `UCS-2` segment boundary that governs cost and splitting. See [SMS and RCS](/channels/sms-and-rcs.md).
-* **RCS** adds rich cards, carousels, and suggested replies, but only where both endpoints support it: every RCS message needs an SMS fallback designed in.
+* **RCS** adds rich cards, carousels and suggested replies, but only where both endpoints support it: every RCS message needs an SMS fallback designed in.
 * **Push** renders in a fixed OS template you cannot restyle: a title, a short body truncated on the lock screen, an optional image or action buttons the platform may or may not show. Design to the truncation and assume the image is absent. See [push](/channels/push.md).
-* **In-app** is the surface you fully control, native components rendered by your own SDK, which reduces the variation to device size and OS version rather than client quirks. The same mobile-first, accessibility, and contrast discipline applies. See [in-app](/channels/in-app.md).
+* **In-app** is the surface you fully control, native components rendered by your own SDK, which reduces the variation to device size and OS version rather than client quirks. The same mobile-first, accessibility and contrast discipline applies. See [in-app](/channels/in-app.md).
 * **Wallet passes** render into the platform's pass template, leaving the design work as a choice of which fields hold the message within Apple's and Google's fixed layouts. See [wallet passes](/channels/wallet-passes.md).
 
 ## Related

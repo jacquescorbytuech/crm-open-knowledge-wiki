@@ -14,7 +14,7 @@ Every email sent is a brand impression at effectively zero marginal cost. Unlike
 
 ## The attribution trap
 
-A subscriber who reads your emails is more likely to click a paid ad, search for your brand, or convert organically. None of that shows up in email's own attribution. Measuring email only on last click conversions undervalues it. Its true return includes the halo it creates across the whole marketing mix, which is also why the channel holds up better than its measured numbers suggest even as the inbox does more filtering and summarising. See [attribution](/measurement/attribution.md).
+A subscriber who reads your emails is more likely to click a paid ad, search for your brand or convert organically. None of that shows up in email's own attribution. Measuring email only on last click conversions undervalues it. Its true return includes the halo it creates across the whole marketing mix, which is also why the channel holds up better than its measured numbers suggest even as the inbox does more filtering and summarising. See [attribution](/measurement/attribution.md).
 
 ## Caveat
 

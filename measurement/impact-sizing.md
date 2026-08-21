@@ -14,13 +14,13 @@ sources:
 
 ## What it is
 
-Impact sizing answers one question: how many incremental actions will this experiment drive? That number lets you rank experiments, set stakeholder expectations, and judge afterward whether an experiment delivered. It is not forecasting. It is a calculator that says if we achieve X% lift on metric Y for Z users, the result is N incremental actions. The model is only as good as its inputs, but even rough inputs give useful prioritisation signal.
+Impact sizing answers one question: how many incremental actions will this experiment drive? That number lets you rank experiments, set stakeholder expectations and judge afterward whether an experiment delivered. It is not forecasting. It is a calculator that says if we achieve X% lift on metric Y for Z users, the result is N incremental actions. The model is only as good as its inputs, but even rough inputs give useful prioritisation signal.
 
 ## Three model types
 
 * **Single metric**, the default. One metric to move (activation, adoption, conversion). Take the audience, apply the baseline rate, apply a lift, calculate incremental actions.
 * **Two metric funnel.** An upfunnel action that feeds a downstream outcome. If someone says we want to improve X because it drives Y, the because signals a funnel. Needs the upfunnel rate and the downstream conversion rate.
-* **Promotional.** Free months, discounts, credits. The question is not how many incremental actions but whether you gain more than the promotion costs, and on what time frame. Needs plan mix, per plan gross profit, promo cost, and a retention adjustment for promo acquired users.
+* **Promotional.** Free months, discounts, credits. The question is not how many incremental actions but whether you gain more than the promotion costs and on what time frame. Needs plan mix, per plan gross profit, promo cost and a retention adjustment for promo acquired users.
 
 ## The core formula
 
@@ -40,7 +40,7 @@ The relative lift is the one variable you change to model scenarios. Everything 
 
 ## Getting inputs right
 
-* **Metric definition.** Confirm numerator, denominator, and time window. A 7 day rate is a different model from a 30 day rate.
+* **Metric definition.** Confirm numerator, denominator and time window. A 7 day rate is a different model from a 30 day rate.
 * **Baseline.** Ask where it came from and when. A holiday period or post launch baseline skews the model.
 * **Flow versus stock.** A flow targets new users entering each week (incremental actions per week). A stock targets a fixed existing pool (a total). Mixing them up inflates or deflates the estimate dramatically.
 * **Segment overlap.** Confirm segments are mutually exclusive before adding them, or you double count.

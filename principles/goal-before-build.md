@@ -1,7 +1,7 @@
 ---
 type: Principle
 title: Set a goal before you build anything
-description: Every campaign, automation, and sequence needs a clear, measurable objective. Without one, it is theatre.
+description: Every campaign, automation and sequence needs a clear, measurable objective. Without one, it is theatre.
 tags: [principle, goal, measurement]
 generated:
   by: human:jacquescorbytuech
